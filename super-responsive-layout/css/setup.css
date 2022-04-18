@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+inner-column {
+	display: block;
+  width: 100%;
+  margin-right: auto;
+	margin-left: auto;
+}
+
+a{
+  display: block;
+}
+
+picture {
+  display: block;
+}
+  
+img {
+  display: block; 
+  width: 100%;
+  height: auto;
+}
+
+
+
