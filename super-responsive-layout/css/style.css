@@ -79,10 +79,12 @@ a {
 picture.cog,
 picture.cloud{
     display: none;
+    z-index: 0;
+    
 }
 
 section picture.cog {
-    width: 350px;
+    width: 30vw;
     height: auto;
 
     position: absolute;
@@ -95,25 +97,24 @@ section picture.cog {
 section> picture.cloud {
 
     position: absolute;
-    width: 400px;
+    width: 30vw;
     
     right: 150px;
     bottom: -150px;
 
     opacity: .9;
-
 }
 
 main picture.cog {
 
-    width: 350px;
+    width: 30vw;
     height: auto;
 
     position: absolute;
-    bottom: -120px;
+    bottom: -130px;
     right: -130px;
 
-    opacity: .7;
+    
 }
 
 /* HEADER */
