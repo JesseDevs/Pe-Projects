@@ -1,5 +1,5 @@
-@import url(reset.css);
-@import url(setup.css);
+@import 'reset.css';
+@import 'setup.css';
 
 html{
     background-color: antiquewhite;
