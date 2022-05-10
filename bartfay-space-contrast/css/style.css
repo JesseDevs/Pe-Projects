@@ -1,0 +1,295 @@
+@import 'reset.css';
+@import 'setup.css';
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+inner-column{
+    padding: 5vh 3vw;
+    max-width: 1100px;
+}
+
+.loud-voice {
+    font-weight: 800;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.more-voice{
+    font-weight: 600;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+.attention-voice{
+    font-weight: 400;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+}
+
+main {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+/* $Header */
+
+header.doc-header{
+    background-color: black;
+    height: 70vh;
+    color: white;
+}
+
+header inner-column{
+    padding-top: 3vh;
+    padding-bottom: 10vh;
+}
+
+inner-column section.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    
+}
+
+section.header picture {
+    width: 40px;
+    height: auto;
+}
+
+section.header picture.logo{
+    width: 30vw;
+    max-width: 150px;
+}
+
+header section.landing {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    
+}
+
+section.landing div {
+    padding-left: 40px;
+}
+
+section.landing div.info-wrapper{
+    border-left: 10px solid rgba(255, 255, 255, 0.80);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+section.landing div.info-buttons{
+    font-size: 1.5rem;
+    padding-left: 50px;
+}
+
+section.landing div.info-buttons span:nth-of-type(2){
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+div.info-wrapper h1.loud-voice{
+    padding-top: 20px;
+}
+
+/* $services */
+
+section.services-info header{
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    
+}
+
+section.services-info header h2{
+    border-left: 5px solid rgba(0, 0, 0, 0.80);
+    padding:1vh 2vw;
+}
+
+section.services-info header a{
+    padding-bottom: 5px;
+}
+
+div.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    position: relative;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+}
+
+div.overlay:nth-child(2n+2){
+    background-color: rgba(0, 0, 0, 0.20);
+    color: black;
+}
+
+div.overlay > *{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+div.overlay .more-voice{
+    font-weight: 400;
+}
+
+div.overlay picture {
+    width: 200px;
+}
+
+div.overlay a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    text-align: center;
+
+    width: 35%;
+    padding: 2vh 2vw 2vh 3vw;
+}
+
+/* $about */
+
+section.about h2{
+    border-left: 5px solid rgba(0, 0, 0, 0.80);
+    padding:1vh 5vw;
+}
+
+article-grid{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+article-grid div{
+    padding-bottom: 1.5vh;
+    padding-top: 1.5vh;
+}
+
+.article-box{
+    padding-bottom: 1.5vh;
+}
+
+article{
+    display: flex;
+    align-items: center;
+}
+
+article p{
+    max-width: 25ch;
+}
+
+article picture {
+    width: 50px;
+    min-width: 50px;
+
+    margin-right: 3vw;
+}
+
+article picture+div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+
+}
+
+.big-num{
+    display: block;
+    padding: 3vh 0;
+    font-size: 7rem;
+}
+
+/* $realizations */
+
+section.realization h2{
+    border-left: 5px solid rgba(0, 0, 0, 0.80);
+    padding:1vh 5vw;
+}
+
+section.realization picture{
+    padding-bottom: 4vh;
+}
+
+
+section.realization div.info-buttons,
+section.realization div.info-wrapper p,
+section.realization a{
+    padding-left: 40px;
+}
+
+section.realization div.info-wrapper .title-wrapper{
+    border-left: 5px solid rgba(0, 0, 0, 0.60);
+    padding-left: 35px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+section.realization div.info-wrapper p{
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+
+section.realization a{
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: rgba(0, 0, 0, 0.40);;
+    color: white;
+}
+
+section.realization div.info-buttons{
+    padding-top: 1vh;
+    padding-bottom: 4vh;
+}
+
+/* $Like? Review? */
+
+section.like h2{
+    border-left: 5px solid rgba(0, 0, 0, 0.80);
+    padding:1vh 5vw;
+}
+
+section.like p{
+    padding: 3vh 40px;
+}
+
+section.like picture{
+    width: 50px;
+}
+
+section.like inner-column> div {
+    padding-left: 5px;
+    border-left: 5px solid rgba(0, 0, 0, 0.60);
+}
+
+section.like inner-column div a { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+section.like h5{
+    font-weight: 400;
+}
+
+section.like span.attention-voice{
+    font-size: 10vw;
+}
