@@ -36,8 +36,11 @@ a p {
 }
 
 p a {
-	display: inline-block;
+	display: inline;
 	text-decoration: underline;
+	padding: 0;
+	color: inherit;
+	font-size: inherit;;
 }
 
 picture {
