@@ -87,7 +87,6 @@ figure a:hover{
     background-color: rgb(124, 154, 115);
     box-shadow: 0 0 0 0;
     cursor: pointer;
-
 }
 
 /* Font-size styles */
@@ -96,14 +95,43 @@ figure a:hover{
     font-weight: 800;
     font-size: clamp(3.5rem,15vw,11rem);
     letter-spacing: 4px;
+
+    animation: smooth 2s linear forwards;
 }
 
 p{
     max-width: 50ch;
-    font-weight: 300;
+    font-weight:400;
     font-size: clamp(1rem, 1.3vw, 1.5rem);
     margin-bottom: var(--small-height);
     line-height: 1.6;
+}
+
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+
+@keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
 }
 
 
@@ -117,9 +145,7 @@ header{
 }
 
 header inner-column {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    padding: var(--med-height) var(--med-width);
+    padding: var(--small-height) var(--med-width);
 
     display: flex;
     align-items: flex-start;
@@ -127,7 +153,10 @@ header inner-column {
 
 header nav{
     display: flex;
-    gap: var(--small-width);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
 }
 
 header nav a{
@@ -135,13 +164,20 @@ header nav a{
     background-color: var(--faded);
     border-radius: 5px;
 
-    transition: all ease-in .5s ;
+    transition: all ease-in .2s ;
+}
+
+@media (min-width:600px){
+    header nav{
+        gap: var(--small-width);
+    }
 }
 
 /* $landing */
 
 .landing inner-column div.info-wrapper{
     padding-left: var(--large-height);
+    animation: slide-in 1000ms;
 }
 
 .landing span{
@@ -150,6 +186,7 @@ header nav a{
     margin-bottom: var(--med-height);
 
     color: var(--faded);
+    font-weight: 200;
 }
 
 .landing-actions{
@@ -171,13 +208,15 @@ header nav a{
     box-shadow: 3px 3px 0 0 var(--ink);
 
     font-size: clamp(1rem, 1.5vw, 1.5rem);
-    transition: all ease-in .5s ;
+    transition: all ease-in .2s ;
 }
 
 
 section.landing{
     position: relative;
 }
+
+/* $figure $blog */
 
 figure{
     box-shadow: 3px 3px 0 0 var(--ink);
@@ -233,7 +272,7 @@ figure a{
     box-shadow: 3px 3px 0 0 var(--ink);
 
     font-size: 1rem;
-    transition: all ease-in .5s ;
+    transition: all ease-in .2s ;
 }
 
 
@@ -242,9 +281,6 @@ figure a{
         opacity: 1;
     }
 }
-
-
-
 
 
 
