@@ -62,7 +62,7 @@ section.landing{
 
 article{
     box-shadow: 3px 3px 0 0 transparent;
-    padding-left: var(--large-height);
+    margin-left: var(--large-height);
 
     padding-top: var(--med-height);
     padding-bottom: var(--med-height);
@@ -102,6 +102,11 @@ article.two{
     0 3px 0 0 var(--ink);
 }
 
+
+.landing inner-column.connect{
+    margin: var(--med-height) auto;
+
+}
 
 
 @media (min-width:800px) and (max-width:1160px){
