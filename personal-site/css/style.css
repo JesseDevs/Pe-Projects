@@ -53,7 +53,7 @@ section.landing{
     background-color: var(--faded);
     box-shadow: 3px 3px 0 0 var(--ink);
 
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
     transition: all ease-in .2s ;
 }
 
@@ -123,9 +123,10 @@ article.two{
     }
 
     article p{
+        text-align: center;
         height: 100px;
         position: absolute;
-        top: 50%;
+        top: 40%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
 
