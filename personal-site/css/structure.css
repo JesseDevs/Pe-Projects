@@ -1,0 +1,134 @@
+
+html {
+    --ink: rgb(246, 245, 245);
+    --page: blue;
+    --faded: rgb(255 255 255 / .8);
+    --accent-ink: rgb(79 39 26/ .7);
+    --link: rgb(49, 76, 183);
+
+    --small-height: 2vh;
+    --small-width:3vw;
+    --med-height: 5vh;    
+    --med-width:5vw;
+    --large-height: 8vh;    
+    --large-width:8vw;
+    --Xlarge-height: 11vh;    
+    --Xlarge-width: 11vw;
+    
+
+    background-image: radial-gradient(circle at 0% 0,
+    hsl(4deg 58% 20%) 0%,
+    hsl(6deg 58% 20%) 4%,
+    hsl(7deg 57% 20%) 9%,
+    hsl(9deg 57% 20%) 13%,
+    hsl(11deg 58% 20%) 17%,
+    hsl(13deg 58% 21%) 22%,
+    hsl(14deg 57% 21%) 26%,
+    hsl(16deg 57% 21%) 30%,
+    hsl(16deg 54% 21%) 35%,
+    hsl(13deg 48% 19%) 39%,
+    hsl(10deg 40% 17%) 43%,
+    hsl(9deg 33% 15%) 48%,
+    hsl(7deg 26% 13%) 52%,
+    hsl(5deg 19% 12%) 57%,
+    hsl(0deg 12% 10%) 61%,
+    hsl(0deg 5% 8%) 65%,
+    hsl(0deg 5% 8%) 70%,
+    hsl(20deg 6% 10%) 74%,
+    hsl(45deg 7% 11%) 78%,
+    hsl(60deg 8% 12%) 83%,
+    hsl(86deg 10% 14%) 87%,
+    hsl(100deg 12% 15%) 91%,
+    hsl(120deg 13% 17%) 96%,
+    hsl(137deg 15% 18%) 100%
+  );
+}
+/* 
+Wanted to make this in light mode and the other in dark.,
+
+body{
+    background-image: radial-gradient(circle at 0% 0,
+    hsl(240deg 38% 72%) 5%,
+    hsl(206deg 60% 67%) 24%,
+    hsl(190deg 54% 64%) 31%,
+    hsl(167deg 42% 69%) 35%,
+    hsl(148deg 38% 75%) 39%,
+    hsl(168deg 43% 72%) 43%,
+    hsl(182deg 44% 70%) 46%,
+    hsl(192deg 54% 72%) 51%,
+    hsl(200deg 58% 72%) 55%,
+    hsl(208deg 58% 71%) 62%,
+    hsl(219deg 52% 71%) 72%,
+    hsl(240deg 38% 72%) 100%
+    ); 
+}
+*/
+
+body{
+    color: var(--ink);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+}
+
+inner-column{
+    max-width: 1100px;
+}
+
+a:hover{
+  color: var(--link);
+  box-shadow: 0 0 0 0;
+
+}
+
+.landing-actions a:hover{
+    background-color: var(--link);
+    box-shadow: 0 0 0 0;
+    color: var(--ink);
+    
+    cursor: pointer;
+}
+
+/* Font-size styles */
+
+.loud-voice{
+    font-weight: 800;
+    font-size: clamp(3.5rem,15vw,11rem);
+    letter-spacing: 4px;
+
+    animation: smooth 2s linear forwards;
+}
+
+p{
+    max-width: 50ch;
+    font-weight:400;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    margin-bottom: var(--small-height);
+    line-height: 1.6;
+}
+
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+
+@keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
