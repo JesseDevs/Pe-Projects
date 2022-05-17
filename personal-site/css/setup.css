@@ -21,7 +21,6 @@ article-grid {
   	width: 100%;
   	margin-right: auto;
 	margin-left: auto;
-	padding: var(--med-height) var(--small-width);
 }
 
 a {
@@ -51,7 +50,7 @@ img {
 
 p {
 	line-height: 1.3;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.02em;
 }
 
 strong{

@@ -6,14 +6,16 @@ html {
     --accent-ink: rgb(79 39 26/ .7);
     --link: rgb(49, 76, 183);
 
+    --xs-height: 1vh;
+    --xs-width:1vw;
     --small-height: 2vh;
     --small-width:2vw;
     --med-height: 5vh;    
     --med-width:5vw;
     --large-height: 8vh;    
     --large-width:8vw;
-    --Xlarge-height: 11vh;    
-    --Xlarge-width: 11vw;
+    --xlarge-height: 11vh;    
+    --xlarge-width: 11vw;
     
 
     background-image: radial-gradient(circle at 0% 0,
@@ -72,6 +74,9 @@ body{
 
 inner-column{
     max-width: 1100px;
+
+    padding: var(--med-height) var(--small-width);
+  
 }
 
 a:hover{
@@ -80,22 +85,25 @@ a:hover{
 
 }
 
-.landing-actions a:hover{
-    background-color: var(--link);
-    box-shadow: 0 0 0 0;
-    color: var(--ink);
-    
-    cursor: pointer;
-}
-
 /* Font-size styles */
 
 .loud-voice{
     font-weight: 800;
     font-size: clamp(3.5rem,15vw,11rem);
     letter-spacing: 4px;
+}
 
-    animation: smooth 2s linear forwards;
+.attention-voice{
+  font-weight: 700;
+  font-size: clamp(2.5rem,10vw,8rem);
+
+  margin-bottom: var(--small-height);
+}
+
+.calm-voice{
+  font-weight: 500;
+  font-size: clamp(1.6rem,5vw,2.5rem);
+  
 }
 
 p{
@@ -107,16 +115,12 @@ p{
 }
 
 @keyframes drop-in {
-    from {
-      transform:
-        rotate(-30deg) translateY(-100%);
-      opacity: 0;
-    }
-    to {
-      transform:
-        rotate(0deg) translateY(0%);
-      opacity: 1;
-    }
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 @keyframes slide-in {

@@ -5,7 +5,7 @@ header{
 }
 
 header inner-column {
-    padding: var(--small-height) var(--med-width);
+    padding: 3vh var(--med-width);
 
     display: flex;
     align-items: flex-start;
@@ -17,6 +17,7 @@ header nav{
     justify-content: center;
     gap: 20px;
 
+    animation: drop-in 1s;
 }
 
 header nav a{
@@ -25,11 +26,20 @@ header nav a{
     border-radius: 5px;
 
     transition: all ease-in .2s ;
+    overflow: hidden;
 }
 
 header nav a:hover{
     box-shadow: 0 0 0 2px var(--link);
     transition: all ease-in .2s ;
+
+    background-color: var(--link);
+
+    transform: scale(1.2);
+}
+
+header nav a:hover >img{
+    filter: invert(1);
 }
 
 @media (min-width:600px){
