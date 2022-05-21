@@ -11,19 +11,24 @@ section.landing{
     position: relative;
 }
 
-.landing inner-column div.info-wrapper{
-    padding-left: var(--large-height);
+.landing div.info-wrapper{
+    padding-left: var(--med-width);
     animation: slide-in 1000ms;
+
+    margin-right: auto;
+
+    max-width: 60ch;
 }
 
 .landing span{
     display: block;
-    font-style: italic;
+    /* font-style: italic; */
     margin-bottom: var(--med-height);
 
     font-size: 1.2rem;
     color: var(--faded);
-    font-weight: 200;
+    font-weight: 300;
+
 }
 
 .landing-actions{
@@ -34,7 +39,7 @@ section.landing{
     padding-bottom: var(--small-height);
     padding-right: var(--small-width);
 
-    gap: var(--med-width);
+    gap: 50px;
 
     justify-content: flex-start;
     align-items: center;
@@ -42,16 +47,18 @@ section.landing{
 }
 
 .landing-actions a {
-    width: 150px;
-    padding: var(--small-height) var(--small-width);
+    width: fit-content;
+    padding: 20px 20px;
     text-align: center;
     font-weight: 500;
 
-    color: var(--accent-ink);
+    color: var(--black);
     background-color: var(--faded);
     box-shadow: 3px 3px 0 0 var(--ink);
+    border-radius: 5px;
+    border: 3px solid var(--coffee);
 
-    font-size: clamp(1rem, 1.4vw, 1.3rem);
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
     transition: all ease-in .2s ;
 }
 
@@ -60,10 +67,11 @@ section.landing{
     transform: translate(0.2em, 0.2em);
     box-shadow: 0 0 0 1px transparent;
     color: var(--ink);
+
+    border: 3px solid transparent;
     
     cursor: pointer;
 }
-
 
 .landing h1{
     animation: smooth 1s linear forwards;
@@ -74,7 +82,7 @@ section.landing{
 
 .landing article{
     box-shadow: 3px 3px 0 0 transparent;
-    margin-left: var(--large-height);
+    margin-left: var(--med-width);
 
     padding-top: var(--med-height);
     padding-bottom: var(--med-height);
@@ -82,10 +90,19 @@ section.landing{
     display: flex;
     flex-direction: column;
     transition: all .5s ease-in;
+
+    max-width: 50ch;
 }
 
-.landing article.three{
+
+article.one{
+    box-shadow:
+    0 3px 0 0 var(--coffee);
+}
+
+article.three{
     margin-bottom: 0;
+
 }
 
 .landing article p{
@@ -110,20 +127,14 @@ section.landing{
     transform: scale(1.05) translate(.3em, 0.2em);
 }
 
-.landing article.two{
-    box-shadow: 
-    0 -3px 0 0 var(--ink),
-    0 3px 0 0 var(--ink);
+@media(min-width:700px){
+    section.landing inner-column .info-wrapper{
+        max-width: 70ch;
+    }
 }
-
-
-.landing inner-column.connect{
-    margin: var(--med-height) auto;
-
-}
-
 
 @media (min-width:800px) and (max-width:1160px){
+
     inner-column.connect{
         display: flex;
         align-items: center;
@@ -167,10 +178,9 @@ section.landing{
         padding: 0;
     }
 
-    .landing article.two{
+    .landing article.one{
         box-shadow: 
-        -3px 0 0 0 var(--ink),
-        3px 0 0 0 var(--ink);
+        3px 0 0 0 var(--coffee);
     }
 }
 
@@ -192,7 +202,8 @@ section.landing{
         position: absolute;
         padding: var(--small-height) var(--small-width);
 
-        box-shadow: 3px 3px 0 0 var(--accent-ink);
+        box-shadow: 3px 3px 0 0 var(--ink);
+        border: 4px solid var(--coffee);
         max-width: 275px;
         height: 200px;
         margin-bottom: 0;
@@ -200,7 +211,7 @@ section.landing{
         align-items: center;
         justify-content: center;
 
-        border-radius: 3px;
+        border-radius: 5px;
         backdrop-filter: blur(10px);
     }
 
@@ -214,43 +225,21 @@ section.landing{
     }
 
     .landing article.one{
-        right: 270px;
-        top: 41vh;
-
-
-        transform: skew(-2deg);
-
-
+        right: 125px;
+        top: 225px;
 
         color: black;
-        border: 3px solid var(--accent-ink);
-        background-color: rgba(255, 255, 255, 0.7);
+
+        background-color: rgba(255, 255, 255, 0.9);
 
         z-index: 1;
     }    
     
-    .landing article.two{
-        right: var(--xs-width);
-        top: 250px;
-
-        color: black;
-        border: 4px solid var(--accent-ink);
-        background-color: rgba(255, 255, 255, 0.8);;
-
-        transform: skewX(2deg);
-        z-index: 3;
-
-        box-shadow: 3px 3px 0 0 var(--accent-ink);
-    }    
-    
     .landing article.three{
-        right: 10vh;
-        top: 63vh;
-
-        transform: skew(2deg);
+        right: 70px;
+        top: 400px;
 
         color: black;
-        border: 4px solid var(--accent-ink);
         background-color: rgba(255, 255, 255, 0.9);
         
         z-index: 2;
@@ -258,4 +247,22 @@ section.landing{
 
     /*svg arrow idea! dont forget*/
 
+}
+
+@media(min-width:1320px){
+    .landing article.one{
+        right: 230px;
+        top: 295px;
+    }
+
+    .landing article.three{
+        right: 320px;
+        top: 480px;
+    }
+}
+
+@media (min-width:1400px){
+    section.landing inner-column .info-wrapper{
+        padding-left: 68.025px;
+    }
 }

@@ -1,10 +1,12 @@
 
 html {
     --ink: rgb(246, 245, 245);
-    --page: blue;
+
     --faded: rgb(255 255 255 / .8);
     --accent-ink: rgb(79 39 26/ .7);
     --link: rgb(49, 76, 183);
+    --black: rgb(0 0 0/.8);
+    --coffee: rgb(130, 135, 183);
 
     --xs-height: 1vh;
     --xs-width:1vw;
@@ -16,60 +18,89 @@ html {
     --large-width:8vw;
     --xlarge-height: 11vh;    
     --xlarge-width: 11vw;
-    
-
-    background-image: radial-gradient(circle at 0% 0,
-    hsl(4deg 58% 20%) 0%,
-    hsl(6deg 58% 20%) 4%,
-    hsl(7deg 57% 20%) 9%,
-    hsl(9deg 57% 20%) 13%,
-    hsl(11deg 58% 20%) 17%,
-    hsl(13deg 58% 21%) 22%,
-    hsl(14deg 57% 21%) 26%,
-    hsl(16deg 57% 21%) 30%,
-    hsl(16deg 54% 21%) 35%,
-    hsl(13deg 48% 19%) 39%,
-    hsl(10deg 40% 17%) 43%,
-    hsl(9deg 33% 15%) 48%,
-    hsl(7deg 26% 13%) 52%,
-    hsl(5deg 19% 12%) 57%,
-    hsl(0deg 12% 10%) 61%,
-    hsl(0deg 5% 8%) 65%,
-    hsl(0deg 5% 8%) 70%,
-    hsl(20deg 6% 10%) 74%,
-    hsl(45deg 7% 11%) 78%,
-    hsl(60deg 8% 12%) 83%,
-    hsl(86deg 10% 14%) 87%,
-    hsl(100deg 12% 15%) 91%,
-    hsl(120deg 13% 17%) 96%,
-    hsl(137deg 15% 18%) 100%
-  );
 }
-/* 
-Wanted to make this in light mode and the other in dark.,
 
 body{
-    background-image: radial-gradient(circle at 0% 0,
-    hsl(240deg 38% 72%) 5%,
-    hsl(206deg 60% 67%) 24%,
-    hsl(190deg 54% 64%) 31%,
-    hsl(167deg 42% 69%) 35%,
-    hsl(148deg 38% 75%) 39%,
-    hsl(168deg 43% 72%) 43%,
-    hsl(182deg 44% 70%) 46%,
-    hsl(192deg 54% 72%) 51%,
-    hsl(200deg 58% 72%) 55%,
-    hsl(208deg 58% 71%) 62%,
-    hsl(219deg 52% 71%) 72%,
-    hsl(240deg 38% 72%) 100%
-    ); 
+  background-image: radial-gradient(circle at 0% 0,
+  hsl(4deg 58% 20%) 0%,
+  hsl(7deg 57% 20%) 9%,
+  hsl(9deg 57% 20%) 13%,
+  hsl(137deg 15% 18%) 30%,
+  hsl(7deg 26% 13%) 52%,
+  hsl(5deg 19% 12%) 57%,
+  hsl(0deg 12% 10%) 61%,
+  hsl(0deg 5% 8%) 65%,
+  hsl(0deg 5% 8%) 70%,
+  hsl(20deg 6% 10%) 74%,
+  hsl(45deg 7% 11%) 78%,
+  hsl(60deg 8% 12%) 83%,
+  hsl(137deg 15% 18%) 87%,
+  hsl(100deg 12% 15%) 91%,
+  hsl(120deg 13% 17%) 96%,
+  hsl(137deg 15% 18%) 100%
+);
 }
-*/
+
+/* Wanted to make this in light mode and the other in dark., */
+
+
+html { 
+  background: url('/images/paper-texture.jpg') no-repeat 
+    center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  mix-blend-mode: multiply;
+}
+
+@media (prefers-color-scheme: light){
+
+  /* html{
+  --ink: rgb(12, 12, 12);
+  --page: blue;
+  --faded: rgb(0 0 0 / .6);
+  --accent-ink: rgb(255 255 255/ .7);
+  --link: rgb(255 255 255);
+  }
+
+  body{
+    background-image: radial-gradient(circle at 0% 0,
+    hsl(206deg 60% 67%) 0%,
+    hsl(190deg 54% 64%) 13%,
+    hsl(240deg 38% 72%) 30%,
+    hsl(190deg 54% 64%) 52%,
+    rgb(131, 161, 216) 65%,
+    hsl(219deg 52% 71%)70%,
+    hsl(190deg 54% 64%) 83%,
+    hsl(206deg 54% 61%) 87%,
+    hsl(245deg 30% 65%) 91%,
+    hsl(240deg 38% 72%) 96%
+  );
+  }
+
+
+  header nav a >img{
+    filter: invert(1);
+  }
+
+  header nav a:hover >img {
+    background-color: red;
+  }  */
+
+html { 
+    mix-blend-mode: difference;
+  }
+}
+
 
 body{
     color: var(--ink);
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
+
+
 }
 
 inner-column{
@@ -89,7 +120,7 @@ a:hover{
 
 .loud-voice{
     font-weight: 800;
-    font-size: clamp(3.5rem,15vw,11rem);
+    font-size: clamp(2.7rem,12vw,11rem);
     letter-spacing: 4px;
 }
 
@@ -107,7 +138,6 @@ a:hover{
 }
 
 p{
-    max-width: 50ch;
     font-weight:400;
     font-size: clamp(1rem, 1.2vw, 1.5rem);
     margin-bottom: var(--small-height);
