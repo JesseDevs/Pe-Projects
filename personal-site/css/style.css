@@ -11,7 +11,7 @@ section.landing{
     position: relative;
 }
 
-.landing div.info-wrapper{
+div.info-wrapper{
     padding-left: var(--med-width);
     animation: slide-in 1000ms;
 
@@ -97,12 +97,12 @@ article-grid{
 }
 
 
-article.one{
+.landing article.one{
     box-shadow:
     0 3px 0 0 var(--coffee);
 }
 
-article.three{
+.landing article.three{
     margin-bottom: 0;
 
 }
@@ -166,8 +166,6 @@ article.three{
     transform: translate(0.2em, 0.2em);
     box-shadow: 0 0 0 1px transparent;
     color: var(--ink);
-
-    border: 3px solid transparent;
     
     cursor: pointer;
 }
@@ -235,7 +233,7 @@ article.three{
         position: relative;
     }
 
-    article p{
+    .landing article p{
         margin: 0;
         text-align: center;
     }

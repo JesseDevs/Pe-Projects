@@ -4,67 +4,21 @@
 } */
 
 section.projects div.info-wrapper{
-    padding-left: var(--large-height);
+    padding-left: var(--med-width);
 }
 
 section.projects article{
     padding-bottom: var(--xlarge-height);
 }
 
-div.project-links a.git{
-    padding: 0;
-    width: 30px;
-    height: auto;
-
-
-    box-shadow: 0 0 0 4px var(--faded);
-    background-color: var(--faded);
-    border-radius: 5px;
-
-    transition: all ease-in .2s ;
-    overflow: hidden;
-}
-
-div.project-links a.git:hover{
-    box-shadow: 0 0 0 2px var(--link);
-    transition: all ease-in .2s ;
-
-    background-color: var(--link);
-
-    transform: scale(1.2);
-}
-
-section.projects a:hover >img{
-    filter: invert(1);
-}
-
-div.project-links a:last-of-type {
-    width: 175px;
-    padding: 1vh 1vw;
-    text-align: center;
-    font-weight: 500;
-
-    color: var(--accent-ink);
-    background-color: var(--faded);
-    box-shadow: 3px 3px 0 0 var(--ink);
-
-    font-size: clamp(1rem, 1.4vw, 1.3rem);
-    transition: all ease-in .2s ;
-}
-
-div.project-links a:last-of-type:hover{
-    background-color: var(--link);
-    transform: translate(0.2em, 0.2em);
-    box-shadow: 0 0 0 1px transparent;
-    color: var(--ink);
-    
-    cursor: pointer;
+section.projects span{
+    font-weight: 300;
 }
 
 
 div.project-links{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
 
@@ -73,11 +27,40 @@ div.project-links{
     max-width: 52ch;
 }
 
-div.project-links a{
-    padding: var(--xs-height) var(--xs-width);
+
+.project-links a{
+    padding: 20px 20px;
+    max-width: fit-content;
+    font-weight: 500;
+
+    color: var(--black);
+
+    background-color: var(--faded);
+    box-shadow: 3px 3px 0 0 var(--ink);
+    border: 3px solid var(--coffee);
+    border-radius: 5px;
+
+    transition: all ease-in .2s ;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
 }
 
 
+.project-links a:hover {
+    background-color: var(--link);
+    transform: translate(0.2em, 0.2em);
+    box-shadow: 0 0 0 1px transparent;
+    color: var(--ink);
+
+    border: 3px solid transparent;
+    
+    cursor: pointer;
+}
+
+/* $Project Images */
+
+.project-image{
+    margin-top: var(--med-width);
+}
 
 
 

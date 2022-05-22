@@ -77,17 +77,17 @@ div.overlay::after{
 @media (prefers-color-scheme:light){
   div.overlay::after{
     background: radial-gradient(circle at 0% 0,
-    rgb(99, 143, 179) 0%,
-    rgb(139, 129, 177) 13%,
-    rgb(114, 102, 159) 30%,
-    rgb(181, 153, 217) 52%,
-    rgb(204, 181, 234) 61%,
+    rgb(168, 193, 212) 0%,
+    rgb(177, 129, 129) 18%,
+    rgb(181, 148, 148) 30%,
+    rgb(218, 180, 190) 52%,
+    rgb(234, 181, 214) 61%,
     rgb(99, 143, 179) 65%,
     rgb(114, 154, 187) 70%,
-    rgb(181, 153, 217) 83%,
+    rgb(217, 153, 178) 83%,
 
     rgb(113, 158, 195) 96%,
-    rgb(181, 153, 217) 100%);
+    rgb(217, 153, 170) 100%);
   }
 
   html{
@@ -98,6 +98,10 @@ div.overlay::after{
     --link: rgb(49, 76, 183);
     --black: white;
     --coffee: rgb(130, 135, 183);
+  }
+
+  header inner-column{
+    background-color: rgba(244, 241, 241, 0.1);
   }
 
 }
@@ -125,7 +129,7 @@ a:hover{
 
 .attention-voice{
   font-weight: 700;
-  font-size: clamp(2.5rem,10vw,8rem);
+  font-size: clamp(2.3rem,9vw,8rem);
 
   margin-bottom: var(--small-height);
 }

@@ -10,7 +10,7 @@ header{
 
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    background-color: rgba(228 ,228 ,228 ,0.02)
+    background-color: rgba(0 0 0/0.3)
 }
 
 header inner-column {
@@ -36,6 +36,9 @@ header nav{
 header nav a{
     transition: all ease-in .2s ;
     position: relative;
+
+    padding-top: var(--small-height);
+    padding-bottom: var(--small-height);
 }
 
 header nav a:before{
@@ -65,7 +68,7 @@ header nav a:hover::before{
 
 header nav span{
     font-weight: 500;
-    font-size: clamp(1.05rem,1.8vw,1.3rem)
+    font-size: clamp(1.2rem,1.8vw,1.3rem);
 }
 
 @media (min-width:800px){
