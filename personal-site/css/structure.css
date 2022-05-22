@@ -18,9 +18,11 @@ html {
     --large-width:8vw;
     --xlarge-height: 11vh;    
     --xlarge-width: 11vw;
+
+    /* for some reason the html needs a background color so that the mix blend will work. */
 }
 
-body{
+div.overlay, body, html{
   background-image: radial-gradient(circle at 0% 0,
   hsl(4deg 58% 20%) 0%,
   hsl(7deg 57% 20%) 9%,
@@ -44,15 +46,14 @@ body{
 /* Wanted to make this in light mode and the other in dark., */
 
 
-html { 
+body { 
   background: url('../images/paper-texture-2.jpg') no-repeat 
-    center center fixed; 
+  center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
-  mix-blend-mode: multiply;
 }
 
 @media (prefers-color-scheme: light){
@@ -89,8 +90,9 @@ html {
     background-color: red;
   }  */
 
-html { 
+body { 
     mix-blend-mode: difference;
+
   }
 }
 
@@ -99,6 +101,15 @@ body{
     color: var(--ink);
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
+
+}
+
+div.overlay{
+  width: 100%;
+  height: auto;
+
+  mix-blend-mode: multiply;
+
 }
 
 inner-column{
