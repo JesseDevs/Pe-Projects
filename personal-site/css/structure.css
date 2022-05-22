@@ -45,7 +45,7 @@ div.overlay{
   display: flex;	
   flex-direction: column;	
   min-height: 100vh;
-  mix-blend-mode: multiply;
+
 }
 
 div.overlay::after{
@@ -69,7 +69,36 @@ div.overlay::after{
   hsl(137deg 15% 18%) 87%,
   hsl(100deg 12% 15%) 91%,
   hsl(120deg 13% 17%) 96%,
-  hsl(137deg 15% 18%) 100%);;
+  hsl(137deg 15% 18%) 100%);
+  mix-blend-mode: multiply;
+
+}
+
+@media (prefers-color-scheme:light){
+  div.overlay::after{
+    background: radial-gradient(circle at 0% 0,
+    rgb(99, 143, 179) 0%,
+    rgb(139, 129, 177) 13%,
+    rgb(114, 102, 159) 30%,
+    rgb(181, 153, 217) 52%,
+    rgb(204, 181, 234) 61%,
+    rgb(99, 143, 179) 65%,
+    rgb(114, 154, 187) 70%,
+    rgb(181, 153, 217) 83%,
+
+    rgb(113, 158, 195) 96%,
+    rgb(181, 153, 217) 100%);
+  }
+
+  html{
+    --ink: rgb(16, 16, 16);
+    
+    --faded: rgb(0 0 0 / .8);
+    --accent-ink: blue;
+    --link: rgb(49, 76, 183);
+    --black: white;
+    --coffee: rgb(130, 135, 183);
+  }
 
 }
 
