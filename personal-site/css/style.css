@@ -110,6 +110,7 @@ article.three{
 .landing article p{
     font-weight: 300;
     font-style: oblique;
+
 }
 
 .landing article a{
@@ -170,28 +171,6 @@ article.three{
     
     cursor: pointer;
 }
-
-/* .landing .info-wrapper ul img{
-    border: 3px solid var(--coffee);
-    background-color: var(--faded);
-    border-radius: 5px;
-
-    width: 30px;
-    height: 30px;
-
-    transition: all ease-in .2s ;
-    overflow: hidden;
-
-}
-
-.landing .info-wrapper ul img:hover{
-    box-shadow: 0 0 0 2px var(--link);
-    transition: all ease-in .2s ;
-
-    background-color: var(--link);
-
-    transform: scale(1.2);
-} */
 
 @media(min-width:700px){
     section.landing inner-column .info-wrapper{
@@ -254,6 +233,11 @@ article.three{
 
     .landing inner-column{
         position: relative;
+    }
+
+    article p{
+        margin: 0;
+        text-align: center;
     }
 
     article-grid.connect{
@@ -327,10 +311,22 @@ article.three{
         padding-top: 20px;
     }
 
-    section.landing article p{
+    .landing article a{
+  
+        padding: 10px;
+    
+        max-width: fit-content;
+        text-decoration: underline;
+
+    }
+
+    section.landing article p,
+    section.landing article a{
         text-align: center;
         margin: 0 auto;
         font-size: clamp(.8rem, 1vw, 1.2rem);
     }
+
+
 }
 

@@ -25,28 +25,6 @@ html {
 }
 
 
-@media (prefers-color-scheme: dark){
-
-  div.overlay{
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: radial-gradient(circle at 0% 0,
-  rgb(176, 203, 223) 0%,
-  hsl(190deg 54% 64%) 13%,
-  hsl(240deg 38% 72%) 30%,
-  hsl(190deg 54% 64%) 52%,
-  rgb(131, 161, 216) 65%,
-  hsl(219deg 52% 71%)70%,
-  hsl(190deg 54% 64%) 83%,
-  hsl(206deg 54% 61%) 87%,
-  hsl(245deg 30% 65%) 91%,
-  hsl(240deg 38% 72%) 96%);
-  }
-
-}
-
 body{
     color: var(--ink);
     font-family: 'Work Sans', sans-serif;
@@ -67,6 +45,7 @@ div.overlay{
   display: flex;	
   flex-direction: column;	
   min-height: 100vh;
+  mix-blend-mode: multiply;
 }
 
 div.overlay::after{
@@ -91,7 +70,7 @@ div.overlay::after{
   hsl(100deg 12% 15%) 91%,
   hsl(120deg 13% 17%) 96%,
   hsl(137deg 15% 18%) 100%);;
-  mix-blend-mode: multiply;
+
 }
 
 inner-column{

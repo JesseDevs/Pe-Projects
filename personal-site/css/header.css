@@ -49,8 +49,10 @@ header nav a:before{
     display: block;
     background-color: var(--coffee);
     transform: translate3d(0,5px,0);
-    transition: all .2s;
+    transition: all ease-in .2s;
     opacity: 0;
+
+    pointer-events: none;
 }
 
 header nav a:hover{
