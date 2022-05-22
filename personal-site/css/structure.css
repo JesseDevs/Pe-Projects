@@ -1,6 +1,6 @@
 
 html {
-    --ink: rgb(246, 245, 245);
+    --ink: rgb(244, 240, 240);
 
     --faded: rgb(255 255 255 / .8);
     --accent-ink: rgb(79 39 26/ .7);
@@ -25,30 +25,15 @@ html {
 }
 
 
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: dark){
 
-  /* 
-
- html{
-  --ink: rgb(12, 12, 12);
-  --page: blue;
-  --faded: rgb(0 0 0 / .6);
-  --accent-ink: rgb(255 255 255/ .7);
-  --link: rgb(255 255 255);
-  }
-
-
-  header nav a >img{
-    filter: invert(1);
-  }
-
-  header nav a:hover >img {
-    background-color: red;
-  }  
-*/
-div.overlay::after{
+  div.overlay{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: radial-gradient(circle at 0% 0,
-  hsl(206deg 60% 67%) 0%,
+  rgb(176, 203, 223) 0%,
   hsl(190deg 54% 64%) 13%,
   hsl(240deg 38% 72%) 30%,
   hsl(190deg 54% 64%) 52%,
@@ -57,12 +42,10 @@ div.overlay::after{
   hsl(190deg 54% 64%) 83%,
   hsl(206deg 54% 61%) 87%,
   hsl(245deg 30% 65%) 91%,
-  hsl(240deg 38% 72%) 96%
-);
+  hsl(240deg 38% 72%) 96%);
+  }
+
 }
-
-} 
-
 
 body{
     color: var(--ink);
@@ -119,7 +102,7 @@ inner-column{
 }
 
 a:hover{
-  color: var(--link);
+  color: var(--coffee);
   box-shadow: 0 0 0 0;
 
 }

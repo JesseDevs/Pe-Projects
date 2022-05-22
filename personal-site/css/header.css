@@ -1,7 +1,16 @@
 /* $Header */
 
+/* body *{outline: 2px solid red;} */
+
 header{
-    box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 10px rgb(0 0 0/.5);
+
+    position: sticky;
+    top: 0%;
+
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(228 ,228 ,228 ,0.02)
 }
 
 header inner-column {
@@ -9,40 +18,57 @@ header inner-column {
 
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 
 header nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 
     padding-left: var(--med-width);
     animation: drop-in 1s;
+    transition: gap 1s ;
 }
 
 
 header nav a{
-    box-shadow: 0 0 0 3px var(--coffee);
-    background-color: var(--faded);
-    border-radius: 3px;
-
-    width: 30px;
-    height: 30px;
-
     transition: all ease-in .2s ;
-    overflow: hidden;
+    position: relative;
+}
+
+header nav a:before{
+    z-index: 5;
+    content:"";
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    left: 0;
+    display: block;
+    background-color: var(--coffee);
+    transform: translate3d(0,5px,0);
+    transition: all .2s;
+    opacity: 0;
 }
 
 header nav a:hover{
-    box-shadow: 0 0 0 2px var(--link);
     transition: all ease-in .2s ;
-
-    background-color: var(--link);
-
-    transform: scale(1.2);
 }
 
-header nav a:hover >img{
-    filter: invert(1);
+header nav a:hover::before{
+    opacity: 1;
+}
+
+header nav span{
+    font-weight: 500;
+    font-size: clamp(1.05rem,1.8vw,1.3rem)
+}
+
+@media (min-width:800px){
+    header nav{
+        gap: 80px;
+
+    }
 }

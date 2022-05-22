@@ -35,8 +35,6 @@ section.landing{
     display: flex;
     flex-direction: row;
 
-    padding-top:var(--small-height);
-    padding-bottom: var(--small-height);
     padding-right: var(--small-width);
 
     gap: 50px;
@@ -130,6 +128,70 @@ article.three{
 .landing article a:hover{
     transform: scale(1.05) translate(.3em, 0.2em);
 }
+
+.landing ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    animation: slide-in 1s;
+
+    margin-top: var(--med-height)
+}
+
+.landing ul img{
+    transition: all ease-in .1s ;
+}
+
+.landing ul img:hover{
+    filter: invert(1);
+}
+
+.landing li{
+    background-color: var(--faded);
+    border: 3px solid var(--coffee);
+    box-shadow: 3px 3px 0 0 var(--ink);
+    border-radius: 5px;
+
+    width: 35px;
+    height: 35px;
+
+    transition: all ease-in .2s ;
+}
+
+.landing li:hover {
+    background-color: var(--link);
+    transform: translate(0.2em, 0.2em);
+    box-shadow: 0 0 0 1px transparent;
+    color: var(--ink);
+
+    border: 3px solid transparent;
+    
+    cursor: pointer;
+}
+
+/* .landing .info-wrapper ul img{
+    border: 3px solid var(--coffee);
+    background-color: var(--faded);
+    border-radius: 5px;
+
+    width: 30px;
+    height: 30px;
+
+    transition: all ease-in .2s ;
+    overflow: hidden;
+
+}
+
+.landing .info-wrapper ul img:hover{
+    box-shadow: 0 0 0 2px var(--link);
+    transition: all ease-in .2s ;
+
+    background-color: var(--link);
+
+    transform: scale(1.2);
+} */
 
 @media(min-width:700px){
     section.landing inner-column .info-wrapper{
@@ -230,8 +292,8 @@ article.three{
     }
 
     .landing article.one{
-        right:0;
-        bottom:215px;
+        right:50px;
+        bottom:285px;
 
         color: black;
 
@@ -242,7 +304,7 @@ article.three{
     
     .landing article.three{
         right: 110px;
-        bottom: 10px;
+        bottom: 80px;
 
         color: black;
         background-color: rgba(255, 255, 255, 0.9);
