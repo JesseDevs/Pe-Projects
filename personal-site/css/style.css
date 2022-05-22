@@ -78,14 +78,18 @@ section.landing{
     margin-bottom: var(--small-height);
 }
 
-/*  $connect */
+/*  $connect $article-grid*/
+
+article-grid{
+    margin-top: var(--large-height);
+}
 
 .landing article{
     box-shadow: 3px 3px 0 0 transparent;
     margin-left: var(--med-width);
 
-    padding-top: var(--med-height);
-    padding-bottom: var(--med-height);
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     display: flex;
     flex-direction: column;
@@ -133,9 +137,9 @@ article.three{
     }
 }
 
-@media (min-width:800px) and (max-width:1160px){
+@media (min-width:650px) and (max-width:1160px){
 
-    inner-column.connect{
+    article-grid.connect{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -145,7 +149,7 @@ article.three{
         margin: 0;
         align-items: center;
         justify-content: space-evenly;
-        height: 250px;
+        min-height: 250px;
         padding-left: 0;
 
         position: relative;
@@ -186,23 +190,24 @@ article.three{
 
 @media (min-width:1160px){
 
-    p.connect {
-        visibility: hidden;
+    .landing inner-column{
+        position: relative;
     }
-    inner-column.connect{
+
+    article-grid.connect{
         padding: 0;
     }
 
-    .landing inner-column.connect{
+    .landing article-grid.connect{
         margin: 0;
     
     }
 
     .landing article {
         position: absolute;
-        padding: var(--small-height) var(--small-width);
+        padding: 20px;
 
-        box-shadow: 3px 3px 0 0 var(--ink);
+        box-shadow: 3px 3px 0 0 var(--faded);
         border: 4px solid var(--coffee);
         max-width: 275px;
         height: 200px;
@@ -220,13 +225,13 @@ article.three{
         font-size: 1rem;
     }
 
-    .landing article a{
-        padding: var(--xs-height);
+    .landing article{
+        margin: 0;
     }
 
     .landing article.one{
-        right: 125px;
-        top: 225px;
+        right:0;
+        bottom:215px;
 
         color: black;
 
@@ -236,8 +241,8 @@ article.three{
     }    
     
     .landing article.three{
-        right: 70px;
-        top: 400px;
+        right: 110px;
+        bottom: 10px;
 
         color: black;
         background-color: rgba(255, 255, 255, 0.9);
@@ -249,20 +254,21 @@ article.three{
 
 }
 
-@media(min-width:1320px){
-    .landing article.one{
-        right: 230px;
-        top: 295px;
-    }
-
-    .landing article.three{
-        right: 320px;
-        top: 480px;
-    }
-}
 
 @media (min-width:1400px){
     section.landing inner-column .info-wrapper{
         padding-left: 68.025px;
     }
+
+    section.landing article a{
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    section.landing article p{
+        text-align: center;
+        margin: 0 auto;
+        font-size: clamp(.8rem, 1vw, 1.2rem);
+    }
 }
+
