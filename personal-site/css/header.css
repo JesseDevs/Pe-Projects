@@ -26,10 +26,10 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 18px;
 
     padding-left: var(--med-width);
-    animation: drop-in 1s;
+    animation: drop-in 750ms;
     transition: gap 1s ;
 }
 
@@ -69,7 +69,7 @@ header nav a:hover::before{
 
 header nav span{
     font-weight: 500;
-    font-size: clamp(1.1rem,1.6vw,1.3rem);
+    font-size: clamp(1rem,1.4vw,1.3rem);
 }
 
 @media (min-width:800px){

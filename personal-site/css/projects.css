@@ -3,10 +3,6 @@
     outline: 2px solid red;
 } */
 
-section.projects div.info-wrapper{
-    padding-left: var(--med-width);
-}
-
 section.projects article{
     padding-bottom: var(--xlarge-height);
 

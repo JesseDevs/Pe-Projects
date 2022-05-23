@@ -11,12 +11,6 @@ section.landing{
     position: relative;
 }
 
-div.info-wrapper{
-    padding-left: var(--med-width);
-    animation: slide-in 1000ms;
-
-    margin-right: auto;
-}
 
 .landing div.info-wrapper{
 
