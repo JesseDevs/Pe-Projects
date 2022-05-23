@@ -49,11 +49,11 @@
             $adverb ="Quickly";
             $snack ="Nachos";
 
-            echo "<p class='madlib-one'> Today I went to the zoo. I saw a " . $animalOne . " " . $verb . " up and down in its tree. He " . $pastVerb . " " . $adverb . " through the large tunnel. I got some peanuts and passed
+            echo "<p class='madlib-one'>Today I went to the zoo. I saw a " . $animalOne . " " . $verb . " up and down in its tree. He " . $pastVerb . " " . $adverb . " through the large tunnel. I got some peanuts and passed
             them through the cage to a gigantic gray " . $animalTwo . " towering above my head. Feeding that animal made me hungry. I went to get a " . $snack . " It filled my stomach.</p>"
         ?>
 
-            <p class='madlib-two'> Today I went to the zoo. I saw a <?=$animalOne?>  <?=$verb?> up and down in its tree. He <?$pastVerb?> <?=$adverb?> through the large tunnel. I got some peanuts and passed them through the cage to a gigantic gray <?=$animalTwo?> towering above my head. Feeding that animal made me hungry. I went to get a <?=$snack?> It filled my stomach.</p>
+            <p class='madlib-two'>Today I went to the zoo. I saw a <?=$animalOne?> <?=$verb?> up and down in its tree. He <?$pastVerb?> <?=$adverb?> through the large tunnel. I got some peanuts and passed them through the cage to a gigantic gray <?=$animalTwo?> towering above my head. Feeding that animal made me hungry. I went to get a <?=$snack?> It filled my stomach.</p>
     </body>
 
 </html>
