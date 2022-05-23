@@ -77,17 +77,17 @@ div.overlay::after{
 @media (prefers-color-scheme:light){
   div.overlay::after{
     background: radial-gradient(circle at 0% 0,
-    rgb(168, 193, 212) 0%,
-    rgb(177, 129, 129) 18%,
-    rgb(181, 148, 148) 30%,
-    rgb(218, 180, 190) 52%,
-    rgb(234, 181, 214) 61%,
-    rgb(99, 143, 179) 65%,
-    rgb(114, 154, 187) 70%,
-    rgb(217, 153, 178) 83%,
+    rgb(204, 225, 240) 0%,
+    rgb(232, 248, 249) 18%,
+    rgb(245, 216, 216) 30%,
+    rgb(238, 217, 223) 52%,
+    rgb(241, 213, 231) 61%,
+    rgb(209, 232, 251) 65%,
+    rgb(183, 216, 244) 70%,
+    rgb(238, 221, 228) 83%,
 
-    rgb(113, 158, 195) 96%,
-    rgb(217, 153, 170) 100%);
+    rgb(187, 222, 250) 96%,
+    rgb(246, 237, 240) 100%);
   }
 
   html{
@@ -95,13 +95,13 @@ div.overlay::after{
     
     --faded: rgb(0 0 0 / .8);
     --accent-ink: blue;
-    --link: rgb(49, 76, 183);
+    --link: rgb(85, 201, 201);
     --black: white;
-    --coffee: rgb(130, 135, 183);
+    --coffee: rgb(10, 121, 121);
   }
 
   header inner-column{
-    background-color: rgba(244, 241, 241, 0.1);
+    background-color: rgba(244, 241, 241, 0.3);
   }
 
 }
