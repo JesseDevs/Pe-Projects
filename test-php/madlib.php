@@ -40,7 +40,6 @@
             */
 
             $personOne = "Jesse";
-            $personTwo = "Diana";
             $animalOne = "Tiger";
             $animalTwo= "Gorilla";
             $adjective = "Galantly";
