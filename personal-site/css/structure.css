@@ -139,6 +139,10 @@ a:hover{
   font-size: clamp(1.6rem,5vw,2.5rem);
 }
 
+h3.calm-voice{
+  margin-bottom: var(--small-height);
+}
+
 p{
     font-weight:400;
     font-size: clamp(1rem, 1.2vw, 1.5rem);

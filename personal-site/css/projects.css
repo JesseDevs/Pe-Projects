@@ -14,18 +14,12 @@ section.projects article{
     flex-direction: column;
 }
 
-section.projects h3.calm-voice{
-    margin-bottom: var(--small-height);
-  
-}
-
-
 section.projects article .container{
     max-width: 55ch;
 }
 
 section.projects article-grid{
-    margin-top: var(--med-width);
+    margin-top: var(--large-height);
 }
 
 section.projects picture{
@@ -35,6 +29,13 @@ section.projects picture{
 
     min-width: 380px;
     max-width: 50ch;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 div.project-links{
