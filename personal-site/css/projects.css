@@ -14,9 +14,6 @@ section.projects article .container{
     max-width: 55ch;
 }
 
-section.projects article-grid{
-    margin-top: var(--large-height);
-}
 
 section.projects picture{
     display: flex;

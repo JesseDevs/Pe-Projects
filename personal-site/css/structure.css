@@ -114,6 +114,11 @@ inner-column{
   
 }
 
+
+article-grid{
+  margin-top: var(--large-height);
+}
+
 div.info-wrapper{
   padding-left: var(--med-width);
   animation: slide-in 1000ms;
@@ -162,6 +167,8 @@ span{
   font-weight: 300;
   font-size: 1.2rem;
 }
+
+
 
 @keyframes drop-in {
   from {

@@ -25,8 +25,10 @@ header inner-column {
 header nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 18px;
+    justify-content: space-between;
+
+
+    width: 70%;
 
     padding-left: var(--med-width);
     animation: drop-in 750ms;
@@ -69,12 +71,21 @@ header nav a:hover::before{
 
 header nav span{
     font-weight: 500;
-    font-size: clamp(1rem,1.4vw,1.3rem);
+    font-size: clamp(1rem,1.5vw,1.4rem);
 }
+
+
+@media (min-width:500px){
+    header nav{
+        gap: 60px;
+        justify-content: flex-start;
+
+    }
+}
+
 
 @media (min-width:800px){
     header nav{
-        gap: 80px;
-
+        gap: 90px;
     }
 }
