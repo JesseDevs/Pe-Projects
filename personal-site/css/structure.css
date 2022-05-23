@@ -137,7 +137,6 @@ a:hover{
 .calm-voice{
   font-weight: 500;
   font-size: clamp(1.6rem,5vw,2.5rem);
-  
 }
 
 p{
@@ -145,6 +144,11 @@ p{
     font-size: clamp(1rem, 1.2vw, 1.5rem);
     margin-bottom: var(--small-height);
     line-height: 1.6;
+}
+
+span{
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 @keyframes drop-in {

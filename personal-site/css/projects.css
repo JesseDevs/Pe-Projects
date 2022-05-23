@@ -9,12 +9,33 @@ section.projects div.info-wrapper{
 
 section.projects article{
     padding-bottom: var(--xlarge-height);
+
+    display: flex;
+    flex-direction: column;
 }
 
-section.projects span{
-    font-weight: 300;
+section.projects h3.calm-voice{
+    margin-bottom: var(--small-height);
+  
 }
 
+
+section.projects article .container{
+    max-width: 55ch;
+}
+
+section.projects article-grid{
+    margin-top: var(--med-width);
+}
+
+section.projects picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 380px;
+    max-width: 50ch;
+}
 
 div.project-links{
     display: flex;
@@ -26,7 +47,6 @@ div.project-links{
     padding-bottom: var(--xs-height);
     max-width: 52ch;
 }
-
 
 .project-links a{
     padding: 20px 20px;
@@ -59,7 +79,41 @@ div.project-links{
 /* $Project Images */
 
 .project-image{
-    margin-top: var(--med-width);
+    margin-bottom: var(--med-width);
+
+}
+
+.project-image a{
+    overflow: hidden;
+    box-shadow: 3px 3px 0 0 var(--ink);
+    border: 4px solid var(--coffee);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all ease-in .2s ;
+}
+
+.project-image a:hover{
+    background-color: var(--link);
+    transform: translate(0.2em, 0.2em);
+    box-shadow: 0 0 0 1px transparent;
+
+    border: 3px solid transparent;
+    
+    cursor: pointer;
+}
+
+@media (min-width:800px){
+    section.projects article{
+        flex-direction: row-reverse;
+
+        gap: var(--med-width);
+
+    }
+
+    section.projects picture{
+        max-width: none;
+        margin-bottom: 0;
+    }
 }
 
 

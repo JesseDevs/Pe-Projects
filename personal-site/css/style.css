@@ -16,6 +16,9 @@ div.info-wrapper{
     animation: slide-in 1000ms;
 
     margin-right: auto;
+}
+
+.landing div.info-wrapper{
 
     max-width: 60ch;
 }
@@ -25,10 +28,7 @@ div.info-wrapper{
     /* font-style: italic; */
     margin-bottom: var(--med-height);
 
-    font-size: 1.2rem;
     color: var(--faded);
-    font-weight: 300;
-
 }
 
 .landing-actions{
