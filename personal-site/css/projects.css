@@ -20,7 +20,7 @@ section.projects picture{
     justify-content: center;
     align-items: center;
 
-    min-width: 380px;
+    padding-right: var(--small-width);
     max-width: 50ch;
 }
 
@@ -96,6 +96,13 @@ div.project-links{
     cursor: pointer;
 }
 
+@media (min-width:550px){
+
+    section.projects picture{
+        padding-right: auto;
+    }
+}
+
 @media (min-width:800px){
     section.projects article{
         flex-direction: row-reverse;
@@ -106,6 +113,7 @@ div.project-links{
 
     section.projects picture{
         max-width: none;
+        min-width: 380px;
         margin-bottom: 0;
     }
 }
