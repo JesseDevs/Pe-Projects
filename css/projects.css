@@ -118,5 +118,11 @@ div.project-links{
     }
 }
 
+@media(min-width: 1700px){
+    inner-column{
+        max-width: 1300px;
+    }
+}
+
 
 
