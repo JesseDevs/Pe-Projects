@@ -3,11 +3,22 @@
     outline: 2px solid red;
 } */
 
+.projects article-grid{
+    margin: 0;
+}
+
+.projects inner-column{
+    margin-bottom: var(--med-height);
+}
+
 section.projects article{
-    padding-bottom: var(--xlarge-height);
+    padding-top: var(--med-height);
+    padding-bottom: var(--med-height);
 
     display: flex;
     flex-direction: column;
+    box-shadow:
+    0 3px 0 0 var(--coffee);
 }
 
 section.projects article .container{

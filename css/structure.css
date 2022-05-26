@@ -4,9 +4,9 @@ html {
 
     --faded: rgb(255 255 255 / .8);
     --accent-ink: rgb(79 39 26/ .7);
-    --link: rgb(49, 76, 183);
+    --link: rgb(206, 148, 41);
     --black: rgb(0 0 0/.8);
-    --coffee: rgb(130, 135, 183);
+    --coffee: rgb(217, 165, 67);
 
 
     --xs-height: 1vh;
@@ -115,13 +115,23 @@ inner-column{
 }
 
 article-grid{
-  margin-top: var(--large-height);
+  margin-top: var(--med-height);
 
 }
 
 div.info-wrapper{
   padding-left: var(--med-width);
   margin-right: auto;
+}
+
+div.section-grid{
+  width: 100%;
+}
+
+p a:hover{
+  background-color: var(--link);
+  color: var(--ink);
+  text-decoration: none;
 }
 
 a:hover{
@@ -162,7 +172,7 @@ p{
 }
 
 span{
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.2rem;
 }
 
