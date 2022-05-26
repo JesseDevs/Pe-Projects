@@ -9,9 +9,9 @@ header{
     top: 0%;
     z-index: 10;
 
-    -webkit-backdrop-filter: blur(9px);
-    backdrop-filter: blur(9px);
-    background-color: rgba(0 0 0/0.3)
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur( 11px);
+    background-color: rgba(0 0 0/0.40)
 }
 
 header inner-column {
@@ -48,11 +48,11 @@ header nav a{
 header nav a:before{
     z-index: 5;
     content:"";
-    width: 100%;
+    width: 3px;
     position: absolute;
-    bottom: -10px;
-    height: 3px;
-    left: 0;
+    bottom: -12px;
+    height: 22px;
+    left: 46%;
     display: block;
     background-color: var(--coffee);
     transform: translate3d(0,5px,0);
