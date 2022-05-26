@@ -1,0 +1,139 @@
+
+/* body *{
+    outline: 2px solid red;
+} */
+
+.projects article-grid{
+    margin: 0;
+}
+
+.projects inner-column{
+    margin-bottom: var(--med-height);
+}
+
+section.projects article{
+    padding-top: var(--med-height);
+    padding-bottom: var(--med-height);
+
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+    0 3px 0 0 var(--coffee);
+}
+
+section.projects article .container{
+    max-width: 55ch;
+}
+
+
+section.projects picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-right: var(--small-width);
+    max-width: 50ch;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+div.project-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    padding-right: var(--xs-width);
+    padding-bottom: var(--xs-height);
+    max-width: 52ch;
+}
+
+.project-links a{
+    padding: 20px 20px;
+    max-width: fit-content;
+    font-weight: 500;
+
+    color: var(--black);
+
+    background-color: var(--faded);
+    box-shadow: 3px 3px 0 0 var(--ink);
+    border: 3px solid var(--coffee);
+    border-radius: 5px;
+
+    transition: all ease-in .2s ;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
+
+
+.project-links a:hover {
+    background-color: var(--link);
+    transform: translate(0.2em, 0.2em);
+    box-shadow: 0 0 0 1px transparent;
+    color: var(--ink);
+
+    border: 3px solid transparent;
+    
+    cursor: pointer;
+}
+
+/* $Project Images */
+
+.project-image{
+    margin-bottom: var(--med-width);
+
+}
+
+.project-image a{
+    overflow: hidden;
+    box-shadow: 3px 3px 0 0 var(--ink);
+    border: 4px solid var(--coffee);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all ease-in .2s ;
+}
+
+.project-image a:hover{
+    background-color: var(--link);
+    transform: translate(0.2em, 0.2em);
+    box-shadow: 0 0 0 1px transparent;
+
+    border: 3px solid transparent;
+    
+    cursor: pointer;
+}
+
+@media (min-width:550px){
+
+    section.projects picture{
+        padding-right: auto;
+    }
+}
+
+@media (min-width:800px){
+    section.projects article{
+        flex-direction: row-reverse;
+
+        gap: var(--med-width);
+
+    }
+
+    section.projects picture{
+        max-width: none;
+        min-width: 380px;
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width: 1700px){
+    inner-column{
+        max-width: 1300px;
+    }
+}
+
+
+

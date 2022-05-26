@@ -1,0 +1,20 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'structure.css';
+@import 'header.css';
+
+
+.goals article{
+    margin-bottom: var(--med-height);
+
+    padding-top: var(--med-height);
+    padding-bottom: var(--med-height);
+
+    max-width: 65ch;
+    box-shadow:
+    0 3px 0 0 var(--coffee);
+}
+
+.goals article-grid{
+    margin: 0;
+}
