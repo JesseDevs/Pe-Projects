@@ -25,10 +25,11 @@ header inner-column {
 header nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
 
 
-    width: 70%;
+    width: 100%;
 
     padding-left: var(--med-width);
     animation: drop-in 750ms;
@@ -79,7 +80,6 @@ header nav span{
     header nav{
         gap: 60px;
         justify-content: flex-start;
-
     }
 }
 
