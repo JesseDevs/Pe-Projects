@@ -1,4 +1,7 @@
-@import 'style.css';
+@import 'reset.css';
+@import 'setup.css';
+@import 'structure.css';
+@import 'header.css';
 
 
 .goals article{
