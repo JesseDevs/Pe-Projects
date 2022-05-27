@@ -94,9 +94,10 @@ function monsterGenerator($name, $favoriteFood, $age, $adopted, $portrait, $hue,
     ];
 
     return $monster;
+    $monsters.push($monster);
 
 }
 
-$chunky = monsterGenerator('Chunky','Shrimp', 12, false, 'https://static.wikia.nocookie.net/donkeykong/images/8/87/ChunkyKongDK64Image.jpg/revision/latest?cb=20080614061025', .6, 'play baseball' )
+$chunky = monsterGenerator('Chunky','coconuts', 12, false, 'https://static.wikia.nocookie.net/donkeykong/images/8/87/ChunkyKongDK64Image.jpg/revision/latest?cb=20080614061025', .6, 'play baseball' )
 
 ?>
