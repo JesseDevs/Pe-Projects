@@ -1,7 +1,7 @@
 <?php
     
     $codey =[
-        "id" => 001,
+        "id" => 1,
         "name" => "Codey",
         "favoriteFood" => "doritos",
         "age" => 9,
@@ -12,7 +12,7 @@
     ];
     
     $fragoo =[
-        "id" => 002,
+        "id" => 2,
         "name" => "Fragoo",
         "favoriteFood" => "cookies",
         "age" => 10,
@@ -23,7 +23,7 @@
     ];
 
     $limabean =[
-        "id" => 003,
+        "id" => 3,
         "name" => "Limabean",
         "favoriteFood" => "red vines",
         "age" => 5,
@@ -34,7 +34,7 @@
     ];
 
     $missReadsAlot =[
-        "id" => 004,
+        "id" => 4,
         "name" => "Miss Reads-Alot",
         "favoriteFood" => "ramen",
         "age" => 12,
@@ -45,7 +45,7 @@
     ];
         
     $mrBanana =[
-        "id" => 005,
+        "id" => 5,
         "name" => "Mr.Banana",
         "favoriteFood" => "twinkies",
         "age" => 8,
@@ -56,7 +56,7 @@
     ];
         
     $orangina =[
-        "id" => 006,
+        "id" => 6,
         "name" => "Orangina",
         "favoriteFood" => "oranges",
         "age" => 11,
@@ -67,7 +67,7 @@
     ];
         
     $shadow =[
-        "id" => 007,
+        "id" => 7,
         "name" => "Shadow",
         "favoriteFood" => "only brown M&Ms",
         "age" => 7,
@@ -82,8 +82,9 @@
 
 <?php
 
-function monsterGenerator($name, $favoriteFood, $age, $adopted, $portrait, $hue, $hobby){
+function monsterGenerator($id, $name, $favoriteFood, $age, $adopted, $portrait, $hue, $hobby){
     $monster = [
+        "id" => $id,
         "name" => $name,
         "favoriteFood" => $favoriteFood,
         "age" => $age,
@@ -96,7 +97,7 @@ function monsterGenerator($name, $favoriteFood, $age, $adopted, $portrait, $hue,
     return $monster;
 }
 
-$chunky = monsterGenerator('Chunky','coconuts', 12, false, 'images/chunky.jpg', .6, 'play baseball' );
+$chunky = monsterGenerator(8, 'Chunky','coconuts', 12, false, 'images/chunky.jpg', .6, 'play baseball' );
 
 $monsters[]= $chunky;
 
