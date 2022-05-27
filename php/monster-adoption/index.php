@@ -14,21 +14,21 @@
 
             // Set human readable status
         if ($status == 1){
-            $story = "I am " . $monster['age'] . " years old. I'm excited to be going to a happy home that lets me eat as much " . $monster['favoriteFood'] . " as I want!";
+            $story ="I am " . $monster['age'] . " years old. I'm excited to be going to a happy home that lets me eat as much " . $monster['favoriteFood'] . " as I want!";
             $status = "Adopted!";
         } else {
-            $story = "I am " . $monster['age'] . " years old. I love to " . $monster['hobby'] . "! My favorite thing to eat is " . $monster['favoriteFood'] . ". Yum! Can't get enough.";
+            $story ="I am " . $monster['age'] . " years old. I love to " . $monster['hobby'] . "! My favorite thing to eat is " . $monster['favoriteFood'] . ". Yum! Can't get enough.";
             $status = "Needs a home! ";
         }?>
 
             <article style='background-color: rgb(255 255 255/<?=$hue?>)' class='monster-card <?=$id?>' id ='<?=$id?>'>
                 <picture class ='portrait'>
-                    <img src= '<?=$portrait?>'>
+                    <img src='<?=$portrait?>'>
                 </picture>
                 <div class='info-wrapper'>
                     <h2 class='name'> <?=$name?> </h2> 
-                    <p class= 'story'> <?=$story?></p> 
-                    <p class= 'status'> <?=$status?> </p> 
+                    <p class='story'> <?=$story?></p> 
+                    <p class='status'> <?=$status?> </p> 
                 </div>
             </article>
 
