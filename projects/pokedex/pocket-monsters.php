@@ -31,6 +31,7 @@ $pocketMonsters = [
       'chinese' => '妙蛙草',
       'french' => 'Herbizarre',
     ],
+    'evolve' => 1,
     'type' => [
       0 => 'Grass',
       1 => 'Poison',

@@ -1,0 +1,80 @@
+@import 'reset.css';
+@import 'setup.css';
+
+div.poke-card{
+    width: 250px;
+    height: 250px;
+
+}
+
+.fire{
+    background-color: rgb(230,94,76);
+}
+
+.water{
+    background-color: rgb(230,94,76);
+}
+
+.grass{
+    background-color: lime;
+}
+    
+.fighting{
+    background-color:  rgb(230,94,76);
+}
+
+.normal{
+    background-color:  rgb(230,94,76);
+}
+
+.flying{
+    background-color: lime;
+}    
+
+.poison{
+    background-color:  rgb(230,94,76);
+}
+
+.ground{
+    background-color:  rgb(230,94,76);
+}
+
+.rock{
+    background-color: lime;
+}
+
+.bug{
+    background-color:  rgb(230,94,76);
+}
+
+.ghost{
+    background-color:  rgb(230,94,76);
+}
+
+.electric{
+    background-color: lime;
+}
+    
+.psychic{
+    background-color:  rgb(230,94,76);
+}
+
+.ice{
+    background-color:  rgb(230,94,76);
+}
+
+.dragon{
+    background-color: lime;
+}
+
+.dark{
+    background-color:  rgb(230,94,76);
+}
+
+.steel{
+    background-color: rgb(195,194,215);
+}
+
+.fairy{
+    background-color:rgb(239,176,250);
+}

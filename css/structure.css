@@ -87,7 +87,7 @@ div.overlay::after{
 
 inner-column{
   max-width: 1100px;
-  padding: var(--med-height) var(--small-width);
+  padding: var(--small-height) var(--small-width);
   
 }
 
