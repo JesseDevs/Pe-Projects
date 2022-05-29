@@ -3,6 +3,7 @@
 <main>
     <inner-column>
 
+    <?php include(loop.php) ?>
 
 
 
