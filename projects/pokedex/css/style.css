@@ -1,80 +1,102 @@
 @import 'reset.css';
 @import 'setup.css';
+@import 'header.css';
 
-div.poke-card{
-    width: 250px;
-    height: 250px;
-
+inner-column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
 }
+
+article.poke-card{
+    width: 33%;
+    height: 150px;
+    border: 2px solid black;
+
+    position: relative;
+}
+
+/* div.circle{
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 2%;
+    right: 2%;
+} */ */
 
 .fire{
     background-color: rgb(230,94,76);
 }
 
 .water{
-    background-color: rgb(230,94,76);
+    background-color: rgb(109,172,248);
 }
 
 .grass{
-    background-color: lime;
+    background-color: rgb(158,214,100);
 }
     
 .fighting{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(158,90,77);
 }
 
 .normal{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(189,188,176);
 }
 
 .flying{
-    background-color: lime;
+    background-color: rgb(131,162,249);
 }    
 
 .poison{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(159,97,158);
 }
 
 .ground{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(231,203,106);
 }
 
 .rock{
-    background-color: lime;
+    background-color: rgb(203,189,124);
 }
 
 .bug{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(198,209,74);
 }
 
 .ghost{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(122,116,208);
 }
 
 .electric{
-    background-color: lime;
+    background-color: rgb(249,230,95);
 }
-    
+
 .psychic{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(233,111,179);
 }
 
 .ice{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(170,239,252);
 }
 
 .dragon{
-    background-color: lime;
+    background-color: rgb(134,118,246);
 }
 
 .dark{
-    background-color:  rgb(230,94,76);
+    background-color:  rgb(131,100,84);
 }
 
 .steel{
-    background-color: rgb(195,194,215);
+    background-color: rgb(195,193,218);
 }
 
 .fairy{
     background-color:rgb(239,176,250);
 }
+

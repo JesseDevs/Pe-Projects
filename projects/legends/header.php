@@ -17,13 +17,14 @@
 </head>
 <body>
 
-    <header>
+    <header class="doc-header">
         <inner-column>
-            
-            <picture>
-
-            <img src="images/pokemon-logo.png" alt="">
-            </picture>
-
+            <nav>
+                <p>logo</p>
+                <a href="#">One</a>
+                <a href="#">Two</a>
+                <a href="#">Three</a>
+                <a href="#">Four</a>
+            </nav>
         </inner-column>    
     </header>
