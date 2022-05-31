@@ -339,31 +339,26 @@ foreach ($legends as $legend) {
             <img src=<?= $portrait ?> alt="">
         </picture>
         <div class="info-wrapper">
-            <h2><?= $name ?> <span><?= $nickname ?></span></h2>
-            <h3><?= $title ?></h3>
-
-            <!-- <p><em><?= $role ?> Legend</em></p> -->
-
-            <p><?= $roleDetails ?></p>
-
-            <h2> Abilities </h2>
-
-            <h4><?= $passiveName ?></h4>
-            <ul>
-                <li><?= $passiveAbility ?></li>
-            </ul>
-
-            <h4><?= $tacticalName ?></h4>
-            <ul>
-                <li><?= $tacticalAbility ?></li>
-            </ul>
-
-            <h4><?= $ultimateName ?></h4>
-            <ul>
-                <li><?= $ultimateAbility ?></li>
-            </ul>
-
-            <p>"<?= $quote ?>"</p>
+            <div>
+                <h2><?= $name ?> <span><?= $nickname ?></span></h2>
+                <h3><?= $title ?></h3>
+                <!-- <p><em><?= $role ?> Legend</em></p> -->
+                <p><?= $roleDetails ?></p>
+                <h2> Abilities </h2>
+                <h4><?= $passiveName ?></h4>
+                <ul>
+                    <li><?= $passiveAbility ?></li>
+                </ul>
+                <h4><?= $tacticalName ?></h4>
+                <ul>
+                    <li><?= $tacticalAbility ?></li>
+                </ul>
+                <h4><?= $ultimateName ?></h4>
+                <ul>
+                    <li><?= $ultimateAbility ?></li>
+                </ul>
+                <p>"<?= $quote ?>"</p>
+            </div>
 
             <a href="<?= $details ?>"><span>MORE DETAILS</span></a>
 

@@ -13,6 +13,10 @@ inner-column{
 
 }
 
+main{
+    padding-bottom: var(--large-height);
+}
+
 article{
     display: flex;
     flex-direction: column;
@@ -33,7 +37,7 @@ div.info-wrapper{
     text-align: center;
 
     padding: 1rem ;
-    height:500px;
+    height: 575px;
 }
 
 h2 {
@@ -87,6 +91,11 @@ p:first-of-type{
 
     article{
         width: 48.999%;
+    }
+
+    div.info-wrapper{
+        min-height: 400px;
+        justify-content: space-between;
     }
 
 }
