@@ -1,6 +1,7 @@
 <?php
 
 $bloodhound = [
+    "selected" => false,
     "name" => "BloodHound",
     "nickname" => " ",
     "role" => "Recon",
@@ -19,6 +20,7 @@ $bloodhound = [
 ];
 
 $ash = [
+    "selected" => false,
     "name" => "Ash",
     "nickname" => " ",
     "role" => "Offensive",
@@ -38,6 +40,7 @@ $ash = [
 ];
 
 $bangalore = [
+    "selected" => true,
     "name" => "Bangalore",
     "nickname" => " ",
     "role" => "Offensive",
@@ -56,6 +59,7 @@ $bangalore = [
 ];
 
 $caustic = [
+    "selected" => false,
     "name" => "Caustic",
     "nickname" => " ",
     "role" => "Defensive",
@@ -74,6 +78,7 @@ $caustic = [
 ];
 
 $gibraltar = [
+    "selected" => true,
     "name" => "Gibraltar",
     "nickname" => '"Gibby"',
     "role" => "Defensive",
@@ -92,6 +97,7 @@ $gibraltar = [
 ];
 
 $fuse = [
+    "selected" => false,
     "name" => "Fuse",
     "nickname" => " ",
     "role" => "Offensive",
@@ -110,6 +116,7 @@ $fuse = [
 ];
 
 $crypto = [
+    "selected" => false,
     "name" => "Crypto",
     "nickname" => " ",
     "role" => "Recon",
@@ -128,6 +135,7 @@ $crypto = [
 ];
 
 $horizon = [
+    "selected" => false,
     "name" => "Horizon",
     "nickname" => " ",
     "role" => "Offensive",
@@ -146,6 +154,7 @@ $horizon = [
 ];
 
 $lifeline = [
+    "selected" => false,
     "name" => "Lifeline",
     "nickname" => "Heal-bot",
     "role" => "Support",
@@ -164,6 +173,7 @@ $lifeline = [
 ];
 
 $loba = [
+    "selected" => false,
     "name" => "Loba",
     "nickname" => " ",
     "role" => "Support",
@@ -182,6 +192,7 @@ $loba = [
 ];
 
 $mirage = [
+    "selected" => true,
     "name" => "Mirage",
     "nickname" => " ",
     "role" => "Offensive",
@@ -200,6 +211,7 @@ $mirage = [
 ];
 
 $madmaggie = [
+    "selected" => false,
     "name" => "Mad Maggie",
     "nickname" => " ",
     "role" => "Offensive",
@@ -219,6 +231,7 @@ $madmaggie = [
 ];
 
 $newcastle = [
+    "selected" => false,
     "name" => "Newcastle",
     "nickname" => " ",
     "role" => "Defesive",
@@ -237,6 +250,7 @@ $newcastle = [
 ];
 
 $octane = [
+    "selected" => false,
     "name" => "Octane",
     "nickname" => " ",
     "role" => "Offensive",
@@ -255,6 +269,7 @@ $octane = [
 ];
 
 $pathfinder = [
+    "selected" => false,
     "name" => "Pathfinder",
     "nickname" => " ",
     "role" => "Recon",
@@ -273,6 +288,7 @@ $pathfinder = [
 ];
 
 $rampart = [
+    "selected" => false,
     "name" => "Rampart",
     "nickname" => " ",
     "role" => "Defensive",
@@ -302,7 +318,6 @@ $legends = [
 foreach ($legends as $legend) {
 
     $name = $legend['name'];
-
     $nickname = $legend['nickname'];
     $role = $legend['role'];
     $title = $legend['title'];
@@ -321,6 +336,7 @@ foreach ($legends as $legend) {
     $release = $legend['release'];
     $details =  $legend['details'];
     $roleDetails = " ";
+    $banner = "";
 
     // if ($role == "Recon") {
 
@@ -332,14 +348,24 @@ foreach ($legends as $legend) {
     // } else {
     //     $roleDetails = "Support legends can aid their squad by providing healing or loot.";
     // }; 
+
+    if ($legend['selected']) {
+        $banner = "<p class='banner'> selected </p>";
+        $class = 'selected';
+    } else {
+        $banner = "";
+        $class = "";
+    }
+
 ?>
 
     <article class='legends <?= $name ?>'>
         <picture>
             <img src=<?= $portrait ?> alt="">
         </picture>
-        <div class="info-wrapper">
+        <div class="info-wrapper <?= $class ?> ">
             <div>
+                <?= $banner ?>
                 <h2><?= $name ?> <span><?= $nickname ?></span></h2>
                 <h3><?= $title ?></h3>
                 <!-- <p><em><?= $role ?> Legend</em></p> -->
