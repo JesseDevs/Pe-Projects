@@ -29,12 +29,14 @@ article{
 .banner {
     text-transform: uppercase;
     font-weight: 600;
+    transform: skewY(10deg);
     color: hsl(0,100%,50%);
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 0 2px rgb(30, 30, 31);
+    box-shadow: 0 0 0 2px rgb(43, 121, 230);
+    padding: 10px;
     position: absolute;
     top: -45%;
-    left: 0;
+    left: -1%;
     width: 100%;
 }
 
