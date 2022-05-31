@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>[[insert Title]]</title>
-    <meta name ='description' content="[[Insert description]]">
+    <meta name='description' content="[[Insert description]]">
     <meta property="og:image" content="images/default-meta.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,16 +16,21 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
 
     <header class="doc-header">
         <inner-column>
             <nav>
-                <p>logo</p>
-                <a href="#">One</a>
-                <a href="#">Two</a>
-                <a href="#">Three</a>
-                <a href="#">Four</a>
+
+                <picture>
+                    <img src="images/apex-white-icon.svg" alt="">
+                </picture>
+
+                <h1>MEET THE LEGENDS</h1>
+
+                <p>It takes grit, talent, and a lot of luck to become a legend. Pick your favorite and see what their unique set of skills can do for your squad.</p>
+
             </nav>
-        </inner-column>    
+        </inner-column>
     </header>

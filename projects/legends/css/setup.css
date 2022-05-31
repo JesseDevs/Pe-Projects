@@ -15,7 +15,8 @@ html {
 	--xlarge-height: 11vh;    
 	--xlarge-width: 11vw;
 
-	background-color: rgb(255,255,255);
+	background-color: rgb(227 225 219);
+	color: rgb(26 25 25);
 }
 
 *,
@@ -45,7 +46,7 @@ article-grid {
   	width: 100%;
   	margin-right: auto;
 	margin-left: auto;
-	padding: 10vh 1rem;
+	padding: var(--small-height) 1rem;
 }
 
 a {
