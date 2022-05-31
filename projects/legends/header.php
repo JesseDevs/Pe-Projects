@@ -7,7 +7,7 @@
 
     <title>Legends</title>
     <meta name='description' content="Apex Legends descriptions">
-    <meta property="og:image" content="images/metainfo.png">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/legends/images/metainfo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
