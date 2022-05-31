@@ -30,8 +30,8 @@ article{
     text-transform: uppercase;
     font-weight: 600;
     color: hsl(0,100%,50%);
-    background-color: rgb(196, 212, 236);
-    box-shadow: 0 0 0 2px rgb(43, 121, 230);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 2px rgb(30, 30, 31);
     position: absolute;
     top: -45%;
     left: 0;

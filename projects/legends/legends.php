@@ -359,11 +359,11 @@ foreach ($legends as $legend) {
 
 ?>
 
-    <article class='legends <?= $name ?>'>
+    <article class=' <?= $name ?>  <?= $class ?> '>
         <picture>
             <img src=<?= $portrait ?> alt="">
         </picture>
-        <div class="info-wrapper <?= $class ?> ">
+        <div class="info-wrapper">
             <div>
                 <?= $banner ?>
                 <h2><?= $name ?> <span><?= $nickname ?></span></h2>
