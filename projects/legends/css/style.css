@@ -2,3 +2,74 @@
 @import 'setup.css';
 @import 'header.css';
 
+
+inner-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1100px;
+
+    flex-wrap: wrap;
+
+}
+
+div.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+
+    text-align: center;
+
+    padding: 1rem ;
+    height: 600px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+h2:nth-of-type(2){
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: var(--xs-height);
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin: var(--xs-height);
+}
+
+
+p:first-of-type{
+    margin: .3rem;
+}
+
+@media (min-width:700px){
+
+    inner-column{
+        flex-direction: row;
+        gap: 1rem;
+
+        overflow: hidden;
+
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    inner-column article{
+        width: 47.999%;
+    }
+}
+
+/* @media (min-width:1100px){
+
+    inner-column article{
+        width: 31.99999%;
+    }
+} */

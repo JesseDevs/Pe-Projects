@@ -1,11 +1,18 @@
+header {
+    box-shadow: 0px 3px 10px rgb(99, 99, 99)
 
+}
 
-header inner-column {
+header {
     background: url('https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-red-grit-texture-xl.jpg.adapt.768w.jpg');
     background-position: center;
     background-size: cover;
 
-    padding: var(--med-height) 1rem;
+    color: rgb(244 243 243);
+}
+
+header inner-column{
+    padding: var(--med-height) var(--small-width);
 }
 
 header h1 {

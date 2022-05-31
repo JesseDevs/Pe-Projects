@@ -78,7 +78,7 @@ $gibraltar = [
     "nickname" => '"Gibby"',
     "role" => "Defensive",
     "title" => "Shielded Fortress",
-    "quote" => "“Try to move me; it'll be fun.”",
+    "quote" => "Try to move me; it'll be fun.",
 
     "tactical" => ["DOME OF PROTECTION", "Blocks incoming and outgoing attacks."],
 
@@ -339,13 +339,13 @@ foreach ($legends as $legend) {
         </picture>
         <div class="info-wrapper">
             <h2><?= $name ?> <span><?= $nickname ?></span></h2>
+            <h3><?= $title ?></h3>
 
             <p><em><?= $role ?> Legend</em></p>
 
             <p><?= $roleDetails ?></p>
 
-            <h3><?= $title ?></h3>
-            <p><?= $quote ?></p>
+            <h2> Abilities </h2>
 
             <h4><?= $passiveName ?></h4>
             <ul>
@@ -361,6 +361,8 @@ foreach ($legends as $legend) {
             <ul>
                 <li><?= $ultimateAbility ?></li>
             </ul>
+
+            <p>"<?= $quote ?>"</p>
 
             <a href="<?= $details ?>"><span>MORE DETAILS</span></a>
 
