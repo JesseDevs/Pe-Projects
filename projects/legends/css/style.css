@@ -2,7 +2,6 @@
 @import 'setup.css';
 @import 'header.css';
 
-
 inner-column{
     display: flex;
     flex-direction: column;
@@ -10,20 +9,31 @@ inner-column{
     align-items: stretch;
     max-width: 1100px;
 
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+    padding: var(--small-height) 0;
+
 
 }
 
 div.info-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: stretch;
 
     text-align: center;
 
     padding: 1rem ;
-    height: 600px;
+    height:500px;
 }
 
 h2 {
@@ -32,17 +42,35 @@ h2 {
 }
 
 h2:nth-of-type(2){
+    font-size: 1.7rem;
     margin-top: 20px;
 }
 
 h3 {
     font-size: 1.4rem;
-    margin-top: var(--xs-height);
 }
 
 h4 {
     font-size: 1.25rem;
-    margin: var(--xs-height);
+    margin: 10px;
+    color: rgb(200 60 52);
+}
+
+ul:last-of-type{
+    margin-bottom: 15px;
+}
+
+div.info-wrapper a{
+    margin: 15px;
+    background: rgb(200 60 52);
+    width: fit-content;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 3px solid rgb(26 25 25);
+    color: rgb(227 225 219);;
+    
 }
 
 
@@ -50,26 +78,36 @@ p:first-of-type{
     margin: .3rem;
 }
 
-@media (min-width:700px){
+@media (min-width:650px){
+    inner-column{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    article{
+        width: 48.999%;
+    }
+
+}
+
+@media (min-width:1000px){
 
     inner-column{
         flex-direction: row;
-        gap: 1rem;
+        flex-wrap: wrap;
 
-        overflow: hidden;
-
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
     }
 
-    inner-column article{
-        width: 47.999%;
+    article{
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: stretch;
+        padding: var(--med-height) 0;
     }
-}
 
-/* @media (min-width:1100px){
-
-    inner-column article{
-        width: 31.99999%;
+    article > *{
+        min-width: 50%;
     }
-} */
+};

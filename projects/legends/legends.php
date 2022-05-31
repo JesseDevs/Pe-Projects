@@ -322,16 +322,17 @@ foreach ($legends as $legend) {
     $details =  $legend['details'];
     $roleDetails = " ";
 
-    if ($role == "Recon") {
+    // if ($role == "Recon") {
 
-        $roleDetails = "Recon legends can gather valuable intel, such as enemy whereabouts or the next ring location.";
-    } else if ($role == "Offensive") {
-        $roleDetails = "Offensive legends have abilities that are useful in combat.";
-    } else if ($role == "Defenseive") {
-        $roleDetails = "Defensive legends can provide cover or fortify an area, making it safer for their squad.";
-    } else {
-        $roleDetails = "Support legends can aid their squad by providing healing or loot.";
-    }; ?>
+    //     $roleDetails = "Recon legends can gather valuable intel, such as enemy whereabouts or the next ring location.";
+    // } else if ($role == "Offensive") {
+    //     $roleDetails = "Offensive legends have abilities that are useful in combat.";
+    // } else if ($role == "Defenseive") {
+    //     $roleDetails = "Defensive legends can provide cover or fortify an area, making it safer for their squad.";
+    // } else {
+    //     $roleDetails = "Support legends can aid their squad by providing healing or loot.";
+    // }; 
+?>
 
     <article class='legends <?= $name ?>'>
         <picture>
@@ -341,7 +342,7 @@ foreach ($legends as $legend) {
             <h2><?= $name ?> <span><?= $nickname ?></span></h2>
             <h3><?= $title ?></h3>
 
-            <p><em><?= $role ?> Legend</em></p>
+            <!-- <p><em><?= $role ?> Legend</em></p> -->
 
             <p><?= $roleDetails ?></p>
 
