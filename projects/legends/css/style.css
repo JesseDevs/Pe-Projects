@@ -151,6 +151,7 @@ p:first-of-type{
         align-items: center;
         justify-content: stretch;
         padding: var(--med-height) 0;
+        height: fit-content;
     }
 
     article > *{
