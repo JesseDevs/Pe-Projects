@@ -35,10 +35,11 @@ article{
     box-shadow: 0 0 0 2px rgb(43, 121, 230);
     padding: 10px;
     position: absolute;
-    top: -45%;
-    left: -1%;
+    top: -40%;
+    left: -5px;
     width: 100%;
 }
+
 
 .selected {
     background-color: rgb(196, 212, 236);
@@ -102,7 +103,7 @@ p:first-of-type{
     margin: .3rem;
 }
 
-@media (min-width:650px){
+@media (min-width:700px){
     inner-column{
         flex-direction: row;
         flex-wrap: wrap;
@@ -126,6 +127,17 @@ p:first-of-type{
         flex-direction: row;
         flex-wrap: wrap;
 
+    }
+
+    .banner{
+
+        top: 50%;
+        left: -101%;
+    }
+
+    .selected picture{
+        box-shadow: 5px 0 0 0 rgb(43, 121, 230);
+        
     }
 
     article{
