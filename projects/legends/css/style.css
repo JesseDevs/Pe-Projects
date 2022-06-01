@@ -140,6 +140,11 @@ p:first-of-type{
         
     }
 
+    div.info-wrapper{
+        height: auto;
+        align-self: flex-end;
+    }
+
     article{
         width: auto;
         flex-direction: row;
