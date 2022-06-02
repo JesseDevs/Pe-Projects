@@ -10,7 +10,7 @@ inner-column{
 }
 
 article.poke-card{
-    width: 33%;
+    width: 100%;
     height: 150px;
     border: 2px solid black;
 
@@ -19,6 +19,11 @@ article.poke-card{
     position: relative;
 }
 
+@media (min-width: 500px){
+    article.poke-card{
+        width: 33%;
+    }
+}
 div{
     border-radius: 50%;
     width: 80px;
