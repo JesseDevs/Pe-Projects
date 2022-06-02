@@ -1,7 +1,7 @@
-<?php include('header.php')?> 
+<?php include('header.php') ?>
 
-  <main>  
-        <section class="landing" id="#home">
+<main>
+    <section class="landing" id="#home">
         <inner-column>
             <h1 class="loud-voice">Jesse&nbsp;Felix</h1>
             <div class="section-grid">
@@ -14,11 +14,11 @@
                         Currently under the mentorship of <a target="_blank" href="https://perpetual.education/">Perpetual Education</a>, exploring my skills by experimenting in a wide range of coding and design disciplines. I see myself continuing to challenge myself, to learn, and to do amazing things. Maybe with you?<br>
                     </p>
                     <div class="landing-actions">
-                        <a class="calm-voice" href="projects.html">Projects</a>
+                        <a class="calm-voice" href="projects.php">Projects</a>
                         <!--
                             <a class="calm-voice"  href="resume.html">Hire me!</a>
                         -->
-                
+
                     </div>
                     <ul>
                         <li><a target="social" href="https://twitter.com/Jesse_Devs"><img src="images/icons8-twitter.svg" alt=""></a></li>
@@ -28,14 +28,15 @@
                     </ul>
                 </div>
 
-                <?php include('connect.php')?>
-                
-                </div>
-            </inner-column>
-                
-        </section>
-    </main>
+                <?php include('connect.php') ?>
+
+            </div>
+        </inner-column>
+
+    </section>
+</main>
 </div>
 
 </body>
+
 </html>
