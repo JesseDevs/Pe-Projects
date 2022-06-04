@@ -37,13 +37,13 @@ $goals = [
 
 foreach ($goals as $goal) {
 
-    if (isset($goal['four'])) {
-        $goalFour = $goal['four'];
-    };
+    // if (isset($goal['four'])) {
+    //     $goalFour = $goal['four'];
+    // };
 
-    if (isset($goal['five'])) {
-        $goalFive = $goal['five'];
-    };
+    // if (isset($goal['five'])) {
+    //     $goalFive = $goal['five'];
+    // };
 
 ?>
 
@@ -53,9 +53,16 @@ foreach ($goals as $goal) {
             <li><?= $goal['one'] ?></li>
             <li><?= $goal['two'] ?></li>
             <li><?= $goal['three'] ?></li>
-            <li><?= $goalFour ?></li>
-            <li><?= $goalFive ?></li>
 
+            <?php if (isset($goal['four'])) {             ?>
+
+                <li><?= $goal['four'] ?></li>
+            <?php } ?>
+
+            <?php if (isset($goal['five'])) {             ?>
+
+                <li><?= $goal['five'] ?></li>
+            <?php } ?>
         </ul>
     </article>
 
