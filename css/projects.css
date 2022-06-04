@@ -52,7 +52,8 @@ div.project-links{
 
 .project-links a{
     padding: 20px 20px;
-    max-width: fit-content;
+    width: 270px;
+    text-align: center;
     font-weight: 500;
 
     color: var(--black);

@@ -24,8 +24,7 @@
 
 .landing-actions a,
 .landing article a {
-    width: fit-content;
-    /* max-width: 270px; */
+    width: 270px;
 
     padding: 20px 20px;
     text-align: center;
@@ -135,7 +134,7 @@
     article-grid.connect{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .landing article{

@@ -15,3 +15,33 @@
 .goals article-grid{
     margin: 0;
 }
+
+.goals li{
+    font-weight:300;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    line-height: 1.5;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+
+}
+
+.goals li::before{
+    border-radius: 50%;
+    background-color: var(--coffee);
+    width: 10px;
+    height: 10px;
+    display: block;
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+
+}
+
+
+li:last-of-type{
+    padding-bottom: 0;
+}
+
+

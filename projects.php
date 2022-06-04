@@ -1,49 +1,49 @@
-<?php include('header.php')?> 
+<?php include('header.php') ?>
 
 <main>
-        <section id="projects" class="projects">
-            <inner-column>
-                <div class="info-wrapper">
-                    <h2 class="attention-voice">Projects</h2>
+    <section id="projects" class="projects">
+        <inner-column>
+            <div class="info-wrapper">
+                <h2 class="attention-voice">Projects</h2>
 
-                    <span>Collection of my <strong>perpetually</strong> growing projects.</span>
+                <span>Perpetually growing and learning.</span>
 
-                    <article-grid>
-                        <article>
+                <article-grid>
+                    <article>
 
-                            <picture class="project-image">
-                                <a href="https://peprojects.dev/alpha-4/jesse/overwatch/"><img src="images/overwatch.jpg" alt="#"></a>
-                            </picture>
-                            
-                            <div class="container">
-                                <h3 class="calm-voice">Overwatch Site&nbsp;Replica</h3>
-                                <p>Created a replica of a website that sparked interest based on its layout and design choices. This version focuses on Overwatch, a video game that brings me entertainment.</p>
-                                <div class="project-links">
-                                
-                                    <a target="blank" class="calm-voice" href="https://peprojects.dev/alpha-4/jesse/overwatch/">View Project</a>
-                                    <a target="blank" class="calm-voice" href="https://github.com/JesseDevs/pe-projects/tree/main/overwatch">Github</a>
-                                </div>
+                        <picture class="project-image">
+                            <a href="https://peprojects.dev/alpha-4/jesse/overwatch/"><img src="images/overwatch.jpg" alt="#"></a>
+                        </picture>
+
+                        <div class="container">
+                            <h3 class="calm-voice">Overwatch Site&nbsp;Replica</h3>
+                            <p>Created a replica of a website that sparked interest based on its layout and design choices. This version focuses on Overwatch, a video game that brings me entertainment.</p>
+                            <div class="project-links">
+
+                                <a target="blank" class="calm-voice" href="https://peprojects.dev/alpha-4/jesse/overwatch/">View Project</a>
+                                <a target="blank" class="calm-voice" href="https://github.com/JesseDevs/pe-projects/tree/main/overwatch">Github</a>
                             </div>
-                            
-                        </article>
-                        <article>
+                        </div>
 
-                            <picture class="project-image">
-                                <a href="https://peprojects.dev/alpha-4/jesse/client-project/"><img src="images/we-paint.jpg" alt="#"></a>
-                            </picture>
-                            
-                            <div class="container">
-                                <h3 class="calm-voice">Client Project: "We&nbsp;Paint"</h3>
-                                <p>A project dedicated to a client looking to target a new audience for their company and differentiate themselves from their competitors. This required research, business communication, and design discussion.</p>
-                                <div class="project-links">
-                                
-                                    <a target="blank" class="calm-voice" href="https://peprojects.dev/alpha-4/jesse/client-project/">View Project</a>
-                                    <a target="blank" class="calm-voice" href="https://github.com/JesseDevs/pe-projects/tree/main/client-project">Github</a>
-                                </div>
+                    </article>
+                    <article>
+
+                        <picture class="project-image">
+                            <a href="https://peprojects.dev/alpha-4/jesse/client-project/"><img src="images/we-paint.jpg" alt="#"></a>
+                        </picture>
+
+                        <div class="container">
+                            <h3 class="calm-voice">Client Project: "We&nbsp;Paint"</h3>
+                            <p>A project dedicated to a client looking to target a new audience for their company and differentiate themselves from their competitors. This required research, business communication, and design discussion.</p>
+                            <div class="project-links">
+
+                                <a target="blank" class="calm-voice" href="https://peprojects.dev/alpha-4/jesse/client-project/">View Project</a>
+                                <a target="blank" class="calm-voice" href="https://github.com/JesseDevs/pe-projects/tree/main/client-project">Github</a>
                             </div>
-                            
-                        </article>
-                        <!--
+                        </div>
+
+                    </article>
+                    <!--
                         <article>
 
                             <picture class="project-image">
@@ -63,13 +63,14 @@
                         </article>
                         -->
 
-                    </article-grid>
-                </div>
-            </inner-column>
-        </section>
-    
-    </main>
-    </div>
+                </article-grid>
+            </div>
+        </inner-column>
+    </section>
+
+</main>
+</div>
 
 </body>
-</html>    
+
+</html>
