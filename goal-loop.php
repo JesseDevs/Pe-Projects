@@ -36,15 +36,6 @@ $goals = [
 ];
 
 foreach ($goals as $goal) {
-
-    // if (isset($goal['four'])) {
-    //     $goalFour = $goal['four'];
-    // };
-
-    // if (isset($goal['five'])) {
-    //     $goalFive = $goal['five'];
-    // };
-
 ?>
 
     <article>

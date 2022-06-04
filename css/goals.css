@@ -18,7 +18,7 @@
 
 .goals li{
     font-weight:300;
-    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-size: clamp(1.1rem, 1.2vh, 1.5rem);
     line-height: 1.5;
     padding-bottom: 15px;
     padding-top: 15px;
