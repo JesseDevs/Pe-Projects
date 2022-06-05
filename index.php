@@ -8,7 +8,7 @@
                 <div class="info-wrapper">
                     <span>Web Developer. UI&nbsp;/&nbsp;UX&nbsp;Designer.</span>
                     <p>
-                        I'm a Front-End Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I want to keep doing this! Which led me to making a change from Finance to Tech.
+                        I’m a Front-End Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I want to keep doing this! Which led me to making a change from Finance to Tech.
                     </p>
                     <p>
                         Currently under the mentorship of <a target="_blank" href="https://perpetual.education/">Perpetual Education</a>, exploring my skills by experimenting in a wide range of coding and design disciplines. I see myself continuing to challenge myself, to learn, and to do amazing things. Maybe with you?<br>

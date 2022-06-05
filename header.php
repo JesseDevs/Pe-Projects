@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jesse's Resume</title>
-    <meta name ='description' content="Personal site: Business card">
-    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/personal-site/images/metadata.png">
+    <title>Jesse. The one and only.</title>
+    <meta name='description' content="Personal site: Business card">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/images/metadata.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +18,10 @@
     <title>Resume Page. Hire me.</title>
 
 </head>
+
 <body>
     <div class="overlay">
-        
+
         <header>
             <inner-column>
                 <nav>
@@ -30,7 +32,7 @@
                     -->
                     <a href="goals.php"><span>Goals</span></a>
 
-                    
+
                 </nav>
             </inner-column>
         </header>
