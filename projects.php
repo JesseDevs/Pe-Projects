@@ -12,7 +12,7 @@
                     <article>
 
                         <picture class="project-image">
-                            <a href="https://peprojects.dev/alpha-4/jesse/overwatch/"><img src="images/overwatch.jpg" alt="#"></a>
+                            <a href="https://peprojects.dev/alpha-4/jesse/projects/overwatch/"><img src="images/overwatch.jpg" alt="#"></a>
                         </picture>
 
                         <div class="container">
@@ -20,8 +20,8 @@
                             <p>Created a replica of a website that sparked interest based on its layout and design choices. This version focuses on Overwatch, a video game that brings me entertainment.</p>
                             <div class="project-links">
 
-                                <a target="blank" class="calm-voice" href="https://peprojects.dev/alpha-4/jesse/overwatch/">View Project</a>
-                                <a target="blank" class="calm-voice" href="https://github.com/JesseDevs/pe-projects/tree/main/overwatch">Github</a>
+                                <a target="blank" class="calm-voice" href="https://peprojects.dev/alpha-4/jesse/projects/overwatch/">View Project</a>
+                                <a target="blank" class="calm-voice" href="https://github.com/JesseDevs/pe-projects/tree/main/projects/client-project">Github</a>
                             </div>
                         </div>
 
@@ -29,7 +29,7 @@
                     <article>
 
                         <picture class="project-image">
-                            <a href="https://peprojects.dev/alpha-4/jesse/client-project/"><img src="images/we-paint.jpg" alt="#"></a>
+                            <a href="https://peprojects.dev/alpha-4/jesse/projects/client-project/"><img src="images/we-paint.jpg" alt="#"></a>
                         </picture>
 
                         <div class="container">
@@ -37,8 +37,8 @@
                             <p>A project dedicated to a client looking to target a new audience for their company and differentiate themselves from their competitors. This required research, business communication, and design discussion.</p>
                             <div class="project-links">
 
-                                <a target="blank" class="calm-voice" href="https://peprojects.dev/alpha-4/jesse/client-project/">View Project</a>
-                                <a target="blank" class="calm-voice" href="https://github.com/JesseDevs/pe-projects/tree/main/client-project">Github</a>
+                                <a target="blank" class="calm-voice" href="https://peprojects.dev/alpha-4/jesse/projects/client-project/">View Project</a>
+                                <a target="blank" class="calm-voice" href="https://github.com/JesseDevs/pe-projects/tree/main/projects/overwatch">Github</a>
                             </div>
                         </div>
 
