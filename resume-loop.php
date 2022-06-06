@@ -2,35 +2,91 @@
 
 // wait do i need a loop for resume?
 
-$workExp = [
+$experiences = [
     [
-        'heading' => ['Educator', 'Lululemon'],
-        'text' =>  [
-            'Created lesson plans to engage over 20 students in a learning environment.',
-            'Taught and maintained various groups of students’ attention while thoroughly discussing material on a weekly basis.'
+        "type" => "job",
+        "role" => "Educator",
+        "company" => "Lululemon",
+        "startdate" => "2022",
+        "endData" => "Present",
+        "duties" => [ // description
+            "list item one sentences...",
+            "list item one sentences...",
         ],
-        'skills' => [' what did you learn //', 'stuff2'],
-        'date' => '2022 - Present',
+        "takaways" => "Longer story that is maybe optional",
+        "skills" => [
+            "book binding", "book keeping", "dynatmic templates"
+        ],
+        "specialNote" => "....",
     ],
     [
-        'heading' => ['Specialist', 'Apple'],
-        'text' =>  [
-            'Managing ambiguity, crafting decision quality, and remaining resilient on a daily basis.', 'Completed personal and customer goals by positioning an always available mindset.',
-            'Ability to communicate technical information to a non-technical audience.',
+        "type" => "job",
+        "role" => "Specialist",
+        "company" => "Apple",
+        "startdate" => "2019",
+        "endData" => "2022",
+        "duties" => [
+            "Managing ambiguity, crafting decision quality, and remaining resilient on a daily basis.",
+            "Ability to communicate technical information to a non-technical audience.",
             'Constantly searching for feedback and innovation to develop my skills in the company.',
             'Memorized, educated, and assisted clients on over 50 different technologies, plans, and services.'
         ],
-
-        'date' => '2019 - 2022',
+        "takaways" => "Longer story that is maybe optional",
+        "skills" => [
+            "book binding", "book keeping", "dynatmic templates"
+        ],
+        "specialNote" => "....",
     ],
     [
-        'heading' => ['College Mentor', 'College Spring'],
-        'text' =>  [
-            'Created lesson plans to engage over 20 students in a learning environment.',
-            'Taught and maintained various groups of students’ attention while thoroughly discussing material on a weekly basis.'
+        "type" => "job",
+        "role" => "College Mentor",
+        "company" => "CollegeSpring",
+        "startdate" => "2020",
+        "endData" => "2020",
+        "duties" => [
+            "Created lesson plans to engage over 20 students in a learning environment.",
+            'Taught and maintained various groups of students’ attention while thoroughly discussing material on a weekly basis',
         ],
-
-        'date' => '2020 - 2020',
+        "takaways" => "Longer story that is maybe optional",
+        "skills" => [
+            "book binding", "book keeping", "dynatmic templates"
+        ],
+        "specialNote" => "....",
     ],
+    [
+        "type" => "education",
+        "school" => "Cal State LA",
+        "subject" => "",
+        "major" => "Finance",
+        "startdate" => "2016",
+        "endData" => "2020",
+        "duties" => [
+            "list item one sentences...",
+            "list item one sentences...",
+        ],
+        "takaways" => "Longer story that is maybe optional",
+        "skills" => [
+            "book binding", "book keeping", "dynatmic templates"
+        ],
+        "specialNote" => "....",
+    ],
+    [
+        "type" => "education",
+        "school" => "Perpetual Education",
+        "subject" => "Design for the Web",
+        "major" => "",
+        "startdate" => "2022",
+        "endData" => "Present",
+        "duties" => [
+            "list item one sentences...",
+            "list item one sentences...",
+        ],
+        "takaways" => "Longer story that is maybe optional",
+        "skills" => [
+            "book binding", "book keeping", "dynatmic templates"
+        ],
+        "specialNote" => "....",
+    ],
+
 
 ];
