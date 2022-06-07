@@ -28,7 +28,7 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <p>Calculate the area of the room?</p>
+    <h2>Calculate the area of the room?</h2>
 
     <div class="field">
         <label for="">What is the length of the room?</label>
