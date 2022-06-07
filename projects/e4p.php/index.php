@@ -3,7 +3,7 @@
 <body>
 
     <main>
-        <inner-column>
+        <inner-column class="forms">
 
             <section class="one">
                 <?php include('paint-calc.php'); ?>
