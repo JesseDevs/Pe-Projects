@@ -7,7 +7,7 @@ inner-column.forms{
     align-items: center;
 }
 
-@media (min-width:700px){
+@media (min-width:800px){
     inner-column.forms{
         flex-direction: row;
         flex-wrap: wrap;
@@ -25,16 +25,8 @@ inner-column.forms section {
     justify-self: center;
 }
 
-section.one{
-    background-color: dodgerblue;
-}
-
-section.two {
-    background-color: forestgreen;
-}
-
 section.three {
-    background-color: moccasin;
+    background-color: forestgreen;
 }
 
 section.four{
@@ -59,22 +51,35 @@ label{
     display: block;
 }
 
+/* Section ONe */
 
-label{
+section.one{
+    background-color: dodgerblue;
+}
+
+section.one label{
     margin: 2vh auto;
 }
 
-button {
+section.one button {
     margin-top: 2vh;
     padding: 10px;
     width: 150px;
 }
 
-h2{
+section.one h2{
     font-weight: 600;
     font-size: 1.8rem;
     padding: 2rem 0;
     text-align: center;
 }
+
+/* Section two */
+
+section.two {
+    background-color: moccasin;
+}
+
+
 
 

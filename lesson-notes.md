@@ -58,22 +58,24 @@ We could set a min and max value for numbers as an attribute in the input. Text 
 
 ### Paint Caluculator
 
-    Need to establish a default for varibles.
 
-    $length
-    $width
+Need to establish a default for varibles.
 
-    $area = $length * $width
+$length
 
-    This will give us the area in square feet that needs to be cover.
+$width
 
-    Based on the area we will determine how many gallons of paint is needed.
-    
-    1 gallon = 350 square feet.
+$area = $length * $width
 
-    Display number of gallons needed.
+This will give us the area in square feet that needs to be cover.
 
-    Make a program that checks if the form has been submitted. When submitted I want it to check if there were values put into the form and are positive values.
+Based on the area we will determine how many gallons of paint is needed.
+
+1 gallon = 350 square feet.
+
+Display number of gallons needed.
+
+Make a program that checks if the form has been submitted. When submitted I want it to check if there were values put into the form and are positive values.
 
 **Quick Google**
 

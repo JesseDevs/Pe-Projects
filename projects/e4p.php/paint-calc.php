@@ -18,7 +18,7 @@ if (isset($_POST['submitted'])) {
     }
 
     $area = floatval($length) * floatval($width);
-    $paint = ceil($area / 250);
+    $paint = ceil($area / 350);
 
 ?>
     <article>
