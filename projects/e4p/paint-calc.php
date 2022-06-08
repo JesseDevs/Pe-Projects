@@ -27,9 +27,9 @@
                 $paint = ceil($area / 350);
 
             ?>
-                <article>
-                    <p class='feedback'> The ceiling of the room is <?= $area ?></p>
-                    <p class='feedback'> You'll need <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
+                <article class='feedback'>
+                    <p> The ceiling of the room is <?= $area ?></p>
+                    <p> You'll need <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
                 </article>
             <?php } ?>
 

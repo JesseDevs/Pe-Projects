@@ -2,3 +2,10 @@
 @import 'setup.css';
 @import 'forms.css';
 
+h1 {
+    font-size: 50px;
+}
+
+inner-column.forms a{
+    padding: 2rem;
+}

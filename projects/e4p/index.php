@@ -1,19 +1,25 @@
 <?php include('head.php'); ?>
+<header>
+    <inner-column>
+        <h1>Form Practice</h1>
+    </inner-column>
+</header>
+
 
 <body>
 
     <main>
-        <inner-column>
+        <inner-column class="forms">
 
-            <a href='paint-calc.php' class="one">
+            <a href='paint-calc.php'>
                 Paint Calculation
             </a>
 
-            <a href='self-checkout.php' class="one">
+            <a href='self-checkout.php'>
                 Self-Checkout
             </a>
-            <section class="three"></section>
-            <section class="four"></section>
+
+            <a href="simple-math.php"> Simple-Math</a>
 
         </inner-column>
 
