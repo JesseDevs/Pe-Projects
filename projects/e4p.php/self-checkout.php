@@ -96,36 +96,36 @@
 
                 <article class="field">
                     <div class="container">
-                        <label for="">How many Apples are you taking?</label>
+                        <label for="">How many <em>Apples</em> are you taking?</label>
                         <input type="number" name='quantityOne' value='<?= $quantityOne ?>' min='0'>
                     </div>
 
                     <div class="container">
-                        <label for="">Whats the price of the Apples you are taking?</label>
+                        <label for="">Whats the price of the <em>Apples</em> you are taking?</label>
                         <input type="number" name='priceOne' value='<?= $priceOne ?>' min='0'>
                     </div>
                 </article>
 
                 <article class="field">
                     <div class="container">
-                        <label for="">How many Oranges are you taking?</label>
+                        <label for="">How many <em>Oranges</em> are you taking?</label>
                         <input type="number" name='quantityTwo' value='<?= $quantityTwo ?>' min='0'>
                     </div>
 
                     <div class="container">
-                        <label for="">Whats the price of the Oranges you are taking?</label>
+                        <label for="">Whats the price of the <em>Oranges</em> you are taking?</label>
                         <input type="number" name='priceTwo' value='<?= $priceTwo ?>' min='0'>
                     </div>
                 </article>
 
                 <article class="field">
                     <div class="container">
-                        <label for="">How many Bananas are you taking?</label>
+                        <label for="">How many <em>Bananas</em> are you taking?</label>
                         <input type="number" name='quantityThree' value='<?= $quantityThree ?>' min='0'>
                     </div>
 
                     <div class="container">
-                        <label for="">Whats the price of the Bananas you are taking?</label>
+                        <label for="">Whats the price of the <em>Bananas</em> you are taking?</label>
                         <input type="number" name='priceThree' value='<?= $priceThree ?>' min='0'>
                     </div>
                 </article>

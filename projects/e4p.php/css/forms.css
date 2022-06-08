@@ -62,8 +62,7 @@ h2{
     }
 
     .field div{
-        min-width: 40%;
-        max-width: 45%;
+        width: 43%;
     }
 }
 
