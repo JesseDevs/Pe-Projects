@@ -1,47 +1,59 @@
-<?php
+<?php include('head.php'); ?>
 
-$length = '0';
-$width = '0';
+<body>
+    <inner-column>
+        <section class='one'>
 
-if (isset($_POST['submitted'])) {
+            <?php
 
-    if (isset($_POST['length'])) {
-        if ($_POST['length'] >= 0) {
-            $length = $_POST['length'];
-        }
-    }
+            $length = '0';
+            $width = '0';
 
-    if (isset($_POST['width'])) {
-        if ($_POST['width'] >= 0) {
-            $width = $_POST['width'];
-        }
-    }
+            if (isset($_POST['submitted'])) {
 
-    $area = floatval($length) * floatval($width);
-    $paint = ceil($area / 350);
+                if (isset($_POST['length'])) {
+                    if ($_POST['length'] >= 0) {
+                        $length = $_POST['length'];
+                    }
+                }
 
-?>
-    <article>
-        <p class='feedback'> The ceiling of the room is <?= $area ?></p>
-        <p class='feedback'> You'll need <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
-    </article>
-<?php } ?>
+                if (isset($_POST['width'])) {
+                    if ($_POST['width'] >= 0) {
+                        $width = $_POST['width'];
+                    }
+                }
 
-<form action="" method="post">
+                $area = floatval($length) * floatval($width);
+                $paint = ceil($area / 350);
 
-    <h2>How many gallons of paint do you need to cover the entire ceiling?</h2>
+            ?>
+                <article>
+                    <p class='feedback'> The ceiling of the room is <?= $area ?></p>
+                    <p class='feedback'> You'll need <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
+                </article>
+            <?php } ?>
 
-    <div class="field">
-        <label for="">What is the length of the ceiling?</label>
-        <input type="number" name='length' value='<?= $length ?>' min='0'>
-    </div>
+            <form action="" method="post">
 
-    <div class="field">
-        <label for="">What is the width of the ceiling?</label>
-        <input type="number" name='width' value='<?= $width ?>' min='0'>
-    </div>
+                <h2>How many gallons of paint do you need to cover the entire ceiling?</h2>
 
-    <button type="submit" name='submitted'>Calculate</button>
+                <div class="field">
+                    <label for="">What is the length of the ceiling?</label>
+                    <input type="number" name='length' value='<?= $length ?>' min='0'>
+                </div>
+
+                <div class="field">
+                    <label for="">What is the width of the ceiling?</label>
+                    <input type="number" name='width' value='<?= $width ?>' min='0'>
+                </div>
+
+                <button type="submit" name='submitted'>Calculate</button>
 
 
-</form>
+            </form>
+
+        </section>
+    </inner-column>
+</body>
+
+</html>

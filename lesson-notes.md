@@ -82,3 +82,27 @@ Make a program that checks if the form has been submitted. When submitted I want
 ciel(***number***) - Rounds up a to the next integer value.
 https://www.php.net/manual/en/function.ceil.php
 
+### Self Checkout
+
+1. Prompt for prices and quantities of 3 items.
+2. Calculate the subtotal of the items.
+3. Then calculate the tax. Tax rate = 5.5%
+4. Print out the lines of items with the quantity and total.
+5. Print out the subtotal, tax amount, and total.
+
+
+Going to make array that contains the price of the item and the quantity of that item.
+
+Take those variables and multiply them to get the total fo it.
+
+Add all 3 items totals together to get $subtotal
+
+Calulate the tax based on the subtotal
+
+Add together to get the total.
+
+Display all :)
+
+
+
+

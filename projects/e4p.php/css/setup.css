@@ -15,7 +15,24 @@ html {
 	--xlarge-height: 11vh;    
 	--xlarge-width: 11vw;
 
-	background-color: rgb(255,255,255);
+	color: rgb(241, 236, 236);
+
+	background: radial-gradient(circle at 0% 0,
+	hsl(4deg 58% 20%) 0%,
+	hsl(7deg 57% 20%) 9%,
+	hsl(9deg 57% 20%) 13%,
+	hsl(137deg 15% 18%) 30%,
+	rgb(41, 25, 23) 52%,
+	hsl(5deg 19% 12%) 57%,
+	rgb(43, 28, 28) 61%,
+  
+	rgb(37, 33, 33) 70%,
+  
+	rgb(29, 37, 43) 83%,
+  
+	hsl(100deg 12% 15%) 91%,
+	hsl(120deg 13% 17%) 96%,
+	rgb(39, 53, 52) 100%);;
 }
 
 *,

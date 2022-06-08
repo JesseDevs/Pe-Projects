@@ -3,11 +3,15 @@
 <body>
 
     <main>
-        <inner-column class="forms">
+        <inner-column>
 
-            <section class="one">
-                <?php include('paint-calc.php'); ?>
-            </section class="two">
+            <a href='paint-calc.php' class="one">
+                Paint Calculation
+            </a>
+
+            <a href='self-checkout.php' class="one">
+                Self-Checkout
+            </a>
             <section class="three"></section>
             <section class="four"></section>
 

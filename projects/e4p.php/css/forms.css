@@ -1,40 +1,17 @@
 
-inner-column.forms{
-    max-width: 1100px;
+inner-column{
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-@media (min-width:800px){
-    inner-column.forms{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    inner-column.forms section{
-        max-width: 49.999%;
-    }
-}
-
-inner-column.forms section {
+inner-column section {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-self: center;
-}
-
-section.three {
-    background-color: forestgreen;
-}
-
-section.four{
-    background-color: salmon;
-}
-
-section.five{
-    background-color: mediumorchid;
 }
 
 form,
@@ -53,33 +30,41 @@ label{
 
 /* Section ONe */
 
-section.one{
-    background-color: dodgerblue;
-}
-
-section.one label{
+label{
     margin: 2vh auto;
 }
 
-section.one button {
-    margin-top: 2vh;
+
+button {
+    margin-top: 10vh;
     padding: 10px;
     width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    
 }
 
-section.one h2{
+h2{
     font-weight: 600;
     font-size: 1.8rem;
     padding: 2rem 0;
     text-align: center;
+    box-shadow:0px 2px 0 0 rgb(224, 175, 84);
 }
 
-/* Section two */
+@media (min-width: 800px){
+    .field{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-section.two {
-    background-color: moccasin;
+    .field div{
+        min-width: 40%;
+        max-width: 45%;
+    }
 }
-
-
 
 
