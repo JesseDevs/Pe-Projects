@@ -34,10 +34,12 @@
             </a>
 
             <a href='self-checkout.php'>
-                Self-Checkout
+                Self Checkout
             </a>
 
-            <a href="simple-math.php"> Simple-Math</a>
+            <a href="simple-math.php"> Simple Math</a>
+
+            <a href="count-string.php"> Counting Characters</a>
 
         </inner-column>
 

@@ -19,6 +19,11 @@ article{
     padding: 2.5vh 1rem;
 }
 
+.feedback p,
+.feedback li{
+    padding: 1rem;
+}
+
 button,
 input,
 label{
