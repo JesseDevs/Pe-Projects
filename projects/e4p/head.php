@@ -16,3 +16,10 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
+<header class='forms'>
+    <inner-column>
+        <a href="index.php">
+            &#8592Home</a>
+    </inner-column>
+</header>
