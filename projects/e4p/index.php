@@ -29,17 +29,21 @@
     <main>
         <inner-column class="forms">
 
-            <a href='paint-calc.php'>
+            <a href='forms/area.php'>
+                Area
+            </a>
+
+            <a href='forms/paint-calc.php'>
                 Paint Calculation
             </a>
 
-            <a href='self-checkout.php'>
+            <a href='forms/self-checkout.php'>
                 Self Checkout
             </a>
 
-            <a href="simple-math.php"> Simple Math</a>
+            <a href="forms/simple-math.php"> Simple Math</a>
 
-            <a href="count-string.php"> Counting Characters</a>
+            <a href="forms/count-string.php"> Counting Characters</a>
 
         </inner-column>
 
