@@ -18,6 +18,12 @@ article {
     padding-top: 2rem;
 }
 
+picture{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
 div.info-wrapper{
     padding: 1rem 1rem 0 1rem;
 }
