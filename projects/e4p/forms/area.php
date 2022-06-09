@@ -37,15 +37,19 @@
 
                 <h2>Calculate the area of the room?</h2>
 
-                <div class="field">
-                    <label for="">What is the length of the room?</label>
-                    <input type="number" name='length' value='<?= $length ?>' min='0'>
-                </div>
+                <article class="field">
+                    <div class="container">
+                        <label for="">What is the length of the room?</label>
+                        <input type="number" name='length' value='<?= $length ?>' min='0'>
+                    </div>
+                </article>
 
-                <div class="field">
-                    <label for="">What is the width of the room?</label>
-                    <input type="number" name='width' value='<?= $width ?>' min='0'>
-                </div>
+                <article class="field">
+                    <div class="container">
+                        <label for="">What is the width of the room?</label>
+                        <input type="number" name='width' value='<?= $width ?>' min='0'>
+                    </div>
+                </article>
 
                 <button type="submit" name='submitted'>Calculate</button>
 

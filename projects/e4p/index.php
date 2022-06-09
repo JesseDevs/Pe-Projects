@@ -45,6 +45,8 @@
 
             <a href="forms/count-string.php"> Counting Characters</a>
 
+            <a href="forms/interest.php"> Simple Interest Computing</a>
+
         </inner-column>
 
     </main>
