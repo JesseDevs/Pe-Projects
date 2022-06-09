@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Exercises 4 Programmers: Forms</title>
-    <meta name='description' content="[[Insert description]]">
-    <meta property="og:image" content="images/default-meta.png">
+    <meta name='description' content="PHP Form -">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/images/metadata.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
