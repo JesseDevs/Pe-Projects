@@ -71,7 +71,7 @@
                     </div>
                 </article>
 
-                <button type="submit" name='submitted'>Calculate</button>
+                <button type="submit" name='submitted' formtarget="_blank">Calculate</button>
 
 
             </form>
