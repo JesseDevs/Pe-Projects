@@ -7,7 +7,11 @@ $products_data = json_decode($json, true);
 $products = $products_data["products"];
 
 
-foreach ($products as $product) { ?>
+foreach ($products as $product) {
+    $features = $product["features"];
+    $colors = $product["color"];
+
+?>
 
     <article class='card'>
         <picture>
@@ -18,6 +22,15 @@ foreach ($products as $product) { ?>
             <h2><?= $product['brand'] ?> <strong>-</strong> <?= $product['name'] ?></h2>
 
             <p class="attention-voice"><?= ucfirst($product['tagline']) ?></p>
+
+            <ul>
+                <?= include('feature-data.php') ?>
+            </ul>
+
+            <ul>
+                <?= include('color-data.php') ?>
+            </ul>
+
 
             <form action="" method="post">
                 <button type="submit" name='submitted'>Add To Cart</button>
