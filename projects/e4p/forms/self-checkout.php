@@ -5,18 +5,32 @@
         <section class='two'>
 
 
+
+
             <?php
-            $priceOne = 0;
-            $quantityOne = 0;
 
-            $priceTwo = 0;
-            $quantityTwo = 0;
+            function format($variable)
+            {
+                echo "<pre>";
+                echo "<code>";
+                print_r($variable);
+                echo "</code>";
+                echo "</pre>";
+            }
 
-            $priceThree = 0;
-            $quantityThree = 0;
+            format($_POST);
 
-            $subTotal = 0;
-            $tax = 0;
+            $priceOne = '';
+            $quantityOne = '';
+
+            $priceTwo = '';
+            $quantityTwo = '';
+
+            $priceThree = '';
+            $quantityThree = '';
+
+            $subTotal = '';
+            $tax = '';
 
 
             if (isset($_POST['submitted'])) {
@@ -97,36 +111,36 @@
                 <article class="field">
                     <div class="container">
                         <label for="">How many <em>Apples</em> are you taking?</label>
-                        <input type="number" name='quantityOne' value='<?= $quantityOne ?>' min='0'>
+                        <input type="number" name='quantityOne' value='<?= $quantityOne ?>' required min='0'>
                     </div>
 
                     <div class="container">
                         <label for="">Whats the price of the <em>Apples</em> you are taking?</label>
-                        <input type="number" name='priceOne' value='<?= $priceOne ?>' min='0'>
+                        <input type="number" name='priceOne' value='<?= $priceOne ?>' required min='0'>
                     </div>
                 </article>
 
                 <article class="field">
                     <div class="container">
                         <label for="">How many <em>Oranges</em> are you taking?</label>
-                        <input type="number" name='quantityTwo' value='<?= $quantityTwo ?>' min='0'>
+                        <input type="number" name='quantityTwo' value='<?= $quantityTwo ?>' required min='0'>
                     </div>
 
                     <div class="container">
                         <label for="">Whats the price of the <em>Oranges</em> you are taking?</label>
-                        <input type="number" name='priceTwo' value='<?= $priceTwo ?>' min='0'>
+                        <input type="number" name='priceTwo' value='<?= $priceTwo ?>' required min='0'>
                     </div>
                 </article>
 
                 <article class="field">
                     <div class="container">
                         <label for="">How many <em>Bananas</em> are you taking?</label>
-                        <input type="number" name='quantityThree' value='<?= $quantityThree ?>' min='0'>
+                        <input type="number" name='quantityThree' value='<?= $quantityThree ?>' required min='0'>
                     </div>
 
                     <div class="container">
                         <label for="">Whats the price of the <em>Bananas</em> you are taking?</label>
-                        <input type="number" name='priceThree' value='<?= $priceThree ?>' min='0'>
+                        <input type="number" name='priceThree' value='<?= $priceThree ?>' required min='0'>
                     </div>
                 </article>
 

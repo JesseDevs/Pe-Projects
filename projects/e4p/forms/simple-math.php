@@ -5,8 +5,20 @@
         <section class='three'>
             <?php
 
-            $num1 = '0';
-            $num2 = '0';
+            function format($variable)
+            {
+                echo "<pre>";
+                echo "<code>";
+                print_r($variable);
+                echo "</code>";
+                echo "</pre>";
+            }
+
+            format($_POST);
+
+
+            $num1 = '';
+            $num2 = '';
 
             if (isset($_POST['submitted'])) {
 
@@ -48,14 +60,14 @@
                 <article class="field">
                     <div class="container">
                         <label for="">Number 1?</label>
-                        <input type="number" name='num1' value='<?= $length ?>' min='0'>
+                        <input type="number" name='num1' value='<?= $length ?>' required min='0'>
                     </div>
                 </article>
 
                 <article class="field">
                     <div class="container">
                         <label for="">Number 2?</label>
-                        <input type="number" name='num2' value='<?= $width ?>' min='0'>
+                        <input type="number" name='num2' value='<?= $width ?>' required min='0'>
                     </div>
                 </article>
 

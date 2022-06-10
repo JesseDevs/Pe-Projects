@@ -5,6 +5,17 @@
         <section class='four'>
             <?php
 
+            function format($variable)
+            {
+                echo "<pre>";
+                echo "<code>";
+                print_r($variable);
+                echo "</code>";
+                echo "</pre>";
+            }
+
+            format($_POST);
+
             if (isset($_POST['submitted'])) {
                 $string = $_POST['string'];
                 $results = strlen($string);
@@ -33,12 +44,12 @@
 
             <form action="" method="post">
 
-                <h2>Lets do some simple math?</h2>
+                <h2>Going to count the characters in your word.</h2>
 
                 <article class="field">
                     <div class="container">
                         <label for="">Type a word? Or phrase?</label>
-                        <input type="text" name='string'>
+                        <input type="text" name='string' required>
                     </div>
                 </article>
 

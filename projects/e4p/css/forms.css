@@ -1,22 +1,40 @@
 
+header inner-column{
+    padding-bottom: 0;
+    padding-top: 2vh;
+}
+
+code, pre {
+    display: block;
+    background-color: black;
+    color: lime;
+    padding: 4px;
+    font-family: monospace;
+}
+
 inner-column{
     max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 0;
 }
 
 inner-column section {
     width: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-self: center;
 }
 
 form,
 article{
     padding: 2.5vh 1rem;
+}
+
+form{
+    padding-bottom: 0;
 }
 
 .feedback p,
@@ -41,7 +59,7 @@ label{
 
 
 button {
-    margin-top: 10vh;
+    margin-top: 4vh;
     padding: 10px;
     width: 150px;
     margin-left: auto;

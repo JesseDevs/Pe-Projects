@@ -5,9 +5,21 @@
         <section class='six'>
             <?php
 
-            $principal = '0';
-            $interest = '0';
-            $time = '0';
+            function format($variable)
+            {
+                echo "<pre>";
+                echo "<code>";
+                print_r($variable);
+                echo "</code>";
+                echo "</pre>";
+            }
+
+            format($_POST);
+
+
+            $principal = '';
+            $interest = '';
+            $time = '';
 
             if (isset($_POST['submitted'])) {
 
@@ -49,21 +61,21 @@
                 <article class="field">
                     <div class="container">
                         <label for="">What's the principal investment?</label>
-                        <input type="number" name='principal' min='0' placeholder="$1000">
+                        <input type="number" name='principal' required min='0' placeholder="$1000">
                     </div>
                 </article>
 
                 <article class="field">
                     <div class="container">
                         <label for="">What is the yearly interest?</label>
-                        <input type="number" name='interest' min='0' placeholder="10%" step=".01">
+                        <input type="number" name='interest' required min='0' placeholder="10%" step=".01">
                     </div>
                 </article>
 
                 <article class="field">
                     <div class="container">
                         <label for="">How long do you want to invest for?</label>
-                        <input type="number" name='time' min='0' placeholder="5">
+                        <input type="number" name='time' required min='0' placeholder="5">
                     </div>
                 </article>
 

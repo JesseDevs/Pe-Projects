@@ -6,8 +6,20 @@
 
             <?php
 
-            $length = '0';
-            $width = '0';
+            function format($variable)
+            {
+                echo "<pre>";
+                echo "<code>";
+                print_r($variable);
+                echo "</code>";
+                echo "</pre>";
+            }
+
+            format($_POST);
+
+
+            $length = '';
+            $width = '';
 
             if (isset($_POST['submitted'])) {
 
@@ -40,14 +52,14 @@
                 <article class="field">
                     <div class="container">
                         <label for="">What is the length of the ceiling?</label>
-                        <input type="number" name='length' value='<?= $length ?>' min='0'>
+                        <input type="number" name='length' value='<?= $length ?>' required min='0'>
                     </div>
                 </article>
 
                 <article class="field">
                     <div class="container">
                         <label for="">What is the width of the ceiling?</label>
-                        <input type="number" name='width' value='<?= $width ?>' min='0'>
+                        <input type="number" name='width' value='<?= $width ?>' required min='0'>
                     </div>
                 </article>
 
