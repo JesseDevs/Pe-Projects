@@ -21,10 +21,12 @@
 
 <body>
 
-    <header class="doc-header">
+    <header id="home">
         <inner-column>
             <nav>
-                <h1>Audiophile</h1>
+                <a href="#home">
+                    <h1>Audiophile</h1>
+                </a>
                 <!-- <a href="#">One</a>
                 <a href="#">Two</a>
                 <a href="#">Three</a>

@@ -2,6 +2,10 @@
 
 foreach ($colors as $color) { ?>
 
-    <li><?= ucfirst($color) ?></li>
+    <li class='colors <?= lcfirst($color) ?>'>
+        <input type="radio" name="color" id="">
+        <p><?= ucfirst($color) ?></p>
+
+    </li>
 
 <?php } ?>

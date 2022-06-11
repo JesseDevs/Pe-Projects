@@ -1,2 +1,37 @@
 @import 'reset.css';
 @import 'setup.css';
+
+
+/* $Header styles */
+
+header inner-column{
+    padding: var(--small-height) var(--med-width);
+}
+
+h1{
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+    color: rgb(249, 249, 249);
+}
+
+header{
+    background-color: rgb(121, 119, 115);
+}
+
+/* $Article Card styles */
+
+section{
+    margin-bottom: var(--large-height);
+}
+
+section > * {
+    padding: var(--small-height) var(--med-width);
+}
+
+h4{
+    font-weight: 400;
+    border-bottom: 1px solid rgb(121, 119, 115);
+    border-top: 1px solid rgb(121, 119, 115);
+    
+}

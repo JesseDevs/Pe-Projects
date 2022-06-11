@@ -45,7 +45,6 @@ article-grid {
   	width: 100%;
   	margin-right: auto;
 	margin-left: auto;
-	padding: var(--med-height) var(--small-width);
 }
 
 a {
