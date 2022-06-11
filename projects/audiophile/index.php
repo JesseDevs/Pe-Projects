@@ -39,7 +39,7 @@ $products = $products_data["products"];
                     <h3><?= $product['price'] ?>"</h3>
 
                     <form>
-                        <button type="submit" name='submitted'>Add To Cart</button>
+                        <button type="submit">Add To Cart</button>
                     </form>
                 </aside>
 
