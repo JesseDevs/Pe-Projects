@@ -59,24 +59,25 @@ div.project-links{
     color: var(--black);
 
     background-color: var(--faded);
-    box-shadow: 3px 3px 0 0 var(--ink);
     border: 3px solid var(--coffee);
     border-radius: 5px;
 
-    transition: all ease-in .2s ;
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    font-size: clamp(1.1rem, 1.2vw, 1.2rem);
+    background-image: linear-gradient(var(--link), var(--link));
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
 }
 
 
 .project-links a:hover {
-    background-color: var(--link);
-    transform: translate(0.2em, 0.2em);
-    box-shadow: 0 0 0 1px transparent;
     color: var(--ink);
 
-    border: 3px solid transparent;
+    border-color: var(--ink);
     
     cursor: pointer;
+    background-size: 100% 100%;
 }
 
 /* $Project Images */
@@ -87,22 +88,19 @@ div.project-links{
 }
 
 .project-image a{
-    overflow: hidden;
-    box-shadow: 3px 3px 0 0 var(--ink);
-    border: 4px solid var(--coffee);
+    outline:3px solid var(--coffee);
+    border: 3px solid var(--coffee);
     border-radius: 8px;
     overflow: hidden;
-    transition: all ease-in .2s ;
+
 }
 
 .project-image a:hover{
-    background-color: var(--link);
-    transform: translate(0.2em, 0.2em);
-    box-shadow: 0 0 0 1px transparent;
+    outline:3px solid var(--ink);
 
-    border: 3px solid transparent;
     
     cursor: pointer;
+
 }
 
 @media (min-width:550px){

@@ -24,7 +24,7 @@
 
 .landing-actions a,
 .landing article a {
-    width: 270px;
+    width: 280px;
 
     padding: 20px 20px;
     text-align: center;
@@ -32,24 +32,24 @@
 
     color: var(--black);
     background-color: var(--faded);
-    box-shadow: 3px 3px 0 0 var(--ink);
     border-radius: 5px;
     border: 3px solid var(--coffee);
 
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
-    transition: all ease-in .2s ;
+    font-size: clamp(1.1rem, 1.2vw, 1.2rem);
+    background-image: linear-gradient(var(--link), var(--link));
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
 }
+
 
 .landing-actions a:hover,
 .landing article a:hover{
-    background-color: var(--link);
-    transform: translate(0.2em, 0.2em);
-    box-shadow: 0 0 0 1px transparent;
+    border-color: var(--ink);
     color: var(--ink);
-
-    border: 3px solid transparent;
-    
     cursor: pointer;
+    background-size: 100% 100%;
 }
 
 .landing article{
@@ -101,7 +101,6 @@
 .landing li{
     background-color: var(--faded);
     border: 3px solid var(--coffee);
-    box-shadow: 3px 3px 0 0 var(--ink);
     border-radius: 5px;
 
     width: 35px;
@@ -112,8 +111,6 @@
 
 .landing li:hover {
     background-color: var(--link);
-    transform: translate(0.2em, 0.2em);
-    box-shadow: 0 0 0 1px transparent;
     color: var(--ink);
     
     cursor: pointer;

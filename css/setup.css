@@ -21,7 +21,7 @@ body {
   
 }
 
-main.page-content {
+main{
 	flex-grow: 1;
 }
 
