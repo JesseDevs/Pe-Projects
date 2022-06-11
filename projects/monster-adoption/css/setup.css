@@ -84,8 +84,8 @@ picture {
 
 picture img {
     display: block;
-    height: 400px;
-    width: 300px;
+    height: auto;
+    width: 100%;
 }
 
 svg {

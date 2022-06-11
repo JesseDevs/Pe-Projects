@@ -22,6 +22,7 @@ picture{
     display: flex;
     justify-self: center;
     align-items: center;
+
 }
 
 div.info-wrapper{
@@ -52,12 +53,6 @@ p.status{
 }
 
 @media (min-width:500px){
-    picture{
-        max-width: 375px;
-        height: auto;
-        margin-right: auto;
-        margin-left: auto;
-    }
 
     p{
         margin-right: auto;
@@ -105,16 +100,6 @@ p.status{
     article:last-of-type{
         border-top: 5px solid black;
         
-    }
-
-    picture{
-        max-height: 300px;
-        overflow: hidden;
-    }
-
-    article:first-of-type picture,
-    article:last-of-type{
-        max-height: none;
     }
 
     article:first-of-type,
