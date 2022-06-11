@@ -14,34 +14,39 @@ foreach ($products as $product) {
 ?>
 
     <article class='card'>
-        <picture>
-            <img src="<?= $product['image'] ?>" alt="">
-        </picture>
+
+        <h3><?= $product['brand'] ?></h3>
 
         <aside class="container">
-            <h2><?= $product['brand'] ?> <strong>-</strong> <?= $product['name'] ?></h2>
-
+            <picture>
+                <img src="<?= $product['image'] ?>" alt="">
+            </picture>
+            <h2><?= $product['name'] ?></h2>
             <p class="attention-voice"><?= ucfirst($product['tagline']) ?></p>
 
             <ul>
-                <?= include('feature-data.php') ?>
+                <?php include('color-data.php') ?>
             </ul>
-
-            <ul>
-                <?= include('color-data.php') ?>
-            </ul>
-
 
             <form action="" method="post">
                 <button type="submit" name='submitted'>Add To Cart</button>
             </form>
+        </aside>
 
+        <div class="details">
             <details>
                 <summary>Description</summary>
                 <p><?= $product['description'] ?></p>
             </details>
+            <details>
+                <summary>Features</summary>
+                <ul>
+                    <?php include('feature-data.php') ?>
+                </ul>
+            </details>
+        </div>
 
-        </aside>
+
 
     </article>
 
