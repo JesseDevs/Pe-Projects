@@ -18,6 +18,12 @@ $products = $products_data["products"];
             $features = $product["features"];
             $colors = $product["color"];
 
+            if ($product['on-sale']) {
+                $sale = 'sale';
+            } else {
+                $sale = "";
+            }
+
         ?>
 
             <section class='card'>
@@ -29,18 +35,17 @@ $products = $products_data["products"];
                         <img src="<?= $product['image'] ?>" alt="">
                     </picture>
 
-                    <h2><?= $product['name'] ?></h2>
-                    <p class="attention-voice"><?= ucfirst($product['tagline']) ?></p>
-
-                    <ul>
-                        <?php include('color-data.php') ?>
-                    </ul>
-
-                    <h3><?= $product['price'] ?>"</h3>
-
-                    <form>
-                        <button type="submit">Add To Cart</button>
-                    </form>
+                    <div class="info-wrapper">
+                        <h2><?= $product['name'] ?></h2>
+                        <p class="attention-voice"><?= ucfirst($product['tagline']) ?></p>
+                        <ul class='colors'>
+                            <?php include('color-data.php') ?>
+                        </ul>
+                        <h3 class="<?= $sale ?>"><?= $product['price'] ?>"</h3>
+                        <form>
+                            <button type="submit">Add To Cart</button>
+                        </form>
+                    </div>
                 </aside>
 
                 <div class="details">

@@ -26,6 +26,30 @@ footer{
 
 /* $Article Card styles */
 
+aside.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(min-width: 720px){
+    aside.container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        min-height: 510px;
+    }
+
+    ul.colors{
+        justify-content: space-between;
+    }
+
+}
+
+section{
+    position: relative;
+}
 
 section > * {
     padding: var(--small-height) var(--med-width);
@@ -36,13 +60,22 @@ picture{
 }
 
 .details{
-    background-color: rgb(0 0 0 /.3);
+    background:linear-gradient(to right, white, rgb(0 0 0/.3) 20%, white 90%);
     padding-bottom: var(--med-height);
+    border-bottom: 1px solid rgb(121, 119, 115);
+
+}
+
+details > summary {
+    padding: 4px;
+
+
 }
 
 h2{
     font-weight: 500;
     font-size: clamp(1.5rem, 2vw, 2.2rem);
+    margin-bottom: var(--xs-height);
 
 }
 
@@ -50,5 +83,44 @@ h4{
     font-weight: 400;
     font-size: clamp(1.2rem, 1.9vw, 1.6rem);
     border-bottom: 1px solid rgb(121, 119, 115);
-    border-top: 1px solid rgb(121, 119, 115);
+}
+
+button{
+    height: 2rem;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgb(121, 119, 115);
+    color: white;
+    border: none;
+    display: block;
+    border-radius: 3px;
+    margin-top: var(--xs-height);
+}
+
+/* $Colors */
+
+ul.colors{
+    margin: var(--small-height) auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul.colors li{
+    background-color: rgb(0 0 0/.3);
+    padding: 20px;
+    border-radius: 3px;
+    width: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.sale{
+    color: red;
 }
