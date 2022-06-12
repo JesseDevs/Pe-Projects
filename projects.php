@@ -1,5 +1,27 @@
 <?php include('header.php') ?>
 
+<?php
+
+$projects = [
+    'overwatch' => [
+        'title' => 'week...',
+        'one' => 'Continue practicing PHP and testing my current skills.',
+        'two' => 'Write more blog post starting with one about PHP introduction.',
+        'three' => 'Start making graphics.',
+        'four' => 'Keep an eye on my portfolio page and search for external feedback.',
+        'five' => 'Meet with Derek as much as possible.',
+    ],
+    'we-paint' => [
+        'title' => 'month...',
+        'one' => 'Practice some creativity and using a graphic design program by creating an image every day of the month.',
+        'two' => 'Be able to use PHP comfortably in most scenarios.',
+        'three' => 'Develop current projects for display on portfolio.',
+        'four' => 'Plan some meditation to avoid burnout.',
+    ]
+
+];
+?>
+
 <main>
     <section id="projects" class="projects">
         <inner-column>

@@ -97,8 +97,6 @@ div.project-links{
 
 .project-image a:hover{
     outline:3px solid var(--ink);
-
-    
     cursor: pointer;
 
 }
@@ -118,9 +116,13 @@ div.project-links{
 
     }
 
+    section.projects article .container{
+        max-width: 400px;
+    }
+
     section.projects picture{
         max-width: none;
-        min-width: 380px;
+        min-width: 300px;
         margin-bottom: 0;
     }
 }
