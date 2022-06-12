@@ -44,7 +44,7 @@ $projects = [
                         <article>
 
                             <picture class="project-image">
-                                <a href="<?= $project['link'] ?>"><img src="" alt="#"><?= $project['image'] ?></a>
+                                <a href="<?= $project['link'] ?>"><img src="<?= $project['image'] ?>" alt="#"></a>
                             </picture>
 
                             <div class="container">
