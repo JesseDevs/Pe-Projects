@@ -15,7 +15,22 @@ html {
 	--xlarge-height: 11vh;    
 	--xlarge-width: 11vw;
 
-	background-color: rgb(255,255,255);
+	background-color: var(--white);
+	--white:rgb(252, 252, 252);
+	--black: rgb(10 10 10);
+	--faded:rgb(0 0 0/.3); 
+	--gray:rgb(121, 119, 115);
+	--sale:red;
+}
+
+@media (prefers-color-scheme:dark){
+	html{
+		--white:rgb(10 10 10);
+		--black: rgb(252, 252, 252);
+		--faded:rgb(252 252 252/.3); 
+		--gray:rgb(188, 186, 180);
+		--sale:red;
+	}
 }
 
 *,
