@@ -1,0 +1,75 @@
+@import 'reset.css';
+@import 'setup.css';
+
+body *{
+    outline: 3px solid black
+}
+
+header {
+    background-color: rgb(182,216,192);
+}
+
+section.one{
+    background-color: rgb(182,220,234);
+}
+
+section.two {
+    background-color: rgb(212 160 198);
+}
+
+section.three{
+    background-color: rgb(245 205 160);
+}
+
+footer{
+    background-color: rgb(249 240 228);
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; 
+}
+
+h2{
+    padding: 10px;
+}
+
+p{
+    padding: 10px;
+}
+
+a{
+    padding:20px
+}
+
+/* Header */
+
+header inner-column{
+    padding: 2vh 1rem;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 20px;
+}
+
+header nav a{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Section.one */
+
+picture{
+    padding: 20px;
+}
+
+picture img{
+    padding: 20px;
+}
