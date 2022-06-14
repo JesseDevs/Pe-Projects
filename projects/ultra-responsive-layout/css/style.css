@@ -68,14 +68,15 @@ header nav{
 header nav a{
     text-decoration: underline;
     color: blue;
-    font-size: .9rem;
+    font-size: 1rem;
+    min-width: 120px;
 }
 
 /* Section*/
 
 
 section.one picture{
-    max-width: 500px;
+    max-width: 700px;
 
 }
 
@@ -139,16 +140,24 @@ footer a{
 
 footer nav{
     display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-div.one { grid-area: 1 / 1 / 3 / 3; }
-div.two { grid-area: 1 / 4 / 3 / 6; }
-div.three { grid-area: 3 / 1 / 5 / 3; }
-div.four { grid-area: 3 / 4 / 5 / 6; }
+div.one { 
+    grid-area: 1 / 1 / 3 / 3;
+}
+div.two { 
+    grid-area: 1 / 4 / 3 / 6; 
+}
+div.three { 
+    grid-area: 3 / 1 / 5 / 3; 
+}
+div.four { 
+    grid-area: 3 / 4 / 5 / 6; 
+}
 
 @media (min-width:700px){
 footer nav{
@@ -158,6 +167,7 @@ footer nav{
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
+
 div.one { grid-area: 1 / 1 / 5 / 2; }
 div.two { grid-area: 1 / 3 / 5 / 4; }
 div.three { grid-area: 1 / 5/ 5 / 6; }
