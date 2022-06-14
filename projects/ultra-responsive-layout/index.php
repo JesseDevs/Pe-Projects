@@ -18,11 +18,9 @@
     <section class="two">
         <inner-column>
 
-            <article>
-                <h2>This module is a "call to action"</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dolore dolor facere cupiditate illo quis autem veritatis deserunt a est velit, id consectetur impedit neque ipsum aperiam harum atque similique.</p>
-                <a href="#">Here's the action!</a>
-            </article>
+            <h2>This module is a "call to action"</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dolore dolor facere cupiditate illo quis autem veritatis deserunt a est velit, id consectetur impedit neque ipsum aperiam harum atque similique.</p>
+            <a href="#">Here's the action!</a>
 
         </inner-column>
     </section>
@@ -31,30 +29,32 @@
         <inner-column>
 
             <article>
-                <h2>This is an "Article-grid" module. THis is its heading.</h2>
+                <h2>This is an "Article grid" module. This is its heading.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia voluptas ad, libero eos praesentium.</p>
             </article>
             <article-grid>
 
                 <?php
                 for ($x = 1; $x <= 9; $x++) { ?>
-                    <h2>This is an article card</h2>
-                    <p>Basically a mini call to action box!</p>
-                    <a href="#">Action!</a>
+                    <article>
+                        <h2>This is an article card</h2>
+                        <p>Basically a mini call to action box!</p>
+                        <a href="#">Action!</a>
+                    </article>
                 <?php } ?>
             </article-grid>
 
         </inner-column>
     </section>
 
-    <section class="two">
+    <section class="two four">
         <inner-column>
 
-            <article>
-                <h2>This module is a "call to action"</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dolore dolor facere cupiditate illo quis autem veritatis deserunt a est velit, id consectetur impedit neque ipsum aperiam harum atque similique.</p>
-                <a href="#">Here's the action!</a>
-            </article>
+
+            <h2>This module is a "call to action"</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dolore dolor facere cupiditate illo quis autem veritatis deserunt a est velit, id consectetur impedit neque ipsum aperiam harum atque similique.</p>
+            <a href="#">Here's the action!</a>
+
 
         </inner-column>
     </section>
