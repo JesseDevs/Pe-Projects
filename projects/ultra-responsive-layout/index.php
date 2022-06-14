@@ -35,7 +35,7 @@
             <article-grid>
 
                 <?php
-                for ($x = 1; $x <= 9; $x++) { ?>
+                for ($x = 1; $x <= 10; $x++) { ?>
                     <article>
                         <h2>This is an article card</h2>
                         <p>Basically a mini call to action box!</p>

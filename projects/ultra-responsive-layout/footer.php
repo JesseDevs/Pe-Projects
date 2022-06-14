@@ -5,7 +5,7 @@
 
 
         <nav>
-            <div>
+            <div class="one">
                 <a href="#">
                     LOGO
                 </a>
@@ -13,15 +13,15 @@
                 <a href="#">"Masthead"</a>
             </div>
 
-            <div>
+            <div class="two">
                 <a href="#">Sign-in</a>
             </div>
-            <div>
+            <div class="three">
                 <a href="#">Legal thing a</a>
                 <a href="#">Legal thing b</a>
             </div>
 
-            <div>
+            <div class="four">
                 <a href="#">social thing a</a>
                 <a href="#">social thing b</a>
                 <a href="#">social thing c</a>
