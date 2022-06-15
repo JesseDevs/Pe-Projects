@@ -19,9 +19,6 @@ html {
     --large-width:8vw;
     --xlarge-height: 11vh;    
     --xlarge-width: 11vw;
-
-    background-color: rgb(0, 0, 0);
-    /* for some reason the html needs a background color so that the mix blend will work. */
 }
 
 body{
@@ -29,49 +26,33 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
 
-    background-image: url(../images/paper-texture-2.jpg);
-    background-repeat: repeat;
-    background-size: 900px;
-    isolation: isolate;
-}
-
-div.overlay{
-  position: relative;
-  width: 100%;
-  height: auto;
-
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  display: flex;	
-  flex-direction: column;	
-  min-height: 100vh;
-
-}
-
-div.overlay::after{
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: radial-gradient(circle at 0% 0,
-  hsl(4deg 58% 20%) 0%,
-  hsl(7deg 57% 20%) 9%,
-  hsl(9deg 57% 20%) 13%,
-  hsl(137deg 15% 18%) 30%,
-  rgb(41, 25, 23) 52%,
-  hsl(5deg 19% 12%) 57%,
-  rgb(43, 28, 28) 61%,
-
-  rgb(37, 33, 33) 70%,
-
-  rgb(29, 37, 43) 83%,
-
-  hsl(100deg 12% 15%) 91%,
-  hsl(120deg 13% 17%) 96%,
-  rgb(39, 53, 52) 100%);
-  mix-blend-mode: multiply;
-
-}
+    background: linear-gradient(22deg, #6b9187, #6d5535, #29353c, #483623, #1f5759, #59381f, #000000);
+    background-size: 1400% 1400%;
+    -webkit-animation: AnimationName 35s ease infinite;
+    -moz-animation: AnimationName 35s ease infinite;
+    -o-animation: AnimationName 35s ease infinite;
+    animation: AnimationName 35s ease infinite;
+    }
+    @-webkit-keyframes AnimationName {
+    0%{background-position:57% 0%}
+    50%{background-position:44% 100%}
+    100%{background-position:57% 0%}
+    }
+    @-moz-keyframes AnimationName {
+    0%{background-position:57% 0%}
+    50%{background-position:44% 100%}
+    100%{background-position:57% 0%}
+    }
+    @-o-keyframes AnimationName {
+    0%{background-position:57% 0%}
+    50%{background-position:44% 100%}
+    100%{background-position:57% 0%}
+    }
+    @keyframes AnimationName {
+    0%{background-position:57% 0%}
+    50%{background-position:44% 100%}
+    100%{background-position:57% 0%}
+    }
 
 
 /* @media (prefers-color-scheme:light){
