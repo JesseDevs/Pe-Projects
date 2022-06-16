@@ -14,7 +14,7 @@
 .landing span{
     display: block;
     margin-bottom: var(--med-height);
-    color: var(--faded);
+    color: var(--accent-ink);
 }
 
 .landing div.info-wrapper{

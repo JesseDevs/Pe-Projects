@@ -3,10 +3,11 @@ html {
     --ink: rgb(244, 240, 240);
 
     --faded: rgba(242, 217, 201, 0.8);
-    --accent-ink: rgb(79 39 26/ .7);
+    --accent-ink: rgba(235, 235, 235, 0.7);
     --link: rgb(206, 148, 41);
     --black: rgb(0 0 0/.8);
-    --coffee: rgb(224, 175, 84);
+    --coffee: rgb(196, 143, 30);
+    --dark-theme: rgba(0 0 0/0.40);
 
 
     --xs-height: 1vh;
@@ -26,45 +27,69 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
 
-    background: linear-gradient(22deg, #6b9187, #6d5535, #29353c, #483623, #1f5759, #59381f, #000000);
+    background: linear-gradient(22deg, #3f524d, #564228, #29353c, #483623, #1f5759, #59381f, #000000);
     background-size: 1400% 1400%;
-    -webkit-animation: AnimationName 48s ease infinite;
-    -moz-animation: AnimationName 48s ease infinite;
-    -o-animation: AnimationName 48s ease infinite;
-    animation: AnimationName 48s ease infinite;
-    }
+    -webkit-animation: AnimationName 42s ease infinite;
+    -moz-animation: AnimationName 42s ease infinite;
+    -o-animation: AnimationName 42s ease infinite;
+    animation: AnimationName 42s ease infinite;
+  }
     @-webkit-keyframes AnimationName {
     0%{background-position:57% 0%}
     50%{background-position:44% 100%}
     100%{background-position:57% 0%}
-    }
+  }
     @-moz-keyframes AnimationName {
     0%{background-position:57% 0%}
     50%{background-position:44% 100%}
     100%{background-position:57% 0%}
-    }
+  }
     @-o-keyframes AnimationName {
     0%{background-position:57% 0%}
     50%{background-position:44% 100%}
     100%{background-position:57% 0%}
-    }
+  }
     @keyframes AnimationName {
     0%{background-position:57% 0%}
     50%{background-position:44% 100%}
     100%{background-position:57% 0%}
-    }
+  }
 
 
-/* @media (prefers-color-scheme:light){
-  html {
-    filter: invert(100%);
+
+
+
+@media (prefers-color-scheme:light){
+
+  html{
+    --ink: rgb(20, 20, 20);
+
+    --faded: rgba(203, 242, 201, 0.8);
+    --accent-ink: rgba(58, 57, 57, 0.7);
+    --link: rgb(41, 206, 184);
+    --black: rgb(20, 20, 20);
+    --coffee: rgb(34, 171, 132);
+    --dark-theme: rgba(255 255 255/0.40);
+
+
+  }
+
+  
+
+  body{
+    background: linear-gradient(322deg, #559cde, #0583D2, #75d6de, #B8E3FF, #d2f7f8, #c2d5ed);
+    background-size: 1400% 1400%;
+    -webkit-animation: AnimationName 42s ease infinite;
+    -moz-animation: AnimationName 42s ease infinite;
+    -o-animation: AnimationName 42s ease infinite;
+    animation: AnimationName 42s ease infinite;
   }
 
   .project-image img{
     filter: invert(100%)
   }
 
-} */
+}
 
 inner-column{
   max-width: 1100px;
