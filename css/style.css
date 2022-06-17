@@ -90,13 +90,22 @@
     margin-top: var(--med-height)
 }
 
-.landing ul img{
-    transition: all ease-in .1s ;
-}
-
-.landing ul img:hover{
+.landing ul a {
+    width: 100%;
+    height: 100%;
     filter: invert(1);
 }
+
+.landing li{
+    transition: all ease-in .1s ;
+
+
+}
+
+.landing li:hover img{
+    filter: invert(1);
+}
+
 
 .landing li{
     background-color: var(--faded);
@@ -111,7 +120,7 @@
 
 .landing li:hover {
     background-color: var(--link);
-    color: var(--ink);
+    border-color: var(--ink);
     
     cursor: pointer;
 }
