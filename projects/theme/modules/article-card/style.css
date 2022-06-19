@@ -9,7 +9,7 @@
 	position: relative;
 	overflow: hidden;
 	border: 2px solid var(--white);
-	min-height: 250px;
+	min-height: 200px;
 }
 
 .article-card text-content {

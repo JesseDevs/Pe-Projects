@@ -15,10 +15,20 @@ mast-head .logo * {
 	fill: var(--ink);
 }
 
+mast-head .logo:hover * {
+	fill: var(--color);
+}
+
 mast-head nav ul {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+nav li:hover{
+	color: var(--color);
+	text-decoration: overline;
+
 }
 
 mast-head nav .home {
