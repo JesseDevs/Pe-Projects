@@ -1,6 +1,9 @@
 
 mast-head {
 	display: block;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+
 	/*border: 4px solid blue;*/
 }
 
