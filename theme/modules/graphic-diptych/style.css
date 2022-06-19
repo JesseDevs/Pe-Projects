@@ -1,0 +1,58 @@
+
+graphic-diptych {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 5vh 0;
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+graphic-diptych picture{
+	max-height: 90vh;
+	overflow:hidden;
+}
+
+graphic-diptych p {
+	margin-top: 20px;
+}
+
+section.welcome inner-column{
+	position: relative;
+}
+
+@media (min-width:  700px) {
+
+	graphic-diptych :is(picture, text-content) {
+		flex-basis: 50%;
+	}
+
+}
+
+@media (min-width:  900px) {
+	graphic-diptych text-content{
+		position: absolute;
+		bottom: 10vh;
+		right: 40px;
+		max-width: 30%;
+		max-height: 60%;
+		background-color: var(--paper);
+		text-align: center;
+
+	}
+
+	graphic-diptych text-content h1{
+		background-color: var(--color);
+		padding: 10px;
+		
+	}
+
+	graphic-diptych text-content p{
+		background-color: var(--paper);
+		padding: 10px;
+		margin: 0;
+	}
+
+}
