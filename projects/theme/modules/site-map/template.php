@@ -1,11 +1,10 @@
-
 <site-map>
 
 
 	<nav class='site-menu'>
 		<ul>
 			<li>
-				<a href='#'>
+				<a class='logo' href='#'>
 					<?php include('modules/logo.php'); ?>
 				</a>
 			</li>
@@ -45,7 +44,7 @@
 
 	<nav class='x-menu'>
 		<h3 class='strong-voice'>Menu heading here</h3>
-		
+
 		<ul>
 			<li>
 				<a href='#'>Some page</a>
@@ -67,7 +66,7 @@
 
 	<nav class='x-menu'>
 		<h3 class='strong-voice'>Menu heading here</h3>
-		
+
 		<ul>
 			<li>
 				<a href='#'>Some page</a>

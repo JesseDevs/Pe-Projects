@@ -11,9 +11,14 @@ site-map {
 	text-align: center;
 }
 
+
+site-map nav a:not(.logo){
+	padding: .5em 1em;
+	max-width: 200px;
+}
+
 site-map .logo {
 	max-width: 180px;
-	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -37,4 +42,11 @@ site-map h3 {
 site-map li a{
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+site-map nav ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
