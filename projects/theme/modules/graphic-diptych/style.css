@@ -21,6 +21,9 @@ graphic-diptych p {
 
 section.welcome inner-column{
 	position: relative;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
 }
 
 @media (min-width:  700px) {
