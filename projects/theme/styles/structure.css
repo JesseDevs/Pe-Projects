@@ -26,6 +26,7 @@ inner-column.tight {
 inner-column.wide{
 	max-width: var(--wide);
 	width: 100%;
+	margin: 0 -4%;
 }
 
 /*.site-header {
