@@ -10,6 +10,11 @@ graphic-diptych {
 	margin-left: auto;
 }
 
+graphic-diptych tex-content{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
 graphic-diptych picture{
 	max-height: 90vh;
 	overflow:hidden;
@@ -21,8 +26,6 @@ graphic-diptych p {
 
 section.welcome inner-column{
 	position: relative;
-	padding-left: 1rem;
-	padding-right: 1rem;
 
 }
 
