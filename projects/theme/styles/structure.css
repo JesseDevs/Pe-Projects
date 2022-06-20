@@ -15,6 +15,8 @@ inner-column {
 	max-width: var(--standard); /* could be a variable in settings */
 	padding-right: 1rem;
 	padding-left: 1rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 inner-column.tight {
@@ -24,7 +26,7 @@ inner-column.tight {
 inner-column.wide{
 	max-width: var(--wide);
 	width: 100%;
-	margin: 0;
+	margin: 0 auto;
 }
 
 /*.site-header {
