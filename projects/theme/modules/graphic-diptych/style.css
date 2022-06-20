@@ -10,7 +10,7 @@ graphic-diptych {
 	margin-left: auto;
 }
 
-graphic-diptych tex-content{
+graphic-diptych text-content{
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
@@ -26,6 +26,7 @@ graphic-diptych p {
 
 section.welcome inner-column{
 	position: relative;
+	padding: 0;
 
 }
 
