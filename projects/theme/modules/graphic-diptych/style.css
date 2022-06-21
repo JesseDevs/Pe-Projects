@@ -4,8 +4,6 @@ graphic-diptych {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	padding-top: 1vh;
-	padding-bottom: 2vh;
 	margin-right: auto;
 	margin-left: auto;
 }

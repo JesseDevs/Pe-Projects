@@ -23,8 +23,7 @@ inner-column.tight {
 }
 
 inner-column.wide{
-	max-width: var(--wide);
-	width: 100%;
+	max-width: 2200px;
 	margin: 0 auto;
 }
 

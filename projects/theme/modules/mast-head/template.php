@@ -1,4 +1,3 @@
-
 <mast-head>
 
 	<nav class='site-menu'>
@@ -9,11 +8,11 @@
 				</a>
 			</li>
 
-			<li>
+			<li class='link'>
 				<a href='#'>Some page</a>
 			</li>
 
-			<li>
+			<li class='link'>
 				<a href='#'>Some other page</a>
 			</li>
 		</ul>
@@ -21,8 +20,8 @@
 
 	<nav class='user-menu'>
 		<ul>
-			<li>
-				<a class='button' href='#'>Sign in</a>
+			<li class='sign-in'>
+				<a href='#'>Sign in</a>
 			</li>
 		</ul>
 	</nav>
