@@ -4,7 +4,12 @@ mast-head {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 10vw;
 	/*border: 4px solid blue;*/
+}
+
+header inner-column{
+	padding: 0;
 }
 
 mast-head a{
@@ -24,7 +29,7 @@ mast-head li{
 	justify-content: center;
 	align-items: center;
 
-	padding: 5vh 5px;
+	padding: 5vh 2vw;
 }
 
 
@@ -40,6 +45,7 @@ mast-head .logo * {
 mast-head nav ul {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	gap: 3vw;
 }
 
