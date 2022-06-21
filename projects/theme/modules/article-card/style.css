@@ -37,7 +37,7 @@
 }
 
 .article-card:hover img{
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .article-card text-content h1{

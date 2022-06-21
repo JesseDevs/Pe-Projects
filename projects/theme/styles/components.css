@@ -15,4 +15,12 @@
 	border-radius: var(--corners)
 }
 
+.button:hover{
+	color: var(--color)
+}
+
+mast-head .button,
+article .button{
+	color: var(--paper)
+}
 @import 'forms.css';
