@@ -186,6 +186,10 @@
         -3px 0 0 0 var(--coffee);
     }
 
+    article-grid.connect article.one{
+        margin: 2vh;
+    }
+
     .landing article{
         min-height: none;
         height: fit-content;
