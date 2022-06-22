@@ -17,7 +17,7 @@ graphic-diptych text-content p{
 }
 
 .dash{
-	background-color: #000;
+	background-color: var(--ink);
     width: 48px;
     height: 7px;
     margin: 10px 1rem;
