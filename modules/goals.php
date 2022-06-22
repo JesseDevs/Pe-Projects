@@ -48,9 +48,6 @@ $goals = [
 
             <article-grid>
 
-                <?php
-                include('goal-data.php')
-                ?>
 
                 <?php
                 foreach ($goals as $goal) {

@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php include('modules/header.php') ?>
 
 <main>
     <section class="landing" id="#home">
@@ -14,7 +14,7 @@
                         Currently under the mentorship of <a target="_blank" href="https://perpetual.education/">Perpetual Education</a>, exploring my skills by experimenting in a wide range of coding and design disciplines. I see myself continuing to challenge myself, to learn, and to do amazing things. Maybe with you?<br>
                     </p>
                     <div class="landing-actions">
-                        <a class="calm-voice" href="projects.php">Projects</a>
+                        <a class="calm-voice" href="modules/projects.php">Projects</a>
                         <!--
                             <a class="calm-voice"  href="resume.html">Hire me!</a>
                         -->
@@ -28,7 +28,7 @@
                     </ul>
                 </div>
 
-                <?php include('connect.php') ?>
+                <?php include('<modules/connect.php') ?>
 
             </div>
         </inner-column>
