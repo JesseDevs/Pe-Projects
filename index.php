@@ -28,7 +28,7 @@
                     </ul>
                 </div>
 
-                <?php include('<modules/connect.php') ?>
+                <?php include('modules/connect.php') ?>
 
             </div>
         </inner-column>

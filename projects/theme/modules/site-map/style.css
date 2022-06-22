@@ -18,7 +18,10 @@ site-map nav a:not(.logo){
 }
 
 site-map .logo {
-	max-width: 180px;
+
+	max-width: 80px;
+	max-height: 80px;
+	
 	margin-left: auto;
 	margin-right: auto;
 }

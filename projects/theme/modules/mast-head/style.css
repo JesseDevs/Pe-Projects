@@ -2,80 +2,62 @@
 mast-head {
 	display: block;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	gap: 10vw;
 	/*border: 4px solid blue;*/
-}
-
-header inner-column{
 	padding: 0;
 }
 
 mast-head a{
 	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: clamp(.9rem, 1vw, 1.3rem);
-	display: flex;
-	align-items: center;
+	font-size: clamp(1rem, 1vw, 1.3rem);
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	font-weight: 600;
+	color: var(--white);
+
+	height: 60px;
+}
+
+mast-head li:hover a{
+	background-color: var(--neutral-stuffs);
+}
+
+mast-head a:not(.home){
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 mast-head li.link{
 	display: none;
 }
 
-mast-head li{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	padding: 5vh 2vw;
-}
-
-
 mast-head .logo {
-	max-width: 180px;
+	max-width: 30px;
+	max-height: 30px;
 }
-
-mast-head .logo * {
-	fill: var(--ink);
-}
-
 
 mast-head nav ul {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 3vw;
+	justify-content: center;
+	max-height: 50px;
 }
 
-nav li:hover{
-	background-color: black;
-	color: var(--color);
-}
+@media(min-width:450px){
 
-mast-head .logo:hover * {
-	fill: var(--color);
-	background-color:transparent;
-}
-
-@media(min-width:550px){
+	mast-head {
+		display: block;
+		display: flex;
+		justify-content: space-between;
+		/*border: 4px solid blue;*/
+		padding: 0 .5rem;
+	}
+	
 	mast-head li.link{
 		display: block;
 	}
-}
 
-@media (min-width:  600px) {
-	mast-head nav ul {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 5vw;
-	}
-	mast-head {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
+
 }

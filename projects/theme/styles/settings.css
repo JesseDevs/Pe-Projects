@@ -1,9 +1,9 @@
 
 html {
-	--black: #111111;
-	--white: #f2f2f2;
+	--black: #070707;
+	--white: #f7f7f7;
 
-	--neutral-stuffs: gray;
+	--neutral-stuffs: rgba(113, 109, 109, 0.802);
 
 	--color: #FF746E;
 	--highlight: #BFA6A2;
@@ -22,7 +22,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--paper: #1e1d1d;
-		--ink: #ffffe2;
+		--paper: #070707;
+		--ink: #fcfcf7;
 	}
 }

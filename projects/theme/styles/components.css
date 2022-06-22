@@ -9,14 +9,15 @@
 	line-height: 1.4;
 
 	padding: .5em 1em;
-	background-color: var(--color);
+	background-color: var(--ink);
 	min-width: 120px;
 	text-align: center;
-	border-radius: var(--corners)
+	/* border-radius: var(--corners) */
 }
 
 .button:hover{
-	color: var(--color)
+	background-color: var(--color);
+	color: var(--ink);
 }
 
 mast-head .button,

@@ -10,7 +10,7 @@ $thumbnail = $article['thumbnail'];
 	</picture>
 
 	<text-content>
-		<h1 class='title strong-voice'><?= $heading ?></h1>
+		<h1 class='title loud-voice'><?= $heading ?></h1>
 
 		<p class='teaser'><?= $description ?></p>
 

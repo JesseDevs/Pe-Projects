@@ -33,6 +33,15 @@ body {
 	color: var(--ink);
 }
 
+header >inner-column{
+	padding: 0;
+
+}
+
+body >header{
+	background-color: var(--black);
+}
+
 section:is(.sign-up, .get-involved) inner-column {
 	max-width: var(--tight);
 }

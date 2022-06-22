@@ -4,7 +4,7 @@
 	<header>
 		<h2 class='attention-voice'>News articles</h2>
 
-		<p>A short introduction explaining why these articles are here to help you understand if you want to read them.</p>
+		<!-- <p>A short introduction explaining why these articles are here to help you understand if you want to read them.</p> -->
 	</header>
 
 	<article-grid>
