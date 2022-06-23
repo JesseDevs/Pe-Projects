@@ -60,6 +60,10 @@ section.sign-up{
 	color:var(--paper);
 }
 
+footer{
+	background-color: var(--black);
+	color: var(--white);
+}
 
 @media (prefers-color-scheme: dark) {
 
