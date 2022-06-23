@@ -13,7 +13,7 @@ graphic-diptych text-content h1{
 
 graphic-diptych text-content p{
 	padding: 1rem;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .dash{
@@ -22,6 +22,14 @@ graphic-diptych text-content p{
     height: 7px;
     margin: 10px 1rem;
 	transition: width .8s;
+}
+
+.slash {
+    height: 13px;
+    width: 12px;
+    margin-right: 0.3em;
+    position: relative;
+    top: 0.1em;
 }
 
 graphic-diptych picture{
@@ -40,6 +48,7 @@ graphic-diptych label{
 	padding:3vh 1rem;
 
 	letter-spacing: 2px;
+	display: flex;
 }
 
 @media (min-width:  700px) {

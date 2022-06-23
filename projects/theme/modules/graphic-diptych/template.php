@@ -5,7 +5,7 @@
 	</picture>
 
 	<text-content>
-		<label for="">LATEST</label>
+		<label for=""><img class="slash" alt="slash icon" src="./images/slash.svg">LATEST</label>
 		<h1 class='loud-voice'>Steph Curry. Champion.</h1>
 
 		<div class="dash"></div>

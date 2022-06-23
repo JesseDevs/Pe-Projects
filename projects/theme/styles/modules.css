@@ -16,8 +16,8 @@ section.quick-links{
 
 
 section.quick-links text-content{
-    border-top: 5px solid var(--ink);
-    border-bottom: 5px solid var(--ink);
+    border-top: 3.5px solid var(--ink);
+    border-bottom: 3.5px solid var(--ink);
     padding-top: 4vh;
     padding-bottom: 4vh;
     display: flex;

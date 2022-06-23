@@ -3,11 +3,11 @@ site-map {
 	display: block;
 	/*border: 4px solid green;*/
 
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-	grid-gap: 20px;
+	grid-gap: 20px; */
 
-	padding: 10vh 0 15vh;
+	padding: 4vh 0 10vh;
 	text-align: center;
 }
 
@@ -50,9 +50,34 @@ site-map li a{
 	padding-bottom: 5px;
 }
 
-site-map nav ul{
+nav.site-menu ul{
+		display: flex;
+		margin: 0 auto;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+}
+
+nav.site-menu ul li:first-of-type{
+	margin-bottom: 20px;
+}
+
+nav.x-menu ul{
+	max-width: 75%;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	margin: 0 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
+}
+
+nav.x-menu ul li {
+	max-width: fit-content;
+}
+
+nav.x-menu ul a{
+	padding: 18px 10px;
+	font-size: clamp(18px, 2vw, 24px);
 }
