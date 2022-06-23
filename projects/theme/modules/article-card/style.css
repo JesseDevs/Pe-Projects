@@ -8,6 +8,11 @@
 	margin-bottom: 30px;
 }
 
+.article-card h1{
+	position: relative;
+}
+
+
 .article-card p{
 	font-size: 1rem;
 }
@@ -15,6 +20,8 @@
 .article-card picture{
 	margin-bottom: 15px;
 }
+
+
 
 .article-card text-content {
 	display: flex;

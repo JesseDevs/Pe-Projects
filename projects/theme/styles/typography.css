@@ -13,13 +13,14 @@
 }
 
 .attention-voice	{
-	font-size: 18px;
+	font-size: clamp(25px, 3vw, 30px);
 }
 
 .strong-voice	{
 
 	font-weight: 700;
 	font-size:  1rem;
+	text-align: center;
 }
 
 .calm-voice, p, li {

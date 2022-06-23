@@ -24,18 +24,27 @@ section.quick-links text-content{
     flex-direction: column;
 }
 
+section.quick-links text-content a{
+    padding-top: 1vh;
+}
+
 section.quick-links label{
     width: fit-content;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: var(--ink);
-
+    font-size: 1rem;
+    max-width: 45ch;
+    background-color: var(--color);
+    padding:1vh 1rem;
+    
+    letter-spacing: 2px;
+    
 }
 
-section.quick-links p,
-section.quick-links label{
-    font-size: 1rem;
+section.quick-links p{
+    font-size: 1.2rem;
     max-width: 45ch;
 }
 
@@ -58,7 +67,7 @@ section.quick-links a:hover{
     }
 
     section.quick-links text-content a{
-        max-width: 20%;
+        max-width: 25%;
         margin-right: 5%;
     }
 
@@ -69,7 +78,7 @@ section.quick-links a:hover{
 
     section.quick-links p,
     section.quick-links label{
-    font-size: .8rem;
+    font-size: 1rem;
 
     }
 

@@ -18,7 +18,7 @@ graphic-diptych text-content p{
 
 .dash{
 	background-color: var(--ink);
-    width: 48px;
+    width: 55px;
     height: 7px;
     margin: 10px 1rem;
 	transition: width .8s;
@@ -35,9 +35,10 @@ section.welcome inner-column{
 
 }
 
-label{
+graphic-diptych label{
 	background-color: var(--color);
-	padding:1rem;
+	padding:3vh 1rem;
+
 	letter-spacing: 2px;
 }
 
@@ -54,7 +55,7 @@ label{
 		position: absolute;
 		bottom: 5vh;
 		right: 40px;
-		max-width: 30%;
+		max-width: 35%;
 		max-height: 65%;
 		background-color: var(--paper);
 		padding:0;
@@ -75,6 +76,13 @@ label{
 		background-color: var(--paper);
 		padding: 1rem;
 		margin: 0;
+	}
+
+	graphic-diptych label{
+		background-color: var(--color);
+		padding:2vh 1rem;
+		font-size: .8rem;
+		letter-spacing: 2px;
 	}
 
 }

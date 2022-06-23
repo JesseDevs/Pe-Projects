@@ -46,14 +46,14 @@
 				<text-content>
 					<label for="">Top News</label>
 					<a href="#">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p>Kyrie Has List of 6 Teams</p>
 					</a>
 
 					<a href="#">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p>KD Considering Nets Future</p>
 					</a>
 					<a href="#">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+						<p>Arch Manning to Texas</p>
 					</a>
 				</text-content>
 
