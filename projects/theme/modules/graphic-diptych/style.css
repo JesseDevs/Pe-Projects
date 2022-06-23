@@ -38,6 +38,7 @@ section.welcome inner-column{
 label{
 	background-color: var(--color);
 	padding:1rem;
+	letter-spacing: 2px;
 }
 
 @media (min-width:  700px) {

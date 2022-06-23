@@ -16,11 +16,13 @@ call-to-action {
 	align-items: flex-start;
 	padding: 7vh 0;
 
+	color: var(--white);
+
 }
 
 call-to-action .button {
 	margin-top: 20px;
-	background-color: var(--paper);
+	background-color: var(--ink);
 	color: var(--ink);
 }
 

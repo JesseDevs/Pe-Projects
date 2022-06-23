@@ -5,3 +5,72 @@
 @import '../modules/articles-intro/style.css';
 @import '../modules/article-card/style.css';
 @import '../modules/site-map/style.css';
+
+
+section.quick-links{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* background-color: var(--ink);
+    color: var(--paper); */
+}
+
+
+section.quick-links text-content{
+    border-top: 5px solid var(--ink);
+    border-bottom: 5px solid var(--ink);
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section.quick-links label{
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--ink);
+
+}
+
+section.quick-links p,
+section.quick-links label{
+    font-size: 1rem;
+    max-width: 45ch;
+}
+
+section.quick-links a:hover{
+    color: var(--color);
+}
+
+
+@media (min-width:  900px) {
+    section.quick-links text-content{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section.quick-links text-content label{
+        padding: 8px;
+        margin: 0;
+        margin-right: 5%;
+    }
+
+    section.quick-links text-content a{
+        max-width: 20%;
+        margin-right: 5%;
+    }
+
+    section.quick-links text-content a:last-child{
+        max-width: 20%;
+
+    }
+
+    section.quick-links p,
+    section.quick-links label{
+    font-size: .8rem;
+
+    }
+
+}

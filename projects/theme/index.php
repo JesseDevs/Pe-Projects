@@ -40,6 +40,26 @@
 			</inner-column>
 		</section>
 
+		<section class="quick-links">
+
+			<inner-column>
+				<text-content>
+					<label for="">Top News</label>
+					<a href="#">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</a>
+
+					<a href="#">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</a>
+					<a href="#">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</a>
+				</text-content>
+
+			</inner-column>
+		</section>
+
 
 		<section class='sign-up' id='sign-up'>
 			<inner-column>

@@ -64,7 +64,12 @@ section.sign-up{
 @media (prefers-color-scheme: dark) {
 
 	section.sign-up .button {
-		background-color: var(--black);
+		background-color: var(--white);
+		color: var(--black);
+	}
+
+	section.sign-up .button:hover {
+		background-color: var(--color);
 		color: var(--white);
 	}
 
