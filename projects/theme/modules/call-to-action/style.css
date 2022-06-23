@@ -28,13 +28,14 @@ call-to-action {
 
 call-to-action p{
 	text-align: center;
+	font-size: 25px;
 }
 
 call-to-action .button {
 	margin-top: 20px;
 	background-color: var(--white);
 	color: var(--ink);
-
+	font-size: 25px;
 }
 
 call-to-action .button:hover{

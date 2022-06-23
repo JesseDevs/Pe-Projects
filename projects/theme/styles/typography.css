@@ -2,7 +2,7 @@
 
 .loud-voice	{
 
-	font-size: clamp(35px, 3vw, 45px);
+	font-size: clamp(40px, 3vw, 55px);
 	line-height: 100%;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .attention-voice	{
-	font-size: clamp(25px, 3vw, 30px);
+	font-size: clamp(30px, 3vw, 40px);
 }
 
 .strong-voice	{
@@ -26,7 +26,7 @@
 .calm-voice, p, li {
 
 	font-family: 'PT Sans', Helvetica, sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	line-height: 1.4;
 }
 
