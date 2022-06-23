@@ -6,9 +6,9 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-	<title>Sports website theme</title>
+	<title>Sports Website Theme</title>
 	<meta name='description' content='Matching themes presented by various sports website to achieve a similar feel.'>
-	<meta property='og:image' content=''>
+	<meta property='og:image' content='https://peprojects.dev/alpha-4/jesse/projects/theme/images/lebron-russ.jpg'>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
