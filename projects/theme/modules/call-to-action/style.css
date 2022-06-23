@@ -1,11 +1,14 @@
 section.sign-up{
 	position: relative;
-
-    background-position:left;
+	background: url(../../images/basketball.jpg)no-repeat;
+    background-position:center;
     background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-	background: url(../../images/basketball.jpg);
+
+}
+
+section.get-involved .button:hover{
+	background-color: var(--color);
+	color: var(--white);
 }
 
 call-to-action {
@@ -22,7 +25,7 @@ call-to-action {
 
 call-to-action .button {
 	margin-top: 20px;
-	background-color: var(--ink);
+	background-color: var(--white);
 	color: var(--ink);
 }
 

@@ -11,6 +11,9 @@ site-map {
 	text-align: center;
 }
 
+site-map a:hover{
+	color: var(--color);
+}
 
 site-map nav a:not(.logo){
 	padding: .5em 1em;
