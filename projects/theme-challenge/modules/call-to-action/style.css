@@ -5,7 +5,7 @@ section.sign-up{
 	background-size: cover;
 
 	background-color: black;
-	box-shadow: 0px 2px 2px var(--neutral-stuffs), 0px -2px 2px var(--neutral-stuffs);
+	box-shadow: 0px 1px 2px var(--neutral-stuffs), 0px -1px 2px var(--neutral-stuffs);
 
 }
 
