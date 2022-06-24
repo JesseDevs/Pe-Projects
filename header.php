@@ -25,12 +25,12 @@
         <header>
             <inner-column>
                 <nav>
-                    <a href="../index.php"><span>Home</span></a>
-                    <a href="/modules/projects.php"><span>Projects</span></a>
+                    <a href="index.php"><span>Home</span></a>
+                    <a href="projects.php"><span>Projects</span></a>
                     <!-- 
                         <a href="resume.html"><span>Resume</span></a> 
                     -->
-                    <a href="/modules/goals.php"><span>Goals</span></a>
+                    <a href="goals.php"><span>Goals</span></a>
 
 
                 </nav>
