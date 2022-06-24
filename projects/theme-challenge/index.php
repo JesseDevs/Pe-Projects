@@ -8,7 +8,7 @@
 
 	<title>Sports Website Theme</title>
 	<meta name='description' content='Matching themes presented by various sports website to achieve a similar feel.'>
-	<meta property='og:image' content='https://peprojects.dev/alpha-4/jesse/projects/theme/images/lebron-russ.jpg'>
+	<meta property='og:image' content='https://peprojects.dev/alpha-4/jesse/projects/theme/images/basketball2.jpg'>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

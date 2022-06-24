@@ -9,11 +9,11 @@
 			</li>
 
 			<li class='link'>
-				<a href='#'>Some page</a>
+				<a href='#'>NBA</a>
 			</li>
 
 			<li class='link'>
-				<a href='#'>Some other page</a>
+				<a href='#'>MLB</a>
 			</li>
 		</ul>
 	</nav>
