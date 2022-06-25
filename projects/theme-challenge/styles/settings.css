@@ -15,6 +15,7 @@ html {
 	--paper: var(--white);
 	--ink: var(--black);
 
+	--invert: invert(0%);
 	--wide: 1400px;
 	--standard: 1140px;
 	--tight: 800px;
@@ -24,5 +25,8 @@ html {
 	html {
 		--paper: #070707;
 		--ink: #fcfcf7;
+		--invert: invert(100%);
 	}
+
+
 }

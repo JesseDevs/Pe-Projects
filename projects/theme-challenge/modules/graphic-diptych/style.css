@@ -30,6 +30,7 @@ graphic-diptych text-content p{
     margin-right: 0.3em;
     position: relative;
     top: 0.1em;
+	filter: var(--invert);
 }
 
 graphic-diptych picture{
