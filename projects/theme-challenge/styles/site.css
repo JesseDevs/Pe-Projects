@@ -50,10 +50,6 @@ section.get-involved {
 	background-color: var(--highlight);
 }
 
-section.get-involved .button {
-	background-color: var(--paper);
-	color:  var(--ink);
-}
 
 section.sign-up{
 	background-color: var(--ink);

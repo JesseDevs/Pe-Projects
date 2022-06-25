@@ -1,17 +1,17 @@
 section.sign-up{
 	position: relative;
-	background: url(../../images/basketball.jpg)no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/basketball.jpg') no-repeat;
     background-position:center;
 	background-size: cover;
 
 	background-color: black;
-	box-shadow: 0px 1px 2px var(--neutral-stuffs), 0px -1px 2px var(--neutral-stuffs);
 
 }
 
-section.get-involved .button:hover{
-	background-color: var(--color);
-	color: var(--white);
+section.get-involved{
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/BASKETBALL2.jpg') no-repeat;
+	background-position:fixed;
+	background-attachment: fixed;
 }
 
 call-to-action {
@@ -28,18 +28,19 @@ call-to-action {
 
 call-to-action p{
 	text-align: center;
-	font-size: 25px;
+	font-size: 23px;
+	text-transform: uppercase;
 }
 
 call-to-action .button {
 	margin-top: 20px;
 	background-color: var(--white);
-	color: var(--ink);
-	font-size: 25px;
+	color: var(--black);
+	font-size: 18px;
 }
 
 call-to-action .button:hover{
-	color: var(--paper);
+	color: var(--white);
 }
 
 
