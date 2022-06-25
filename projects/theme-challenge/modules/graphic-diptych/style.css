@@ -54,9 +54,6 @@ graphic-diptych label{
 
 @media (min-width:  700px) {
 
-	graphic-diptych :is(picture, text-content) {
-		flex-basis: 50%;
-	}
 
 }
 
@@ -64,8 +61,8 @@ graphic-diptych label{
 	graphic-diptych text-content{
 		position: absolute;
 		bottom: 5vh;
-		right: 40px;
-		max-width: 35%;
+		left: 60%;
+		max-width: 37%;
 		max-height: 65%;
 		background-color: var(--paper);
 		padding:0;
@@ -95,4 +92,10 @@ graphic-diptych label{
 		letter-spacing: 2px;
 	}
 
+}
+
+@media (min-width:  1100px) {
+	graphic-diptych text-content{
+		max-width: 30%;
+	}
 }
