@@ -3,6 +3,13 @@
 <?php
 
 $projects = [
+    'theme' => [
+        'title' => 'Theme Website',
+        'link' => 'https://peprojects.dev/alpha-4/jesse/projects/theme-challenge/',
+        'image' => 'images/theme.png',
+        'details' => 'A project crafted to match an industry standard website that presents professional level composition. Taking a larger inspiration by <a href="https://bleacherreport.com/">Bleacher Report.</a>',
+        'github' => 'https://github.com/JesseDevs/pe-projects/tree/main/projects/theme-challenge'
+    ],
     'overwatch' => [
         'title' => 'Overwatch Site&nbsp;Replica',
         'link' => 'https://peprojects.dev/alpha-4/jesse/projects/overwatch/',

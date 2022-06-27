@@ -1,4 +1,12 @@
-<?php include('pocket-monsters.php') ?>
+<?php
+
+// Pull in JSON data into our PHP build to create articles.
+$json = file_get_contents('data.json');
+$data = json_decode($json, true);
+$pokedex = $data[0];
+
+echo $pokedex;
+?>
 
 <?php
 
@@ -12,7 +20,7 @@
 
 // }
 
-foreach ($pocketMonsters as $pokemon) {
+foreach ($pokemons as $pokemon) {
 
 
     $types = $pokemon['type'];

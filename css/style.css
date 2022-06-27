@@ -113,7 +113,7 @@
     border-radius: 5px;
 
     width: fit-content;
-    height: fit-content;
+    height: 36px;
 
     transition: all ease-in .2s ;
 }
