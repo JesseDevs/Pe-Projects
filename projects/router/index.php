@@ -24,7 +24,7 @@
     $page = null;
 
     if (isset($_GET["page"])) {
-        $page = $_GET["page"]; // url?page = string
+        $page = htmlspecialchars_decode($_GET["page"]); // url?page = string
     } else {
         $page = "home"; // default
     }
@@ -32,39 +32,36 @@
     ?>
 
     <header>
-        <?php include('/modules/site-menu/index.php'); ?>
+        <?php include('modules/site-menu/index.php'); ?>
     </header>
 
     <main>
-        <?php
+        <inner-column>
 
-        include("site-menu.php");
-
-        if ($page == "home") {
-            include("home.php");
-        }
-
-        if ($page == "ryu") {
-            include("ryu.php");
-        }
-
-        if ($page == "zangief") {
-            include("zangief.php");
-        }
-
-        if ($page == "guile") {
-            include("guile.php");
-        }
-
-        if ($page == "dictator") {
-            include("dictator.php");
-        }
-
-        ?>
+            <h1>Hello </h1>
+            <?php
+            if ($page == "home") {
+                include("modules/home/index.php");
+            }
+            if ($page == "ryu") {
+                include("modules/character/ryu.php");
+            }
+            if ($page == "zangief") {
+                include("modules/character/zangief.php");
+            }
+            if ($page == "guile") {
+                include("modules/character/guile.php");
+            }
+            if ($page == "dictator") {
+                include("modules/character/dictator.php");
+            }
+            ?>
+        </inner-column>
     </main>
 
 
     <footer>
+        <?php include('modules/site-footer/index.php'); ?>
 
     </footer>
 
