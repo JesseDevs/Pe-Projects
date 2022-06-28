@@ -36,7 +36,7 @@ body {
   font-weight: 400;
 }
 
-main.page-content {
+main {
 	flex-grow: 1;
 }
 

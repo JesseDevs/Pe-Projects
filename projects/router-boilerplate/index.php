@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>[[insert Title]]</title>
-    <meta name ='description' content="[[Insert description]]">
+    <meta name='description' content="[[Insert description]]">
     <meta property="og:image" content="images/default-meta.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,20 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
+
+    <?php
+
+    $page = null;
+
+    if (isset($_GET["page"])) {
+        $page = $_GET["page"]; // url?page = string
+    } else {
+        $page = "home"; // default
+    }
+
+    ?>
 
     <header class="doc-header">
         <inner-column>
@@ -26,5 +40,38 @@
                 <a href="#">Three</a>
                 <a href="#">Four</a>
             </nav>
-        </inner-column>    
+        </inner-column>
     </header>
+
+    <main>
+        <?php
+
+        include("site-menu.php");
+
+        if ($page == "home") {
+            include("home.php");
+        }
+
+        if ($page == "suvs") {
+            include("suvs.php");
+        }
+
+        if ($page == "cars") {
+            include("cars.php");
+        }
+
+        if ($page == "performance") {
+            include("performance.php");
+        }
+
+        ?>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
