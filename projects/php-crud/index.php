@@ -37,23 +37,12 @@
 
     <main>
         <inner-column>
-
-            <h1>Hello </h1>
             <?php
             if ($page == "home") {
                 include("modules/home/index.php");
             }
-            if ($page == "ryu") {
-                include("modules/character/ryu.php");
-            }
-            if ($page == "zangief") {
-                include("modules/character/zangief.php");
-            }
-            if ($page == "guile") {
-                include("modules/character/guile.php");
-            }
-            if ($page == "dictator") {
-                include("modules/character/dictator.php");
+            if ($page == "detail") {
+                include("modules/fighter-detail/detail.php");
             }
             ?>
         </inner-column>

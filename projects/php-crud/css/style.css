@@ -1,0 +1,8 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'typography.css';
+@import 'modules.css';
+
+fighter-card picture{
+    max-width: 200px;
+}

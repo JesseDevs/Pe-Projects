@@ -40,13 +40,17 @@ main {
 	flex-grow: 1;
 }
 
-inner-column,
-article-grid {
+inner-column{
+	padding: 10vh 1rem;
+}
+
+fighter-card,
+article-grid,
+inner-column {
 	display: block;
   	width: 100%;
-  	margin-right: auto;
+	margin-right: auto;
 	margin-left: auto;
-	padding: 10vh 1rem;
 }
 
 a {
