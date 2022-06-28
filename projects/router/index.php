@@ -31,16 +31,8 @@
 
     ?>
 
-    <header class="doc-header">
-        <inner-column>
-            <nav>
-                <p>logo</p>
-                <a href="#">One</a>
-                <a href="#">Two</a>
-                <a href="#">Three</a>
-                <a href="#">Four</a>
-            </nav>
-        </inner-column>
+    <header>
+        <?php include('/modules/site-menu/index.php'); ?>
     </header>
 
     <main>
@@ -52,16 +44,20 @@
             include("home.php");
         }
 
-        if ($page == "suvs") {
-            include("suvs.php");
+        if ($page == "ryu") {
+            include("ryu.php");
         }
 
-        if ($page == "cars") {
-            include("cars.php");
+        if ($page == "zangief") {
+            include("zangief.php");
         }
 
-        if ($page == "performance") {
-            include("performance.php");
+        if ($page == "guile") {
+            include("guile.php");
+        }
+
+        if ($page == "dictator") {
+            include("dictator.php");
         }
 
         ?>
