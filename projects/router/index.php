@@ -30,7 +30,6 @@
     }
 
     ?>
-    ffff
 
     <header>
         <?php include('modules/site-menu/index.php'); ?>
