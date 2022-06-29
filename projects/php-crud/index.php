@@ -1,3 +1,6 @@
+<?php echo $_SERVER['REQUEST_URI'] ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +22,7 @@
 
 <body>
 
+
     <?php
 
     $page = null;
@@ -31,8 +35,10 @@
 
     ?>
 
+
     <header>
         <?php include('modules/site-menu/index.php'); ?>
+
     </header>
 
     <main>

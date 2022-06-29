@@ -1,10 +1,37 @@
-<?php include('../php-crud/data/fighter-data.php'); ?>
+<?php include('../php-crud/data/fighter-data.php');
 
-<h1>hi</h1>
+$chosenfighter = null;
+$requested_id = null;
 
-<?php
-if (isset($_GET['fighter'])) {
-    $fighter_id = $_GET['fighter'];
+if (isset($_GET['id'])) {
+    $requested_id = $_GET['id'];
+}
+// echo $requested_id; 
+?>
+
+<?php foreach ($fighters as $fighter) {
+    if ($requested_id == $fighter['id']) {
+        $chosenfighter = $fighter;
+    }
 }
 
-echo $fighter_id; ?>
+
+?>
+
+<?php if (isset($chosenfighter)) { ?>
+
+
+    <fighter-card>
+        <h2 class='<?= $chosenfighter['name'] ?>'>
+            <?= ucfirst($chosenfighter['name']) ?>
+        </h2>
+        <picture>
+            <img src="<?= $chosenfighter['portrait'] ?>" alt="SFV: Ryu">
+        </picture>
+    </fighter-card>
+
+<?php } else { ?>
+
+    <h1?> No Fighter found. </h1>
+
+    <?php } ?>
