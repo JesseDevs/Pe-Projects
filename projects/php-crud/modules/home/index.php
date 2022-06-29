@@ -7,11 +7,11 @@
         <li class='fighter'>
             <a href="?page=detail&id=<?= $fighter['id'] ?>">
                 <fighter-card>
-                    <h2 class='<?= $fighter['name'] ?>'>
-                        <?= ucfirst($fighter['name']) ?>
+                    <h2 class='<?= lcfirst($fighter['name']) ?>'>
+                        <?= $fighter['name'] ?>
                     </h2>
                     <picture>
-                        <img src="<?= $fighter['portrait'] ?>" alt="SFV: <?= ucfirst($fighter['name']) ?>">
+                        <img src="<?= $fighter['portrait'] ?>" alt="SFV: <?= ($fighter['name']) ?>">
                     </picture>
                 </fighter-card>
             </a>

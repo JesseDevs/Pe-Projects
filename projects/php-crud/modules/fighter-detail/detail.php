@@ -22,11 +22,11 @@ if (isset($_GET['id'])) {
 
 
     <fighter-card>
-        <h2 class='<?= $chosenfighter['name'] ?>'>
-            <?= ucfirst($chosenfighter['name']) ?>
+        <h2 class='<?= lcfirst($chosenfighter['name']) ?>'>
+            <?= $chosenfighter['name'] ?>
         </h2>
         <picture>
-            <img src="<?= $chosenfighter['portrait'] ?>" alt="SFV: Ryu">
+            <img src="<?= $chosenfighter['portrait'] ?>" alt="SFV:<?= $chosenfighter['name'] ?> ">
         </picture>
     </fighter-card>
 
