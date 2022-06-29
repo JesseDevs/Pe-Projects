@@ -1,4 +1,6 @@
-<inner-column>
+<footer>
+    <inner-column>
 
 
-</inner-column>
+    </inner-column>
+</footer>

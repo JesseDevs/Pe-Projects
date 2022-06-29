@@ -1,5 +1,7 @@
 @import '../modules/home/style.css';
-@import '../modules/list-grid/style.css';
+@import '../modules/list/style.css';
 @import '../modules/site-footer/style.css';
 @import '../modules/site-menu/style.css';
-@import '../modules/fighter-detail/style.css';
+@import '../modules/detail/style.css';
+@import '../modules/create/style.css';
+@import '../modules/404/style.css';

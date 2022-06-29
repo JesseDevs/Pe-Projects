@@ -1,11 +1,8 @@
-.list-grid inner-column{
-    padding: 5vh 1rem;
-}
-
-.list-grid inner-column h1{
-    text-align: center;
-    margin-bottom: 4vh;
-}
+section.list-grid nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}   
 
 ul.fighters-list{
     display: grid;
@@ -31,6 +28,10 @@ ul.fighters-list li.fighter:hover{
 li.fighter h2{
     background-color: var(--shade);
     padding: 1vh 0;
+}
+
+li.fighter:hover h2{
+    background-color: var(--hover);
 }
 
 li.fighter a{

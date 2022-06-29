@@ -3,15 +3,22 @@
 <?php
 
 $page = null;
-
 if (isset($_GET["page"])) {
     $page = htmlspecialchars_decode($_GET["page"]); // url?page = string
 } else {
     $page = "home"; // default
 }
 
+function getTemplate($page)
+{
+    if (isset($page)) {
+        $template = 'modules/' . $page . '/template.php';
+        include($template);
+    } else {
+        $page = 'modules/404/template.php';
+    }
+}
 ?>
-
 <html lang="en">
 
 <head>
@@ -36,26 +43,11 @@ if (isset($_GET["page"])) {
 
     <?php include('modules/site-menu/template.php'); ?>
 
-
-    <main>
-        <?php
-        if ($page == "home") {
-            include("modules/home/template.php");
-        }
-        if ($page == "list") {
-            include("modules/list-grid/template.php");
-        }
-        if ($page == "detail") {
-            include("modules/fighter-detail/template.php");
-        }
-        ?>
+    <main class='page-content'>
+        <?php getTemplate($page); ?>
     </main>
 
-
-    <footer>
-        <?php include('modules/site-footer/template.php'); ?>
-
-    </footer>
+    <?php include('modules/site-footer/template.php'); ?>
 
 </body>
 
