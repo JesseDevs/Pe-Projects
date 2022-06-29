@@ -42,11 +42,13 @@ main {
 
 inner-column{
 	padding: 10vh 1rem;
+	max-width: 1000px;
 }
 
 fighter-card,
 article-grid,
-inner-column {
+inner-column,
+text-content {
 	display: block;
   	width: 100%;
 	margin-right: auto;

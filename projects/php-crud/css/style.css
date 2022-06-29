@@ -3,6 +3,20 @@
 @import 'typography.css';
 @import 'modules.css';
 
-fighter-card picture{
-    max-width: 200px;
+html{
+    --white: rgb(249, 246, 238);
+    --black: rgb(32, 29, 28);
+
+    --main-color: rgb(47 79 105);
+    --accent-color: #B3792F;
+    --hover: #B5422E;
+    --shade: rgb(255 255 255 /.2)
+}
+
+body{
+    background-color: var(--white)
+}
+
+inner-column.tight{
+    max-width: 800px;
 }

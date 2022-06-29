@@ -21,17 +21,25 @@ if (isset($_GET['id'])) {
 <?php if (isset($chosenfighter)) { ?>
 
 
-    <fighter-card>
-        <h2 class='<?= lcfirst($chosenfighter['name']) ?>'>
+    <fighter-card class='detail'>
+        <h2 class=' attention-voice <?= lcfirst($chosenfighter['name']) ?>'>
             <?= $chosenfighter['name'] ?>
         </h2>
         <picture>
             <img src="<?= $chosenfighter['portrait'] ?>" alt="SFV:<?= $chosenfighter['name'] ?> ">
         </picture>
+
+        <text-content>
+            <em><?= $chosenfighter['quote'] ?></em>
+            <?php
+            if (isset($chosenfighter['audio'])) { ?> <audio controls src="<?= $chosenfighter['audio'] ?>"></audio><?php } ?>
+
+        </text-content>
     </fighter-card>
 
 <?php } else { ?>
 
     <h1?> No Fighter found. </h1>
+
 
     <?php } ?>

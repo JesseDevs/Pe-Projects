@@ -1,0 +1,14 @@
+header{
+    background-color:var(--main-color);
+    color: var(--white);
+}
+
+header inner-column{
+    padding: 2vh 1rem;
+}
+
+nav.site-menu {
+    display: flex;
+    gap: clamp(1.5rem,8vw, 2.5rem);
+}
+

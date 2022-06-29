@@ -1,7 +1,17 @@
-<?php echo $_SERVER['REQUEST_URI'] ?>
-
-
 <!DOCTYPE html>
+
+<?php
+
+$page = null;
+
+if (isset($_GET["page"])) {
+    $page = htmlspecialchars_decode($_GET["page"]); // url?page = string
+} else {
+    $page = "home"; // default
+}
+
+?>
+
 <html lang="en">
 
 <head>
@@ -22,41 +32,28 @@
 
 <body>
 
+    <?php echo $_SERVER['REQUEST_URI'] ?>
 
-    <?php
+    <?php include('modules/site-menu/template.php'); ?>
 
-    $page = null;
-
-    if (isset($_GET["page"])) {
-        $page = htmlspecialchars_decode($_GET["page"]); // url?page = string
-    } else {
-        $page = "home"; // default
-    }
-
-    ?>
-
-
-    <header>
-        <?php include('modules/site-menu/index.php'); ?>
-
-    </header>
 
     <main>
-        <inner-column>
-            <?php
-            if ($page == "home") {
-                include("modules/home/index.php");
-            }
-            if ($page == "detail") {
-                include("modules/fighter-detail/detail.php");
-            }
-            ?>
-        </inner-column>
+        <?php
+        if ($page == "home") {
+            include("modules/home/template.php");
+        }
+        if ($page == "list") {
+            include("modules/list-grid/template.php");
+        }
+        if ($page == "detail") {
+            include("modules/fighter-detail/template.php");
+        }
+        ?>
     </main>
 
 
     <footer>
-        <?php include('modules/site-footer/index.php'); ?>
+        <?php include('modules/site-footer/template.php'); ?>
 
     </footer>
 

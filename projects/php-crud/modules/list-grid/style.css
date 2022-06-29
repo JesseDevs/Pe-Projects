@@ -1,0 +1,38 @@
+.list-grid inner-column{
+    padding: 5vh 1rem;
+}
+
+.list-grid inner-column h1{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+ul.fighters-list{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-gap: 20px 10px;
+
+    
+    margin: 5vh auto;
+    text-align: center;
+}
+
+ul.fighters-list li.fighter{
+    max-width: 300px;
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 0 0 0 3px var(--accent-color);
+}
+
+ul.fighters-list li.fighter:hover{
+    box-shadow: 0 0 0 3px var(--hover);
+}
+
+li.fighter h2{
+    background-color: var(--shade);
+    padding: 1vh 0;
+}
+
+li.fighter a{
+    cursor: alias;
+}

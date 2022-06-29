@@ -3,16 +3,20 @@
 .loud-voice	{
 	font-family: sans-serif;
 	font-size: clamp(36px, 5vw, 60px);
+	font-weight: 700;
 }
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
 	.loud-voice {
 		font-weight: 700; /* or variable font */
-	}
-}
 
 .attention-voice	{
 	font-family: sans-serif;
 	font-size: 30px;
+}
+
+.deep-voice{
+	font-family: sans-serif;
+	font-size: 1.5rem;
 }
 
 .calm-voice, p, li {

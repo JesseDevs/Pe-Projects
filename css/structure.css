@@ -76,7 +76,7 @@ body{
   
 
   body{
-    background: linear-gradient(22deg, #ADEA84,#4EA494,#acd7cd,#3DBCAA,#6CD59C );
+    background: linear-gradient(22deg, #84dbea,#4EA494,#acd7cd,#3DBCAA,#6CD59C );
     background-size: 1400% 1400%;
     -webkit-animation: AnimationName 25s ease infinite;
     -moz-animation: AnimationName 25s ease infinite;
