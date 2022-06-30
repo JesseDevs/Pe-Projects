@@ -29,6 +29,7 @@ showErrors(); ?>
         // Setting varibles we will use
         $playstyle = null;
         $filter = [];
+        $results = [];
 
         //check if playstyle selected
         if (isset($_GET['playstyle'])) {
@@ -55,7 +56,7 @@ showErrors(); ?>
 
         <ul class='fighters-list'>
             <?php foreach ($fighters as $fighter) { ?>
-                <li class='fighter <?= lcfirst($fighter['name']) ?>'>
+                <li class='fighter <?= lcfirst($fighter['name']) ?> '>
                     <a href="?page=detail&id=<?= $fighter['id'] ?>">
                         <fighter-card>
                             <h2>

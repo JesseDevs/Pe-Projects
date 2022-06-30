@@ -44,7 +44,10 @@ if (isset($_GET['id'])) {
                 <text-content>
                     <em class='calm-voice'><?= $chosenfighter['quote'] ?></em>
 
-                    <audio controls src="<?= $chosenfighter['audio'] ?>"></audio>
+                    <audio controls>
+                        <source src="<?= $chosenfighter['audio'] ?>" type='audio/wav'>
+                        </source>
+                    </audio>
 
                     <div>
                         <p><strong>Playstyle:</strong>&nbsp;<?= $chosenfighter['playstyle'] ?> </p>
@@ -52,6 +55,18 @@ if (isset($_GET['id'])) {
                         </p>
                     </div>
                     <p><?= $chosenfighter['description'] ?></p>
+
+                    <article-grid class='specials'>
+                        <?php foreach ($chosenfighter['specials'] as $special) { ?>
+                            <article>
+                                <h3 class='deep-voice'><?= $special[0] ?></h3>
+
+                                <picture>
+                                    <img src="<?= $special[1] ?>" alt="">
+                                </picture>
+                            </article>
+                        <?php } ?>
+                    </article-grid>
 
                 </text-content>
             </fighter-page>

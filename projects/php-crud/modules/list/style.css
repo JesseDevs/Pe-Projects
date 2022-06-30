@@ -43,6 +43,11 @@ li.fighter a{
     cursor: alias;
 }
 
+.selected fighter-card picture{
+    background-color: rgb(0, 0, 0);
+    mix-blend-mode: multiply;
+}
+
 @media(min-width:500px){
     section.list-grid nav{
         justify-content: center;

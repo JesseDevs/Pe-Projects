@@ -20,7 +20,8 @@ $fighters = [
             'four' => './images/ryu/ryu-four.webp',
             'five' => './images/ryu/ryu-five.webp',
             'six' => './images/ryu/ryu-six.webp'
-        ]
+        ],
+        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
     ],
     [
         'id' => 1,
