@@ -91,6 +91,7 @@ article-grid.specials article{
     border: 3px solid var(--accent-color);
     padding-bottom: 5px;
     min-height: 140px;
+    max-height: 140px;
     width: 100%;
 
 }
