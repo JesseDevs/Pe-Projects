@@ -92,6 +92,8 @@ div.action a:hover{
     }
     section.info article{
         width: 50%;
+        min-height: 300px;
+        justify-content: space-between;
     }
 
 }

@@ -1,23 +1,27 @@
 <?php include('../php-crud/data/fighter-data.php'); ?>
 
+
+<header class='list-intro'>
+
+    <h1 class='loud-voice'>CHOOSE YOUR FIGHTER</h1>
+
+
+    <nav class='playstyle'>
+        <a href="?page=list&playstyle=Shoto">Shoto</a>
+        <div class="dash">|</div>
+        <a href="?page=list&playstyle=Charge">Charge</a>
+        <div class="dash">|</div>
+        <a href="?page=list&playstyle=Grappler">Grappler</a>
+        <div class="dash">|</div>
+        <a href="?page=list&playstyle=Zoner">Zoner</a>
+        <div class="dash">|</div>
+        <a href="?page=list">Full Roster</a>
+    </nav>
+</header>
+
 <section class="street-fighter list-grid">
     <inner-column class='tight'>
 
-
-        <h1 class='loud-voice'>CHOOSE YOUR FIGHTER</h1>
-
-
-        <nav class='playstyle'>
-            <a href="?page=list&playstyle=Shoto">Shoto</a>
-            <div class="dash">|</div>
-            <a href="?page=list&playstyle=Charge">Charge</a>
-            <div class="dash">|</div>
-            <a href="?page=list&playstyle=Grappler">Grappler</a>
-            <div class="dash">|</div>
-            <a href="?page=list&playstyle=Zoner">Zoner</a>
-            <div class="dash">|</div>
-            <a href="?page=list">Full Roster</a>
-        </nav>
 
         <?php
         // Setting varibles we will use

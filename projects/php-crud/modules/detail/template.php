@@ -17,7 +17,7 @@ if (isset($_GET['id'])) {
 
 
 ?>
-<section>
+<section class='fighter-detail'>
     <inner-column>
 
         <?php if (isset($chosenfighter)) { ?>

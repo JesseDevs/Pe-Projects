@@ -1,4 +1,9 @@
-section.list-grid nav{
+main header{
+    background-color: var(--accent-color);
+    padding: 5vh 1rem;
+}
+
+header.list-intro nav{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -6,17 +11,22 @@ flex-wrap: wrap;
 gap: 10px 15px;
 }
 
-section.list-grid nav *{
+header.list-intro h1{
+    text-align: center;
+    padding: 2vh 0;
+}
+
+header.list-intro nav *{
     padding: 5px;
 }
 
-section.list-grid nav a{
+header.list-intro nav a{
     min-width: 40px;
     text-decoration: underline;
     background-color: transparent;
 }
 
-section.list-grid nav a:hover{
+header.list-intro nav a:hover{
     text-decoration: none;
     color: var(--white);
     background-color: var(--hover);
@@ -27,8 +37,7 @@ ul.fighters-list{
 	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	grid-gap: 20px 10px;
 
-    
-    margin: 5vh auto;
+
     text-align: center;
 }
 
@@ -62,7 +71,7 @@ li.fighter a{
 }
 
 @media(min-width:500px){
-    section.list-grid nav{
+    header.list-intro nav{
         justify-content: center;
     }
 }

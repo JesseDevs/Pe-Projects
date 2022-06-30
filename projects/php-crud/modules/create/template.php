@@ -4,8 +4,10 @@
         echo "added";
     }
     ?>
+
+    <h1 class="loud-voice">CREATE A FIGHTER</h1>
+
     <inner-column>
-        <h1 class="loud-voice">CREATE A FIGHTER</h1>
 
         <form method="POST">
             <field>
