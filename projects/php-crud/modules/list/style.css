@@ -42,3 +42,9 @@ li.fighter:hover h2{
 li.fighter a{
     cursor: alias;
 }
+
+@media(min-width:500px){
+    section.list-grid nav{
+        justify-content: center;
+    }
+}

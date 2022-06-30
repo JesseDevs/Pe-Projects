@@ -61,7 +61,7 @@ article-grid.costumes picture{
         gap: 30px;
     }
 
-    inner-column h2{
+    inner-column>h2{
 
         margin-bottom: 6vh;
     }
