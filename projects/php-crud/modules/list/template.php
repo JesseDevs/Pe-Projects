@@ -1,4 +1,7 @@
-<?php include('../php-crud/data/fighter-data.php'); ?>
+<?php include('../php-crud/data/fighter-data.php');
+
+// For future reference would be nice to make a header for each page element to give it nice styling outside of the inner-column
+?>
 
 
 <header class='list-intro'>

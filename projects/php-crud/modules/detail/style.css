@@ -57,7 +57,7 @@ fighter-page text-content em{
 fighter-page text-content p,
 fighter-page text-content div{
     margin: 2vh 0;
-    max-width: 50ch;
+    max-width: 65ch;
     padding-left: 1rem;
     border-left: 3px solid var(--main-color); 
 }
