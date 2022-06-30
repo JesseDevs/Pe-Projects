@@ -43,8 +43,8 @@ if (isset($_GET['id'])) {
 
                 <text-content>
                     <em class='calm-voice'><?= $chosenfighter['quote'] ?></em>
-                    <?php
-                    if (isset($chosenfighter['audio'])) { ?> <audio controls src="<?= $chosenfighter['audio'] ?>"></audio><?php } ?>
+
+                    <audio controls src="<?= $chosenfighter['audio'] ?>"></audio>
 
                     <div>
                         <p><strong>Playstyle:</strong>&nbsp;<?= $chosenfighter['playstyle'] ?> </p>
