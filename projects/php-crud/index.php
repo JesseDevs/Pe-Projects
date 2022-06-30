@@ -39,7 +39,7 @@ function getTemplate($page)
 
 <body>
 
-    <?php echo $_SERVER['REQUEST_URI'] ?>
+    <!-- <?php echo $_SERVER['REQUEST_URI'] ?> -->
 
     <?php include('modules/site-menu/template.php'); ?>
 

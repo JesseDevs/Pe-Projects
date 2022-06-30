@@ -1,8 +1,13 @@
 section.list-grid nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}   
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 10px 15px;
+}
+
+section.list-grid nav a{
+    min-width: 40px
+}
 
 ul.fighters-list{
     display: grid;

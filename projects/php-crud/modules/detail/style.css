@@ -1,0 +1,68 @@
+inner-column h2{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+fighter-page{
+    display: flex;
+    flex-direction: column;
+}
+
+fighter-page picture.portrait{
+    box-shadow: 0 0 0 3px var(--main-color);
+    margin-bottom: 2vh;
+    max-width: 500px;
+}
+
+fighter-page text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+fighter-page text-content em{
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+fighter-page text-content p,
+fighter-page text-content div{
+    margin: 2vh 0;
+    max-width: 50ch;
+    padding-left: 1rem;
+    box-shadow: -3px 0 0 0 var(--main-color); 
+}
+
+text-content div p{
+    padding: 0;
+    box-shadow: none;
+    margin: 0 0;
+
+}
+
+article-grid.costumes{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-gap: 15px 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+
+    margin-bottom: 2vh;
+}
+
+article-grid.costumes picture{
+    max-width: 180px;
+    box-shadow: 0 0 0 3px var(--accent-color);;
+}
+
+@media (min-width: 800px){
+    fighter-page{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    inner-column h2{
+
+        margin-bottom: 6vh;
+    }
+}

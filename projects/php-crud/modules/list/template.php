@@ -11,11 +11,17 @@ showErrors(); ?>
 
 
         <h1 class='loud-voice'>CHOOSE YOUR FIGHTER</h1>
+
+
         <nav class='playstyle'>
             <a href="?page=list">Full Roster</a>
+            <div class="dash">|</div>
             <a href="?page=list&playstyle=Shoto">Shoto</a>
+            <div class="dash">|</div>
             <a href="?page=list&playstyle=Charge">Charge</a>
+            <div class="dash">|</div>
             <a href="?page=list&playstyle=Grappler">Grappler</a>
+            <div class="dash">|</div>
             <a href="?page=list&playstyle=Zoner">Zoner</a>
         </nav>
 

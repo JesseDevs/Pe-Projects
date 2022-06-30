@@ -8,18 +8,18 @@ $fighters = [
         'playstyle' => 'Shoto',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/ryu.png?h=51778c13c01235d62adfa5eb90016638',
         'quote' => 'This is the path of my destiny!',
-        'audio' => '../voice/ryu.ogg',
+        'audio' => './voice/ryu.ogg',
         'occupation' => 'Martial Artist',
-        'details' => 'The main protagonist of the Street Fighter series, first appearing in the original Street Fighter. He is an experienced martial artist, highly focused on his training, aiming to become the strongest he can.',
+        'description' => 'The main protagonist of the Street Fighter series, first appearing in the original Street Fighter. He is an experienced martial artist, highly focused on his training, aiming to become the strongest he can.',
         'arch-enemy' => 1,
         'ally' => 2,
         'costumes' => [
-            'one' => 'https://static.wikia.nocookie.net/streetfighter/images/c/c6/Eb0ft8R.png/revision/latest/scale-to-width-down/180?cb=20190916134106',
-            'two' => 'https://static.wikia.nocookie.net/streetfighter/images/f/ff/WVhRnUO.png/revision/latest/scale-to-width-down/180?cb=20190916134111',
-            'three' => 'https://static.wikia.nocookie.net/streetfighter/images/e/e0/QzCmiYQ.png/revision/latest/scale-to-width-down/180?cb=20190916134116',
-            'four' => 'https://static.wikia.nocookie.net/streetfighter/images/e/ec/CjmQFZT.png/revision/latest/scale-to-width-down/180?cb=20190916134143',
-            'five' => 'https://static.wikia.nocookie.net/streetfighter/images/f/fa/BDzDltg.png/revision/latest/scale-to-width-down/180?cb=20190916134132',
-            'six' => 'https://static.wikia.nocookie.net/streetfighter/images/4/48/OCX86q2.png/revision/latest/scale-to-width-down/180?cb=20201127061210'
+            'one' => './images/ryu/ryu-one.webp',
+            'two' => './images/ryu/ryu-two.webp',
+            'three' => './images/ryu/ryu-three.webp',
+            'four' => './images/ryu/ryu-four.webp',
+            'five' => './images/ryu/ryu-five.webp',
+            'six' => './images/ryu/ryu-six.webp'
         ]
     ],
     [
@@ -31,11 +31,11 @@ $fighters = [
         'quote' => 'Bow down before my Psycho Power!',
         'sound' => '../voice/dictator.ogg',
         'occupation' => 'Shadaloo King (leader)',
-        'details' => 'M. Bison is an archetypal villain motivated by his own self-serving interests and lust for absolute power through world domination. He is a megalomaniacal and psychopathic dictator and terrorist who seeks to rule the world with an iron fist whilst also being universally regarded as the greatest and most powerful martial artist of all time',
+        'description' => 'M. Bison is an archetypal villain motivated by his own self-serving interests and lust for absolute power through world domination. He is a megalomaniacal and psychopathic dictator and terrorist who seeks to rule the world with an iron fist whilst also being universally regarded as the greatest and most powerful martial artist of all time',
         'arch-enemy' => 0,
         'ally' => '',
         'costumes' => [
-            'one' => 'https://static.wikia.nocookie.net/streetfighter/images/5/59/8xhq6Yf.png/revision/latest/scale-to-width-down/185?cb=20190916133420',
+            'one' => './images/bison/bison-one.webp',
             'two' => 'https://static.wikia.nocookie.net/streetfighter/images/b/ba/OqfBC1c.png/revision/latest/scale-to-width-down/185?cb=20190916133415',
             'three' => 'https://static.wikia.nocookie.net/streetfighter/images/3/30/MmAAVut.png/revision/latest/scale-to-width-down/185?cb=20190916133431',
             'four' => 'https://static.wikia.nocookie.net/streetfighter/images/6/6f/OrwAmjj.png/revision/latest/scale-to-width-down/185?cb=20201127052547',
@@ -52,7 +52,7 @@ $fighters = [
         'quote' => 'No need for talk. Let’s do this!',
         'sound' => '',
         'occupation' => 'Major of the United States Air Force',
-        'details' => 'A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.',
+        'description' => 'A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.',
         'arch-enemy' => '',
         'ally' => 0,
         'costumes' => [
@@ -73,7 +73,7 @@ $fighters = [
         'quote' => 'I am...the Red Cyclone!',
         'sound' => '',
         'occupation' => 'Professional Wrestler',
-        'details' => 'Zangief enters any and all Street Fighting tournaments purely to prove his worth as the greatest wrestler in the world and to maintain his reputation as the Red Cyclone. He is extremely proud of his motherland, the Soviet Union, and he is determined to represent it as the champion of each tournament.',
+        'description' => 'Zangief enters any and all Street Fighting tournaments purely to prove his worth as the greatest wrestler in the world and to maintain his reputation as the Red Cyclone. He is extremely proud of his motherland, the Soviet Union, and he is determined to represent it as the champion of each tournament.',
         'arch-enemy' => '',
         'ally' => '',
         'costumes' => [
@@ -94,7 +94,7 @@ $fighters = [
         'quote' => 'I’m Rashid of the Turbulent Wind! Remember the name well!',
         'sound' => '',
         'occupation' => 'Socialite',
-        'details' => 'Rashid is the eldest son of an old aristocratic Middle Eastern family who’s traveling the world in search of a missing friend who has been kidnapped by Shadaloo.',
+        'description' => 'Rashid is the eldest son of an old aristocratic Middle Eastern family who’s traveling the world in search of a missing friend who has been kidnapped by Shadaloo.',
         'costumes' => [
             'one' => 'https://static.wikia.nocookie.net/streetfighter/images/5/50/Snm98G7.png/revision/latest/scale-to-width-down/185?cb=20190916133801',
             'two' => 'https://static.wikia.nocookie.net/streetfighter/images/e/e0/CdBS2Oz.png/revision/latest/scale-to-width-down/185?cb=20190916133811',
@@ -113,7 +113,7 @@ $fighters = [
         'quote' => 'Want to see my Kung-Fu? I’ll show you.',
         'sound' => '',
         'occupation' => 'Investigator for the ICPO',
-        'details' => 'Freshly initiated into the Interpol ranks, Chun-Li is in pursuit of M. Bison and all of the information that she can obtain about his army’s whereabouts. However, many of Chun-Li’s efforts are thwarted and she makes little progress in locating Bison throughout the tournament. Bison’s attentions are on a particular martial artist known as Ryu',
+        'description' => 'Freshly initiated into the Interpol ranks, Chun-Li is in pursuit of M. Bison and all of the information that she can obtain about his army’s whereabouts. However, many of Chun-Li’s efforts are thwarted and she makes little progress in locating Bison throughout the tournament. Bison’s attentions are on a particular martial artist known as Ryu',
         'arch-enemy' => 1,
         'ally' => [0, 2],
         'costumes' => [
@@ -135,7 +135,7 @@ $fighters = [
         'quote' => 'Devour-our-our...',
         'sound' => '',
         'occupation' => null,
-        'details' => "Necalli is described as the 'Emissary of the Gods', with a rather ominous moniker of 'The Soul Consuming Darkness'. As the Warrior Prophet reveals, every few hundred years the stars herald the 'Hour of Battle' ('Hour of Necalli'). During this period of time Necalli awakens to consume the souls of strong warriors.'",
+        'description' => "Necalli is described as the 'Emissary of the Gods', with a rather ominous moniker of 'The Soul Consuming Darkness'. As the Warrior Prophet reveals, every few hundred years the stars herald the 'Hour of Battle' ('Hour of Necalli'). During this period of time Necalli awakens to consume the souls of strong warriors.'",
         'costumes' => [
             'one' => 'https://static.wikia.nocookie.net/streetfighter/images/a/a1/1SCp3g6.png/revision/latest/scale-to-width-down/185?cb=20190916133659',
             'two' => 'https://static.wikia.nocookie.net/streetfighter/images/3/36/T4XKyrF.png/revision/latest/scale-to-width-down/185?cb=20190916133710',

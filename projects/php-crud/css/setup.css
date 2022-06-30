@@ -43,16 +43,21 @@ main {
 inner-column{
 	padding: 5vh 1rem;
 	max-width: 1000px;
+	margin: 0 auto;
 }
 
 fighter-card,
+fighter-page,
 article-grid,
 inner-column,
 text-content {
 	display: block;
   	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
+}
+
+audio{
+	display: block;
+	margin: 0 auto;
 }
 
 a {
@@ -70,6 +75,7 @@ p a {
 	text-decoration: underline;
 	color: blue;
 }
+
 
 p {
 	line-height: 1.3;
