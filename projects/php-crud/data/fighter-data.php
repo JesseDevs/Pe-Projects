@@ -41,7 +41,7 @@ $fighters = [
             'three' => './images/bison/bison-three.webp',
             'four' => './images/bison/bison-four.webp',
         ],
-        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
+        'specials' => [['Crusher', './gifs/crusher.webp'], ['Knee Press', './gifs/knee.webp'], ['Devil Rev.', './gifs/devil.webp']]
     ],
     [
         'id' => 2,
@@ -63,7 +63,7 @@ $fighters = [
             'five' => './images/guile/gul-five.webp',
 
         ],
-        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
+        'specials' => [['Sonic Boom', './gifs/booom.webp'], ['Flash Kick', './gifs/kick.webp'], ['Hurricane', './gifs/hurricane.webp']]
     ],
     [
         'id' => 3,
@@ -85,7 +85,7 @@ $fighters = [
             'five' => './images/zan/zan-five.webp',
 
         ],
-        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
+        'specials' => [['Piledriver', './gifs/pile.gif'], ['Lariat', './gifs/lariat.webp'], ['Green Hand', './gifs/hand.webp']]
     ],
     [
         'id' => 4,
@@ -105,7 +105,8 @@ $fighters = [
             'five' => './images/ras/ras-five.webp',
             'six' => './images/ras/ras-five.webp',
 
-        ]
+        ],
+        'specials' => [['Whirlwind', './gifs/shot.webp'], ['Eagle Spike', './gifs/spike.webp'], ['Mixer', './gifs/mixer.webp']]
     ],
     [
         'id' => 5,
@@ -128,7 +129,7 @@ $fighters = [
             'six' => './images/chun/chun-five.webp',
 
         ],
-        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
+        'specials' => [['Kikoken', './gifs/kiko.webp'], ['Spinning Bird', './gifs/bird.webp'], ['Lightning Legs', './gifs/legs.webp']]
     ],
     [
         'id' => 6,
@@ -148,7 +149,7 @@ $fighters = [
             'five' => './images/nec/nec-five.webp',
 
         ],
-        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
+        'specials' => [['Mask of Tlalli', './gifs/mask.webp'], ['Rebellion', './gifs/rebl.webp'], ['Raging Light', './gifs/light.webp']]
     ],
 
 ];
