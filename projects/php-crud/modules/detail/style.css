@@ -43,6 +43,10 @@ text-content div p{
 
 }
 
+fighter-page text-content h2{
+    text-align: center;
+}
+
 article-grid.costumes{
     display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

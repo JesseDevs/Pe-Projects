@@ -8,11 +8,17 @@
             <img src="./images/logo.webp" alt="">
         </picture>
 
-
         <div class="action">
             <p>Find YOUR Fighter</p>
             <a href="?page=list">Enter Battleground</a>
         </div>
+
+
+    </inner-column>
+</section>
+
+<section class='info'>
+    <inner-column>
 
         <text-content>
 

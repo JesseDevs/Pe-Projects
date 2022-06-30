@@ -56,7 +56,9 @@ if (isset($_GET['id'])) {
                     </div>
                     <p><?= $chosenfighter['description'] ?></p>
 
+                    <h2 class="attention-voice">SPECIALS</h2>
                     <article-grid class='specials'>
+
                         <?php foreach ($chosenfighter['specials'] as $special) { ?>
                             <article>
                                 <h3 class='deep-voice'><?= $special[0] ?></h3>
