@@ -6,6 +6,8 @@ inner-column> h2{
 fighter-page{
     display: flex;
     flex-direction: column;
+
+    
 }
 
 fighter-page picture.portrait{
