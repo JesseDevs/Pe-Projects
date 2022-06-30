@@ -4,11 +4,10 @@ $fighters = [
     [
         'id' => 0,
         'name' => 'Ryu',
-        'page' => '?page=ryu',
         'playstyle' => 'Shoto',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/ryu.png?h=51778c13c01235d62adfa5eb90016638',
         'quote' => 'This is the path of my destiny!',
-        'audio' => './voice/ryu.ogg',
+        'audio' => './voice/ryu.mp3',
         'occupation' => 'Martial Artist',
         'description' => 'The main protagonist of the Street Fighter series, first appearing in the original Street Fighter. He is an experienced martial artist, highly focused on his training, aiming to become the strongest he can.',
         'arch-enemy' => 1,
@@ -26,11 +25,10 @@ $fighters = [
     [
         'id' => 1,
         'name' => 'M.Bison',
-        'page' => '?page=dictator',
         'playstyle' => 'Charge',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/veg.png?h=05940c2c8feafe94aa6ced8003b4b2dc',
         'quote' => 'Bow down before my Psycho Power!',
-        'audio' => './voice/dictator.ogg',
+        'audio' => './voice/dictator.mp3',
         'occupation' => 'Shadaloo King (leader)',
         'description' => 'M. Bison is an archetypal villain motivated by his own self-serving interests and lust for absolute power through world domination. He is a megalomaniacal and psychopathic dictator and terrorist who seeks to rule the world with an iron fist whilst also being universally regarded as the greatest and most powerful martial artist of all time',
         'arch-enemy' => 0,
@@ -46,11 +44,10 @@ $fighters = [
     [
         'id' => 2,
         'name' => 'Guile',
-        'page' => '?page=guile',
         'playstyle' => 'Zoner',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/gul.png?h=13fa8b86069fbb4beafe9622893ae48b',
         'quote' => 'No need for talk. Let’s do this!',
-        'audio' => './voice/guile.ogg',
+        'audio' => './voice/guile.mp3',
         'occupation' => 'Major of the United States Air Force',
         'description' => 'A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.',
         'arch-enemy' => '',
@@ -68,11 +65,10 @@ $fighters = [
     [
         'id' => 3,
         'name' => 'Zangief',
-        'page' => '?page=zangief',
         'playstyle' => 'Grappler',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/zgf.png?h=4ae8ea4293c0db3829278dba98deac8a',
         'quote' => 'I am...the Red Cyclone!',
-        'audio' => './voice/zan.ogg',
+        'audio' => './voice/zan.mp3',
         'occupation' => 'Professional Wrestler',
         'description' => 'Zangief enters any and all Street Fighting tournaments purely to prove his worth as the greatest wrestler in the world and to maintain his reputation as the Red Cyclone. He is extremely proud of his motherland, the Soviet Union, and he is determined to represent it as the champion of each tournament.',
         'arch-enemy' => '',
@@ -90,11 +86,10 @@ $fighters = [
     [
         'id' => 4,
         'name' => 'Rashid',
-        'page' => '?page=rashid',
         'playstyle' => 'Shoto',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/rsd.png?h=f2a8cc6f5fb27836fa517e96cddc2337',
         'quote' => 'I’m Rashid of the Turbulent Wind! Remember the name well!',
-        'audio' => './voice/ras.ogg',
+        'audio' => './voice/ras.mp3',
         'occupation' => 'Socialite',
         'description' => 'Rashid is the eldest son of an old aristocratic Middle Eastern family who’s traveling the world in search of a missing friend who has been kidnapped by Shadaloo.',
         'costumes' => [
@@ -111,11 +106,10 @@ $fighters = [
     [
         'id' => 5,
         'name' => 'Chun-li',
-        'page' => '?page=chun-li',
         'playstyle' => 'Charge',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/cnl.png?h=cdcdad24aed42606eede35add77e6d11',
         'quote' => 'Want to see my Kung-Fu? I’ll show you.',
-        'audio' => './voice/chun.ogg',
+        'audio' => './voice/chun.mp3',
         'occupation' => 'Investigator for the ICPO',
         'description' => 'Freshly initiated into the Interpol ranks, Chun-Li is in pursuit of M. Bison and all of the information that she can obtain about his army’s whereabouts. However, many of Chun-Li’s efforts are thwarted and she makes little progress in locating Bison throughout the tournament. Bison’s attentions are on a particular martial artist known as Ryu',
         'arch-enemy' => 1,
@@ -134,11 +128,10 @@ $fighters = [
     [
         'id' => 6,
         'name' => 'Necalli',
-        'page' => '?page=necalli',
         'playstyle' => 'Grappler',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/ncl.png?h=0339842bc100b496aa5ebcc60168a6c6',
         'quote' => 'Devour-our-our...',
-        'audio' => './voice/nec.ogg',
+        'audio' => './voice/nec.mp3',
         'occupation' => null,
         'description' => "Necalli is described as the 'Emissary of the Gods', with a rather ominous moniker of 'The Soul Consuming Darkness'. As the Warrior Prophet reveals, every few hundred years the stars herald the 'Hour of Battle' ('Hour of Necalli'). During this period of time Necalli awakens to consume the souls of strong warriors.'",
         'costumes' => [
@@ -150,6 +143,25 @@ $fighters = [
 
         ],
         'specials' => [['Mask of Tlalli', './gifs/mask.webp'], ['Rebellion', './gifs/rebl.webp'], ['Raging Light', './gifs/light.webp']]
+    ],
+    [
+        'id' => 7,
+        'name' => 'Dhalsim',
+        'playstyle' => 'Zoner',
+        'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/dsm.png?h=831bf42208028686d3edefc248f28bdb',
+        'quote' => 'I’m not very fond of conflict.',
+        'audio' => './voice/dha.mp3',
+        'occupation' => 'Yoga Master',
+        'description' => 'Dhalsim enters the tournament to raise money for his village, but realizes that it contradicts his pacifist beliefs. Dhalsim retires from fighting after the second World Warrior tournament, and continues to roam the world helping those in need. This character possesses limbs that extend across the screen to keep opponents away.',
+        'ally' => 1,
+        'costumes' => [
+            'one' => './images/dha/dha-one.webp',
+            'two' => './images/dha/dha-two.webp',
+            'three' => './images/dha/dha-three.webp',
+            'four' => './images/dha/dha-four.webp',
+            'five' => './images/dha/dha-five.webp',
+        ],
+        'specials' => [['Yoga Fire', './gifs/fire.webp'], ['Yoga Flame', './gifs/flame.webp'], ['Yoga Kick', './gifs/kick.gif']]
     ],
 
 ];

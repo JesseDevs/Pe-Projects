@@ -3,20 +3,21 @@
 <?php
 
 $page = null;
-if (isset($_GET["page"])) {
+$get = isset($_GET["page"]);
+
+if ($get) {
     $page = htmlspecialchars_decode($_GET["page"]); // url?page = string
 } else {
     $page = "home"; // default
 }
 
+// Check if page exist and then directs the file path based on the page
 function getTemplate($page)
 {
     if (isset($page)) {
         $template = 'modules/' . $page . '/template.php';
-        include($template);
-    } else {
-        $page = 'modules/404/template.php';
     }
+    include($template);
 }
 ?>
 <html lang="en">

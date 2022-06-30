@@ -37,43 +37,24 @@
             $playstyle = $_GET['playstyle'];
         }
 
-        //if it is then the varibale will be set
-        if ($playstyle) {
-            //loop through the array
-            foreach ($fighters as $fighter) {
-                // if fighter playstyle == playstyle selected then..
-                if ($fighter['playstyle'] == $playstyle) {
-                    //push (add) to the new $filter array
-                    array_push($filter, $fighter);
+        function isSelected($chosenStyle, $fighterStyle)
+        {
+            if ($chosenStyle) {
+                if ($chosenStyle == $fighterStyle) {
+                    return "selected";
                 }
+            } else {
+                return "selected";
             }
-
-            // unset($filter, $fighter);
-
-            // echo $fighters;
-            // foreach ($filter as $f) {
-            //     $f->{'class'} = 'selected';
-
-            //     array_push($fighters, $f);
-            // };
-
-
-
-
-
-            // make the original array = to new array
-
-            $fighters = $filter;
         }
 
-        // now our loop will only contain the filter fighters(elements)
         ?>
 
         <ul class='fighters-list'>
             <?php foreach ($fighters as $fighter) { ?>
-                <li class='fighter <?= lcfirst($fighter['name']) ?> '>
+                <li class='fighter <?= lcfirst($fighter['name']) ?> <?= isSelected($playstyle, $fighter['playstyle']) ?>'>
                     <a href="?page=detail&id=<?= $fighter['id'] ?>">
-                        <fighter-card class='<?= $fighter['class'] ?>'>
+                        <fighter-card>
                             <h2>
                                 <?= $fighter['name'] ?>
                             </h2>

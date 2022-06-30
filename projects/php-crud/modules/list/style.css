@@ -11,28 +11,28 @@ flex-wrap: wrap;
 gap: 10px 15px;
 }
 
-header.list-intro h1{
+.list-intro h1{
     text-align: center;
     padding: 2vh 0;
 }
 
-header.list-intro nav *{
+.list-intro nav *{
     padding: 5px;
 }
 
-header.list-intro nav a{
+.list-intro nav a{
     min-width: 40px;
     text-decoration: underline;
     background-color: transparent;
 }
 
-header.list-intro nav a:hover{
+.list-intro nav a:hover{
     text-decoration: none;
     color: var(--white);
     background-color: var(--hover);
 }
 
-ul.fighters-list{
+.fighters-list{
     display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	grid-gap: 20px 10px;
@@ -41,37 +41,45 @@ ul.fighters-list{
     text-align: center;
 }
 
-ul.fighters-list li.fighter{
+.fighters-list .fighter{
     max-width: 300px;
     background-color: var(--black);
     color: var(--white);
     box-shadow: 0 0 0 3px var(--accent-color);
 }
 
-ul.fighters-list li.fighter:hover{
+.fighters-list .fighter:hover{
     box-shadow: 0 0 0 3px var(--hover);
 }
 
-li.fighter h2{
+.fighter h2{
     background-color: var(--shade);
     padding: 1vh 0;
 }
 
-li.fighter:hover h2{
+.fighter:hover h2{
     background-color: var(--hover);
 }
 
-li.fighter a{
+.fighter a{
     cursor: alias;
 }
 
-.selected fighter-card picture{
-    background-color: rgb(0, 0, 0);
+.fighter:not(.selected) {
+    pointer-events: none;
+}
+
+.fighter:not(.selected)  picture{
+    background-color: rgb(10, 10, 10 /.5);
     mix-blend-mode: multiply;
 }
 
+.fighter:not(.selected) h2{
+    color: var(--shade);
+}
+
 @media(min-width:500px){
-    header.list-intro nav{
+    .list-intro nav{
         justify-content: center;
     }
 }

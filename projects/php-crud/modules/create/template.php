@@ -1,6 +1,9 @@
 <section class='form'>
     <?php
-    if (isset($_POST['add'])) {
+
+    $add = isset($_POST['add']);
+
+    if ($add) {
         echo "added";
     }
     ?>
@@ -12,11 +15,11 @@
         <form method="POST">
             <field>
                 <label>Name</label>
-                <input type="text" maxlength='15'>
+                <input type=" text" name='name' maxlength='15'>
             </field>
             <field>
                 <label>Portrait</label>
-                <input type="file" name="image" accept="image/*">
+                <input type="file" name="portrait" accept="image/*">
             </field>
             <field>
                 <label>Alternate Costumes</label>
@@ -24,7 +27,7 @@
             </field>
             <field>
                 <label>Quote</label>
-                <input type="text" maxlength='40'>
+                <input type="text" name='quote' maxlength='40'>
             </field>
             <field>
                 <label>Audio</label>
@@ -43,23 +46,43 @@
 
             <field>
                 <label>Occupation</label>
-                <input type="text" maxlength='15'>
+                <input type="text" name='occupation' maxlength='15'>
             </field>
 
             <field>
                 <label>Description</label>
-                <textarea></textarea>
+                <textarea name='description'></textarea>
             </field>
 
             <field>
-                <label>Special Moves</label>
+                <label>Special Move One</label>
 
 
                 <label>Name Of The Move</label>
-                <input type="text" maxlength='15'>
+                <input type="text" name='specials-one' maxlength='15'>
 
                 <label>Image Of The Move</label>
-                <input type="file" name="image" accept="image/*">
+                <input type="file" name="specials-one" accept="image/*">
+            </field>
+            <field>
+                <label>Special Move Two</label>
+
+
+                <label>Name Of The Move</label>
+                <input type="text" name='specials-two' maxlength='15'>
+
+                <label>Image Of The Move</label>
+                <input type="file" name="specials-two" accept="image/*">
+            </field>
+            <field>
+                <label>Special Move Three</label>
+
+
+                <label>Name Of The Move</label>
+                <input type="text" name='specials-three' maxlength='15'>
+
+                <label>Image Of The Move</label>
+                <input type="file" name="specials-three" accept="image/*">
             </field>
 
             <button type="submit" name='add'>
