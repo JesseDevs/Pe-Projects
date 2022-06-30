@@ -58,7 +58,7 @@ body{
 
 
 
-@media (prefers-color-scheme:light){
+/* @media (prefers-color-scheme:light){
 
   html{
     --ink: rgb(20, 20, 20);
@@ -88,7 +88,7 @@ body{
     filter: none;
   }
 
-}
+} */
 
 @media (prefers-color-scheme:dark){
 
