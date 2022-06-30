@@ -63,6 +63,8 @@ article-grid.costumes picture{
 article-grid.specials{
     display: flex;
     justify-content: space-between;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 article-grid.specials picture{
