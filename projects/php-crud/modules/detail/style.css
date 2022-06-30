@@ -62,28 +62,57 @@ article-grid.costumes picture{
 
 article-grid.specials{
     display: flex;
-    justify-content: space-between;
-    max-width: 350px;
-    margin: 0 auto;
+    flex-direction: column;
+
+    margin: 3vh auto;
+    gap: 10px;
 }
 
 article-grid.specials picture{
     max-width: fit-content;
+    max-height: fit-content;
+}
+
+article-grid.specials picture img{
     max-height: 100px;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
 article-grid.specials article{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+
 
     border: 3px solid var(--accent-color);
+    padding-bottom: 5px;
+    min-height: 100px;
+    width: 100%;
+
 }
 
 article-grid.specials article h3{
     background-color: var(--darkshade);
     color: var(--white);
     padding: 1vh 6px;
+    width: 100%;
+    text-align: center;
+}
+
+@media(min-width:450px){
+    article-grid.specials{
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    article-grid.specials article{
+        justify-content: space-between;
+    }
+
+
 }
 
 @media (min-width: 800px){
@@ -95,5 +124,10 @@ article-grid.specials article h3{
     inner-column>h2{
 
         margin-bottom: 6vh;
+    }
+
+    article-grid.specials{
+        gap: 20px;
+        justify-content: center;
     }
 }

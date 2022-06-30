@@ -1,10 +1,4 @@
-<?php include('../php-crud/data/fighter-data.php');
-function showErrors()
-{
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
-}
-showErrors(); ?>
+<?php include('../php-crud/data/fighter-data.php'); ?>
 
 <section class="street-fighter list-grid">
     <inner-column class='tight'>
@@ -14,8 +8,6 @@ showErrors(); ?>
 
 
         <nav class='playstyle'>
-            <a href="?page=list">Full Roster</a>
-            <div class="dash">|</div>
             <a href="?page=list&playstyle=Shoto">Shoto</a>
             <div class="dash">|</div>
             <a href="?page=list&playstyle=Charge">Charge</a>
@@ -23,6 +15,8 @@ showErrors(); ?>
             <a href="?page=list&playstyle=Grappler">Grappler</a>
             <div class="dash">|</div>
             <a href="?page=list&playstyle=Zoner">Zoner</a>
+            <div class="dash">|</div>
+            <a href="?page=list">Full Roster</a>
         </nav>
 
         <?php

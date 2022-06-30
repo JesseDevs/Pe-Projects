@@ -1,12 +1,25 @@
 section.list-grid nav{
 display: flex;
 flex-direction: row;
+justify-content: space-around;
 flex-wrap: wrap;
 gap: 10px 15px;
 }
 
+section.list-grid nav *{
+    padding: 5px;
+}
+
 section.list-grid nav a{
-    min-width: 40px
+    min-width: 40px;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+section.list-grid nav a:hover{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--hover);
 }
 
 ul.fighters-list{

@@ -40,7 +40,8 @@ $fighters = [
             'two' => './images/bison/bison-two.webp',
             'three' => './images/bison/bison-three.webp',
             'four' => './images/bison/bison-four.webp',
-        ]
+        ],
+        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
     ],
     [
         'id' => 2,
@@ -61,7 +62,8 @@ $fighters = [
             'four' => './images/guile/gul-four.webp',
             'five' => './images/guile/gul-five.webp',
 
-        ]
+        ],
+        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
     ],
     [
         'id' => 3,
@@ -82,7 +84,8 @@ $fighters = [
             'four' => './images/zan/zan-four.webp',
             'five' => './images/zan/zan-five.webp',
 
-        ]
+        ],
+        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
     ],
     [
         'id' => 4,
@@ -124,7 +127,8 @@ $fighters = [
             'five' => './images/chun/chun-five.webp',
             'six' => './images/chun/chun-five.webp',
 
-        ]
+        ],
+        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
     ],
     [
         'id' => 6,
@@ -143,7 +147,8 @@ $fighters = [
             'four' => './images/nec/nec-four.webp',
             'five' => './images/nec/nec-five.webp',
 
-        ]
+        ],
+        'specials' => [['Hadouken', './gifs/hado.webp'], ['Tatsumaki', './gifs/tatsu.webp'], ['Shoryuken', './gifs/shoru.webp']]
     ],
 
 ];
