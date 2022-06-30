@@ -13,7 +13,7 @@ $playstyle = [
     ],
     [
         'name' => 'Grappler',
-        'description' => 'A grappler is a character that fights mostly by grappling and throwing their opponents. Usually, they will have poor long-range capability, but are extremely powerful point-blank, so their matches turn into contests of whether the enemy can stay out of their "Instant Death" Radius long enough to kill them. It is also very common in more modern fighting games for characters to have Super Armor along with strong defensive tools. Those that chose to play this style often go for big reads on their opponents by understanding the mindstate of player.',
+        'description' => 'A grappler is a character that fights mostly by grappling and throwing their opponents. Usually, they will have poor long-range capability, but are extremely powerful point-blank, so their matches turn into contests of whether the enemy can stay out of their "Instant Death" Radius long enough to kill them. It is also very common in more modern fighting games for characters to have Super Armor along with strong defensive tools. Those that chose to play this style often go for big reads on their opponents by understanding the mindstate of the player.',
         'page' => '?page=list&playstyle=Grappler'
     ],
     [

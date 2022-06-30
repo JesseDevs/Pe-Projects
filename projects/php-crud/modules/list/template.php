@@ -41,7 +41,21 @@
                 }
             }
 
+            // unset($filter, $fighter);
+
+            // echo $fighters;
+            // foreach ($filter as $f) {
+            //     $f->{'class'} = 'selected';
+
+            //     array_push($fighters, $f);
+            // };
+
+
+
+
+
             // make the original array = to new array
+
             $fighters = $filter;
         }
 
@@ -52,7 +66,7 @@
             <?php foreach ($fighters as $fighter) { ?>
                 <li class='fighter <?= lcfirst($fighter['name']) ?> '>
                     <a href="?page=detail&id=<?= $fighter['id'] ?>">
-                        <fighter-card>
+                        <fighter-card class='<?= $fighter['class'] ?>'>
                             <h2>
                                 <?= $fighter['name'] ?>
                             </h2>

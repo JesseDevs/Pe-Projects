@@ -22,6 +22,10 @@ section.landing picture{
     margin: 2vh auto;
 }
 
+section.info inner-column{
+    padding-top:2vh;
+}
+
 section.info text-content{
     margin: 2vh auto;
 }
