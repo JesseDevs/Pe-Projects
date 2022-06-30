@@ -36,11 +36,9 @@ $fighters = [
         'ally' => '',
         'costumes' => [
             'one' => './images/bison/bison-one.webp',
-            'two' => 'https://static.wikia.nocookie.net/streetfighter/images/b/ba/OqfBC1c.png/revision/latest/scale-to-width-down/185?cb=20190916133415',
-            'three' => 'https://static.wikia.nocookie.net/streetfighter/images/3/30/MmAAVut.png/revision/latest/scale-to-width-down/185?cb=20190916133431',
-            'four' => 'https://static.wikia.nocookie.net/streetfighter/images/6/6f/OrwAmjj.png/revision/latest/scale-to-width-down/185?cb=20201127052547',
-            'five' => '',
-            'six' => ''
+            'two' => './images/bison/bison-two.webp',
+            'three' => './images/bison/bison-three.webp',
+            'four' => './images/bison/bison-four.webp',
         ]
     ],
     [
@@ -56,12 +54,12 @@ $fighters = [
         'arch-enemy' => '',
         'ally' => 0,
         'costumes' => [
-            'one' => 'https://static.wikia.nocookie.net/streetfighter/images/8/83/8IHim0J.png/revision/latest/scale-to-width-down/185?cb=20190909070709',
-            'two' => 'https://static.wikia.nocookie.net/streetfighter/images/2/29/LUAV6JT.png/revision/latest/scale-to-width-down/185?cb=20190909070722',
-            'three' => 'https://static.wikia.nocookie.net/streetfighter/images/b/be/ONGj2gT.png/revision/latest/scale-to-width-down/185?cb=20190909070728',
-            'four' => 'https://static.wikia.nocookie.net/streetfighter/images/9/98/3y0s7a7.png/revision/latest/scale-to-width-down/185?cb=20190909070737',
-            'five' => 'https://static.wikia.nocookie.net/streetfighter/images/c/ca/EHn4hVw.png/revision/latest/scale-to-width-down/185?cb=20201127042721',
-            'six' => ''
+            'one' => './images/guile/gul-one.webp',
+            'two' => './images/guile/gul-two.webp',
+            'three' => './images/guile/gul-three.webp',
+            'four' => './images/guile/gul-four.webp',
+            'five' => './images/guile/gul-five.webp',
+
         ]
     ],
     [
@@ -77,12 +75,12 @@ $fighters = [
         'arch-enemy' => '',
         'ally' => '',
         'costumes' => [
-            'one' => 'https://static.wikia.nocookie.net/streetfighter/images/d/db/UIGS74s.png/revision/latest/scale-to-width-down/185?cb=20190916134647',
-            'two' => 'https://static.wikia.nocookie.net/streetfighter/images/9/97/4IDE3a7.png/revision/latest/scale-to-width-down/185?cb=20190916134658',
-            'three' => 'https://static.wikia.nocookie.net/streetfighter/images/a/a5/RVAb11N.png/revision/latest/scale-to-width-down/185?cb=20190916134653',
-            'four' => 'https://static.wikia.nocookie.net/streetfighter/images/2/29/TN8XW0t.png/revision/latest/scale-to-width-down/185?cb=20190916134704',
-            'five' => 'https://static.wikia.nocookie.net/streetfighter/images/5/55/JAFwhbM.png/revision/latest/scale-to-width-down/185?cb=20201127062417',
-            'six' => ''
+            'one' => './images/zan/zan-one.webp',
+            'two' => './images/zan/zan-two.webp',
+            'three' => './images/zan/zan-three.webp',
+            'four' => './images/zan/zan-four.webp',
+            'five' => './images/zan/zan-five.webp',
+
         ]
     ],
     [
@@ -96,12 +94,13 @@ $fighters = [
         'occupation' => 'Socialite',
         'description' => 'Rashid is the eldest son of an old aristocratic Middle Eastern family who’s traveling the world in search of a missing friend who has been kidnapped by Shadaloo.',
         'costumes' => [
-            'one' => 'https://static.wikia.nocookie.net/streetfighter/images/5/50/Snm98G7.png/revision/latest/scale-to-width-down/185?cb=20190916133801',
-            'two' => 'https://static.wikia.nocookie.net/streetfighter/images/e/e0/CdBS2Oz.png/revision/latest/scale-to-width-down/185?cb=20190916133811',
-            'three' => 'https://static.wikia.nocookie.net/streetfighter/images/2/23/OYNcT79.png/revision/latest/scale-to-width-down/185?cb=20190916133806',
-            'four' => 'https://static.wikia.nocookie.net/streetfighter/images/c/cc/19npUCJ.png/revision/latest/scale-to-width-down/185?cb=20190916133825',
-            'five' => 'https://static.wikia.nocookie.net/streetfighter/images/b/b4/Yzp91cm.png/revision/latest/scale-to-width-down/185?cb=20190916133820',
-            'six' => 'https://static.wikia.nocookie.net/streetfighter/images/5/56/5i0ZF9J.png/revision/latest/scale-to-width-down/185?cb=20201127060623'
+            'one' => './images/ras/ras-one.webp',
+            'two' => './images/ras/ras-two.webp',
+            'three' => './images/ras/ras-three.webp',
+            'four' => './images/ras/ras-four.webp',
+            'five' => './images/ras/ras-five.webp',
+            'six' => './images/ras/ras-five.webp',
+
         ]
     ],
     [
@@ -117,13 +116,13 @@ $fighters = [
         'arch-enemy' => 1,
         'ally' => [0, 2],
         'costumes' => [
-            'one' => 'https://static.wikia.nocookie.net/streetfighter/images/1/1f/BHTvyqx.png/revision/latest/scale-to-width-down/185?cb=20190909065934',
-            'two' => 'https://static.wikia.nocookie.net/streetfighter/images/5/54/CN8TRzU.png/revision/latest/scale-to-width-down/185?cb=20190909065944',
-            'three' => 'https://static.wikia.nocookie.net/streetfighter/images/f/f7/P6GgxzV.png/revision/latest/scale-to-width-down/185?cb=20190909070046',
-            'four' => 'https://static.wikia.nocookie.net/streetfighter/images/e/e4/V0KrO75.png/revision/latest/scale-to-width-down/185?cb=20190909070107',
-            'five' => 'https://static.wikia.nocookie.net/streetfighter/images/6/61/NzHIw5i.png/revision/latest/scale-to-width-down/185?cb=20190909070121',
-            'six' => 'https://static.wikia.nocookie.net/streetfighter/images/9/95/QPHm0jy.png/revision/latest/scale-to-width-down/185?cb=20190909070141',
-            'seven' => 'https://static.wikia.nocookie.net/streetfighter/images/d/d2/K5xVPBj.png/revision/latest/scale-to-width-down/185?cb=20201127030654'
+            'one' => './images/chun/chun-one.webp',
+            'two' => './images/chun/chun-two.webp',
+            'three' => './images/chun/chun-three.webp',
+            'four' => './images/chun/chun-four.webp',
+            'five' => './images/chun/chun-five.webp',
+            'six' => './images/chun/chun-five.webp',
+
         ]
     ],
     [
@@ -137,12 +136,12 @@ $fighters = [
         'occupation' => null,
         'description' => "Necalli is described as the 'Emissary of the Gods', with a rather ominous moniker of 'The Soul Consuming Darkness'. As the Warrior Prophet reveals, every few hundred years the stars herald the 'Hour of Battle' ('Hour of Necalli'). During this period of time Necalli awakens to consume the souls of strong warriors.'",
         'costumes' => [
-            'one' => 'https://static.wikia.nocookie.net/streetfighter/images/a/a1/1SCp3g6.png/revision/latest/scale-to-width-down/185?cb=20190916133659',
-            'two' => 'https://static.wikia.nocookie.net/streetfighter/images/3/36/T4XKyrF.png/revision/latest/scale-to-width-down/185?cb=20190916133710',
-            'three' => 'https://static.wikia.nocookie.net/streetfighter/images/8/8b/1CJvHnR.png/revision/latest/scale-to-width-down/185?cb=20190916133705',
-            'four' => 'https://static.wikia.nocookie.net/streetfighter/images/6/6b/6P04bJ6.png/revision/latest/scale-to-width-down/185?cb=20190916133654',
-            'five' => 'https://static.wikia.nocookie.net/streetfighter/images/a/a4/JEi5owl.png/revision/latest/scale-to-width-down/185?cb=20201127054441',
-            'six' => ''
+            'one' => './images/nec/nec-one.webp',
+            'two' => './images/nec/nec-two.webp',
+            'three' => './images/nec/nec-three.webp',
+            'four' => './images/nec/nec-four.webp',
+            'five' => './images/nec/nec-five.webp',
+
         ]
     ],
 
