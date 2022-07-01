@@ -1,6 +1,7 @@
 .list-intro{
     background-color: var(--accent-color);
     padding: 5vh 1rem;
+    color: var(--white);
 }
 
 .list-intro nav{
