@@ -29,6 +29,17 @@ inner-column> h2::before{
 
 }
 
+audio{
+    height: 50px;
+    width: 280px;
+    border-radius: 50px;
+    border: 2px solid var(--main-color);
+    font-family: arial;
+    color: white;
+    font-size: 0.75em;
+    overflow: hidden;
+}
+
 
 fighter-page{
     display: flex;
@@ -120,8 +131,8 @@ fighter-page text-content h2{
 
     border: 3px solid var(--accent-color);
     padding-bottom: 5px;
-    min-height: 140px;
-    max-height: 140px;
+    min-height: 150px;
+    max-height: 150px;
     width: 100%;
 
 }

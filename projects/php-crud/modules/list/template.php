@@ -1,4 +1,11 @@
-<?php include('../php-crud/data/fighter-data.php');
+<?php
+
+//bring in data
+$json = file_get_contents("data/fighter-data.json");
+
+$fighterData = json_decode($json, true);
+
+$fighters = $fighterData["fighters"];
 
 // For future reference would be nice to make a header for each page element to give it nice styling outside of the inner-column
 ?>

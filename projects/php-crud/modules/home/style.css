@@ -20,9 +20,11 @@
 .landing inner-column{
     background:url('../../images/logo.webp') no-repeat;
     
-    background-position: center center;
+    background-position: top center;
     background-size: contain;
-    min-height: 500px;
+    min-height: 300px;
+
+    padding-top: 0;
 
     display: flex;
     max-width: none;
@@ -49,7 +51,7 @@
 }
 
 .info inner-column{
-    padding-top:2vh;
+    padding-top:4vh;
 }
 
 .info text-content{
@@ -108,6 +110,12 @@
 
 .action a:hover{
     background-color: var(--hover);
+}
+
+@media (min-width:420px){
+    .landing inner-column{
+        min-height: 400px;
+    }
 }
 
 @media(min-width:650px){
