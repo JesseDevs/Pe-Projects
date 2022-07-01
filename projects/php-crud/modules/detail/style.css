@@ -29,18 +29,6 @@ inner-column> h2::before{
 
 }
 
-audio{
-    height: 50px;
-    width: 280px;
-    border-radius: 50px;
-    border: 2px solid var(--main-color);
-    font-family: arial;
-    color: white;
-    font-size: 0.75em;
-    overflow: hidden;
-}
-
-
 fighter-page{
     display: flex;
     flex-direction: column;
@@ -51,7 +39,7 @@ fighter-page{
 fighter-page .portrait{
     box-shadow: 0 0 0 3px var(--main-color);
     margin-bottom: 2vh;
-    max-width: 500px;
+    max-width: 600px;
     background-color: rgba(255, 255, 255, 0.809);
 }
 
@@ -159,7 +147,7 @@ fighter-page text-content h2{
 
 }
 
-@media (min-width: 800px){
+@media (min-width: 850px){
     fighter-page{
         flex-direction: row;
         gap: 30px;
@@ -174,4 +162,20 @@ fighter-page text-content h2{
         gap: 20px;
         justify-content: center;
     }
+}
+
+@media only screen and (min-width:500px){
+    audio{
+        height: 50px;
+        width: 280px;
+        border-radius: 50px;
+        border: 2px solid var(--main-color);
+        font-family: arial;
+        color: white;
+        font-size: 0.75em;
+        overflow: hidden;
+    }
+    
+    
+    
 }
