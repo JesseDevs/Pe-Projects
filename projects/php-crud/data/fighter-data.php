@@ -85,26 +85,6 @@ $fighters = [
     ],
     [
         'id' => 4,
-        'name' => 'Rashid',
-        'playstyle' => 'Shoto',
-        'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/rsd.png?h=f2a8cc6f5fb27836fa517e96cddc2337',
-        'quote' => 'I’m Rashid of the Turbulent Wind! Remember the name well!',
-        'audio' => './voice/ras.mp3',
-        'occupation' => 'Socialite',
-        'description' => 'Rashid is the eldest son of an old aristocratic Middle Eastern family who’s traveling the world in search of a missing friend who has been kidnapped by Shadaloo.',
-        'costumes' => [
-            'one' => './images/ras/ras-one.webp',
-            'two' => './images/ras/ras-two.webp',
-            'three' => './images/ras/ras-three.webp',
-            'four' => './images/ras/ras-four.webp',
-            'five' => './images/ras/ras-five.webp',
-            'six' => './images/ras/ras-five.webp',
-
-        ],
-        'specials' => [['Whirlwind', './gifs/shot.webp'], ['Eagle Spike', './gifs/spike.webp'], ['Mixer', './gifs/mixer.webp']]
-    ],
-    [
-        'id' => 5,
         'name' => 'Chun-li',
         'playstyle' => 'Charge',
         'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/cnl.png?h=cdcdad24aed42606eede35add77e6d11',
@@ -124,6 +104,26 @@ $fighters = [
 
         ],
         'specials' => [['Kikoken', './gifs/kiko.webp'], ['Spinning Bird', './gifs/bird.webp'], ['Lightning Legs', './gifs/legs.webp']]
+    ],
+    [
+        'id' => 5,
+        'name' => 'Rashid',
+        'playstyle' => 'Shoto',
+        'portrait' => 'https://game.capcom.com/cfn/sfv/as/common/character/bustup/l/rsd.png?h=f2a8cc6f5fb27836fa517e96cddc2337',
+        'quote' => 'I’m Rashid of the Turbulent Wind! Remember the name well!',
+        'audio' => './voice/ras.mp3',
+        'occupation' => 'Socialite',
+        'description' => 'Rashid is the eldest son of an old aristocratic Middle Eastern family who’s traveling the world in search of a missing friend who has been kidnapped by Shadaloo.',
+        'costumes' => [
+            'one' => './images/ras/ras-one.webp',
+            'two' => './images/ras/ras-two.webp',
+            'three' => './images/ras/ras-three.webp',
+            'four' => './images/ras/ras-four.webp',
+            'five' => './images/ras/ras-five.webp',
+            'six' => './images/ras/ras-five.webp',
+
+        ],
+        'specials' => [['Whirlwind', './gifs/shot.webp'], ['Eagle Spike', './gifs/spike.webp'], ['Mixer', './gifs/mixer.webp']]
     ],
     [
         'id' => 6,
