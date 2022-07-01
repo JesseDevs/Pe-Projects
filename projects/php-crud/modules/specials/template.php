@@ -5,48 +5,35 @@ $json = file_get_contents("data/fighter-data.json");
 $fighterData = json_decode($json, true);
 $fighters = $fighterData["fighters"];
 
-$chosenFighter = null;
-$requestedId = null;
+$chosenSpecial = null;
+$specialName = null;
 
-if (isset($_GET['id'])) {
-    $requestedId = $_GET['id'];
+if (isset($_GET[['specials']['name']])) {
+    $specialName = $_GET[['specials']];
 }
-// echo $requestedId; 
 
-// "specials": {
-//     "hado": {
-//         "name": "Hadouken",
-//         "image":"./gifs/hado.webp"
-//     },
-//     "tatsu":{
-//         "name": "Tatsumaki",
-//         "image": "./gifs/tatsu.webp"
-//     },
-//     "shoru":{
-//         "name": "Shoryuken",
-//         "image": "./gifs/shoru.webp"
-//     }
-// }
+print_r($specialName);
 ?>
 
 <?php foreach ($fighters as $fighter) {
-    if ($requestedId == $fighter['id']) {
-        $chosenFighter = $fighter;
+    if ($specialName == $fighter['specials']['name']) {
+        $chosenSpecial = $fighter['specials'];
     }
 }
 
-
 ?>
-<?php if (isset($chosenFighter)) { ?>
+
+<?php if (isset($chosenSpecial)) { ?>
+
 
     <header class="detail-header">
         <inner-column>
             <h2 class=' attention-voice'>
-                <?= $chosenFighter['name'] ?></h2>
+                <?= $chosenSpecial['name'] ?></h2>
         </inner-column>
     </header>
 
-    <section class='fighter-detail'>
+    <!-- <section class='fighter-detail'>
         <inner-column>
             <fighter-page class='detail'>
 
@@ -84,25 +71,23 @@ if (isset($_GET['id'])) {
 
                         <?php foreach ($chosenFighter['specials'] as $special) { ?>
                             <article>
-                                <a href="?page=specials&special=<?= $special['name'] ?>">
-                                    <h3 class='deep-voice'><?= $special['name'] ?></h3>
-                                    <picture>
-                                        <img src=" <?= $special['image'] ?>" alt="">
-                                    </picture>
-                                </a>
-                            </article>
+                                <h3 class='deep-voice'><?= $special[0] ?></h3>
 
+                                <picture>
+                                    <img src="<?= $special[1] ?>" alt="">
+                                </picture>
+                            </article>
                         <?php } ?>
                     </article-grid>
 
                 </text-content>
-            </fighter-page>
+            </fighter-page> -->
 
-        <?php } else { ?>
+<?php } else { ?>
 
-            <h1?> No Fighter found. </h1>
+    <h1?> No Fighter found. </h1>
 
 
-            <?php } ?>
-        </inner-column>
+    <?php } ?>
+    </inner-column>
     </section>

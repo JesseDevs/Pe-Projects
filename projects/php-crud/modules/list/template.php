@@ -37,6 +37,8 @@ $fighters = $fighterData["fighters"];
         $filter = [];
         $results = [];
 
+        // use print_r() more often!!
+
         //check if playstyle selected
         if (isset($_GET['playstyle'])) {
             $playstyle = $_GET['playstyle'];

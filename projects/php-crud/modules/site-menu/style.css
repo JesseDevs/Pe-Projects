@@ -16,9 +16,14 @@
     padding: 3vh 5vw;
 }
 
+.site-menu a.active{
+    background-color: var(--shadow);
+}
+
 .site-menu a:hover{
     background-color: var(--hover);
 }
+
 
 @media(min-width:400px){
     .site-menu a{

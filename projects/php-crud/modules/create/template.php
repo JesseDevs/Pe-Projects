@@ -1,6 +1,11 @@
 <section class='form'>
     <?php
 
+    //bring in data
+    $json = file_get_contents("data/playstyle-data.json");
+    $playstyleData = json_decode($json, true);
+    $playstyle = $playstyleData["playstyle"];
+
     $name = "";
     $quote = "";
 
@@ -13,7 +18,7 @@
     if (isset($_POST["add"])) {
 
         if (isset($_POST["name"])) {
-            $name = $_POST['name'];
+            $name = $_POST["name"];
 
             if (strlen($name) > 0) {
                 $hasName = '✅';
@@ -71,10 +76,12 @@
             <field>
                 <label>Playstyle</label>
                 <select name="playstyle">
-                    <option value="Shoto">Shoto</option>
-                    <option value="Charge">Charge</option>
-                    <option value="Grappler">Grappler</option>
-                    <option value="Zoner">Zoner</option>
+                    <?php foreach ($playstyle as $style) { ?>
+
+                        <option value="<?= $style['name'] ?>">
+                            <?= $style['name'] ?>
+                        </option>
+                    <?php } ?>
 
                 </select>
             </field>

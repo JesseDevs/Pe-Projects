@@ -20,6 +20,7 @@
 
 <body>
 
+    <!-- shows what page youre on -->
     <!-- <?php echo $_SERVER['REQUEST_URI'] ?> -->
 
     <?php include('modules/site-menu/template.php'); ?>

@@ -11,7 +11,8 @@ html{
     --accent-color: #B3792F;
     --hover: #B5422E;
     --shade: rgb(255 255 255 /.2);
-    --darkshade: rgb(77 74 73)
+    --shadow: rgb(10 10 10 /.2);
+    --darkshade: rgb(77 74 73);
 }
 
 body{

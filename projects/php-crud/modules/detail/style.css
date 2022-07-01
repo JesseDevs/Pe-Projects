@@ -115,6 +115,11 @@ fighter-page text-content h2{
 
 }
 
+.specials article a{
+    width: 100%;
+    height: 100%;
+}
+
 .specials article h3{
     background-color: var(--darkshade);
     color: var(--white);
