@@ -90,12 +90,14 @@ fighter-page text-content h2{
 .specials picture{
     max-width: fit-content;
     max-height: fit-content;
+    margin: 0 auto;
 }
 
 .specials picture img{
     max-height: 100px;
     min-height: 80px;
     max-width: 100%;
+
     display: block;
     margin: 0 auto;
 }
