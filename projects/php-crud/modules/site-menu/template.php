@@ -1,4 +1,4 @@
-<header>
+<header class="doc-header">
     <inner-column>
 
         <nav class="site-menu">

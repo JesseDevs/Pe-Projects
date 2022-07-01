@@ -22,14 +22,17 @@ if (isset($_GET['id'])) {
 
 
 ?>
-<section class='fighter-detail'>
-    <inner-column>
+<?php if (isset($chosenFighter)) { ?>
 
-        <?php if (isset($chosenFighter)) { ?>
-
+    <header class="detail-header">
+        <inner-column>
             <h2 class=' attention-voice'>
-                <?= $chosenFighter['name'] ?>
-            </h2>
+                <?= $chosenFighter['name'] ?></h2>
+        </inner-column>
+    </header>
+
+    <section class='fighter-detail'>
+        <inner-column>
             <fighter-page class='detail'>
 
 
@@ -84,5 +87,5 @@ if (isset($_GET['id'])) {
 
 
             <?php } ?>
-    </inner-column>
-</section>
+        </inner-column>
+    </section>

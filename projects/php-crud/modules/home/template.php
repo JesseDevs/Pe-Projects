@@ -7,7 +7,7 @@ $playstyle = $playstyleData["playstyle"];
 // For future reference would be nice to make a header for each page element to give it nice styling outside of the inner-column
 ?>
 
-<section class='landing'>
+<header class='landing'>
     <inner-column>
 
         <h1 class='loud-voice'>Welcome to&nbsp;fightcade </h1>
@@ -21,7 +21,7 @@ $playstyle = $playstyleData["playstyle"];
 
 
     </inner-column>
-</section>
+</header>
 
 <section class=' info'>
     <inner-column>
