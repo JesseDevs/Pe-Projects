@@ -2,15 +2,13 @@
 
 <section class='landing'>
     <inner-column>
-        <h1 class='loud-voice'>Welcome to fightcade </h1>
-        <p>Fighters presented by ©CAPCOM</p>
-        <picture>
-            <img src="./images/logo.webp" alt="">
-        </picture>
+
+        <h1 class='loud-voice'>Welcome to&nbsp;fightcade </h1>
+
+
 
         <div class="action">
-            <p>Find YOUR Fighter</p>
-            <a href="?page=list">Enter Battleground</a>
+            <a class='deep-voice' href="?page=list">Enter Battleground</a>
         </div>
 
 
@@ -24,6 +22,7 @@
         <text-content>
 
             <h2 class="attention-voice">Who to choose?</h2>
+
 
             <article-grid>
 

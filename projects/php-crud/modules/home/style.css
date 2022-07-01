@@ -10,16 +10,42 @@
 .landing{
     background-color: var(--accent-color);
     color: var(--white);
+    position: relative;
+}
+
+.landing *{
+    font-weight: 700;
+}
+
+.landing inner-column{
+    background:url('../../images/logo.webp') no-repeat;
+    
+    background-position: center center;
+    background-size: contain;
+    min-height: 500px;
+
+    display: flex;
+    max-width: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
 
 .landing h1{
     text-transform: uppercase;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
+    font-weight: 900;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+
 }
 
 .landing picture{
+
     max-width: 400px;
     margin: 2vh auto;
+
 }
 
 .info inner-column{
@@ -97,4 +123,10 @@
         justify-content: space-between;
     }
 
+}
+
+@media(min-width:568px){
+    .landing h1{
+        padding-left: 30px;
+    }
 }
