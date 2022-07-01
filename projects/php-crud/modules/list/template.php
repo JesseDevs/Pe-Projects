@@ -1,13 +1,12 @@
 <?php
-
-//bring in data
 $json = file_get_contents("data/fighter-data.json");
 $fighterData = json_decode($json, true);
 $fighters = $fighterData["fighters"];
 
-// For future reference would be nice to make a header for each page element to give it nice styling outside of the inner-column
+if (isset($_GET['playstyle'])) {
+    $playstyle = $_GET['playstyle'];
+}
 ?>
-
 
 <header class='list-intro'>
 
@@ -15,48 +14,20 @@ $fighters = $fighterData["fighters"];
 
 
     <nav class='playstyle'>
-        <a href="?page=list&playstyle=Shoto">Shoto</a>
+        <a href="?page=list&playstyle=Shoto" class="<?= activeFighters('Shoto') ?>">Shoto</a>
         <div class="dash">|</div>
-        <a href="?page=list&playstyle=Charge">Charge</a>
+        <a href="?page=list&playstyle=Charge" class="<?= activeFighters('Charge') ?>">Charge</a>
         <div class="dash">|</div>
-        <a href="?page=list&playstyle=Grappler">Grappler</a>
+        <a href="?page=list&playstyle=Grappler" class="<?= activeFighters('Grappler') ?>">Grappler</a>
         <div class="dash">|</div>
-        <a href="?page=list&playstyle=Zoner">Zoner</a>
+        <a href="?page=list&playstyle=Zoner" class="<?= activeFighters('Zoner') ?>">Zoner</a>
         <div class="dash">|</div>
-        <a href="?page=list">Everyone</a>
+        <a href="?page=list" class="<?= activeFighters(null) ?>">Everyone</a>
     </nav>
 </header>
 
-<section class="street-fighter list-grid">
+<section class=" street-fighter list-grid">
     <inner-column class='tight'>
-
-
-        <?php
-        // Setting varibles we will use
-        $playstyle = null;
-        $filter = [];
-        $results = [];
-
-        // use print_r() more often!!
-
-        //check if playstyle selected
-        if (isset($_GET['playstyle'])) {
-            $playstyle = $_GET['playstyle'];
-        }
-
-        function isSelected($chosenStyle, $fighterStyle)
-        {
-            if ($chosenStyle) {
-                if ($chosenStyle == $fighterStyle) {
-                    return "selected";
-                }
-            } else {
-                return "selected";
-            }
-        }
-
-        ?>
-
         <ul class='fighters-list'>
             <?php foreach ($fighters as $fighter) { ?>
                 <li class='fighter <?= lcfirst($fighter['name']) ?> <?= isSelected($playstyle, $fighter['playstyle']) ?>'>

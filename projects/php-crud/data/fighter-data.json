@@ -20,18 +20,18 @@
                 "./images/ryu/ryu-six.webp"
             ],
             "specials": [
-                [
-                    "Hadouken",
-                    "./gifs/hado.webp"
-                ],
-                [
-                    "Tatsumaki",
-                    "./gifs/tatsu.webp"
-                ],
-                [
-                    "Shoryuken",
-                    "./gifs/shoru.webp"
-                ]
+                {
+                    "name": "Hadouken",
+                    "image": "./gifs/hado.webp"
+                },
+                {
+                    "name": "Tatsumaki",
+                    "image":"./gifs/tatsu.webp"
+                },
+                {
+                    "name": "Shoryuken",
+                    "image":"./gifs/shoru.webp"
+            }
             ]
         },
         "dictator": {
@@ -51,18 +51,18 @@
                 "./images/bison/bison-four.webp"
             ],
             "specials": [
-                [
-                    "Crusher",
-                    "./gifs/crusher.webp"
-                ],
-                [
-                    "Knee Press",
-                    "./gifs/knee.webp"
-                ],
-                [
-                    "Devil Rev.",
-                    "./gifs/devil.webp"
-                ]
+                {
+                    "name":"Crusher",
+                    "image": "./gifs/crusher.webp"
+                },
+                {
+                    "name":"Knee Press",
+                    "image":"./gifs/knee.webp"
+                },
+                {
+                    "name":"Devil Rev.",
+                    "image":" ./gifs/devil.webp"
+            }
             ]
         },
         "guile": {
@@ -83,18 +83,18 @@
                 "./images/guile/gul-five.webp"
             ],
             "specials": [
-                [
-                    "Sonic Boom",
-                    "./gifs/booom.webp"
-                ],
-                [
-                    "Flash Kick",
-                    "./gifs/kick.webp"
-                ],
-                [
-                    "Hurricane",
-                    "./gifs/hurricane.webp"
-                ]
+                {
+                    "name": "Sonic Boom",
+                    "image": "./gifs/booom.webp"
+                },
+                {
+                    "name": "Flash Kick",
+                    "image": "./gifs/kick.webp"
+                },
+                {
+                    "name": "Hurricane",
+                    "image":"./gifs/hurricane.webp"
+                }
             ]
         },
         "zangief": {
@@ -114,18 +114,18 @@
                 "./images/zan/zan-five.webp"
             ],
             "specials": [
-                [
-                    "Piledriver",
-                    "./gifs/pile.gif"
-                ],
-                [
-                    "Lariat",
-                    "./gifs/lariat.webp"
-                ],
-                [
-                    "Green Hand",
-                    "./gifs/hand.webp"
-                ]
+                {
+                    "name":"Piledriver",
+                    "image":"./gifs/pile.gif"
+                },
+                {
+                    "name":"Lariat",
+                    "image":"./gifs/lariat.webp"
+                },
+                {
+                    "name":"Green Hand",
+                    "image":"./gifs/hand.webp"
+                }
             ]
         },
         "chun": {
@@ -151,18 +151,18 @@
                 "./images/chun/chun-six.webp"
             ],
             "specials": [
-                [
-                    "Kikoken",
-                    "./gifs/kiko.webp"
-                ],
-                [
-                    "Spinning Bird",
-                    "./gifs/bird.webp"
-                ],
-                [
-                    "Lightning Legs",
-                    "./gifs/legs.webp"
-                ]
+                {
+                    "name":"Kikoken",
+                    "image":"./gifs/kiko.webp"
+                },
+                {
+                    "name":"Spinning Bird",
+                    "image":"./gifs/bird.webp"
+                },
+                {
+                    "name":"Lightning Legs",
+                    "image":"./gifs/legs.webp"
+                }
             ]
         },
         "rashid": {
@@ -183,18 +183,18 @@
                 "./images/ras/ras-five.webp"
             ],
             "specials": [
-                [
-                    "Whirlwind",
-                    "./gifs/shot.webp"
-                ],
-                [
-                    "Eagle Spike",
-                    "./gifs/spike.webp"
-                ],
-                [
-                    "Mixer",
-                    "./gifs/mixer.webp"
-                ]
+                {
+                    "name": "Whirlwind",
+                    "image":"./gifs/shot.webp"
+                },
+                {
+                    "name":"Eagle Spike",
+                    "image":"./gifs/spike.webp"
+                },
+                {
+                    "name":"Mixer",
+                    "image":"./gifs/mixer.webp"
+                }
             ]
         },
         "necalli": {
@@ -214,18 +214,18 @@
                 "./images/nec/nec-five.webp"
             ],
             "specials": [
-                [
-                    "Mask of Tlalli",
-                    "./gifs/mask.webp"
-                ],
-                [
-                    "Rebellion",
-                    "./gifs/rebl.webp"
-                ],
-                [
-                    "Raging Light",
-                    "./gifs/light.webp"
-                ]
+                {
+                    "name":"Mask of Tlalli",
+                    "image":"./gifs/mask.webp"
+                },
+                {
+                    "name":"Rebellion",
+                    "image":"./gifs/rebl.webp"
+                },
+                {
+                    "name":"Raging Light",
+                    "image":"./gifs/light.webp"
+                }
             ]
         },
         "dhalsim": {
@@ -246,18 +246,18 @@
                 "./images/dha/dha-five.webp"
             ],
             "specials": [
-                [
-                    "Yoga Fire",
-                    "./gifs/fire.webp"
-                ],
-                [
-                    "Yoga Flame",
-                    "./gifs/flame.webp"
-                ],
-                [
-                    "Yoga Kick",
-                    "./gifs/kick.gif"
-                ]
+                {
+                    "name": "Yoga Fire",
+                    "image":"./gifs/fire.webp"
+                },
+                {
+                    "name":"Yoga Flame",
+                    "image":"./gifs/flame.webp"
+                },
+                {
+                    "name":"Yoga Kick",
+                    "image":"./gifs/kick.gif"
+                }
             ]
         }
     }

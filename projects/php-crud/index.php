@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="<?= $page ?>">
 
     <!-- shows what page youre on -->
     <!-- <?php echo $_SERVER['REQUEST_URI'] ?> -->

@@ -1,0 +1,16 @@
+.button{
+    background: rgb(255 255 255 /.5);
+    border: 0;
+    border-radius: .5em;
+    padding: .6em 1.5em;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--main-color);
+    text-shadow: -2px 2px 5px rgb(0 0 0 /.2);
+}
+
+.button:hover{
+    background-color: var(--hover);
+}

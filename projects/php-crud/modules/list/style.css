@@ -30,6 +30,12 @@ margin: 0 auto;
     transition: box-shadow .2s;
 }
 
+.list-intro nav a.filter{
+    box-shadow: inset 0 -2px 0 0 var(--main-color);
+    color: var(--main-color);
+
+}
+
 .list-intro nav a:hover{
     text-decoration: none;
     color: var(--white);
