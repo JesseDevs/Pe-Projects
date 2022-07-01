@@ -2,9 +2,7 @@
 
 //bring in data
 $json = file_get_contents("data/fighter-data.json");
-
 $fighterData = json_decode($json, true);
-
 $fighters = $fighterData["fighters"];
 
 // For future reference would be nice to make a header for each page element to give it nice styling outside of the inner-column
@@ -25,7 +23,7 @@ $fighters = $fighterData["fighters"];
         <div class="dash">|</div>
         <a href="?page=list&playstyle=Zoner">Zoner</a>
         <div class="dash">|</div>
-        <a href="?page=list">Full Roster</a>
+        <a href="?page=list">Everyone</a>
     </nav>
 </header>
 
