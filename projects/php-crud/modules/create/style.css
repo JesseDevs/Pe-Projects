@@ -17,13 +17,13 @@ field + button {
 }
 
 
-section.form h1{
+.form h1{
     text-align: center;
     padding: 4vh 1rem;
     background-color: var(--accent-color);
     color: var(--white);
 }
 
-section.form inner-column{
+.form inner-column{
     padding-top: 3vh;
 }

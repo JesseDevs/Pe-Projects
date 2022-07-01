@@ -1,17 +1,17 @@
 <?php include('../php-crud/data/fighter-data.php');
 
-$chosenfighter = null;
-$requested_id = null;
+$chosenFighter = null;
+$requestedId = null;
 
 if (isset($_GET['id'])) {
-    $requested_id = $_GET['id'];
+    $requestedId = $_GET['id'];
 }
-// echo $requested_id; 
+// echo $requestedId; 
 ?>
 
 <?php foreach ($fighters as $fighter) {
-    if ($requested_id == $fighter['id']) {
-        $chosenfighter = $fighter;
+    if ($requestedId == $fighter['id']) {
+        $chosenFighter = $fighter;
     }
 }
 
@@ -20,20 +20,20 @@ if (isset($_GET['id'])) {
 <section class='fighter-detail'>
     <inner-column>
 
-        <?php if (isset($chosenfighter)) { ?>
+        <?php if (isset($chosenFighter)) { ?>
 
             <h2 class=' attention-voice'>
-                <?= $chosenfighter['name'] ?>
+                <?= $chosenFighter['name'] ?>
             </h2>
             <fighter-page class='detail'>
 
 
                 <div class="container">
                     <picture class='portrait'>
-                        <img src="<?= $chosenfighter['portrait'] ?>" alt="SFV:<?= $chosenfighter['name'] ?> ">
+                        <img src="<?= $chosenFighter['portrait'] ?>" alt="SFV:<?= $chosenFighter['name'] ?> ">
                     </picture>
                     <article-grid class='costumes'>
-                        <?php foreach ($chosenfighter['costumes'] as $costumes) { ?>
+                        <?php foreach ($chosenFighter['costumes'] as $costumes) { ?>
                             <picture>
                                 <img src="<?= $costumes ?>" alt=''>
                             </picture>
@@ -42,24 +42,24 @@ if (isset($_GET['id'])) {
                 </div>
 
                 <text-content>
-                    <em class='calm-voice'><?= $chosenfighter['quote'] ?></em>
+                    <em class='calm-voice'><?= $chosenFighter['quote'] ?></em>
 
                     <audio controls>
-                        <source src="<?= $chosenfighter['audio'] ?>" type='audio/wav'>
+                        <source src="<?= $chosenFighter['audio'] ?>" type='audio/wav'>
                         </source>
                     </audio>
 
                     <div>
-                        <p><strong>Playstyle:</strong>&nbsp;<?= $chosenfighter['playstyle'] ?> </p>
-                        <p><strong>Occupation:</strong>&nbsp; <?= $chosenfighter['occupation'] ?>
+                        <p><strong>Playstyle:</strong>&nbsp;<?= $chosenFighter['playstyle'] ?> </p>
+                        <p><strong>Occupation:</strong>&nbsp; <?= $chosenFighter['occupation'] ?>
                         </p>
                     </div>
-                    <p><?= $chosenfighter['description'] ?></p>
+                    <p><?= $chosenFighter['description'] ?></p>
 
                     <h2 class="attention-voice">SPECIALS</h2>
                     <article-grid class='specials'>
 
-                        <?php foreach ($chosenfighter['specials'] as $special) { ?>
+                        <?php foreach ($chosenFighter['specials'] as $special) { ?>
                             <article>
                                 <h3 class='deep-voice'><?= $special[0] ?></h3>
 

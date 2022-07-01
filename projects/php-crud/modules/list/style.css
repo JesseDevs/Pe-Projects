@@ -1,9 +1,11 @@
-main header{
+main header.list-intro{
     background-color: var(--accent-color);
     padding: 5vh 1rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-header.list-intro nav{
+.list-intro nav{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
