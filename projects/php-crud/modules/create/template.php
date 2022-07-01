@@ -1,37 +1,28 @@
 <section class='form'>
     <?php
 
-    $add = isset($_POST['add']);
-
-    $name = null;
-    $portrait = null;
-    $quote = null;
+    $name = "";
+    $quote = "";
 
     $hasName = false;
-    $hasPortrait = false;
     $hasQuote = false;
 
     $nameError = false;
+    $quoteError = false;
 
-    if ($add) {
+    if (isset($_POST["add"])) {
 
-        if (isset($_POST[$name])) {
+        if (isset($_POST["name"])) {
             $name = $_POST['name'];
 
             if (strlen($name) > 0) {
                 $hasName = '✅';
             } else {
                 $nameError = "Bud. You're going to need a name to enter the battle.";
-                echo 'nothingx2';
             }
         }
 
-        if (isset($_POST[$portrait])) {
-            $portrait = $_POST['portrait'];
-            $hasPortrait = true;
-        }
-
-        if (isset($_POST[$quote])) {
+        if (isset($_POST["quote"])) {
             $quote = $_POST['quote'];
 
             if (strlen($quote) > 0) {
@@ -53,9 +44,9 @@
 
         <form method="POST">
             <field>
-                <label>Name</label> <?php if ($hasName) { ?>
+                <label>Name<?php if ($hasName) { ?>
                     <span class='check'><?= $hasName ?></span>
-                <?php } ?>
+                <?php } ?></label>
                 <input type=" text" name='name' maxlength='15' value='<?= $name ?>'>
                 <?php if ($nameError) { ?>
                     <p class='error'><?= $nameError ?></p>

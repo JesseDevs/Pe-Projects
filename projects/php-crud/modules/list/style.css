@@ -24,14 +24,16 @@ margin: 0 auto;
 
 .list-intro nav a{
     min-width: 40px;
-    text-decoration: underline;
     background-color: transparent;
+    box-shadow: 0 2px 0 0 var(--white);
+    transition: box-shadow .2s;
 }
 
 .list-intro nav a:hover{
     text-decoration: none;
     color: var(--white);
     background-color: var(--hover);
+    box-shadow:0 2px 0 0 transparent;
 }
 
 .fighters-list{

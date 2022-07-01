@@ -4,11 +4,25 @@ header{
 }
 
 header inner-column{
-    padding: 2vh 1rem;
+    padding: 0;
 }
 
 .site-menu {
     display: flex;
-    gap: clamp(1.5rem,8vw, 2.5rem);
+
+}
+
+.site-menu a{
+    padding: 3vh 5vw;
+}
+
+.site-menu a:hover{
+    background-color: var(--hover);
+}
+
+@media(min-width:400px){
+    .site-menu a{
+        padding: 3vh 3vw;
+    }
 }
 

@@ -11,6 +11,10 @@ field :is(label,input,select){
     display: block;
 }
 
+field span{
+    display: inline;
+}
+
 field + field,
 field + button {
     margin-top: 20px;
