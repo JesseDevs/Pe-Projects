@@ -14,10 +14,11 @@
         </div>
 
 
+
     </inner-column>
 </section>
 
-<section class='info'>
+<section class=' info'>
     <inner-column>
 
         <text-content>
