@@ -1,26 +1,3 @@
-form{
-    padding: 30px 0;
-}
-
-field{
-    display: block;
-    width: 100%;
-}
-
-field :is(label,input,select){
-    display: block;
-}
-
-field span{
-    display: inline;
-}
-
-field + field,
-field + button {
-    margin-top: 20px;
-}
-
-
 .form h1{
     text-align: center;
     padding: 4vh 1rem;
@@ -30,4 +7,161 @@ field + button {
 
 .form inner-column{
     padding-top: 3vh;
+}
+
+span a{
+	display: inline;
+	text-decoration: underline;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+span a:hover{
+	background-color: var(--hover);
+	text-decoration: none;
+
+}
+
+.form-images{
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+}
+
+.form-images field+field{
+	margin-bottom: 0;
+}
+
+form{
+	max-width:600px;
+	margin:3vh auto;
+	background: var(--white);
+	border-radius:2px;
+	padding:20px;
+	font-family: Work sans;
+}
+
+form
+ 
+field{
+	display: block;
+	padding: 9px;
+	border:1px solid var(--shadow);
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+form> field:last-child{
+	border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+field label{
+	display: block;
+	float: left;
+	margin-top: -22px;
+	background: var(--white);
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: var(--main-color);
+	font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+	font-family: 'Work sans', Helvetica, sans-serif;
+}
+
+ input[type="text"],
+ input[type="date"],
+ input[type="datetime"],
+ input[type="file"],
+ input[type="email"],
+ input[type="number"],
+ input[type="search"],
+ input[type="time"],
+ input[type="url"],
+ input[type="password"],
+ textarea,
+ select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	margin-bottom: 5px;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding-left: 10px;
+    color: var(--main-color);
+	background: var(--white);
+	font-family: 'Work sans', "Times New Roman", Times, serif;
+}
+
+ input[type="text"]:focus,
+ input[type="date"]:focus,
+ input[type="datetime"]:focus,
+ input[type="file"]:focus,
+ input[type="email"]:focus,
+ input[type="number"]:focus,
+ input[type="search"]:focus,
+ input[type="time"]:focus,
+ input[type="url"]:focus,
+ input[type="password"]:focus,
+ textarea:focus,
+ select:focus 
+{
+    border:2px solid var(--hover);
+    color: var(--black);
+}
+
+field > span{
+	background: var(--black);
+	display: block;
+	padding: 5px;
+	margin: 0 -9px -9px;
+	width: 108.222%;
+	text-align: center;
+	color: #C0C0C0;
+	font-family: 'Work sans', Helvetica, sans-serif;
+	font-size: 14px;
+    line-height: 24px;
+}
+
+textarea{
+	height:50px;
+}
+
+input[type="submit"]{
+	background: #2471FF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
+	border-radius: 3px;
+	color: #D2E2FF;
+}
+
+button [type="submit"]:hover{
+	background: #6B9FFF;
+	color:#fff;
+}
+
+@media(min-width:550px){
+	.form-images{
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.form-images field{
+		margin-bottom: 0;
+		min-width: 50%
+		}
+
 }

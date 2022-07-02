@@ -52,26 +52,16 @@
                 <label>Name<?php if ($hasName) { ?>
                     <span class='check'><?= $hasName ?></span>
                 <?php } ?></label>
-                <input type=" text" name='name' maxlength='15' value='<?= $name ?>'>
+                <input type="text" name='name' maxlength='15' value='<?= $name ?>'>
                 <?php if ($nameError) { ?>
                     <p class='error'><?= $nameError ?></p>
                 <?php } ?>
-            </field>
-            <field>
-                <label>Portrait</label>
-                <input type="file" name="portrait" accept="image/*" value='<?= $portait ?>'>
-            </field>
-            <field>
-                <label>Alternate Costumes</label>
-                <input type="file" name="costumes" accept="image/*" multiple>
+                <span>Enter your fighter name here</span>
             </field>
             <field>
                 <label>Quote</label>
-                <input type="text" name='quote' maxlength='40' value='<?= $quote ?>'>
-            </field>
-            <field>
-                <label>Audio</label>
-                <input type="file" name="audio" accept="audio/*">
+                <input type="text" name='quote' maxlength='40' required value='<?= $quote ?>'>
+                <span>What's a good battle quote?</span>
             </field>
             <field>
                 <label>Playstyle</label>
@@ -84,16 +74,36 @@
                     <?php } ?>
 
                 </select>
+                <span>Playstyle info: <a <?php activePage("home") ?> href="?page=home">Here</a></span>
             </field>
 
             <field>
                 <label>Occupation</label>
                 <input type="text" name='occupation' maxlength='15'>
+                <span>A job to pay the bills</span>
             </field>
 
-            <field>
+            <field class="full-width">
                 <label>Description</label>
-                <textarea name='description'></textarea>
+                <textarea rows="5" cols="35" name='description'></textarea>
+                <span>Cool background story</span>
+            </field>
+            <field class="form-images">
+                <field>
+                    <label>Portrait</label>
+                    <input type="file" name="portrait" accept="image/*" value='<?= $portait ?>'>
+                    <span>Your main image</span>
+                </field>
+                <field>
+                    <label>Alternate Costumes</label>
+                    <input type="file" name="costumes" accept="image/*" multiple>
+                    <span>Other images? Costumes?</span>
+                </field>
+            </field>
+            <field>
+                <label>Audio</label>
+                <input type="file" name="audio" accept="audio/*">
+                <span>Audio quote: Speak</span>
             </field>
 
             <field>
