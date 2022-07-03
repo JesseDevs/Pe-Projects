@@ -28,6 +28,7 @@ margin: 0 auto;
     background-color: transparent;
     box-shadow: inset 0 -2px 0 0 var(--white);
     transition: box-shadow .2s;
+    font-weight: 500;
 }
 
 .list-intro nav a.filter{

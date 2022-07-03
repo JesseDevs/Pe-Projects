@@ -24,7 +24,13 @@ span a{
 span a:hover{
 	background-color: var(--hover);
 	text-decoration: none;
+	color: white;
 
+}
+
+.asterisk{
+	color: red;
+	display: inline;
 }
 
 .form-images,
@@ -56,6 +62,7 @@ field{
 	border:2px solid var(--shadow);
 	margin-bottom: 30px;
 	border-radius: 3px;
+	width: 100%;
 }
 
 field h4{
@@ -70,6 +77,11 @@ field h4{
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 1.2rem;
+}
+
+field h4,
+label{
+	text-shadow: -1px 2px 5px rgb(0 0 0 /.2);
 }
 
 .specials field{
@@ -127,7 +139,8 @@ label{
 }
 
 input[type="text"],
-textarea{
+textarea,
+select{
 	border-left: 1px solid var(--main-color);
 	border-bottom: 1px solid var(--main-color);
 }
@@ -154,14 +167,15 @@ field > span{
 	display: block;
 	padding: 5px;
 
+	outline: 2px solid var(--black);
 	width: 100%;
 	text-align: center;
 	color: #C0C0C0;
 	font-family: 'Work sans', Helvetica, sans-serif;
 	font-size: 14px;
     line-height: 24px;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
 }
 
 textarea{

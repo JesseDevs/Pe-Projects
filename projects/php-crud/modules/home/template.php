@@ -1,10 +1,9 @@
 <?php
-//bring in data
+
 $json = file_get_contents("data/playstyle-data.json");
 $playstyleData = json_decode($json, true);
 $playstyle = $playstyleData["playstyle"];
 
-// For future reference would be nice to make a header for each page element to give it nice styling outside of the inner-column
 ?>
 
 <header class='landing'>

@@ -8,35 +8,71 @@
 
     $name = "";
     $quote = "";
+    $job = "";
+    $style = "";
 
     $hasName = false;
     $hasQuote = false;
+    $hasJob = false;
+    $hasStyle = false;
 
     $nameError = false;
     $quoteError = false;
+    $jobError = false;
+    $styleError = false;
 
+    //when the user clicks the button
     if (isset($_POST["add"])) {
 
+        //name
         if (isset($_POST["name"])) {
             $name = $_POST["name"];
 
             if (strlen($name) > 0) {
-                $hasName = '✅';
+                $hasName = true;
             } else {
-                $nameError = "Bud. You're going to need a name to enter the battle.";
+                $nameError = "No name. No battle, bud.";
             }
         }
 
+        //quote
         if (isset($_POST["quote"])) {
             $quote = $_POST['quote'];
 
             if (strlen($quote) > 0) {
                 $hasQuote = true;
+            } else {
+                $quoteError = "Needs a cool phrase to yell..";
             }
         }
 
+        //style
+        if (isset($_POST["style"])) {
+            $style = $_POST['style'];
+
+            if (strlen($style) > 0) {
+                $hasstyle = true;
+            } else {
+                $styleError = "You need a style to evolve beyond it.";
+            }
+        }
+
+
+        //job
+        if (isset($_POST["job"])) {
+            $job = $_POST['job'];
+
+            if (strlen($job) > 0) {
+                $hasjob = true;
+            } else {
+                $jobError = "Fighting don't pay the bills..";
+            }
+        }
+
+
+
         if ($hasName && $hasQuote) {
-            echo "Has stuff";
+            echo "nice";
         } else {
             echo 'nothing';
         }
@@ -50,37 +86,45 @@
         <form method="POST">
             <field class="required">
                 <field>
-                    <label>Name<?php if ($hasName) { ?>
-                        <span class='check'><?= $hasName ?></span>
-                    <?php } ?></label>
+                    <label>Name<span class="asterisk">*</span></label>
                     <input type="text" name='name' maxlength='15' value='<?= $name ?>'>
+
                     <?php if ($nameError) { ?>
-                        <p class='error'><?= $nameError ?></p>
+                        <span class='error'><?= $nameError ?></span>
+                    <?php } else { ?>
+                        <span>Enter your fighter name.</span>
                     <?php } ?>
-                    <span>Enter your fighter name here</span>
                 </field>
                 <field>
-                    <label>Quote</label>
-                    <input type="text" name='quote' maxlength='40' required value='<?= $quote ?>'>
-                    <span>What's a good battle quote?</span>
+                    <label>Quote<span class="asterisk">*</span></label>
+                    <input type="text" name='quote' maxlength='40' value='<?= $quote ?>'>
+                    <?php if ($quoteError) { ?>
+                        <span class='error'><?= $quoteError ?></span>
+                    <?php } else { ?>
+                        <span>What's a good battle quote?</span>
+                    <?php } ?>
                 </field>
             </field>
             <field class="required">
                 <field>
-                    <label>Playstyle</label>
-                    <select name="playstyle">
+                    <label>Playstyle<span class="asterisk">*</span></label>
+                    <select name="style">
                         <?php foreach ($playstyle as $style) { ?>
                             <option value="<?= $style['name'] ?>">
                                 <?= $style['name'] ?>
                             </option>
                         <?php } ?>
                     </select>
-                    <span>Playstyle info: <a <?php activePage("home") ?> href="?page=home">Here</a></span>
+                    <span>Playstyle info: <a <?php activePage("home") ?> href="?page=home">Here</a>.</span>
                 </field>
                 <field>
-                    <label>Occupation</label>
+                    <label>Occupation<span class="asterisk">*</span></label>
                     <input type="text" name='occupation' maxlength='15'>
-                    <span>A job to pay the bills</span>
+                    <?php if ($quoteError) { ?>
+                        <span class='error'><?= $quoteError ?></span>
+                    <?php } else { ?>
+                        <span>What's your job?</span>
+                    <?php } ?>
                 </field>
             </field>
             </div>
@@ -88,13 +132,13 @@
             <field class="full-width">
                 <label>Description</label>
                 <textarea rows="5" cols="35" name='description'></textarea>
-                <span>Cool background story</span>
+                <span>Cool background story please.</span>
             </field>
             <field class="form-images">
                 <field>
                     <label>Portrait</label>
                     <input type="file" name="portrait" accept="image/*" value='<?= $portait ?>'>
-                    <span>Your main image</span>
+                    <span>Your main image.</span>
                 </field>
                 <field>
                     <label>Alternate Costumes</label>
@@ -105,7 +149,7 @@
             <field>
                 <label>Audio</label>
                 <input type="file" name="audio" accept="audio/*">
-                <span>Audio quote: Speak</span>
+                <span>Audio quote.</span>
             </field>
 
             <field class="specials">
