@@ -28,23 +28,12 @@
         // $job = $_POST["job"];
         // $style = $_POST["style"];
 
-        // $newFighter = [
-        //     "name" => $name,
-        //     "quote" => $quote,
-        //     "job" => $job,
-        //     "style" => $style,
-
-        // ];
-
         //name
         if (isset($_POST["name"])) {
             $name = $_POST["name"];
 
             if (strlen($name) > 0) {
-                //Create Fighter
-                $newFighter = [
-                    "name" => $name,
-                ];
+                $name = htmlspecialchars($_POST["name"]);
             } else {
                 $nameError = "No name. No battle, bud.";
             }
@@ -55,9 +44,7 @@
             $quote = $_POST['quote'];
 
             if (strlen($quote) > 0) {
-                $newFighter = [
-                    "quote" => $quote,
-                ];
+                $quote = htmlspecialchars($_POST["quote"]);
             } else {
                 $quoteError = "Needs a cool phrase to yell..";
             }
@@ -68,9 +55,7 @@
             $style = $_POST['style'];
 
             if (strlen($style) > 0) {
-                $newFighter = [
-                    "playstyle" => $style,
-                ];
+                $style = htmlspecialchars($_POST["style"]);
             } else {
                 $styleError = "You need a style to evolve beyond it.";
             }
@@ -82,13 +67,18 @@
             $job = $_POST['job'];
 
             if (strlen($job) > 0) {
-                $newFighter = [
-                    "occupation" => $job,
-                ];
+                $job = htmlspecialchars($_POST["job"]);
             } else {
                 $jobError = "Fighting don't pay the bills..";
             }
         }
+
+        $newFighter = [
+            "name" => $name,
+            "quote" => $quote,
+            "job" => $job,
+            "style" => $style,
+        ];
 
 
         writeData($newFighter);

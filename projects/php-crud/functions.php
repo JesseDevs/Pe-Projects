@@ -102,7 +102,7 @@ function writeData($array)
 {
     //pull up json file
     $jsonedData = json_encode($array);
-    $dataFile = 'data/fighter.json';
+    $dataFile = 'data/data.json';
 
     //save new array ex. newFighter
     file_put_contents($dataFile, $jsonedData, FILE_APPEND | LOCK_EX);
