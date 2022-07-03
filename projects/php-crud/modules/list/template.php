@@ -2,12 +2,13 @@
 
 
 $json = file_get_contents("data/fighter.json");
-$fighterData  = json_decode($json, true);
+$fighterData = json_decode($json, true);
 $fighters = $fighterData["fighters"];
 
 if (isset($_GET['playstyle'])) {
     $playstyle = $_GET['playstyle'];
 }
+
 ?>
 
 <header class='list-intro'>
