@@ -53,7 +53,7 @@ form{
 
 field{
 	display: block;
-	border:1px solid var(--shadow);
+	border:2px solid var(--shadow);
 	margin-bottom: 30px;
 	border-radius: 3px;
 }
@@ -126,6 +126,12 @@ label{
 	font-family: 'Work sans', "Times New Roman", Times, serif;
 }
 
+input[type="text"],
+textarea{
+	border-left: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+}
+
  input[type="text"]:focus,
  input[type="date"]:focus,
  input[type="datetime"]:focus,
@@ -147,6 +153,7 @@ field > span{
 	background: var(--black);
 	display: block;
 	padding: 5px;
+
 	width: 100%;
 	text-align: center;
 	color: #C0C0C0;
@@ -161,18 +168,72 @@ textarea{
 	height:50px;
 }
 
-input[type="submit"]{
-	background: #2471FF;
-	border: none;
-	padding: 10px 20px 10px 20px;
-	border-bottom: 3px solid #5994FF;
-	border-radius: 3px;
-	color: #D2E2FF;
+button{
+	appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	margin: 0 auto;
+	display: block;
+
 }
 
-button [type="submit"]:hover{
-	background: #6B9FFF;
-	color:#fff;
+
+button[type="submit"]{
+
+	background: linear-gradient( to right, var(--hover), var(--hover));
+    background-color: var(--main-color);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position:left;
+    color: var(--white);
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	color: #D2E2FF;
+	outline: none;
+	font-size: 1.3rem;
+	transition: all .5s;
+	position: relative;
+	text-decoration: none;
+
+}
+
+button[type="submit"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 3px solid transparent;
+    border-radius: 3px;
+}
+
+button[type="submit"]:hover::before {
+    animation: animate .3s linear forwards;
+}
+
+button[type="submit"]:hover{
+    background-size: 100% 100%;
+	color: var(--white);
+}
+
+
+button[type="submit"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 3px solid transparent;
+
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover::after {
+    animation: animates .3s linear forwards;
 }
 
 @media(min-width:600px){
@@ -189,12 +250,5 @@ button [type="submit"]:hover{
 		min-width: 48%;
 		max-width: 50%
 	}
-
-/* 
-	div.required{
-		display: flex;
-		flex-direction: row;
-	}
- */
 
 }
