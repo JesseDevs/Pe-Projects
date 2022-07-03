@@ -131,7 +131,7 @@ fighter-page text-content h2{
 }
 
 @media(min-width:450px){
-    .specials{
+    article-grid.specials{
         flex-direction: row;
         justify-content: center;
         gap: 10px;

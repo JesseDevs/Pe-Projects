@@ -26,9 +26,11 @@ span a:hover{
 
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-betwwen;
 		align-items: center;
 		gap: 5px;
+
+		border: none;
 }
 
 .form-images field+field{
@@ -44,14 +46,30 @@ form{
 	font-family: Work sans;
 }
 
-form
- 
 field{
 	display: block;
-	padding: 9px;
 	border:1px solid var(--shadow);
 	margin-bottom: 30px;
 	border-radius: 3px;
+}
+
+field h4{
+	color: var(--main-color);
+	background-color: var(--white);
+	max-width: fit-content;
+	font-weight: 700;
+	letter-spacing: .05em;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.specials field{
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 form> field:last-child{
@@ -60,10 +78,11 @@ form> field:last-child{
 	text-align: center;
 }
 
-field label{
+label{
 	display: block;
 	float: left;
-	margin-top: -22px;
+	margin-top:-10px;
+	margin-left: 10px;
 	background: var(--white);
 	height: 14px;
 	padding: 2px 5px 2px 5px;
@@ -87,13 +106,10 @@ field label{
  textarea,
  select 
 {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	width: 100%;
+	width: 95%;
 	display: block;
 	outline: none;
-	margin-bottom: 5px;
+	margin: 15px auto;
 	border: none;
 	height: 25px;
 	line-height: 25px;
@@ -125,13 +141,14 @@ field > span{
 	background: var(--black);
 	display: block;
 	padding: 5px;
-	margin: 0 -9px -9px;
-	width: 108.222%;
+	width: 100%;
 	text-align: center;
 	color: #C0C0C0;
 	font-family: 'Work sans', Helvetica, sans-serif;
 	font-size: 14px;
     line-height: 24px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 textarea{

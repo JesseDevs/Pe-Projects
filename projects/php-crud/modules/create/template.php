@@ -106,35 +106,45 @@
                 <span>Audio quote: Speak</span>
             </field>
 
-            <field>
-                <label>Special Move One</label>
+            <field class="specials">
 
+                <h4>Special Move One</h4>
+                <field>
+                    <label>Name Of The Move</label>
+                    <input type="text" name='specials[0][0]' maxlength='20'>
+                </field>
 
-                <label>Name Of The Move</label>
-                <input type="text" name='specials[0][0]' maxlength='15'>
-
-                <label>Image Of The Move</label>
-                <input type="file" name="specials[0][1]" accept="image/*">
+                <field>
+                    <label>Image Of The Move</label>
+                    <input type="file" name="specials[0][1]" accept="image/*">
+                </field>
+                <span>What's your first special move?</span>
             </field>
-            <field>
-                <label>Special Move Two</label>
 
+            <field class="specials">
+                <h4>Special Move Two</h4>
+                <field>
+                    <label>Name Of The Move</label>
+                    <input type="text" name='specials[1][0]' maxlength='20'>
+                </field>
 
-                <label>Name Of The Move</label>
-                <input type="text" name='specials[1][0]' maxlength='15'>
-
-                <label>Image Of The Move</label>
-                <input type="file" name="specials[1][1]" accept="image/*">
+                <field>
+                    <label>Image Of The Move</label>
+                    <input type="file" name="specials[1][1]" accept="image/*">
+                </field>
             </field>
-            <field>
-                <label>Special Move Three</label>
 
+            <field class="specials">
+                <h4>Special Move Three</h4>
+                <field>
+                    <label>Name Of The Move</label>
+                    <input type="text" name='specials[2][0]' maxlength='20'>
+                </field>
 
-                <label>Name Of The Move</label>
-                <input type="text" name='specials[2][0]' maxlength='15'>
-
-                <label>Image Of The Move</label>
-                <input type="file" name="specials[3][0]" accept="image/*">
+                <field>
+                    <label>Image Of The Move</label>
+                    <input type="file" name="specials[3][0]" accept="image/*">
+                </field>
             </field>
 
             <button type="submit" name='add'>
