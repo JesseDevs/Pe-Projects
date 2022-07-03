@@ -1,7 +1,7 @@
 <?php
 
 
-$json = file_get_contents("data/fighter.json");
+$json = file_get_contents("./data/fighter.json");
 $fighterData = json_decode($json, true);
 $fighters = $fighterData["fighters"];
 
