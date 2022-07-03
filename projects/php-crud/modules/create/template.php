@@ -48,40 +48,42 @@
     <inner-column>
 
         <form method="POST">
-            <field>
-                <label>Name<?php if ($hasName) { ?>
-                    <span class='check'><?= $hasName ?></span>
-                <?php } ?></label>
-                <input type="text" name='name' maxlength='15' value='<?= $name ?>'>
-                <?php if ($nameError) { ?>
-                    <p class='error'><?= $nameError ?></p>
-                <?php } ?>
-                <span>Enter your fighter name here</span>
-            </field>
-            <field>
-                <label>Quote</label>
-                <input type="text" name='quote' maxlength='40' required value='<?= $quote ?>'>
-                <span>What's a good battle quote?</span>
-            </field>
-            <field>
-                <label>Playstyle</label>
-                <select name="playstyle">
-                    <?php foreach ($playstyle as $style) { ?>
-
-                        <option value="<?= $style['name'] ?>">
-                            <?= $style['name'] ?>
-                        </option>
+            <field class="required">
+                <field>
+                    <label>Name<?php if ($hasName) { ?>
+                        <span class='check'><?= $hasName ?></span>
+                    <?php } ?></label>
+                    <input type="text" name='name' maxlength='15' value='<?= $name ?>'>
+                    <?php if ($nameError) { ?>
+                        <p class='error'><?= $nameError ?></p>
                     <?php } ?>
-
-                </select>
-                <span>Playstyle info: <a <?php activePage("home") ?> href="?page=home">Here</a></span>
+                    <span>Enter your fighter name here</span>
+                </field>
+                <field>
+                    <label>Quote</label>
+                    <input type="text" name='quote' maxlength='40' required value='<?= $quote ?>'>
+                    <span>What's a good battle quote?</span>
+                </field>
             </field>
-
-            <field>
-                <label>Occupation</label>
-                <input type="text" name='occupation' maxlength='15'>
-                <span>A job to pay the bills</span>
+            <field class="required">
+                <field>
+                    <label>Playstyle</label>
+                    <select name="playstyle">
+                        <?php foreach ($playstyle as $style) { ?>
+                            <option value="<?= $style['name'] ?>">
+                                <?= $style['name'] ?>
+                            </option>
+                        <?php } ?>
+                    </select>
+                    <span>Playstyle info: <a <?php activePage("home") ?> href="?page=home">Here</a></span>
+                </field>
+                <field>
+                    <label>Occupation</label>
+                    <input type="text" name='occupation' maxlength='15'>
+                    <span>A job to pay the bills</span>
+                </field>
             </field>
+            </div>
 
             <field class="full-width">
                 <label>Description</label>
@@ -132,6 +134,7 @@
                     <label>Image Of The Move</label>
                     <input type="file" name="specials[1][1]" accept="image/*">
                 </field>
+                <span>Got a second one?</span>
             </field>
 
             <field class="specials">
@@ -145,6 +148,7 @@
                     <label>Image Of The Move</label>
                     <input type="file" name="specials[3][0]" accept="image/*">
                 </field>
+                <span>How about a third?</span>
             </field>
 
             <button type="submit" name='add'>

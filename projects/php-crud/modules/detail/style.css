@@ -79,7 +79,7 @@ fighter-page text-content h2{
     background-color: rgba(255, 255, 255, 0.809);
 }
 
-.specials{
+article-grid.specials{
     display: flex;
     flex-direction: column;
 
