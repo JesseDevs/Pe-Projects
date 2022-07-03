@@ -13,6 +13,11 @@ div.required{
 	display: flex;
 	flex-direction: column;
 } */
+form .error{
+	background-color: var(--error);
+	outline-color: var(--error);
+	color: #000000;
+}
 
 span a{
 	display: inline;

@@ -50,6 +50,13 @@ function activeFighters($name)
     }
 }
 
+
+// Gets JSON fighter data and returns it as a php data file
+function getFighters()
+{
+    return json_decode(file_get_contents("data/fighter.json"), true);
+}
+
 // this function takes the selection and compares it to fighters data
 function isSelected($chosenStyle, $fighterStyle)
 {
@@ -81,12 +88,24 @@ function isSelected($chosenStyle, $fighterStyle)
 // next step would be <?php $data = getdatabase(datafile.json)
 
 
+// function updateFighter($data, $id)
+// {
+//     $fighters = getFighters();
+//     foreach ($fighters as $i => $fighter) {
+//         if ($fighter['id'] == $id) {
+//             $fighters[$i] = array_merge($fighter, $data);
+//         }
+//     }
+// }
+
 function writeData($array)
 {
+    //pull up json file
     $jsonedData = json_encode($array);
-    $dataFile = 'data/data.json';
+    $dataFile = 'data/fighter.json';
 
-    file_put_contents($dataFile, $jsonedData);
+    //save new array ex. newFighter
+    file_put_contents($dataFile, $jsonedData, FILE_APPEND | LOCK_EX);
 }
 
 function getDatabase()

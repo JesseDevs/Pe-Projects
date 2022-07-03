@@ -2,7 +2,7 @@
     <?php
 
     //bring in data
-    $json = file_get_contents("data/playstyle-data.json");
+    $json = file_get_contents("data/playstyle.json");
     $playstyleData = json_decode($json, true);
     $playstyle = $playstyleData["playstyle"];
 
@@ -11,25 +11,40 @@
     $job = "";
     $style = "";
 
-    $hasName = false;
-    $hasQuote = false;
-    $hasJob = false;
-    $hasStyle = false;
-
     $nameError = false;
     $quoteError = false;
     $jobError = false;
     $styleError = false;
 
+    // echo "<pre>";
+    // var_dump($_SERVER);
+    // echo "</pre>";
+
     //when the user clicks the button
     if (isset($_POST["add"])) {
+
+        // $name = $_POST["name"];
+        // $quote = $_POST["quote"];
+        // $job = $_POST["job"];
+        // $style = $_POST["style"];
+
+        // $newFighter = [
+        //     "name" => $name,
+        //     "quote" => $quote,
+        //     "job" => $job,
+        //     "style" => $style,
+
+        // ];
 
         //name
         if (isset($_POST["name"])) {
             $name = $_POST["name"];
 
             if (strlen($name) > 0) {
-                $hasName = true;
+                //Create Fighter
+                $newFighter = [
+                    "name" => $name,
+                ];
             } else {
                 $nameError = "No name. No battle, bud.";
             }
@@ -40,7 +55,9 @@
             $quote = $_POST['quote'];
 
             if (strlen($quote) > 0) {
-                $hasQuote = true;
+                $newFighter = [
+                    "quote" => $quote,
+                ];
             } else {
                 $quoteError = "Needs a cool phrase to yell..";
             }
@@ -51,7 +68,9 @@
             $style = $_POST['style'];
 
             if (strlen($style) > 0) {
-                $hasstyle = true;
+                $newFighter = [
+                    "playstyle" => $style,
+                ];
             } else {
                 $styleError = "You need a style to evolve beyond it.";
             }
@@ -63,27 +82,30 @@
             $job = $_POST['job'];
 
             if (strlen($job) > 0) {
-                $hasjob = true;
+                $newFighter = [
+                    "occupation" => $job,
+                ];
             } else {
                 $jobError = "Fighting don't pay the bills..";
             }
         }
 
 
-
-        if ($hasName && $hasQuote) {
-            echo "nice";
-        } else {
-            echo 'nothing';
-        }
+        writeData($newFighter);
+        // if ($hasName && $hasQuote) {
+        //     echo "nice";
+        // } else {
+        //     echo 'nothing';
+        // }
     }
+
     ?>
 
     <h1 class="loud-voice">CREATE A FIGHTER</h1>
 
     <inner-column>
 
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             <field class="required">
                 <field>
                     <label>Name<span class="asterisk">*</span></label>
@@ -107,6 +129,15 @@
             </field>
             <field class="required">
                 <field>
+                    <label>Occupation<span class="asterisk">*</span></label>
+                    <input type="text" name='job' maxlength='15' value='<?= $job ?>'>
+                    <?php if ($jobError) { ?>
+                        <span class='error'><?= $jobError ?></span>
+                    <?php } else { ?>
+                        <span>What's your job?</span>
+                    <?php } ?>
+                </field>
+                <field>
                     <label>Playstyle<span class="asterisk">*</span></label>
                     <select name="style">
                         <?php foreach ($playstyle as $style) { ?>
@@ -117,19 +148,10 @@
                     </select>
                     <span>Playstyle info: <a <?php activePage("home") ?> href="?page=home">Here</a>.</span>
                 </field>
-                <field>
-                    <label>Occupation<span class="asterisk">*</span></label>
-                    <input type="text" name='occupation' maxlength='15'>
-                    <?php if ($quoteError) { ?>
-                        <span class='error'><?= $quoteError ?></span>
-                    <?php } else { ?>
-                        <span>What's your job?</span>
-                    <?php } ?>
-                </field>
             </field>
             </div>
 
-            <field class="full-width">
+            <field>
                 <label>Description</label>
                 <textarea rows="5" cols="35" name='description'></textarea>
                 <span>Cool background story please.</span>

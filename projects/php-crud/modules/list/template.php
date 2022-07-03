@@ -1,6 +1,7 @@
 <?php
-$json = file_get_contents("data/fighter-data.json");
-$fighterData = json_decode($json, true);
+
+
+$fighterData = getFighters();
 $fighters = $fighterData["fighters"];
 
 if (isset($_GET['playstyle'])) {
