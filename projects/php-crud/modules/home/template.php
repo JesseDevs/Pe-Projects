@@ -1,6 +1,6 @@
 <?php
 
-$json = file_get_contents("data/playstyle-data.json");
+$json = file_get_contents("data/playstyle.json");
 $playstyleData = json_decode($json, true);
 $playstyle = $playstyleData["playstyle"];
 
