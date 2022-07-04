@@ -13,7 +13,7 @@
 }
 
 .site-menu a{
-    padding: 3vh 5vw;
+    padding: 20px 5vw;
 }
 
 .site-menu a.active{
@@ -27,7 +27,7 @@
 
 @media(min-width:400px){
     .site-menu a{
-        padding: 3vh 3vw;
+        padding: 20px 3vw;
     }
 }
 
