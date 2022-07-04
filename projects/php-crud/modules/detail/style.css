@@ -150,7 +150,7 @@ article-grid.specials{
     align-items: center;
     color: var(--black);
     justify-content: space-between;
-    transition: all .6s ease-out;
+    transition: color .6s ease-out;
 }
 
 .enemy picture:before,
