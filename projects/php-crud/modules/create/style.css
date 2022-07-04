@@ -225,7 +225,7 @@ button[type="submit"]::before {
     height: 0;
     background: transparent;
     border: 3px solid transparent;
-    border-radius: 3px;
+
 }
 
 button[type="submit"]:hover::before {

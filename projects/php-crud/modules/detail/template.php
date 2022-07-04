@@ -22,6 +22,7 @@ foreach ($fighters as $fighter) {
 
 ?>
 <?php if (isset($chosenFighter)) {
+
     $enemy = $chosenFighter['arch-enemy'];
 
     if (isset($enemy)) {
@@ -71,16 +72,19 @@ foreach ($fighters as $fighter) {
                     </div>
 
                     <p><?= $chosenFighter['description'] ?></p>
-                    <article class="enemy">
-                        <div class="container">
-                            <h3 class="strict-voice">Arch-nemesis</h3>
-                            <p><?= $chosenFighter['name'] ?> is ready to battle <?= $versus['name'] ?> </p>
-                        </div>
 
-                        <picture>
-                            <img src="<?= $versus['portrait'] ?>" alt="enemy">
-                        </picture>
-                    </article>
+                    <?php if (isset($chosenFighter['arch-enemy'])) { ?>
+                        <article class="enemy">
+                            <div class="container">
+                                <h3 class="strict-voice">Arch-nemesis</h3>
+                                <p><?= $chosenFighter['name'] ?> is ready to battle <?= $versus['name'] ?> </p>
+                            </div>
+
+                            <picture>
+                                <img src="<?= $versus['portrait'] ?>" alt="enemy">
+                            </picture>
+                        </article>
+                    <?php } ?>
                     <h2 class="attention-voice">SPECIALS</h2>
                     <article-grid class='specials'>
 
