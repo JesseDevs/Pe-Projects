@@ -8,7 +8,8 @@ html{
     --white: rgb(251, 248, 243);
     --black: rgb(32, 29, 28);
 
-    --error: #d777f7;
+    --error: rgb(105, 47, 91);
+    --errorBG: rgb(215, 99, 188);
 
     --main-color: rgb(47 79 105);
     --accent-color: #B3792F;

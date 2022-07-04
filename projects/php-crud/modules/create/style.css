@@ -14,7 +14,7 @@ div.required{
 	flex-direction: column;
 } */
 form .error{
-	background-color: var(--error);
+	background-color: var(--errorBG);
 	outline-color: var(--error);
 	color: #000000;
 }

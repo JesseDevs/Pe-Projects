@@ -189,7 +189,7 @@ article-grid.specials{
 }
 
 .enemy:hover{
-    border-color: var(--hover);
+    border-color: var(--error);
     color: var(--white);
 }
 
@@ -213,7 +213,7 @@ article-grid.specials{
 }
 
 .enemy:hover {
-    background-color: #b36659;
+    background-color: var(--errorBG);
 }
 
 @media(min-width:500px){
