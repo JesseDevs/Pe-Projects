@@ -16,7 +16,7 @@ div.required{
 form .error{
 	background-color: var(--errorBG);
 	outline-color: var(--error);
-	color: #000000;
+	color: var(--white);
 }
 
 span a{
