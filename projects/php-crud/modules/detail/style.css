@@ -1,6 +1,6 @@
 .detail-header{
     background-color: var(--accent-color);
-    padding: 4vh 1rem;
+    padding: 20px 1rem;
     text-align: center;
     color: var(--white);
 }
@@ -22,8 +22,6 @@
 fighter-page{
     display: flex;
     flex-direction: column;
-
-    
 }
 
 fighter-page .portrait{
@@ -45,7 +43,7 @@ fighter-page em{
 
 fighter-page text-content p,
 fighter-page text-content div{
-    margin: 2vh 0;
+    margin: 10px 0;
     max-width: 65ch;
     padding-left: 1rem;
     border-left: 3px solid var(--main-color); 
@@ -83,7 +81,7 @@ article-grid.specials{
     display: flex;
     flex-direction: column;
 
-    margin: 3vh auto;
+    margin: 20px auto;
     gap: 10px;
 }
 
@@ -130,7 +128,95 @@ article-grid.specials{
     text-align: center;
 }
 
-@media(min-width:450px){
+
+/* ENEMY */
+.enemy *{
+    margin: 5px auto;
+    padding: 0;
+    border: none;
+}
+
+.enemy{
+    max-width: fit-content;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--shado);
+
+    border: 5px solid var(--darkshade);
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: var(--black);
+    justify-content: space-between;
+    transition: all .6s ease-out;
+}
+
+.enemy picture:before,
+.enemy picture:after{
+
+    opacity: 0;
+    width: 10px;
+    height: 106%;
+    background-color:black;
+    content: '';
+
+    position: absolute;
+    transition: all .5s ease-out;
+
+}
+
+.enemy picture:before{
+    bottom: -5px;
+    left: 0;
+}
+
+.enemy picture:after{
+    bottom: -5px;
+    right: 0;
+}
+
+.enemy picture{
+    max-width: 200px;
+    margin: 0;
+    position: relative;
+    transition: all .5s ease-out;
+}
+
+.enemy picture img{
+    margin: 0;
+}
+
+.enemy:hover{
+    border-color: var(--hover);
+    color: var(--white);
+}
+
+
+.enemy:hover picture:before{
+    opacity: 100%;
+
+    transform: translate(900%) rotate(45deg);
+    border-radius: 20px;
+}
+
+.enemy:hover picture:after{
+
+    opacity: 100%;
+    transform: translate(-900%) rotate(-45deg) ;
+    border-radius: 20px;
+}
+
+.enemy:hover picture{
+    mix-blend-mode: multiply;
+}
+
+.enemy:hover {
+    background-color: #b36659;
+}
+
+@media(min-width:500px){
     article-grid.specials{
         flex-direction: row;
         justify-content: center;
@@ -148,6 +234,7 @@ article-grid.specials{
     fighter-page{
         flex-direction: row;
         gap: 30px;
+        align-items: center;
     }
 
     article-grid.specials{

@@ -13,22 +13,7 @@ if (isset($_GET['id'])) {
 }
 // echo $requestedId; 
 
-// "specials": {
-//     "hado": {
-//         "name": "Hadouken",
-//         "image":"./gifs/hado.webp"
-//     },
-//     "tatsu":{
-//         "name": "Tatsumaki",
-//         "image": "./gifs/tatsu.webp"
-//     },
-//     "shoru":{
-//         "name": "Shoryuken",
-//         "image": "./gifs/shoru.webp"
-//     }
-// }
-?>
-<?php foreach ($fighters as $fighter) {
+foreach ($fighters as $fighter) {
     if ($requestedId == $fighter['id']) {
         $chosenFighter = $fighter;
     }
@@ -36,8 +21,16 @@ if (isset($_GET['id'])) {
 
 
 ?>
-<?php if (isset($chosenFighter)) { ?>
+<?php if (isset($chosenFighter)) {
+    $enemy = $chosenFighter['arch-enemy'];
 
+    if (isset($enemy)) {
+        foreach ($fighters as $fighter) {
+            if ($enemy == $fighter['id']) {
+                $versus = $fighter;
+            }
+        }
+    } ?>
     <header class="detail-header">
         <inner-column>
             <h2 class=' attention-voice'>
@@ -76,19 +69,29 @@ if (isset($_GET['id'])) {
                         <p><strong>Occupation:</strong>&nbsp; <?= $chosenFighter['occupation'] ?>
                         </p>
                     </div>
-                    <p><?= $chosenFighter['description'] ?></p>
 
+                    <p><?= $chosenFighter['description'] ?></p>
+                    <article class="enemy">
+                        <div class="container">
+                            <h3 class="strict-voice">Arch-nemesis</h3>
+                            <p><?= $chosenFighter['name'] ?> is ready to battle <?= $versus['name'] ?> </p>
+                        </div>
+
+                        <picture>
+                            <img src="<?= $versus['portrait'] ?>" alt="enemy">
+                        </picture>
+                    </article>
                     <h2 class="attention-voice">SPECIALS</h2>
                     <article-grid class='specials'>
 
                         <?php foreach ($chosenFighter['specials'] as $special) { ?>
                             <article>
-                                <a href="?page=specials&special=<?= $special['name'] ?>">
-                                    <h3 class='deep-voice'><?= $special['name'] ?></h3>
-                                    <picture>
-                                        <img src=" <?= $special['image'] ?>" alt="">
-                                    </picture>
-                                </a>
+
+                                <h3 class='deep-voice'><?= $special['name'] ?></h3>
+                                <picture>
+                                    <img src=" <?= $special['image'] ?>" alt="">
+                                </picture>
+
                             </article>
 
                         <?php } ?>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<?php include('router.php'); ?>
+<?php require('router.php');
+showErrors() ?>
 
 <html lang="en">
 

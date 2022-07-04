@@ -22,7 +22,8 @@
             "specials": [
                 {
                     "name": "Hadouken",
-                    "image": "./gifs/hado.webp"
+                    "image": "./gifs/hado.webp",
+                    "description":"The Hadoken (波動拳 Hadōken?, 'Surge Fist' or 'Wave Motion Fist') is a special attack that originated in Street Fighter. It is often referred to as a 'fireball' due to its appearance, despite few instances of the move actually producing flames. It is one of the most famous special moves in the Street Fighter series, along with the <a href='?page=specials&special=Shoryuken'>Shoryuken</a> and <a href='?page=specials&special=Tatsumaki'>Tatsumaki.</a>"
                 },
                 {
                     "name": "Tatsumaki",
