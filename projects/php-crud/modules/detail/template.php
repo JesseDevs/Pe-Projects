@@ -7,6 +7,8 @@ $fighters = $fighterData["fighters"];
 
 $chosenFighter = null;
 $requestedId = null;
+$friend = null;
+
 
 if (isset($_GET['id'])) {
     $requestedId = $_GET['id'];
@@ -37,20 +39,10 @@ if (isset($chosenFighter)) {
         }
     }
 
-    if (isset($ally)) {
+    foreach ($chosenFighter['ally'] as $a) {
         foreach ($fighters as $fighter) {
-            if ($ally == $fighter['id']) {
+            if ($a == $fighter['id']) {
                 $friend = $fighter;
-            }
-        }
-
-        if (is_array($ally)) {
-            foreach ($ally as $a) {
-                foreach ($fighters as $fighter) {
-                    if ($a == $fighter['id']) {
-                        $friend = $fighter;
-                    }
-                }
             }
         }
     } ?>
