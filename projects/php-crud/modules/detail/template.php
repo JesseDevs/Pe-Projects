@@ -19,6 +19,11 @@ foreach ($fighters as $fighter) {
     }
 }
 
+foreach ($chosenFighter['specials'] as $specials) {
+    print_r($specials);
+}
+
+
 if (isset($chosenFighter)) {
 
     $enemy = $chosenFighter['arch-enemy'];
