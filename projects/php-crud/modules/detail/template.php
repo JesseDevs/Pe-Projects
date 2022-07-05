@@ -19,9 +19,9 @@ foreach ($fighters as $fighter) {
     }
 }
 
-foreach ($chosenFighter['specials'] as $specials) {
-    print_r($specials);
-}
+// foreach ($chosenFighter['specials'] as $specials) {
+//     print_r($specials);
+// }
 
 
 if (isset($chosenFighter)) {
@@ -36,13 +36,26 @@ if (isset($chosenFighter)) {
             }
         }
     }
+
     if (isset($ally)) {
         foreach ($fighters as $fighter) {
             if ($ally == $fighter['id']) {
                 $friend = $fighter;
             }
         }
+
+        if (is_array($ally)) {
+            foreach ($ally as $a) {
+                foreach ($fighters as $fighter) {
+                    if ($a == $fighter['id']) {
+                        $friend = $fighter;
+                    }
+                }
+            }
+        }
     } ?>
+
+
 
     <header class="detail-header">
         <inner-column>
@@ -86,7 +99,7 @@ if (isset($chosenFighter)) {
 
                                 <h3 class='deep-voice'><?= $special['name'] ?></h3>
                                 <picture>
-                                    <img src=" <?= $special['image'] ?>" alt="">
+                                    <img src=" <?= $special['image'] ?>" loop=false alt="">
                                 </picture>
 
                             </article>
@@ -116,7 +129,7 @@ if (isset($chosenFighter)) {
                             </article>
                         </a>
                     <?php } ?>
-                    <?php if (isset($friend['ally'])) {
+                    <?php if (isset($friend)) {
                     ?>
                         <a href="?page=detail&id=<?= $friend['id'] ?>">
                             <article class="friend relation">
@@ -131,10 +144,7 @@ if (isset($chosenFighter)) {
                             </article>
                         </a>
                     <?php }
-
-
                     ?>
-
 
                 </text-content>
             </fighter-page>
