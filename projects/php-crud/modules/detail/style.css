@@ -281,8 +281,14 @@ article-grid.specials{
 @media (min-width: 850px){
     fighter-page{
         flex-direction: row;
-
+        align-items: flex-start;
+        justify-content: flex-start;
         gap: 30px;
+    }
+
+    fighter-page .container{
+        position: sticky;
+        top: 20px;
     }
 
     article-grid.specials{
