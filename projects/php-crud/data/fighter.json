@@ -9,7 +9,7 @@
             "audio": "./voice/ryu.mp3",
             "occupation": "Martial Artist",
             "description": "The main protagonist of the Street Fighter series, first appearing in the original Street Fighter. He is an experienced martial artist, highly focused on his training, aiming to become the strongest he can.",
-            "arch-enemy": 1,
+            "enemy": [1],
             "ally": [2],
             "costumes": [
                 "./images/ryu/ryu-one.webp",
@@ -44,7 +44,7 @@
             "audio": "./voice/dictator.mp3",
             "occupation": "Shadaloo King (leader)",
             "description": "M. Bison is an archetypal villain motivated by his own self-serving interests and lust for absolute power through world domination. He is a megalomaniacal and psychopathic dictator and terrorist who seeks to rule the world with an iron fist whilst also being universally regarded as the greatest and most powerful martial artist of all time",
-            "arch-enemy": 0,
+            "enemy": [0],
             "ally":[],
             "costumes": [
                 "./images/bison/bison-one.webp",
@@ -76,7 +76,7 @@
             "audio": "./voice/guile.mp3",
             "occupation": "Major of the United States Air Force",
             "description": "A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.",
-            "arch-enemy": null,
+            "enemy": [],
             "ally": [0],
             "costumes": [
                 "./images/guile/gul-one.webp",
@@ -109,8 +109,8 @@
             "audio": "./voice/zan.mp3",
             "occupation": "Professional Wrestler",
             "description": "Zangief enters any and all Street Fighting tournaments purely to prove his worth as the greatest wrestler in the world and to maintain his reputation as the Red Cyclone. He is extremely proud of his motherland, the Soviet Union, and he is determined to represent it as the champion of each tournament.",
-            "arch-enemy": null,
-            "ally": [null],
+            "enemy": [],
+            "ally": [],
             "costumes": [
                 "./images/zan/zan-one.webp",
                 "./images/zan/zan-two.webp",
@@ -142,7 +142,7 @@
             "audio": "./voice/chun.mp3",
             "occupation": "Investigator for the ICPO",
             "description": "Freshly initiated into the Interpol ranks, Chun-Li is in pursuit of M. Bison and all of the information that she can obtain about his army’s whereabouts. However, many of Chun-Li’s efforts are thwarted and she makes little progress in locating Bison throughout the tournament. Bison’s attentions are on a particular martial artist known as Ryu",
-            "arch-enemy": 1,
+            "enemy": [1],
             "ally": [
                 0,
                 2
@@ -179,8 +179,8 @@
             "audio": "./voice/ras.mp3",
             "occupation": "Socialite",
             "description": "Rashid is the eldest son of an old aristocratic Middle Eastern family who’s traveling the world in search of a missing friend who has been kidnapped by Shadaloo. Rashid is incredibly agile. Pile the pressure on from above and below with his V-Trigger Ysaar, his jump, dash, and Eagle Spike among other moves will be much faster on contact with his tornado. Use an EX Spinning Mixer to stop airborne attacks!",
-            "arch-enemy": null,
-            "ally": [null],
+            "enemy": [],
+            "ally": [],
             "costumes": [
                 "./images/ras/ras-one.webp",
                 "./images/ras/ras-two.webp",
@@ -212,8 +212,8 @@
             "audio": "./voice/nec.mp3",
             "occupation": "-",
             "description": "Necalli is described as the 'Emissary of the Gods', with a rather ominous moniker of 'The Soul Consuming Darkness'. As the Warrior Prophet reveals, every few hundred years the stars herald the 'Hour of Battle' ('Hour of Necalli'). During this period of time Necalli awakens to consume the souls of strong warriors.",
-            "arch-enemy": null,
-            "ally": [null],
+            "enemy": [],
+            "ally": [],
             "costumes": [
                 "./images/nec/nec-one.webp",
                 "./images/nec/nec-two.webp",
@@ -245,7 +245,7 @@
             "audio": "./voice/dha.mp3",
             "occupation": "Yoga Master",
             "description": "Dhalsim enters the tournament to raise money for his village, but realizes that it contradicts his pacifist beliefs. Dhalsim retires from fighting after the second World Warrior tournament, and continues to roam the world helping those in need. This character possesses limbs that extend across the screen to keep opponents away.",
-            "arch-enemy": null,
+            "enemy": [],
             "ally": [0],
             "costumes": [
 

@@ -54,7 +54,7 @@ function activeFighters($name)
 // Gets JSON fighter data and returns it as a php data file
 function getFighters()
 {
-    return json_decode(file_get_contents("data/fighter.json"), true);
+    return json_decode(file_get_contents("data/fighter.json"), true)["fighters"];
 }
 
 // this function takes the selection and compares it to fighters data
@@ -69,35 +69,82 @@ function isSelected($chosenStyle, $fighterStyle)
     }
 }
 
-// Function to work through form reuqires data for the errors to that I can loop through them. Until then it won't work, I belive.
+function has($array, $item)
+{
+    if (isset($array[$item])) {
+        return true;
+    }
 
-// function formPost($name)
-// {
-//     if (isset($_POST["name"])) {
-//         $name = $_POST["name"];
+    return false;
+}
 
-//         if (strlen($name) > 0) {
-//             $check = true;
-//         } else {
-//             $error = "No name. No battle, bud.";
-//         }
-//     }
-// }
+function getFighterById($id)
+{
 
-// gets json data from data folder and gets is ready to be add to a php variable
-// next step would be <?php $data = getdatabase(datafile.json)
+    foreach (getFighters() as $fighter) {
+        if ($id == $fighter['id']) {
+            return $fighter;
+        }
+    }
+}
 
+function displayEnemies($chosen)
+{
+    foreach (getFighters() as $fighter) {
+        foreach ($chosen['enemy'] as $enemy) {
+            if ($enemy == $fighter['id']) {
+                displayEnemy($fighter);
+            }
+        }
+    }
+}
 
-// function updateFighter($data, $id)
-// {
-//     $fighters = getFighters();
-//     foreach ($fighters as $i => $fighter) {
-//         if ($fighter['id'] == $id) {
-//             $fighters[$i] = array_merge($fighter, $data);
-//         }
-//     }
-// }
+function displayFriends($chosen)
+{
+    foreach (getFighters() as $fighter) {
+        foreach ($chosen['ally'] as $friend) {
+            if ($friend == $fighter['id']) {
+                displayFriend($fighter);
+            }
+        }
+    }
+}
 
+function displayEnemy($enemy)
+{ ?>
+    <a href="?page=detail&id=<?= $enemy['id'] ?>">
+        <article class="enemy relation">
+            <div class="container">
+                <h3 class="strict-voice">Arch-nemesis</h3>
+                <p> <?= $enemy['name'] ?> </p>
+            </div>
+
+            <picture>
+                <img src="<?= $enemy['portrait'] ?>" alt="enemy">
+            </picture>
+        </article>
+    </a>
+<?php } ?>
+
+<?php
+
+function displayFriend($friend)
+{ ?>
+    <a href="?page=detail&id=<?= $friend['id'] ?>">
+        <article class="friend relation">
+            <div class="container">
+                <h3 class="strict-voice">Ally In Battle</h3>
+                <p> <?= $friend['name'] ?> </p>
+            </div>
+
+            <picture>
+                <img src="<?= $friend['portrait'] ?>" alt="friend">
+            </picture>
+        </article>
+    </a>
+<?php } ?>
+
+<?php
 function writeData($array)
 {
     //pull up json file

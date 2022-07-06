@@ -1,7 +1,7 @@
 <?php
 
-$fighterData = getFighters();
-$fighters = $fighterData['fighters'];
+$fighters = getFighters();
+
 
 showErrors();
 
