@@ -6,6 +6,8 @@
     $playstyleData = json_decode($json, true);
     $playstyle = $playstyleData["playstyle"];
 
+    $fighters = getFighters();
+
     $name = "";
     $quote = "";
     $job = "";
@@ -139,12 +141,35 @@
                     <span>Playstyle info: <a <?php activePage("home") ?> href="?page=home">Here</a>.</span>
                 </field>
             </field>
-            </div>
 
             <field>
                 <label>Description</label>
                 <textarea rows="5" cols="35" name='description'></textarea>
                 <span>Cool background story please.</span>
+            </field>
+            <field class="required">
+                <field>
+                    <select name="enemy">
+                        <option value="" disabled selected>Select Your Enemy?</option>
+                        <?php foreach ($fighters as $fighter) { ?>
+                            <option value="<?= $fighter['id'] ?><?= $fighter['name'] ?>">
+                                <?= $fighter['id'] ?> -- <?= $fighter['name'] ?>
+                            </option>
+                        <?php } ?>
+                    </select>
+                    <span>Do you have any Enemies?</span>
+                </field>
+                <field>
+                    <select name="ally">
+                        <option value="" disabled selected>Select Your Ally?</option>
+                        <?php foreach ($fighters as $fighter) { ?>
+                            <option value="<?= $fighter['id'] ?><?= $fighter['name'] ?>">
+                                <?= $fighter['id'] ?> -- <?= $fighter['name'] ?>
+                            </option>
+                        <?php } ?>
+                    </select>
+                    <span>Who stands on your side?</span>
+                </field>
             </field>
             <field class="form-images">
                 <field>
