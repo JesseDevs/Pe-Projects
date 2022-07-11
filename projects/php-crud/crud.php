@@ -64,7 +64,9 @@ function getDatabase()
 function createRecord($input)
 {
     // create a unique id
+    $id = uniqid();
     // get the data so you can add to it
+    $fighters = getFighters();
     // put the input into the database (based on the structure you chose)
     // save the updated database
 }
@@ -77,6 +79,7 @@ function saveData($data)
 
 function deleteRecordById($id)
 {
+    $fighters = getFighters();
     // get database
     // unset (delete) the property (id) in that database
     // save the database
@@ -102,12 +105,12 @@ function deleteRecordById($id)
 function renderRecord($id, $name)
 {
     echo "
-			<li>
-				<h2>$name</h2>
+        <li>
+            <h2>$name</h2>
 
-				<a href='?delete=$id'>delete</a>
-			</li>
-		";
+            <a href='?delete=$id'>delete</a>
+        </li>
+    ";
 }
 
 function renderRecords($records)
@@ -216,4 +219,3 @@ if (isset($_GET["delete"])) {
         list-style: none;
     }
 </style>
-sheriffderek has notifications turned off

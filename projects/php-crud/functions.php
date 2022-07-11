@@ -54,7 +54,7 @@ function activeFighters($name)
 // Gets JSON fighter data and returns it as a php data file
 function getFighters()
 {
-    return json_decode(file_get_contents("data/fighter.json"), true)["fighters"];
+    return json_decode(file_get_contents("data/fighter.json"), true);
 }
 
 // this function takes the selection and compares it to fighters data

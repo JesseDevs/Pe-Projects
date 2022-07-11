@@ -18,17 +18,8 @@
     $jobError = false;
     $styleError = false;
 
-    // echo "<pre>";
-    // var_dump($_SERVER);
-    // echo "</pre>";
-
     //when the user clicks the button
     if (isset($_POST["add"])) {
-
-        // $name = $_POST["name"];
-        // $quote = $_POST["quote"];
-        // $job = $_POST["job"];
-        // $style = $_POST["style"];
 
         //name
         if (isset($_POST["name"])) {
@@ -63,7 +54,6 @@
             }
         }
 
-
         //job
         if (isset($_POST["job"])) {
             $job = $_POST['job'];
@@ -75,20 +65,24 @@
             }
         }
 
-        $newFighter = [
-            "name" => $name,
-            "quote" => $quote,
-            "job" => $job,
-            "style" => $style,
+        $input = [
+            'id' => uniqid(),
+            'name' => $name,
+            'quote' => $quote,
+            'occupation' => $job,
+            'playstyle' => $style,
+
         ];
 
+        //append the unput to our array
+        $data[] = $input;
 
-        writeData($newFighter);
-        // if ($hasName && $hasQuote) {
-        //     echo "nice";
-        // } else {
-        //     echo 'nothing';
-        // }
+        $json = json_encode($data);
+        //encode back to json
+        $data = json_encode($data, JSON_PRETTY_PRINT);
+        file_put_contents('data/fighter.json', $data, FILE_APPEND);
+
+        header('location: index.php');
     }
 
     ?>
