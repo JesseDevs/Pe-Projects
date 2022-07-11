@@ -1,0 +1,5 @@
+.resume article-grid{
+    padding-bottom: var(--small-height);
+    box-shadow:
+    0 3px 0 0 var(--coffee);
+}

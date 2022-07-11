@@ -89,7 +89,7 @@ div.project-links{
 
 .project-image a{
     outline:3px solid var(--coffee);
-    border: 3px solid var(--coffee);
+
     border-radius: 8px;
     overflow: hidden;
 

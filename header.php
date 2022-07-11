@@ -15,8 +15,6 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Resume Page. Hire me.</title>
-
 </head>
 
 <body>

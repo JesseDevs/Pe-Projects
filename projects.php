@@ -7,7 +7,7 @@ $projects = [
         'title' => 'Theme Website',
         'link' => 'https://peprojects.dev/alpha-4/jesse/projects/theme-challenge/',
         'image' => 'images/theme.png',
-        'details' => 'A project crafted to match an industry standard website that presents professional level composition. Taking a larger inspiration by <a href="https://bleacherreport.com/">Bleacher Report.</a>',
+        'details' => 'A project crafted to match an industry standard website that presents professional level composition. Taking a large inspiration from <a href="https://bleacherreport.com/">Bleacher Report.</a>',
         'github' => 'https://github.com/JesseDevs/pe-projects/tree/main/projects/theme-challenge'
     ],
     'overwatch' => [
@@ -24,13 +24,7 @@ $projects = [
         'details' => 'A project dedicated to a client looking to target a new audience for their company and differentiate themselves from their competitors. This required research, business communication, and design discussion.',
         'github' => 'https://github.com/JesseDevs/pe-projects/tree/main/projects/client-project'
     ],
-    // 'responsive-garden' => [
-    //     'title' => 'Responsive Garden',
-    //     'link' => 'https://peprojects.dev/alpha-4/jesse/projects/responsive-garden/',
-    //     'image' => 'images/responsive-garden.jpg',
-    //     'details' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus adipisci esse, in nemo similique cum officiis! Quos, recusandae aperiam ut iusto rem expedita iure?',
-    //     'github' => 'https://github.com/JesseDevs/pe-projects/tree/main/projects/responsive-garden'
-    // ],
+
 ];
 ?>
 
