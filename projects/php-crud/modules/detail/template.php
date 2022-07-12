@@ -6,7 +6,6 @@ $chosenFighter = null;
 if (isset($_GET['id'])) {
     $requestedId = $_GET['id'];
 }
-// echo $requestedId; 
 
 $chosenFighter = getFighterById($requestedId);
 
@@ -48,19 +47,22 @@ $chosenFighter = getFighterById($requestedId);
 
             <text-content>
                 <h2 class="attention-voice">SPECIALS</h2>
-                <article-grid class='specials'>
-                    <?php foreach ($chosenFighter['specials'] as $special) { ?>
-                        <article>
+                <a class='specials-page' href="?page=specials&id=<?= $chosenFighter['id'] ?>">
+                    <article-grid class='specials'>
+                        <?php foreach ($chosenFighter['specials'] as $special) { ?>
+                            <article>
 
-                            <h3 class='deep-voice'><?= $special['name'] ?></h3>
-                            <picture>
-                                <img src=" <?= $special['image'] ?>" alt="">
-                            </picture>
+                                <h3 class='deep-voice'><?= $special['name'] ?></h3>
+                                <picture class='specials-display'>
+                                    <!-- <img class="still" src=" <?= $special['still'] ?>" alt=""> -->
+                                    <img class="gif" src=" <?= $special['image'] ?>" alt="">
+                                </picture>
 
-                        </article>
+                            </article>
 
-                    <?php } ?>
-                </article-grid>
+                        <?php } ?>
+                    </article-grid>
+                </a>
 
                 <div>
                     <p><strong>Playstyle:</strong>&nbsp;<?= $chosenFighter['playstyle'] ?> </p>
