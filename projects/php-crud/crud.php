@@ -43,22 +43,34 @@ $nameInput = ""; // reset the input
 
 function initializeDatabase()
 {
+
     // create a data structure you want to use as your base
+    $file = '/data/fighter.json';
+    $data = [];
     // encode that to json
+    $inputData = json_encode($data);
     // save it to the file
+    file_put_contents('fighter.json', $inputData, FILE_APPEND | LOCK_EX);
     // return the default datastructure (PHP-style)
 }
 
 function getDatabase()
 {
     // check if database file exists and has content
-    // if it does
-    // get the content
-    // decode it
-    // return the database
-    // if it doesn't 
-    // initialize the database
-    // and return it's data (PHP-style)
+    if (isset($file) && !empty($file)) {
+        // if it does
+        if (isset($file)) {
+            // get the content
+            $json = file_get_contents("data/fighter.json");
+            // decode it
+            json_decode($json, true);
+            // return the database
+            return;
+            // if it doesn't 
+            // initialize the database
+            // and return it's data (PHP-style)
+        }
+    }
 }
 
 function createRecord($input)

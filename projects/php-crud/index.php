@@ -28,9 +28,6 @@ showErrors() ?>
 
     <main class='page-content'>
         <?php getTemplate($page); ?>
-        <?php if ($page == 'specials') {
-            include('/Users/jesse/Desktop/pe-projects/projects/php-crud/modules/specials/template.php');
-        } ?>
     </main>
 
     <?php include('modules/site-footer/template.php'); ?>
