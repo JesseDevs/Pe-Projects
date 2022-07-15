@@ -59,6 +59,7 @@ nav div.dash{
 
 .fighters-list .fighter{
     max-width: 300px;
+    max-height: 290px;
     background-color: var(--black);
     color: var(--white);
     box-shadow: 0 0 0 3px var(--accent-color);

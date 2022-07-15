@@ -6,21 +6,33 @@
     $playstyleData = json_decode($json, true);
     $playstyle = $playstyleData["playstyle"];
 
-    $fighters = getFighters();
+    $fighters = getDatabase();
 
     $name = "";
     $quote = "";
     $job = "";
     $style = "";
+    $description = '';
+    $enemyData = "";
+    $enemyId = [];
+    $allyId = [];
+
 
     $nameError = false;
     $quoteError = false;
     $jobError = false;
     $styleError = false;
+    $descriptionError = false;
+
+    $fileDestination = null;
+    $portrait = null;
+    // things you need
+    // enctype="multipportrait/form-data"
+    // $_FILES
+    // move_uploaded_file
 
     //when the user clicks the button
     if (isset($_POST["add"])) {
-
         //name
         if (isset($_POST["name"])) {
             $name = $_POST["name"];
@@ -65,25 +77,80 @@
             }
         }
 
+        //description
+        if (isset($_POST["description"])) {
+            $description = $_POST["description"];
+
+            if (strlen($description) > 0) {
+                $description = htmlspecialchars($_POST["description"]);
+            } else {
+                $descriptionError = "Needs an inspirational story..";
+            }
+        }
+
+        //enemy
+        if (isset($_POST["enemy"])) {
+            $enemyData = $_POST["enemy"];
+
+            $enemyInfo = explode("--", $enemyData);
+
+            $enemyId = intval($enemyInfo[0]);
+        }
+
+        //ally
+        if (isset($_POST["ally"])) {
+            $allyData = $_POST["ally"];
+
+            $allyInfo = explode("--", $allyData);
+
+            $allyId = array_push($allyId, intval($allyInfo[0]));
+        }
+
+        if (isset($_FILES['portrait']) && $_FILES['portrait']['size'] > 0) {
+
+            //store image file in variable
+            $fileTmpLocation = $_FILES['portrait']['tmp_name'];
+
+            //store file name in variable
+            $fileName = $_FILES['portrait']['name'];
+
+            $fileDestination = "images/uploads/$fileName";
+
+            //move file to image folder
+            move_uploaded_file($fileTmpLocation, $fileDestination);
+
+            $portrait = "images/uploads" . $fileName;
+
+
+            // format($art);
+
+        }
+
+
         $input = [
-            'id' => uniqid(),
+
+            // 'id'=> uniqid("a");
+            'id' => rand(9, 1000),
             'name' => $name,
             'quote' => $quote,
             'occupation' => $job,
             'playstyle' => $style,
+            'description' => $description,
+            'enemy' => [$enemyId],
+            'ally' => [$allyId],
+            'portrait' => $portrait
 
         ];
 
-        //append the unput to our array
-        $data[] = $input;
+        if (!empty($name) && !empty($quote) && !empty($job)) {
+            array_push($fighters, $input);
 
-        $json = json_encode($data);
-        //encode back to json
-        $data = json_encode($data, JSON_PRETTY_PRINT);
-        file_put_contents('data/fighter.json', $data, FILE_APPEND);
-
-        header('location: index.php');
+            $newFighters = json_encode($fighters);
+            file_put_contents('/Users/jesse/Desktop/pe-projects/projects/php-crud/data/fighter.json', $newFighters);
+        }
     }
+
+
 
     ?>
 
@@ -137,16 +204,21 @@
             </field>
 
             <field>
-                <label>Description</label>
-                <textarea rows="5" cols="35" name='description'></textarea>
-                <span>Cool background story please.</span>
+                <label>Description<span class="asterisk">*</span></label>
+                <textarea rows="5" cols="35" name='description' require></textarea>
+                <?php if ($jobError) { ?>
+                    <span class='error'><?= $descriptionError ?></span>
+                <?php } else { ?>
+                    <span>Cool background story please.</span>
+                <?php } ?>
+
             </field>
             <field class="required">
                 <field>
                     <select name="enemy">
                         <option value="" disabled selected>Select Your Enemy?</option>
                         <?php foreach ($fighters as $fighter) { ?>
-                            <option value="<?= $fighter['id'] ?><?= $fighter['name'] ?>">
+                            <option value="<?= $enemyId ?>">
                                 <?= $fighter['id'] ?> -- <?= $fighter['name'] ?>
                             </option>
                         <?php } ?>
@@ -157,7 +229,7 @@
                     <select name="ally">
                         <option value="" disabled selected>Select Your Ally?</option>
                         <?php foreach ($fighters as $fighter) { ?>
-                            <option value="<?= $fighter['id'] ?><?= $fighter['name'] ?>">
+                            <option value="<?= $allyId ?>">
                                 <?= $fighter['id'] ?> -- <?= $fighter['name'] ?>
                             </option>
                         <?php } ?>
@@ -168,7 +240,7 @@
             <field class="form-images">
                 <field>
                     <label>Portrait</label>
-                    <input type="file" name="portrait" accept="image/*" value='<?= $portait ?>'>
+                    <input class="inputfile" id="ff" type="file" name="portrait" accept="image/*" value='<?= $portait ?>'>
                     <span>Your main image.</span>
                 </field>
                 <field>
@@ -235,3 +307,16 @@
 
     </inner-column>
 </section>
+
+<script>
+    // when image selected
+    var input = document.querySelector('#ff');
+
+    input.addEventListener('change', function(event) {
+        var preview = document.querySelector('picture img');
+        var previewSource = URL.createObjectURL(input.files[0]);
+        console.log(previewSource);
+        preview.src = previewSource;
+    });
+    // insert image
+</script>

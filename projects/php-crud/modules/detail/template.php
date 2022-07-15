@@ -28,11 +28,14 @@ $chosenFighter = getFighterById($requestedId);
                     <img src="<?= $chosenFighter['portrait'] ?>" alt="SFV:<?= $chosenFighter['name'] ?> ">
                 </picture>
                 <article-grid class='costumes'>
-                    <?php foreach ($chosenFighter['costumes'] as $costumes) { ?>
-                        <picture>
-                            <img src="<?= $costumes ?>" alt=''>
-                        </picture>
-                    <?php } ?>
+                    <?php
+                    if (isset($chosenFighter['costumes'])) {
+                        foreach ($chosenFighter['costumes'] as $costumes) { ?>
+                            <picture>
+                                <img src="<?= $costumes ?>" alt=''>
+                            </picture>
+                    <?php }
+                    } ?>
                 </article-grid>
 
                 <em class='calm-voice'><?= $chosenFighter['quote'] ?></em>
@@ -49,18 +52,21 @@ $chosenFighter = getFighterById($requestedId);
                 <h2 class="attention-voice">SPECIALS</h2>
                 <a class='specials-page' href="?page=specials&id=<?= $chosenFighter['id'] ?>">
                     <article-grid class='specials'>
-                        <?php foreach ($chosenFighter['specials'] as $special) { ?>
-                            <article>
+                        <?php
+                        if (isset($chosenFighter['specials'])) {
+                            foreach ($chosenFighter['specials'] as $special) { ?>
+                                <article>
 
-                                <h3 class='deep-voice'><?= $special['name'] ?></h3>
-                                <picture class='specials-display'>
-                                    <!-- <img class="still" src=" <?= $special['still'] ?>" alt=""> -->
-                                    <img class="gif" src=" <?= $special['image'] ?>" alt="">
-                                </picture>
+                                    <h3 class='deep-voice'><?= $special['name'] ?></h3>
+                                    <picture class='specials-display'>
+                                        <!-- <img class="still" src=" <?= $special['still'] ?>" alt=""> -->
+                                        <img class="gif" src=" <?= $special['image'] ?>" alt="">
+                                    </picture>
 
-                            </article>
+                                </article>
 
-                        <?php } ?>
+                        <?php }
+                        } ?>
                     </article-grid>
                 </a>
 

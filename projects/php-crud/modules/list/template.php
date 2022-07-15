@@ -39,9 +39,11 @@ if (isset($_GET['playstyle'])) {
                             <h2>
                                 <?= $fighter['name'] ?>
                             </h2>
-                            <picture>
-                                <img src="<?= $fighter['portrait'] ?>" alt="SFV: <?= ($fighter['name']) ?>">
-                            </picture>
+                            <?php if (isset($fighter['portrait'])) { ?>
+                                <picture>
+                                    <img src="<?= $fighter['portrait'] ?>" alt="SFV: <?= ($fighter['name']) ?>">
+                                </picture>
+                            <?php } ?>
                         </fighter-card>
                     </a>
                 </li>

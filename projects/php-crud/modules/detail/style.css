@@ -223,6 +223,7 @@ article-grid.specials{
     height: 106%;
     background-color:black;
     content: '';
+    outline: 1px solid var(--white);
 
     position: absolute;
     transition: all .5s ease-out;

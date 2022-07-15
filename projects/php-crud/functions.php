@@ -145,24 +145,15 @@ function displayFriend($friend)
 <?php } ?>
 
 <?php
+
 function writeData($array)
 {
     //pull up json file
     $jsonedData = json_encode($array);
-    $dataFile = 'data/data.json';
+    $dataFile = 'data/fighter.json';
 
     //save new array ex. newFighter
-    file_put_contents($dataFile, $jsonedData, FILE_APPEND | LOCK_EX);
-}
-
-function getDatabase()
-{
-
-    if (!file_get_contents("data/data.json")) {
-        file_put_contents("data/data.json", '[]');
-    }
-    $json = file_get_contents("data/data.json");
-    return json_decode($json, true);
+    file_put_contents($dataFile, $jsonedData);
 }
 
 function isLoggedIn($password)
@@ -174,4 +165,136 @@ function isLoggedIn($password)
     } else {
         return false;
     }
+}
+
+
+// SOLUTION:
+
+function initializeDatabase()
+{
+    // create a data structure you want to use as your base
+    $input = [];
+    // encode that to json
+    $json = json_encode($input);
+    // save it to the file
+    file_put_contents("data/fighter.json", $json);
+    // return the default datastructure
+    return $input;
+}
+
+function getDatabase()
+{
+    // check if database file exists and has content
+    // if it does
+    if (file_get_contents("data/fighter.json")) {
+        // get the content
+        $file = file_get_contents("data/fighter.json");
+        // decode it
+        $data = json_decode($file, true);
+        // return the database
+        return $data;
+    } else {
+        // if it doesn't 
+        // initialize the database
+        // and return it's data (PHP-style)
+        return initializeDatabase();
+    }
+}
+
+function createRecord($input)
+{
+    // create a unique id
+    // get the data so you can add to it
+    $fighters = getDatabase();
+    // put the input into the database
+    $newFighters = array_push($fighters, $input);
+    // save the updated database
+    return $newFighters;
+}
+
+function saveData($data)
+{
+    // convert it to json
+    $json = json_encode($data);
+    // save it
+    file_put_contents("data/fighter.json", $json);
+}
+
+function deleteRecordById($id)
+{
+    // get database
+    $database = getDatabase();
+    // unset (delete) the key (id)
+    unset($database[$id]);
+    // save the database
+    saveData($database);
+}
+
+
+
+// you should need a form to see if your functions are working
+// keep it simple
+// createRecord("Ivy");
+// createRecord("Derek");
+
+
+
+// RENDER THINGS
+
+function renderRecord($id, $name)
+{
+    echo "
+        <li>
+            <h2>$name</h2>
+
+            <a href='?delete=$id'>delete</a>
+        </li>
+    ";
+}
+
+function renderRecords($records)
+{
+    // render the records
+    $names = array_reverse($records["items"]);
+    foreach ($names as $id => $name) {
+        renderRecord($id, $name);
+    }
+}
+
+function showError($error)
+{
+    $message = "Please add a name.";
+    if ($error) {
+        return $message;
+    }
+}
+$missingText = null;
+
+
+
+// HANDLE INPUT
+
+// if the user added a name
+if (isset($_POST["submitted"])) {
+    // if they added text
+    if ($_POST["name"] && strlen($_POST["name"]) > 0) {
+        // create the record
+        createRecord($_POST["name"]);
+        header('LOCATION: create.php');
+    } else {
+        // if not, signify there's an error
+        $missingText = true;
+    }
+}
+
+// if the user deleted something
+if (isset($_GET["delete"])) {
+    // delete the record
+    deleteRecordById($_GET["delete"]);
+    header('LOCATION: single-file.php');
+}
+
+if (isset($_GET["clearDatabase"])) {
+    initializeDatabase();
+    header('LOCATION: single-file.php');
 }
