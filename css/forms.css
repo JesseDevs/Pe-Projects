@@ -1,0 +1,114 @@
+
+form{
+    padding: 2.5vh 1rem;
+}
+
+form{
+    padding-bottom: 0;
+}
+
+.feedback p,
+.feedback li{
+    padding: 1rem;
+}
+
+button,
+input,
+label{
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    display: block;
+}
+
+/* Section ONe */
+
+label{
+    margin: 2vh auto;
+}
+
+
+button {
+    margin-top: 4vh;
+    padding: 10px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    
+}
+
+
+input{
+    height: 25px;
+}
+
+button, 
+.forms main a,
+.e4p main a{
+    width: 200px;
+    height: 60px;
+
+    padding: 1rem ;
+    margin-bottom: 5vh;
+    text-align: center;
+    font-weight: 500;
+
+    color: rgba(12, 12, 12);
+    background-color: white;
+    box-shadow: 3px 3px 0 0 white;
+    border-radius: 5px;
+    border: 3px solid rgb(224, 175, 84);
+
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover,
+.forms main a:hover,
+.e4p main a:hover{
+    background-color: rgb(224, 175, 84);
+    transform: translate(0.2em, 0.2em);
+    box-shadow: 0 0 0 1px transparent;
+    color: white;
+
+    border: 3px solid transparent;
+    
+    cursor: pointer;
+}
+
+header.forms inner-column{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media (min-width:600px){
+
+    main inner-column.forms{
+        max-width: none;
+        width: 450px;
+        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (min-width: 800px){
+    .field{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .field div{
+        width: 43%;
+    }
+}
+
+

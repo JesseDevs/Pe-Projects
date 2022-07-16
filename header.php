@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<?php require('router.php'); ?>
 <html lang="en">
 
 <head>
@@ -18,18 +16,18 @@
 
 </head>
 
-<body>
+<body class="<?= $page ?>">
     <div class="overlay">
 
         <header>
             <inner-column>
                 <nav>
-                    <a href="index.php"><span>Home</span></a>
-                    <a href="projects.php"><span>Projects</span></a>
+                    <a href="?page=home"><span>Home</span></a>
+                    <a href="?page=projects"><span>Projects</span></a>
                     <!-- 
-                        <a href="resume.html"><span>Resume</span></a> 
+                        <a href="?page=resume"><span>Resume</span></a> 
                     -->
-                    <a href="goals.php"><span>Goals</span></a>
+                    <a href="?page=goals"><span>Goals</span></a>
 
 
                 </nav>
