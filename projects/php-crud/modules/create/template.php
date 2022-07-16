@@ -146,7 +146,7 @@
             array_push($fighters, $input);
 
             $newFighters = json_encode($fighters);
-            file_put_contents('/data/fighter.json', $newFighters);
+            file_put_contents(' data/fighter.json', $newFighters);
         }
     }
 
