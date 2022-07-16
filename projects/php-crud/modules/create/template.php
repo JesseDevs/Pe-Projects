@@ -114,12 +114,12 @@
             //store file name in variable
             $fileName = $_FILES['portrait']['name'];
 
-            $fileDestination = "images/uploads/$fileName";
+            $fileDestination = "images/uploads/" . $fileName;
 
             //move file to image folder
             move_uploaded_file($fileTmpLocation, $fileDestination);
 
-            $portrait = "images/uploads" . $fileName;
+            $portrait = "images/uploads/" . $fileName;
 
 
             // format($art);
@@ -146,7 +146,7 @@
             array_push($fighters, $input);
 
             $newFighters = json_encode($fighters);
-            file_put_contents('/Users/jesse/Desktop/pe-projects/projects/php-crud/data/fighter.json', $newFighters);
+            file_put_contents('/data/fighter.json', $newFighters);
         }
     }
 
