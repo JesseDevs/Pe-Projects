@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php require('router.php'); ?>
 <html lang="en">
 
 <head>

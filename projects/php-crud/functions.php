@@ -212,7 +212,7 @@ function createRecord($input)
     return $newFighters;
 }
 
-function saveData($data)
+function saveDatabase($data)
 {
     // convert it to json
     $json = json_encode($data);
@@ -220,14 +220,15 @@ function saveData($data)
     file_put_contents("data/fighter.json", $json);
 }
 
-function deleteRecordById($id)
+function deleteItemById($items, $idToDelete)
 {
-    // get database
-    $database = getDatabase();
-    // unset (delete) the key (id)
-    unset($database[$id]);
-    // save the database
-    saveData($database);
+    $filtered = [];
+    foreach ($items as $currentItem) {
+        if ($currentItem['id'] !== $idToDelete) {
+            array_push($filtered, $currentItem);
+        }
+    }
+    saveDatabase($filtered);
 }
 
 
@@ -285,13 +286,6 @@ if (isset($_POST["submitted"])) {
         // if not, signify there's an error
         $missingText = true;
     }
-}
-
-// if the user deleted something
-if (isset($_GET["delete"])) {
-    // delete the record
-    deleteRecordById($_GET["delete"]);
-    header('LOCATION: single-file.php');
 }
 
 if (isset($_GET["clearDatabase"])) {

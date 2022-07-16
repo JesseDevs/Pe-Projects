@@ -1,41 +1,56 @@
-<?php include('header.php') ?>
+<!DOCTYPE html>
+<?php require('router.php');
+function getPage($page)
+{
+    if (isset($page)) {
+        $template = 'pages/' . $page . '/index.php';
+    }
+    include($template);
+}
 
-<main>
-    <section class="landing" id="#home">
-        <inner-column>
-            <h1 class="loud-voice">Jesse&nbsp;Felix</h1>
-            <div class="section-grid">
-                <div class="info-wrapper">
-                    <span>Web Developer. UI&nbsp;/&nbsp;UX&nbsp;Designer.</span>
-                    <p>
-                        I’m a Front-End Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I want to keep doing this! Which led me to making a change from Finance to Tech.
-                    </p>
-                    <p>
-                        Currently under the mentorship of <a target="_blank" href="https://perpetual.education/">Perpetual Education</a>, exploring my skills by experimenting in a wide range of coding and design disciplines. I see myself continuing to challenge myself, to learn, and to do amazing things. Maybe with you?<br>
-                    </p>
-                    <div class="landing-actions">
-                        <a class="calm-voice" href="projects.php">Projects</a>
-                        <!--
-                            <a class="calm-voice"  href="resume.html">Hire me!</a>
-                        -->
+?>
 
-                    </div>
-                    <ul>
-                        <li><a target="social" href="https://twitter.com/Jesse_Devs"><img src="images/icons8-twitter.svg" alt=""></a></li>
-                        <li><a target="social" href="https://github.com/JesseDevs"><img src="images/icons8-github.svg" alt=""></a></li>
-                        <li><a target="social" href="https://www.linkedin.com/in/felix-jesser1223/"><img src="images/icons8-linkedin.svg" alt=""></a></li>
-                        <li><a target="social" href="https://www.instagram.com/jessedude2/"><img src="images/icons8-instagram.svg" alt=""></a></li>
-                    </ul>
-                </div>
+<html lang="en">
 
-                <?php include('connect.php') ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            </div>
-        </inner-column>
+    <title>Jesse. The one and only.</title>
+    <meta name='description' content="Personal site: Business card">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/images/metadata.png">
 
-    </section>
-</main>
-</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="<?= $page ?>">
+    <div class="overlay">
+
+        <header>
+            <inner-column>
+                <nav>
+                    <a href="?page=home"><span>Home</span></a>
+                    <a href="?page=projects"><span>Projects</span></a>
+                    <!-- 
+                        <a href="?page=resume"><span>Resume</span></a> 
+                    -->
+                    <a href="?page=goals"><span>Goals</span></a>
+
+
+                </nav>
+            </inner-column>
+        </header>
+
+
+        <?php getPage($page); ?>
+
+
+    </div>
 
 </body>
 

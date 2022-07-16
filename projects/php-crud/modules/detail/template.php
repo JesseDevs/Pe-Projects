@@ -11,6 +11,27 @@ $chosenFighter = getFighterById($requestedId);
 
 ?>
 
+<?php
+
+$fighters = getFighters();
+
+if (isset($_POST["delete"])) {
+    function deleteItemById($items, $idToDelete)
+    {
+        $filtered = [];
+        foreach ($items as $currentItem) {
+            if ($currentItem['id'] !== $idToDelete) {
+                array_push($filtered, $currentItem);
+            }
+        }
+        saveDatabase($filtered);
+    }
+}
+
+
+
+?>
+
 <header class="detail-header">
     <inner-column>
         <h2 class=' attention-voice'>
@@ -44,6 +65,10 @@ $chosenFighter = getFighterById($requestedId);
                     <source src="<?= $chosenFighter['audio'] ?>" type='audio/wav'>
                     </source>
                 </audio>
+                <form method="POST" class='delete'>
+
+                    <button type="submit" name='delete'>Delete</button>
+                </form>
 
 
             </div>

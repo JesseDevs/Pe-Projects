@@ -270,7 +270,11 @@ article-grid.specials{
     background-color: var(--errorBG);
 }
 
-
+.delete{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
 
 @media(min-width:500px){
     article-grid.specials{

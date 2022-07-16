@@ -1,4 +1,3 @@
-<?php include('header.php') ?>
 <?php require('resume-data.php') ?>
 
 <?php
@@ -47,50 +46,3 @@ function renderList($array, $type)
 
 	</inner-column>
 </main>
-
-</div>
-</body>
-
-</html>
-
-
-
-
-
-<?php
-
-
-// // renderList($experiences, "education");
-
-// // renderList($experiences, "job");
-
-// // renderList($experiences, "bonus");
-
-
-
-// // print_r($jobs);
-
-
-// // array filter takes a function as it's second argument
-// $educations = array_filter($experiences, function ($experience) {
-// 	return $experience["type"] == "job";
-// });
-// // this is how you'd write it with an "anonymous" function (no name)
-
-
-// function ifType($experience)
-// {
-// 	return $experience["type"] == "job";
-// }
-
-// $filtered = array_filter($experiences, "ifType");
-
-
-
-
-
-// print_r($jobs);
-
-// print_r($educations);
-
-?>
