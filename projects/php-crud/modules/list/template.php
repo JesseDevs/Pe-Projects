@@ -18,12 +18,16 @@ if (isset($_GET['playstyle'])) {
 
     <nav class='playstyle'>
         <a href="?page=list&playstyle=Shoto" class="<?= activeFighters('Shoto') ?>">Shoto</a>
+
         <div class="dash">|</div>
         <a href="?page=list&playstyle=Charge" class="<?= activeFighters('Charge') ?>">Charge</a>
+
         <div class="dash">|</div>
         <a href="?page=list&playstyle=Grappler" class="<?= activeFighters('Grappler') ?>">Grappler</a>
+
         <div class="dash">|</div>
         <a href="?page=list&playstyle=Zoner" class="<?= activeFighters('Zoner') ?>">Zoner</a>
+
         <div class="dash">|</div>
         <a href="?page=list" class="<?= activeFighters(null) ?>">Everyone</a>
     </nav>
