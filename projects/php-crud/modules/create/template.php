@@ -33,122 +33,123 @@
 
     //when the user clicks the button
     if (isset($_POST["add"])) {
-        //name
-        if (isset($_POST["name"])) {
-            $name = $_POST["name"];
+    }
+    //name
+    if (isset($_POST["name"])) {
+        $name = $_POST["name"];
 
-            if (strlen($name) > 0) {
-                $name = htmlspecialchars($_POST["name"]);
-            } else {
-                $nameError = "No name. No battle, bud.";
-            }
-        }
-
-        //quote
-        if (isset($_POST["quote"])) {
-            $quote = $_POST['quote'];
-
-            if (strlen($quote) > 0) {
-                $quote = htmlspecialchars($_POST["quote"]);
-            } else {
-                $quoteError = "Needs a cool phrase to yell..";
-            }
-        }
-
-        //style
-        if (isset($_POST["style"])) {
-            $style = $_POST['style'];
-
-            if (strlen($style) > 0) {
-                $style = htmlspecialchars($_POST["style"]);
-            } else {
-                $styleError = "You need a style to evolve beyond it.";
-            }
-        }
-
-        //job
-        if (isset($_POST["job"])) {
-            $job = $_POST['job'];
-
-            if (strlen($job) > 0) {
-                $job = htmlspecialchars($_POST["job"]);
-            } else {
-                $jobError = "Fighting don't pay the bills..";
-            }
-        }
-
-        //description
-        if (isset($_POST["description"])) {
-            $description = $_POST["description"];
-
-            if (strlen($description) > 0) {
-                $description = htmlspecialchars($_POST["description"]);
-            } else {
-                $descriptionError = "Needs an inspirational story..";
-            }
-        }
-
-        //enemy
-        if (isset($_POST["enemy"])) {
-            $enemyData = $_POST["enemy"];
-
-            $enemyInfo = explode("--", $enemyData);
-
-            $enemyId = intval($enemyInfo[0]);
-        }
-
-        //ally
-        if (isset($_POST["ally"])) {
-            $allyData = $_POST["ally"];
-
-            $allyInfo = explode("--", $allyData);
-
-            $allyId = array_push($allyId, intval($allyInfo[0]));
-        }
-
-        if (isset($_FILES['portrait']) && $_FILES['portrait']['size'] > 0) {
-
-            //store image file in variable
-            $fileTmpLocation = $_FILES['portrait']['tmp_name'];
-
-            //store file name in variable
-            $fileName = $_FILES['portrait']['name'];
-
-            $fileDestination = "images/uploads/" . $fileName;
-
-            //move file to image folder
-            move_uploaded_file($fileTmpLocation, $fileDestination);
-
-            $portrait = "images/uploads/" . $fileName;
-
-
-            // format($art);
-
-        }
-
-
-        $input = [
-
-            // 'id'=> uniqid("a");
-            'id' => rand(9, 1000),
-            'name' => $name,
-            'quote' => $quote,
-            'occupation' => $job,
-            'playstyle' => $style,
-            'description' => $description,
-            'enemy' => [$enemyId],
-            'ally' => [$allyId],
-            'portrait' => $portrait
-
-        ];
-
-        if (!empty($name) && !empty($quote) && !empty($job)) {
-            array_push($fighters, $input);
-
-            $newFighters = json_encode($fighters);
-            file_put_contents(' data/fighter.json', $newFighters);
+        if (strlen($name) > 0) {
+            $name = htmlspecialchars($_POST["name"]);
+        } else {
+            $nameError = "No name. No battle, bud.";
         }
     }
+
+    //quote
+    if (isset($_POST["quote"])) {
+        $quote = $_POST['quote'];
+
+        if (strlen($quote) > 0) {
+            $quote = htmlspecialchars($_POST["quote"]);
+        } else {
+            $quoteError = "Needs a cool phrase to yell..";
+        }
+    }
+
+    //style
+    if (isset($_POST["style"])) {
+        $style = $_POST['style'];
+
+        if (strlen($style) > 0) {
+            $style = htmlspecialchars($_POST["style"]);
+        } else {
+            $styleError = "You need a style to evolve beyond it.";
+        }
+    }
+
+    //job
+    if (isset($_POST["job"])) {
+        $job = $_POST['job'];
+
+        if (strlen($job) > 0) {
+            $job = htmlspecialchars($_POST["job"]);
+        } else {
+            $jobError = "Fighting don't pay the bills..";
+        }
+    }
+
+    //description
+    if (isset($_POST["description"])) {
+        $description = $_POST["description"];
+
+        if (strlen($description) > 0) {
+            $description = htmlspecialchars($_POST["description"]);
+        } else {
+            $descriptionError = "Needs an inspirational story..";
+        }
+    }
+
+    //enemy
+    if (isset($_POST["enemy"])) {
+        $enemyData = $_POST["enemy"];
+
+        $enemyInfo = explode("--", $enemyData);
+
+        $enemyId = intval($enemyInfo[0]);
+    }
+
+    //ally
+    if (isset($_POST["ally"])) {
+        $allyData = $_POST["ally"];
+
+        $allyInfo = explode("--", $allyData);
+
+        $allyId = array_push($allyId, intval($allyInfo[0]));
+    }
+
+    if (isset($_FILES['portrait']) && $_FILES['portrait']['size'] > 0) {
+
+        //store image file in variable
+        $fileTmpLocation = $_FILES['portrait']['tmp_name'];
+
+        //store file name in variable
+        $fileName = $_FILES['portrait']['name'];
+
+        $fileDestination = "images/uploads/" . $fileName;
+
+        //move file to image folder
+        move_uploaded_file($fileTmpLocation, $fileDestination);
+
+        $portrait = "images/uploads/" . $fileName;
+
+
+        // format($art);
+
+    }
+
+
+    $input = [
+
+        // 'id'=> uniqid("a");
+        'id' => rand(9, 1000),
+        'name' => $name,
+        'quote' => $quote,
+        'occupation' => $job,
+        'playstyle' => $style,
+        'description' => $description,
+        'enemy' => [$enemyId],
+        'ally' => [$allyId],
+        'portrait' => $portrait
+
+    ];
+
+    if (!empty($name) && !empty($quote) && !empty($job)) {
+        array_push($fighters, $input);
+
+        $newFighters = json_encode($fighters);
+        file_put_contents('data/fighter.json', $newFighters);
+    }
+
 
 
 

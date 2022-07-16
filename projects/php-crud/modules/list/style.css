@@ -48,6 +48,13 @@ nav div.dash{
     box-shadow: inset 0 -2px 0 0 transparent;
 }
 
+fighter-card picture{
+    min-height: 200px;
+    background-size: cover;
+
+
+}
+
 .fighters-list{
     display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

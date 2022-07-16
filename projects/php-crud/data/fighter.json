@@ -278,5 +278,20 @@
                 "image": ".\/gifs\/kick.gif"
             }
         ]
+    },
+    {
+        "id": 36,
+        "name": "Jesse R Felix",
+        "quote": "ss",
+        "occupation": "Wed developer",
+        "playstyle": "Shoto",
+        "description": "dfsf",
+        "enemy": [
+            0
+        ],
+        "ally": [
+            1
+        ],
+        "portrait": "images\/uploads\/best-pic-resize.jpg"
     }
 ]
