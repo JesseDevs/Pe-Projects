@@ -2,6 +2,6 @@
 
     <?php
 
-    header("Location://jessedevs.substack.com/");
+    header("Location:jessedevs.substack.com/");
     ?>
 </main>
