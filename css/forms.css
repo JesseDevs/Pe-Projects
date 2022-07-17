@@ -7,6 +7,13 @@ form{
     padding-bottom: 0;
 }
 
+form h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
 .feedback p,
 .feedback li{
     padding: 1rem;
@@ -41,42 +48,38 @@ button {
 
 input{
     height: 25px;
+    border-color: var(--coffee);
 }
 
 button, 
 .forms main a,
 .e4p main a{
-    width: 200px;
-    height: 60px;
+    width: 280px;
 
-    padding: 1rem ;
-    margin-bottom: 5vh;
+    padding: 20px 20px;
     text-align: center;
     font-weight: 500;
 
-    color: rgba(12, 12, 12);
-    background-color: white;
-    box-shadow: 3px 3px 0 0 white;
+    color: var(--black);
+    background-color: var(--faded);
     border-radius: 5px;
-    border: 3px solid rgb(224, 175, 84);
+    border: 3px solid var(--coffee);
 
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
-    transition: all .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: clamp(1.1rem, 1.2vw, 1.2rem);
+    background-image: linear-gradient(var(--link), var(--link));
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
 }
 
 button:hover,
 .forms main a:hover,
 .e4p main a:hover{
-    background-color: rgb(224, 175, 84);
-    transform: translate(0.2em, 0.2em);
-    box-shadow: 0 0 0 1px transparent;
-    color: white;
-
-    border: 3px solid transparent;
-    
+    border-color: var(--ink);
+    color: var(--ink);
+    cursor: pointer;
+    background-size: 100% 100%;
     cursor: pointer;
 }
 
@@ -102,12 +105,12 @@ header.forms inner-column{
     .field{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: CENTER;
         align-items: center;
     }
 
     .field div{
-        width: 43%;
+        width: 65%;
     }
 }
 
