@@ -6,14 +6,15 @@
     $playstyleData = json_decode($json, true);
     $playstyle = $playstyleData["playstyle"];
 
-    $fighters = getDatabase();
+    $fighters = getFighters();
 
     $name = "";
     $quote = "";
     $job = "";
     $style = "";
     $description = '';
-    $enemyData = "";
+    $enemyData = '';
+    $allyData = '';
     $enemyId = [];
     $allyId = [];
 
@@ -26,107 +27,97 @@
 
     $fileDestination = null;
     $portrait = null;
-    // things you need
-    // enctype="multipportrait/form-data"
-    // $_FILES
-    // move_uploaded_file
 
-    //when the user clicks the button
-    if (isset($_POST["add"])) {
-    }
-    //name
-    if (isset($_POST["name"])) {
-        $name = $_POST["name"];
 
-        if (strlen($name) > 0) {
-            $name = htmlspecialchars($_POST["name"]);
-        } else {
-            $nameError = "No name. No battle, bud.";
+    if (isset($_POST["add"])) :
+
+        //name
+        if (isset($_POST["name"])) {
+            $name = $_POST["name"];
+
+            if (strlen($name) > 0) {
+                $name = htmlspecialchars($_POST["name"]);
+            } else {
+                $nameError = "No name. No battle, bud.";
+            }
         }
-    }
 
-    //quote
-    if (isset($_POST["quote"])) {
-        $quote = $_POST['quote'];
+        //quote
+        if (isset($_POST["quote"])) {
+            $quote = $_POST['quote'];
 
-        if (strlen($quote) > 0) {
-            $quote = htmlspecialchars($_POST["quote"]);
-        } else {
-            $quoteError = "Needs a cool phrase to yell..";
+            if (strlen($quote) > 0) {
+                $quote = htmlspecialchars($_POST["quote"]);
+            } else {
+                $quoteError = "Needs a cool phrase to yell..";
+            }
         }
-    }
 
-    //style
-    if (isset($_POST["style"])) {
-        $style = $_POST['style'];
+        //style
+        if (isset($_POST["style"])) {
+            $style = $_POST['style'];
 
-        if (strlen($style) > 0) {
-            $style = htmlspecialchars($_POST["style"]);
-        } else {
-            $styleError = "You need a style to evolve beyond it.";
+            if (strlen($style) > 0) {
+                $style = htmlspecialchars($_POST["style"]);
+            } else {
+                $styleError = "You need a style to evolve beyond it.";
+            }
         }
-    }
 
-    //job
-    if (isset($_POST["job"])) {
-        $job = $_POST['job'];
+        //job
+        if (isset($_POST["job"])) {
+            $job = $_POST['job'];
 
-        if (strlen($job) > 0) {
-            $job = htmlspecialchars($_POST["job"]);
-        } else {
-            $jobError = "Fighting don't pay the bills..";
+            if (strlen($job) > 0) {
+                $job = htmlspecialchars($_POST["job"]);
+            } else {
+                $jobError = "Fighting don't pay the bills..";
+            }
         }
-    }
 
-    //description
-    if (isset($_POST["description"])) {
-        $description = $_POST["description"];
+        //description
+        if (isset($_POST["description"])) {
+            $description = $_POST["description"];
 
-        if (strlen($description) > 0) {
-            $description = htmlspecialchars($_POST["description"]);
-        } else {
-            $descriptionError = "Needs an inspirational story..";
+            if (strlen($description) > 0) {
+                $description = htmlspecialchars($_POST["description"]);
+            } else {
+                $descriptionError = "Needs an inspirational story..";
+            }
         }
-    }
 
-    //enemy
-    if (isset($_POST["enemy"])) {
-        $enemyData = $_POST["enemy"];
-
-        $enemyInfo = explode("--", $enemyData);
-
-        $enemyId = intval($enemyInfo[0]);
-    }
-
-    //ally
-    if (isset($_POST["ally"])) {
-        $allyData = $_POST["ally"];
-
-        $allyInfo = explode("--", $allyData);
-
-        $allyId = array_push($allyId, intval($allyInfo[0]));
-    }
-
-    if (isset($_FILES['portrait']) && $_FILES['portrait']['size'] > 0) {
-
-        //store image file in variable
-        $fileTmpLocation = $_FILES['portrait']['tmp_name'];
-
-        //store file name in variable
-        $fileName = $_FILES['portrait']['name'];
-
-        $fileDestination = "images/uploads/" . $fileName;
-
-        //move file to image folder
-        move_uploaded_file($fileTmpLocation, $fileDestination);
-
-        $portrait = "images/uploads/" . $fileName;
+        //enemy
+        if (isset($_POST["enemy"])) {
+            $enemyData = $_POST["enemy"];
 
 
-        // format($art);
+            $enemyInfo = explode(" -- ", $enemyData);
 
-    }
+            $enemyId = intval($enemyInfo);
+        }
 
+        //ally
+        if (isset($_POST["ally"])) {
+            $allyData = $_POST["ally"];
+
+            $allyInfo = explode(" -- ", $allyData);
+
+            $allyId = array_push($allyId, intval($allyInfo[0]));
+        }
+
+        if ($_FILES['portrait']['size'] > 0) {
+            $portrait_filepath = "images/uploads/" . $_FILES['portrait']['name'];
+            move_uploaded_file($_FILES['portrait']['tmp_name'], $portrait_filepath);
+            $portrait = $portrait_filepath;
+            $hasportrait = true;
+        } else {
+            $portraitError = "Please upload the book's cover";
+        }
+
+
+
+
+    endif;
 
     $input = [
 
@@ -142,16 +133,10 @@
         'portrait' => $portrait
 
     ];
+    array_push($fighters, $input);
 
-    if (!empty($name) && !empty($quote) && !empty($job)) {
-        array_push($fighters, $input);
-
-        $newFighters = json_encode($fighters);
-        file_put_contents('data/fighter.json', $newFighters);
-    }
-
-
-
+    $newFighters = json_encode($fighters);
+    file_put_contents('data/fighter.json', $newFighters);
 
     ?>
 
@@ -217,7 +202,7 @@
             <field class="required">
                 <field>
                     <select name="enemy">
-                        <option value="" disabled selected>Select Your Enemy?</option>
+                        <option disabled selected>Select Your Enemy?</option>
                         <?php foreach ($fighters as $fighter) { ?>
                             <option value="<?= $enemyId ?>">
                                 <?= $fighter['id'] ?> -- <?= $fighter['name'] ?>
@@ -228,7 +213,7 @@
                 </field>
                 <field>
                     <select name="ally">
-                        <option value="" disabled selected>Select Your Ally?</option>
+                        <option disabled selected>Select Your Ally?</option>
                         <?php foreach ($fighters as $fighter) { ?>
                             <option value="<?= $allyId ?>">
                                 <?= $fighter['id'] ?> -- <?= $fighter['name'] ?>

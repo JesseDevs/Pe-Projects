@@ -278,20 +278,5 @@
                 "image": ".\/gifs\/kick.gif"
             }
         ]
-    },
-    {
-        "id": 46,
-        "name": "Jesse R Felix",
-        "quote": "ds",
-        "occupation": "dsd",
-        "playstyle": "Shoto",
-        "description": "dsds",
-        "enemy": [
-            1
-        ],
-        "ally": [
-            1
-        ],
-        "portrait": "images\/uploads\/316DB1AF-4BBF-41CF-BF1D-26DBFB374E28-2370-000001A49A45EBFA.jpg"
     }
 ]
