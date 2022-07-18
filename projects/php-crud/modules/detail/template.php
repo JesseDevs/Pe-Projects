@@ -16,14 +16,20 @@ $chosenFighter = getFighterById($requestedId);
 $fighters = getFighters();
 
 if (isset($_POST["delete"])) {
-    $filtered = [];
+    $filteredFighters = [];
     foreach ($fighters as $fighter) {
         if ($fighter['id'] !== $chosenFighter['id']) {
-            array_push($filtered, $fighter);
+
+            array_push($filteredFighters, $fighter);
         }
     }
+
+    $filtered = json_encode($filteredFighters);
     file_put_contents('data/fighter.json', $filtered);
+
+    header("Location: index.php?page=list", TRUE, 301);
 }
+
 
 
 ?>
@@ -62,8 +68,8 @@ if (isset($_POST["delete"])) {
                     </source>
                 </audio>
 
-
                 <?php if ($chosenFighter['id'] > 8) { ?>
+
                     <form method="POST" class='delete'>
 
                         <button type="submit" name='delete'>Delete</button>

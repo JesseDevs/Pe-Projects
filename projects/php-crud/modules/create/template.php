@@ -139,6 +139,8 @@
 
         $newFighters = json_encode($fighters);
         file_put_contents('data/fighter.json', $newFighters);
+
+        header("Location: index.php?page=list", TRUE, 301);
     }
     ?>
 
