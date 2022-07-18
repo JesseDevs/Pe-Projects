@@ -214,7 +214,7 @@ function deleteItemById($items, $idToDelete)
             array_push($filtered, $currentItem);
         }
     }
-    saveDatabase($filtered);
+    file_put_contents('data/fighter.json', $filtered);
 }
 
 function clearDatabase($items)

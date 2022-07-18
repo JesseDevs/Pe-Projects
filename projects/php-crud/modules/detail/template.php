@@ -16,18 +16,14 @@ $chosenFighter = getFighterById($requestedId);
 $fighters = getFighters();
 
 if (isset($_POST["delete"])) {
-    function deleteItemById($items, $idToDelete)
-    {
-        $filtered = [];
-        foreach ($items as $currentItem) {
-            if ($currentItem['id'] !== $idToDelete) {
-                array_push($filtered, $currentItem);
-            }
+    $filtered = [];
+    foreach ($fighters as $fighter) {
+        if ($fighter['id'] !== $chosenFighter['id']) {
+            array_push($filtered, $fighter);
         }
-        saveDatabase($filtered);
     }
+    file_put_contents('data/fighter.json', $filtered);
 }
-
 
 
 ?>
@@ -65,11 +61,14 @@ if (isset($_POST["delete"])) {
                     <source src="<?= $chosenFighter['audio'] ?>" type='audio/wav'>
                     </source>
                 </audio>
-                <form method="POST" class='delete'>
 
-                    <button type="submit" name='delete'>Delete</button>
-                </form>
 
+                <?php if ($chosenFighter['id'] > 8) { ?>
+                    <form method="POST" class='delete'>
+
+                        <button type="submit" name='delete'>Delete</button>
+                    </form>
+                <?php } ?>
 
             </div>
 

@@ -6,7 +6,7 @@
     $playstyleData = json_decode($json, true);
     $playstyle = $playstyleData["playstyle"];
 
-    $fighters = getFighters();
+    $fighters = json_decode(file_get_contents("data/originalFighters.json"), true);
 
     $name = "";
     $quote = "";
@@ -119,25 +119,27 @@
 
     endif;
 
-    $input = [
+    if (isset($_POST["add"])) {
+        $input = [
 
-        // 'id'=> uniqid("a");
-        'id' => rand(9, 1000),
-        'name' => $name,
-        'quote' => $quote,
-        'occupation' => $job,
-        'playstyle' => $style,
-        'description' => $description,
-        'enemy' => [$enemyId],
-        'ally' => [$allyId],
-        'portrait' => $portrait
+            // 'id'=> uniqid("a");
+            'id' => rand(9, 1000),
+            'name' => $name,
+            'quote' => $quote,
+            'occupation' => $job,
+            'playstyle' => $style,
+            'description' => $description,
+            'enemy' => [$enemyId],
+            'ally' => [$allyId],
+            'portrait' => $portrait
 
-    ];
-    array_push($fighters, $input);
+        ];
 
-    $newFighters = json_encode($fighters);
-    file_put_contents('data/fighter.json', $newFighters);
+        array_push($fighters, $input);
 
+        $newFighters = json_encode($fighters);
+        file_put_contents('data/fighter.json', $newFighters);
+    }
     ?>
 
     <h1 class="loud-voice">CREATE A FIGHTER</h1>
