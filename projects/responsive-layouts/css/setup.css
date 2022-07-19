@@ -46,14 +46,16 @@ inner-column{
   	margin-right: auto;
 	margin-left: auto;
 	padding: 10vh 1rem;
+	max-width: 1200px;
 }
 
 article-grid,
-text-content{
+text-content,
+module-header,
+module{
 	display: block;
   	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
+
 }
 
 a {

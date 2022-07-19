@@ -4,8 +4,8 @@
 @import 'modules.css';
 
 
-article-grid,
-inner-column{
+ul,
+module{
     display: flex;
     flex-direction: column;
 
@@ -30,67 +30,90 @@ p{
 
 }
 
-article-grid div{
-    height: 300px;
-    background-color: black;
+article-grid picture{
+ 
     margin-top: 15px;
     margin-bottom: 15px;
+    width: fit-content;
+    min-height: auto;
 }
 
-.articles text-content{
-    margin-bottom: 60px;
+module-header{
+    padding-bottom: 50px;
 }
 
-article-grid article{
+li article{
     border-top: 2px solid black;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 
-@media(min-width: 600px){
+@media(min-width: 550px){
 
-    inner-column *{
+    module{
         background-color: pink;
     }
 
-    article-grid{
+    ul{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .boxes{
-        row-gap: 15px;
-    }
-
-    article-grid text-content{
+    module-header{
         width: 100%;
     }
 
-    article-grid article,
-    article-grid div{
+    module-header p{
+        max-width: 65ch;
+    }
+
+
+    .articles li {
         width: 48%;
     }
 
-    
+    .boxes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 15px;
+        justify-content: space-between;
+    }
 
+    .boxes picture{
+        max-width: 48%;
+    }
 
 }
 
-@media(min-width: 1100px){
-    inner-column{
+@media(min-width: 900px){
+    module{
         flex-direction: row;
-        gap: 30px;
-
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: stretch;
+        gap: 0 2%;
+        justify-content: center;
     }
 
-    inner-column *{
+    module-header{
+        width: 50%;
+        margin-right: 50%;
+        justify-self: flex-start;
+    }
+
+    .articles {
+        max-width: 49%;
+    }
+
+    .boxes{
+        max-width: 49%;
+    }
+
+    module {
         background-color: lightgreen;
-    }
-
-    article-grid text-content p{
-        max-width: 60ch;
     }
 
 }
