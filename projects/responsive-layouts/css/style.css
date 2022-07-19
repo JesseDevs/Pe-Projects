@@ -1,0 +1,96 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'typography.css';
+@import 'modules.css';
+
+
+article-grid,
+inner-column{
+    display: flex;
+    flex-direction: column;
+
+}
+
+h2{
+    font-size: 27px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h3 +p{
+    margin-top: 20px;
+}
+
+p{
+    font-size: 14px;
+
+}
+
+article-grid div{
+    height: 300px;
+    background-color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.articles text-content{
+    margin-bottom: 60px;
+}
+
+article-grid article{
+    border-top: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+@media(min-width: 800px){
+
+    inner-column *{
+        background-color: pink;
+    }
+
+    article-grid{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .boxes{
+        row-gap: 15px;
+    }
+
+    article-grid text-content{
+        width: 100%;
+    }
+
+    article-grid article,
+    article-grid div{
+        width: 48%;
+    }
+
+    
+
+
+}
+
+@media(min-width: 1100px){
+    inner-column{
+        flex-direction: row;
+        gap: 30px;
+
+    }
+
+    inner-column *{
+        background-color: lightgreen;
+    }
+
+    article-grid text-content p{
+        max-width: 60ch;
+    }
+
+}

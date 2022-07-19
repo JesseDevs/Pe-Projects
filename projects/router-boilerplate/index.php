@@ -1,3 +1,5 @@
+<?php include('functions.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,58 +21,13 @@
 
 <body>
 
-    <?php
+    <header>
+        <h1>Page Title <?= currentPage(); ?></h1>
 
-    $page = null;
-
-    if (isset($_GET["page"])) {
-        $page = $_GET["page"]; // url?page = string
-    } else {
-        $page = "home"; // default
-    }
-
-    ?>
-
-    <header class="doc-header">
-        <inner-column>
-            <nav>
-                <p>logo</p>
-                <a href="#">One</a>
-                <a href="#">Two</a>
-                <a href="#">Three</a>
-                <a href="#">Four</a>
-            </nav>
-        </inner-column>
+        <?php include('modules/site-menu/template.php'); ?>
     </header>
 
-    <main>
-        <?php
-
-        include("site-menu.php");
-
-        if ($page == "home") {
-            include("home.php");
-        }
-
-        if ($page == "suvs") {
-            include("suvs.php");
-        }
-
-        if ($page == "cars") {
-            include("cars.php");
-        }
-
-        if ($page == "performance") {
-            include("performance.php");
-        }
-
-        ?>
-    </main>
-
-
-    <footer>
-
-    </footer>
+    <?php getPageTemplate(currentPage()) ?>
 
 </body>
 
