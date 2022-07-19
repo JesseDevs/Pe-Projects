@@ -37,6 +37,10 @@ select{
     display: block;
 }
 
+input{
+    font-size: 1.2rem;
+}
+
 select{
     margin: 10px auto;
     font-size: 18px;
