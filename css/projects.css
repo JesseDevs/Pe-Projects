@@ -67,7 +67,7 @@ div.project-links{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    transition: background-size .5s, color .5s;
+    transition: background-size .3s, color .3s;
 }
 
 
