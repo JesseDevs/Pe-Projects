@@ -70,7 +70,7 @@ button,
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    transition: background-size .5s, color .5s;
+    transition: background-size .3s, color .3s;
 }
 
 button:hover,
@@ -89,6 +89,21 @@ header.forms inner-column{
     align-items: flex-start;
 }
 
+/* .e4p h1{
+    text-align: center;
+} */
+
+.e4p ul{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-gap: 10px 10px;
+    justify-content: center;
+}
+
+.e4p ul li {
+    margin: 0 auto;
+}
+
 @media (min-width:600px){
 
     main inner-column.forms{
@@ -97,6 +112,10 @@ header.forms inner-column{
         gap: 1rem;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .e4p ul li {
+        margin: 0;
     }
 }
 
