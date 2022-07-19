@@ -1,6 +1,6 @@
 
 form{
-    padding: 2.5vh 1rem;
+    padding: 2.5vh 2rem;
 }
 
 form{
@@ -10,8 +10,16 @@ form{
 form h2{
     text-align: center;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     font-weight: 500;
+}
+
+.forms main inner-column{
+    padding-bottom: var(--large-height);
+}
+
+field{
+    text-align: center;
 }
 
 .feedback p,
@@ -21,11 +29,17 @@ form h2{
 
 button,
 input,
-label{
+label,
+select{
 
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     display: block;
+}
+
+select{
+    margin: 10px auto;
+    font-size: 18px;
 }
 
 /* Section ONe */
@@ -49,6 +63,7 @@ button {
 input{
     height: 25px;
     border-color: var(--coffee);
+    width: 100%;
 }
 
 button, 
@@ -104,6 +119,38 @@ header.forms inner-column{
     margin: 0 auto;
 }
 
+.form-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+results{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+results p{
+    margin: 0;
+}
+
+results strong{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+results h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--coffee);
+    text-shadow:  -2px 2px 5px rgb(0 0 0 /.4);
+}
+
 @media (min-width:600px){
 
     main inner-column.forms{
@@ -114,8 +161,21 @@ header.forms inner-column{
         flex-wrap: wrap;
     }
 
+    form{
+        min-width: 60%;
+        border-right: 3px solid var(--coffee);
+    }
+
     .e4p ul li {
         margin: 0;
+    }
+
+    .form-page{
+        flex-direction: row;
+    }
+
+    results {
+        max-width: 50%;
     }
 }
 
