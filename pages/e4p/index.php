@@ -14,11 +14,16 @@
 
             <li><a href="?page=forms&id=count-string">Counting Characters</a></li>
 
-            <li><a href="?page=forms&id=interest">Simple Interest Computing</a></li>
+            <li><a href="?page=forms&id=interest">Interest Computing</a></li>
 
             <li><a href="?page=forms&id=tax-calculator">Tax Calculator</a></li>
 
-            <li><a href="?page=forms&id=password-check">Check Log In System</a></li>
+            <li><a href="?page=forms&id=password-check">Check Log In</a></li>
+
+            <li><a href="?page=forms&id=driving-age">Driving Age</a></li>
+
+            <li><a href="?page=forms&id=alcohol-level">Alcohol Calculator</a></li>
+
         </ul>
 
 
