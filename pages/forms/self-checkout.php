@@ -1,6 +1,7 @@
 <main>
     <inner-column>
-        <section class='two'>
+        <a href="?page=e4p">&#8592; E4P Home</a>
+        <section class='form-page'>
 
 
 
@@ -10,15 +11,19 @@
 
             $priceOne = '';
             $quantityOne = '';
+            $totalOne = null;
 
             $priceTwo = '';
             $quantityTwo = '';
+            $totalTwo = null;
 
             $priceThree = '';
             $quantityThree = '';
+            $totalThree = null;
 
             $subTotal = '';
             $tax = '';
+            $total = null;
 
 
             if (isset($_POST['submitted'])) {
@@ -67,36 +72,13 @@
                 $subTotal = $totalOne + $totalTwo + $totalThree;
                 $tax = $subTotal * .055;
                 $total = $subTotal + $tax;
-
-            ?>
-                <article class="results">
-                    <h2>Totals:</h2>
-
-                    <article class='container'>
-                        <p>The subtotal of Apples is: <?= $totalOne ?></p>
-                        <p>The subtotal of Oranges is: <?= $totalTwo ?></p>
-                        <p>The subtotal of Bananas is: <?= $totalThree ?></p>
-                        <p>The subtotal of all items is:<?= $subTotal ?> </p>
-                        <p>The tax on this purchase is: <?= $tax ?> </p>
-                        <strong>
-                            <p>The total is: <?= $total ?> </p>
-                        </strong>
-                    </article>
-
-
-
-                </article>
-
-
-
-
-            <?php } ?>
+            } ?>
 
             <form action="" method="post">
 
                 <h2>Self-Checkout</h2>
 
-                <article class="field">
+                <field>
                     <div class="container">
                         <label for="">How many <em>Apples</em> are you taking?</label>
                         <input type="number" name='quantityOne' value='<?= $quantityOne ?>' required min='0'>
@@ -106,9 +88,9 @@
                         <label for="">Whats the price of the <em>Apples</em> you are taking?</label>
                         <input type="number" name='priceOne' value='<?= $priceOne ?>' required min='0'>
                     </div>
-                </article>
+                </field>
 
-                <article class="field">
+                <field>
                     <div class="container">
                         <label for="">How many <em>Oranges</em> are you taking?</label>
                         <input type="number" name='quantityTwo' value='<?= $quantityTwo ?>' required min='0'>
@@ -118,9 +100,9 @@
                         <label for="">Whats the price of the <em>Oranges</em> you are taking?</label>
                         <input type="number" name='priceTwo' value='<?= $priceTwo ?>' required min='0'>
                     </div>
-                </article>
+                </field>
 
-                <article class="field">
+                <field>
                     <div class="container">
                         <label for="">How many <em>Bananas</em> are you taking?</label>
                         <input type="number" name='quantityThree' value='<?= $quantityThree ?>' required min='0'>
@@ -130,12 +112,25 @@
                         <label for="">Whats the price of the <em>Bananas</em> you are taking?</label>
                         <input type="number" name='priceThree' value='<?= $priceThree ?>' required min='0'>
                     </div>
-                </article>
+                </field>
 
                 <button type="submit" name='submitted'>Calculate</button>
 
 
             </form>
+
+            <results class='feedback'>
+                <h3> The Results</h3>
+                <p>The subtotal of Apples is: <?= $totalOne ?></p>
+                <p>The subtotal of Oranges is: <?= $totalTwo ?></p>
+                <p>The subtotal of Bananas is: <?= $totalThree ?></p>
+                <p>The subtotal of all items is:<?= $subTotal ?> </p>
+                <p>The tax on this purchase is: <?= $tax ?> </p>
+                <strong>
+                    <p>The total is: <?= $total ?> </p>
+                </strong>
+
+            </results>
 
         </section>
     </inner-column>

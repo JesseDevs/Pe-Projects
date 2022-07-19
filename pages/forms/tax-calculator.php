@@ -1,6 +1,7 @@
 <main>
     <inner-column>
-        <section class='one'>
+        <a href="?page=e4p">&#8592; E4P Home</a>
+        <section class='form-page'>
 
 
 
@@ -41,11 +42,7 @@
                 $taxAmount = $subtotal * $tax;
 
                 $total = $subtotal + $taxAmount;
-            ?>
-                <article class='feedback'>
-                    <p>The total will be <?= $total ?></p>
-                </article>
-            <?php } ?>
+            } ?>
 
             <form action="" method="post">
 
@@ -77,6 +74,13 @@
 
 
             </form>
+
+            <results class='feedback'>
+                <h3> The Results</h3>
+                <p>The total will be: <?= $total ?></p>
+
+            </results>
+
 
         </section>
     </inner-column>

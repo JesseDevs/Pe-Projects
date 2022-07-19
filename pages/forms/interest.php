@@ -1,6 +1,7 @@
 <main>
     <inner-column>
-        <section class='six'>
+        <a href="?page=e4p">&#8592; E4P Home</a>
+        <section class='form-page'>
             <?php
 
 
@@ -8,6 +9,7 @@
             $principal = '';
             $interest = '';
             $time = '';
+            $amount = null;
 
             if (isset($_POST['submitted'])) {
 
@@ -32,45 +34,45 @@
                 $percent = floatval($interest) / 100;
                 $rate = round($percent, 3, PHP_ROUND_HALF_UP);
                 $amount = floatval($principal) * (1 + (floatval($rate) * floatval($time)));
-
+            }
             ?>
-                <article class='feedback'>
-                    <p>
-                        After <?= $time ?> years at <?= $interest ?>% interest, the investment will be worth <strong>$<?= $amount ?></strong>.
-
-                </article>
-
-            <?php } ?>
 
             <form action="" method="post">
 
                 <h2>Simple Interest Computing</h2>
 
-                <article class="field">
-                    <div class="container">
-                        <label for="">What's the principal investment?</label>
-                        <input type="number" name='principal' required min='0' placeholder="$1000">
-                    </div>
-                </article>
 
-                <article class="field">
-                    <div class="container">
-                        <label for="">What is the yearly interest?</label>
-                        <input type="number" name='interest' required min='0' placeholder="10%" step=".01">
-                    </div>
-                </article>
+                <field>
+                    <label for="">What's the principal investment?</label>
+                    <input type="number" name='principal' required min='0' placeholder="$1000">
+                </field>
 
-                <article class="field">
-                    <div class="container">
-                        <label for="">How long do you want to invest for?</label>
-                        <input type="number" name='time' required min='0' placeholder="5">
-                    </div>
-                </article>
+
+                <field>
+
+                    <label for="">What is the yearly interest?</label>
+                    <input type="number" name='interest' required min='0' placeholder="10%" step=".01">
+                </field>
+
+
+                <field>
+
+                    <label for="">How long do you want to invest for?</label>
+                    <input type="number" name='time' required min='0' placeholder="5">
+                </field>
+
 
                 <button type="submit" name='submitted'>Calculate</button>
 
 
             </form>
+
+            <results class='feedback'>
+                <h3> The Results</h3>
+                <p>After <?= $time ?> years at <?= $interest ?>% interest, the investment will be worth <strong>$<?= $amount ?></strong>.
+                </p>
+
+            </results>
 
         </section>
     </inner-column>

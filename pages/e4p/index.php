@@ -10,13 +10,15 @@
 
             <li><a href='?page=forms&id=self-checkout'>Self Checkout</a></li>
 
-            <li><a href="?page=forms&id=/simple-math">Simple Math</a></li>
+            <li><a href="?page=forms&id=simple-math">Simple Math</a></li>
 
             <li><a href="?page=forms&id=count-string">Counting Characters</a></li>
 
             <li><a href="?page=forms&id=interest">Simple Interest Computing</a></li>
 
             <li><a href="?page=forms&id=tax-calculator">Tax Calculator</a></li>
+
+            <li><a href="?page=forms&id=password-check">Check Log In System</a></li>
         </ul>
 
 

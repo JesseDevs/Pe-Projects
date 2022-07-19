@@ -1,29 +1,15 @@
 <main>
     <inner-column>
-        <section class='four'>
+        <a href="?page=e4p">&#8592; E4P Home</a>
+        <section class='form-page'>
             <?php
+
+            $string = null;
+            $results = null;
 
             if (isset($_POST['submitted'])) {
                 $string = $_POST['string'];
-                $results = strlen($string);
-
-                if ($results == 0) {
-
-                    $results = "Type something"; ?>
-
-                    <article class='feedback'>
-                        <p><?= $results ?></p>
-                    </article>
-
-                <?php } else { ?>
-
-                    <article class='feedback'>
-
-                        <p>You typed: <strong><?= $string ?></strong></p>
-                        <p>That string has <strong><?= $results ?></strong> characters.</p>
-
-                    </article>
-            <?php }
+                $results = strlen($string) . " characters";
             }
             ?>
 
@@ -33,18 +19,37 @@
 
                 <h2>Going to count the characters in your word.</h2>
 
-                <article class="field">
-                    <div class="container">
-                        <label for="">Type a word? Or phrase?</label>
-                        <input type="text" name='string' required>
-                    </div>
-                </article>
+                <field>
+
+                    <label for="">Type a word? Or phrase?</label>
+                    <input type="text" name='string'>
+
+                </field>
 
                 <button type="submit" name='submitted'>Calculate</button>
 
 
             </form>
 
+            <results class='feedback'>
+                <?php
+                if (isset($results) && $results == 0) {
+
+                    $results = "Type something"; ?>
+
+                    <article class='feedback'>
+                        <p><?= $results ?></p>
+                    </article>
+
+                <?php } else { ?>
+                    <h3> The Results</h3>
+                    <p>You typed: <?= $string ?></p>
+
+                    <p><strong> That string has: <?= $results ?></strong> </p>
+
+                <?php } ?>
+            </results>
         </section>
+
     </inner-column>
 </main>

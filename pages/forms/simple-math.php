@@ -1,12 +1,17 @@
 <main>
     <inner-column>
-        <section class='three'>
+        <a href="?page=e4p">&#8592; E4P Home</a>
+        <section class='form-page'>
             <?php
 
 
 
             $num1 = '';
             $num2 = '';
+            $multiply = null;
+            $add = null;
+            $subtract = null;
+            $divide = null;
 
             if (isset($_POST['submitted'])) {
 
@@ -26,20 +31,7 @@
                 $divide = floatval($num1) / floatval($num2);
                 $add = floatval($num1) + floatval($num2);
                 $subtract = floatval($num1) - floatval($num2);
-
-
-            ?>
-                <article class='feedback'>
-
-                    <ul>
-                        <li><?= $num1 ?> + <?= $num2 ?> = <?= $add ?></li>
-                        <li><?= $num1 ?> - <?= $num2 ?> = <?= $subtract ?></li>
-                        <li><?= $num1 ?> x <?= $num2 ?> = <?= $multiply ?></li>
-                        <li><?= $num1 ?> / <?= $num2 ?> = <?= $divide ?></li>
-                    </ul>
-
-                </article>
-            <?php } ?>
+            } ?>
 
             <form action="" method="post">
 
@@ -63,6 +55,18 @@
 
 
             </form>
+
+            <results class='feedback'>
+                <h3> The Results</h3>
+                <ul>
+                    <li><?= $num1 ?> + <?= $num2 ?> = <?= $add ?></li>
+                    <li><?= $num1 ?> - <?= $num2 ?> = <?= $subtract ?></li>
+                    <li><?= $num1 ?> x <?= $num2 ?> = <?= $multiply ?></li>
+                    <li><?= $num1 ?> / <?= $num2 ?> = <?= $divide ?></li>
+                </ul>
+
+            </results>
+
 
         </section>
     </inner-column>

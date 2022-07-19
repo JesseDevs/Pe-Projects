@@ -1,6 +1,7 @@
 <main>
     <inner-column>
-        <section class='one'>
+        <a href="?page=e4p">&#8592; E4P Home</a>
+        <section class='form-page'>
 
 
             <?php
@@ -18,7 +19,7 @@
 
             $length = '';
             $width = '';
-
+            $area = null;
 
             if (isset($_POST['submitted'])) {
 
@@ -35,15 +36,9 @@
                 }
 
                 $area = floatval($length) * floatval($width);
+            }
+
             ?>
-                <article>
-                    <p class='feedback'> The length is <?= $length ?></p>
-                    <p class='feedback'> The width is <?= $width ?> </p>
-                    <strong>
-                        <p>Thus, the area is <?= $area ?> </p>
-                    </strong>
-                </article>
-            <?php } ?>
 
             <form action="" method="post">
 
@@ -67,6 +62,14 @@
 
 
             </form>
+
+            <results class='feedback'>
+                <h3> The Results</h3>
+                <p>The length is: <?= $length ?></p>
+                <p>The width is: <?= $width ?> </p>
+
+                <p><strong>Thus, the area is: <?= $area ?></strong> </p>
+            </results>
 
         </section>
     </inner-column>
