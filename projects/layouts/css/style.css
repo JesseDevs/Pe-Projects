@@ -1,0 +1,17 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'typography.css';
+@import 'modules.css';
+@import 'monday.css';
+@import 'tuesday.css';
+
+.home inner-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+module-header{
+    padding-bottom: 50px;
+}
+

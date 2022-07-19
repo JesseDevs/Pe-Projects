@@ -14,9 +14,9 @@ function currentPage()
     }
 }
 
-function getModule()
+function getPageTemplate($name)
 {
-    $filePath = "layouts/" . currentPage() . ".php";
+    $filePath = "pages/" . currentPage() . ".php";
     if (file_get_contents($filePath)) {
         include($filePath);
     } else {

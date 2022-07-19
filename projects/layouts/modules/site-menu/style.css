@@ -1,0 +1,13 @@
+header inner-column{
+    padding: 2vh 1rem;
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.site-menu ul{
+    display: flex;
+    gap: 20px;
+}

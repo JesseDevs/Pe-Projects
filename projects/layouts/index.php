@@ -20,16 +20,15 @@
 </head>
 
 <body>
+
     <header>
 
-        <?php include('modules/site-menu') ?>
+        <?php include('modules/site-menu/template.php'); ?>
+
     </header>
 
-    <inner-column>
+    <?php getPageTemplate(currentPage()) ?>
 
-        <?php getModule() ?>
-
-    </inner-column>
 </body>
 
 </html>

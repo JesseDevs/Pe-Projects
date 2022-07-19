@@ -1,0 +1,91 @@
+
+.monday .articles,
+.monday module{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.monday article-grid picture{
+ 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: fit-content;
+    min-height: auto;
+}
+
+.monday .articles li article{
+    border-top: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+@media(min-width: 550px){
+
+    .monday module{
+        background-color: pink;
+    }
+
+    .monday .articles{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .monday module-header{
+        width: 100%;
+    }
+
+    .monday module-header p{
+        max-width: 70ch;
+    }
+
+
+    .monday .articles li {
+        width: 48%;
+    }
+
+    .monday .boxes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 15px;
+        justify-content: space-between;
+    }
+
+    .monday .boxes picture{
+        max-width: 48%;
+    }
+
+}
+
+@media(min-width: 900px){
+    .monday module{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: stretch;
+        gap: 0 2%;
+        justify-content: center;
+    }
+
+    .monday module-header{
+        width: 60%;
+        margin-right: 40%;
+        justify-self: flex-start;
+    }
+
+    .monday .articles {
+        max-width: 49%;
+    }
+
+    .monday .boxes{
+        width: 49%;
+    }
+
+    .monday module {
+        background-color: lightgreen;
+    }
+
+}
