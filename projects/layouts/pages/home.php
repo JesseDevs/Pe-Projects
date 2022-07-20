@@ -3,9 +3,16 @@
     <inner-column>
 
         <h2 class='attention-voice'>Layouts</h2>
-        <a href="?page=monday">MONDAY</a>
-        <a href="?page=tuesday">TUESDAY</a>
 
     </inner-column>
+
+    <section class='monday'>
+
+        <?php include('monday.php'); ?>
+    </section>
+    <section class="tuesday">
+
+        <?php include('tuesday.php'); ?>
+    </section>
 
 </main>

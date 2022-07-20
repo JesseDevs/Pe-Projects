@@ -18,8 +18,11 @@ html {
 	--ink: rgb(17, 16, 16);
 	--paper: rgb(240, 241, 238);
 	--color: rgb(246 214 242);
+	--accentColor: rgb(28 133 255);
 	--circle: rgb(250 0 154);
 	--square: rgb(69 122 250);
+
+	--highlight: rgb(250 27 171);
 
 	--thin: 3px;
 	--thick: 6px;

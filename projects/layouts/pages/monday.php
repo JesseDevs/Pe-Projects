@@ -1,6 +1,7 @@
 <main class='<?= currentPage() ?>'>
 
     <inner-column>
+        <h2 class='attention-voice'>Monday</h2>
         <module>
 
             <module-header>

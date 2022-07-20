@@ -33,7 +33,7 @@ body{
 
 .teaser{
 	font-weight: 700;
-	color: var(--circle);
+	color: var(--highlight);
 }
 
 .calm-voice, p, li {

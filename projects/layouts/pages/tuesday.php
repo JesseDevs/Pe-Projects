@@ -1,6 +1,6 @@
 <main class='<?= currentPage() ?>'>
     <inner-column>
-
+        <h2 class='attention-voice'>Tuesday</h2>
         <module>
 
             <module-header>
@@ -25,10 +25,10 @@
                 <?php } ?>
             </ul>
 
-            <module-footer>
+            <div>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque nostrum similique.</p>
-            </module-footer>
+            </div>
         </module>
 
 
