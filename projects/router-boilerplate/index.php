@@ -1,4 +1,4 @@
-<?php include('functions.php') ?>
+<?php include('functions/functions.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,14 +20,13 @@
 </head>
 
 <body>
+    <header class='site-header'>
 
-    <header>
-        <h1>Page Title <?= currentPage(); ?></h1>
-
+        <p>?<?= printQueryString(); ?></p>
         <?php include('modules/site-menu/template.php'); ?>
     </header>
 
-    <?php getPageTemplate(currentPage()) ?>
+    <?php renderPageTemplate() ?>
 
 </body>
 
