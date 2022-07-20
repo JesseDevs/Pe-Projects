@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>[[insert Title]]</title>
-    <meta name='description' content="[[Insert description]]">
+    <title><?= currentPage() ?> Layout</title>
+    <meta name='description' content="">
     <meta property="og:image" content="images/default-meta.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
