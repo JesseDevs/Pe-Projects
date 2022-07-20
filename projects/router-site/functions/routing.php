@@ -11,7 +11,7 @@ function currentPage()
 function pageData()
 {
     $page = currentPage();
-    $filePath = 'data/pages/$page.json';
+    $filePath = './data/pages/' . $page . '.json';
     $json = file_get_contents($filePath);
     if (!$json) {
         $json = file_get_contents('data/pages/404.json');
@@ -22,7 +22,7 @@ function pageData()
 
 function renderPageTemplate()
 {
-    $filePath = "pages/" . "standard" . ".php";
+    $filePath = "pages/standard.php";
     $pageData = pageData();
     if (file_get_contents($filePath)) {
         include($filePath);

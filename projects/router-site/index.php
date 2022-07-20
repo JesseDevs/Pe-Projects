@@ -22,7 +22,7 @@
 <body>
     <header class='site-header'>
 
-        <p><?= printQueryString(); ?></p>
+        <p>?<?= printQueryString(); ?></p>
         <?php include('modules/site-menu/template.php'); ?>
     </header>
 
