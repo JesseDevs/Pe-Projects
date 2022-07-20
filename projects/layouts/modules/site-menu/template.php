@@ -5,6 +5,7 @@
             <li><a href="?page=home">Home</a></li>
             <li><a href="?page=monday">Monday</a></li>
             <li><a href="?page=tuesday">Tuesday</a></li>
+            <li><a href="?page=wednesday-one">Wednesday</a></li>
         </ul>
     </nav>
 </inner-column>

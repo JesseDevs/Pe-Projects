@@ -2,19 +2,11 @@
 @import 'setup.css';
 @import 'typography.css';
 @import 'modules.css';
-@import 'monday.css';
-@import 'tuesday.css';
+@import 'days/days.css';
+
 
 .home inner-column{
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-module-header{
-    padding-bottom: 50px;
-}
-
-module{
-    padding: 3vh 0;
 }

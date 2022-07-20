@@ -1,24 +1,12 @@
-.tuesday picture{
-    max-width: 75px;
-    padding-bottom: 5px;
-}
-
-.tuesday p{
-    max-width: 65ch;
-}
-
-.tuesday li{
-    padding-top: 35px;
-}
-
-.tuesday li:last-of-type{
-    padding-bottom: 35px;
-}
-
 .tuesday div{
     position: relative;
     padding-top: 15px;
     padding-bottom: 30px;
+}
+
+.tuesday picture{
+    max-width: 75px;
+    padding-bottom: 5px;
 }
 
 .tuesday div:before{

@@ -1,0 +1,24 @@
+@import 'monday.css';
+@import 'tuesday.css';
+@import 'wednesday.css';
+
+
+module-header{
+    padding-bottom: 50px;
+}
+
+module{
+    padding: 3vh 0;
+}
+
+p{
+    max-width: 65ch;
+}
+
+:is(.tuesday, .wednesday-one) li{
+    padding-top: 35px;
+}
+
+:is(.tuesday, .wednesday-one) li:last-of-type{
+    padding-bottom: 35px;
+}

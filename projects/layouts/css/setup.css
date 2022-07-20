@@ -19,8 +19,10 @@ html {
 	--paper: rgb(240, 241, 238);
 	--color: rgb(246 214 242);
 	--accentColor: rgb(28 133 255);
+	--shade: rgb(221 220 220);
 	--circle: rgb(250 0 154);
 	--square: rgb(69 122 250);
+
 
 	--highlight: rgb(250 27 171);
 
@@ -44,9 +46,12 @@ body {
   display: flex;	
   flex-direction: column;	
   min-height: 100vh;
+  
 
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
+  color: var(--ink);
+  background: var(--paper);
 }
 
 main {

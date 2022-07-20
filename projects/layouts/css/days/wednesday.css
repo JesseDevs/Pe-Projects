@@ -1,0 +1,64 @@
+.wednesday-one .teaser{
+    opacity: 0;
+}
+
+.wednesday-one inner-column {
+    padding: 3vh 0;
+}
+
+.wednesday-one inner-column >h2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.wednesday-one picture{
+    max-width: 40px;
+    padding-bottom: 10px;
+}
+
+
+.wednesday-one module-header{
+    background-color: var(--ink);
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: var(--paper);
+}
+
+.wednesday-one li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+@media(min-width: 550px){
+    .wednesday-one {
+        background-color: var(--shade);
+    }
+    .wednesday-one ul{
+        background: linear-gradient( var(--ink) 13%, var(--shade) 13%);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .wednesday-one li{
+        padding: 1rem;
+        background-color: var(--paper);
+        margin-bottom: 20px;
+    }
+
+    .wednesday-one p{
+        max-width: 45ch;
+    }
+
+}
+
+@media(min-width: 900px){
+
+  .wednesday-one ul{
+    background: linear-gradient( var(--ink) 20%, var(--shade) 20%);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
