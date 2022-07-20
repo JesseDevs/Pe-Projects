@@ -26,7 +26,7 @@ html {
 
 	--highlight: rgb(250 27 171);
 
-	--thin: 3px;
+	--thin: 2px;
 	--thick: 6px;
 	--xthick: 9px;
 
@@ -63,7 +63,7 @@ inner-column{
   	width: 100%;
   	margin-right: auto;
 	margin-left: auto;
-	padding: 5vh 1rem;
+	padding: 3vh 1rem;
 	max-width: 1200px;
 }
 

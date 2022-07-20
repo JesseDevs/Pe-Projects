@@ -21,7 +21,7 @@
                     </li>
                 <?php } ?>
             </ul>
-            <article-grid class='boxes'>
+            <article-grid class='images'>
 
                 <?php
                 for ($x = 1; $x < 5; $x++) { ?>

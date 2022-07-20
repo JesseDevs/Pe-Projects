@@ -42,7 +42,7 @@
     }
 
     .wednesday-one li{
-        padding: 1rem;
+        padding: 1.1rem;
         background-color: var(--paper);
         margin-bottom: 20px;
     }
@@ -53,7 +53,7 @@
 
 }
 
-@media(min-width: 900px){
+@media(min-width: 950px){
 
   .wednesday-one ul{
     background: linear-gradient( var(--ink) 20%, var(--shade) 20%);
@@ -62,7 +62,7 @@
     gap: 20px;
   }
 
-  .teaser{
+  .wednesday-one .teaser{
     opacity: 1;
   }
 }

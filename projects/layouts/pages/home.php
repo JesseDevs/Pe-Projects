@@ -17,5 +17,10 @@
         <?php include('wednesday-one.php'); ?>
     </section>
 
+    <section class="wednesday-two">
+
+        <?php include('wednesday-two.php'); ?>
+    </section>
+
 
 </main>

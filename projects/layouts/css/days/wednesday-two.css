@@ -1,0 +1,54 @@
+.wednesday-two details{
+
+    cursor: pointer;
+    position: relative;
+}
+
+.wednesday-two details > summary {
+    border-bottom: var(--thin) solid var(--ink);
+    list-style-type: none;
+    padding-bottom: 8px;
+}
+
+.wednesday-two details > summary:after {
+    content: "\FF0B";
+    position: absolute;
+    right: 0;
+}
+
+.wednesday-two details[open] > summary::after {
+    content: "\FF0D";
+}
+
+.wednesday-two .teaser{
+    padding-bottom: 5px;
+}
+
+.wednesday-two ul +ul {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.wednesday-two li{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+@media(min-width: 550px){
+    .wednesday-two module-header{
+        max-width: 80%;
+    }
+}
+
+@media(min-width: 950px){
+    .wednesday-two module-header{
+        max-width: none;
+        flex-basis: 45%;
+        padding: 0;
+    }
+    .wednesday-two module{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+}

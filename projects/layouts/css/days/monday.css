@@ -6,7 +6,7 @@
 
 }
 
-.monday article-grid picture{
+.monday .images picture{
  
     margin-top: 15px;
     margin-bottom: 15px;
@@ -46,7 +46,7 @@
         width: 48%;
     }
 
-    .monday .boxes{
+    .monday .images{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -54,8 +54,8 @@
         justify-content: space-between;
     }
 
-    .monday .boxes picture{
-        max-width: 48%;
+    .monday .images picture{
+        flex-basis: 48%;
     }
 
 }
@@ -80,7 +80,7 @@
         max-width: 49%;
     }
 
-    .monday .boxes{
+    .monday .images{
         width: 49%;
     }
 
