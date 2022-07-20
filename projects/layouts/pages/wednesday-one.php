@@ -1,6 +1,6 @@
 <main class='<?= currentPage() ?>'>
     <inner-column>
-        <h2 class='attention-voice'>Wednesday</h2>
+        <h2 class='attention-voice'>Wednesday #1</h2>
         <module>
 
             <module-header>
