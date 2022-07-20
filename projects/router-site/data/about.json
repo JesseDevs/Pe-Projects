@@ -4,7 +4,10 @@
     "intro" : "This page does not exist!",
     "sections" : [
         {
-            "heading": "Here are some other things"
+            "heading": "My favorite colors"
+        },
+        {
+            "heading": "Super secret"
         }
     ]
 }
