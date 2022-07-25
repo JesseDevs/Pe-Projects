@@ -22,5 +22,14 @@
         <?php include('wednesday-two.php'); ?>
     </section>
 
+    <section class="grid-one">
+
+        <?php include('grid-one.php'); ?>
+    </section>
+
+    <section class="grid-two">
+
+        <?php include('grid-two.php'); ?>
+    </section>
 
 </main>

@@ -2,7 +2,8 @@
 @import 'tuesday.css';
 @import 'wednesday-one.css';
 @import 'wednesday-two.css';
-
+@import 'grid-one.css';
+@import 'grid-two.css';
 
 module-header{
     padding-bottom: 50px;

@@ -1,0 +1,144 @@
+.grid-two module {
+    display: block;
+    display: grid;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .grid-two ul {
+    aspect-ratio: 1 / 1;
+    display: grid;
+    border: var(--ink) solid var(--thin);
+    grid-template-columns: repeat(7, 1fr) 5%;
+      grid-template-rows: repeat(6, 1fr) 10%;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .grid-two li {
+    background-color: rgb(239 234 234);
+    border: var(--ink) solid var(--thick);
+  }
+  
+  .grid-two .one {
+    grid-column: span 2;
+  }
+  
+  .grid-two .two {
+    grid-column: span 3;
+  }
+  
+  .grid-two .three {
+    background-color: rgb(239 224 53);
+    grid-column: span 2;
+  }
+
+  .grid-two .four {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+  }
+  
+  .grid-two .five {
+    background-color: rgb(197 41 27);
+    grid-column: span 4;
+    grid-row: span 3;
+  }
+  
+  .grid-two .six {
+    background-color: rgb(239 224 53);
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .grid-two .seven {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+  }
+  
+  .grid-two .eight {
+    grid-column: 2 /4;
+    grid-row: 5 /7;
+    background-color: var(--ink);
+    color: white;
+  }
+  
+  .grid-two .nine {
+    grid-column: 4 /6;
+    grid-row: 5 /6;
+  }
+  
+  .grid-two .ten {
+    grid-column: 6 /7;
+  }
+  
+  .grid-two .eleven {
+    grid-column: 7 /8;
+  }
+  
+ .grid-two .twelve {
+    grid-column: 6 /8;
+  }
+  
+  .grid-two .thirteen {
+    grid-column: 1 /2;
+    grid-row: 6 / 8;
+    background-color: rgb(239 224 53);
+  }
+  
+  .grid-two .fourteen {
+    grid-column: 2 /4;
+  }
+  
+  .grid-two .fifteen {
+    grid-column: 4 / 6;
+    background-color: var(--ink);
+    color: white;
+  }
+  
+  .grid-two .sixteen {
+    grid-column: 4 / 6;
+    grid-row: 6 /7;
+  }
+  
+  .grid-two .seventeen {
+    grid-column: 6 / 8;
+    grid-row: 6 /8;
+    background-color: rgb(34 43 100);
+  }
+  
+  .grid-two .eighteen {
+    grid-row: 1 / 6;
+    grid-column-start: 8;
+    border-right: none;
+  }
+  
+  .grid-two .nineteen {
+    grid-column-start: 8;
+    grid-row: 6 / 8;
+    border-right: none;
+  }
+  
+  .grid-two .thirteen,
+  .grid-two .fourteen,
+  .grid-two .fifteen,
+  .grid-two .seventeen,
+  .grid-two .nineteen{
+    border-bottom: none;
+  }
+
+  @media(min-width:700px){
+    
+    .grid-two ul {
+    aspect-ratio: 1 / 1;
+    display: grid;
+      gap: 0;
+    border: var(--ink) solid var(--thin);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+    
+  .grid-two li{
+      min-height: none;
+    }
+  
+  }
