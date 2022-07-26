@@ -16,7 +16,7 @@ function getPage($page)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jesse. The one and only.</title>
+    <title>Jesse. The one and only. <?= ucfirst($page) ?></title>
     <meta name='description' content="Personal site: Business card">
     <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/images/metadata.png">
 
