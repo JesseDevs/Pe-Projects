@@ -2,10 +2,9 @@
 
 ## Home
 * Landing page. Very appealing.
-* Some tricks on the screen. Shows some skills :)
-   * Maybe like some animations / svg animations.
-   * I did originally want some svg animates based on scroll but might be too advanced at the moment.
-* Business card? Me + a short and sweet description. Invites to get more info
+* Business card. Me + a short and sweet description. Invites to get more info
+* Small text - about me intro
+* Some highlighted projects. Page for projects opens more.
 * Link to blog.
 * Contact form.
 * I don’t love dark and light mode, but showing that would be cool so it’s an idea.
@@ -19,9 +18,10 @@
       * Home
       * About
       * Projects
+      * Blog
       * Contact
       * ?
-* Maybe site bar when scrolling past the heading - rotate 90deg.
+*side bar when scrolling past the heading - rotate 90deg.
 
 ### Footer Menu
 * Hover animation
@@ -31,8 +31,8 @@
    * Legal information or whatever 
    * Link to some things not shown - 
       * Layout garden
-      * E4P maybe?
-      * Any other things that are notable but not accessible anywhere?
+      * E4P
+      * Any other things that are notable but not accessible anywhere
       * PE. because <3
 
 
@@ -52,22 +52,22 @@
    * Thought process of the projects
    * Purpose of the project
 * Buttons!
-* E4P?
-* Maybe some cool flex box / grid animation here to showcase the difference -
+* Some cool flex box / grid animation here to showcase the difference -
    * Maybe some component to change the theme between the two!! That would be cool.
 
 
 ## About
 * Heading
 * Intro 
-* Images of me?
-   * link to goals section
+* Images of me
 * Resume type content
    * About my past
    * My education
    * Work history
    * Some non professional information - like interest
    * Skills?
-* Grid of images. Self made?
-* Maybe a grid of images that are inspirations?
+* Grid of images that are inspirations and self made.
 * Goals. What I’m doing today. Tomorrow.
+* Blog
+* Contact
+* Show socials with a thumbnail
