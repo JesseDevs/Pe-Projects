@@ -1,16 +1,23 @@
 <main>
-    <inner-column>
-        <a href="?page=e4p">&#8592; E4P Home</a>
-        <section class='form-page'>
+    <section class='form-page'> 
+        <inner-column>
+
+
             <?php
 
             $string = null;
             $results = null;
+            $typed = '';
+            $template = '';
 
             if (isset($_POST['submitted'])) {
                 $string = $_POST['string'];
                 $results = strlen($string) . " characters";
+
+                $typed = 'You typed: ' . $string;
+                $template = 'That string has: ' . $results;
             }
+
             ?>
 
 
@@ -43,13 +50,16 @@
 
                 <?php } else { ?>
                     <h3> The Results</h3>
-                    <p>You typed: <?= $string ?></p>
+                    <p><?= $typed ?></p>
 
-                    <p><strong> That string has: <?= $results ?></strong> </p>
+                    <p><strong><?= $template ?></strong> </p>
 
                 <?php } ?>
-            </results>
-        </section>
 
-    </inner-column>
+                <a href="?page=e4p">&#8592; E4P Home</a>
+            </results>
+
+
+        </inner-column>
+    </section>
 </main>

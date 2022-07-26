@@ -1,8 +1,9 @@
 <main>
+    <section class='form-page'>
 
-    <inner-column>
-        <a href="?page=e4p">&#8592; E4P Home</a>
-        <section class='form-page'>
+        <inner-column>
+
+
 
             <?php
 
@@ -59,9 +60,10 @@
                 <h3> The Results</h3>
                 <p> The ceiling of the room is: <?= $area ?></p>
                 <p> You'll need: <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
-
+                <a href="?page=e4p">&#8592; E4P Home</a>
             </results>
 
-        </section>
-    </inner-column>
+
+        </inner-column>
+    </section>
 </main>

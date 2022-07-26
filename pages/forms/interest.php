@@ -1,7 +1,9 @@
 <main>
-    <inner-column>
-        <a href="?page=e4p">&#8592; E4P Home</a>
-        <section class='form-page'>
+    <section class='form-page'>
+
+        <inner-column>
+
+
             <?php
 
 
@@ -10,6 +12,7 @@
             $interest = '';
             $time = '';
             $amount = null;
+            $template = '';
 
             if (isset($_POST['submitted'])) {
 
@@ -34,6 +37,8 @@
                 $percent = floatval($interest) / 100;
                 $rate = round($percent, 3, PHP_ROUND_HALF_UP);
                 $amount = floatval($principal) * (1 + (floatval($rate) * floatval($time)));
+
+                $template = 'After ' . $time . ' years at ' . $interest . '% interest, the investment will be worth <strong>' . $amount . '</strong>.';
             }
             ?>
 
@@ -69,11 +74,14 @@
 
             <results class='feedback'>
                 <h3> The Results</h3>
-                <p>After <?= $time ?> years at <?= $interest ?>% interest, the investment will be worth <strong>$<?= $amount ?></strong>.
+                <p><?= $template ?>
                 </p>
+
+                <a href="?page=e4p">&#8592; E4P Home</a>
 
             </results>
 
-        </section>
-    </inner-column>
+
+        </inner-column>
+    </section>
 </main>

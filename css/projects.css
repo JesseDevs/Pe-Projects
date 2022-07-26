@@ -4,9 +4,6 @@
     margin: 0;
 }
 
-.projects inner-column{
-    margin-bottom: var(--med-height);
-}
 
 section.projects article{
     padding-top: var(--med-height);

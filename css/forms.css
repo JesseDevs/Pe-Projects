@@ -65,9 +65,11 @@ button {
 
 
 input{
-    height: 25px;
+    height: 35px;
     border-color: var(--coffee);
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 button, 
@@ -108,9 +110,12 @@ header.forms inner-column{
     align-items: flex-start;
 }
 
+
 /* .e4p h1{
     text-align: center;
 } */
+
+
 
 .e4p ul{
     display: grid;
@@ -123,7 +128,7 @@ header.forms inner-column{
     margin: 0 auto;
 }
 
-.form-page{
+.form-page inner-column{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -137,6 +142,7 @@ results{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 results p{
@@ -174,7 +180,7 @@ results h3{
         margin: 0;
     }
 
-    .form-page{
+    .form-page inner-column{
         flex-direction: row;
     }
 

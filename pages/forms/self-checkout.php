@@ -1,11 +1,7 @@
 <main>
-    <inner-column>
-        <a href="?page=e4p">&#8592; E4P Home</a>
-        <section class='form-page'>
+    <section class='form-page'>
 
-
-
-
+        <inner-column>
             <?php
 
 
@@ -130,8 +126,10 @@
                     <p>The total is: <?= $total ?> </p>
                 </strong>
 
+                <a href="?page=e4p">&#8592; E4P Home</a>
             </results>
 
-        </section>
-    </inner-column>
+
+        </inner-column>
+    </section>
 </main>

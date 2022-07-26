@@ -1,7 +1,8 @@
 <main>
-    <inner-column>
-        <a href="?page=e4p">&#8592; E4P Home</a>
-        <section class='form-page'>
+    <section class='form-page'>
+        <inner-column>
+
+
 
 
 
@@ -65,10 +66,11 @@
             <results class='feedback'>
                 <h3> The Results</h3>
                 <p><?= $template ?></p>
-
+                <a href="?page=e4p">&#8592; E4P Home</a>
             </results>
 
 
-        </section>
-    </inner-column>
+
+        </inner-column>
+    </section>
 </main>

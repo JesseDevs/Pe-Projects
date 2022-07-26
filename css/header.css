@@ -11,12 +11,13 @@ header{
     background-color: var(--dark-theme);
 }
 
-header inner-column {
+body header inner-column {
     padding: var(--small-height) var(--small-width);
 
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    margin: 0 auto;
 }
 
 header nav{

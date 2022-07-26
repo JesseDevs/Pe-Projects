@@ -1,7 +1,8 @@
 <main>
     <section class='form-page'>
+
         <inner-column>
-            <a href="?page=e4p">&#8592; E4P Home</a>
+
 
 
 
@@ -76,6 +77,8 @@
                 <p> <?= $templateTwo ?> </p>
 
                 <p><strong> <?= $final ?></strong> </p>
+
+                <a href="?page=e4p">&#8592; E4P Home</a>
             </results>
 
 
