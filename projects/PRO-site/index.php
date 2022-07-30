@@ -1,4 +1,8 @@
-<?php include('functions.php'); ?>
+<?php include('functions.php');
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,15 +26,28 @@
 <body>
     <header class='site-header'>
         <inner-column>
-            <?php include('templates/modules/site-menu/template.php'); ?>
+
+            <?php
+            include('templates/modules/site-menu/template.php'); ?>
         </inner-column>
     </header>
+    <main class="page-content">
 
-    <?php
+        <?php
 
-    renderPage();
+        if ($pageId == 'home') { // home page
+            include('templates/pages/home.php');
+        }
 
-    ?>
+        if ($pageId == 'projects') { // list page
+            include('templates/pages/projects.php');
+        }
+
+        if ($pageId == 'project') { //detail page
+            include('templates/pages/project.php');
+        }
+        ?>
+    </main>
 
 </body>
 

@@ -1,4 +1,5 @@
-<?php include('templates/modules/page-header/template.php'); ?>
+<?php include('templates/modules/page-header/template.php');
+?>
 
 <main class="page-content">
     <?php foreach ($pageData['sections'] as $section) { ?>
@@ -12,16 +13,16 @@
 
         </section>
     <?php } ?>
+
+    <ul>
+        <?php foreach ($projectsData as $project) { ?>
+            <li>
+                <a href="?page=project&id=<?= $project['id'] ?>">
+                    <?= $project['name']; ?>
+                </a>
+            </li>
+
+        <?php } ?>
+
+    </ul>
 </main>
-
-<ul>
-    <?php foreach ($projectsData as $projects) { ?>
-        <li>
-            <a href="?page=project&id=<?= $project['id'] ?>">
-                <?= $project['name']; ?>
-            </a>
-        </li>
-
-    <?php } ?>
-
-</ul>

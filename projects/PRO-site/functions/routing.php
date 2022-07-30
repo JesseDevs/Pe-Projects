@@ -1,52 +1,23 @@
 <?php
 
-function currentPage()
-{
-    if (isset($_GET["page"])) {
-        return $_GET["page"];
-    } else {
-        return 'home';
-    }
+$pageId = 'home';
+if (isset($_GET["page"])) {
+    $pageId = $_GET["page"];
 }
 
-function pageData()
-{
-    $page = currentPage();
-    $filePath = 'data/pages/' . $page . '.json';
-    $json = file_get_contents($filePath);
-    if (!$json) {
-        $json = file_get_contents('data/pages/404.json');
-    }
+if ($pageId == 'home') {
+    $json = file_get_contents('data/pages/home.json');
     $pageData = json_decode($json, true);
-    return $pageData;
 }
 
-function getData()
-{
-    $data = currentPage();
-    print_r($data);
-    $filePath = 'data/' . $data . '.json';
-    $json = file_get_contents($filePath);
-    if (!$json) {
-        $json = file_get_contents('data/pages/404.json');
-    }
-    $data = json_decode($json, true);
-    return $data;
+if ($pageId == 'projects') {
+    $jsonPage = file_get_contents('data/pages/projects.json');
+    $pageData = json_decode($jsonPage, true);
+    $json = file_get_contents('data/projects.json');
+    $projectsData = json_decode($json, true);
 }
 
-function renderPage()
-{
-    $page = currentPage();
-    $filePath = "templates/pages/" . $page . ".php";
-    $pageData = pageData();
-    if (file_get_contents($filePath)) {
-        include($filePath);
-    } else {
-        include('templates/pages/404.php');
-    }
-}
-
-if (currentPage() == 'project') {
+if ($pageId == 'project') {
     $json = file_get_contents('data/projects.json');
     $projectsData = json_decode($json, true);
     foreach ($projectsData as $project) {
