@@ -1,0 +1,15 @@
+{
+    "id": "about",
+    "title": "About",
+    "intro": "Things about me - -",
+    "sections": [
+        {
+            "module": "big-heading",
+            "heading": "My favorite colors"
+        },
+        {
+            "module": "big-heading",
+            "heading": "Super secret"
+        }
+    ]
+}

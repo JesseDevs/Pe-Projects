@@ -1,0 +1,16 @@
+{
+    "id": "list",
+    "title": "Some stuff",
+    "intro": "View it!",
+    "sections": [
+        {
+            "module": "big-heading",
+            "heading": "Grid of things",
+            "items": [
+                {
+                    "title": "Thing number 1"
+                }
+            ]
+        }
+    ]
+}
