@@ -1,8 +1,4 @@
-<?php include('functions.php');
-
-
-
-?>
+<?php include('functions.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,9 +24,11 @@
         <inner-column>
 
             <?php
-            include('templates/modules/site-menu/template.php'); ?>
+            include('templates/modules/site-menu/template.php'); 
+            ?>
         </inner-column>
     </header>
+    
     <main class="page-content">
 
         <?php
@@ -52,3 +50,4 @@
 </body>
 
 </html>
+
