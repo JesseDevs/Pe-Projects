@@ -2,24 +2,45 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.loud-voice	{
-	font-size: clamp(36px, 5vw, 60px);
-}
-@media (min-width: 600px) {
-	.loud-voice {
-		font-weight: 700; /* or variable font */
-	}
+html {
+	font-size: 112.5%;
 }
 
-.attention-voice	{
-	
-	font-size: 30px;
+/* needs clamp for screen sizes :) */
+c
+.roar-voice{
+	font-size: 3.052rem;
+}
+
+.yell-voice{
+	font-size: 2.441rem;
+}
+
+.loud-voice	{
+	font-size: 2.2rem;
+}
+
+.attention-voice{
+	font-size: 1.953rem;;
+}
+
+.chant-voice{
+	font-size: 1.563rem;
+}
+
+.stict-voice{
+	font-size: 1.25rem;
 }
 
 .calm-voice, p, li {
 	
 	font-size: 1rem;
 	line-height: 1.4;
+}
+
+small,
+.small-voice{
+	font-size: 0.8rem;
 }
 
 :is(.calm-voice, p, li) em {
@@ -32,13 +53,6 @@
 
 /* these would be scoped to section or to an article element */
 /* this is just a loose setting for now */
-p + p {
-	margin-top: 1em;
-}
-
-h2 + p {
-	margin-top: 20px;
-}
 
 code {
 	font-family: monospace;
