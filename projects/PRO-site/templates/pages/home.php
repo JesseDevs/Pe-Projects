@@ -1,14 +1,17 @@
 <?php include('templates/modules/page-header/template.php'); ?>
 
-<?php foreach ($pageData['sections'] as $section) { ?>
+<main class="page-content <?= $page ?>">
+    <?php foreach ($pageData['sections'] as $section) { ?>
 
-    <section>
-        <inner-column>
+        <section>
+            <inner-column>
 
-            <?php
-            include('templates/modules/' . $section["module"] . '/template.php');
-            ?>
+                <?php
+                include('templates/modules/' . $section["module"] . '/template.php');
+                ?>
 
-        </inner-column>
-    </section>
-<?php } ?>
+            </inner-column>
+        </section>
+    <?php } ?>
+
+</main>

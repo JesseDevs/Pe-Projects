@@ -1,23 +1,29 @@
 <?php
 
-$pageId = 'home';
-if (isset($_GET["page"])) {
-    $pageId = $_GET["page"];
+$page = null;
+$pageData = null;
+
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+} else {
+    $page = "home";
+
 }
 
-if ($pageId == 'home') {
+
+if ($page == 'home') {
     $json = file_get_contents('data/pages/home.json');
     $pageData = json_decode($json, true);
 }
 
-if ($pageId == 'projects') {
+if ($page == 'projects') {
     $jsonPage = file_get_contents('data/pages/projects.json');
     $pageData = json_decode($jsonPage, true);
     $json = file_get_contents('data/projects.json');
     $projectsData = json_decode($json, true);
 }
 
-if ($pageId == 'project') {
+if ($page == 'project') {
     $json = file_get_contents('data/projects.json');
     $projectsData = json_decode($json, true);
     foreach ($projectsData as $project) {
@@ -25,4 +31,14 @@ if ($pageId == 'project') {
             $projectData = $project;
         }
     }
+}
+
+function currentPage(){
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+    } else {
+        $page = "home";
+
+    }
+
 }

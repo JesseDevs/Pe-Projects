@@ -1,4 +1,8 @@
-<?php include('functions.php'); ?>
+<?php include('functions.php'); 
+
+$description = null;
+$metaImage = null;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,8 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>[[insert Title]]</title>
+    <title>Jesse Felix: <?= ucfirst($page); ?></title>
     <meta name='description' content="[[Insert description]]">
     <meta property="og:image" content="images/default-meta.png">
 
@@ -20,30 +23,43 @@
 </head>
 
 <body>
-    <header class='site-header'>
-        <inner-column>
 
-            <?php
-            include('templates/modules/site-menu/template.php'); 
-            ?>
-        </inner-column>
-    </header>
+    <?php
+    include('templates/modules/site-menu/template.php'); 
+
+    ?>
+
+
     
-    <main class="page-content">
 
-        <?php
+    <?php
 
-        if ($pageId == 'home') { // home page
-            include('templates/pages/home.php');
+    if(file_exists("templates/pages/" . $page . ".php")){
+
+            if ($page == 'home') { // home page
+                include('templates/pages/home.php');
+            }
+
+            if ($page == 'projects') { // list page
+                include('templates/pages/projects.php');
+            }
+
+            if ($page == 'project') { //detail page
+                include('templates/pages/project.php');
+            }
+        }
+        
+        else{
+            $page = '404';
+            echo $page;
+
+            $json = file_get_contents('data/pages/404.json');
+            $pageData = json_decode($json, true);
+            include('templates/pages/404.php');
         }
 
-        if ($pageId == 'projects') { // list page
-            include('templates/pages/projects.php');
-        }
 
-        if ($pageId == 'project') { //detail page
-            include('templates/pages/project.php');
-        }
+
         ?>
     </main>
 

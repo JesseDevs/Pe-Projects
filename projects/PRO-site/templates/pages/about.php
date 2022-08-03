@@ -1,6 +1,6 @@
 <?php include('templates/modules/page-header/template.php'); ?>
 
-<main class="page-content">
+<main class="page-content <?= $page ?>">
     <?php foreach ($pageData['sections'] as $section) { ?>
 
         <section>
