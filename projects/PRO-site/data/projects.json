@@ -1,14 +1,29 @@
 [
     {
         "id": 1,
-        "name": "home"
+        "title": "Fighters: CRUD",
+        "intro": "",
+        "detail" : "",
+        "thumbnail":"./images/projects/",
+        "skills": [],
+        "links": []
     },
     {
         "id": 2,
-        "name": "stuff"
+        "title": "Theme Challenge",
+        "intro": "",
+        "detail" : "",
+        "thumbnail":"./images/projects/",
+        "skills": [],
+        "links": []
     },
     {
         "id": 3,
-        "name": "not home"
+        "title": "Legends",
+        "intro": "",
+        "detail" : "",
+        "thumbnail":"./images/projects/",
+        "skills": [],
+        "links": []
     }
 ]
