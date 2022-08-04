@@ -3,13 +3,12 @@
     "title": "About",
     "intro": "Things about me - -",
     "sections": [
-        {
-            "module": "big-heading",
-            "heading": "My favorite colors"
-        },
-        {
-            "module": "big-heading",
-            "heading": "Super secret"
-        }
-    ]
+     {
+        "module": "landing-heading",
+        "heading": "Jesse Felix",
+        "intro": "<p>Yeah, thats me!</p> <p>Web Developer. UI / UX Designer.</p>",
+        "details": "",
+        "image": ""
+    }
+]
 }

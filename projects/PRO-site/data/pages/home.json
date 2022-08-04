@@ -9,6 +9,21 @@
             "intro": "<p>Yeah, thats me!</p> <p>Web Developer. UI / UX Designer.</p>",
             "details": "I’m a Web Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I'm planning on making things happen! Maybe with you?",
             "image": "./images/details/computer.jpeg"
+        },
+        {
+            "module": "about-card",
+            "heading": "Oh <strong>me</strong>?",
+            "intro": "",
+            "details": "",
+            "image": ""
+        },
+        {
+            "module": "project-section",
+            "heading": "Some things I've made",
+            "intro": "",
+            "details": "",
+            "image": ""
         }
+
     ]
 }
