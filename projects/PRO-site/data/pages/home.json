@@ -7,8 +7,8 @@
             "module": "landing-heading",
             "heading": "Jesse Felix",
             "intro": "<p>Yeah, thats me!</p> <p>Web Developer. UI / UX Designer.</p>",
-            "details": "I’m a Front-End Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences.",
-            "image": "./images/details/computer.jpg"
+            "details": "I’m a Web Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I'm planning on making things happen! Maybe with you?",
+            "image": "./images/details/computer.jpeg"
         }
     ]
 }
