@@ -1,5 +1,13 @@
-<section>
-    <inner-column>
-        <h2><?= $section['heading']; ?></h2>
-    </inner-column>
-</section>
+<about-card>
+    <h2><?= $section['heading']; ?></h2>
+    <p><?= $section['intro']; ?></p>
+    <?php 
+    foreach ($section['details'] as $detail){ 
+        ?>
+
+        <p> <?= $detail ?></p>
+    <?php } ?>
+</about-card>
+
+
+
