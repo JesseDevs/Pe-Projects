@@ -1,0 +1,33 @@
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+	--xs-height: 1vh;
+	--xs-width:1vw;
+	--small-height: 2vh;
+	--small-width:2vw;
+	--med-height: 5vh;    
+	--med-width:5vw;
+	--large-height: 8vh;    
+	--large-width:8vw;
+	--xlarge-height: 11vh;    
+	--xlarge-width: 11vw;
+
+	--thin:  3px;
+	--thick:  5px;
+	--Xthick: 9px;
+
+	background-color: rgb(255,255,255);
+}
+
+html {
+
+	--gray: #9c9599;
+	--white: #fff;
+	--black: #000;
+
+	--ink:  rgb(10 5 5);
+	--page:  rgb(250, 249, 250);
+	--pageCompliment: #E3EBF8;
+}

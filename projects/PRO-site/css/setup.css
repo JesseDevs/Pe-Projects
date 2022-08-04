@@ -1,37 +1,5 @@
 @import 'reset.css';
 
-html {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-
-	--xs-height: 1vh;
-	--xs-width:1vw;
-	--small-height: 2vh;
-	--small-width:2vw;
-	--med-height: 5vh;    
-	--med-width:5vw;
-	--large-height: 8vh;    
-	--large-width:8vw;
-	--xlarge-height: 11vh;    
-	--xlarge-width: 11vw;
-
-	--thin:  3px;
-	--thick:  5px;
-	--Xthick: 9px;
-
-	background-color: rgb(255,255,255);
-}
-
-html {
-
-	--gray: #9c9599;
-	--white: #fff;
-	--black: #000;
-
-	--page:  #fff;
-	--pageCompliment: #E3EBF8;
-}
-
 
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -50,6 +18,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	background-color: var(--page);
+	color: var(--ink);
 }
 
 main {
@@ -65,7 +34,8 @@ inner-column{
 	max-width: 1200px;
 }
 
-article-grid{
+article-grid,
+landing-heading{
 	display: block;
 	width: 100%;
 }
