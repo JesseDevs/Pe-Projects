@@ -1,6 +1,7 @@
 .site-header{
-	background-color: var(--gray);
-	color: var(--white);
+	background-color: var(--page);
+	color: var(--ink);
+	border-bottom: var(--thin) solid var(--gray);
 }
 
 .site-header inner-column{
@@ -39,6 +40,3 @@
 	opacity: 1;
 }
 
-body{
-	
-}

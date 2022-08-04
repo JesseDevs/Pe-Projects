@@ -4,7 +4,7 @@
     "intro": "This is an introduction to this page, which I may or may not use.",
     "sections": [
         {
-            "module": "big-heading",
+            "module": "landing-heading",
             "heading": "Jesse Felix",
             "intro": "<p>Yeah, thats me!</p> <p>Web Developer. UI / UX Designer.</p>",
             "details": "I’m a Front-End Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences.",
