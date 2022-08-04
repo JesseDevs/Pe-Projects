@@ -1,5 +1,7 @@
 @import '../templates/modules/big-heading/style.css';
+@import '../templates/modules/landing-heading/style.css';
 @import '../templates/modules/page-header/style.css';
 @import '../templates/modules/page-section/style.css';
 @import '../templates/modules/site-footer/style.css';
 @import '../templates/modules/site-menu/style.css';
+@import '../templates/modules/project-card/style.css';
