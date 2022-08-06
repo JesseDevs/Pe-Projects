@@ -1,6 +1,8 @@
 <project-section>
     <h2><?= $section['heading']; ?></h2>
-    <p><?= $section['intro']; ?></p>
+    <text-content>
+        <p class='intro'><?= $section['intro']; ?></p>
+    </text-content>
     <?php foreach ($projectsData as $project) { ?>
 
         <?php
