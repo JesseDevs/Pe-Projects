@@ -24,9 +24,12 @@ html {
 html {
 
 	--gray: #9c9599;
+	--darkgray: #7d7c7c;
 	--white: #fff;
 	--black: #000;
 
+
+	--highlight: #527aa3;
 	--ink:  rgb(10 5 5);
 	--page:  rgb(250, 249, 250);
 	--pageCompliment: #E3EBF8;
