@@ -2,6 +2,10 @@
     "id": "home",
     "title": "Landing",
     "intro": "This is an introduction to this page, which I may or may not use.",
+    "ad" :[{
+        "intro": "Follow my journey through my blog!",
+        "blog": "https://jessedevs.substack.com/"
+    }],
     "sections": [
         {
             "module": "landing-heading",
@@ -10,19 +14,20 @@
             "details": "I’m a Web Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I'm planning on making things happen! Maybe with you?",
             "image": "./images/details/computer.jpeg"
         },
-        {
-            "module": "about-card",
-            "heading": "About me",
-            "intro": "Here is a little more...",
-            "details": ["I'm the first of my family to go to a university and by doing so obtained a Bachelor's degree in Business Finance. I've built expereince in sales and customer service. I thought I could impact the world, but it didn't make me happy. I always had a passion for computers and being creative but couldn't make the most of it. I wanted to do more. Web development and design has become a passion that I want to expand and continue to explore.",
-                "Currently under the mentorship of <a href='perpetual.education'>Perpetual Education</a>, exploring my skills by experimenting in a wide range of coding and design disciplines. I see myself continuing to challenge myself, to learn, and to do amazing things."],
-            "image": ""
-        },
+        
         {
             "module": "project-section",
             "heading": "Projects",
             "intro": "Some things I’ve made...",
             "details": "",
+            "image": ""
+        },
+        {
+            "module": "about-card",
+            "heading": "About Me",
+            "intro": "Here is a little more...",
+            "details": ["I obtained a Bachelor's degree in Business Finance and have built expereince in sales and customer service. I thought I could impact the world, but it didn't make me happy. I always had a passion for computers and being creative but couldn't make the most of it. I wanted to do more! Web development and design has become a passion that I want to expand and continue to explore.",
+                "Currently under the mentorship of <a href='perpetual.education'>Perpetual Education</a>, exploring my skills by experimenting in a wide range of coding and design disciplines. I see myself continuing to challenge myself, to learn, and to do amazing things."],
             "image": ""
         }
 

@@ -1,19 +1,32 @@
+landing-heading{
+	text-align: center;
+}
+
+.intro{
+	color: var(--highlight);
+}
+
+.intro p{
+	font-weight: 500;
+}
+
 .landing-image{
 	position: relative;
 	max-width: 500px;
 	margin-top: var(--small-height);
 	margin-bottom: var(--small-height);
+	margin-top: 10vh;
 }
 
 .landing-image .details{
 	position: absolute;
-	top: 20%;
+	top: 10%;
 	width: 100%;
 	z-index: 10;
 	color: var(--page);
 	text-align: center;
 	text-shadow: 2px 2px 5px #000;
-	padding: 20px;
+	padding: 0 15px;
 }
 
 .landing-image img{
@@ -29,16 +42,14 @@
 	left: 50%;
 	margin-left: -20px;
 	bottom: 10px;
-	
-
 }
 
 .arrows path {
 	stroke: #ffffff;
 	fill: transparent;
 	stroke-width: var(--thin);	
-/*	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; */
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
 
 }
 
