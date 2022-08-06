@@ -22,7 +22,6 @@
       * Contact
       * ?
 *side bar when scrolling past the heading - rotate 90deg.
-
 ### Footer Menu
 * Hover animation
 * Content -
