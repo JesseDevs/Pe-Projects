@@ -4,5 +4,7 @@
 @import '../templates/modules/page-section/style.css';
 @import '../templates/modules/site-footer/style.css';
 @import '../templates/modules/site-menu/style.css';
+@import '../templates/modules/about-card/style.css';
 @import '../templates/modules/project-card/style.css';
 @import '../templates/modules/project-section/style.css';
+@import '../templates/modules/contact-form/style.css';
