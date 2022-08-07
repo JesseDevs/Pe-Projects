@@ -41,7 +41,8 @@ landing-heading,
 text-content,
 label,
 input,
-field{
+field,
+button{
 	display: block;
 	width: 100%;
 }

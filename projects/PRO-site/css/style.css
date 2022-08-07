@@ -3,3 +3,7 @@
 @import 'variables.css';
 @import 'typography.css';
 @import 'modules.css';
+
+.project-list inner-column{
+	padding-top: 0;
+}
