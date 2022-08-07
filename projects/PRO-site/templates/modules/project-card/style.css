@@ -22,12 +22,27 @@ project-card span {
 	z-index: -10;
 }
 
-project-card span.two{
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: var(--hightlightOP);
-	filter: opacity(100%) blur(.5px);
-} 
+.project-actions{
+	padding: 15px 0;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-actions a{
+	grid-column: span 4;
+	padding: 10px 5px;
+	border: var(--thin) solid var(--accentone);
+	background-color: var(--accenttwo);
+}
+
+.project-actions a:last-of-type{
+	grid-column: 3 /span 4;
+}
+
 
 .project-thumbnail + p{
 	background-color:  var(--darkgray);

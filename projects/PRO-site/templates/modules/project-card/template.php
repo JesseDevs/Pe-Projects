@@ -1,6 +1,5 @@
 <project-card>
 	<span class='one'><?= strtoupper($project['intro']) ?></span>
-	<span class='two'><?= strtoupper($project['intro']) ?></span>
 	<h3 class='attention-voice'><?= $project['title'] ?></h3>
 
 	<text-content class="skills">
