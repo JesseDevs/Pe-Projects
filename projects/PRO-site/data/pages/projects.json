@@ -1,11 +1,12 @@
 {
     "id": "list",
-    "title": "Some stuff",
-    "intro": "View it!",
+    "title": "Projects",
+    "intro": "Some things I’ve made...",
     "sections": [
         {
             "module": "big-heading",
-            "heading": "Grid of things",
+            "heading": "Projects",
+            "intro": "Some things I’ve made...",
             "items": [
                 {
                     "title": "Thing number 1"

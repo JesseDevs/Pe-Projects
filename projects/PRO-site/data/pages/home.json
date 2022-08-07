@@ -15,7 +15,6 @@
             "details": "I’m a Web Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I'm planning on making things happen! Maybe with you?",
             "image": "./images/details/computer.jpeg"
         },
-
         {
             "module": "project-section",
             "heading": "Projects",
