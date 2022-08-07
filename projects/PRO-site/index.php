@@ -40,7 +40,12 @@ $metaImage = null;
                 include('templates/pages/home.php');
             }
 
-            if ($page == 'projects') { // list page
+               if ($page == 'about') { // about page
+                include('templates/pages/about.php');
+            }
+
+
+            if ($page == 'projects') { // projects page
                 include('templates/pages/projects.php');
             }
 
