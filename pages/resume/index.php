@@ -17,10 +17,10 @@ function renderList($array, $type)
 {
 	$list = filterArrayByType($array, $type);
 	foreach ($list as $item) {
-		include('resume-card.php'); ?>
-<?php }
-} ?>
-
+		include('resume-card.php');
+	}
+}
+?>
 
 <main class="resume">
 	<inner-column>
