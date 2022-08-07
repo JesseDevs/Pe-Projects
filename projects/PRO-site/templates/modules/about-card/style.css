@@ -12,7 +12,7 @@ about-card p{
 	padding-bottom: 25px;
 }
 
-about-card a{
+about-card p+ a{
 	padding-bottom: 25px;
 	text-decoration: underline;
 	color: var(--accentone);
