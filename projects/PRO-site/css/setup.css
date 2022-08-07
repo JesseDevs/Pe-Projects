@@ -38,7 +38,10 @@ inner-column{
 
 article-grid,
 landing-heading,
-text-content{
+text-content,
+label,
+input,
+field{
 	display: block;
 	width: 100%;
 }
@@ -58,16 +61,12 @@ a p {
 p a {
 	display: inline-block;
 	text-decoration: underline;
-	color: blue;
+	color: var(--accentone);
 }
 
 p {
 	line-height: 1.3;
 	letter-spacing: 0.01em;
-}
-
-h2 + p {
-	margin-top: 20px;
 }
 
 strong {

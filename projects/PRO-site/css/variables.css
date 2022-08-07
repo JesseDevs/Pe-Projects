@@ -24,12 +24,18 @@ html {
 html {
 
 	--gray: #9c9599;
-	--darkgray: #7d7c7c;
+	--darkgray: #474747;
 	--white: #fff;
 	--black: #000;
 
 
 	--highlight: #527aa3;
+	--highlightOP:  rgb(82 122 163 /.3);
+	--darkhighlight: #2e4359;
+
+	--accentone: rgb(243 174 139);
+	--accenttwo: rgb(232 207 194) ;
+	
 	--ink:  rgb(10 5 5);
 	--page:  rgb(250, 249, 250);
 	--pageCompliment: #E3EBF8;
