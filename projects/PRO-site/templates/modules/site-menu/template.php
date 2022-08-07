@@ -3,12 +3,10 @@
 
         <nav>
             <ul>
-                <li><a href="?page=home">Home</a></li>
-                <li><a href="?page=about">About</a></li>
-                <li><a href="?page=projects">Projects</a></li>
-                <li><a href="?page=e4p">E4P</a></li>
-                <li><a href="?page=garden">Garden</a></li>
-                <li><a href="?page=writing">Writing</a></li>
+                <li><a href="?page=home" class=" <?php activePage("home") ?>">Home</a></li>
+                <li><a href="?page=about" class=" <?php activePage("about") ?>">About</a></li>
+                <li><a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a></li>
+                <li><a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a></li>
             </ul>
 
         </nav>

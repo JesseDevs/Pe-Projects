@@ -1,7 +1,10 @@
 .site-header{
 	background-color: var(--page);
 	color: var(--ink);
-	border-bottom: var(--thin) solid var(--gray);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+
 }
 
 .site-header inner-column{
@@ -12,7 +15,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	column-gap: 15px;
+	column-gap: 10px;
 }
 
 .site-header ul a{
@@ -38,5 +41,21 @@
 
 .site-header ul a:hover::before{
 	opacity: 1;
+}
+
+.site-header .active {
+	background-color: var(--pageCompliment);
+	color: var(--black);
+}
+
+.site-header .active:before{
+	content: '';
+	height: var(--thick);
+	width: 100%;
+	background-color: #5a7aad;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 100;
 }
 

@@ -15,8 +15,8 @@ landing-heading{
 	position: relative;
 	max-width: 500px;
 	margin-top: var(--small-height);
-	margin-bottom: var(--small-height);
-	margin-top: 3vh;
+
+	margin-top: 5vh;
 }
 
 .landing-image .details{
