@@ -17,14 +17,8 @@ $projectsData = getProjectFile();
         </section>
     <?php } ?>
 
-    <section>
+    <?php include('templates/modules/contact-form/template.php');?>
 
-        <inner-column>   
-           <?php include('templates/modules/contact-form/template.php');?>
-
-       </inner-column>
-
-   </section>
 
 
 
