@@ -4,14 +4,15 @@
 
 	<text-content class="skills">
 		<?php foreach ($project['skills'] as $skill){ ?>
-			<p><?= $skill ?></p>
+			<p class="small-voice"><?= $skill ?></p>
 		<?php } ?>
 	</text-content>
 
-	
-	<picture class='project-thumbnail'>
-		<img src=" <?= $project['thumbnail'] ?>" alt="">
-	</picture>
+	<a href="?page=project&id=<?=$project["id"] ?>">
+		<picture class='project-thumbnail'>
+			<img src=" <?= $project['thumbnail'] ?>" alt="">
+		</picture>
+	</a>
 	<p><?= $project['detail'] ?></p>
 	<text-content class="project-actions">
 		<?php foreach ($project['links'] as $link){ ?>

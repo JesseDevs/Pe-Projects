@@ -1,13 +1,12 @@
 <project-section>
    <h2 class='yell-voice'><?= $section['heading']; ?></h2>
    <text-content>
-    <p class='intro'><?= $section['intro']; ?></p>
-</text-content>
-<?php foreach ($projectsData as $project) { ?>
+     <p class='intro'><?= $section['intro']; ?></p>
+  </text-content>
+  <?php foreach ($projectsData as $project) { ?>
 
-    <?php
-    include('templates/modules/project-card/template.php');
-    ?>
-<?php } ?>
+     <?php
+     include('templates/modules/project-card/template.php');
+  } ?>
 </project-section>
 
