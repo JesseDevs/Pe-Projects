@@ -1,5 +1,5 @@
 <about-card>
-    <h2><?= $section['heading']; ?></h2>
+    <h2 class='yell-voice'><?= $section['heading']; ?></h2>
     <text-content>
         <p class='intro'><?= $section['intro']; ?></p>
         <?php 

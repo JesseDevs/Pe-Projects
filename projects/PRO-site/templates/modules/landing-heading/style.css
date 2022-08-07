@@ -4,6 +4,7 @@ landing-heading{
 
 .intro{
 	color: var(--highlight);
+	font-weight: 500;
 }
 
 .intro p{
@@ -45,7 +46,7 @@ landing-heading{
 }
 
 .arrows path {
-	stroke: #ffffff;
+	stroke: var(--highlight);
 	fill: transparent;
 	stroke-width: var(--thin);	
 	animation: arrow 2s infinite;
