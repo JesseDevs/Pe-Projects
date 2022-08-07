@@ -1,5 +1,5 @@
 <contact-form>
-    <h2>Contact Me</h2>
+    <h2 class='yell-voice'>Contact Me </h2>
     <p class="intro">Lets talk about code? Maybe some life discussion? Or some of the latest music out?</p>
 
     <field>    
