@@ -23,7 +23,7 @@ html {
 
 html {
 
-	--gray: #9c9599;
+	--gray: #b3afb1;
 	--darkgray: #474747;
 	--white: #fff;
 	--black: #000;
@@ -33,7 +33,7 @@ html {
 	--highlightOP:  rgb(82 122 163 /.3);
 	--darkhighlight: #2e4359;
 
-	--accentone: rgb(243 174 139);
+	--accentone: #e37842;
 	--accenttwo: rgb(232 207 194) ;
 	
 	--ink:  rgb(10 5 5);
