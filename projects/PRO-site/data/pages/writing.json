@@ -1,0 +1,60 @@
+{
+    "id": "writing",
+    "title": "Landing",
+    "intro": "This is an introduction to this page, which I may or may not use.",
+    "sections": [
+        {
+            "module": "big-heading",
+            "heading": "Writings",
+            "intro": "I've written some articles detailing some of my adventures. Give them a read. "
+        },
+        {
+            "module": "grid-things",
+            "heading": "Posts",
+            "intro": "Recent articles..",
+            "items" : [
+                {
+                    "title":"A Beautiful Lie | Perpetual Education: 009",
+                    "intro":"You think you're going crazy, but you're not. You're not alone",
+                    "detail":"",
+                    "link" : "https://jessedevs.substack.com/p/a-beautiful-lie-perpetual-education",
+                    "thumbnail": "images/writing/good-thing.png",
+                    "podcast": false
+                },
+                {
+                    "title":"Perpetual Education. So far.",
+                    "intro":"The whole shebang... so far..",
+                    "detail":"",
+                    "link" : "https://jessedevs.substack.com/p/perpetual-education",
+                    "thumbnail": "images/writing/sky.JPG",
+                    "podcast": false
+                },
+                {
+                    "title":"고인물 [ Goinmul ] | Perpetual Education: 008",
+                    "intro":"The standing water.",
+                    "detail":"",
+                    "link" : "https://jessedevs.substack.com/p/-goinmul-perpetual-education-008",
+                    "thumbnail": "images/writing/goinmul.jpeg",
+                    "podcast": false
+                },
+                {
+                    "title":"I realize life is perspective | Perpetual Education: 007",
+                    "intro":"And my perspective may differ from yours.",
+                    "detail":"",
+                    "link" : "https://jessedevs.substack.com/p/i-realize-life-is-perspective-perpetual",
+                    "thumbnail": "images/writing/sun.png",
+                    "podcast": false
+                },
+                {
+                    "title":"The more I learn | Perpetual Education: 005",
+                    "intro":"The less I know. The less I know is for the better.",
+                    "detail":"",
+                    "link" : "https://jessedevs.substack.com/p/the-more-i-learn-perpetual-education#details",
+                    "thumbnail": "images/writing/gameboy.jpeg",
+                    "podcast": true
+                }
+            ]
+        }
+
+    ]
+}
