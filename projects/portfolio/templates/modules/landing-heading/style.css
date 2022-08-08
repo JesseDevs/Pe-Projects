@@ -14,9 +14,10 @@ landing-heading{
 .landing-image{
 	position: relative;
 	max-width: 500px;
-	margin-top: var(--small-height);
 
 	margin-top: 5vh;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .landing-image .details{
