@@ -39,3 +39,10 @@ form button{
 	max-width: fit-content;
 	padding: 7px 14px;
 }
+
+button{
+	background-color: var(--gray);
+	border-color: var(--accentone);
+	outline: none;
+	border: none;
+}

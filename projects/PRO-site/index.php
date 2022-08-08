@@ -52,6 +52,10 @@ $metaImage = null;
             if ($page == 'project') { //detail page
                 include('templates/pages/project.php');
             }
+
+              if ($page == 'writing') { // projects page
+                include('templates/pages/writing.php');
+            }
         }
         
         else{
