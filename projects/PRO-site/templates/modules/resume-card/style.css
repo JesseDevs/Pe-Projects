@@ -1,0 +1,9 @@
+
+resume-card .skills{
+	padding: 0;
+	color: var(--page);
+}
+
+resume-card{
+	margin: 4vh 0;
+}
