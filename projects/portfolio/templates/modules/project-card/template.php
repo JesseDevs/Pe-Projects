@@ -10,7 +10,7 @@
 			<?php } ?>
 		</text-content>
 	</div>
-	<a class='project-link' href="?page=project&id=<?=$project["id"] ?>">
+	<a class='project-link' href="?page=project&id=<?=$project["id"] ?>" target="_blank">
 		<picture class='project-thumbnail'>
 			<img src=" <?= $project['thumbnail'] ?>" alt="">
 		</picture>

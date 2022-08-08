@@ -8,7 +8,7 @@
   <ul>
     <?php foreach($section['items'] as $item) {?>
       <li>
-        <a href="<?= $item['link']?>">
+        <a href="<?= $item['link']?>" target="_blank" >
           <picture>
             <img src="<?= $item['thumbnail']?>" alt="blog-image">
           </picture>
