@@ -72,6 +72,12 @@ $metaImage = null;
         ?>
     </main>
 
+    <?php
+    include('templates/modules/site-footer/template.php'); 
+
+    ?>
+
+
 </body>
 
 </html>

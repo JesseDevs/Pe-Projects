@@ -1,4 +1,4 @@
-<footer class='site-header'>
+<footer class='site-footer'>
     <inner-column>
 
         <nav>

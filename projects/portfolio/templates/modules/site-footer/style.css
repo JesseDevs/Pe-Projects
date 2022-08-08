@@ -1,0 +1,46 @@
+footer{
+	background-color: var(--darkgray);
+	margin-top: 2vh;
+}
+
+.site-footer inner-column{
+	padding: 3vh 1rem;
+}
+
+footer nav{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+footer nav ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer nav ul li{
+	color: var(--page);
+	font-size: .9rem;
+}
+
+footer nav ul a{
+	padding: 10px 15px;
+	text-decoration: underline;
+	color: var(--page);
+}
+
+@media(min-width: 500px){
+
+	footer nav ul{
+		flex-direction: row;
+		align-items: center;
+	}
+
+	footer nav{
+		flex-direction: column;
+	}
+}
