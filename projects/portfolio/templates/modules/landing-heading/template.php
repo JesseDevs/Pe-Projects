@@ -17,14 +17,14 @@ $heading = $section['heading'] ?? ucfirst($page);
 
 
 
-    <svg class="arrows">
+  <!--   <svg class="arrows">
 
         <path stroke-linecap="round" class="a1" d="M0 0 L20 22 L40 0"></path>
     </svg>
     <svg class="arrows arrows-two">
 
         <path stroke-linecap="round" class="a1" d="M0 0 L20 22 L40 0"></path>
-    </svg>
+    </svg> -->
 
 
 </landing-heading>

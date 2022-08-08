@@ -42,7 +42,8 @@ form button{
 
 button{
 	background-color: var(--gray);
-	border-color: var(--accentone);
 	outline: none;
 	border: none;
+	border: var(--thin) solid var(--accentone);
+	background-color: var(--accenttwo);
 }

@@ -21,8 +21,8 @@ about-card p+ a{
 
 .about>section+section inner-column{
 	padding-top: 3vh;
-}
 
+}
 
 .home .about-card{
 	background-color:var(--gray);

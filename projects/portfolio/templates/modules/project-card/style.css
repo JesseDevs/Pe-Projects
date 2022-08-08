@@ -78,7 +78,6 @@ project-card a+ p{
 	gap: 5px;
 	padding-bottom: 5vh;
 	color: var(--gray);
-	text-shadow: .5px 1px .1px var(--darkgray);
 }
 
 .skills p:after {
