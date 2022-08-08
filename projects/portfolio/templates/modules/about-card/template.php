@@ -1,7 +1,8 @@
 <about-card>
     <h2 class='yell-voice'><?= $section['heading']; ?></h2>
+    <p class='intro'><?= $section['intro']; ?></p>
     <text-content>
-        <p class='intro'><?= $section['intro']; ?></p>
+        
         <?php 
         foreach ($section['details'] as $detail){ 
             ?>

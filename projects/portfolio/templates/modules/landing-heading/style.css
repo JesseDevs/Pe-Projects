@@ -2,6 +2,10 @@ landing-heading{
 	text-align: center;
 }
 
+landing-heading h1{
+	text-shadow: 1px 1px 4px var(--darkgray);
+}
+
 .intro{
 	color: var(--highlight);
 	font-weight: 500;
