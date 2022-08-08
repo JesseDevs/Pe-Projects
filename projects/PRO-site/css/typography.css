@@ -48,7 +48,7 @@ html {
 
 small,
 .small-voice{
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 }
 
 :is(.calm-voice, p, li) em {

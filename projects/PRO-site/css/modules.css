@@ -10,4 +10,6 @@
 @import '../templates/modules/contact-form/style.css';
 
 @import '../templates/modules/resume-section/style.css';
-@import '../templates/modules/resume-card/style';
+@import '../templates/modules/resume-card/style.css';
+
+@import '../templates/modules/grid-things/style.css';
