@@ -3,3 +3,9 @@ big-heading{
 	width: 100%;
 	text-align: center;
 }
+
+big-heading p{
+	max-width: 350px;
+	margin: 0 auto;
+}
+
