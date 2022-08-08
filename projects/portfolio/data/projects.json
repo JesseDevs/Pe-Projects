@@ -8,7 +8,7 @@
         "skills": ["html", "css", "php"],
         "links": [
             {
-                "title": "More Details",
+                "title": "Details",
                 "link": "?page=project&id=1"
             },
             {
@@ -29,7 +29,7 @@
         "skills": ["html", "css", "php"],
         "links": [
             {
-                "title": "More Details",
+                "title": "Details",
                 "link": "?page=project&id=2"
             },
             {
@@ -50,7 +50,7 @@
         "skills": ["html", "css", "php"],
         "links": [
             {
-                "title": "More Details",
+                "title": "Details",
                 "link": "?page=project&id=3"
             },
             {
