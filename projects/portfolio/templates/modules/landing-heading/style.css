@@ -20,10 +20,15 @@ landing-heading{
 	margin-left: auto;
 }
 
-.landing-image .details{
+.details{
 	position: absolute;
-	top: 10%;
-	width: 100%;
+	top: 40%;
+	width: 90%;
+	max-width: 450px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
 	z-index: 10;
 	color: var(--page);
 	text-align: center;
@@ -46,10 +51,14 @@ landing-heading{
 	bottom: 10px;
 }
 
+.arrows-two{
+	bottom: 30px;
+}
+
 .arrows path {
 	stroke: var(--highlight);
 	fill: transparent;
-	stroke-width: var(--thin);	
+	stroke-width: var(--thick);	
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite; 
 
@@ -74,3 +83,65 @@ landing-heading{
 	-webkit-animation-delay:-0.5s; /* Safari and Chrome */
 }
 
+@media(min-width:700px){
+	landing-heading{
+		display: grid;
+		grid-template-columns: 20% 1fr 1fr 1fr;
+
+		column-gap: 10px;
+
+		position: relative;
+	}
+
+	landing-heading h1{
+
+		position: absolute;
+		text-align: left;
+		top: 25%;
+		z-index: 1;
+		text-shadow: 2px 2px 2px var(--darkgray);
+
+	}
+
+	landing-heading text-content{
+		grid-row: 2/ 4;
+		grid-column: 1/ 3;
+		text-align:left;
+	}
+
+	.landing-image{
+		grid-row: 1 /3;
+		grid-column: 3/ 5;
+		align-self: center;
+		margin: 0;
+
+	}
+
+	.landing-image img{
+		filter: brightness(100%);
+		z-index: 1;
+
+	}
+
+	.details{
+		position: static;
+
+		width: 100%;
+		max-width: none;
+
+		margin:  0;
+		color: var(--ink);
+		text-align: left;
+		text-shadow: none;
+		padding:0;
+		padding-top: 25px;
+	}
+
+	.arrows {
+		bottom: 50px;
+	}
+
+	.arrows-two{
+		bottom: 70px;
+	}
+}
