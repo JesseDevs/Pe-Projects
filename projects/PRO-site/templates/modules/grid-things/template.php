@@ -13,7 +13,7 @@
             <img src="<?= $item['thumbnail']?>" alt="blog-image">
           </picture>
           <text-content>
-            <h3 class='title attention-voice'><?= $item['title']?></h3>
+            <h3 class='title chant-voice'><?= $item['title']?></h3>
             <p class='intro'><?= $item['intro']?></p>
             <?php if($item['podcast']){?>
               <p class='small skills'>Podcast Special</p>
@@ -24,4 +24,8 @@
 
     <?php }?>
   </ul>
+
+  <div class="blog">
+    <iframe src="https://jessedevs.substack.com/embed"  height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+  </div>
 </grid-things>

@@ -9,7 +9,7 @@ grid-things ul{
 }
 
 grid-things li{
-	margin: 4vh 0;
+	margin: 5vh 0;
 }
 
 grid-things li text-content{
@@ -22,4 +22,12 @@ grid-things li text-content{
 grid-things .skills{
 	padding: 0;
 	color: var(--page);
+}
+
+iframe{
+	width: 100%;
+}
+
+div.blog{
+	margin: 5vh auto;
 }
