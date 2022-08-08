@@ -38,6 +38,11 @@ if ($page == 'project') {
     }
 }
 
+if ($page == 'writing') {
+    $json = file_get_contents('data/pages/writing.json');
+    $pageData = json_decode($json, true);
+}
+
 function currentPage(){
     if (isset($_GET['page'])) {
         $page = $_GET['page'];
