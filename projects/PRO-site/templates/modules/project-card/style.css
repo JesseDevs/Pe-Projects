@@ -46,9 +46,10 @@ project-card span {
 
 
 project-card a+ p{
-	background-color:  var(--darkgray);
+	background-color:  var(--gray);
+	border-top: 3px solid var(--darkgray);
 	padding: 20px 10px;
-	color: var(--page);
+	color: var(--ink);
 }
 
 /*@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
