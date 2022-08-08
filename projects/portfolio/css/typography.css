@@ -40,9 +40,9 @@ html {
 	font-size: 1.25rem;
 }
 
-.calm-voice, p, li {
+.calm-voice, p, li, a {
 	
-	font-size: 1rem;
+	font-size: clamp(1rem, 3vw, 1.2rem);
 	line-height: 1.4;
 }
 
