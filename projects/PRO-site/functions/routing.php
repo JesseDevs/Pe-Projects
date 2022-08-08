@@ -1,6 +1,6 @@
 <?php
 
-$page = null;
+$page = 'home';
 $pageData = null;
 
 if (isset($_GET['page'])) {
@@ -55,8 +55,10 @@ function currentPage(){
 
 function activePage($name)
 {
-    if ($_GET['page'] == $name) {
-        echo "active";
+    if(isset($_GET['page'])){
+        if ($_GET['page'] == $name) {
+            echo "active";
+        }
     }
 }
 
