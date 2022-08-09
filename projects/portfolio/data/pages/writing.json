@@ -9,7 +9,7 @@
             "intro": "I've written some articles detailing some of my adventures. Give them a read. "
         },
         {
-            "module": "grid-things",
+            "module": "grid-blog",
             "heading": "Posts",
             "intro": "Recent articles..",
             "items" : [

@@ -6,12 +6,19 @@
         {
             "module": "big-heading",
             "heading": "Projects",
-            "intro": "I made these things.",
+            "intro": "I made these.",
             "items": [
                 {
                     "title": "Thing number 1"
                 }
             ]
+        },
+        {
+            "module": "project-section",
+            "heading": "some favorites",
+            "intro": "I'd recommend checking them out.",
+            "details": "",
+            "image": ""
         }
     ]
 }
