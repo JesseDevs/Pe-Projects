@@ -45,6 +45,7 @@ button{
 	color: var(--ink);
 	border: var(--thin) solid var(--highlight);
 	background-color: var(--highlightOP);
+	cursor: pointer;
 }
 
 
@@ -54,7 +55,7 @@ button{
 
 	contact-form{
 		display: grid;
-		grid-template-columns: 20% 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		column-gap: 20px;
 	}
 

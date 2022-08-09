@@ -46,7 +46,7 @@ about-card p+ a{
 	about-card h2,
 	about-card p{
 
-		grid-column: 1 / span 5;
+		grid-column: 1 / span 3;
 	}
 
 	about-card text-content{
