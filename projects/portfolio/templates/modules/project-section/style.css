@@ -7,7 +7,7 @@ project-section{
 @media (min-width: 900px){
 	project-section{
 		display: grid;
-		grid-template-columns: 20% 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		column-gap: 30px;
 		justify-content: center;
 	}

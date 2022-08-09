@@ -10,7 +10,7 @@
 
         </section>
     <?php } ?>
-    <section class="project-list">
+<!--     <section class="project-list">
         <inner-column>
             <ul>
                 <?php 
@@ -22,5 +22,5 @@
 
             </ul>
         </inner-column>
-    </section>
+    </section> -->
 </main>

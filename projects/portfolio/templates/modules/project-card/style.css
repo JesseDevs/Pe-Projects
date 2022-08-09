@@ -31,7 +31,7 @@ project-card span {
 	padding: 15px 0;
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
-	grid-gap: 5px;
+	grid-gap: 10px;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -42,8 +42,8 @@ project-card span {
 .project-actions a{
 	grid-column: span 4;
 	padding: 10px 5px;
-	border: var(--thin) solid var(--accentone);
-	background-color: var(--accenttwo);
+	border: var(--thin) solid var(--highlight);
+	background-color: var(--highlightOP);
 }
 
 .project-actions a:last-of-type{
@@ -93,7 +93,7 @@ project-card a+ p{
 
 	project-card{
 		display: grid;
-		grid-template-columns: 20% 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 
 		column-gap: 10px;
 
@@ -167,6 +167,16 @@ project-card a+ p{
 		flex-direction: row;
 		grid-column: 1 / span 4;
 		grid-row: 4/span 2;
+	}
+
+	project-card{
+		padding: 0;
+	}
+
+	project-card:nth-of-type(2) .project-actions,
+	project-card:nth-of-type(3) .project-actions{
+		margin: 20px auto;
+
 	}
 }
 

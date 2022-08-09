@@ -16,7 +16,8 @@ about-card p{
 about-card p+ a{
 	padding-bottom: 25px;
 	text-decoration: underline;
-	color: var(--accentone);
+	color: var(--highlight);
+	font-weight: 500;
 }
 
 .about>section+section inner-column{
@@ -33,24 +34,23 @@ about-card p+ a{
 	color: var(--ink);
 }
 
-@media(min-width: 700px){
+@media(min-width: 900px){
 
 
-	.about-card about-card{
+	about-card{
 		display: grid;
-		grid-template-columns: 20% 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		column-gap: 20px;
 	}
 
-	.home about-card h2,
-	.about-card about-card p{
+	about-card h2,
+	about-card p{
 
 		grid-column: 1 / span 5;
 	}
 
-	.about-card about-card text-content{
+	about-card text-content{
 		grid-column: 2 / 4;
-		justify-self: center;
 
 	}
 
