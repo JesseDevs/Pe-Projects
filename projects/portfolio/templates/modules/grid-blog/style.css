@@ -1,0 +1,33 @@
+grid-blog{
+	display: block;
+	width: 100%;
+}
+
+grid-blog ul{
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+}
+
+grid-blog li{
+	margin: 5vh 0;
+}
+
+grid-blog li text-content{
+	padding: 20px 10px;
+	border-top: 3px solid var(--darkgray);
+	background-color: var(--gray);
+	color: var(--ink);
+}
+
+grid-blog .skills{
+	padding: 0;
+	color: var(--page);
+}
+
+iframe{
+	width: 100%;
+}
+
+div.blog{
+	margin: 5vh auto;
+}

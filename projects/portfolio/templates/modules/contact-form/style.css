@@ -1,10 +1,8 @@
-.connect inner-column{
-	max-width: 600px;
-}
+
 
 contact-form {
 	display: block;
-	widows: 100%;
+	width: 100%;
 }
 
 contact-form .intro {
@@ -44,6 +42,38 @@ button{
 	background-color: var(--gray);
 	outline: none;
 	border: none;
-	border: var(--thin) solid var(--accentone);
-	background-color: var(--accenttwo);
+	color: var(--ink);
+	border: var(--thin) solid var(--highlight);
+	background-color: var(--highlightOP);
+}
+
+
+
+@media(min-width: 700px){
+
+
+	contact-form{
+		display: grid;
+		grid-template-columns: 20% 1fr 1fr 1fr;
+		column-gap: 20px;
+	}
+
+	contact-form h2{
+
+		grid-column: 1 / span 5;
+	}
+
+	contact-form p{
+		grid-column: 1 / span 3;
+	}
+
+	contact-form form{
+		grid-column: 2 / 4;
+
+
+	}
+
+
+}
+
 }
