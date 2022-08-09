@@ -60,7 +60,8 @@ a p {
 p a {
 	display: inline-block;
 	text-decoration: underline;
-	color: var(--accentone);
+	color: var(--highlight);
+	font-weight: 500;
 }
 
 p {

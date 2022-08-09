@@ -1,7 +1,5 @@
 @import '../templates/modules/big-heading/style.css';
 @import '../templates/modules/landing-heading/style.css';
-@import '../templates/modules/page-header/style.css';
-@import '../templates/modules/page-section/style.css';
 @import '../templates/modules/site-footer/style.css';
 @import '../templates/modules/site-menu/style.css';
 @import '../templates/modules/about-card/style.css';
@@ -12,4 +10,6 @@
 @import '../templates/modules/resume-section/style.css';
 @import '../templates/modules/resume-card/style.css';
 
-@import '../templates/modules/grid-things/style.css';
+@import '../templates/modules/grid-blog/style.css';
+
+@import '../templates/modules/blog-card/style.css';
