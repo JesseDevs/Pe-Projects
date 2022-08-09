@@ -1,0 +1,33 @@
+blog-card{
+  display: block;
+  width: 100%;
+}
+
+.blockquote {
+  padding: 20px;
+}
+
+.blockquote svg{
+  max-width: 30px;
+}
+
+.quote {
+  font-size: 1.4rem;
+  max-width: 400px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.author {
+  float: right;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.quote-icon {
+  margin-bottom: 10px;
+}
+
+.blockquote hr {
+  margin-top: 50px;
+}
