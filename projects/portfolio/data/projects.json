@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Fighters: CRUD",
         "intro": "crud",
-        "detail": "This project uses fighters from the video game Street FIghter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
+        "detail": "This project uses fighters from the video game Street Fighter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
         "thumbnail": "https://peprojects.dev/alpha-4/jesse/projects/portfolio/images/projects/fighters/fighters.jpg",
         "skills": ["html", "css", "php"],
         "links": [
@@ -60,6 +60,27 @@
             {
                 "title":"Live",
                 "link":"https://peprojects.dev/alpha-4/jesse/projects/legends/"
+            }]
+    },
+    {
+        "id": 4,
+        "title": "Layout",
+        "intro": "Garden",
+        "detail": "This project takes some time to analyze some more complicated layout designs. Combining these together to form a layout garden for viewing.",
+        "thumbnail": "./images/projects/garden/layout.jpg",
+        "skills": ["html", "css", "php"],
+        "links": [
+            {
+                "title": "Details",
+                "link": "?page=project&id=4"
+            },
+            {
+                "title":"GitHub",
+                "link":"https://github.com/JesseDevs/pe-projects/tree/main/projects/layouts"
+            },
+            {
+                "title":"Live",
+                "link":"https://peprojects.dev/alpha-4/jesse/projects/layouts/"
             }]
     }
 
