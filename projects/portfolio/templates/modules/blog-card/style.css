@@ -3,8 +3,40 @@ blog-card{
   width: 100%;
 }
 
+blog-card picture{
+  position: relative;
+}
+
+blog-card text-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(10%);
+
+  padding: var(--simple-space) 10px;
+  background-color: transparent;
+  color: var(--page);
+}
+
+blog-card picture img{
+  filter: brightness(40%) grayscale(50%);
+}
+
+blog-card .intro{
+}
+
+.podcast{
+  color: var(--accentone);
+}
+
 .blockquote {
   padding: var(--simple-space);
+  margin-top: var(--simple-space);
+  margin-bottom: var(--simple-space);
+  background-color: var(--gray);
+  border-left: var(--thin) solid var(--darkgray);
 }
 
 .blockquote svg{
@@ -31,3 +63,91 @@ blog-card{
 .blockquote hr {
   margin-top: 50px;
 }
+
+
+.blog-thumbnail{
+  aspect-ratio: 4/3;
+  border: var(--thin) solid var(--darkgray);
+}
+
+.blog-thumbnail img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-action{
+  padding: var(--simple-space) 10px;
+  border: var(--thin) solid var(--highlight);
+  background-color: var(--highlightOP);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+@media(min-width:400px){
+
+
+  .blog-thumbnail{
+    aspect-ratio: 16/8;
+  }
+
+  blog-card text-content{
+    transform: translateY(20%);
+  }
+
+  blockquote svg{
+    height: auto;
+  }
+
+
+}
+
+@media(min-width:550px){
+
+  blog-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: var(--simple-space);
+    /*    grid-template-rows: auto auto 1fr auto;*/
+  }
+
+  blog-card text-content{
+    left: 2%;
+    max-width: 400px;
+  }
+
+  blog-card picture{
+    grid-column: 1 / 4;
+  }
+
+  .blockquote{
+    grid-column: 1 / 4;
+    margin: 0;
+  }
+
+  .blog-action{
+    grid-column: 4;
+    align-self: flex-end;
+  }
+
+}
+
+@media (min-width: 800px){
+
+  blog-card picture{
+    grid-column: 1/ 3;
+
+  }
+
+  .blockquote{
+    grid-column: 3 / 5;
+  }
+
+  .blog-action{
+    grid-column: 1;
+    margin-top: var(--simple-space);
+    align-self: flex-end;
+  }
+}
+

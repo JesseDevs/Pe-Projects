@@ -12,18 +12,6 @@ grid-blog li{
 	margin: var(--general-space) 0;
 }
 
-grid-blog li text-content{
-	padding: var(--simple-space) 10px;
-	border-top: 3px solid var(--darkgray);
-	background-color: var(--gray);
-	color: var(--ink);
-}
-
-grid-blog .skills{
-	padding: 0;
-	color: var(--page);
-}
-
 iframe{
 	width: 100%;
 }

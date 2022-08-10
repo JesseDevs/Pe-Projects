@@ -3,6 +3,14 @@ project-section{
 	display: block;
 }
 
+project-section .intro{
+	margin-bottom: var(--tight-space);
+}
+
+.home project-card:nth-of-type(4){
+	display: none;
+}
+
 
 @media (min-width: 900px){
 	project-section{

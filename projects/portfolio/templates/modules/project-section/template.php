@@ -1,17 +1,15 @@
 <project-section>
-   <h2 class='yell-voice'><?= $section['heading']; ?></h2>
-   <text-content>
-    <p class='intro'><?= $section['intro']; ?></p>
- </text-content>
- <?php 
- $class = null;
- foreach ($projectsData as $project) { 
-   ?>
+ <h2 class='yell-voice'><?= $section['heading']; ?></h2>
+ <text-content>
+  <p class='intro'><?= $section['intro']; ?></p>
+</text-content>
+<?php 
+$class = null;
+foreach ($projectsData as $project) { 
+ 
+ include('templates/modules/project-card/template.php');
 
-   <?php
-   include('templates/modules/project-card/template.php');
-
-   
+ 
 }?>
 </project-section>
 

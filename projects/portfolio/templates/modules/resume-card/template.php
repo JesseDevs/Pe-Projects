@@ -8,16 +8,16 @@
 
 
     <?php } else {?>
-     <p class='company'><?= $item['school'] ?> &#183; <?= $item['major'] ?></p>
+       <p class='company'><?= $item['school'] ?> &#183; <?= $item['major'] ?></p>
 
- <?php } ?>
+   <?php } ?>
 
 
- <p class='date'><?= $item['startDate'] ?> &#8212; <?= $item['endDate'] ?></p>
+   <p class='date'><?= $item['startDate'] ?> &#8212; <?= $item['endDate'] ?></p>
 
- <p><?= $item['takeaways'] ?></p>
+   <p><?= $item['takeaways'] ?></p>
 
- <ul class='duties'>
+   <ul class='duties'>
     <?php foreach ($item['duties'] as $duty) { ?>
         <li><?= $duty ?></li>
     <?php } ?>

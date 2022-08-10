@@ -4,6 +4,7 @@ about-card{
 	color: var(--ink);
 }
 
+
 about-card .intro{
 	margin-bottom: var(--tight-space);
 	padding-bottom: 0;
