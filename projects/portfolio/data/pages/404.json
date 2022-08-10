@@ -2,5 +2,30 @@
     "id": "404",
     "title": "404",
     "intro": "This page does not exist!",
-    "detail": "Welp. Maybe you were looking for something else. Let's get you on the right track..."
+    "detail": "Welp. Maybe you were looking for something else. Let's get you on the right track...",
+    "sections": [
+        {
+          "module": "missing-heading",
+          "heading": "404",
+          "intro": "Welp. Maybe you were looking for something else. Let's get you on the right track...",
+          "links": [
+            {
+                "title":"home",
+                "link":"?page=home"
+            },
+            {
+                "title":"projects",
+                "link":"?page=projects"
+            },
+            {
+                "title":"Music?",
+                "link":"https://www.youtube.com/watch?v=_dFjJmJdJjY"
+            },
+            {
+                "title":"Something else?",
+                "link":"https://www.youtube.com/results?search_query=evo+moment+37"
+            }
+        ]
+      }
+  ]
 }
