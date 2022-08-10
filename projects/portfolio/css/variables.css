@@ -3,16 +3,11 @@ html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 
-	--xs-height: 1vh;
-	--xs-width:1vw;
-	--small-height: 2vh;
-	--small-width:2vw;
-	--med-height: 5vh;    
-	--med-width:5vw;
-	--large-height: 8vh;    
-	--large-width:8vw;
-	--xlarge-height: 11vh;    
-	--xlarge-width: 11vw;
+	--simple-space:  20px;
+	--simple-big-space:  40px;
+
+	--general-space:  5vh;
+	--tight-space:  3vh;
 
 	--thin:  3px;
 	--thick:  5px;
@@ -23,7 +18,7 @@ html {
 
 html {
 
-	--gray: #b3afb1;
+	--gray: #ebebeb;
 	--darkgray: #474747;
 	--white: #fff;
 	--black: #000;
