@@ -3,6 +3,12 @@ form-grid{
 	display: block;
 }
 
+form-box{
+	width: 100%;
+	display: block;
+}
+
+
 form-grid ul{
 	display: grid;
 	grid-template-columns: 1fr;

@@ -49,9 +49,9 @@ if ($page == 'forms') {
 }
 
 if ($page == 'form') {
-    $json = file_get_contents('data/forms.json');
-    $projectsData = json_decode($json, true);
-    foreach ($Data as $form) {
+    $json = file_get_contents('data/form.json');
+    $formFile = json_decode($json, true);
+    foreach ($formFile as $form) {
         if ($form['id'] == $_GET['id']) {
             $formData = $form;
         }

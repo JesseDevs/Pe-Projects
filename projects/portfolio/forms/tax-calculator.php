@@ -72,6 +72,6 @@ if (isset($_POST['submitted'])) {
 <results class='feedback'>
     <h3> The Results</h3>
     <p>The total will be: <?= $total ?></p>
-    <a href="?page=e4p">&#8592; E4P Home</a>
+    
 </results>
 

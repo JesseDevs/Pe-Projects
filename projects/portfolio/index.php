@@ -57,6 +57,10 @@ $metaImage = null;
             if ($page == 'forms') { 
                 include('templates/pages/forms.php');
             }
+
+            if ($page == 'form') { 
+                include('templates/pages/form.php');
+            }
         }
         
         else{

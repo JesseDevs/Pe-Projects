@@ -3,8 +3,8 @@
     <nav>
         <ul>    
 
-            <?php foreach ($section['items'] as $forms){?>
-                <li><a href="?page=form&id="<?= $forms['id']?>><?= $forms['title'] ?></a></li>
+            <?php foreach ($formData as $form){?>
+                <li><a href="?page=form&id=<?= $form["id"]?>"><?= $form['title'] ?></a></li>
 
             <?php } ?>
         </ul>

@@ -70,6 +70,6 @@ if (isset($_POST['submitted'])) {
 
     <p><strong> <?= $final ?></strong> </p>
 
-    <a href="?page=e4p">&#8592; E4P Home</a>
+ 
 </results>
 
