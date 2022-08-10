@@ -14,6 +14,7 @@ html {
 	letter-spacing: .01em;
 
 	text-transform: uppercase;
+	transition: all .5s;
 }
 
 .yell-voice{
