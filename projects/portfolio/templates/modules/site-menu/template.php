@@ -23,7 +23,7 @@
                <a class="small-size" href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
                <a class="small-size" href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
 
-               <a href="?page=exercises" class="<?php activePage("exercises") ?>">Exercises</a>
+               <a href="?page=forms" class="<?php activePage("forms") ?>">Exercises</a>
            </nav>
 
        </nav>

@@ -1,16 +1,10 @@
-<main>
-    <section class='form-page'>
 
-        <inner-column>
+<?php
 
-
-
-            <?php
-
-            $weight = null;
-            $gender = null;
-            $numberDrinks = null;
-            $amountOfAlcohol = floatval($numberDrinks) * 12; //by volume of drinks consumed
+$weight = null;
+$gender = null;
+$numberDrinks = null;
+$amountOfAlcohol = floatval($numberDrinks) * 12; //by volume of drinks consumed
             $timeSinceLastDrink = null; // hours
             $bac = null;
             $template = null;
@@ -118,7 +112,3 @@
                 <a href="?page=e4p">&#8592; E4P Home</a>
             </results>
 
-
-        </inner-column>
-    </section>
-</main>

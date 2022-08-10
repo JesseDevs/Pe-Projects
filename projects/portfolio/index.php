@@ -49,12 +49,12 @@ $metaImage = null;
                 include('templates/pages/project.php');
             }
 
-            if ($page == 'writing') { // projects page
+            if ($page == 'writing') {
                 include('templates/pages/writing.php');
             }
 
 
-            if ($page == 'forms') { // projects page
+            if ($page == 'forms') { 
                 include('templates/pages/forms.php');
             }
         }

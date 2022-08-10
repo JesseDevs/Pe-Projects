@@ -2,9 +2,9 @@
 <form-grid>
     <nav>
         <ul>    
-            <?php foreach ($section['forms'] as $form){?>
+            <?php foreach ($section['items'] as $form){?>
 
-                <li><?= $form ?></li>
+                <li><a href=""><?= $form ?></a></li>
 
             <?php } ?>
         </ul>

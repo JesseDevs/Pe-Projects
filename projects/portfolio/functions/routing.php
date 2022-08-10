@@ -43,11 +43,14 @@ if ($page == 'writing') {
     $pageData = json_decode($json, true);
 }
 
-
 if ($page == 'forms') {
     $json = file_get_contents('data/pages/forms.json');
     $pageData = json_decode($json, true);
 }
+
+
+
+
 
 function currentPage(){
     if (isset($_GET['page'])) {

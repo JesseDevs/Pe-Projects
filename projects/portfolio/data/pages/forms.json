@@ -1,53 +1,26 @@
 {
+
     "id": "forms",
     "title": "E4p",
     "intro": "User Input Testing!",
     "sections": [
         {
             "module": "big-heading",
-            "heading": "Forms for Users",
+            "heading": "Forms 4 Users",
             "intro": "User Input Testing!"
         },
         {
             "module": "form-grid",
-            "forms": [
-
-                {
-                    "id": "one",
-                    "name": "Area",
-                },
-                {
-                    "id": "two",
-                    "name": "Count-String"
-                },
-                {
-                    "id": "three",
-                    "name": "Driving-Age"
-                },
-                {
-                    "id": "four",
-                    "name": "Interest"
-                },
-                {
-                    "id": "five",
-                    "name": "Paint"
-                },
-                {
-                    "id": "six",
-                    "name": "Password"
-                },
-                {
-                    "id": "seven",
-                    "name": "Checkout"
-                },
-                {
-                    "id": "eight",
-                    "name": "Simple-Math"
-                },
-                {
-                    "id": "nine",
-                    "name": "Tax-Calc"
-                }
+            "items" : [
+                "area",
+                "count-string",
+                "driving-age",
+                "interest",
+                "paint-calc",
+                "password-check",
+                "self-checkout",
+                "simple-math",
+                "tax-calculator"
             ]
         }
     ]

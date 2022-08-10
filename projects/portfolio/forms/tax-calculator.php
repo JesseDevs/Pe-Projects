@@ -1,9 +1,5 @@
-<main>
-    <section class='form-page'>
 
-        <inner-column>
-
-            <?php
+<?php
             // function format($variable)
             // {
             //     echo "<pre>";
@@ -15,72 +11,67 @@
 
             // format($_POST);
 
-            $orderAmount = null;
-            $subtotal = null;
-            $state = '';
-            $tax = null;
-            $taxAmount = 0;
-            $total = null;
+$orderAmount = null;
+$subtotal = null;
+$state = '';
+$tax = null;
+$taxAmount = 0;
+$total = null;
 
 
-            if (isset($_POST['submitted'])) {
+if (isset($_POST['submitted'])) {
 
-                if (isset($_POST['orderAmount'])) {
-                    if ($_POST['orderAmount'] > 0) {
-                        $orderAmount = $_POST['orderAmount'];
-                    }
-                }
+    if (isset($_POST['orderAmount'])) {
+        if ($_POST['orderAmount'] > 0) {
+            $orderAmount = $_POST['orderAmount'];
+        }
+    }
 
-                if (isset($_POST['state'])) {
-                    if ($_POST['state'] == 'CA') {
-                        $tax = .105;
-                    }
-                }
-                $subtotal = floatval($orderAmount);
-                $taxAmount = $subtotal * $tax;
+    if (isset($_POST['state'])) {
+        if ($_POST['state'] == 'CA') {
+            $tax = .105;
+        }
+    }
+    $subtotal = floatval($orderAmount);
+    $taxAmount = $subtotal * $tax;
 
-                $total = $subtotal + $taxAmount;
-            } ?>
+    $total = $subtotal + $taxAmount;
+} ?>
 
-            <form action="" method="post">
+<form action="" method="post">
 
-                <h2>Tax Calculator</h2>
+    <h2>Tax Calculator</h2>
 
-                <field>
+    <field>
 
-                    <label for="">What is your order amount?</label>
-                    <input type="number" name='orderAmount' value='<?= $length ?>' required min='0'>
+        <label for="">What is your order amount?</label>
+        <input type="number" name='orderAmount' value='<?= $length ?>' required min='0'>
 
-                </field>
+    </field>
 
-                <field class="field">
+    <field class="field">
 
-                    <select name="state">
-                        <option disabled selected>Select Your State?</option>
+        <select name="state">
+            <option disabled selected>Select Your State?</option>
 
-                        <option value="CA">
-                            CA
-                        </option>
-                        <option value="Not CA">
-                            NOT CA
-                        </option>
-                    </select>
+            <option value="CA">
+                CA
+            </option>
+            <option value="Not CA">
+                NOT CA
+            </option>
+        </select>
 
-                </field>
+    </field>
 
-                <button type="submit" name='submitted'>Calculate</button>
-
-
-            </form>
-
-            <results class='feedback'>
-                <h3> The Results</h3>
-                <p>The total will be: <?= $total ?></p>
-                <a href="?page=e4p">&#8592; E4P Home</a>
-            </results>
+    <button type="submit" name='submitted'>Calculate</button>
 
 
+</form>
 
-        </inner-column>
-    </section>
-</main>
+<results class='feedback'>
+    <h3> The Results</h3>
+    <p>The total will be: <?= $total ?></p>
+    <a href="?page=e4p">&#8592; E4P Home</a>
+</results>
+
