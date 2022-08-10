@@ -11,7 +11,7 @@
 	padding: 0 1rem;
 	display: flex;
 	justify-content: flex-end;
-	gap:  10px;
+	gap:  var(--simple-space);
 }
 
 .burger{
@@ -32,11 +32,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	column-gap: 10px;
+	column-gap: var(--simple-space);
 }
 
 .main-menu ul a{
-	padding: 20px 10px;
+	padding: var(--simple-space) 10px;
 	position: relative;
 }
 
@@ -103,7 +103,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 25px 20px;
+	padding: 25px var(--simple-space);
 }
 
 #menu-toggle {

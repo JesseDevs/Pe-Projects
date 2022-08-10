@@ -1,3 +1,4 @@
+
 <project-card>
 
 	<span><?= strtoupper($project['intro']) ?></span>
@@ -10,16 +11,12 @@
 			<?php } ?>
 		</text-content>
 	</div>
-	<a class='project-link' href="?page=project&id=<?=$project["id"] ?>" target="_blank">
+	<a class='project-link' href="?page=project&id=<?=$project["id"] ?>">
 		<picture class='project-thumbnail'>
 			<img src=" <?= $project['thumbnail'] ?>" alt="">
 		</picture>
 	</a>
 	<p class="project-detail"><?= $project['detail'] ?></p>
-	<text-content class="project-actions">
-		<?php foreach ($project['links'] as $link){ ?>
-			<a href='<?= $link['link'] ?>'><?= $link['title'] ?></a>
-		<?php } ?>
-	</text-content>
+	<a class="projects-action" href='<?= $project['links'][0]['link'] ?>'><?= $project['links'][0]['title'] ?></a>
 
 </project-card>

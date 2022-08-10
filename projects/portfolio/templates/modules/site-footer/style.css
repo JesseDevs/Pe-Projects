@@ -4,7 +4,7 @@ footer{
 }
 
 .site-footer inner-column{
-	padding: 3vh 1rem;
+	padding: var(--tight-space) 1rem;
 }
 
 footer nav{
@@ -14,7 +14,7 @@ footer nav{
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	row-gap: 20px;
+	row-gap: var(--simple-space);
 }
 
 

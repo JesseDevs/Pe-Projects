@@ -4,7 +4,7 @@ blog-card{
 }
 
 .blockquote {
-  padding: 20px;
+  padding: var(--simple-space);
 }
 
 .blockquote svg{

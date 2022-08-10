@@ -8,7 +8,7 @@ project-section{
 	project-section{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: 30px;
+		column-gap: var(--simple-space);
 		justify-content: center;
 	}
 
@@ -20,14 +20,14 @@ project-section{
 		grid-column: 1 / span 4;
 	}
 
-	project-section project-card:first-of-type{
+	project-section project-card:nth-of-type(3n+1){
 		grid-column: 1 / span 4;
 	}
 
-	project-section project-card:nth-of-type(2){
+	project-section project-card:not(:nth-of-type(3n+1)){
 		grid-column: 1 / span 2;
 	}
-	project-section project-card:nth-of-type(3){
+	project-section project-card:not(:nth-of-type(even)):not(:first-of-type){
 		grid-column: 3 / span 2;
 	}
 

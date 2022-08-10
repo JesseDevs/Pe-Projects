@@ -4,16 +4,16 @@ grid-blog{
 }
 
 grid-blog ul{
-	margin-top: 3vh;
-	margin-bottom: 3vh;
+	margin-top: var(--tight-space);
+	margin-bottom: var(--tight-space);
 }
 
 grid-blog li{
-	margin: 5vh 0;
+	margin: var(--general-space) 0;
 }
 
 grid-blog li text-content{
-	padding: 20px 10px;
+	padding: var(--simple-space) 10px;
 	border-top: 3px solid var(--darkgray);
 	background-color: var(--gray);
 	color: var(--ink);
@@ -29,5 +29,5 @@ iframe{
 }
 
 div.blog{
-	margin: 5vh auto;
+	margin: var(--general-space) auto;
 }

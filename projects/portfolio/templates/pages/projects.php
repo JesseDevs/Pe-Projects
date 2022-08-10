@@ -10,17 +10,4 @@
 
         </section>
     <?php } ?>
-<!--     <section class="project-list">
-        <inner-column>
-            <ul>
-                <?php 
-                foreach ($projectsData as $project) { ?>
-                    <li class="<?= $project['intro']?>">
-                        <?php include('templates/modules/project-card/template.php'); ?>
-                    </li>
-                <?php } ?>
-
-            </ul>
-        </inner-column>
-    </section> -->
 </main>

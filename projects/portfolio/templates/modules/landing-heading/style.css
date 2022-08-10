@@ -21,7 +21,7 @@ landing-heading h1{
 	position: relative;
 	max-width: 500px;
 
-	margin-top: 5vh;
+	margin-top: var(--general-space);
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -54,7 +54,7 @@ landing-heading h1{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 20% 1fr ;
-		column-gap: 15px;
+		column-gap: var(--simple-space);
 
 		position: relative;
 	}
@@ -134,7 +134,7 @@ landing-heading h1{
 	height: 80px;
 	position: absolute;
 	left: 50%;
-	margin-left: -20px;
+	margin-left: -var(--simple-space);
 	bottom: 10px;
 }
 

@@ -1,16 +1,37 @@
 project-card {
 	display: block;
 	width: 100%;
-	padding: 3vh 0;
+	padding: var(--tight-space) 0;
 	position: relative;
 	background-color: transparent;
 	z-index: 10;
 }
 
-project-card:first-of-type{
-	padding: 5vh 0;
+.project-thumbnail{
+	aspect-ratio: 4/3;
 }
 
+.project-link{
+	border: var(--thin) solid var(--darkgray);
+}
+
+.project-thumbnail img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.project-detail{
+	border: var(--thin) solid var(--darkgray);
+	border-top: none;
+}
+
+.projects-action{
+	padding: var(--simple-space) 10px;
+	border: var(--thin) solid var(--highlight);
+	background-color: var(--highlightOP);
+	margin-top: var(--simple-space);
+}
 
 project-card span {
 	font-size: 4rem;
@@ -27,57 +48,19 @@ project-card span {
 	z-index: -10;
 }
 
-.project-actions{
-	padding: 15px 20px;
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	grid-gap: 10px;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	max-width: 400px;
-	margin: 0 auto;
-}
-
-.project-actions a{
-	grid-column: span 4;
-	padding: 10px 5px;
-	border: var(--thin) solid var(--highlight);
-	background-color: var(--highlightOP);
-}
-
-.project-actions a:last-of-type{
-	grid-column: 3 /span 4;
-}
-
-.project-link {
-	background-color:  var(--gray);
-}
-
-.project-link picture{
-	border-bottom: 3px solid var(--darkgray);
-}
 
 project-card a+ p{
 	background-color:  var(--gray);
-	padding: 20px 10px;
+	padding: var(--simple-space) var(--simple-space);
 	color: var(--ink);
 }
-
-/*@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-	project-card span{
-		-webkit-backdrop-filter: blur(10px);
-		backdrop-filter: blur(10px);
-		background-color: rgba(255, 255, 255, 0.5);
-	}
-}*/
 
 .skills{
 	display: flex;
 	text-transform: uppercase;
 	gap: 5px;
-	padding-bottom: 5vh;
-	color: var(--gray);
+	padding-bottom: var(--general-space);
+	color: var(--darkgray);
 }
 
 .skills p:after {
@@ -89,14 +72,14 @@ project-card a+ p{
 }
 
 
-@media(min-width:600px){
+@media(min-width:500px){
 
 	project-card{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto auto 1fr auto;
 
-		column-gap: 10px;
-
+		column-gap: var(--simple-space);
 		position: relative;
 	}
 
@@ -114,79 +97,44 @@ project-card a+ p{
 		grid-row: 1;
 		grid-column: 3/ span 2;
 		justify-self: flex-end;
-
-
 	}
 
 	.project-link,
 	.project-detail{
 		grid-column: 1 / span 3;
-		max-width: 700px;
 		justify-self: center;
 	}
 
-	.project-actions{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-end;
-
-		grid-column: 4 / span 1;
-		grid-row: 2 /span 2;
-		gap: 20px;
-		padding: 0 20px;
+	project-card .project-thumbnail{
+		aspect-ratio:  16/9;
 	}
 
-	.project-actions a{
-		width: 100%;
-	}
 
-	.project-actions{
-		padding: 0 10px;
-
-	}
 }
 
 @media (min-width: 900px){
 	project-section{
-		grid-row-gap: 20px;
+		grid-row-gap: var(--simple-big-space);
 	}
 	
-	project-card:nth-of-type(2) .project-link,
-	project-card:nth-of-type(2) .project-detail{
+	project-card:not(:nth-of-type(3n+1)) .project-link,
+	project-card:not(:nth-of-type(3n+1)) .project-detail{
 		grid-column: 1 / span 4;
 	}
 
-	project-card:nth-of-type(3) .project-link,
-	project-card:nth-of-type(3) .project-detail{
-		grid-column: 1 / span 4;
-	}
-
-	project-card:nth-of-type(2) .project-actions{
-		flex-direction: row;
-		grid-column: 1 / span 4;
-		grid-row: 4/span 2;
-	}
-
-	project-card:nth-of-type(3) .project-actions{
-		flex-direction: row;
-		grid-column: 1 / span 4;
-		grid-row: 4/span 2;
+	project-card:not(:nth-of-type(3n+1)) .project-thumbnail{
+		aspect-ratio:  2/1;
 	}
 
 	project-card{
 		padding: 0;
 	}
 
-	project-card:nth-of-type(2) .project-actions,
-	project-card:nth-of-type(3) .project-actions{
-		margin: 20px auto;
-
-	}
-
-	project-card:first-of-type span{
+	project-card:nth-of-type(3n+1) span{
 		grid-column: 4 / span 1;
+		grid-row: 2;
 		justify-self: center;
 	}
+
 }
 

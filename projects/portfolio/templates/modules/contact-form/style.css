@@ -6,7 +6,7 @@ contact-form {
 }
 
 contact-form .intro {
-	margin-bottom: 3vh;
+	margin-bottom: var(--tight-space);
 }
 
 label,
@@ -52,29 +52,22 @@ button{
 
 @media(min-width: 700px){
 
-
 	contact-form{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: 20px;
+		column-gap: var(--simple-space);
 	}
 
 	contact-form h2{
-
 		grid-column: 1 / span 5;
 	}
 
 	contact-form p{
-		grid-column: 1 / span 3;
+		grid-column: 1 / span 2;
 	}
 
 	contact-form form{
 		grid-column: 2 / 4;
-
-
 	}
-
-
-}
 
 }

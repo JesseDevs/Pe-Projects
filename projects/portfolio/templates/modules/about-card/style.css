@@ -5,7 +5,7 @@ about-card{
 }
 
 about-card .intro{
-	margin-bottom: 3vh;
+	margin-bottom: var(--tight-space);
 	padding-bottom: 0;
 }
 
@@ -21,7 +21,7 @@ about-card p+ a{
 }
 
 .about>section+section inner-column{
-	padding-top: 3vh;
+	padding-top: var(--tight-space);
 
 }
 
@@ -40,7 +40,7 @@ about-card p+ a{
 	about-card{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: 20px;
+		column-gap: var(--simple-space);
 	}
 
 	about-card h2,
@@ -50,7 +50,7 @@ about-card p+ a{
 	}
 
 	about-card text-content{
-		grid-column: 2 / 4;
+		grid-column: 1 / span 2;
 
 	}
 
