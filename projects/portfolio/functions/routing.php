@@ -48,6 +48,15 @@ if ($page == 'forms') {
     $pageData = json_decode($json, true);
 }
 
+if ($page == 'form') {
+    $json = file_get_contents('data/forms.json');
+    $projectsData = json_decode($json, true);
+    foreach ($Data as $form) {
+        if ($form['id'] == $_GET['id']) {
+            $formData = $form;
+        }
+    }
+}
 
 
 
