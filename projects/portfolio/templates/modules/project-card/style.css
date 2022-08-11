@@ -25,6 +25,7 @@ project-card {
 .project-detail{
 	border: var(--thin) solid var(--darkgray);
 	border-top: none;
+	
 }
 
 .projects-action{
@@ -95,7 +96,7 @@ project-card a+ p{
 
 
 	.skills{
-		padding-bottom: 2vh;
+		padding-bottom:  var(--tight-space);
 	}
 
 	project-card div{

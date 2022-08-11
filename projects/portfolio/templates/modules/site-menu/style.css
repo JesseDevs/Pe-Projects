@@ -32,11 +32,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	column-gap: var(--simple-space);
+	column-gap: var(--simple-small-space);
 }
 
 .main-menu ul a{
-	padding: var(--simple-space) 10px;
+	padding: var(--simple-space);
 	position: relative;
 }
 
@@ -207,4 +207,20 @@
 		display: none;
 	}
 
+	.main-menu .mid-size{
+		display: none;
+	}
+
+}
+
+
+
+@media (min-width: 700px){
+	.main-menu .mid-size{
+		display: block;
+	}
+
+	.burger{
+		display: none;
+	}
 }

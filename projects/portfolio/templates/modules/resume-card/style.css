@@ -4,5 +4,5 @@ resume-card .skills{
 }
 
 resume-card{
-	margin: 4vh 0;
+	margin: var(--general-space) 0;
 }

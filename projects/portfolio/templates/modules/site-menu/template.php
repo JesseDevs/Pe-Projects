@@ -8,6 +8,8 @@
                 <li><a href="?page=about" class=" <?php activePage("about") ?>">About</a></li>
                 <li><a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a></li>
                 <li><a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a></li>
+                <li><a class="mid-size" href="?page=forms " class="<?php activePage("forms") ?>">Forms</a></li>
+                <li><a class="mid-size" href="?page=style " class="<?php activePage("style") ?>">Style-Guide</a></li>
             </ul>
 
         </nav>
@@ -18,16 +20,17 @@
                 <div class='menu-button'></div>
             </label>
             <nav class="menu">
-               <a class="small-size" href="?page=home" class=" <?php activePage("home") ?>">Home</a>
-               <a class="small-size" href="?page=about" class=" <?php activePage("about") ?>">About</a>
-               <a class="small-size" href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
-               <a class="small-size" href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
+             <a class="small-size" href="?page=home" class=" <?php activePage("home") ?>">Home</a>
+             <a class="small-size" href="?page=about" class=" <?php activePage("about") ?>">About</a>
+             <a class="small-size" href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
+             <a class="small-size" href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
 
-               <a href="?page=forms" class="<?php activePage("forms") ?>">Exercises</a>
-           </nav>
+             <a href="?page=forms" class="<?php activePage("forms") ?>">Exercises</a>
+             <a class="mid-size" href="?page=style " class="<?php activePage("style") ?>">Style-Guide</a>
+         </nav>
 
-       </nav>
+     </nav>
 
-   </inner-column>
+ </inner-column>
 </header>
 

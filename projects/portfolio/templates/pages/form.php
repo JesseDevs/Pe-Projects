@@ -13,9 +13,9 @@ $formData = json_decode($json, true);
          <form-box>
 
             <h2 class="attention-voice"><?= $form['title']?></h2>
-
-            <?php include("forms/" . $form['file-name'] . ".php")?>
-
+            <div>
+               <?php include("forms/" . $form['file-name'] . ".php")?>
+            </div>
          </form-box>
 
       </inner-column>

@@ -1,0 +1,121 @@
+{
+    "id": "style",
+    "title": "Style-Guide",
+    "intro": "Showing all modules on the page.",
+    "ad": [
+        {
+            "intro": "Follow my journey!",
+            "blog": "https://jessedevs.substack.com/"
+        }],
+    "sections": [
+        {
+            "module": "big-heading",
+            "heading": "Style-Guide",
+            "intro": "Showcasing all modules on the site!",
+            "details": ""
+        },
+        {
+            "module": "landing-heading",
+            "heading": "Landing",
+            "intro": "Cute little intro",
+            "details": "Placeholder detail text",
+            "image": "https://peprojects.dev/images/portrait.jpg"
+        },
+        {
+            "module": "big-heading",
+            "heading": "Big Heading ",
+            "intro": "Cute short little intro",
+            "details": ""
+        },
+        {
+            "module": "project-section",
+            "heading": "Projects Section",
+            "intro": "Cute little intro",
+            "details": "",
+            "image": ""
+        },
+        {
+            "module": "about-card",
+            "heading": "About Card",
+            "intro": "Cute little intro",
+            "details": ["Placeholder detail text",
+                "Multiple blocks of text!"
+            ],
+            "image": ""
+        },
+        {
+            "module": "goals-section",
+            "heading": "Goals Section",
+            "intro": "Cute little intro",
+            "lead": "Lead in for all the goals.",
+            "goals": ""
+        },
+        {
+            "module": "resume-section",
+            "heading": "Resume Section",
+            "intro": "Cute little intro"
+        },
+        {
+            "module": "grid-blog",
+            "heading": "Grid blog",
+            "intro": "Cute little intro",
+            "items": [
+                {
+                    "title": "Article title",
+                    "intro": "Little intro for article",
+                    "quote": "Quote from the article.",
+                    "link": "https://jessedevs.substack.com/p/a-beautiful-lie-perpetual-education",
+                    "thumbnail": "https://peprojects.dev/images/landscape.jpg",
+                    "podcast": false
+                },
+                {
+                    "title": "Article title",
+                    "intro": "Little intro for article",
+                    "quote": "Quote from the article.",
+                    "link": "https://jessedevs.substack.com/p/perpetual-education",
+                    "thumbnail": "https://peprojects.dev/images/landscape.jpg",
+                    "podcast": true
+                }]
+        },
+        {
+            "module": "form-grid",
+            "heading": "Form Grid",
+            "intro": "Cute little intro",
+            "items": [
+                {
+                    "id": 1,
+                    "title": "form title",
+                    "file-name": "area"
+                },
+                {
+                    "id": 2,
+                    "title": "count-string",
+                    "file-name": "count-string"
+                }]
+        },
+        {
+            "module": "missing-heading",
+            "heading": "heading",
+            "intro": "Cute little intro",
+            "links": [
+                {
+                    "title": "home link",
+                    "link": "?page=home"
+                },
+                {
+                    "title": "projects link",
+                    "link": "?page=projects"
+                },
+                {
+                    "title": "Random link",
+                    "link": "https://www.youtube.com/watch?v=_dFjJmJdJjY"
+                },
+                {
+                    "title": "Random Link",
+                    "link": "https://www.youtube.com/results?search_query=evo+moment+37"
+                }]
+        }
+
+
+    ]
+}

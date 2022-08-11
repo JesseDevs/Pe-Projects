@@ -1,6 +1,6 @@
 footer{
 	background-color: var(--darkgray);
-	margin-top: 2vh;
+	margin-top:  var(--tight-space);
 }
 
 .site-footer inner-column{
