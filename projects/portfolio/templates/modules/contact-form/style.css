@@ -42,7 +42,7 @@ button{
 	background-color: var(--gray);
 	outline: none;
 	border: none;
-	color: var(--ink);
+	color: var(--black);
 	border: var(--thin) solid var(--highlight);
 	background-color: var(--highlightOP);
 	cursor: pointer;

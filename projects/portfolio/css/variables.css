@@ -35,6 +35,9 @@ html {
 	--ink:  rgb(10 5 5);
 	--page:  #f4f4f4;
 	--pageCompliment: #E3EBF8;
+	--menu-bar:  #5a7aad;
+
+	--landing-text:#f4f4f4;;
 }
 
 @media( min-width:  1400px){
@@ -47,10 +50,18 @@ html {
 
 @media(prefers-color-scheme:  dark){
 	html{
+
+
+
+		--gray:  #474747;
+		--darkgray: rgb(196 193 190) ;
+		--landing-text: rgb(10 5 5) ;
 		--page:  #135b80;
 		--ink: #f4f4f4 ;
 		--highlight:  #e37842;
 		--highlightOP:rgb(232 207 194);
+
+		--accentone:  #E3EBF8;
 	}
 
 }

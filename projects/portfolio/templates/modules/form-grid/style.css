@@ -30,6 +30,7 @@ form-grid a{
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .06em;
+	color: var(--black);
 }
 
 

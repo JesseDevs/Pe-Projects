@@ -9,7 +9,7 @@ html {
 /* needs clamp for screen sizes :) */
 
 .roar-voice{
-	font-size: clamp(2.9rem, 12vw, 8rem);
+	font-size: clamp(2.9rem, 11vw, 8rem);
 	font-weight: 700;
 	letter-spacing: .01em;
 
@@ -18,38 +18,38 @@ html {
 }
 
 .yell-voice{
-	font-size: clamp(2.5rem, 10vw, 4rem);
+	font-size: clamp(2.5rem, 9vw, 4rem);
 	font-weight: 600;
 	letter-spacing: .01em;
 	text-transform: uppercase;
 }
 
 .loud-voice	{
-	font-size: 2.2rem;
+	font-size: clamp(2.2rem, 9vw, 3.5rem);
 }
 
 .attention-voice{
-	font-size: 1.8rem;;
+	font-size: clamp(1.8rem, 7vw, 2.2rem);
 	font-weight: 500;
 }
 
 .chant-voice{
-	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 7vw, 2rem);
 }
 
 .stict-voice{
-	font-size: 1.25rem;
+	font-size: clamp(1.25rem, 5vw, 1.6rem);
 }
 
 .calm-voice, p, li, a {
 	
-	font-size: clamp(1rem, 2vw, 1.1rem);
+	font-size: clamp(1rem, 2vw, 1.2rem);
 	line-height: 1.4;
 }
 
 small,
 .small-voice{
-	font-size: 0.9rem;
+	font-size: clamp(0.9rem, 1vw, 1rem);
 }
 
 :is(.calm-voice, p, li) em {
