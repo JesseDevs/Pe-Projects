@@ -44,3 +44,13 @@ html {
 		--tight-space:  1.7vh;
 	}
 }
+
+@media(prefers-color-scheme:  dark){
+	html{
+		--page:  #135b80;
+		--ink: #f4f4f4 ;
+		--highlight:  #e37842;
+		--highlightOP:rgb(232 207 194);
+	}
+
+}

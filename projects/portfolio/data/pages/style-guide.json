@@ -39,9 +39,12 @@
             "heading": "About Card",
             "intro": "Cute little intro",
             "details": ["Placeholder detail text",
-                "Multiple blocks of text!"
+                "Multiple blocks of text!","Could always add more and more.",
+                "It loops through it all."
             ],
-            "image": ""
+            "images": [
+                "https://peprojects.dev/images/square.jpg"
+            ]
         },
         {
             "module": "goals-section",

@@ -118,6 +118,15 @@ landing-heading h1{
 	}
 }
 
+@media(prefers-color-scheme:  dark){
+
+	.landing-image img{
+		filter: brightness(100%);
+	}
+
+
+}
+
 /*	.arrows {
 		bottom: 50px;
 	}

@@ -25,14 +25,14 @@ footer nav ul{
 }
 
 footer nav ul li{
-	color: var(--page);
+	color: var(--white);
 	font-size: .9rem;
 }
 
 footer nav ul a{
 	padding: 10px 15px;
 	text-decoration: underline;
-	color: var(--page);
+	color: var(--white);
 }
 
 footer nav ul:last-of-type{
