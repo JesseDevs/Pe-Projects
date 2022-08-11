@@ -11,7 +11,7 @@
         <?php } ?>
 
         <?php foreach ($pageData['ad'] as $ad){ ?>
-            <a class="blog" href ='$ad["blog"]'><?= $ad["intro"]?></a>
+            <a class="blog" href ='<?= $ad["blog"]?>'><?= $ad["intro"]?></a>
         <?php } ?>
 
 
