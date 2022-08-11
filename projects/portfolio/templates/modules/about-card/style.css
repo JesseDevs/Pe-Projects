@@ -35,6 +35,18 @@ about-card p+ a{
 	color: var(--ink);
 }
 
+.about-image{
+	aspect-ratio: 5 /6;
+	max-width: 350px;
+}
+
+.about-image img{
+	filter: brightness(80%);
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
 @media(min-width: 900px){
 
 
@@ -53,6 +65,24 @@ about-card p+ a{
 	about-card text-content{
 		grid-column: 1 / span 2;
 
+	}
+
+	about-card .image-container{
+
+		position: relative;
+		grid-column: 3 /span 2;
+
+	}
+
+	about-card .about-image:first-of-type{
+		position: absolute;
+		top: -78px;
+	}
+
+	about-card .about-image:nth-of-type(2){
+		position: absolute;
+		right: 0;
+		bottom: 0;
 	}
 
 
