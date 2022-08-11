@@ -59,5 +59,5 @@ if (isset($_POST['submitted'])) {
 <results class='feedback'>
     <h3> The Results</h3>
     <p><?= $template ?></p>
-    <a href="?page=e4p">&#8592; E4P Home</a>
+    
 </results>

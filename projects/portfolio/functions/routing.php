@@ -10,7 +10,6 @@ if (isset($_GET['page'])) {
 
 }
 
-
 if ($page == 'home') {
     $json = file_get_contents('data/pages/home.json');
     $pageData = json_decode($json, true);
@@ -54,10 +53,16 @@ if ($page == 'form') {
     foreach ($formFile as $form) {
         if ($form['id'] == $_GET['id']) {
             $formData = $form;
+            echo $form['id'];
         }
     }
 }
 
+
+if ($page == 'style') {
+    $json = file_get_contents('data/pages/style-guide.json');
+    $pageData = json_decode($json, true);
+}
 
 
 

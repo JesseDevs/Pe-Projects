@@ -56,6 +56,6 @@ if (isset($_POST['submitted'])) {
     <h3> The Results</h3>
     <p> The ceiling of the room is: <?= $area ?></p>
     <p> You'll need: <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
-    <a href="?page=e4p">&#8592; E4P Home</a>
+    
 </results>
 

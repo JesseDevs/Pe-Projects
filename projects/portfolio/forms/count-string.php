@@ -52,6 +52,6 @@ if (isset($_POST['submitted'])) {
 
     <?php } ?>
 
-    <a href="?page=e4p">&#8592; E4P Home</a>
+    
 </results>
 

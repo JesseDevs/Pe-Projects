@@ -38,7 +38,7 @@ if (isset($_POST['submitted'])) {
     <h3> The Results</h3>
     <p><?= $template ?></p>
 
-    <a href="?page=e4p">&#8592; E4P Home</a>
+    
 
 </results>
 

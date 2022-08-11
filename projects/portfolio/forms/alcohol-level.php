@@ -109,6 +109,6 @@ $amountOfAlcohol = floatval($numberDrinks) * 12; //by volume of drinks consumed
                 <p><?= $bac ?></p>
                 <p><?= $template ?></p>
 
-                <a href="?page=e4p">&#8592; E4P Home</a>
+                
             </results>
 

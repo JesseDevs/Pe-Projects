@@ -62,7 +62,7 @@ if (isset($_POST['submitted'])) {
         <li><?= $num1 ?> / <?= $num2 ?> = <?= $divide ?></li>
     </ul>
 
-    <a href="?page=e4p">&#8592; E4P Home</a>
+    
 
 </results>
 

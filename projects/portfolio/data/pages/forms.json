@@ -11,6 +11,8 @@
         },
         {
             "module": "form-grid",
+            "heading" : "Exercise Grid",
+            "intro" : "Check it out!",
             "items" : [
                 { 
                     "id" : 1,

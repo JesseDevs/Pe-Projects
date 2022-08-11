@@ -123,5 +123,5 @@ if (isset($_POST['submitted'])) {
         <p>The total is: <?= $total ?> </p>
     </strong>
 
-    <a href="?page=e4p">&#8592; E4P Home</a>
+ 
 </results>

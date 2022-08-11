@@ -8,11 +8,15 @@ form-box{
 	display: block;
 }
 
+form-grid .intro{
+	margin-bottom: var(--tight-space);
+}
+
 
 form-grid ul{
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: var(--simple-space);
+	column-gap: var(--simple-space);
 }
 
 form-grid ul li{
@@ -33,7 +37,7 @@ form-grid a{
 	form-grid ul{
 
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4, 15%);
+		grid-template-rows: repeat(5, 1fr);
 
 	}
 
