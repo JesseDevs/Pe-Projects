@@ -3,3 +3,8 @@
 @import 'variables.css';
 @import 'typography.css';
 @import 'modules.css';
+
+
+.intro {
+	margin-bottom: var(--tight-space);
+}

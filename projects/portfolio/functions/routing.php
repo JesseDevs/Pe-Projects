@@ -55,6 +55,9 @@ if ($page == 'form') {
             $formThing = $form;
         }
     }
+
+    $json = file_get_contents('data/pages/form.json');
+    $pageData = json_decode($json, true);
 }
 
 
