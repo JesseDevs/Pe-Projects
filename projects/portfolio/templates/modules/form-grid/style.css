@@ -23,7 +23,6 @@ form-grid a{
 	background-color: var(--highlightOP);
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: .06em;
 	color: var(--black);
 }
 

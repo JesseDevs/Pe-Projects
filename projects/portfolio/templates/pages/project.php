@@ -1,5 +1,16 @@
 <main class="page-content <?= $page ?>">
-   <!-- detail page -->
+  <?php foreach ($pageData['sections'] as $section) { ?>
 
-   <h1><?= $projectData['title'] ?></h1>
+    <section class="<?= $section["module"]?>">
+      <inner-column>
+
+        <?php
+        include('templates/modules/' . $section["module"] . '/template.php');
+        ?>
+
+      </inner-column>
+    </section>
+  <?php } ?>
+
+
 </main>

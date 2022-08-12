@@ -1,4 +1,9 @@
 
+<?php
+$projectLink = $project['links'][0]['link']  ?? $project['direct-link'];
+?>
+
+
 <project-card>
 
 	<span><?= strtoupper($project['intro']) ?></span>
@@ -17,6 +22,6 @@
 		</picture>
 	</a>
 	<p class="project-detail"><?= $project['detail'] ?></p>
-	<a class="projects-action" href='<?= $project['links'][0]['link'] ?>'><?= $project['links'][0]['title'] ?></a>
+	<a class="projects-action" href='<?= $projectLink ?>'><?= $project['links'][0]['title'] ?></a>
 
 </project-card>

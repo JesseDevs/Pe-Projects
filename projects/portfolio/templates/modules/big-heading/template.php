@@ -1,5 +1,5 @@
 <?php
-$heading = $section['heading'] ?? ucfirst($page);
+$heading = $section['heading'] ?? $projectData['title'];
 ?>
 
 <big-heading>
