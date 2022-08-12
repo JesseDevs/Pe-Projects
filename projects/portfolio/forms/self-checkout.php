@@ -69,8 +69,6 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <h2>Self-Checkout</h2>
-
     <field>
         <div class="container">
             <label for="">How many <em>Apples</em> are you taking?</label>
@@ -113,7 +111,7 @@ if (isset($_POST['submitted'])) {
 </form>
 
 <results class='feedback'>
-    <h3> The Results</h3>
+    <h3 class="chant-voice"> The Results</h3>
     <p>The subtotal of Apples is: <?= $totalOne ?></p>
     <p>The subtotal of Oranges is: <?= $totalTwo ?></p>
     <p>The subtotal of Bananas is: <?= $totalThree ?></p>
@@ -123,5 +121,5 @@ if (isset($_POST['submitted'])) {
         <p>The total is: <?= $total ?> </p>
     </strong>
 
- 
+
 </results>

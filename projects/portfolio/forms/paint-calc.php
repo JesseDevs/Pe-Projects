@@ -30,9 +30,6 @@ if (isset($_POST['submitted'])) {
 
 
 <form action="" method="post">
-
-    <h2>How many gallons of paint do you need to cover the entire ceiling?</h2>
-
     <field>
 
         <label for="">What is the length of the ceiling?</label>
@@ -53,7 +50,7 @@ if (isset($_POST['submitted'])) {
 </form>
 
 <results class='feedback'>
-    <h3> The Results</h3>
+    <h3 class="chant-voice"> The Results</h3>
     <p> The ceiling of the room is: <?= $area ?></p>
     <p> You'll need: <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
     

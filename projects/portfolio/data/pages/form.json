@@ -1,0 +1,80 @@
+
+{
+	"id": "Exercises for Progammers",
+	"title": "Forms",
+	"intro": "Testing user input forms",
+	"sections": [
+		{
+			"module": "form-box",
+			"heading": "Projects",
+			"intro": "I made these.",
+			"items": [
+				{
+					"title": "Thing number 1"
+				}
+			]
+		},
+		{
+			"module": "form-grid",
+			"heading" : "Exercise Grid",
+			"intro" : "Check it out!",
+			"items" : [
+				{ 
+					"id" : 1,
+					"title" : "area",
+					"file-name" : "area",
+					"intro" : "Calculate the area of the room?"
+				},
+				{ 
+					"id" : 2,
+					"title" : "count-string",
+					"file-name" : "count-string",
+					"intro" : "Count the characters in your word."
+
+				},
+				{ 
+					"id" : 3,
+					"title" : "driving-age",
+					"file-name" : "driving-age",
+					"intro" : "Can you drive??!"
+				},
+				{ 
+					"id" : 4,
+					"title" : "interest",
+					"file-name" : "interest",
+					"intro" : "Simple Interest Computing"
+				},
+				{ 
+					"id" : 5,
+					"title" : "paint",
+					"file-name" : "paint-calc",
+					"intro" : "How many gallons of paint do you need to cover the entire ceiling?"
+				},
+				{ 
+					"id" : 6,
+					"title" : "password",
+					"file-name" : "password-check",
+					"intro" : "Login Check!"
+				},
+				{ 
+					"id" : 7,
+					"title" : "checkout",
+					"file-name" : "self-checkout",
+					"intro" : "You can check yourself out here!"
+				},
+				{ 
+					"id" : 8,
+					"title" : "simple-math",
+					"file-name" : "simple-math",
+					"intro" : "Lets do some simple math?"
+				},
+				{ 
+					"id" : 9,
+					"title" : "tax-calc",
+					"file-name" : "tax-calculator",
+					"intro" : "Calculate the amount of tax!"
+				}
+			]
+		}
+	]
+}

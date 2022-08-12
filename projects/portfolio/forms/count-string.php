@@ -20,8 +20,6 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <h2>Going to count the characters in your word.</h2>
-
     <field>
 
         <label for="">Type a word? Or phrase?</label>
@@ -40,12 +38,12 @@ if (isset($_POST['submitted'])) {
 
         $results = "Type something"; ?>
 
-        <article class='feedback'>
+        <article>
             <p><?= $results ?></p>
         </article>
 
     <?php } else { ?>
-        <h3> The Results</h3>
+        <h3 class="chant-voice"> The Results</h3>
         <p><?= $typed ?></p>
 
         <p><strong><?= $template ?></strong> </p>

@@ -39,8 +39,6 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <h2>Simple Interest Computing</h2>
-
 
     <field>
         <label for="">What's the principal investment?</label>
@@ -68,10 +66,8 @@ if (isset($_POST['submitted'])) {
 </form>
 
 <results class='feedback'>
-    <h3> The Results</h3>
+    <h3 class="chant-voice"> The Results</h3>
     <p><?= $template ?>
 </p>
-
-<a href="?page=e4p">&#8592; E4P Home</a>
 
 </results>

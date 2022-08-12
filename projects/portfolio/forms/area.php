@@ -42,34 +42,30 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <h2>Calculate the area of the room?</h2>
+    <field>
+        <label for="">What is the length of the room?</label>
+        <input type="number" name='length' value='<?= $length ?>' required min='0'>
+    </field>
 
-    <article class="field">
-        <div class="container">
-            <label for="">What is the length of the room?</label>
-            <input type="number" name='length' value='<?= $length ?>' required min='0'>
-        </div>
-    </article>
+    <field>
 
-    <article class="field">
-        <div class="container">
-            <label for="">What is the width of the room?</label>
-            <input type="number" name='width' value='<?= $width ?>' required min='0'>
-        </div>
-    </article>
+        <label for="">What is the width of the room?</label>
+        <input type="number" name='width' value='<?= $width ?>' required min='0'>
+
+    </field>
 
     <button type="submit" name='submitted'>Calculate</button>
 
 
 </form>
 
-<results class='feedback'>
-    <h3> The Results</h3>
+<div class='feedback'>
+    <h3 class="chant-voice"> The Results</h3>
     <p> <?= $templateOne ?></p>
     <p> <?= $templateTwo ?> </p>
 
     <p><strong> <?= $final ?></strong> </p>
 
- 
-</results>
+
+</div>
 

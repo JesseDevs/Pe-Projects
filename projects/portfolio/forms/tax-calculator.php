@@ -40,8 +40,6 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <h2>Tax Calculator</h2>
-
     <field>
 
         <label for="">What is your order amount?</label>
@@ -69,8 +67,8 @@ if (isset($_POST['submitted'])) {
 
 </form>
 
-<results class='feedback'>
-    <h3> The Results</h3>
+<results class='feedback chant-voice'>
+    <h3 class="chant-voice"> The Results</h3>
     <p>The total will be: <?= $total ?></p>
     
 </results>

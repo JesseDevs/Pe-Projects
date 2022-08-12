@@ -20,8 +20,6 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <h2>Can you drive??!</h2>
-
     <field>
 
         <label for="">What's your age?</label>
@@ -35,7 +33,7 @@ if (isset($_POST['submitted'])) {
 </form>
 
 <results class='feedback'>
-    <h3> The Results</h3>
+    <h3 class="chant-voice"> The Results</h3>
     <p><?= $template ?></p>
 
     

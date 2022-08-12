@@ -32,29 +32,26 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <h2>Lets do some simple math?</h2>
+    <field>
 
-    <article class="field">
-        <div class="container">
-            <label for="">Number 1?</label>
-            <input type="number" name='num1' value='<?= $length ?>' required min='0'>
-        </div>
-    </article>
+        <label for="">Number 1?</label>
+        <input type="number" name='num1' value='<?= $length ?>' required min='0'>
 
-    <article class="field">
-        <div class="container">
-            <label for="">Number 2?</label>
-            <input type="number" name='num2' value='<?= $width ?>' required min='0'>
-        </div>
-    </article>
+    </field>
+
+    <field>
+        <label for="">Number 2?</label>
+        <input type="number" name='num2' value='<?= $width ?>' required min='0'>
+
+    </field>
 
     <button type="submit" name='submitted' formtarget="_blank">Calculate</button>
 
 
 </form>
 
-<results class='feedback'>
-    <h3> The Results</h3>
+<results class=' feedback'>
+    <h3 class="chant-voice"> The Results</h3>
     <ul>
         <li><?= $num1 ?> + <?= $num2 ?> = <?= $add ?></li>
         <li><?= $num1 ?> - <?= $num2 ?> = <?= $subtract ?></li>

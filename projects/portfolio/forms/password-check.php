@@ -31,8 +31,6 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post">
 
-    <h2>Login Check!</h2>
-
     <field>
 
         <label for="">Enter username:</label>
@@ -57,7 +55,7 @@ if (isset($_POST['submitted'])) {
 </form>
 
 <results class='feedback'>
-    <h3> The Results</h3>
+    <h3 class="chant-voice">  The Results</h3>
     <p><?= $template ?></p>
     
 </results>

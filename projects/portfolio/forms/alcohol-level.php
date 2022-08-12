@@ -105,7 +105,7 @@ $amountOfAlcohol = floatval($numberDrinks) * 12; //by volume of drinks consumed
             </form>
 
             <results class='feedback'>
-                <h3> The Results</h3>
+                <h3 class="chant-voice"> The Results</h3>
                 <p><?= $bac ?></p>
                 <p><?= $template ?></p>
 
