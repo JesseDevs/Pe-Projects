@@ -35,6 +35,9 @@ if ($page == 'project') {
             $projectData = $project;
         }
     }
+
+    $jsonPage = file_get_contents('data/pages/project.json');
+    $pageData = json_decode($jsonPage, true);
 }
 
 if ($page == 'writing') {

@@ -1,0 +1,22 @@
+{
+    "id": "detail",
+    "title": "Project",
+    "intro": "Detail page for project",
+    "sections": [
+        {
+            "module": "big-heading",
+            "intro": "Database backed by JSON data"
+        },
+        {
+            "module" : "project-page",
+            "description" : "yes"
+        },
+        {
+            "module": "project-section",
+            "heading": "some favorites",
+            "intro": "I'd recommend checking them out.",
+            "details": "",
+            "image": ""
+        }
+    ]
+}

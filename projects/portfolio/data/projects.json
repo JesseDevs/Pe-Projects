@@ -18,7 +18,10 @@
             {
                 "title":"Live",
                 "link":"https://peprojects.dev/alpha-4/jesse/projects/php-crud/"
-            }]
+            }],
+        "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/php-crud",
+        "images" : ["images/projects/fighters/fighter-landing.jpg","images/projects/fighters/create-fighter.jpg","images/projects/fighters/fighter-menu.jpg","images/projects/fighters/detail.jpg"],
+        "code" : "images/projects/fighters/list-code.jpg"
     },
     {
         "id": 2,
@@ -29,8 +32,7 @@
         "skills": ["html", "css", "php"],
         "links": [
             {
-                "title": "Details",
-                "link": "?page=project&id=2"
+                "title": "Details"
             },
             {
                 "title":"GitHub",
@@ -39,7 +41,10 @@
             {
                 "title":"Live",
                 "link":"https://peprojects.dev/alpha-4/jesse/projects/theme-challenge/"
-            }]
+            }],       
+        "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/theme-challenge",
+        "images" : ["images/projects/theme/theme-landing.jpg","images/projects/theme/grid.jpg","images/projects/theme/cta.jpg","images/projects/theme/footer.jpg"],
+        "code" : "images/projects/theme/code.jpg"
     },
     {
         "id": 3,
@@ -50,8 +55,7 @@
         "skills": ["html", "css", "php"],
         "links": [
             {
-                "title": "Details",
-                "link": "?page=project&id=3"
+                "title": "Details"
             },
             {
                 "title":"GitHub",
@@ -60,7 +64,10 @@
             {
                 "title":"Live",
                 "link":"https://peprojects.dev/alpha-4/jesse/projects/legends/"
-            }]
+            }],      
+        "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/legends",
+        "images" : ["images/projects/legends/card.jpg","images/projects/legends/mid-size.jpg","images/projects/legends/selected-card.jpg"],
+        "code" : "images/projects/legends/code.jpg"
     },
     {
         "id": 4,
@@ -71,8 +78,7 @@
         "skills": ["html", "css", "php"],
         "links": [
             {
-                "title": "Details",
-                "link": "?page=project&id=4"
+                "title": "Details"
             },
             {
                 "title":"GitHub",
@@ -81,7 +87,10 @@
             {
                 "title":"Live",
                 "link":"https://peprojects.dev/alpha-4/jesse/projects/layouts/"
-            }]
+            }],
+        "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/layouts",
+        "images" : ["images/projects/garden/grid.jpg","images/projects/garden/mon.jpg","images/projects/garden/wed.jpg","images/projects/garden/tues.jpg"],
+        "code" : "images/projects/garden/code.jpg"
     }
 
 ]
