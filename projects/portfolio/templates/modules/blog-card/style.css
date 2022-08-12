@@ -24,9 +24,6 @@ blog-card picture img{
   filter: brightness(40%) grayscale(50%);
 }
 
-blog-card .intro{
-}
-
 .podcast{
   color: var(--accentone);
 }

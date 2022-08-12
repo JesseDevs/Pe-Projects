@@ -4,7 +4,7 @@ project-section{
 }
 
 project-section .intro{
-	margin-bottom: var(--tight-space);
+	margin: 0;
 }
 
 .home project-card:nth-of-type(4){

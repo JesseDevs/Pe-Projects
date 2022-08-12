@@ -42,8 +42,6 @@ project-card {
 project-card span {
 	font-size: 4rem;
 	font-weight: 600;
-	/*	transform: rotate(-90deg);*/
-
 	position: absolute;
 	max-width: fit-content;
 
@@ -65,7 +63,7 @@ project-card a+ p{
 	display: flex;
 	text-transform: uppercase;
 	gap: 5px;
-	padding-bottom: var(--general-space);
+	padding-bottom: var(--simple-small-space);
 	color: var(--darkgray);
 }
 

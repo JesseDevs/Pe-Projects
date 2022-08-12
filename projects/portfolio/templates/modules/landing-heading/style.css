@@ -20,7 +20,6 @@ landing-heading h1{
 	position: relative;
 	max-width: 500px;
 
-	margin-top: var(--general-space);
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -43,7 +42,7 @@ landing-heading h1{
 }
 
 .landing-image img{
-	filter: brightness(50%);
+	filter: brightness(50%) grayscale(20%);
 	z-index: 1;
 
 }

@@ -4,18 +4,11 @@ about-card{
 	color: var(--ink);
 }
 
-
-about-card .intro{
-	margin-bottom: var(--tight-space);
-	padding-bottom: 0;
-}
-
-about-card p{
+about-card text-content p{
 	padding-bottom: 25px;
 }
 
 about-card p+ a{
-	padding-bottom: 25px;
 	text-decoration: underline;
 	color: var(--highlight);
 	font-weight: 500;
@@ -26,8 +19,8 @@ about-card .image-container{
 	position: relative;
 }
 
-about-card .about-image:nth-of-type(2){
-	position: absolute;
+.about about-card .about-image:nth-of-type(2){
+	margin: 0 auto;
 	right: 0;
 	bottom: -20px;
 }
@@ -58,9 +51,14 @@ about-card .about-image:nth-of-type(2){
 	height: 100%;
 }
 
-.home about-card .about-image:first-of-type{
+about-card .image-container{
+	padding-top:  var(--tight-space);
+}
+
+about-card .about-image:first-of-type{
 	display: none;
 }
+
 
 .home about-card .image-container{
 	display: none;
@@ -99,11 +97,13 @@ about-card .about-image:nth-of-type(2){
 	}
 
 	about-card .about-image:first-of-type{
+		display: block;
 		position: absolute;
 		top: -7%;
 	}
 
 	about-card .about-image:nth-of-type(2){
+		position: absolute;
 		right: 0;
 		bottom: 0;
 	}
@@ -114,13 +114,6 @@ about-card .about-image:nth-of-type(2){
 
 	.home about-card .image-container{
 		display: block;
-		justify-self: center;
-	}
-
-	.home about-card .about-image:nth-of-type(2){
-		position: static;
-
-
 	}
 }
 

@@ -180,7 +180,7 @@
 	margin: 0;
 	padding: 0.5em 0;
 	width: 100%;
-	color: var(--page);
+	color: var(--white);
 	background-color: #222;
 }
 .menu > absolute:not(:last-child) {
