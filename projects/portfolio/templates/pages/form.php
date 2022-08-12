@@ -12,9 +12,9 @@ $formData = json_decode($json, true);
 
          <form-box>
 
-            <h2 class="attention-voice"><?= $form['title']?></h2>
+            <h2 class="attention-voice"><?= $formThing['title']?></h2>
             <div>
-               <?php include("forms/" . $form['file-name'] . ".php")?>
+               <?php include("forms/" . $formThing['file-name'] . ".php")?>
             </div>
          </form-box>
 

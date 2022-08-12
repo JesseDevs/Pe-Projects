@@ -52,8 +52,7 @@ if ($page == 'form') {
     $formFile = json_decode($json, true);
     foreach ($formFile as $form) {
         if ($form['id'] == $_GET['id']) {
-            $formData = $form;
-            echo $form['id'];
+            $formThing = $form;
         }
     }
 }
