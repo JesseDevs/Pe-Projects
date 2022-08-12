@@ -11,7 +11,6 @@ html {
 .roar-voice{
 	font-size: clamp(2.9rem, 11vw, 8rem);
 	font-weight: 700;
-	letter-spacing: .01em;
 
 	text-transform: uppercase;
 	transition: font-size .3s;
@@ -20,7 +19,6 @@ html {
 .yell-voice{
 	font-size: clamp(2.4rem, 8vw, 3.8rem);
 	font-weight: 600;
-	letter-spacing: .01em;
 	text-transform: uppercase;
 }
 
