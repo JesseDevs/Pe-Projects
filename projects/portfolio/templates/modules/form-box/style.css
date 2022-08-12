@@ -1,0 +1,48 @@
+.feedback{
+	margin-top: var(--tight-space);
+}
+
+results{
+	display: block;
+	width: 100%;
+}
+
+results .chant-voice{
+	margin-bottom: var(--tight-space);
+}
+
+form-box{
+	display: grid;
+	column-gap:  var(--simple-space);
+
+}
+
+form-box label{
+	padding-bottom: var(--simple-small-space);
+}
+
+form-box field{
+	margin-bottom: var(--tight-space);
+}
+
+
+@media(min-width:  600px){
+	form-box{
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	form-box text-content{
+		grid-column: 1 /span 2;
+	}
+
+	form-box form{
+		grid-column: 1 /span 2;
+	}
+
+	form-box .feedback{
+		grid-column: 3 / span 2;
+		justify-self: center;
+		margin: 0;
+		text-align: center;
+	}
+}
