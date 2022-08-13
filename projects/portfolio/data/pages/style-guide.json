@@ -117,6 +117,18 @@
                     "title": "Random Link",
                     "link": "https://www.youtube.com/results?search_query=evo+moment+37"
                 }]
+        },
+        {
+            "module": "contact-form",
+            "heading": "Contact Me",
+            "intro": "Lets talk about code? Maybe some life discussion? Or some of the latest music out?",
+            "labelOne" : "NAME",
+            "holderOne": "Jesse",
+            "labelTwo" : "EMAIL",
+            "labelThree" : "MESSAGE",
+            "holderTwo": "Something to say..",
+
+            "button" : "CONNECT"
         }
 
 
