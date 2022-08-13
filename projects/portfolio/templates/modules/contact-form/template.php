@@ -1,36 +1,28 @@
 
-<section class='connect'>
+<contact-form>
+    <h2 class='yell-voice'><?= $section['heading']?> </h2>
+    <p class="intro"><?= $section['intro']?></p>
 
-    <inner-column> 
-        <contact-form>
-            <h2 class='yell-voice'>Contact Me </h2>
-            <p class="intro">Lets talk about code? Maybe some life discussion? Or some of the latest music out?</p>
-
-            <form>   
-                <field>    
-                   <label for="">NAME</label>
-                   <input type="text" placeholder="Jesse">
-               </field>
+    <form>   
+        <field>    
+           <label for=""><?= $section['labelOne']?></label>
+           <input type="text" placeholder="<?= $section['holderOne']?>">
+     </field>
 
 
-               <field>    
-                   <label for="">EMAIL</label>
-                   <input type="email">
-               </field>
+     <field>    
+       <label for=""><?= $section['labelTwo']?></label>
+         <input type="email">
+     </field>
 
 
-               <field class='message'>    
-                   <label for="">MESSAGE</label>
-                   <input type="text" placeholder="Something to say..">
-               </field>
+     <field class='message'>    
+       <label for=""><?= $section['labelThree']?></label>
+       <input type="text" placeholder="<?= $section['holderTwo']?>">
+     </field>
 
 
-               <button>CONNECT</button>
-           </form>
+     <button><?= $section['button']?></button>
+ </form>
+</contact-form>
 
-
-
-       </contact-form>
-   </inner-column>
-
-</section>
