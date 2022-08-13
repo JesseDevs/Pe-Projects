@@ -1,4 +1,26 @@
 goals-section{
 	width: 100%;
 	display: block;
+	display: block;
+}
+
+
+goals-section h4{
+	margin-bottom: var(--tight-space);
+}
+
+
+@media(min-width: 800px){
+	
+	goals-section{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: var(--simple-space);
+	}
+
+	goals-section text-content{
+		grid-column: span 2;
+	}
+
+	
 }
