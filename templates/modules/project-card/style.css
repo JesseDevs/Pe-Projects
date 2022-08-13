@@ -44,7 +44,7 @@ project-card span {
 	position: absolute;
 	max-width: fit-content;
 
-	top: 0;
+	top: 0px;
 	right: 0;
 	color: var(--accentone);
 	filter: opacity(30%) blur(.9px);
