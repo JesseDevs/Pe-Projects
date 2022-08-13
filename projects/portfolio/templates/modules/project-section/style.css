@@ -3,10 +3,6 @@ project-section{
 	display: block;
 }
 
-project-section .intro{
-	margin: 0;
-}
-
 .home project-card:nth-of-type(4){
 	display: none;
 }

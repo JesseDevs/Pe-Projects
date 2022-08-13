@@ -5,37 +5,48 @@ project-page{
 
 project-page .overflow-scroll{
 
+	overflow-y: scroll; /* this could be x */
+	max-height: 500px; /* this could be height */
+	padding: 1rem;
+	box-shadow: 0px 5px 15px var(--gray);
+	scroll-snap-type: x mandatory;
 
-	overflow-x: scroll; /* this could be x */
-	max-height: 300px; /* this could be height */
-
-	box-shadow: 0px 4px 10px rgb(50 54 57);
+	margin-bottom: var(--general-space);
 }
 
 project-page .overflow-scroll ul{
 	display: flex;
-	scroll-snap-type: x mandatory;
-	overflow-x: scroll;
+	align-items: center;
+	gap:  var(--simple-space);
 }
 
 project-page .overflow-scroll li{
-
-	flex-basis: 50%;
+	scroll-snap-align: start;
+	min-width: 240px;
+	padding-left: var(--simple-small-space);
 }
 
+project-page .overflow-scroll li:last-of-type{
+	scroll-snap-align: start;
+	min-width: 240px;
+	padding-right: var(--simple-small-space);
+}
+/*
 project-page .overflow-scroll picture{
 	aspect-ratio: 4/3;
-}
+
+}*/
 
 project-page .overflow-scroll img{
-	object-fit: cover;
+	object-fit: contain;
+	display: block;
 
 	width: 100%;
 	height: 100%;
 }
 
 .code{
-	max-width: 400px;
+	max-width: 300px;
 }
 
 
