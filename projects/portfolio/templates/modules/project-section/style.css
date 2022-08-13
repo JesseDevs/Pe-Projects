@@ -12,7 +12,7 @@ project-section{
 	project-section{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: var(--simple-space);
+		column-gap: var(--simple-big-space);
 		justify-content: center;
 	}
 

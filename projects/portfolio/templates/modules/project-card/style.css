@@ -82,7 +82,7 @@ project-card a+ p{
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto auto 1fr auto;
 
-		column-gap: var(--simple-space);
+		column-gap: var(--simple-big-space);
 		position: relative;
 	}
 

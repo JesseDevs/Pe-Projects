@@ -10,7 +10,7 @@ form-box{
 
 form-grid ul{
 	display: grid;
-	gap: var(--simple-space);
+	gap: var(--simple-big-space);
 }
 
 form-grid ul li{

@@ -15,12 +15,19 @@ goals-section h4{
 	goals-section{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		column-gap: var(--simple-space);
+		column-gap: var(--simple-big-space);
 	}
 
-	goals-section text-content{
+	goals-section >text-content{
+
 		grid-column: span 2;
 	}
 
-	
+	goal-card{
+		grid-column: 1 / span 2;
+	}
+
+	goal-card:nth-of-type(even){
+		grid-column: 3 /span 2;
+	}
 }

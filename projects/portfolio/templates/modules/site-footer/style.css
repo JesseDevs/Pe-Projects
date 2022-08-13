@@ -14,7 +14,7 @@ footer nav{
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	row-gap: var(--simple-space);
+	row-gap: var(--simple-big-space);
 }
 
 

@@ -45,7 +45,7 @@ html {
 @media( min-width:  1500px){
 
 	html{
-		--general-space:   2.7vh;
+		--general-space:   3vh;
 		--tight-space:  1.7vh;
 	}
 }

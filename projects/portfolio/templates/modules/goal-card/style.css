@@ -27,3 +27,9 @@ goal-card span {
 	filter: opacity(50%) blur(.5px);
 	z-index: -10;
 }
+
+@media(min-width: 800px){
+	goal-card li{
+		max-width: 40ch;
+	}
+}

@@ -52,7 +52,7 @@ landing-heading h1{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 20% 1fr ;
-		column-gap: var(--simple-space);
+		column-gap: var(--simple-big-space);
 
 		position: relative;
 	}
