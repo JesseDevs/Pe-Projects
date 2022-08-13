@@ -40,6 +40,7 @@ if ($page == 'project') {
     $pageData = json_decode($jsonPage, true);
 }
 
+
 if ($page == 'writing') {
     $json = file_get_contents('data/pages/writing.json');
     $pageData = json_decode($json, true);
