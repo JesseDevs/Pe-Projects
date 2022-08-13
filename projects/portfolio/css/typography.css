@@ -35,8 +35,8 @@ html {
 	font-size: clamp(1.5rem, 7vw, 2rem);
 }
 
-.stict-voice{
-	font-size: clamp(1.25rem, 5vw, 1.6rem);
+.strict-voice{
+	font-size: clamp(1.2rem, 3.5vw, 1.6rem);
 }
 
 .calm-voice, p, li, a {

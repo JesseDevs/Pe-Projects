@@ -63,7 +63,7 @@ project-card a+ p{
 	text-transform: uppercase;
 	gap: 5px;
 	padding-bottom: var(--simple-small-space);
-	color: var(--darkgray);
+	color: var(--black);
 }
 
 .skills p:after {
