@@ -1,5 +1,5 @@
 <goal-card>
-	<span><?= ucfirst($goals['title']);?></span>
+	<span class="title"><?= ucfirst($goals['title']);?></span>
 
 	<ul>
 
