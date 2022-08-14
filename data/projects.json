@@ -4,7 +4,7 @@
         "title": "Fighters: CRUD",
         "intro": "crud",
         "detail": "This project uses fighters from the video game Street Fighter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
-        "thumbnail": "https://peprojects.dev/alpha-4/jesse/projects/portfolio/images/projects/fighters/fighters.jpg",
+        "thumbnail": "images/projects/fighters/fighters.jpg",
         "skills": ["html", "css", "php"],
         "links": [
             {
@@ -28,7 +28,7 @@
         "title": "Theme Challenge",
         "intro": "theme",
         "detail": "A project taking a templated out structure and crafting it to match an industry standard website. My focus was based on sports news outlets.",
-        "thumbnail": "https://peprojects.dev/alpha-4/jesse/projects/portfolio/images/projects/theme/theme.jpg",
+        "thumbnail": "images/projects/theme/theme.jpg",
         "skills": ["html", "css", "php"],
         "links": [
             {
@@ -51,7 +51,7 @@
         "title": "Legends",
         "intro": "php",
         "detail": "This project takes the concepts of PHP and begins to use it in a more creative direction. The key points: looping through data, specifc data styling, and responsive layout for file path.",
-        "thumbnail": "./images/projects/legends/legends.jpg",
+        "thumbnail": "images/projects/legends/legends.jpg",
         "skills": ["html", "css", "php"],
         "links": [
             {
