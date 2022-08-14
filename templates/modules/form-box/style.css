@@ -22,7 +22,7 @@ form-box label{
 }
 
 form-box field{
-	margin-bottom: var(--tight-space);
+	margin-bottom: var(--general-space);
 }
 
 

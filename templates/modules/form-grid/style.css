@@ -18,7 +18,7 @@ form-grid ul li{
 }
 
 form-grid a{
-	padding: var(--simple-space) 10px;
+	padding: var(--simple-space) var(--simple-big-space);
 	border: var(--thin) solid var(--highlight);
 	background-color: var(--highlightOP);
 	text-align: center;

@@ -29,7 +29,7 @@ project-card {
 }
 
 .projects-action{
-	padding: var(--simple-space) 10px;
+	padding: var(--simple-space) var(--simple-big-space);
 	border: var(--thin) solid var(--highlight);
 	background-color: var(--highlightOP);
 	margin-top: var(--simple-space);
@@ -120,6 +120,11 @@ project-card a+ p{
 	}
 
 
+	project-card .project-thumbnail:first-of-type{
+		aspect-ratio: 21/10;
+	}
+
+
 }
 
 @media (min-width: 900px){
@@ -131,6 +136,10 @@ project-card a+ p{
 
 	project-card:not(:nth-of-type(3n+1)) .project-thumbnail{
 		aspect-ratio:  2/1;
+	}
+
+	project-card:not(:nth-of-type(3n+1)) .projects-action{
+		grid-column: span 2;
 	}
 
 	project-card{
