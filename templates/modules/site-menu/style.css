@@ -58,6 +58,7 @@ g g{
 .main-menu ul{
 	display: flex;
 	flex-direction: row;
+	gap:  var(--simple-small-space);
 	justify-content: flex-end;
 
 }
