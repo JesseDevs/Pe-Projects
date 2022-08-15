@@ -10,9 +10,34 @@
 .site-header inner-column{
 	padding: 0 1rem;
 	display: flex;
-	justify-content: flex-end;
-	gap:  var(--simple-space);
+	gap:  var(--simple-small-space);
+	justify-content: space-between;
+	position: relative;
 }
+
+.site-header ul svg{
+	max-width: 50px;
+	position: absolute;
+	z-index: -1;
+	top: 2px;
+	left: 55px;
+
+	animation: rotateAnimation 2s linear infinite;
+}
+
+
+g rect{
+	fill: transparent;
+}
+
+g g{
+	stroke-width: var(--thin);
+	fill: var(	--cube-color);
+	stroke: var(--cube-line);
+
+}
+
+
 
 .burger{
 	display: flex;
@@ -26,13 +51,14 @@
 
 .main-menu{
 	display: none;
+	margin-left: auto;
 }
 
 .main-menu ul{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	column-gap: var(--simple-small-space);
+
 }
 
 .main-menu ul a{
@@ -215,7 +241,7 @@
 
 
 
-@media (min-width: 700px){
+@media (min-width: 800px){
 	.main-menu .mid-size{
 		display: block;
 	}
