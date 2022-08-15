@@ -1,5 +1,5 @@
 
-<contact-form>
+<contact-form id="contact">
   <h2 class='yell-voice'><?= $section['heading']?> </h2>
   <p class="intro"><?= $section['intro']?></p>
 

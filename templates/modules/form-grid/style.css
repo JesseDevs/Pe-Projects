@@ -18,12 +18,12 @@ form-grid ul li{
 }
 
 form-grid a{
-	padding: var(--simple-space) var(--simple-big-space);
+	padding: var(--simple-space);
 	border: var(--thin) solid var(--highlight);
-	background-color: var(--highlightOP);
+	background-color: var(--highlight);
 	text-align: center;
 	text-transform: uppercase;
-	color: var(--black);
+	color: var(--white);
 }
 
 

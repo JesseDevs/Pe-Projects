@@ -13,7 +13,7 @@ results .chant-voice{
 
 form-box{
 	display: grid;
-	column-gap:  var(--simple-space);
+	column-gap:  var(--simple-big-space);
 
 }
 

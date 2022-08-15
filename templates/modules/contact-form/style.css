@@ -41,13 +41,14 @@ form button{
 }
 
 button{
-	background-color: var(--gray);
-	padding: var(--simple-space) var(--simple-big-space);
 	outline: none;
-	border: none;
-	color: var(--black);
+	padding: var(--simple-space) var(--simple-big-space);
 	border: var(--thin) solid var(--highlight);
-	background-color: var(--highlightOP);
+	background-color: var(--highlight);
+	margin-top: var(--simple-space);
+	text-align: center;
+	color: var(--white);
+	text-transform: uppercase;
 	cursor: pointer;
 }
 
