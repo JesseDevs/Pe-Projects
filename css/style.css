@@ -13,3 +13,26 @@
 	0%   { transform: translateY(0); }
 	100% { transform: translateY(-700px) rotate(600deg); }
 }
+
+project-card .projects-action:hover,
+button:hover,
+form-grid a:hover,
+blog-card a:hover,
+project-page .container a:hover{
+	background-color: var(--highlightOP);
+	transition: all .4s;
+	color: black;
+}
+
+p+a{
+	max-width: fit-content;
+}
+
+p a:hover,
+p+a:hover{
+	background-color: var(--highlight);
+	transition: all .4s;
+	color: white;
+}
+
+
