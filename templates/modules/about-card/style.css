@@ -2,7 +2,7 @@ about-card{
 	width: 100%;
 	display: block;
 	color: var(--ink);
-	padding: var(--tight-space) 0;
+	padding-bottom: var(--tight-space);
 }
 
 about-card text-content p{

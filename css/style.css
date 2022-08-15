@@ -35,4 +35,9 @@ p+a:hover{
 	color: white;
 }
 
+big-heading,
+landing-heading{
+	margin-top: var(--simple-big-space);
+}
+
 

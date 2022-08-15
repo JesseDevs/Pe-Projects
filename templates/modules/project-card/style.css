@@ -34,7 +34,7 @@ small-grid project-card .project-thumbnail{
 
 .projects-action{
 	padding: var(--simple-space) var(--simple-big-space);
-	border: var(--thin) solid var(--highlight);
+	border: var(--thick) solid var(--highlight);
 	background-color: var(--highlight);
 	margin-top: var(--simple-space);
 	text-align: center;

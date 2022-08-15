@@ -33,7 +33,7 @@ blog-card picture img{
   margin-top: var(--simple-space);
   margin-bottom: var(--simple-space);
   background-color: var(--gray);
-  border-left: var(--thin) solid var(--darkgray);
+  border-left: var(--thick) solid var(--darkgray);
 }
 
 .blockquote svg{
@@ -75,11 +75,11 @@ blog-card picture img{
 
 .blog-action{
   padding: var(--simple-space) 10px;
-  border: var(--thin) solid var(--highlight);
-  background-color: var(--highlightOP);
+  border: var(--thick) solid var(--highlight);
+  background-color: var(--highlight);
   text-align: center;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--white);
 }
 
 @media(min-width:400px){
@@ -100,12 +100,13 @@ blog-card picture img{
 
 }
 
-@media(min-width:550px){
+@media(min-width:650px){
 
   blog-card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: var(--simple-big-space);
+    row-gap: var(--simple-space);
     /*    grid-template-rows: auto auto 1fr auto;*/
   }
 
