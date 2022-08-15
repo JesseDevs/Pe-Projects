@@ -40,6 +40,7 @@ html {
 	--menu-bar:  #5a7aad;
 
 	--landing-text:#f4f4f4;;
+
 }
 
 @media( min-width:  1500px){
@@ -53,8 +54,6 @@ html {
 @media(prefers-color-scheme:  dark){
 	html{
 
-
-
 		--gray:  #474747;
 		--darkgray: rgb(196 193 190) ;
 		--landing-text: rgb(10 5 5) ;
@@ -67,6 +66,38 @@ html {
 
 		--pageCompliment: rgb(234 197 177) ;
 		--menu-bar: #9c693e;
+
+		--cube-color: rgb(232 207 194 /.5);
+		--cube-line: rgb(227 120 66 /.5);;
 	}
 
 }
+
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+
+@keyframes rotate{
+	0%{
+		transform:  rotate3d(0, 0, 0, 0);
+	}
+	100%{
+		transform: rotate3d(, 1, 0, 360deg);
+	}
+}
+
+
+@keyframes spin {
+	0% {
+		transform: rotateY(0deg) rotateX(0deg);
+		
+	}
+
+	100% {
+		transform: rotateY(360deg) rotateX(360deg);
+	}
+
+} 
+

@@ -2,8 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
 html {
 	font-size: 105.5%;
+}
+
+.logo{
+	font-family: 'Didact Gothic', sans-serif;
+	padding: var(--simple-space) var(--simple-small-space);
+	font-size: clamp(1.3rem, 2vw, 1.5rem);
+	line-height: 1;
+	font-weight: 800;
+	text-shadow: 0px .5px 2px black;
+
 }
 
 /* needs clamp for screen sizes :) */
