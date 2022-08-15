@@ -54,10 +54,6 @@ g g{
 	margin-left: auto;
 }
 
-.main-menu li.mid-size{
-	display: none;
-}
-
 
 .main-menu ul{
 	display: flex;
@@ -219,11 +215,11 @@ g g{
 }
 
 
-.main-menu .large-size{
+.large-size{
 	display: none;
 }
 
-.main-menu .larger-size{
+.larger-size{
 	display: none;
 }
 
@@ -248,11 +244,13 @@ g g{
 		display: none;
 	}
 
-	.main-menu li.mid-size{
+
+}
+
+@media(min-width: 650px){
+	.main-menu .large-size{
 		display: block;
 	}
-
-
 }
 
 

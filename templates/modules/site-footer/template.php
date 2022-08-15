@@ -8,6 +8,9 @@
                 <li><a href="?page=about#resume">Resume</a></li>
                 <li><a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a></li>
                 <li><a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a></li>
+                <li>
+                    <a  href="?page=style " class="<?php activePage("style") ?>">Guide</a>
+                </li>
             </ul>
 
             <ul>
