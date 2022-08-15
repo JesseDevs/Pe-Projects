@@ -22,6 +22,6 @@ $projectLink = $project['links'][0]['link']  ?? $project['direct-link'];
 		</picture>
 	</a>
 	<p class="project-detail"><?= $project['detail'] ?></p>
-	<a class="projects-action" href='<?= $projectLink ?>'><?= $project['links'][0]['title'] ?></a>
 
+	<a class="projects-action" href='<?= $projectLink ?>'><?= $project['links'][0]['title'] ?></a>
 </project-card>

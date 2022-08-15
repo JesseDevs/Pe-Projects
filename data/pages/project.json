@@ -12,9 +12,9 @@
             "description" : "yes"
         },
         {
-            "module": "project-section",
-            "heading": "some favorites",
-            "intro": "I'd recommend checking them out.",
+            "module": "small-grid",
+            "heading": "Other projects",
+            "intro": "Just a click away",
             "details": "",
             "image": ""
         }

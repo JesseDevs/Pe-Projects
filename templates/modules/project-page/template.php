@@ -1,23 +1,28 @@
+
+
 <project-page>
 	<div class="overflow-scroll">
 		<ul>
 			<?php foreach($projectData['images'] as $image){ ?>
 				<li>
-					<picture>
-						<img src="<?= $image?> " alt="detail-image">
-					</picture>
+
+					<img src="<?= $image?> " alt="detail-image">
+
 				</li>
 
 			<?php } ?>
 		</ul>
 	</div>
 
-	<picture><img src="" alt=""></picture>
+	<div class="container">
+		<div class="links">
+			<?php foreach($projectData['links'] as $link){?>
 
-	<picture class="code">
-		<img src="<?= $projectData['code']?> " alt="code-image">
-	</picture>
 
-	<p><?= $section['description']?></p>
+				<a href="<?=$link['link']?>"><?= $link['title']?></a>
+			<?php } ?>
+		</div>
+		<p><?= $section['description']?></p>
+	</div>
 
 </project-detail>
