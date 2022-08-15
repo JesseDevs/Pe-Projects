@@ -24,10 +24,6 @@ project-page .container a:hover{
 	color: black;
 }
 
-p+a{
-	max-width: fit-content;
-}
-
 p a:hover,
 p+a:hover{
 	background-color: var(--highlight);

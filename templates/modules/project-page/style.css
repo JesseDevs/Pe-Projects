@@ -51,16 +51,9 @@ project-page .overflow-scroll img{
 }
 
 
-project-page .container{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-}
-
-
 project-page .links{
 	display: flex;
-	column-gap: var(--simple-big-space);
-	justify-content: stretch;
+	justify-content: space-between;
 }
 
 project-page .links a:first-of-type{
