@@ -30,16 +30,20 @@ footer nav ul li{
 }
 
 footer nav ul a{
-	padding: 10px 15px;
-	text-decoration: underline;
+	padding: var(--simple-small-space) var(--simple-space);
+	
 	color: var(--white);
+}
+
+footer nav ul a:hover{
+	background-color: var(--highlight);
 }
 
 footer nav ul:last-of-type{
 	width: 100%;
 }
 
-@media(min-width: 500px){
+@media(min-width: 600px){
 
 	footer nav ul{
 		flex-direction: row;

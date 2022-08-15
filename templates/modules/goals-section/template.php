@@ -1,4 +1,4 @@
-<goals-section>
+<goals-section id="goals">
 	
 	<text-content>
 		<h3 class="attention-voice">Goals</h3>

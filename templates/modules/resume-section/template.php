@@ -1,4 +1,4 @@
-<resume-section>
+<resume-section id="resume">
   
  <text-content>
    <h3 class='attention-voice'><?= $section['heading']; ?></h3>
