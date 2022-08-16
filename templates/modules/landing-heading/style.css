@@ -1,6 +1,7 @@
 landing-heading{
 	text-align: center;
 	position: relative;
+	animation: upFadeIn 1.2s; !important
 }
 
 landing-heading h1{
@@ -108,6 +109,10 @@ landing-heading h1{
 @media (min-width: 800px){
 	landing-heading h1{
 		top: 15%;
+	}
+
+	.landing-image{
+		animation: rightFadeIn 2s;
 	}
 }
 

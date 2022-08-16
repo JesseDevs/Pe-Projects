@@ -28,8 +28,6 @@ z-index: 100;
 	margin-right: auto;
 	top: 0; left: 10px; bottom: 0; right: 0;
 
-
-
 	animation: rotateAnimation 3s linear infinite ;
 }
 

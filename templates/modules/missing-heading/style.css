@@ -75,6 +75,11 @@ missing-heading .cube-sphere{
 }
 
 @media(min-width: 800px){
+
+	missing-heading text-content{
+		animation: rightFadeIn 2s;
+	}
+
 	missing-heading nav {
 		grid-column: 3/ span 2;
 		order: 2;	
