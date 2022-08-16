@@ -39,7 +39,11 @@ html {
 	--pageCompliment: #E3EBF8;
 	--menu-bar:  #5a7aad;
 
-	--landing-text:#f4f4f4;;
+	--landing-text:#f4f4f4;
+
+
+	--cube-color: rgb(194 209 232/.5);
+	--cube-line: rgb(66 147 227 /.5);;
 
 }
 
