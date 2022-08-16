@@ -7,6 +7,12 @@
 
 .intro {
 	margin-bottom: var(--tight-space);
+	color: var(--highlight);
+	font-weight: 500;
+}
+
+.intro p{
+	font-weight: 500;
 }
 
 @keyframes square {
