@@ -16,7 +16,6 @@ project-page .overflow-scroll{
 
 project-page .overflow-scroll ul{
 	display: flex;
-
 	align-items: center;
 	gap:  var(--simple-space);
 }
@@ -24,18 +23,13 @@ project-page .overflow-scroll ul{
 project-page .overflow-scroll li{
 	scroll-snap-align: start;
 	aspect-ratio:  4/ 3;
-	min-width: 310px;
+	min-width: 280px;
 	padding-left: var(--simple-small-space);
 
 }
 
 project-page .overflow-scroll li:last-of-type{
 	padding-right: var(--simple-small-space);
-}
-
-project-page .overflow-scroll picture{
-
-
 }
 
 project-page .overflow-scroll img{
@@ -48,12 +42,6 @@ project-page .overflow-scroll img{
 
 .code{
 	max-width: 500px;
-}
-
-
-project-page .links{
-	display: flex;
-	justify-content: space-between;
 }
 
 project-page .links a:first-of-type{
@@ -70,7 +58,17 @@ project-page .links a{
 	text-transform: uppercase;
 }
 
-@media(min-width: 800px){
+@media(min-width: 400px){
+	project-page .overflow-scroll li{
+		min-width: 400px;
+	}
+}
+
+@media(min-width: 700px){
+
+	project-page .overflow-scroll li{
+		min-width: 300px;
+	}
 
 	project-page{
 		display: grid;
@@ -94,4 +92,15 @@ project-page .links a{
 
 }
 
+@media(min-width: 850px){
+	div.links{
+		display: flex;
+		column-gap: var(--simple-big-space);
 
+	}
+
+	project-page .links a{
+		width: 100%;
+	}
+
+}

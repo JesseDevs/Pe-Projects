@@ -166,12 +166,16 @@ project-card a+ p{
 
 }
 
-@media(min-width: 700px){
+@media(min-width: 600px){
 
 	small-grid project-card{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: auto auto 1fr auto;
+		grid-template-rows: 100px auto 1fr auto;
+	}
+
+	small-grid project-card span{
+		margin-top: var(--simple-big-space);
 	}
 
 	small-grid project-card div{
@@ -184,6 +188,7 @@ project-card a+ p{
 
 	small-grid project-card .projects-action{
 		grid-row: 5;
+		grid-column: 1 / span 4;
 	}
 
 	small-grid project-card .project-link,

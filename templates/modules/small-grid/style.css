@@ -9,7 +9,7 @@ small-grid text-content p{
 	max-width: 60ch;
 }
 
-@media(min-width: 700px){
+@media(min-width: 600px){
 
 	small-grid{
 		grid-template-columns: repeat(4, 1fr);

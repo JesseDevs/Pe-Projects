@@ -19,7 +19,7 @@
 			<?php foreach($projectData['links'] as $link){?>
 
 
-				<a href="<?=$link['link']?>"><?= $link['title']?></a>
+				<a target="blank" href="<?=$link['link']?>"><?= $link['title']?></a>
 			<?php } ?>
 		</div>
 		<p><?= $section['description']?></p>
