@@ -3,8 +3,10 @@ $heading = $section['heading'] ?? ucfirst($page);
 ?>
 
 <missing-heading>
-    <h1 class="roar-voice"><?= $heading ?></h1>
-    <p class="intro"><?= $section['intro']?></p>
+    <text-content>
+        <h1 class="roar-voice"><?= $heading ?></h1>
+        <p class="intro"><?= $section['intro']?></p>
+    </text-content>
 
     <nav>
         <ul>
@@ -14,5 +16,9 @@ $heading = $section['heading'] ?? ucfirst($page);
             <?php } ?>
         </ul>
     </nav>
+
+    <div class="cube-sphere">
+        <?php include('templates/cube-sphere.php');?>
+    </div>
 
 </missing-heading>
