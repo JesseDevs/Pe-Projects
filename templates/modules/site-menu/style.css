@@ -22,17 +22,20 @@
 	top: 1px;
 	left: 55px;
 
-	animation: rotateAnimation 2s linear infinite;
+	animation: rotateAnimation 3s linear infinite ;
 }
 
 
 g rect{
 	fill: transparent;
+
 }
 
 g g{
 	stroke-width: 10px;
 	fill: var(	--cube-color);
+	stroke-linecap:round;
+	stroke-linejoin:round;
 	stroke: var(--cube-line);
 
 }

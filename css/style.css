@@ -32,7 +32,8 @@ p+a:hover{
 }
 
 big-heading,
-landing-heading{
+landing-heading,
+missing-heading{
 	margin-top: var(--simple-big-space);
 }
 
