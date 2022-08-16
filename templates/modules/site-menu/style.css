@@ -31,7 +31,7 @@ g rect{
 }
 
 g g{
-	stroke-width: var(--thin);
+	stroke-width: 10px;
 	fill: var(	--cube-color);
 	stroke: var(--cube-line);
 

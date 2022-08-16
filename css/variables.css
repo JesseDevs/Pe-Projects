@@ -42,8 +42,8 @@ html {
 	--landing-text:#f4f4f4;
 
 
-	--cube-color: rgb(194 209 232/.5);
-	--cube-line: rgb(66 147 227 /.5);;
+	--cube-color: rgb(66 147 227 /.5);;
+	--cube-line: rgb(194 209 232/.5);
 
 }
 
@@ -71,8 +71,8 @@ html {
 		--pageCompliment: rgb(234 197 177) ;
 		--menu-bar: #9c693e;
 
-		--cube-color: rgb(232 207 194 /.5);
-		--cube-line: rgb(227 120 66 /.5);;
+		--cube-color: rgb(227 120 66 /.7);
+		--cube-line: rgb(232 207 194 /.7);
 	}
 
 }
