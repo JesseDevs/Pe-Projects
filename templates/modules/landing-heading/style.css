@@ -1,11 +1,21 @@
 landing-heading{
 	text-align: center;
 	position: relative;
-	animation: upFadeIn 1.2s; !important
+
+
 }
 
 landing-heading h1{
 	text-shadow: 1px 1px 3px #474747;
+	opacity: 0;
+	animation: upFadeIn 0.5s forwards ease-in-out;
+	animation-delay: 0.4s;
+}
+
+landing-heading text-content{
+	opacity: 0;
+	animation: upFadeIn 0.5s forwards ease-in-out;
+	animation-delay: 0.6s;
 }
 
 .intro{

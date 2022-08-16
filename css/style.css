@@ -41,7 +41,8 @@ missing-heading{
 
 big-heading,
 missing-heading{
-	animation: upFadeIn .5s;
+	animation: upFadeIn .5s forwards ;
+	opacity: 0;
 }
 
 
