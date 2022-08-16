@@ -1,7 +1,7 @@
 .site-header{
 	background-color: var(--page);
 	color: var(--ink);
-	position: sticky;
+/*	position: sticky;*/
 	top: 0;
 	z-index: 100;
 
