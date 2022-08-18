@@ -2,6 +2,10 @@
 
 $description = null;
 $metaImage = null;
+
+$metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg'
+
+
 ?>
 
 <!DOCTYPE html>
@@ -10,9 +14,9 @@ $metaImage = null;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesse Felix: <?= ucfirst($page); ?></title>
-    <meta name='description' content="[[Insert description]]">
-    <meta property="og:image" content="images/default-meta.png">
+    <title>Jesse Felix Personal Site: <?= ucfirst($page); ?> Page</title>
+    <meta name='description' content="<?=$pageData['intro']?>">
+    <meta property="og:image" content="<?=$metaImage?>">
 
     <link rel="stylesheet" href="css/style.css">
 
