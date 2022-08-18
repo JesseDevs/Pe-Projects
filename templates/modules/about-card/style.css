@@ -47,6 +47,10 @@ about-card .image-container{
 	height: 100%;
 }
 
+.about-blog{
+	max-width: fit-content;
+}
+
 about-card .image-container{
 	padding-top:  var(--tight-space);
 }

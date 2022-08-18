@@ -142,7 +142,6 @@ project-card a+ p{
 	project-section .project-link,
 	project-section .project-detail{
 		grid-column: 1 / span 3;
-		justify-self: center;
 	}
 
 	project-section project-card .project-thumbnail{
