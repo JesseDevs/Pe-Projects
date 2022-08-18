@@ -102,13 +102,18 @@ project-card a+ p{
 
 @media(min-width:550px){
 
-	project-section project-card{
+	project-card{
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: auto auto 1fr auto;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 100px auto 1fr auto;
+
 
 		column-gap: var(--simple-big-space);
 		position: relative;
+	}
+
+	project-card span{
+		margin-top: var(--simple-big-space);
 	}
 
 	project-section project-card .projects-action{
@@ -175,6 +180,8 @@ project-card a+ p{
 	project-section project-card:nth-of-type(3n+1) span{
 		grid-column: 4 / span 1;
 		grid-row: 2;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 
@@ -186,15 +193,6 @@ project-card a+ p{
 
 @media(min-width: 600px){
 
-	small-grid project-card{
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 100px auto 1fr auto;
-	}
-
-	small-grid project-card span{
-		margin-top: var(--simple-big-space);
-	}
 
 	small-grid project-card div{
 		grid-column: span 4;
