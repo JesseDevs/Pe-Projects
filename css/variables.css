@@ -28,7 +28,7 @@ html {
 
 
 	--highlight:rgb(67, 111, 156);
-	--highlightOP:  rgb(82 122 163 /.3);
+	--highlightOP:  #cbdbf5;
 	--darkhighlight: #2e4359;
 
 	--accentone: #e37842;
@@ -36,7 +36,7 @@ html {
 	
 	--ink:  rgb(10 5 5);
 	--page:  #f4f4f4;
-	--pageCompliment: #E3EBF8;
+	--pageCompliment: #bbd3fa;
 	--menu-bar:  #5a7aad;
 
 	--landing-text:#f4f4f4;
