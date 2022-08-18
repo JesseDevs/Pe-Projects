@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Project One",
+        "intro": "Topic",
+        "detail": "Cute little description for this project.",
+        "thumbnail": "https://peprojects.dev/images/landscape.jpg",
+        "skills": ["skill", "skill", "skill"],
+        "links": [
+            {
+                "title": "Button title",
+                "link": null
+            },
+            {
+                "title":"GitHub",
+                "link":null
+            },
+            {
+                "title":"Live link",
+                "link":null
+            }],
+        "direct-link" : null,
+        "images" : ["https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg"]
+
+    },
+    {
+        "id": 2,
+        "title": "Project Two",
+        "intro": "Topic",
+        "detail": "Cute little description for this project.",
+        "thumbnail": "https://peprojects.dev/images/landscape.jpg",
+        "skills": ["skill", "skill", "skill"],
+        "links": [
+            {
+                "title": "Button title",
+                "link": null
+            },
+            {
+                "title":"GitHub",
+                "link":null
+            },
+            {
+                "title":"Live link",
+                "link":null
+            }],
+        "direct-link" : null,
+        "images" : ["https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg"]
+
+    },
+    {
+        "id": 3,
+        "title": "Project Three",
+        "intro": "Topic",
+        "detail": "Cute little description for this project.",
+        "thumbnail": "https://peprojects.dev/images/landscape.jpg",
+        "skills": ["skill", "skill", "skill"],
+        "links": [
+            {
+                "title": "Button title",
+                "link": null
+            },
+            {
+                "title":"GitHub",
+                "link":null
+            },
+            {
+                "title":"Live link",
+                "link":null
+            }],
+        "direct-link" : null,
+        "images" : ["https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg","https://peprojects.dev/images/landscape.jpg"]
+
+    }
+]

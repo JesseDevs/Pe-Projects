@@ -1,11 +1,12 @@
 {
     "id": "style",
     "title": "Style-Guide",
-    "intro": "Showing all modules on the page.",
+    "intro": "A guide to the modules used throughout this website. You could build your own page with all this information.",
+    "metaImage" : "https://peprojects.dev/alpha-4/jesse/images/details/laptop.jpg",
     "ad": [
         {
-            "intro": "Follow my journey!",
-            "blog": "https://jessedevs.substack.com/"
+            "intro": "This is a blog link",
+            "blog": null
         }],
     "sections": [
         {
@@ -117,6 +118,13 @@
                     "title": "Random Link",
                     "link": "https://www.youtube.com/results?search_query=evo+moment+37"
                 }]
+        },
+        {
+            "module": "small-grid",
+            "heading": "Other projects",
+            "intro": "Just a click away",
+            "details": "",
+            "image": ""
         },
         {
             "module": "contact-form",
