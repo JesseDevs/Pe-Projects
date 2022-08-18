@@ -183,11 +183,6 @@ project-card a+ p{
 		margin-right: auto;
 	}
 
-
-	project-section project-card:nth-of-type(3n+1) .projects-action{
-		justify-self: center;
-	}
-
 }
 
 @media(min-width: 600px){
