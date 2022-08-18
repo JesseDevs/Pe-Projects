@@ -34,7 +34,6 @@ $metaImage = null;
                 include('templates/pages/home.php');
             }
 
-<<<<<<< HEAD
                if ($page == 'about') { // about page
                 include('templates/pages/about.php');
             }
@@ -52,7 +51,6 @@ $metaImage = null;
                 include('templates/pages/writing.php');
             }
 
-
             if ($page == 'forms') { 
                 include('templates/pages/forms.php');
             }
@@ -64,8 +62,10 @@ $metaImage = null;
             if ($page == 'style') { 
                 include('templates/pages/style.php');
             }
+
+
         }
-        
+
         else{
             $page = '404';
 
@@ -75,10 +75,9 @@ $metaImage = null;
         }
 
 
-
         ?>
 
-        
+
 
         <?php
         include('templates/modules/site-footer/template.php'); 
