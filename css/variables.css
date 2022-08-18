@@ -63,13 +63,14 @@ html {
 		--landing-text: rgb(10 5 5) ;
 		--page:  #135b80;
 		--ink: #f4f4f4 ;
+
 		--highlight:  #e37842;
-		--highlightOP:rgb(232 207 194);
+		--highlightOP:#f0dfd5;
 
 		--accentone:  #E3EBF8;
 
 		--pageCompliment: rgb(234 197 177) ;
-		--menu-bar: #9c693e;
+		--menu-bar: #e37842;
 
 		--cube-color: rgb(227 120 66 /.7);
 		--cube-line: rgb(232 207 194 /.7);
