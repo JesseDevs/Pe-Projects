@@ -5,10 +5,35 @@
     },
     {
         "id": 2,
-        "name": "home"
+        "name": "about"
     },
     {
         "id": 3,
-        "name": "home"
+        "name": "projects"
+    },
+    {
+        "id": 4,
+        "name": "project"
+    },
+    {
+        "id": 5,
+        "name": "writing"
+    },
+    {
+        "id": 6,
+        "name": "style-guide"
+    },
+    {
+        "id": 7,
+        "name": "404"
+    }
+    ,
+    {
+        "id": 8,
+        "name": "forms"
+    },
+    {
+        "id": 9,
+        "name": "form"
     }
 ]

@@ -1,7 +1,8 @@
 {
     "id": "writing",
     "title": "Landing",
-    "intro": "This is an introduction to this page, which I may or may not use.",
+    "intro": "I write a blog. There are some good reads but there more if you subscribe!",
+    "metaImage" : "https://peprojects.dev/alpha-4/jesse/images/details/table.jpg",
     "sections": [
         {
             "module": "big-heading",

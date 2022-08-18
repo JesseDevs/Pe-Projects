@@ -1,7 +1,8 @@
 {
     "id": "home",
     "title": "Landing",
-    "intro": "This is an introduction to this page, which I may or may not use.",
+    "intro": "Welcome to my personal site! Here you can find a little about me, my work, my personality, and a way to get in contact.",
+    "metaImage" : "https://peprojects.dev/alpha-4/jesse/images/details/laptop.jpg",
     "ad": [
         {
             "intro": "Follow my journey!",

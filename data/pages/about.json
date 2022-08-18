@@ -1,8 +1,8 @@
 {
   "id": "about",
   "title": "About",
-  "intro": "Things about me - -",
-  "metaImage" : "images/details/table.jpg",
+  "intro": "Get to know me a little better. We can start here.",
+  "metaImage" : "https://peprojects.dev/alpha-4/jesse/images/details/table.jpg",
   "ad": [
     {
       "intro": "Follow my journey!",

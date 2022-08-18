@@ -68,6 +68,9 @@ if ($page == 'form') {
 if ($page == 'style') {
     $json = file_get_contents('data/pages/style-guide.json');
     $pageData = json_decode($json, true);
+
+    $json = file_get_contents('data/filler-projects.json');
+    $projectsData = json_decode($json, true);
 }
 
 

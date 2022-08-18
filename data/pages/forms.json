@@ -2,7 +2,8 @@
 
     "id": "forms",
     "title": "E4p",
-    "intro": "User Input Testing!",
+    "intro": "Simple forms to solve some of your everyday problems!",
+    "metaImage" : "https://peprojects.dev/alpha-4/jesse/images/details/spark.jpg",
     "sections": [
         {
             "module": "big-heading",
