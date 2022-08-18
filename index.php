@@ -34,6 +34,7 @@ $metaImage = null;
                 include('templates/pages/home.php');
             }
 
+<<<<<<< HEAD
                if ($page == 'about') { // about page
                 include('templates/pages/about.php');
             }
