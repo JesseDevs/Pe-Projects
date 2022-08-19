@@ -25,13 +25,20 @@
 	100% { transform: translateY(-700px) rotate(600deg); }
 }
 
+project-card .projects-action,
+button,
+form-grid a,
+blog-card a,
+project-page .container a{
+	transition: all .4s;
+}
+
 project-card .projects-action:hover,
 button:hover,
 form-grid a:hover,
 blog-card a:hover,
 project-page .container a:hover{
 	background-color: var(--highlightOP);
-	transition: all .4s;
 	color: black;
 }
 

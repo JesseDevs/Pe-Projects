@@ -7,8 +7,6 @@ project-page .overflow-scroll{
 
 	overflow-y: scroll; /* this could be x */
 	padding: 1rem;
-
-	box-shadow: 0px 5px 15px var(--gray);
 	scroll-snap-type: x mandatory;
 
 	margin-bottom: var(--general-space);
@@ -58,6 +56,18 @@ project-page .links a{
 	text-transform: uppercase;
 }
 
+project-page .links{
+	margin-bottom: var(--general-space);
+}
+
+project-page text-content{
+	margin: var(--tight-space) 0;
+}
+
+project-page text-content p{
+	margin-bottom: 15px;
+}
+
 @media(min-width: 400px){
 	project-page .overflow-scroll li{
 		min-width: 400px;
@@ -79,6 +89,7 @@ project-page .links a{
 	project-page .overflow-scroll{
 		overflow-x: none; /* this could be x */
 		grid-column: span 2;
+		padding: 0 1rem;
 	}
 
 	project-page .overflow-scroll ul{
@@ -88,6 +99,10 @@ project-page .links a{
 
 	project-page .container{
 		grid-column: 3/ span 2;
+	}
+
+	project-page .links a:nth-of-type(2){
+		margin: 0;
 	}
 
 }
@@ -101,6 +116,10 @@ project-page .links a{
 
 	project-page .links a{
 		width: 100%;
+	}
+
+	project-page .links a:nth-of-type(3){
+		margin: 0;
 	}
 
 }

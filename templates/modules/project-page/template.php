@@ -1,5 +1,4 @@
 
-
 <project-page>
 	<div class="overflow-scroll">
 		<ul>
@@ -22,7 +21,22 @@
 				<a target="blank" href="<?=$link['link']?>"><?= $link['title']?></a>
 			<?php } ?>
 		</div>
-		<p><?= $section['description']?></p>
+		<article-grid class="casestudy">
+			<?php foreach ($projectData['casestudy'] as $section){?>
+				<article>
+					<h3 class="attention-voice"><?=$section['header']?></h3>
+					<text-content>
+						<?php foreach($section['writeup'] as $writing){?>
+
+
+							<p><?= $writing?></p>
+
+						<?php }?>
+					</text-content>
+				</article>
+			<?php } ?>
+
+		</article-grid>
 	</div>
 
 </project-detail>
