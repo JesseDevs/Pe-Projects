@@ -126,6 +126,7 @@ blog-card picture img{
 
   .blog-action{
     grid-column: 4;
+    margin-top: 0;
     align-self: flex-end;
   }
 
