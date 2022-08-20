@@ -70,7 +70,26 @@
                 "link":"https://peprojects.dev/alpha-4/jesse/projects/theme-challenge/"
             }],       
         "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/theme-challenge",
-        "images" : ["images/projects/theme/theme-landing.jpg","images/projects/theme/grid.jpg","images/projects/theme/cta.jpg","images/projects/theme/footer.jpg"]
+        "images" : ["images/projects/theme/theme-landing.jpg","images/projects/theme/grid.jpg","images/projects/theme/cta.jpg","images/projects/theme/footer.jpg"],
+        "casestudy": [
+            {
+                "header" : "The Challenge",
+                "writeup" : [
+                    null
+                ]
+            },
+            {
+                "header" : "Goals",
+                "writeup" : [
+                    null]
+            },
+            {
+                "header" : "The Approach",
+                "writeup" : [
+                    null
+                ]
+            }
+        ]
     },
     {
         "id": "legends",
@@ -93,7 +112,26 @@
                 "link":"https://peprojects.dev/alpha-4/jesse/projects/legends/"
             }],      
         "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/legends",
-        "images" : ["images/projects/legends/card.jpg","images/projects/legends/mid-size.jpg","images/projects/legends/selected-card.jpg"]
+        "images" : ["images/projects/legends/card.jpg","images/projects/legends/mid-size.jpg","images/projects/legends/selected-card.jpg"],
+        "casestudy": [
+            {
+                "header" : "The Challenge",
+                "writeup" : [
+                    null
+                ]
+            },
+            {
+                "header" : "Goals",
+                "writeup" : [
+                    null]
+            },
+            {
+                "header" : "The Approach",
+                "writeup" : [
+                    null
+                ]
+            }
+        ]
     },
     {
         "id": "layout-garden",
@@ -115,7 +153,26 @@
                 "link":"https://peprojects.dev/alpha-4/jesse/projects/layouts/"
             }],
         "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/layouts",
-        "images" : ["images/projects/garden/grid.jpg","images/projects/garden/mon.jpg","images/projects/garden/wed.jpg","images/projects/garden/tues.jpg"]
+        "images" : ["images/projects/garden/grid.jpg","images/projects/garden/mon.jpg","images/projects/garden/wed.jpg","images/projects/garden/tues.jpg"],
+        "casestudy": [
+            {
+                "header" : "The Challenge",
+                "writeup" : [
+                    null
+                ]
+            },
+            {
+                "header" : "Goals",
+                "writeup" : [
+                    null]
+            },
+            {
+                "header" : "The Approach",
+                "writeup" : [
+                    null
+                ]
+            }
+        ]
     }
 
 ]
