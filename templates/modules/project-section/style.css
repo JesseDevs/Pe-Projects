@@ -3,10 +3,6 @@ project-section{
 	display: block;
 }
 
-.home project-card:nth-of-type(4){
-	display: none;
-}
-
 
 @media (min-width: 900px){
 	project-section{

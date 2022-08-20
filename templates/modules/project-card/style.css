@@ -68,7 +68,7 @@ project-card span {
 	max-width: fit-content;
 	max-height: fit-content;
 
-	top: 15px;
+	top: 30px;
 	right: 0;
 	color: var(--accentone);
 	filter: opacity(30%) blur(.9px);
