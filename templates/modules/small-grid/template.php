@@ -1,4 +1,15 @@
+<?php
 
+$filtered = [];
+
+foreach ($projectsData as $project){
+	if ($project['id'] !== $_GET['id']) {
+		array_push($filtered, $project);
+	}
+}
+
+
+?>
 
 <small-grid>
 	<text-content>
@@ -7,8 +18,9 @@
 		<p class='intro'><?= $section['intro']; ?></p>
 	</text-content>
 	<?php 
-	$class = null;
-	foreach ($projectsData as $project) { 
+
+
+	foreach ($filtered as $project) { 
 
 		include('templates/modules/project-card/template.php');
 

@@ -15,12 +15,12 @@ $projectLink = $project['links'][0]['link']  ?? $project['direct-link'];
 			<?php } ?>
 		</text-content>
 	</div>
-	<a class='project-link' target="_blank" href="?page=project&id=<?= $project['id']?>">
+	<a class='project-link' target="_blank" href="<?=$project['direct-link']?>">
 		<picture class='project-thumbnail'>
 			<img src=" <?= $project['thumbnail'] ?>" alt="">
 		</picture>
 	</a>
 	<p class="project-detail"><?= $project['detail'] ?></p>
 
-	<a class="projects-action" href='<?= $projectLink ?>'><?= $project['links'][0]['title'] ?></a>
+	<a class="projects-action" href='?page=project&id=<?= $project['id']?>'><?= $project['links'][0]['title'] ?></a>
 </project-card>

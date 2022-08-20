@@ -116,7 +116,7 @@ project-card a+ p{
 		margin-top: var(--simple-big-space);
 	}
 
-	project-section project-card .projects-action{
+	project-card .projects-action{
 
 		align-self: flex-end;
 		text-align: center;
@@ -127,20 +127,20 @@ project-card a+ p{
 		padding-bottom:  var(--tight-space);
 	}
 
-	project-section project-card div{
+	project-card div{
 		grid-row: 1;
 		grid-column: 1 / 4;
 	}
 
-	project-section project-card span{
+	project-card span{
 		position: static;
 		grid-row: 1;
 		grid-column: 3/ span 2;
 		justify-self: flex-end;
 	}
 
-	project-section .project-link,
-	project-section .project-detail{
+	.project-link,
+	.project-detail{
 		grid-column: 1 / span 3;
 	}
 
@@ -181,29 +181,6 @@ project-card a+ p{
 		grid-row: 2;
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-}
-
-@media(min-width: 600px){
-
-
-	small-grid project-card div{
-		grid-column: span 4;
-	}
-
-	small-grid project-card .project-thumbnail{
-		aspect-ratio: 16/9;
-	}
-
-	small-grid project-card .projects-action{
-		grid-row: 5;
-		grid-column: 1 / span 4;
-	}
-
-	small-grid project-card .project-link,
-	small-grid project-card .project-detail{
-		grid-column: span 4;
 	}
 
 }
