@@ -19,7 +19,7 @@
 
    <field class='message'>    
      <label for=""><?= $section['labelThree']?></label>
-     <input type="text" placeholder="<?= $section['holderTwo']?>">
+     <textarea type="text" placeholder="<?= $section['holderTwo']?>"></textarea> 
    </field>
 
 

@@ -8,9 +8,16 @@ contact-form {
 label,
 input,
 button,
-select {
+select,
+textarea {
 	font-family: 'Poppins', sans-serif;
 	font-size: clamp(1rem, 3vw, 1.2rem);
+	resize: none;
+	width: 100%;
+}
+
+textarea {
+	min-height: 150px;
 }
 
 label {
@@ -45,7 +52,7 @@ button{
 	padding: var(--simple-space) var(--simple-big-space);
 	border: var(--thick) solid var(--highlight);
 	background-color: var(--highlight);
-	margin-top: var(--simple-space);
+	margin-top: var(--simple-big-space);
 	text-align: center;
 	color: var(--white);
 	text-transform: uppercase;
