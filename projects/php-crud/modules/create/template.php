@@ -233,7 +233,8 @@
                     <input class="inputfile" id="ff" type="file" name="portrait" accept="image/*" value='<?= $portait ?>'>
                     <span>Your main image.</span>
                 </field>
-                <field>
+            </field>
+                <!-- <field>
                     <label>Alternate Costumes</label>
                     <input type="file" name="costumes" accept="image/*" multiple>
                     <span>Other images? Costumes?</span>
@@ -287,15 +288,15 @@
                 </field>
                 <span>How about a third?</span>
             </field>
+        -->
 
+        <button type="submit" name='add'>
+            Create
+        </button>
 
-            <button type="submit" name='add'>
-                Create
-            </button>
+    </form>
 
-        </form>
-
-    </inner-column>
+</inner-column>
 </section>
 
 <script>
