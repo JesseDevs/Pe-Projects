@@ -18,7 +18,7 @@
     </text-content>
     <div class="image-container">
         <picture class="about-image">
-            <?php foreach ($section['images'] as $image){ ?>
+            <?php foreach ($section['images'] as $image){?>
 
                 <img src="<?= $image?>" alt="Me">
 

@@ -38,6 +38,7 @@
 		position: relative;
 		max-width: 350px;
 		min-height: 400px;
+		margin: 0 auto;
 	}
 
 	.image-container img{
@@ -113,8 +114,12 @@
 			grid-column: 3 /span 2;
 			grid-row: 2 / span 2;
 			align-self: center;
+			min-width: 350px;
+			padding-top: 0;
 
 		}
+
+
 
 
 
