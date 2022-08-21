@@ -25,5 +25,15 @@
 
    <button><?= $section['button']?></button>
  </form>
+
+
+
+ 
+
+ <div class='fade'>
+   <div class="cube-sphere"> 
+    <?php include('templates/cube-sphere.php');?>
+  </div>
+</div>
 </contact-form>
 
