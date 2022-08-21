@@ -68,7 +68,7 @@ project-card span {
 	max-height: 60px;
 	align-self: flex-end;
 
-	top: 25px;
+	top: 15px;
 	right: 0;
 	color: var(--accentone);
 	filter: opacity(30%) blur(.9px);

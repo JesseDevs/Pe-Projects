@@ -4,6 +4,14 @@
 @import 'typography.css';
 @import 'modules.css';
 
+@-moz-document url-prefix() { 
+	.remove-me {
+		border:1px solid red;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+}
 
 .intro {
 	margin-bottom: var(--tight-space);
