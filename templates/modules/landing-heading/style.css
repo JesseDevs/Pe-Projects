@@ -4,7 +4,7 @@ landing-heading{
 }
 
 landing-heading h1{
-	text-shadow: 1px 1px 3px #474747;
+	text-shadow: 1px 1px 3px var(--darkgray);
 	opacity: 0;
 	animation: upFadeIn 0.5s forwards ease-in-out;
 	animation-delay: 0.3s;
