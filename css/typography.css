@@ -6,10 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 
-html {
-	font-size: 105.5%;
-}
-
 .logo{
 	font-family: 'Didact Gothic', sans-serif;
 	padding: var(--simple-space) var(--simple-small-space);
@@ -22,7 +18,7 @@ html {
 /* needs clamp for screen sizes :) */
 
 .roar-voice{
-	font-size: clamp(2.9rem, 11vw, 8rem);
+	font-size: clamp(2.9rem, 10vw, 8rem);
 	font-weight: 700;
 
 	text-transform: uppercase;

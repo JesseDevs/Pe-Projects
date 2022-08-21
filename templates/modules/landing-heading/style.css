@@ -1,8 +1,6 @@
 landing-heading{
 	text-align: center;
 	position: relative;
-
-
 }
 
 landing-heading h1{
@@ -71,7 +69,7 @@ landing-heading .intro{
 
 		position: absolute;
 		text-align: left;
-		top: 10%;
+		transform: translateY(80px);
 		z-index: 1;
 		text-shadow: 2px 2px 2px var(--darkgray);
 
