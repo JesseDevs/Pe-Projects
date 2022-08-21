@@ -17,11 +17,13 @@
 
     </text-content>
     <div class="image-container">
-        <?php foreach ($section['images'] as $image){ ?>
-            <picture class="about-image">
+        <picture class="about-image">
+            <?php foreach ($section['images'] as $image){ ?>
+
                 <img src="<?= $image?>" alt="Me">
-            </picture>
-        <?php } ?>
+
+            <?php } ?>
+        </picture>
     </div>
 </about-card>
 
