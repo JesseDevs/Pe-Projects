@@ -47,6 +47,10 @@ form button{
 	max-width: fit-content;
 }
 
+contact-form button{
+	max-width: none;
+}
+
 button{
 	outline: none;
 	padding: var(--simple-space) var(--simple-big-space);
@@ -74,7 +78,7 @@ button{
 	}
 
 	contact-form p{
-		grid-column: 1 / span 2;
+		grid-column: 1 / span 3;
 	}
 
 	contact-form form{
