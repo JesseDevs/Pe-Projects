@@ -42,6 +42,7 @@ small-grid project-card .project-thumbnail{
 	.project-link:hover .project-thumbnail img{
 		filter: grayscale(0%) contrast(110%);
 		transform: scale(1.05);
+		-webkit-transform: translate3d(0,0,0);
 	}
 }
 
@@ -145,25 +146,21 @@ project-card a+ p{
 	}
 
 
-	project-section project-card .project-thumbnail:first-of-type{
-		aspect-ratio: 21/10;
-	}
-
 
 }
 
-@media (min-width: 900px){
+@media (min-width: 800px){
 
-	project-section project-card:not(:nth-of-type(3n+1)) .project-link,
-	project-section project-card:not(:nth-of-type(3n+1)) .project-detail{
+	project-section project-card .project-link,
+	project-section project-card .project-detail{
 		grid-column: 1 / span 4;
 	}
 
-	project-section project-card:not(:nth-of-type(3n+1)) .project-thumbnail{
+	project-section project-card .project-thumbnail{
 		aspect-ratio:  2/1;
 	}
 
-	project-section project-card:not(:nth-of-type(3n+1)) .projects-action{
+	project-section project-card .projects-action{
 		grid-column: span 2;
 	}
 
@@ -172,12 +169,6 @@ project-card a+ p{
 		margin-bottom: var(--general-space);
 	}
 
-	project-section project-card:nth-of-type(3n+1) span{
-		grid-column: 4 / span 1;
-		grid-row: 2;
-		margin-left: auto;
-		margin-right: auto;
-	}
 
 }
 
