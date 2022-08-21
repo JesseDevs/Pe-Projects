@@ -1,11 +1,12 @@
 [
     {
-        "id": 1,
+        "id": "one",
         "title": "Project One",
         "intro": "Topic",
         "detail": "Cute little description for this project.",
         "thumbnail": "https://peprojects.dev/images/landscape.jpg",
         "skills": ["skill", "skill", "skill"],
+        "featured" : true,
         "links": [
             {
                 "title": "Button title",
@@ -24,12 +25,13 @@
 
     },
     {
-        "id": 2,
+        "id": "two",
         "title": "Project Two",
         "intro": "Topic",
         "detail": "Cute little description for this project.",
         "thumbnail": "https://peprojects.dev/images/landscape.jpg",
-        "skills": ["skill", "skill", "skill"],
+        "skills": ["skill", "skill", "skill"], 
+        "featured" : true,
         "links": [
             {
                 "title": "Button title",
@@ -48,12 +50,13 @@
 
     },
     {
-        "id": 3,
+        "id": "three",
         "title": "Project Three",
         "intro": "Topic",
         "detail": "Cute little description for this project.",
         "thumbnail": "https://peprojects.dev/images/landscape.jpg",
         "skills": ["skill", "skill", "skill"],
+        "featured" : true,
         "links": [
             {
                 "title": "Button title",

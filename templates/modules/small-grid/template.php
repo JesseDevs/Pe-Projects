@@ -1,4 +1,7 @@
 <?php
+if($page == 'style'){
+	$_GET['id'] = 'one';
+}
 
 $filtered = [];
 
@@ -7,6 +10,9 @@ foreach ($projectsData as $project){
 		array_push($filtered, $project);
 	}
 }
+
+
+
 
 
 ?>
@@ -18,6 +24,7 @@ foreach ($projectsData as $project){
 		<p class='intro'><?= $section['intro']; ?></p>
 	</text-content>
 	<?php 
+
 
 
 	foreach ($filtered as $project) { 

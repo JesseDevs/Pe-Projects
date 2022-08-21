@@ -13,7 +13,7 @@
         }
     }?>
 
-    <?php if($page == 'projects'){
+    <?php if($page == 'projects' or $page == 'style'){
         foreach ($projectsData as $project) { 
             include('templates/modules/project-card/template.php');  }
         }?>
