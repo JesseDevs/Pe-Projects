@@ -1,0 +1,18 @@
+{
+    "mangas": [
+        {
+            "id": "1",
+            "title": "one piece",
+            "author": "eiichiro oda",
+            "chapters": 1057,
+            "thumnail": ""
+        },
+        {
+            "id": "2",
+            "title": "chainsaw man",
+            "author": "tatsuki fujimoto",
+            "chapters": 102,
+            "thumnail": ""
+        }
+    ]
+}
