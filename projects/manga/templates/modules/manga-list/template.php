@@ -11,6 +11,7 @@ $mangas = getMangas()['mangas'];
     <ul>
         <?php foreach ($mangas as $manga) { ?>
 
+            <a href="?page=detail&id=<?= $manga['id'] ?>">LINK ME</a>
             <li><?= ucwords($manga['title']) ?></li>
             <li><?= ucwords($manga['author']) ?></li>
             <li><?= $manga['chapters'] ?></li>

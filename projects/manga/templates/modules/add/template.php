@@ -5,7 +5,7 @@ $author = "";
 $chapters = null;
 
 //checks if the form is submitted.
-if (isset($_POST["submit-button"])) {
+if (isset($_POST["submit"])) {
     if (isset($_POST["title"])) {
         $title = htmlspecialchars(trim($_POST["title"]));
     }
@@ -20,11 +20,11 @@ if (isset($_POST["submit-button"])) {
         $newManga = [
             "title" => $title,
             "author" => $author,
-            "chapters" => $chapters,
+            "chapters" => $chapters
         ];
 
         //$title and $author have values, so add them to the json.
-        addManga($newauthor);
+        addManga($newManga);
 
         //redirect page to homepage to prevent resubmition.
         header('Location: ?page=home');

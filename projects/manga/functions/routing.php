@@ -13,3 +13,14 @@ function renderPage($page)
 {
     include("templates/pages/$page.php");
 }
+
+
+function getMangaById($id)
+{
+
+    foreach (getMangas()['mangas'] as $manga) {
+        if ($id == $manga['id']) {
+            return $manga;
+        }
+    }
+}

@@ -39,6 +39,29 @@ function addManga($manga)
 
     //$manga contains an associative array with name and manga keys.
     //insert them inside of a unique id.
-    $mangas["mangas"][$id] = $manga;
+    $manga['id'] = $id;
+
+    array_push($mangas, $manga);
+    encodeMangas($mangas);
+}
+
+
+function deleteManga($idToDelete)
+{
+    $mangas = getMangas();
+
+    //remove the $id from the array.
+    unset($mangas["mangas"][$idToDelete]);
+
+    //turn the associative array back into json.
+    encodeMangas($mangas);
+}
+
+function editManga($idToEdit, $editedComment)
+{
+    //returns an associatve array of the json
+    $mangas = getmangas();
+
+    $mangas["mangas"][$idToEdit] = $editedComment;
     encodeMangas($mangas);
 }

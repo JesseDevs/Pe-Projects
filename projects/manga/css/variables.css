@@ -19,33 +19,6 @@ html {
 	zoom: .9;*/
 }
 
-html {
-
-	--gray: rgb(196 193 190);
-	--darkgray: #474747;
-	--white: #fff;
-	--black: #000;
-
-
-	--highlight:rgb(67, 111, 156);
-	--highlightOP:  #cbdbf5;
-	--darkhighlight: #2e4359;
-
-	--accentone: #e37842;
-	--accenttwo: rgb(234 197 177) ;
-	
-	--ink:  rgb(10 5 5);
-	--page:  #f4f4f4;
-	--pageCompliment: #bbd3fa;
-	--menu-bar:  #5a7aad;
-
-	--landing-text:#f4f4f4;
-
-
-	--cube-color: rgb(66 147 227 /.5);;
-	--cube-line: rgb(194 209 232/.5);
-
-}
 
 @media( min-width:  1600px){
 
@@ -55,28 +28,6 @@ html {
 	}
 }
 
-@media(prefers-color-scheme:  dark){
-	html{
-
-		--gray:  #474747;
-		--darkgray: rgb(196 193 190) ;
-		--landing-text: rgb(10 5 5) ;
-		--page:  #135b80;
-		--ink: #f4f4f4 ;
-
-		--highlight:  #e37842;
-		--highlightOP:#f0dfd5;
-
-		--accentone:  #E3EBF8;
-
-		--pageCompliment: rgb(234 197 177) ;
-		--menu-bar: #e37842;
-
-		--cube-color: rgb(227 120 66 /.7);
-		--cube-line: rgb(232 207 194 /.7);
-	}
-
-}
 
 /* $animations*/
 
