@@ -163,6 +163,9 @@ project-card a+ p{
 	project-section project-card .projects-action{
 		grid-column: span 2;
 	}
+	.projects project-section project-card .projects-action{
+		grid-column: span 4;
+	}
 
 	project-section project-card{
 		padding: 0;

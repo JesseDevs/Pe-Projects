@@ -12,3 +12,9 @@ function printQueryString()
 {
     return $_SERVER['QUERY_STRING'];
 }
+
+function getProjectFile(){
+    $json = file_get_contents('data/projects.json');
+    return json_decode($json, true);
+
+}

@@ -1,4 +1,4 @@
-<?php include('functions/functions.php'); ?>
+<?php include('functions.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +21,11 @@
 
 <body>
     <header class='site-header'>
+        <inner-column>
 
-        <p>?<?= printQueryString(); ?></p>
-        <?php include('modules/site-menu/template.php'); ?>
+            <p>?<?= printQueryString(); ?></p>
+            <?php include('templates/modules/site-menu/template.php'); ?>
+        </inner-column>
     </header>
 
     <?php renderPageTemplate() ?>
