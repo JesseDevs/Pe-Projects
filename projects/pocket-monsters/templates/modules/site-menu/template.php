@@ -1,15 +1,13 @@
 <header class='site-header'>
     <inner-column>
-        <nav class='main-menu'>
-
+        <nav>
             <ul>
-
                 <li>
-                    <a href="?page=home" class=" <?php activePage("home") ?>">Home</a>
+                    <a href="?view=list">All Pokemon</a>
                 </li>
             </ul>
-
         </nav>
+
     </inner-column>
 </header>
 
