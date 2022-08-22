@@ -2,7 +2,7 @@
   "id": "about",
   "title": "About",
   "intro": "Get to know me a little better. We can start here.",
-  "metaImage" : "https://peprojects.dev/alpha-4/jesse/images/details/table.jpg",
+  "metaImage": "https://peprojects.dev/alpha-4/jesse/images/details/table.jpg",
   "ad": [
     {
       "intro": "Follow my journey!",
@@ -29,15 +29,14 @@
         "images/details/methree.jpg",
         "images/details/me.jpg",
         "images/details/metoo.jpg",
-        "images/details/mefour.jpg",
+        "images/details/mefour.jpg"
       ]
-
     },
     {
       "module": "goals-section",
       "heading": "Goals",
       "intro": "My plans...",
-      "lead" :  "By the end of the...",
+      "lead": "By the end of the...",
       "goals": ""
     },
     {

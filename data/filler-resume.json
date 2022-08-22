@@ -5,14 +5,12 @@
 		"company": "Company",
 		"startDate": "Start-date",
 		"endDate": "End-date",
-		"duties":
-		[
+		"duties": [
 			"Duty One.",
 			"Duty Two."
 		],
 		"takeaways": "Takaways",
-		"skills":
-		[
+		"skills": [
 			"Skill One",
 			"Skill Two",
 			"Skill Three"
@@ -25,14 +23,12 @@
 		"company": "Company",
 		"startDate": "Start-date",
 		"endDate": "End-date",
-		"duties":
-		[
+		"duties": [
 			"Duty One.",
 			"Duty Two."
 		],
 		"takeaways": "Takaways",
-		"skills":
-		[
+		"skills": [
 			"Skill One",
 			"Skill Two",
 			"Skill Three"
@@ -46,14 +42,12 @@
 		"major": "Major Study",
 		"startDate": "Start-date",
 		"endDate": "End-date",
-		"duties":
-		[
+		"duties": [
 			"Duty One.",
 			"Duty Two."
 		],
 		"takeaways": "Takaways",
-		"skills":
-		[
+		"skills": [
 			"Skill One",
 			"Skill Two",
 			"Skill Three"

@@ -1,9 +1,8 @@
 {
-
     "id": "forms",
     "title": "E4p",
     "intro": "Simple forms to solve some of your everyday problems!",
-    "metaImage" : "https://peprojects.dev/alpha-4/jesse/images/details/spark.jpg",
+    "metaImage": "https://peprojects.dev/alpha-4/jesse/images/details/spark.jpg",
     "sections": [
         {
             "module": "big-heading",
@@ -12,53 +11,53 @@
         },
         {
             "module": "form-grid",
-            "heading" : "Exercise Grid",
-            "intro" : "Check it out!",
-            "items" : [
-                { 
-                    "id" : 1,
-                    "title" : "area",
-                    "file-name" : "area"
+            "heading": "Exercise Grid",
+            "intro": "Check it out!",
+            "items": [
+                {
+                    "id": 1,
+                    "title": "area",
+                    "file-name": "area"
                 },
-                { 
-                    "id" : 2,
-                    "title" : "count-string",
-                    "file-name" : "count-string"
+                {
+                    "id": 2,
+                    "title": "count-string",
+                    "file-name": "count-string"
                 },
-                { 
-                    "id" : 3,
-                    "title" : "driving-age",
-                    "file-name" : "driving-age"
+                {
+                    "id": 3,
+                    "title": "driving-age",
+                    "file-name": "driving-age"
                 },
-                { 
-                    "id" : 4,
-                    "title" : "interest",
-                    "file-name" : "interest"
+                {
+                    "id": 4,
+                    "title": "interest",
+                    "file-name": "interest"
                 },
-                { 
-                    "id" : 5,
-                    "title" : "paint",
-                    "file-name" : "paint-calc"
+                {
+                    "id": 5,
+                    "title": "paint",
+                    "file-name": "paint-calc"
                 },
-                { 
-                    "id" : 6,
-                    "title" : "password",
-                    "file-name" : "password-check"
+                {
+                    "id": 6,
+                    "title": "password",
+                    "file-name": "password-check"
                 },
-                { 
-                    "id" : 7,
-                    "title" : "checkout",
-                    "file-name" : "self-checkout"
+                {
+                    "id": 7,
+                    "title": "checkout",
+                    "file-name": "self-checkout"
                 },
-                { 
-                    "id" : 8,
-                    "title" : "simple-math",
-                    "file-name" : "simple-math"
+                {
+                    "id": 8,
+                    "title": "simple-math",
+                    "file-name": "simple-math"
                 },
-                { 
-                    "id" : 9,
-                    "title" : "tax-calc",
-                    "file-name" : "tax-calculator"
+                {
+                    "id": 9,
+                    "title": "tax-calc",
+                    "file-name": "tax-calculator"
                 }
             ]
         }

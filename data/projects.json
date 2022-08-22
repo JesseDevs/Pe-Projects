@@ -5,43 +5,55 @@
         "intro": "crud",
         "detail": "This project uses fighters from the video game Street Fighter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
         "thumbnail": "images/projects/fighters/fighters.jpg",
-        "skills": ["html", "css", "php"],
-        "featured" : true,
+        "skills": [
+            "html",
+            "css",
+            "php"
+        ],
+        "featured": true,
         "links": [
             {
                 "title": "Details",
                 "link": "?page=project&id=crud"
             },
             {
-                "title":"GitHub",
-                "link":"https://github.com/JesseDevs/pe-projects/tree/main/projects/php-crud"
+                "title": "GitHub",
+                "link": "https://github.com/JesseDevs/pe-projects/tree/main/projects/php-crud"
             },
             {
-                "title":"Live",
-                "link":"https://peprojects.dev/alpha-4/jesse/projects/php-crud/"
-            }],
-        "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/php-crud",
-        "images" : ["images/projects/fighters/fighter-landing.jpg","images/projects/fighters/fighter-menu.jpg","images/projects/fighters/detail.jpg","images/projects/fighters/create-fighter.jpg"],
+                "title": "Live",
+                "link": "https://peprojects.dev/alpha-4/jesse/projects/php-crud/"
+            }
+        ],
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/php-crud",
+        "images": [
+            "images/projects/fighters/fighter-landing.jpg",
+            "images/projects/fighters/fighter-menu.jpg",
+            "images/projects/fighters/detail.jpg",
+            "images/projects/fighters/create-fighter.jpg"
+        ],
         "casestudy": [
             {
-                "header" : "The Challenge",
-                "writeup" : [
+                "header": "The Challenge",
+                "writeup": [
                     "The purpose of this project was to build a create, read, update, and delete database. This database would be generated using JSON data to show skills in acquiring and using data from any source. The data would be used and altered using PHP, then displayed on the website in a clean and responsive fashion. Forms would be made to accept user input and add new information to the data."
                 ]
             },
             {
-                "header" : "Goals",
-                "writeup" : [
-                    "Research CRUD projects.","Utilize or gather JSON data.",
-                    "Turn data into PHP via a function.", 
+                "header": "Goals",
+                "writeup": [
+                    "Research CRUD projects.",
+                    "Utilize or gather JSON data.",
+                    "Turn data into PHP via a function.",
                     "Create a multi layered website with pages for properly displaying information.",
                     "Use PHP to create multiple sections, active pages, detail pages for data.",
-                    "Create forms that will accept user input that is converted into an object and placed in a JSON data file.", 
-                    "Style web page to be accessible for users."]
+                    "Create forms that will accept user input that is converted into an object and placed in a JSON data file.",
+                    "Style web page to be accessible for users."
+                ]
             },
             {
-                "header" : "The Approach",
-                "writeup" : [
+                "header": "The Approach",
+                "writeup": [
                     "It all started with displaying the current JSON data. Making a list page to go through the data and display the elements. The objects in my data were structured to have names, images, descriptions, and other information. With the current data I decided to make a list of cards to display a thumbnail that leads to a page with more information.",
                     "Now that I had a list page, I needed a way to direct users towards that page. In PHP we can use $_GET to obtain a variable given in the URL of the current page. The querystring. This allows me to create a routing system that can then lead to any page I would want the user to have access to, which could be the home page, list page, a detail page, a form page, or even a random page.",
                     "I created a filter system to see specific characters that the user is looking for. Although, the user may not be familiar with the characters so I chose to give some small details about the parameter I am planning to use to separate them. The filter system goes through the data and checks this parameter for its “playstyle” and then presents those individuals, the others become unclickable."
@@ -55,37 +67,48 @@
         "intro": "theme",
         "detail": "A project taking a templated out structure and crafting it to match an industry standard website. My focus was based on sports news outlets.",
         "thumbnail": "images/projects/theme/theme.jpg",
-        "skills": ["html", "css", "php"],
-        "featured" : true,
+        "skills": [
+            "html",
+            "css",
+            "php"
+        ],
+        "featured": true,
         "links": [
             {
                 "title": "Details"
             },
             {
-                "title":"GitHub",
-                "link":"https://github.com/JesseDevs/pe-projects/tree/main/projects/theme-challenge"
+                "title": "GitHub",
+                "link": "https://github.com/JesseDevs/pe-projects/tree/main/projects/theme-challenge"
             },
             {
-                "title":"Live",
-                "link":"https://peprojects.dev/alpha-4/jesse/projects/theme-challenge/"
-            }],       
-        "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/theme-challenge",
-        "images" : ["images/projects/theme/theme-landing.jpg","images/projects/theme/grid.jpg","images/projects/theme/cta.jpg","images/projects/theme/footer.jpg"],
+                "title": "Live",
+                "link": "https://peprojects.dev/alpha-4/jesse/projects/theme-challenge/"
+            }
+        ],
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/theme-challenge",
+        "images": [
+            "images/projects/theme/theme-landing.jpg",
+            "images/projects/theme/grid.jpg",
+            "images/projects/theme/cta.jpg",
+            "images/projects/theme/footer.jpg"
+        ],
         "casestudy": [
             {
-                "header" : "The Challenge",
-                "writeup" : [
+                "header": "The Challenge",
+                "writeup": [
                     null
                 ]
             },
             {
-                "header" : "Goals",
-                "writeup" : [
-                    null]
+                "header": "Goals",
+                "writeup": [
+                    null
+                ]
             },
             {
-                "header" : "The Approach",
-                "writeup" : [
+                "header": "The Approach",
+                "writeup": [
                     null
                 ]
             }
@@ -97,37 +120,47 @@
         "intro": "php",
         "detail": "This project takes the concepts of PHP and begins to use it in a more creative direction. The key points: looping through data, specifc data styling, and responsive layout for file path.",
         "thumbnail": "images/projects/legends/legends.jpg",
-        "skills": ["html", "css", "php"],
-        "featured" : true,
+        "skills": [
+            "html",
+            "css",
+            "php"
+        ],
+        "featured": true,
         "links": [
             {
                 "title": "Details"
             },
             {
-                "title":"GitHub",
-                "link":"https://github.com/JesseDevs/pe-projects/tree/main/projects/legends"
+                "title": "GitHub",
+                "link": "https://github.com/JesseDevs/pe-projects/tree/main/projects/legends"
             },
             {
-                "title":"Live",
-                "link":"https://peprojects.dev/alpha-4/jesse/projects/legends/"
-            }],      
-        "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/legends",
-        "images" : ["images/projects/legends/card.jpg","images/projects/legends/mid-size.jpg","images/projects/legends/selected-card.jpg"],
+                "title": "Live",
+                "link": "https://peprojects.dev/alpha-4/jesse/projects/legends/"
+            }
+        ],
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/legends",
+        "images": [
+            "images/projects/legends/card.jpg",
+            "images/projects/legends/mid-size.jpg",
+            "images/projects/legends/selected-card.jpg"
+        ],
         "casestudy": [
             {
-                "header" : "The Challenge",
-                "writeup" : [
+                "header": "The Challenge",
+                "writeup": [
                     null
                 ]
             },
             {
-                "header" : "Goals",
-                "writeup" : [
-                    null]
+                "header": "Goals",
+                "writeup": [
+                    null
+                ]
             },
             {
-                "header" : "The Approach",
-                "writeup" : [
+                "header": "The Approach",
+                "writeup": [
                     null
                 ]
             }
@@ -139,40 +172,50 @@
         "intro": "Garden",
         "detail": "This project takes some time to analyze some more complicated layout designs. Combining these together to form a layout garden for viewing.",
         "thumbnail": "./images/projects/garden/layout.jpg",
-        "skills": ["html", "css", "php"],
+        "skills": [
+            "html",
+            "css",
+            "php"
+        ],
         "links": [
             {
                 "title": "Details"
             },
             {
-                "title":"GitHub",
-                "link":"https://github.com/JesseDevs/pe-projects/tree/main/projects/layouts"
+                "title": "GitHub",
+                "link": "https://github.com/JesseDevs/pe-projects/tree/main/projects/layouts"
             },
             {
-                "title":"Live",
-                "link":"https://peprojects.dev/alpha-4/jesse/projects/layouts/"
-            }],
-        "direct-link" : "https://peprojects.dev/alpha-4/jesse/projects/layouts",
-        "images" : ["images/projects/garden/grid.jpg","images/projects/garden/mon.jpg","images/projects/garden/wed.jpg","images/projects/garden/tues.jpg"],
+                "title": "Live",
+                "link": "https://peprojects.dev/alpha-4/jesse/projects/layouts/"
+            }
+        ],
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/layouts",
+        "images": [
+            "images/projects/garden/grid.jpg",
+            "images/projects/garden/mon.jpg",
+            "images/projects/garden/wed.jpg",
+            "images/projects/garden/tues.jpg"
+        ],
         "casestudy": [
             {
-                "header" : "The Challenge",
-                "writeup" : [
+                "header": "The Challenge",
+                "writeup": [
                     null
                 ]
             },
             {
-                "header" : "Goals",
-                "writeup" : [
-                    null]
+                "header": "Goals",
+                "writeup": [
+                    null
+                ]
             },
             {
-                "header" : "The Approach",
-                "writeup" : [
+                "header": "The Approach",
+                "writeup": [
                     null
                 ]
             }
         ]
     }
-
 ]
