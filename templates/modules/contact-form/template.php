@@ -5,7 +5,6 @@
   $from = $_POST['email'];
   $headers = "From:" . $from;
   mail($to, $subject, $message, $headers);
-  echo "Your message has been sent.";
 } ?>
 
 <contact-form id="contact">
@@ -40,6 +39,10 @@
 
 
   <div class='fade'>
+    <?php
+    if (isset($_POST['submit'])) { ?>
+      <h5 class='strict-voice'>Your message has been sent.</h5>
+    <?php } ?>
     <div class="cube-sphere">
       <?php include('templates/cube-sphere.php'); ?>
     </div>
