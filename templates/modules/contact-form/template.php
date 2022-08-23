@@ -11,6 +11,11 @@
   <h2 class='yell-voice'><?= $section['heading'] ?> </h2>
   <p class="intro"><?= $section['intro'] ?></p>
 
+  <?php
+  if (isset($_POST['submit'])) { ?>
+    <h5 class='strict-voice'>Your message has been sent.</h5>
+  <?php } ?>
+
 
   <form method="POST">
     <field>
@@ -39,10 +44,6 @@
 
 
   <div class='fade'>
-    <?php
-    if (isset($_POST['submit'])) { ?>
-      <h5 class='strict-voice'>Your message has been sent.</h5>
-    <?php } ?>
     <div class="cube-sphere">
       <?php include('templates/cube-sphere.php'); ?>
     </div>
