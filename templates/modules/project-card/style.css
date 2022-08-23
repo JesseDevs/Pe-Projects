@@ -161,7 +161,7 @@ project-card a+ p{
 	}
 
 	project-section project-card .projects-action{
-		grid-column: span 2;
+		grid-column: span 4;
 	}
 	.projects project-section project-card .projects-action{
 		grid-column: span 4;

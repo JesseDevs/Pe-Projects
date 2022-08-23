@@ -1,6 +1,5 @@
-
 <?php
-$projectLink = $project['links'][0]['link']  ?? $project['direct-link'];
+$projectDetailPageLink = $project['links'][0]['link']  ?? $project['direct-link'];
 ?>
 
 
@@ -10,17 +9,17 @@ $projectLink = $project['links'][0]['link']  ?? $project['direct-link'];
 		<h3 class='attention-voice'><?= $project['title'] ?></h3>
 
 		<text-content class="skills">
-			<?php foreach ($project['skills'] as $skill){ ?>
+			<?php foreach ($project['skills'] as $skill) { ?>
 				<p class="small-voice"><?= $skill ?></p>
 			<?php } ?>
 		</text-content>
 	</div>
-	<a class='project-link' target="_blank" href="<?=$project['direct-link']?>">
+	<a class='project-link' target="_blank" href="<?= $project['direct-link'] ?>">
 		<picture class='project-thumbnail'>
 			<img src=" <?= $project['thumbnail'] ?>" alt="">
 		</picture>
 	</a>
 	<p class="project-detail"><?= $project['detail'] ?></p>
 
-	<a class="projects-action" href='?page=project&id=<?= $project['id']?>'><?= $project['links'][0]['title'] ?></a>
+	<a class="projects-action" href="<?= $projectDetailPageLink ?>"><?= $project['links'][0]['title'] ?></a>
 </project-card>
