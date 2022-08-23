@@ -17,7 +17,7 @@ function initializeDatabase()
         $json = json_encode($manga);
         file_put_contents("data/manga.json", $json);
     } else {
-        getMangas();
+        return getMangas()['mangas'];
     }
 }
 
@@ -41,27 +41,34 @@ function addManga($manga)
     //insert them inside of a unique id.
     $manga['id'] = $id;
 
-    array_push($mangas, $manga);
+    array_push($mangas['mangas'], $manga);
     encodeMangas($mangas);
 }
 
 
-function deleteManga($idToDelete)
+function deleteManga($item)
 {
-    $mangas = getMangas();
-
+    //get the associative array
+    $mangas = getMangas()['mangas'];
+    $filtered['mangas'] = [];
     //remove the $id from the array.
-    unset($mangas["mangas"][$idToDelete]);
+    foreach ($mangas as $manga) {
+        if ($manga['id'] !== $item['id']) {
+            array_push($filtered['mangas'], $manga);
+        }
+    }
+
 
     //turn the associative array back into json.
-    encodeMangas($mangas);
+    encodeMangas($filtered);
 }
 
-function editManga($idToEdit, $editedComment)
+
+function editManga($idToEdit, $editedManga)
 {
     //returns an associatve array of the json
     $mangas = getmangas();
 
-    $mangas["mangas"][$idToEdit] = $editedComment;
+    $mangas["mangas"][$idToEdit] = $editedManga;
     encodeMangas($mangas);
 }

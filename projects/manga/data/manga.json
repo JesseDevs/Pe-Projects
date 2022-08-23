@@ -8,11 +8,16 @@
             "thumnail": ""
         },
         {
-            "id": "2",
-            "title": "chainsaw man",
-            "author": "tatsuki fujimoto",
-            "chapters": 102,
-            "thumnail": ""
+            "title": "Blue Lock",
+            "author": "Muneyuki Kaneshiro",
+            "chapters": "176",
+            "id": "1fe8e26863"
+        },
+        {
+            "title": "Hell's Paradise",
+            "author": "Yuji Kaku",
+            "chapters": "127",
+            "id": "699eb1f15c"
         }
     ]
 }
