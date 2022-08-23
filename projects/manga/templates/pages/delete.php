@@ -1,16 +1,21 @@
 <?php
 //retrieve value after &id=____
-$id = $_GET["id"];
+$currentManga = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $currentManga = getMangaById($id);
+}
+
 
 //open the database
 //check to see if id in url matches id in database
-$mangas = getMangas()["items"];
+$mangas = getMangas()["mangas"];
 
-foreach ($mangas as $manga) {
-    if ($id == $manga['id']) {
-        deleteManga($manga);
-        header('Location: ?page=home');
-    } else {
-        header('Location: ?page=home');
-    }
+
+if (isset($_GET['id'])) {
+    deleteManga($currentManga);
+    header('Location: ?page=list');
+} else {
+    header('Location: ?page=list');
 }

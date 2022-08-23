@@ -8,6 +8,7 @@
                 <li>
                     <p>?<?= printQueryString(); ?></p>
                 </li>
+                <h1>This is a site menu</h1>
             </ul>
 
         </nav>
