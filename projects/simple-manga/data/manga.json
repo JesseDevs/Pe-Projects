@@ -1,0 +1,23 @@
+{
+    "mangas": {
+        "0": {
+            "id": "1",
+            "title": "one piece",
+            "author": "eiichiro oda",
+            "chapters": 1057,
+            "thumnail": ""
+        },
+        "2": {
+            "title": "Blue Lock",
+            "author": "Muneyuki Kaneshiro",
+            "chapters": "176",
+            "id": "1fe8e26863"
+        },
+        "3": {
+            "title": "Hell's Paradise",
+            "author": "Yuji Kaku",
+            "chapters": "127",
+            "id": "699eb1f15c"
+        }
+    }
+}
