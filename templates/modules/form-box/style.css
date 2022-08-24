@@ -17,7 +17,7 @@ form-box {
 
 }
 
-form-box label {
+label {
 	padding-bottom: var(--simple-space);
 	font-size: clamp(1.2rem, 4vw, 1.5rem);
 }

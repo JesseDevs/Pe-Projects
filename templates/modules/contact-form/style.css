@@ -11,7 +11,7 @@ button,
 select,
 textarea {
 	font-family: 'Poppins', sans-serif;
-	font-size: clamp(1rem, 3vw, 1.2rem);
+	font-size: clamp(1rem, 3vw, 1.3rem);
 	resize: none;
 	width: 100%;
 }
@@ -45,6 +45,10 @@ select {
 	height: 10rem;
 }
 
+contact-form form {
+	max-width: 450px;
+	margin: 0 auto;
+}
 
 form button {
 	margin-left: auto;
@@ -58,7 +62,7 @@ contact-form button {
 
 button {
 	outline: none;
-	padding: var(--simple-space) var(--simple-big-space);
+	padding: 15px var(--simple-space);
 	border: var(--thick) solid var(--highlight);
 	background-color: var(--highlight);
 	margin-top: var(--simple-big-space);
@@ -78,7 +82,7 @@ button {
 @media(min-width:400px) {
 	contact-form text-content {
 		grid-column: 1/ span 2;
-		max-width: 70%;
+		max-width: 80%;
 	}
 
 }
@@ -101,6 +105,8 @@ button {
 
 	contact-form form {
 		grid-column: 1 / span 2;
+		max-width: none;
+		margin: 0;
 	}
 
 	.fade {
