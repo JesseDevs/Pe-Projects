@@ -69,7 +69,7 @@ button {
 }
 
 .fade {
-	opacity: 0;
+	display: none;
 	grid-column: 3/ span 2;
 	scale: .9;
 
