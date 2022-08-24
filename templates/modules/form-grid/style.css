@@ -10,7 +10,8 @@ form-box{
 
 form-grid ul{
 	display: grid;
-	gap: var(--simple-big-space);
+	column-gap: var(--simple-big-space);
+	row-gap: var(--simple-space);
 }
 
 form-grid ul li{
@@ -43,7 +44,12 @@ form-grid a{
 	}
 }
 
-@media(min-width: 800px){
+@media(min-width: 1050px){
+
+	form-grid ul{
+
+		row-gap:0;
+	}
 
 	form-grid ul li:nth-of-type(even){
 		grid-column: 3 /span 1;

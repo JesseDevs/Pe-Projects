@@ -1,5 +1,3 @@
-
-
 contact-form {
 	display: block;
 	width: 100%;
@@ -18,7 +16,8 @@ textarea {
 	width: 100%;
 }
 
-input, textarea{
+input,
+textarea {
 	padding: var(--simple-space) var(--simple-small-space);
 	border-radius: 0;
 	border: 0;
@@ -37,7 +36,7 @@ input {
 	margin-bottom: 25px;
 }
 
-select{
+select {
 	height: 1.6rem;
 	text-align: center;
 }
@@ -47,17 +46,17 @@ select{
 }
 
 
-form button{
+form button {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: fit-content;
 }
 
-contact-form button{
+contact-form button {
 	max-width: none;
 }
 
-button{
+button {
 	outline: none;
 	padding: var(--simple-space) var(--simple-big-space);
 	border: var(--thick) solid var(--highlight);
@@ -69,43 +68,40 @@ button{
 	cursor: pointer;
 }
 
-.fade{
-	display: none;
+.fade {
+	opacity: 0;
 	grid-column: 3/ span 2;
-	grid-row: span 2;
-	position: static;
-	top: 0;
-	left: 5%;
-	zoom: .9;
+	scale: .9;
+	grid-row: 1/ span 2;
 }
 
 
 
-@media(min-width: 800px){
+@media(min-width: 800px) {
 
-	contact-form{
+	contact-form {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		column-gap: var(--simple-big-space);
 		position: relative;
 	}
 
-	contact-form text-content{
-		grid-column: 1/ span 4;
+	contact-form text-content {
+		grid-column: 1/ span 2;
 		max-width: 40ch;
 	}
 
-	contact-form form{
+	contact-form form {
 		grid-column: 1 / span 2;
 	}
 
-	.fade{
+	.fade {
 		display: block;
 		animation: rightFadeIn 1.5s forwards;
-		opacity: 0;
+
 	}
 
-	contact-form .cube-sphere{
+	contact-form .cube-sphere {
 
 		order: 3;
 		display: block;
