@@ -11,7 +11,7 @@ button,
 select,
 textarea {
 	font-family: 'Poppins', sans-serif;
-	font-size: clamp(1rem, 3vw, 1.3rem);
+	font-size: clamp(1rem, 2vw, 1.2rem);
 	resize: none;
 	width: 100%;
 }

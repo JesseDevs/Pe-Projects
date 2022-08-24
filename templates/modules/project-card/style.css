@@ -16,9 +16,6 @@ small-grid project-card .project-thumbnail {
 	aspect-ratio: 16/9;
 }
 
-.project-link {
-	border: var(--thin) solid var(--darkgray);
-}
 
 .project-thumbnail img {
 	object-fit: cover;
@@ -52,11 +49,6 @@ project-card .skills {
 	}
 }
 
-.project-detail {
-	border: var(--thin) solid var(--darkgray);
-	border-top: none;
-
-}
 
 .projects-action {
 	padding: 15px var(--simple-space);
@@ -77,14 +69,14 @@ project-card span {
 
 	top: 5px;
 	right: 0;
-	color: var(--accentone);
+	color: var(--cube-line);
 	filter: opacity(30%) blur(.9px);
 	z-index: -10;
 }
 
 
 project-card a+p {
-	background-color: var(--gray);
+	background-color: var(--fade);
 	padding: var(--simple-space) var(--simple-space);
 	color: var(--ink);
 }
