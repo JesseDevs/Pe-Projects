@@ -38,16 +38,19 @@ project-card .projects-action,
 button,
 form-grid a,
 blog-card a,
-project-page .container a{
+project-page .container a,
+missing-heading a{
 	transition: all .4s;
 	letter-spacing: .2em;
+	font-weight: 600;
 }
 
 project-card .projects-action:hover,
 button:hover,
 form-grid a:hover,
 blog-card a:hover,
-project-page .container a:hover{
+project-page .container a:hover,
+missing-heading a:hover{
 	background-color: var(--highlightOP);
 	color: black;
 }
@@ -64,6 +67,7 @@ landing-heading,
 missing-heading{
 
 	margin-top: var(--simple-big-space);
+	margin-bottom: var(--simple-big-space);
 }
 
 
