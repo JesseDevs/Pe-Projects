@@ -63,7 +63,7 @@ project-card .skills {
 }
 
 .projects-action {
-	padding: var(--simple-space) var(--simple-big-space);
+	padding: 15px var(--simple-space);
 	border: var(--thick) solid var(--highlight);
 	background-color: var(--highlight);
 	margin-top: var(--simple-space);

@@ -81,7 +81,7 @@ g g {
 .main-menu ul a:hover {
 	background-color: var(--highlightOP);
 	color: var(--black);
-	transition: color .5s ease-out, background-color .5s ease-out;
+	transition: color .3s ease-out, background-color .3s ease-out;
 }
 
 .main-menu ul a:hover::before {
@@ -90,7 +90,7 @@ g g {
 
 .active {
 	background-color: var(--highlight);
-	transition: color .5s ease-out, background-color .5s ease-out;
+	transition: color .3s ease-out, background-color .3s ease-out;
 }
 
 

@@ -74,7 +74,7 @@ blog-card picture img {
 }
 
 .blog-action {
-  padding: var(--simple-space) 10px;
+  padding: 15px var(--simple-space);
   border: var(--thick) solid var(--highlight);
   background-color: var(--highlight);
   text-align: center;
@@ -95,6 +95,11 @@ blog-card picture img {
 
   blockquote svg {
     height: auto;
+  }
+
+  .blog-action {
+    max-width: fit-content;
+    margin-left: auto;
   }
 
 
@@ -125,6 +130,7 @@ blog-card picture img {
   }
 
   .blog-action {
+    max-width: none;
     grid-column: 4;
     margin-top: 0;
     align-self: flex-end;
@@ -143,8 +149,4 @@ blog-card picture img {
     grid-column: 3 / 5;
   }
 
-  .blog-action {
-    grid-column: 4;
-    align-self: flex-end;
-  }
 }

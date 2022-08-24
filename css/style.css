@@ -49,7 +49,7 @@ blog-card a,
 project-page .container a,
 missing-heading a {
 	transition: all .4s;
-	letter-spacing: .2em;
+	letter-spacing: .1em;
 	font-weight: 600;
 }
 
