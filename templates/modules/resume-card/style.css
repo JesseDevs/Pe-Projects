@@ -8,13 +8,13 @@ resume-card {
 }
 
 resume-card text-content {
-	color: var(--ink)
+	color: var(--ink);
 }
 
 
 .date {
 	margin-bottom: var(--tight-space);
-	color:
+	color: var(--ink);
 }
 
 .duties {
