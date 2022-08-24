@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 
-.logo{
+.logo {
 	font-family: 'Didact Gothic', sans-serif;
 	padding: var(--simple-space) var(--simple-small-space);
 	font-size: clamp(1.3rem, 2vw, 1.5rem);
@@ -16,7 +16,7 @@
 	z-index: 20;
 }
 
-.roar-voice{
+.roar-voice {
 	font-size: clamp(2.9rem, 10vw, 8rem);
 	font-weight: 700;
 
@@ -24,38 +24,38 @@
 	transition: font-size .2s;
 }
 
-.yell-voice{
-	font-size: clamp(2.4rem, 8vw, 3.8rem);
+.yell-voice {
+	font-size: clamp(2.4rem, 7vw, 3.8rem);
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
-.loud-voice	{
-	font-size: clamp(2.2rem, 8vw, 3.5rem);
+.loud-voice {
+	font-size: clamp(2.2rem, 7vw, 3.5rem);
 }
 
-.attention-voice{
+.attention-voice {
 	font-size: clamp(1.8rem, 7vw, 2.2rem);
 	font-weight: 500;
 }
 
-.chant-voice{
+.chant-voice {
 	font-size: clamp(1.5rem, 7vw, 2rem);
 }
 
-.strict-voice{
+.strict-voice {
 	font-size: clamp(1.2rem, 3.5vw, 1.6rem);
 }
 
 .calm-voice, p, li, a {
-	
-	font-size: clamp(.9rem, 2vw, 1.1rem);
+
+	font-size: clamp(1rem, 2vw, 1.1rem);
 	line-height: 1.4;
 }
 
 small,
-.small-voice{
-	font-size: clamp(0.8rem, 1vw, .95rem);
+.small-voice {
+	font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
 :is(.calm-voice, p, li) em {

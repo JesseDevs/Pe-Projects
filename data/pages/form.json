@@ -5,6 +5,9 @@
 	"metaImage": "https://peprojects.dev/alpha-4/jesse/images/details/spark.jpg",
 	"sections": [
 		{
+			"module": "big-heading"
+		},
+		{
 			"module": "form-box",
 			"heading": "Projects",
 			"intro": "I made these.",

@@ -1,24 +1,26 @@
-form-grid{
+form-grid {
+	width: 100%;
+	display: block;
+	border-top: var(--thin) solid var(--cube-line);
+	padding-top: var(--tight-space);
+}
+
+form-box {
 	width: 100%;
 	display: block;
 }
 
-form-box{
-	width: 100%;
-	display: block;
-}
-
-form-grid ul{
+form-grid ul {
 	display: grid;
 	column-gap: var(--simple-big-space);
 	row-gap: var(--simple-space);
 }
 
-form-grid ul li{
+form-grid ul li {
 	transition: all 1s;
 }
 
-form-grid a{
+form-grid a {
 	padding: var(--simple-space);
 	border: var(--thick) solid var(--highlight);
 	background-color: var(--highlight);
@@ -28,48 +30,48 @@ form-grid a{
 }
 
 
-@media(min-width: 500px){
-	form-grid ul{
+@media(min-width: 500px) {
+	form-grid ul {
 
 		grid-template-columns: repeat(4, 1fr);
 
 	}
 
-	form-grid ul li:nth-of-type(even){
+	form-grid ul li:nth-of-type(even) {
 		grid-column: 3 /span 2;
 	}
 
-	form-grid ul li:nth-of-type(odd){
-		grid-column:1 /span 2;
+	form-grid ul li:nth-of-type(odd) {
+		grid-column: 1 /span 2;
 	}
 }
 
-@media(min-width: 1050px){
+@media(min-width: 1050px) {
 
-	form-grid ul{
+	form-grid ul {
 
-		row-gap:0;
+		row-gap: 0;
 	}
 
-	form-grid ul li:nth-of-type(even){
+	form-grid ul li:nth-of-type(even) {
 		grid-column: 3 /span 1;
 	}
 
 
-	form-grid ul li:nth-of-type(odd){
-		grid-column:1 /span 1;
+	form-grid ul li:nth-of-type(odd) {
+		grid-column: 1 /span 1;
 	}
 
 	form-grid nav li:nth-of-type(3),
-	form-grid nav li:nth-of-type(7){
+	form-grid nav li:nth-of-type(7) {
 		grid-column: 2
 	}
 
-	form-grid nav li:nth-of-type(4){
+	form-grid nav li:nth-of-type(4) {
 		grid-column: 4;
 	}
 
-	form-grid nav li:nth-of-type(8){
+	form-grid nav li:nth-of-type(8) {
 		grid-row: 5;
 	}
 

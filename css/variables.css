@@ -13,34 +13,29 @@ html {
 	--thick: 5px;
 	--Xthick: 9px;
 
-	background-color: rgb(255, 255, 255);
-
 	--gray: rgb(196 193 190);
 	--darkgray: #474747;
 	--white: #fff;
-	--black: #000;
+	--black: rgb(10 5 5);
+	--fade: rgb(5 5 5/.1);
 }
 
 
 html {
-
-	--gray: #474747;
-	--darkgray: rgb(196 193 190);
-	--landing-text: rgb(10 5 5);
-	--black: rgb(10 5 5);
-	--page: #135b80;
 	--ink: #f4f4f4;
+	--page: #135b80;
 
-	--highlight: #e37842;
+	--highlight: rgb(227 120 66);
 	--highlightOP: #f0dfd5;
 
 	--accentone: #E3EBF8;
 
 	--pageCompliment: rgb(234 197 177);
-	--menu-bar: #e37842;
 
-	--cube-color: rgb(227 120 66 /.7);
-	--cube-line: rgb(232 207 194 /.7);
+	--cube-color: rgb(227 120 66 / .6);
+	--cube-line: rgb(240 223 213 / .7);
+
+	--landing-text: rgb(10 5 5);
 
 	background-color: rgb(5, 5, 5);
 }
@@ -215,6 +210,11 @@ html {
 
 
 @keyframes square {
-	0%   { transform: translateY(0); }
-	100% { transform: translateY(-700px) rotate(600deg); }
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-700px) rotate(600deg);
+	}
 }

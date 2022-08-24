@@ -4,12 +4,12 @@
 @import 'typography.css';
 @import 'modules.css';
 
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
 	.remove-me {
-		border:1px solid red;
-		position:absolute;
-		right:0;
-		top:0;
+		border: 1px solid red;
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 }
 
@@ -17,29 +17,37 @@
 	margin-bottom: var(--tight-space);
 	color: var(--highlight);
 	font-weight: 500;
-	font-size: clamp(1rem, 2vw, 1.3rem);
+	font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
-.intro p{
+.intro p {
 	font-weight: 500;
 
 }
 
-.active {
-	background-color: var(--highlightOP);
-	color: var(--black);
+.skills {
+	display: flex;
+	text-transform: uppercase;
+	flex-wrap: wrap;
+	gap: 5px;
+	color: var(--cube-line);
 }
 
-.skills{
-	margin-top: var(--simple-small-space);
+.skills p:after {
+	content: ',';
 }
+
+.skills p:last-of-type:after {
+	content: '';
+}
+
 
 project-card .projects-action,
 button,
 form-grid a,
 blog-card a,
 project-page .container a,
-missing-heading a{
+missing-heading a {
 	transition: all .4s;
 	letter-spacing: .2em;
 	font-weight: 600;
@@ -50,13 +58,13 @@ button:hover,
 form-grid a:hover,
 blog-card a:hover,
 project-page .container a:hover,
-missing-heading a:hover{
+missing-heading a:hover {
 	background-color: var(--highlightOP);
 	color: black;
 }
 
 p a:hover,
-p+a:hover{
+p+a:hover {
 	background-color: var(--highlight);
 	transition: all .4s;
 	color: white;
@@ -64,7 +72,7 @@ p+a:hover{
 
 big-heading,
 landing-heading,
-missing-heading{
+missing-heading {
 
 	margin-top: var(--simple-big-space);
 	margin-bottom: var(--simple-big-space);
@@ -72,9 +80,8 @@ missing-heading{
 
 
 big-heading,
-missing-heading{
-	animation: upFadeIn .5s forwards ;
+missing-heading {
+	animation: upFadeIn .5s forwards;
 	opacity: 0;
+	animation-delay: .3s;
 }
-
-

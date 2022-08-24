@@ -1,46 +1,48 @@
-.feedback{
+.feedback {
 	margin-top: var(--tight-space);
 }
 
-results{
+results {
 	display: block;
 	width: 100%;
 }
 
-results .chant-voice{
+results .chant-voice {
 	margin-bottom: var(--tight-space);
 }
 
-form-box{
+form-box {
 	display: grid;
-	column-gap:  var(--simple-big-space);
+	column-gap: var(--simple-big-space);
 
 }
 
-form-box label{
-	padding-bottom: var(--simple-small-space);
+form-box label {
+	padding-bottom: var(--simple-space);
+	font-size: clamp(1.2rem, 4vw, 1.5rem);
 }
 
-form-box field{
+form-box field {
 	margin-bottom: var(--general-space);
 }
 
 
-@media(min-width:  600px){
-	form-box{
+@media(min-width: 600px) {
+	form-box {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	form-box text-content{
+	form-box text-content {
 		grid-column: 1 /span 2;
 	}
 
-	form-box form{
+	form-box form {
 		grid-column: 1 /span 2;
 	}
 
-	form-box .feedback{
+	form-box .feedback {
 		grid-column: 3 / span 2;
+		grid-row: 1;
 		justify-self: center;
 		margin: 0;
 		text-align: center;

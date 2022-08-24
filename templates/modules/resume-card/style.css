@@ -1,51 +1,52 @@
-
-resume-card .skills{
+resume-card .skills {
 	padding: 0;
 }
 
-resume-card{
+resume-card {
 	margin: var(--tight-space) 0;
 }
 
-
-.date{
-	margin-bottom: var(--tight-space);
-	color: var(--accenttwo);
+resume-card text-content {
+	color: var(--highlightOP);
 }
 
-.duties{
+
+.date {
+	margin-bottom: var(--tight-space);
+	color: var(--highlightOP);
+}
+
+.duties {
 	padding-left: 1rem;
 	padding-top: var(--simple-space);
 	padding-bottom: var(--simple-space);
-	
-	
+
+
 }
 
-.duties li{
+.duties li {
 	list-style-type: square;
 	max-width: 50ch;
 	padding-top: var(--simple-small-space);
 	padding-bottom: var(--simple-small-space);
-	
+
 }
 
-@media(min-width: 800px){
-	
-	resume-card{
+@media(min-width: 800px) {
+
+	resume-card {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: auto auto 1fr auto;
 		column-gap: var(--simple-big-space);
 	}
 
-	resume-card *{
+	resume-card * {
 		grid-column: 1 /span 4;
 	}
 
-	.education+resume-card+resume-card{
+	.education+resume-card+resume-card {
 		grid-row: 6;
 	}
 
 }
-
-
