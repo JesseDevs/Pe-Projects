@@ -72,7 +72,15 @@ button {
 	opacity: 0;
 	grid-column: 3/ span 2;
 	scale: .9;
-	grid-row: 1/ span 2;
+
+}
+
+@media(min-width:400px) {
+	contact-form text-content {
+		grid-column: 1/ span 2;
+		max-width: 70%;
+	}
+
 }
 
 
@@ -87,8 +95,8 @@ button {
 	}
 
 	contact-form text-content {
-		grid-column: 1/ span 2;
-		max-width: 40ch;
+		grid-column: 1/ span 4;
+		max-width: 41ch;
 	}
 
 	contact-form form {
