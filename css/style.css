@@ -34,7 +34,7 @@
 	text-transform: uppercase;
 	flex-wrap: wrap;
 	gap: 5px;
-	color: var(--cube-line);
+	color: var(--highlight);
 }
 
 .skills p:after {

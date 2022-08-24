@@ -28,10 +28,6 @@ html {
 	--highlight: rgb(227 120 66);
 	--highlightOP: #f0dfd5;
 
-	--accentone: #E3EBF8;
-
-	--pageCompliment: rgb(234 197 177);
-
 	--cube-color: rgb(227 120 66 / .6);
 	--cube-line: rgb(240 223 213 / .7);
 
@@ -45,25 +41,17 @@ html {
 
 @media(prefers-color-scheme: light) {
 	html {
-
-		--highlight: rgb(67, 111, 156);
-		--highlightOP: #cbdbf5;
-		--darkhighlight: #2e4359;
-
-		--accentone: #e37842;
-		--accenttwo: rgb(234 197 177);
-
 		--ink: rgb(10 5 5);
 		--page: #f4f4f4;
-		--pageCompliment: #bbd3fa;
-		--menu-bar: #5a7aad;
+
+		--highlight: rgb(19 92 128);
+		--highlightOP: rgb(191 215 227);
 
 		--landing-text: #f4f4f4;
 
 
-		--cube-color: rgb(66 147 227 /.5);
-		;
-		--cube-line: rgb(194 209 232/.5);
+		--cube-color: rgb(19 92 128 /.6);
+		--cube-line: rgb(191 215 227/.7);
 
 	}
 }
