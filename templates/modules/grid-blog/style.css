@@ -9,7 +9,7 @@ grid-blog ul{
 }
 
 grid-blog li{
-	margin: var(--general-space) 0;
+	margin-bottom: 80px;
 }
 
 iframe{

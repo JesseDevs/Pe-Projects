@@ -1,20 +1,4 @@
-	@keyframes FadeInOut {
-		0% {
-			opacity:1;
-		}
-		17% {
-			opacity:1;
-		}
-		25% {
-			opacity:0;
-		}
-		92% {
-			opacity:0;
-		}
-		100% {
-			opacity:1;
-		}
-	}
+
 
 	about-card{
 		width: 100%;
@@ -24,14 +8,14 @@
 		padding-bottom: var(--general-space);
 	}
 
-	about-card text-content p{
-		padding-bottom: 25px;
-	}
-
 	about-card p+ a{
 		text-decoration: underline;
 		color: var(--highlight);
 		font-weight: 500;
+	}
+
+	p.about-content{
+		padding-bottom: var(--simple-space);
 	}
 
 	about-card .image-container{
@@ -100,12 +84,6 @@
 			column-gap: var(--simple-big-space);
 		}
 
-		about-card h2,
-		about-card p{
-
-			grid-column: 1 / span 2;
-		}
-
 		about-card text-content{
 			grid-column: 1 / span 2;
 
@@ -113,7 +91,6 @@
 
 		about-card .image-container{
 			grid-column: 3 /span 2;
-			grid-row: 2 / span 2;
 			align-self: center;
 			min-width: 350px;
 			padding-top: 0;

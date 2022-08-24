@@ -7,6 +7,10 @@ project-card {
 	z-index: 10;
 }
 
+project-card:first-of-type{
+	padding-top: 0;
+}
+
 
 .project-thumbnail{
 	aspect-ratio: 100px/200px;

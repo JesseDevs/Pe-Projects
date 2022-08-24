@@ -17,10 +17,12 @@
 	margin-bottom: var(--tight-space);
 	color: var(--highlight);
 	font-weight: 500;
+	font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 .intro p{
 	font-weight: 500;
+
 }
 
 .active {
@@ -28,9 +30,8 @@
 	color: var(--black);
 }
 
-@keyframes square {
-	0%   { transform: translateY(0); }
-	100% { transform: translateY(-700px) rotate(600deg); }
+.skills{
+	margin-top: var(--simple-small-space);
 }
 
 project-card .projects-action,
@@ -39,6 +40,7 @@ form-grid a,
 blog-card a,
 project-page .container a{
 	transition: all .4s;
+	letter-spacing: .2em;
 }
 
 project-card .projects-action:hover,
