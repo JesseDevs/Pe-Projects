@@ -10,7 +10,7 @@ footer {
 
 span strong {
 	text-transform: uppercase;
-
+	letter-spacing: .1em;
 }
 
 footer nav {
@@ -28,7 +28,7 @@ footer nav ul li {
 
 footer nav ul a {
 	padding: var(--simple-small-space) var(--simple-space);
-	font-size: clamp(1rem, 2vw, 1.1rem);
+	font-size: clamp(1rem, 1.5vw, 1.1rem);
 
 	color: var(--white);
 }
@@ -54,6 +54,7 @@ footer .socials li:first-of-type,
 footer .page-links li:first-of-type {
 	grid-column: span 2;
 	pointer-events: none;
+	text-decoration: underline;
 }
 
 @media(min-width:500px) {

@@ -16,13 +16,13 @@ goal-card li {
 }
 
 goal-card span {
-	font-size: 4rem;
+	font-size: 2rem;
 	font-weight: 600;
 	max-width: fit-content;
 
 	top: 0;
 	right: 0;
-	color: var(--ink);
+	color: var(--highlight);
 	filter: opacity(50%) blur(.5px);
 	z-index: -10;
 }

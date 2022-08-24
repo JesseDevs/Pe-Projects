@@ -4,24 +4,23 @@ resume-card .skills {
 
 resume-card {
 	margin: var(--tight-space) 0;
+	padding-bottom: var(--simple-space);
 }
 
 resume-card text-content {
-	color: var(--highlightOP);
+	color: var(--ink)
 }
 
 
 .date {
 	margin-bottom: var(--tight-space);
-	color: var(--highlightOP);
+	color:
 }
 
 .duties {
 	padding-left: 1rem;
 	padding-top: var(--simple-space);
 	padding-bottom: var(--simple-space);
-
-
 }
 
 .duties li {
