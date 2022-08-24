@@ -12,7 +12,7 @@
         {
             "module": "form-grid",
             "heading": "Exercise Grid",
-            "intro": "Check it out!",
+            "intro": "These are little apps that solve everyday probelms. <br> Entirely made using PHP to check what the input field is.",
             "items": [
                 {
                     "id": 1,
