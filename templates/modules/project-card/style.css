@@ -1,14 +1,10 @@
 project-card {
 	display: block;
 	width: 100%;
-	padding: var(--tight-space) 0;
+	padding-bottom: var(--general-space);
 	position: relative;
 	background-color: transparent;
 	z-index: 10;
-}
-
-project-card:first-of-type {
-	padding-top: 0;
 }
 
 
@@ -79,7 +75,7 @@ project-card span {
 	max-height: 60px;
 	align-self: flex-end;
 
-	top: 15px;
+	top: 10px;
 	right: 0;
 	color: var(--accentone);
 	filter: opacity(30%) blur(.9px);
