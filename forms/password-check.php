@@ -1,4 +1,3 @@
-
 <?php
 
 $username = 'JohnDoe';
@@ -36,7 +35,7 @@ if (isset($_POST['submitted'])) {
         <label for="">Enter username:</label>
         <input type="text" name='username' value='<?= $inputUsername ?>' required min='0'>
 
-        <span><em>*Hint: It's JohnDoe 😉</em></span>
+        <span><em>*Hint: It's JohnDoe </em>😉</span>
 
     </field>
 
@@ -55,7 +54,7 @@ if (isset($_POST['submitted'])) {
 </form>
 
 <results class='feedback'>
-    <h3 class="chant-voice">  The Results</h3>
+    <h3 class="chant-voice"> The Results</h3>
     <p><?= $template ?></p>
-    
+
 </results>
