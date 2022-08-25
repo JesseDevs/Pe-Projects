@@ -90,7 +90,7 @@ g g {
 
 .active {
 	background-color: var(--highlight);
-	color: var(--landing-text);
+	color: var(--white);
 	transition: color .3s ease-out, background-color .3s ease-out;
 }
 
