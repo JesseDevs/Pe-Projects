@@ -50,9 +50,9 @@ project-card .span-title {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	color: var(--cube-line);
+	color: var(--cube-color);
 	z-index: 1;
-	filter: opacity(60%) blur(1px);
+	filter: opacity(70%) blur(1px);
 }
 
 @media(min-width:600px) {
@@ -93,7 +93,7 @@ project-card .span-title {
 		position: absolute;
 		grid-row: 2;
 		padding: 10px;
-		text-shadow: 2px 2px 5px var(--black);
+		text-shadow: 2px 2px 5px var(--landing-text);
 	}
 
 
@@ -161,6 +161,7 @@ project-card .span-title {
 		position: static;
 		grid-row: 3;
 		grid-column: span 3;
+		text-shadow: none;
 	}
 
 	project-card:not(:first-of-type) .projects-action {
