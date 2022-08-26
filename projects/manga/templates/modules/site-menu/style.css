@@ -1,0 +1,9 @@
+header inner-column {
+    padding: 1rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background: url('images/svg/manga.jpeg');
+}

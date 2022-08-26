@@ -2,7 +2,11 @@
     <inner-column>
 
         <nav>
+            <div class="logo">
+
+            </div>
             <ul>
+
                 <li><a href="?page=home">Home</a></li>
                 <li><a href="?page=list">List</a></li>
                 <li>

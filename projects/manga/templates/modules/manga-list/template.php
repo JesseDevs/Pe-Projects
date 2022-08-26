@@ -15,7 +15,7 @@ $mangas = getMangas()['mangas'];
             <li><?= ucwords($manga['title']) ?></li>
             <li><?= ucwords($manga['author']) ?></li>
             <li><?= $manga['chapters'] ?></li>
-            <li><?= $manga['id'] ?></li>
+
 
         <?php } ?>
     </ul>

@@ -1,2 +1,5 @@
-@import '../modules/site-footer/style.css';
-@import '../modules/site-menu/style.css';
+@import '../templatesmodules/site-footer/style.css';
+@import '../templates/modules/site-menu/style.css';
+@import '../templates/modules/manga-list/style.css';
+@import '../templates/modules/manga-card/style.css';
+@import '../templates/modules/form/style.css';
