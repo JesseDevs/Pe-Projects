@@ -105,6 +105,10 @@ project-card .span-title {
 		column-gap: var(--simple-big-space);
 	}
 
+	project-section project-card .project-thumbnail {
+		filter: brightness(100%);
+	}
+
 	project-section project-card:first-of-type text-content {
 		grid-column: 3 / span 2;
 	}
