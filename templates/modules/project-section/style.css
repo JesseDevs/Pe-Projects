@@ -8,7 +8,7 @@ project-section {
 	project-section {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		column-gap: var(--simple-space);
+		column-gap: var(--simple-big-space);
 	}
 
 	project-section text-content {
