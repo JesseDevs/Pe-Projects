@@ -88,12 +88,14 @@ project-card .span-title {
 	}
 
 	project-card .project-detail {
+		color: var(--white);
 		margin-top: var(--simple-space);
 		grid-column: 3 / span 2;
 		position: absolute;
 		grid-row: 2;
 		padding: 10px;
-		text-shadow: 2px 2px 5px var(--landing-text);
+		text-shadow: 2px 2px 5px var(--darkgray);
+		background-color: var(--fade);
 	}
 
 
@@ -108,6 +110,11 @@ project-card .span-title {
 	project-section project-card .project-thumbnail {
 		filter: brightness(100%);
 	}
+
+	project-section project-card .project-detail{
+		background-color: transparent;
+		color: inherit	;
+	} 
 
 	project-section project-card:first-of-type text-content {
 		grid-column: 3 / span 2;
@@ -144,7 +151,7 @@ project-card .span-title {
 	}
 
 	project-card:not(:first-of-type) {
-		grid-template-rows: auto 1fr 150px;
+		grid-template-rows: auto 1fr 200px;
 	}
 
 	project-card:not(:first-of-type) .project-thumbnail {
