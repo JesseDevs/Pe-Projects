@@ -118,7 +118,7 @@
         "id": "legends",
         "title": "Legends",
         "intro": "php",
-        "detail": "This project takes the concepts of PHP and begins to use it in a more creative direction. The key points: looping through data, specifc data styling, and responsive layout for file path.",
+        "detail": "The key points of this project is looping through data, specifc data styling, and a responsive layout for file path.",
         "thumbnail": "images/projects/legends/legends.jpg",
         "skills": [
             "html",

@@ -64,7 +64,7 @@ landing-heading .intro {
 	landing-heading {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: var(--simple-big-space);
+		column-gap: var(--simple-space);
 
 		position: relative;
 	}

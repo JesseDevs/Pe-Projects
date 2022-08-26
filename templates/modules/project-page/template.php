@@ -13,13 +13,7 @@
 	</div>
 
 	<div class="container">
-		<div class="links">
-			<?php foreach ($projectData['links'] as $link) { ?>
 
-
-				<a target="blank" href="<?= $link['link'] ?>"><?= $link['title'] ?></a>
-			<?php } ?>
-		</div>
 		<article-grid class="casestudy">
 			<?php foreach ($projectData['casestudy'] as $section) { ?>
 				<article>
@@ -36,6 +30,14 @@
 			<?php } ?>
 
 		</article-grid>
+
+		<div class="links">
+			<?php foreach ($projectData['links'] as $link) { ?>
+
+
+				<a target="blank" href="<?= $link['link'] ?>"><?= $link['title'] ?></a>
+			<?php } ?>
+		</div>
 	</div>
 
 	</project-detail>

@@ -6,6 +6,7 @@ html {
 	--simple-space: 20px;
 	--simple-big-space: 40px;
 
+	--big-general-space: 12vh;
 	--general-space: 5vh;
 	--tight-space: 2.6vh;
 
@@ -60,6 +61,7 @@ html {
 @media(min-width: 1600px) {
 
 	html {
+		--big-general-space: 7vh;
 		--general-space: 3vh;
 		--tight-space: 1.7vh;
 	}

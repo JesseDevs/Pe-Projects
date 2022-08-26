@@ -4,21 +4,21 @@ $projectDetailPageLink = $project['links'][0]['link']  ?? $project['direct-link'
 
 
 <project-card>
-	<span><?= strtoupper($project['intro']) ?></span>
-	<div>
+	<text-content>
+		<span class="span-title"><?= strtoupper($project['intro']) ?></span>
 		<h3 class='attention-voice'><?= $project['title'] ?></h3>
-
-		<text-content class="skills">
+		<div class="skills">
 			<?php foreach ($project['skills'] as $skill) { ?>
 				<p class="small-voice"><?= $skill ?></p>
 			<?php } ?>
-		</text-content>
-	</div>
-	<a class='project-link' target="_blank" href="<?= $project['direct-link'] ?>">
-		<picture class='project-thumbnail'>
-			<img src=" <?= $project['thumbnail'] ?>" alt="">
-		</picture>
-	</a>
+		</div>
+	</text-content>
+	<picture class='project-thumbnail'>
+
+		<img src=" <?= $project['thumbnail'] ?>" alt="">
+	</picture>
+
+
 	<p class="project-detail"><?= $project['detail'] ?></p>
 
 	<a class="projects-action" href="<?= $projectDetailPageLink ?>"><?= $project['links'][0]['title'] ?></a>
