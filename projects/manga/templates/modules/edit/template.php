@@ -16,9 +16,11 @@ if (isset($_POST["edit"])) {
 
     if (!empty($newTitle) && !empty($newAuthor)) {
         $editedManga = [
+
             "title" => $newTitle,
             "author" => $newAuthor,
-            "chapters" => $newChapters
+            "chapters" => $newChapters,
+            "id" => $currentManga['id']
         ];
     }
 

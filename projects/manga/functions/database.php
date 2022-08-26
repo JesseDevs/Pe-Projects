@@ -43,6 +43,7 @@ function addManga($manga)
 
     array_push($mangas['mangas'], $manga);
     encodeMangas($mangas);
+    header('https://peprojects.dev/alpha-4/jesse/projects/manga/?page=list');
 }
 
 
@@ -61,14 +62,26 @@ function deleteManga($item)
 
     //turn the associative array back into json.
     encodeMangas($filtered);
+    header('https://peprojects.dev/alpha-4/jesse/projects/manga/?page=list');
 }
 
 
 function editManga($idToEdit, $editedManga)
 {
     //returns an associatve array of the json
-    $mangas = getmangas();
+    $mangas = getmangas()['mangas'];
 
-    $mangas["mangas"][$idToEdit] = $editedManga;
-    encodeMangas($mangas);
+    $filtered['mangas'] = [];
+
+    //remove the $id from the array.
+    foreach ($mangas as $manga) {
+        if ($manga['id'] !== $idToEdit) {
+            array_push($filtered['mangas'], $manga);
+        }
+    }
+
+    array_push($filtered['mangas'], $editedManga);
+
+    encodeMangas($filtered);
+    header('https://peprojects.dev/alpha-4/jesse/projects/manga/?page=list');
 }
