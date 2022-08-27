@@ -21,7 +21,7 @@
 	margin-bottom: var(--tight-space);
 	color: var(--highlight);
 	font-weight: 500;
-	font-size: clamp(1rem, 2vw, 1.4rem);
+	font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
 
 .intro p {

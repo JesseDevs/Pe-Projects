@@ -60,7 +60,7 @@ landing-heading .intro {
 
 }
 
-@media(min-width:700px) {
+@media(min-width:650px) {
 	landing-heading {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;

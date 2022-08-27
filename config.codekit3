@@ -2540,6 +2540,441 @@
       "oAP" : "\/projects\/legends\/legends.php",
       "oF" : 0
     },
+    "\/projects\/manga\/css\/modules.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/css\/modules-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/css\/reset.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/css\/reset-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/css\/setup.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/css\/setup-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/css\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/css\/typography.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/css\/typography-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/css\/variables.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/css\/variables-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/data\/manga.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/data\/manga-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/manga\/functions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/functions.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/functions\/database.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/functions\/database.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/functions\/routing.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/functions\/routing.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/functions\/utilities.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/functions\/utilities.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/images\/background\/grain.webp" : {
+      "ft" : 8388608,
+      "iS" : 113654,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/background\/grain.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/projects\/manga\/images\/background\/landscape.jpg" : {
+      "ft" : 16384,
+      "iS" : 37319,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/background\/landscape.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/manga\/images\/background\/landscape.png" : {
+      "ft" : 32768,
+      "iS" : 267118,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/background\/landscape.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/manga\/images\/background\/metadata.png" : {
+      "ft" : 32768,
+      "iS" : 15830,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/background\/metadata.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/manga\/images\/background\/portrait.jpg" : {
+      "ft" : 16384,
+      "iS" : 127373,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/background\/portrait.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/manga\/images\/background\/portrait.png" : {
+      "ft" : 32768,
+      "iS" : 266721,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/background\/portrait.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/manga\/images\/background\/square.jpg" : {
+      "ft" : 16384,
+      "iS" : 172970,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/background\/square.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/manga\/images\/background\/square.png" : {
+      "ft" : 32768,
+      "iS" : 336821,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/background\/square.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/manga\/images\/socials\/icons8-github.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/manga\/images\/socials\/icons8-github.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/manga\/images\/socials\/icons8-instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/manga\/images\/socials\/icons8-instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/manga\/images\/socials\/icons8-linkedin.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/manga\/images\/socials\/icons8-linkedin.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/manga\/images\/socials\/icons8-twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/manga\/images\/socials\/icons8-twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/manga\/images\/svg\/manga.jpeg" : {
+      "ft" : 16384,
+      "iS" : 75951,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/svg\/manga.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/manga\/index.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/index.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/add\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/add\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/add\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/add\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/edit\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/edit\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/edit\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/edit\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/form\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/templates\/modules\/form\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/form\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/form\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/manga-list\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/templates\/modules\/manga-list\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/manga-list\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/manga-list\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/site-footer\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/site-footer\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/site-footer\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/site-footer\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/site-menu\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/templates\/modules\/site-menu\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/site-menu\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/site-menu\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/pages\/delete.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/pages\/delete.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/pages\/detail.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/pages\/detail.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/pages\/edit.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/pages\/edit.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/pages\/home.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/pages\/home.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/pages\/list.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/pages\/list.php",
+      "oF" : 0
+    },
     "\/projects\/monster-adoption\/css\/header-footer.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -5359,6 +5794,34 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/projects\/router-boilerplate\/css\/variables.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/router-boilerplate\/css\/variables-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/router-boilerplate\/data\/exercises.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/router-boilerplate\/data\/exercises-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/router-boilerplate\/data\/pages.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/router-boilerplate\/data\/pages-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/projects\/router-boilerplate\/data\/pages\/404.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -5391,12 +5854,20 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/router-boilerplate\/functions\/functions.php" : {
+    "\/projects\/router-boilerplate\/data\/projects.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/router-boilerplate\/data\/projects-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/router-boilerplate\/functions.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/functions\/functions.php",
+      "oAP" : "\/projects\/router-boilerplate\/functions.php",
       "oF" : 0
     },
     "\/projects\/router-boilerplate\/functions\/routing.php" : {
@@ -5415,9 +5886,20 @@
       "oAP" : "\/projects\/router-boilerplate\/functions\/utilities.php",
       "oF" : 0
     },
+    "\/projects\/router-boilerplate\/images\/background\/grain.webp" : {
+      "ft" : 8388608,
+      "iS" : 113654,
+      "oA" : 0,
+      "oAP" : "\/projects\/router-boilerplate\/images\/background\/grain.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 115303,
+      "iS" : 37319,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",
@@ -5433,6 +5915,19 @@
       "iS" : 267118,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/router-boilerplate\/images\/background\/metadata.png" : {
+      "ft" : 32768,
+      "iS" : 15830,
+      "oA" : 0,
+      "oAP" : "\/projects\/router-boilerplate\/images\/background\/metadata.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -5493,82 +5988,45 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/router-boilerplate\/images\/grain.webp" : {
-      "ft" : 8388608,
-      "iS" : 113654,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/images\/grain.webp",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-default",
-      "rq" : 75
-    },
-    "\/projects\/router-boilerplate\/images\/icons8-github.svg" : {
+    "\/projects\/router-boilerplate\/images\/socials\/icons8-github.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/projects\/router-boilerplate\/images\/icons8-github.svg",
+      "oAP" : "\/projects\/router-boilerplate\/images\/socials\/icons8-github.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/projects\/router-boilerplate\/images\/icons8-instagram.svg" : {
+    "\/projects\/router-boilerplate\/images\/socials\/icons8-instagram.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/projects\/router-boilerplate\/images\/icons8-instagram.svg",
+      "oAP" : "\/projects\/router-boilerplate\/images\/socials\/icons8-instagram.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/projects\/router-boilerplate\/images\/icons8-linkedin.svg" : {
+    "\/projects\/router-boilerplate\/images\/socials\/icons8-linkedin.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/projects\/router-boilerplate\/images\/icons8-linkedin.svg",
+      "oAP" : "\/projects\/router-boilerplate\/images\/socials\/icons8-linkedin.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/projects\/router-boilerplate\/images\/icons8-twitter.svg" : {
+    "\/projects\/router-boilerplate\/images\/socials\/icons8-twitter.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/projects\/router-boilerplate\/images\/icons8-twitter.svg",
+      "oAP" : "\/projects\/router-boilerplate\/images\/socials\/icons8-twitter.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
-    },
-    "\/projects\/router-boilerplate\/images\/landscape.jpg" : {
-      "ft" : 16384,
-      "iS" : 37319,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/images\/landscape.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/router-boilerplate\/images\/metadata.png" : {
-      "ft" : 32768,
-      "iS" : 15830,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/images\/metadata.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
     },
     "\/projects\/router-boilerplate\/index.php" : {
       "cB" : 0,
@@ -5578,7 +6036,7 @@
       "oAP" : "\/projects\/router-boilerplate\/index.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/modules\/article-grid\/style.css" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/big-heading\/style.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5586,19 +6044,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/modules\/article-grid\/style-min.css",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/big-heading\/style-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-boilerplate\/modules\/article-grid\/template.php" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/big-heading\/template.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/modules\/article-grid\/template.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/big-heading\/template.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/modules\/page-header\/style.css" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/page-header\/style.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5606,19 +6064,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/modules\/page-header\/style-min.css",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/page-header\/style-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-boilerplate\/modules\/page-header\/template.php" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/page-header\/template.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/modules\/page-header\/template.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/page-header\/template.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/modules\/site-footer\/style.css" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/page-section\/style.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5626,19 +6084,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/modules\/site-footer\/style-min.css",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/page-section\/style-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-boilerplate\/modules\/site-footer\/template.php" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/page-section\/template.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/modules\/site-footer\/template.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/page-section\/template.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/modules\/site-menu\/style.css" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/site-footer\/style.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5646,59 +6104,79 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/modules\/site-menu\/style-min.css",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/site-footer\/style-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-boilerplate\/modules\/site-menu\/template.php" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/site-footer\/template.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/modules\/site-menu\/template.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/site-footer\/template.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/pages\/404.php" : {
+    "\/projects\/router-boilerplate\/templates\/modules\/site-menu\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/site-menu\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/router-boilerplate\/templates\/modules\/site-menu\/template.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/pages\/404.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/modules\/site-menu\/template.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/pages\/about.php" : {
+    "\/projects\/router-boilerplate\/templates\/pages\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/pages\/about.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/pages\/404.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/pages\/home.php" : {
+    "\/projects\/router-boilerplate\/templates\/pages\/home.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/pages\/home.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/pages\/home.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/pages\/list.php" : {
+    "\/projects\/router-boilerplate\/templates\/pages\/project.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/pages\/list.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/pages\/project.php",
       "oF" : 0
     },
-    "\/projects\/router-boilerplate\/pages\/standard.php" : {
+    "\/projects\/router-boilerplate\/templates\/pages\/projects.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-boilerplate\/pages\/standard.php",
+      "oAP" : "\/projects\/router-boilerplate\/templates\/pages\/projects.php",
       "oF" : 0
     },
-    "\/projects\/router-site\/css\/modules.css" : {
+    "\/projects\/router-boilerplate\/templates\/pages\/standard.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/router-boilerplate\/templates\/pages\/standard.php",
+      "oF" : 0
+    },
+    "\/projects\/simple-manga\/css\/modules.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5706,11 +6184,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/router-site\/css\/modules-min.css",
+      "oAP" : "\/projects\/simple-manga\/css\/modules-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-site\/css\/reset.css" : {
+    "\/projects\/simple-manga\/css\/reset.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5718,11 +6196,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/router-site\/css\/reset-min.css",
+      "oAP" : "\/projects\/simple-manga\/css\/reset-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-site\/css\/setup.css" : {
+    "\/projects\/simple-manga\/css\/setup.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5730,11 +6208,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/router-site\/css\/setup-min.css",
+      "oAP" : "\/projects\/simple-manga\/css\/setup-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-site\/css\/style.css" : {
+    "\/projects\/simple-manga\/css\/style.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5742,11 +6220,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/css\/style-min.css",
+      "oAP" : "\/projects\/simple-manga\/css\/style-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-site\/css\/typography.css" : {
+    "\/projects\/simple-manga\/css\/typography.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5754,11 +6232,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/router-site\/css\/typography-min.css",
+      "oAP" : "\/projects\/simple-manga\/css\/typography-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-site\/css\/variables.css" : {
+    "\/projects\/simple-manga\/css\/variables.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -5766,107 +6244,67 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/projects\/router-site\/css\/variables-min.css",
+      "oAP" : "\/projects\/simple-manga\/css\/variables-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/projects\/router-site\/data\/exercises.json" : {
+    "\/projects\/simple-manga\/data\/manga.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/projects\/router-site\/data\/exercises-min.json",
+      "oAP" : "\/projects\/simple-manga\/data\/manga-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/router-site\/data\/pages.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/router-site\/data\/pages-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/router-site\/data\/pages\/404.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/router-site\/data\/pages\/404-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/router-site\/data\/pages\/about.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/router-site\/data\/pages\/about-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/router-site\/data\/pages\/home.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/router-site\/data\/pages\/home-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/router-site\/data\/pages\/list.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/router-site\/data\/pages\/list-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/router-site\/data\/projects.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/router-site\/data\/projects-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/router-site\/functions.php" : {
+    "\/projects\/simple-manga\/functions.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/functions.php",
+      "oAP" : "\/projects\/simple-manga\/functions.php",
       "oF" : 0
     },
-    "\/projects\/router-site\/functions\/routing.php" : {
+    "\/projects\/simple-manga\/functions\/database.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/functions\/routing.php",
+      "oAP" : "\/projects\/simple-manga\/functions\/database.php",
       "oF" : 0
     },
-    "\/projects\/router-site\/functions\/utilities.php" : {
+    "\/projects\/simple-manga\/functions\/routing.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/functions\/utilities.php",
+      "oAP" : "\/projects\/simple-manga\/functions\/routing.php",
       "oF" : 0
     },
-    "\/projects\/router-site\/images\/background\/grain.webp" : {
+    "\/projects\/simple-manga\/functions\/utilities.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/simple-manga\/functions\/utilities.php",
+      "oF" : 0
+    },
+    "\/projects\/simple-manga\/images\/background\/grain.webp" : {
       "ft" : 8388608,
       "iS" : 113654,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/images\/background\/grain.webp",
+      "oAP" : "\/projects\/simple-manga\/images\/background\/grain.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/projects\/router-site\/images\/background\/landscape.jpg" : {
+    "\/projects\/simple-manga\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
       "iS" : 37319,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/images\/background\/landscape.jpg",
+      "oAP" : "\/projects\/simple-manga\/images\/background\/landscape.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -5874,11 +6312,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/projects\/router-site\/images\/background\/landscape.png" : {
+    "\/projects\/simple-manga\/images\/background\/landscape.png" : {
       "ft" : 32768,
       "iS" : 267118,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/images\/background\/landscape.png",
+      "oAP" : "\/projects\/simple-manga\/images\/background\/landscape.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -5887,11 +6325,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/router-site\/images\/background\/metadata.png" : {
+    "\/projects\/simple-manga\/images\/background\/metadata.png" : {
       "ft" : 32768,
       "iS" : 15830,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/images\/background\/metadata.png",
+      "oAP" : "\/projects\/simple-manga\/images\/background\/metadata.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -5900,12 +6338,12 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/router-site\/images\/background\/portrait.jpg" : {
+    "\/projects\/simple-manga\/images\/background\/portrait.jpg" : {
       "ft" : 16384,
       "iS" : 127373,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/images\/background\/portrait.jpg",
+      "oAP" : "\/projects\/simple-manga\/images\/background\/portrait.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -5913,11 +6351,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/projects\/router-site\/images\/background\/portrait.png" : {
+    "\/projects\/simple-manga\/images\/background\/portrait.png" : {
       "ft" : 32768,
       "iS" : 266721,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/images\/background\/portrait.png",
+      "oAP" : "\/projects\/simple-manga\/images\/background\/portrait.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -5926,12 +6364,12 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/router-site\/images\/background\/square.jpg" : {
+    "\/projects\/simple-manga\/images\/background\/square.jpg" : {
       "ft" : 16384,
       "iS" : 172970,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/images\/background\/square.jpg",
+      "oAP" : "\/projects\/simple-manga\/images\/background\/square.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -5939,11 +6377,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/projects\/router-site\/images\/background\/square.png" : {
+    "\/projects\/simple-manga\/images\/background\/square.png" : {
       "ft" : 32768,
       "iS" : 336821,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/images\/background\/square.png",
+      "oAP" : "\/projects\/simple-manga\/images\/background\/square.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -5952,192 +6390,52 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/router-site\/images\/socials\/icons8-github.svg" : {
+    "\/projects\/simple-manga\/images\/socials\/icons8-github.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/projects\/router-site\/images\/socials\/icons8-github.svg",
+      "oAP" : "\/projects\/simple-manga\/images\/socials\/icons8-github.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/projects\/router-site\/images\/socials\/icons8-instagram.svg" : {
+    "\/projects\/simple-manga\/images\/socials\/icons8-instagram.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/projects\/router-site\/images\/socials\/icons8-instagram.svg",
+      "oAP" : "\/projects\/simple-manga\/images\/socials\/icons8-instagram.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/projects\/router-site\/images\/socials\/icons8-linkedin.svg" : {
+    "\/projects\/simple-manga\/images\/socials\/icons8-linkedin.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/projects\/router-site\/images\/socials\/icons8-linkedin.svg",
+      "oAP" : "\/projects\/simple-manga\/images\/socials\/icons8-linkedin.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/projects\/router-site\/images\/socials\/icons8-twitter.svg" : {
+    "\/projects\/simple-manga\/images\/socials\/icons8-twitter.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/projects\/router-site\/images\/socials\/icons8-twitter.svg",
+      "oAP" : "\/projects\/simple-manga\/images\/socials\/icons8-twitter.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/projects\/router-site\/index.php" : {
+    "\/projects\/simple-manga\/index.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/router-site\/index.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/big-heading\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/big-heading\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/big-heading\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/big-heading\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/page-header\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/page-header\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/page-header\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/page-header\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/page-section\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/page-section\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/page-section\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/page-section\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/site-footer\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/site-footer\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/site-footer\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/site-footer\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/site-menu\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/site-menu\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/router-site\/templates\/modules\/site-menu\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/modules\/site-menu\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/pages\/404.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/pages\/404.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/pages\/home.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/pages\/home.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/pages\/project.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/pages\/project.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/pages\/projects.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/pages\/projects.php",
-      "oF" : 0
-    },
-    "\/projects\/router-site\/templates\/pages\/standard.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/router-site\/templates\/pages\/standard.php",
+      "oAP" : "\/projects\/simple-manga\/index.php",
       "oF" : 0
     },
     "\/projects\/spider-garden\/css\/reset.css" : {
@@ -6955,14 +7253,6 @@
       "oAP" : "\/projects\/ultra-responsive-layout\/index.php",
       "oF" : 0
     },
-    "\/scratch\/dom.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scratch\/dom.html",
-      "oF" : 0
-    },
     "\/scratch\/functions.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -6986,6 +7276,47 @@
       "oA" : 0,
       "oAP" : "\/scratch\/intro.php",
       "oF" : 0
+    },
+    "\/scratch\/js-practice\/aug-25.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scratch\/js-practice\/aug-25-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/scratch\/js-practice\/aug-26.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scratch\/js-practice\/aug-26-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/scratch\/js-practice\/dom.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scratch\/js-practice\/dom.html",
+      "oF" : 0
+    },
+    "\/scratch\/js-practice\/practice.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scratch\/js-practice\/practice-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/scratch\/loop.php" : {
       "cB" : 0,
@@ -7058,6 +7389,26 @@
       "oAP" : "\/scratch\/styleTwo-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/templates\/case\/diptech\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/case\/diptech\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/templates\/case\/diptech\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/case\/diptech\/template.php",
+      "oF" : 0
     },
     "\/templates\/cube-sphere.php" : {
       "cB" : 0,
