@@ -27,6 +27,8 @@
 
     <?php include('templates/modules/site-footer/template.php'); ?>
 
+
+    <script src="codepen.js"></script>
 </body>
 
 </html>

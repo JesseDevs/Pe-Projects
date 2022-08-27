@@ -1,0 +1,36 @@
+label,
+input,
+input::placeholder,
+button,
+field {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(.9rem, 2vw, 1.1rem);
+    resize: none;
+    width: 100%;
+    display: block;
+}
+
+field {
+    margin-bottom: 30px;
+}
+
+input,
+button {
+    padding: 8px;
+    border: none;
+    border-radius: none;
+    outline: none;
+
+}
+
+input::placeholder {
+    font-weight: 600;
+}
+
+input:focus {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: none;
+    outline: none;
+}

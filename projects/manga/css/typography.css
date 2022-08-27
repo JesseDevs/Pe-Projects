@@ -18,8 +18,6 @@
 
 .yell-voice {
 	font-size: clamp(2.4rem, 8vw, 3.8rem);
-	font-weight: 600;
-	text-transform: uppercase;
 }
 
 .loud-voice {
@@ -28,7 +26,6 @@
 
 .attention-voice {
 	font-size: clamp(1.8rem, 7vw, 2.2rem);
-	font-weight: 500;
 }
 
 .chant-voice {
@@ -41,7 +38,7 @@
 
 .calm-voice, p, li, a {
 
-	font-size: clamp(1rem, 2vw, 1.2rem);
+	font-size: clamp(.9rem, 2vw, 1.2rem);
 	line-height: 1.4;
 }
 

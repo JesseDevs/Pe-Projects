@@ -1,0 +1,20 @@
+landing-block {
+    width: 100%;
+    display: block;
+}
+
+landing-block h1 {
+    font-weight: 800;
+    text-align: center;
+
+}
+
+landing-block h1 em {
+    font-weight: 400;
+}
+
+landing-block h1 span {
+    font-weight: 700;
+    display: block;
+    padding-left: 3rem;
+}
