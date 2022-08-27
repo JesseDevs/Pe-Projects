@@ -4,7 +4,7 @@
             <a class='logo' href="?page=home">-Title- list</a>
             <ul>
                 <li><a href="?page=home">Home</a></li>
-                <li><a href="?page=list">List</a></li>
+                <li><a href="?page=list">Catalog</a></li>
                 <li>
                     <span>?<?= printQueryString(); ?></span>
                 </li>

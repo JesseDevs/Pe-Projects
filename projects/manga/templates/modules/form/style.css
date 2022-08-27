@@ -8,10 +8,15 @@ field {
     resize: none;
     width: 100%;
     display: block;
+    font-weight: 600;
 }
 
 field {
     margin-bottom: 30px;
+}
+
+label {
+    margin-bottom: 50px;
 }
 
 input,
@@ -24,7 +29,7 @@ button {
 }
 
 input::placeholder {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 input:focus {
