@@ -1,10 +1,8 @@
 <header class='site-header'>
     <inner-column>
-        <a class='logo' href="?page=home"><span> manga list</span></a>
         <nav>
-
+            <a class='logo' href="?page=home">-Title- list</a>
             <ul>
-
                 <li><a href="?page=home">Home</a></li>
                 <li><a href="?page=list">List</a></li>
                 <li>

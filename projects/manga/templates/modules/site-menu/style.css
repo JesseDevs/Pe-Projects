@@ -1,11 +1,12 @@
 header inner-column {
-    padding: 1rem;
-
+    padding-top: 1rem;
+    padding-bottom: 5vh;
 }
 
 .logo {
     font-family: 'BioRhyme', serif;
     text-transform: uppercase;
+    text-align: right;
 
 }
 
@@ -13,8 +14,8 @@ nav ul {
 
     position: fixed;
     display: block;
-    top: 40px;
-    left: 1rem;
+    top: 15vh;
+    left: 10px;
 
 }
 
