@@ -1,9 +1,46 @@
 header inner-column {
     padding: 1rem;
+
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    background: url('images/svg/manga.jpeg');
+    font-family: 'BioRhyme', serif;
+    text-transform: uppercase;
+
+}
+
+nav ul {
+
+    position: fixed;
+    display: block;
+    top: 40px;
+    left: 1rem;
+
+}
+
+nav li {
+    display: block;
+    overflow: hidden;
+    width: 25px;
+    line-height: 25px;
+    padding: 10px 0;
+    margin: 10px 0 0;
+    background: #ccc;
+    border: 1px solid #000;
+}
+
+nav li a,
+nav li span {
+    display: inline-block;
+    vertical-align: top;
+    transform: translate(0, 100%) rotate(-90deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+
+nav li a:after,
+nav li span:after {
+    content: "";
+    float: left;
+    margin-top: 100%;
 }
