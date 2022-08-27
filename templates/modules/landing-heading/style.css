@@ -11,9 +11,6 @@ landing-heading h1 {
 	animation-delay: 0.3s;
 }
 
-landing-heading p {
-	font-size: clamp(1.2rem, 2vw, 1.3rem);
-}
 
 landing-heading .intro {
 	opacity: 0;
