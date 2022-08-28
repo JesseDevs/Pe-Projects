@@ -9,11 +9,9 @@
 /* needs clamp for screen sizes :) */
 
 .roar-voice {
-	font-size: clamp(2.9rem, 10vw, 6rem);
+	font-size: clamp(2.9rem, 10vw, 5rem);
 	font-weight: 700;
-
 	text-transform: uppercase;
-	transition: font-size .2s;
 }
 
 .yell-voice {

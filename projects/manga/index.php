@@ -18,6 +18,7 @@
 
 <body>
     <?php include('templates/modules/site-menu/template.php'); ?>
+    <div class="site-menu-helper"></div>
 
 
     <main class="page-content">
@@ -25,7 +26,7 @@
     </main>
 
 
-    <?php include('templates/modules/site-footer/template.php'); ?>
+    <!-- <?php include('templates/modules/site-footer/template.php'); ?> -->
 
 
 
