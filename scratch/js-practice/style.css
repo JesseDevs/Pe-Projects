@@ -1,0 +1,50 @@
+body {
+
+    color: white;
+    background-color: dodgerblue;
+    min-height: 100vh;
+}
+
+body.cute {
+    background-color: pink;
+}
+
+.menu {
+    display: none;
+}
+
+body.menu-open .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+}
+
+body .type::after {
+    content: 'new style?';
+}
+
+body.hot {
+    background-color: lightcoral;
+    color: lightyellow;
+}
+
+body.hot .type::after {
+    content: 'toggle to hot';
+}
+
+body.cold {
+    background-color: darkcyan;
+    color: lightblue;
+}
+
+body.cold .type::after {
+    content: 'toggle to cold';
+}
