@@ -14,5 +14,5 @@
         <input name="chapters" type="number" placeholder='Number of Chapters' value="<?= $chapters ?>">
     </field>
 
-    <button name="submit" type="submit">add manga</button>
+    <button name="submit" type="submit" class="button-57" role="button"><span class="text">Add</span><span>Sure?</span></button>
 </form>
