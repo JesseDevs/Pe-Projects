@@ -17,8 +17,6 @@ html {
 }
 
 html {
-
-	background-color: rgb(242, 238, 228);
 	--white: rgb(245 245 245);
 	--black: rgb(10 10 10);
 
@@ -26,6 +24,7 @@ html {
 	--fullHighlight: rgba(0 139 139);
 	--accent: rgb(199, 35, 35);
 
+	--page: rgb(242, 238, 228);
 }
 
 
@@ -141,6 +140,18 @@ html {
 	from {
 		opacity: 0;
 		transform: translateX(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes leftFadeIn {
+	from {
+		opacity: 0;
+		transform: translateX(-200px);
 	}
 
 	to {

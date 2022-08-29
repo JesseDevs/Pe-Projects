@@ -8,18 +8,22 @@ landing-block {
     padding-bottom: 3vh;
 }
 
+landing-block {
+    padding-top: 5vh;
+}
+
 text-content {
     text-align: center;
 }
 
 landing-block h1 {
     font-weight: 800;
-    transition: all .5s ease-out;
+    transition: text-shadow .5s ease-out;
 }
 
 landing-block p {
     font-weight: 500;
-    transition: all .5s ease-out;
+    transition: color .5s ease-out;
     transition-delay: .2s;
     font-size: clamp(1.1rem, 2vw, 1.4rem);
 }
