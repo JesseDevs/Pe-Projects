@@ -5,12 +5,17 @@
                 <li><a class='logo' href="?page=home">The Reads</a></li>
                 <li>
 
-                    <button rel="toggle">Menu Toggle</button>
+                    <button class='toggle-burger' rel="toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
                     <nav class="burger">
-                        <a href="#">Thing one</a>
-                        <a href="#">Thing two</a>
-                        <a href="#">Thing three</a>
-                        <button rel="toggle">Close Toggle</button>
+                        <a href="?page=home">Home</a>
+                        <a href="?page=list">Catalog</a>
+
+                        <button class='close' rel="toggle"></button>
                     </nav>
                 </li>
             </ul>

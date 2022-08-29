@@ -1,6 +1,13 @@
 header inner-column {
     padding-top: 1rem;
-    padding-bottom: 5vh;
+    padding-bottom: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+
 }
 
 .logo {
@@ -64,12 +71,19 @@ nav.main-menu ul {
     justify-content: space-between;
 }
 
+
+/* BURGER */
+
 .burger {
+    opacity: 0;
     display: none;
+    animation: leftFadeIn 500ms;
+    animation-timing-function: ease-out;
 }
 
 body.menu-open .burger {
     display: block;
+    opacity: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -80,4 +94,38 @@ body.menu-open .burger {
     justify-content: center;
     align-items: center;
     background-color: var(--fullHighlight);
+    z-index: 100;
+
+}
+
+.close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: var(--fullHighlight);
+}
+
+.toggle-burger {
+    position: relative;
+    float: right;
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 4px;
+}
+
+.toggle-burger .icon-bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.toggle-burger .icon-bar+.icon-bar {
+    margin-top: 4px;
 }
