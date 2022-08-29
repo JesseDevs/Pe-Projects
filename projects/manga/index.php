@@ -29,7 +29,7 @@
     <!-- <?php include('templates/modules/site-footer/template.php'); ?> -->
 
 
-
+    <script src="file.js"></script>
 </body>
 
 </html>

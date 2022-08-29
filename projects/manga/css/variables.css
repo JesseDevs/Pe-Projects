@@ -22,7 +22,9 @@ html {
 	--white: rgb(245 245 245);
 	--black: rgb(10 10 10);
 
-	--highlight: rgb(84 100 163);
+	--highlight: rgba(0 139 139 /0.8);
+	--fullHighlight: rgba(0 139 139);
+	--accent: rgb(199, 35, 35);
 
 }
 

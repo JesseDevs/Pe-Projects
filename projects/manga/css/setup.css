@@ -30,7 +30,6 @@ inner-column {
 	margin-right: auto;
 	margin-left: auto;
 	padding: var(--general-space) 1rem;
-	padding-left: calc(2rem + 1rem);
 	max-width: 1200px;
 }
 
