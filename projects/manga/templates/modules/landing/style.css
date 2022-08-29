@@ -21,6 +21,7 @@ landing-block p {
     font-weight: 500;
     transition: all .5s ease-out;
     transition-delay: .2s;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
 }
 
 landing-block em {
@@ -34,10 +35,10 @@ landing-block span {
 }
 
 landing-block text-content:hover h1 {
-    text-shadow: -5px 3px 0px rgba(0, 139, 139, 0.657);
+    text-shadow: -3px 3px 0px var(--highlight);
 }
 
 landing-block text-content:hover p {
     text-shadow: none;
-    color: rgb(199, 35, 35);
+    color: var(--accent);
 }

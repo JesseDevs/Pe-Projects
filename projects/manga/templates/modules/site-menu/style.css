@@ -10,7 +10,11 @@ header inner-column {
 
 }
 
-nav ul {
+nav.side-bar {
+    display: none;
+}
+
+nav.side-bar ul {
 
     position: fixed;
     display: flex;
@@ -22,15 +26,15 @@ nav ul {
 
 }
 
-nav li {
+nav.side-bar li {
     display: block;
     width: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-nav li a,
-nav li span {
+nav.side-bar li a,
+nav.side-bar li span {
     display: inline-block;
     vertical-align: top;
     transform: translate(0, 100%) rotate(-90deg);
@@ -42,9 +46,38 @@ nav li span {
     font-weight: 500;
 }
 
-nav li a:after,
-nav li span:after {
+nav.side-bar li a:after,
+nav.side-bar li span:after {
     content: "";
     float: left;
     margin-top: 100%;
+}
+
+nav.main-menu button {
+    cursor: pointer;
+}
+
+nav.main-menu ul {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger {
+    display: none;
+}
+
+body.menu-open .burger {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fullHighlight);
 }
