@@ -10,7 +10,7 @@
 
     <title>The Reads. Book Catalog.</title>
     <meta name='description' content="Getting lost in the reads is only part of the journey.">
-    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/manga/images/reeds.avif">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/manga/images/reeds.jpg">
 
     <link rel="stylesheet" href="css/style.css">
 
