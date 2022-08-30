@@ -11,6 +11,10 @@ header inner-column {
 
 }
 
+.logo:hover {
+    text-shadow: -1px 1px 5px var(--highlight);
+}
+
 nav.side-bar {
     display: none;
 }
@@ -71,7 +75,7 @@ nav.main-menu ul {
 .burger {
     opacity: 0;
     display: none;
-    animation: leftFadeIn 500ms;
+    animation: leftFadeIn 300ms;
     animation-timing-function: ease-out;
 }
 
@@ -130,4 +134,18 @@ body.menu-open .burger {
 
 .toggle-burger .icon-bar+.icon-bar {
     margin-top: 4px;
+}
+
+@media(min-width:500px) {
+    .toggle-burger {
+        display: none;
+    }
+
+    nav.side-bar {
+        display: block;
+    }
+
+    nav.side-bar a:hover {
+        text-shadow: -1px 2px 5px black;
+    }
 }

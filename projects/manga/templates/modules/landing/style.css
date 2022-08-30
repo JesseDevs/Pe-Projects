@@ -46,3 +46,20 @@ landing-block text-content:hover p {
     text-shadow: none;
     color: var(--accent);
 }
+
+@media(min-width: 600px) {
+    landing-block text-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    landing-block text-content span {
+        padding: 0;
+        grid-column: span 2;
+    }
+
+    landing-block text-content div.title {
+        grid-column: 2/ span 3;
+        grid-row: 2;
+    }
+}
