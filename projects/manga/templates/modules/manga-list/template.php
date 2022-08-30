@@ -8,15 +8,14 @@ $mangas = getMangas()['mangas'];
 
 
 <manga-list>
+
+    <h3 class='chant-voice'>Catalog of Books</h3>
+
     <ul>
         <?php foreach ($mangas as $manga) { ?>
-
-            <a href="?page=detail&id=<?= $manga['id'] ?>">LINK ME</a>
-            <li><?= ucwords($manga['title']) ?></li>
-            <li><?= ucwords($manga['author']) ?></li>
-            <li><?= $manga['chapters'] ?></li>
-
-
+            <li>
+                <?php include("templates/modules/manga-card/template.php") ?>
+            </li>
         <?php } ?>
     </ul>
 </manga-list>

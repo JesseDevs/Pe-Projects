@@ -94,6 +94,7 @@ body.menu-open .burger {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
     background-color: var(--fullHighlight);
     z-index: 3;
 

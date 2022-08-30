@@ -1,0 +1,25 @@
+manga-card {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+manga-card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+manga-card h4 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+
+manga-card p {
+    padding: 10px;
+    background-color: var(--highlight);
+}

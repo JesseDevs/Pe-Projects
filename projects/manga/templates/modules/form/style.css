@@ -8,7 +8,6 @@ field {
     resize: none;
     width: 100%;
     display: block;
-
 }
 
 field {
@@ -17,17 +16,15 @@ field {
 
 label {
     margin-bottom: 40px;
-    font-weight: 600;
+
 }
 
 input {
     padding: 10px;
     border: none;
-    border-radius: none;
+    border-radius: 15px;
     outline: none;
     border: 1px solid #18181a;
-
-
 }
 
 input::placeholder {
@@ -45,4 +42,10 @@ input:focus {
 
 input:focus::placeholder {
     color: rgba(255, 255, 255, 0.707);
+}
+
+form .button {
+    max-width: 50%;
+    margin-left: auto;
+    display: block;
 }

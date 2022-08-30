@@ -32,19 +32,19 @@ if (isset($_POST["edit"])) {
 <form method="POST">
 
     <field>
-        <label for="title">Title</label>
+
         <input name="title" type="text" value="<?= $currentManga['title'] ?>">
     </field>
 
     <field>
-        <label for="author">Author</label>
+
         <input name="author" type="text" value="<?= $currentManga['author'] ?>">
     </field>
 
     <field>
-        <label for="chapters">Chapters</label>
+
         <input name="chapters" type="number" value="<?= $currentManga['chapters'] ?>">
     </field>
 
-    <button name="edit" type="submit">update</button>
+    <button name="edit" type="submit" class="button-57" role="button"><span class="text">Update</span><span>Sure?</span></button>
 </form>

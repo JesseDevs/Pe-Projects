@@ -1,4 +1,14 @@
-manga-list{
+manga-list {
     display: block;
     width: 100%;
+}
+
+manga-list h3 {
+    padding-bottom: 40px;
+}
+
+manga-list ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
