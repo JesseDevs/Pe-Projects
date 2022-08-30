@@ -27,7 +27,7 @@ if (isset($_POST["submit"])) {
         addManga($newManga);
 
         //redirect page to homepage to prevent resubmition.
-        header('Location: ?page=home');
+        header('Location: ?page=list');
     } elseif (empty($title)) {
         echo "enter title";
     } elseif (empty($author)) {

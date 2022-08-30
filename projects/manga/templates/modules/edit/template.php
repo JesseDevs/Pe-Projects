@@ -31,6 +31,8 @@ if (isset($_POST["edit"])) {
 
 <form method="POST">
 
+    <label class='chant-voice' for="form">Update Information?</label>
+
     <field>
 
         <input name="title" type="text" value="<?= $currentManga['title'] ?>">
@@ -46,5 +48,5 @@ if (isset($_POST["edit"])) {
         <input name="chapters" type="number" value="<?= $currentManga['chapters'] ?>">
     </field>
 
-    <button name="edit" type="submit" class="button-57" role="button"><span class="text">Update</span><span>Sure?</span></button>
+    <button name="edit" type="submit" class="button" role="button"><span class="text">Update</span></button>
 </form>
