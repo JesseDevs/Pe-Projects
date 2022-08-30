@@ -8,6 +8,9 @@
 
     <div class="detail-actions">
         <a class=" button delete" href="?page=delete&id=<?= $currentManga['id'] ?>"><span>Delete</span></a>
-        <a class=" button edit" href="?page=edit&id=<?= $currentManga['id'] ?>"><span>Edit</span></a>
+        <?php if ($page !== 'edit') { ?>
+            <a class=" button edit" href="?page=edit&id=<?= $currentManga['id'] ?>"><span>Edit</span></a>
+
+        <?php  }  ?>
     </div>
 </detail-card>

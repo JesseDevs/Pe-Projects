@@ -14,19 +14,18 @@ $mangas = getMangas()["mangas"];
 
 ?>
 
-<section class="display-manga">
-    <inner-column>
-        <?php
-        include("templates/modules/detail-card/template.php");
-        ?>
-    </inner-column>
-</section>
-
-
 <section class="form">
     <inner-column>
         <?php
         include("templates/modules/edit/template.php");
+        ?>
+    </inner-column>
+</section>
+
+<section class="display-manga">
+    <inner-column>
+        <?php
+        include("templates/modules/detail-card/template.php");
         ?>
     </inner-column>
 </section>
