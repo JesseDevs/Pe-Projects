@@ -75,6 +75,13 @@ nav.main-menu ul {
     animation-timing-function: ease-out;
 }
 
+.burger a {
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+    color: var(--page);
+}
+
 body.menu-open .burger {
     display: block;
     opacity: 100;

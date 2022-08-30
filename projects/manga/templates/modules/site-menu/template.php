@@ -12,8 +12,8 @@
                     </button>
 
                     <nav class="burger">
-                        <a href="?page=home">Home</a>
-                        <a href="?page=list">Catalog</a>
+                        <a class='chant-voice' href="?page=home">Home</a>
+                        <a class='chant-voice' href="?page=list">Catalog</a>
 
                         <button class='close' rel="toggle"></button>
                     </nav>
