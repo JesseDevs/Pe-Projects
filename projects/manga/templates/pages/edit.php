@@ -17,7 +17,7 @@ $mangas = getMangas()["mangas"];
 <section class="display-manga">
     <inner-column>
         <?php
-        include("templates/pages/detail-card/template.php");
+        include("templates/modules/detail-card/template.php");
         ?>
     </inner-column>
 </section>
