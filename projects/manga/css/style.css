@@ -15,7 +15,7 @@
     left: 0;
     display: none;
     background-color: var(--highlight);
-    z-index: -1;
+    z-index: -10;
 }
 
 main.page-content {
@@ -40,14 +40,14 @@ main.page-content {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    max-width: 30%;
-    z-index: -10;
+    max-width: 50%;
+    z-index: 1;
 }
 
 .button-57 span:first-child {
     position: relative;
     transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
-    z-index: 10;
+    z-index: -1;
 }
 
 .button-57 span:last-child {
@@ -76,7 +76,7 @@ main.page-content {
     transform-origin: bottom center;
     transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
     transform: skewY(9.3deg) scaleY(0);
-    z-index: 50;
+    z-index: 2;
 }
 
 .button-57:hover:after {

@@ -1,6 +1,6 @@
 <form method="POST">
 
-    <label class='strict-voice' for="form">Enter Your Book Information </label>
+    <label class='strict-voice' for="form">Enter Your Book</label>
     <field>
         <input name="title" type="text" placeholder='Title' value="<?= $title ?>">
     </field>
