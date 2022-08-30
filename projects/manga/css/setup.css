@@ -30,7 +30,7 @@ inner-column {
 	margin-right: auto;
 	margin-left: auto;
 	padding: var(--general-space) 1rem;
-	max-width: 1200px;
+	max-width: 1000px;
 }
 
 article-grid,

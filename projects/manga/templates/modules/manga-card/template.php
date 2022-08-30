@@ -4,12 +4,12 @@
 
     <h4 class='strict-voice'><?= ucwords($manga['title']) ?></h4>
     <p>
-        <strong>Author: </strong>
-        <?= ucwords($manga['author']) ?>
+        <?= $manga['chapters'] ?> Chapters
     </p>
     <p>
-        <strong>Chapters: </strong><?= $manga['chapters'] ?>
+        <?= ucwords($manga['author']) ?>
     </p>
+
     <a href="?page=detail&id=<?= $manga['id'] ?>">
     </a>
 
