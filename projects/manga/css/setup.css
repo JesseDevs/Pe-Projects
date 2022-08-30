@@ -52,10 +52,6 @@ a {
 	color: inherit;
 }
 
-a p {
-	display: inline;
-}
-
 p a {
 	display: inline-block;
 	text-decoration: underline;

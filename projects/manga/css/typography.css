@@ -28,6 +28,7 @@
 
 .chant-voice {
 	font-size: clamp(1.5rem, 7vw, 2rem);
+	font-weight: 600;
 }
 
 .strict-voice {
