@@ -15,7 +15,7 @@ $mangas = getMangas()["mangas"];
 
 if (isset($_GET['id'])) {
     deleteManga($currentManga);
-    header('Location: ?page=list');
+    header('Location: ?page=home');
 } else {
-    header('Location: ?page=list');
+    header('Location: ?page=home');
 }

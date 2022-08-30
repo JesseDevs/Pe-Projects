@@ -25,6 +25,7 @@ if (isset($_POST["edit"])) {
     }
 
     editManga($currentManga['id'], $editedManga);
+    header('Location: ?page=list');
 }
 
 ?>
