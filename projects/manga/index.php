@@ -8,9 +8,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>[[insert Title]]</title>
-    <meta name='description' content="[[Insert description]]">
-    <meta property="og:image" content="images/default-meta.png">
+    <title>The Reads. Book Catalog.</title>
+    <meta name='description' content="Getting lost in the reads is only part of the journey.">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/manga/images/reeds.avif">
 
     <link rel="stylesheet" href="css/style.css">
 
