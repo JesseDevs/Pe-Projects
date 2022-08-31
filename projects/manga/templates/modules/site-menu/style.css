@@ -46,7 +46,7 @@ nav.side-bar li span {
     transform-origin: 0 0;
     white-space: nowrap;
     padding: 0 20px;
-    font-size: clamp(.9rem, 2vw, 1rem);
+    font-size: clamp(.9rem, 2vw, 1.1rem);
     color: white;
     font-weight: 500;
 }
