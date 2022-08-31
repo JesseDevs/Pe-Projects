@@ -9,7 +9,7 @@
 /* needs clamp for screen sizes :) */
 
 .roar-voice {
-	font-size: clamp(2.9rem, 10vw, 5rem);
+	font-size: clamp(2.8rem, 8vw, 4.3rem);
 	font-weight: 700;
 	text-transform: uppercase;
 }
