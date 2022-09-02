@@ -1,0 +1,151 @@
+header inner-column {
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+
+.logo {
+    font-family: 'BioRhyme', serif;
+    text-transform: uppercase;
+    text-align: right;
+
+}
+
+.logo:hover {
+    text-shadow: -1px 1px 5px var(--highlight);
+}
+
+nav.side-bar {
+    display: none;
+}
+
+nav.side-bar ul {
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    top: 10vh;
+    left: 10px;
+    padding: 50px 0;
+
+}
+
+nav.side-bar li {
+    display: block;
+    width: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav.side-bar li a,
+nav.side-bar li span {
+    display: inline-block;
+    vertical-align: top;
+    transform: translate(0, 100%) rotate(-90deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    padding: 0 20px;
+    font-size: clamp(.9rem, 2vw, 1.1rem);
+    color: white;
+    font-weight: 500;
+}
+
+nav.side-bar li a:after,
+nav.side-bar li span:after {
+    content: "";
+    float: left;
+    margin-top: 100%;
+}
+
+nav.main-menu button {
+    cursor: pointer;
+}
+
+nav.main-menu ul {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* BURGER */
+
+.burger {
+    opacity: 0;
+    display: none;
+    animation: leftFadeIn 300ms;
+    animation-timing-function: ease-out;
+}
+
+.burger a {
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+    color: var(--page);
+}
+
+body.menu-open .burger {
+    display: block;
+    opacity: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color: var(--fullHighlight);
+    z-index: 3;
+
+}
+
+.close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -20;
+    background-color: var(--fullHighlight);
+}
+
+.toggle-burger {
+    position: relative;
+    float: right;
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 4px;
+}
+
+.toggle-burger .icon-bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.toggle-burger .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+@media(min-width:500px) {
+    .toggle-burger {
+        display: none;
+    }
+
+    nav.side-bar {
+        display: block;
+    }
+
+    nav.side-bar a:hover {
+        text-shadow: -1px 2px 5px black;
+    }
+}
