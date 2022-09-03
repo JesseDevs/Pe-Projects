@@ -12,6 +12,7 @@ function changeForm(event) {
     } else {
         jsForm.style.display = 'none';
         phpForm.style.display = 'block';
+        formIntro.textContent = 'These are little apps that solve everyday problems. Entirely made using PHP to check what the input field is.'
     }
 }
 
