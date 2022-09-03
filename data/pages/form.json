@@ -76,6 +76,43 @@
 					"file-name": "tax-calculator",
 					"intro": "Calculate the amount of tax!"
 				}
+			],
+			"jsItems": [
+				{
+					"id": 1,
+					"title": "hello",
+					"button": "hello"
+				},
+				{
+					"id": 2,
+					"title": "count-string",
+					"button": "count string"
+				},
+				{
+					"id": 3,
+					"title": "author-quote",
+					"button": "quote"
+				},
+				{
+					"id": 4,
+					"title": "madlib",
+					"button": "madlib"
+				},
+				{
+					"id": 8,
+					"title": "simple-math",
+					"button": "simple math"
+				},
+				{
+					"id": 6,
+					"title": "retirment",
+					"button": "retirment"
+				},
+				{
+					"id": 7,
+					"title": "area",
+					"button": "area"
+				}
 			]
 		}
 	]

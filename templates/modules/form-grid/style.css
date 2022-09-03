@@ -1,7 +1,6 @@
 form-grid {
 	width: 100%;
 	display: block;
-	padding-top: var(--tight-space);
 }
 
 .form form-grid {
@@ -53,6 +52,10 @@ div.change-form input {
 
 div.change-form span {
 	font-weight: 500;
+}
+
+.form div.change-form {
+	margin-top: 30px;
 }
 
 .switch {
@@ -130,6 +133,30 @@ input:checked+.slider:before {
 
 	form-grid ul li:nth-of-type(odd) {
 		grid-column: 1 /span 2;
+	}
+}
+
+@media(min-width:900px) {
+	form-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	form-grid nav {
+		grid-column: span 4;
+		order: 3;
+	}
+
+	form-grid text-content {
+		order: 1;
+		grid-column: span 3;
+	}
+
+	form-grid .change-form {
+		grid-column: 4/ span 1;
+		margin: 0;
+		order: 2;
+		align-self: center;
 	}
 }
 

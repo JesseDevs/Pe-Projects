@@ -14,9 +14,11 @@
             <span class='chant-voice'>JS</span>
         </div>
 
+        <text-content>
 
-        <h2 class='yell-voice'><?= $heading; ?></h2>
-        <p class=' form-intro intro'><?= $intro; ?></p>
+            <h2 class='yell-voice'><?= $heading; ?></h2>
+            <p class=' form-intro intro'><?= $intro; ?></p>
+        </text-content>
 
         <nav class='php'>
             <ul>
