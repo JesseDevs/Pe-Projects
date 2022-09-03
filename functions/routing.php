@@ -7,7 +7,6 @@ if (isset($_GET['page'])) {
     $page = $_GET['page'];
 } else {
     $page = "home";
-
 }
 
 if ($page == 'home') {
@@ -75,19 +74,18 @@ if ($page == 'style') {
 
 
 
-function currentPage(){
+function currentPage()
+{
     if (isset($_GET['page'])) {
         $page = $_GET['page'];
     } else {
         $page = "home";
-
     }
-
 }
 
 function activePage($name)
 {
-    if(isset($_GET['page'])){
+    if (isset($_GET['page'])) {
         if ($_GET['page'] == $name) {
             echo "active";
         }

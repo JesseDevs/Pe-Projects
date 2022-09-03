@@ -5,7 +5,8 @@ footer {
 
 
 .site-footer inner-column {
-	padding: var(--tight-space) 1rem;
+	padding: var(--simple-big-space) 1rem;
+	max-width: 900px;
 }
 
 span strong {
@@ -16,9 +17,10 @@ span strong {
 footer nav {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 30px;
 	align-items: center;
 	justify-content: center;
+
 
 }
 
@@ -46,7 +48,7 @@ footer .socials,
 footer .page-links {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: var(--simple-small-space);
+	gap: var(--simple-space);
 	text-align: center;
 }
 
@@ -83,7 +85,7 @@ footer .page-links li:first-of-type {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr auto auto;
 		align-items: flex-start;
-		gap: var(--simple-space);
+		gap: var(--tight-space);
 	}
 
 	footer nav ul {
@@ -94,7 +96,6 @@ footer .page-links li:first-of-type {
 	footer .page-links {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		gap: var(--simple-small-space);
 		text-align: center;
 	}
 
