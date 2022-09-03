@@ -59,7 +59,7 @@ html {
 	}
 }
 
-@media(min-width: 1600px) {
+@media(min-width: 1700px) {
 
 	html {
 		--big-general-space: 7vh;
