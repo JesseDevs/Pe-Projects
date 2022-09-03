@@ -7,7 +7,7 @@
         {
             "module": "big-heading",
             "heading": "Forms 4 Users",
-            "intro": "User Input Testing!"
+            "intro": "User Input Testing! <br> Based on Exercises 4 Programmers book."
         },
         {
             "module": "form-grid",
