@@ -3,6 +3,7 @@
 @import 'variables.css';
 @import 'typography.css';
 @import 'modules.css';
+@import 'case.css';
 
 @-moz-document url-prefix() {
 	.remove-me {
