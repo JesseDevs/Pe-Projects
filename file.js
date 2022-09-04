@@ -8,11 +8,11 @@ function changeForm(event) {
     if (event.target.checked) {
         phpForm.style.display = 'none';
         jsForm.style.display = 'block';
-        formIntro.textContent = 'These are little apps that solve everyday problems. Using Javascript to ask you questions. Give them a click!'
+        formIntro.textContent = ' These use Javascript to ask you questions. Give them a click!'
     } else {
         jsForm.style.display = 'none';
         phpForm.style.display = 'block';
-        formIntro.textContent = 'These are little apps that solve everyday problems. Entirely made using PHP to check what the input field is.'
+        formIntro.textContent = ' These are made using PHP to check what the input field is.'
     }
 }
 
@@ -41,7 +41,6 @@ function promptHello() {
 }
 
 hello.addEventListener('click', promptHello);
-
 
 // button 2
 var stringButton = document.querySelector('.count-string');
