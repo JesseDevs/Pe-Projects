@@ -1,32 +1,55 @@
-<footer class='site-footer'>
+<?php
+$json = file_get_contents('data/components/footer.json');
+$footerData = json_decode($json, true);
+
+?>
+
+<footer>
     <inner-column>
 
-        <nav>
+        <navigation-block>
+            <nav>
+                <ul>
+                    <?php foreach ($footerData['list'] as $list) { ?>
+                        <li>
+                            <ul>
+                                <li class='list-header'><?= $list['header'] ?></li>
+                                <?php foreach ($list['items'] as $item) { ?>
+                                    <li><a href="<?= $item['link'] ?>"><?= $item['detail'] ?></a></li>
+                                <?php } ?>
+                            </ul>
+                        </li>
+                    <?php } ?>
 
-            <ul class='page-links'>
-                <li><span><strong>pages</strong></span></li>
-                <li><a href="?page=home" class=" <?php activePage("home") ?>">Home</a></li>
-                <li><a href="?page=about" class=" <?php activePage("about") ?>">About</a></li>
-                <li><a href="?page=about#resume">Resume</a></li>
-                <li><a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a></li>
-                <li><a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a></li>
-            </ul>
+                    <li>
+                        <?php include('templates/components/subscribe-block/template.php'); ?>
+                    </li>
 
-            <ul class='socials'>
-                <li><span><strong>Socials</strong></span></li>
-                <li><a href="https://github.com/JesseDevs">GitHub</a></li>
-                <li><a href="https://twitter.com/Jesse_Devs">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/felix-jesser1223/">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/jessedude2/">Instagram</a></li>
-                <li><a href="https://jessedevs.substack.com/">Blog</a></li>
+                </ul>
+            </nav>
 
-            </ul>
-
-            <ul>
-                <li>© 2022 Portfolio from Jesse</li>
-            </ul>
-
-        </nav>
+            <nav class='menu'>
+                <ul>
+                    <li class='logo'>
+                        <?php include('images/logo.php'); ?>
+                    </li>
+                    <li>
+                        <ul class='actions'>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class='socials'>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Vine?</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </navigation-block>
 
     </inner-column>
-    </header>
+</footer>

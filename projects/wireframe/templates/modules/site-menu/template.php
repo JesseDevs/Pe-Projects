@@ -1,55 +1,28 @@
 <header class='site-header'>
     <inner-column>
-        <ul>
-            <li>
-                <?php include("templates/svg.php");
-                ?>
-            </li>
-            <li>
-                <a href="?page=home">
-                    <h1 class="logo">Jesse&nbsp;Devs</h1>
-                </a>
-            </li>
-        </ul>
 
-
-
-        <nav class='main-menu'>
+        <nav class='menu'>
             <ul>
-
-                <li><a href="?page=home" class=" <?php activePage("home") ?>">Home</a></li>
-                <li><a href="?page=about" class=" <?php activePage("about") ?>">About</a></li>
-                <li><a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a></li>
-                <li class="large-size">
-                    <a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
+                <li class='logo'>
+                    <?php include('images/logo.php'); ?>
                 </li>
-                <li class="larger-size">
-                    <a href="?page=forms " class="<?php activePage("forms") ?>">Forms</a>
+                <li>
+                    <ul class='actions'>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Updates</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
                 </li>
-                <li class="larger-size">
-                    <a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
+                <li>
+                    <ul class='login'>
+                        <li>globe-icon <strong>EN</strong></li>
+                        <button class="log">LogIn</button>
+                    </ul>
                 </li>
             </ul>
-
         </nav>
-
-        <nav class='burger'>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <nav class="menu">
-                <a class="small-size" href="?page=home" class=" <?php activePage("home") ?>">Home</a>
-                <a class="small-size" href="?page=about" class=" <?php activePage("about") ?>">About</a>
-                <a class="small-size" href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
-                <a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
-
-                <a href="?page=forms" class="<?php activePage("forms") ?>">Forms</a>
-                <a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
-            </nav>
-
-        </nav>
-
 
     </inner-column>
 </header>
