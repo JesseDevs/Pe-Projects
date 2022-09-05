@@ -26,6 +26,9 @@
                 <li class="larger-size">
                     <a href="?page=forms " class="<?php activePage("forms") ?>">Forms</a>
                 </li>
+                <li class="larger-size">
+                    <a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
+                </li>
             </ul>
 
         </nav>
@@ -42,6 +45,7 @@
                 <a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
 
                 <a href="?page=forms" class="<?php activePage("forms") ?>">Forms</a>
+                <a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
             </nav>
 
         </nav>
