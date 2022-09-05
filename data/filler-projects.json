@@ -26,11 +26,41 @@
             }
         ],
         "direct-link": null,
-        "images": [
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg"
+        "casestudy": [
+            {
+                "module": "diptech",
+                "title": "Describe Project",
+                "flipped": false,
+                "image": "https://peprojects.dev/images/landscape.jpg",
+                "text": "This is an introductory text to the project. Describes the initial purpose. Include a general learning moment. Along side this text is a general image of said project."
+            },
+            {
+                "module": "goal-block",
+                "title": "Goals",
+                "goals": [
+                    "Goal for the project",
+                    "Goal for the project",
+                    "Goal for the project",
+                    "Goal for the project"
+                ]
+            },
+            {
+                "module": "diptech",
+                "title": "Now What?",
+                "flipped": true,
+                "image": "images/projects/fighters/fighter-landing.jpg",
+                "text": "Another text block paired with an image. This version of the module is flipped."
+            },
+            {
+                "module": "double-text",
+                "paragraphOne": "This is a double text block module.",
+                "paragraphTwo": "This is the second text block in this module, paired with another text block."
+            },
+            {
+                "module": "double-image",
+                "imageOne": "https://peprojects.dev/images/landscape.jpg",
+                "imageTwo": "https://peprojects.dev/images/landscape.jpg"
+            }
         ]
     },
     {
@@ -94,11 +124,41 @@
             }
         ],
         "direct-link": null,
-        "images": [
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg"
+        "casestudy": [
+            {
+                "module": "diptech",
+                "title": "Describe Project",
+                "flipped": false,
+                "image": "https://peprojects.dev/images/landscape.jpg",
+                "text": "This is an introductory text to the project. Describes the initial purpose. Include a general learning moment. Along side this text is a general image of said project."
+            },
+            {
+                "module": "goal-block",
+                "title": "Goals",
+                "goals": [
+                    "Goal for the project",
+                    "Goal for the project",
+                    "Goal for the project",
+                    "Goal for the project"
+                ]
+            },
+            {
+                "module": "diptech",
+                "title": "Now What?",
+                "flipped": true,
+                "image": "images/projects/fighters/fighter-landing.jpg",
+                "text": "Another text block paired with an image. This version of the module is flipped."
+            },
+            {
+                "module": "double-text",
+                "paragraphOne": "This is a double text block module.",
+                "paragraphTwo": "This is the second text block in this module, paired with another text block."
+            },
+            {
+                "module": "double-image",
+                "imageOne": "https://peprojects.dev/images/landscape.jpg",
+                "imageTwo": "https://peprojects.dev/images/landscape.jpg"
+            }
         ]
     }
 ]

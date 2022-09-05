@@ -128,7 +128,7 @@
         {
             "module": "small-grid",
             "heading": "Other projects",
-            "intro": "Just a click away",
+            "intro": "Projects to display when on a dedicated project page.",
             "details": "",
             "image": ""
         },
@@ -142,6 +142,9 @@
             "labelThree": "MESSAGE",
             "holderTwo": "Something to say..",
             "button": "CONNECT"
+        },
+        {
+            "module": "project-page"
         }
     ]
 }
