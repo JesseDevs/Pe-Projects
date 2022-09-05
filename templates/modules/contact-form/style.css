@@ -104,7 +104,7 @@ button {
 
 .fade {
 	display: none;
-	grid-column: 3/ span 2;
+	grid-column: 1/ span 2;
 	scale: .9;
 
 }
@@ -124,7 +124,7 @@ button {
 	contact-form {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: var(--simple-big-space);
+		column-gap: var(--simple-space);
 		position: relative;
 	}
 
