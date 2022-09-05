@@ -21,20 +21,17 @@
 
   <form method="POST">
     <field>
-      <label for=""><?= $section['labelOne'] ?></label>
-      <input type="text" placeholder="<?= $section['holderOne'] ?>">
+      <input type="text" placeholder="<?= $section['labelOne'] ?>">
     </field>
 
 
     <field>
-      <label for=""><?= $section['labelTwo'] ?></label>
-      <input name='email' type="email">
+      <input name='email' placeholder="<?= $section['labelTwo'] ?>" type=" email">
     </field>
 
 
     <field class='message'>
-      <label for=""><?= $section['labelThree'] ?></label>
-      <textarea name="message" type="text" placeholder="<?= $section['holderTwo'] ?>"></textarea>
+      <textarea name="message" type="text" placeholder="<?= $section['labelThree'] ?>"></textarea>
     </field>
 
 

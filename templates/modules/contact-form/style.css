@@ -36,6 +36,31 @@ input {
 	margin-bottom: 25px;
 }
 
+contact-form input,
+contact-form textarea {
+	margin-bottom: var(--simple-big-space);
+	border: 3px solid transparent;
+}
+
+contact-form input::placeholder,
+contact-form textarea::placeholder {
+	font-weight: 500;
+}
+
+contact-form input:focus,
+contact-form textarea:focus {
+	background-color: var(--highlightOP);
+	color: var(--black);
+	border: 3px solid var(--cube-color);
+	border-radius: none;
+	outline: none;
+	transition: background-color 600ms, border-color 400ms;
+}
+
+contact-form input:focus::placeholder {
+	color: var(--fade);
+}
+
 select {
 	height: 1.6rem;
 	text-align: center;
@@ -50,14 +75,19 @@ contact-form form {
 	margin: 0 auto;
 }
 
+
 form button {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: fit-content;
+
 }
 
 contact-form button {
-	max-width: none;
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: 0;
+	margin-top: 0;
 }
 
 button {
