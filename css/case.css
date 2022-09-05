@@ -5,7 +5,10 @@
 
 .project-page>inner-column {
     padding: var(--general-space) 0;
+    margin: 0;
+    max-width: none;
 }
+
 
 diptech picture,
 double-image picture,
