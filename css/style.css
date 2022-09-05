@@ -2,8 +2,8 @@
 @import 'setup.css';
 @import 'variables.css';
 @import 'typography.css';
-@import 'modules.css';
 @import 'case.css';
+@import 'modules.css';
 
 @-moz-document url-prefix() {
 	.remove-me {

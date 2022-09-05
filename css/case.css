@@ -1,1 +1,69 @@
 @import '../templates/case/diptech/style.css';
+@import '../templates/case/goal-block/style.css';
+@import '../templates/case/double-image/style.css';
+@import '../templates/case/double-text/style.css';
+
+.project-page>inner-column {
+    padding: var(--general-space) 0;
+}
+
+diptech picture,
+double-image picture,
+double-text picture,
+goal-block picture {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.links inner-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--simple-space);
+}
+
+.links inner-column a:first-of-type {
+    display: none;
+}
+
+.links inner-column a {
+    padding: var(--simple-space) var(--simple-big-space);
+    border: var(--thin) solid var(--highlight);
+    background-color: var(--highlight);
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.project-page section:nth-of-type(even) {
+    background-color: var(--fade);
+}
+
+
+@media (min-width: 700px) {
+
+    diptech,
+    double-image,
+    double-text,
+    goal-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--simple-big-space);
+        align-items: center;
+    }
+
+    diptech text-content,
+    double-text p {
+        margin-bottom: 0;
+    }
+
+
+    diptech picture,
+    double-image picture,
+    double-text picture,
+    goal-block picture {
+        margin: 0;
+        max-width: none;
+    }
+
+
+}
