@@ -1,21 +1,28 @@
 <?php
 
-$page = 'home';
+$page = 'template-one';
 $pageData = null;
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
 } else {
-    $page = "home";
+    $page = "template-one";
 }
 
-if ($page == 'home') {
-    $json = file_get_contents('data/pages/home.json');
+if ($page == 'template-one') {
+    $json = file_get_contents('data/pages/template-one.json');
     $pageData = json_decode($json, true);
 }
 
-if ($page == 'about') {
-    $json = file_get_contents('data/pages/about.json');
+
+if ($page == 'template-two') {
+    $json = file_get_contents('data/pages/template-two.json');
+    $pageData = json_decode($json, true);
+}
+
+
+if ($page == 'template-three') {
+    $json = file_get_contents('data/pages/template-three.json');
     $pageData = json_decode($json, true);
 }
 

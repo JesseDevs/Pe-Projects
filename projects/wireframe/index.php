@@ -32,23 +32,15 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg'
 
     <?php
 
-    if (file_exists("templates/pages/" . $page . ".php")) {
+    if (file_exists("data/pages/" . $page . ".json")) {
 
-        if ($page == 'home') { // home page
-            include('templates/pages/home.php');
-        }
-
-        if ($page == 'about') { // about page
-            include('templates/pages/about.php');
-        }
-
-
+        include('templates/pages/standard.php');
     } else {
         $page = '404';
 
         $json = file_get_contents('data/pages/404.json');
         $pageData = json_decode($json, true);
-        include('templates/pages/404.php');
+        include('templates/pages/standard.php');
     }
 
 
