@@ -9,6 +9,12 @@
     max-width: none;
 }
 
+diptech,
+double-image,
+double-text,
+goal-block {
+    min-height: 300px;
+}
 
 diptech picture,
 double-image picture,
