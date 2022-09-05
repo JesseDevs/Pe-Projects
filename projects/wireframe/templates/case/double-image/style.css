@@ -1,0 +1,9 @@
+double-image {
+    display: grid;
+    width: 100%;
+    gap: var(--simple-space);
+}
+
+double-image picture {
+    margin-bottom: var(--simple-space);
+}
