@@ -1,0 +1,140 @@
+{
+    "id": "02",
+    "title": "template-three",
+    "intro": "",
+    "metaImage": "",
+    "sections": [
+        {
+            "module": "landing-email",
+            "heading": "Arcu suscipit massa aliquam proin amet",
+            "intro": "At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.",
+            "placeholder": "Email Address",
+            "button": "SignUp"
+        },
+        {
+            "module": "row-cards",
+            "heading": "Etiam nulla lectus amet nunc",
+            "intro": "Rhoncus, accumsan dictum",
+            "actions": [
+                {
+                    "link": "",
+                    "title": "See All"
+                }
+            ],
+            "cards": [
+                {
+                    "title": "Nisl, in consectetur",
+                    "detail": "A tristique facilisi gravida at felis. Sed ornare arcu, tortor hendrerit etiam vulputate libero tellus. Etiam nu"
+                },
+                {
+                    "title": "Et, odio elementum",
+                    "detail": "A tristique facilisi gravida at felis. Sed ornare arcu, tortor hendrerit etiam vulputate libero tellus. Etiam nu"
+                },
+                {
+                    "title": "Et, odio elementum",
+                    "detail": "A tristique facilisi gravida at felis. Sed ornare arcu, tortor hendrerit etiam vulputate libero tellus. Etiam nu"
+                }
+            ]
+        },
+        {
+            "module": "items-grid",
+            "heading": "Etiam Nulla Lectus <br> Molestie At Vulputate.",
+            "intro": "Neque, pulvinar vestibulum non aliquam.",
+            "detail": "Rhoncus, accumsan dictum",
+            "items": [
+                {
+                    "title": "Et, odio elementum",
+                    "image": "https://peprojects.dev/images/square.jpg",
+                    "detail": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
+                },
+                {
+                    "title": "Massa leo scelerisque",
+                    "image": "https://peprojects.dev/images/square.jpg",
+                    "detail": "Velit nulla eu tortor elit sed. Volutpat ornare mi tempor, hac morbi faucibus. "
+                },
+                {
+                    "title": "Phasellus non sit",
+                    "image": "https://peprojects.dev/images/square.jpg",
+                    "detail": "Lobortis adipiscing sit senectus id. Rhoncus lacus mi aliquam tortor nibh."
+                },
+                {
+                    "title": "Enim scelerisque dictum",
+                    "image": "https://peprojects.dev/images/square.jpg",
+                    "detail": "Turpis eget ut sed vitae in sapien egestas ultrices feugiat. Elementum platea."
+                },
+                {
+                    "title": "Vulputate et enim",
+                    "image": "https://peprojects.dev/images/square.jpg",
+                    "detail": "Amet, eros nisl vestibulum tincidunt pellentesque. Congue id sapien dictum a."
+                },
+                {
+                    "title": "Faucibus eget blandit",
+                    "image": "https://peprojects.dev/images/square.jpg",
+                    "detail": "Tristique viverra lorem nibh eget tellus eget morbi porttitor. Faucibus sit."
+                }
+            ]
+        },
+        {
+            "module": "client-emphasis",
+            "heading": "what our clients says",
+            "intro": "Neque, pulvinar vestibulum non aliquam.",
+            "review": [
+                {
+                    "detail": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
+                    "image": "https://peprojects.dev/images/landscape.jpg",
+                    "name": "Courtney Henry",
+                    "title": "Marketing Coordinator"
+                }
+            ]
+        },
+        {
+            "module": "question-block",
+            "style": "questions-three",
+            "heading": "Frequent Ask Questions",
+            "intro": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.",
+            "details": [
+                {
+                    "header": "How soon will my order ship?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                },
+                {
+                    "header": "Is there any warranty exclusions?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                },
+                {
+                    "header": "Are there any return exclusions?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                },
+                {
+                    "header": "Will I be charged for a replacement item?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                },
+                {
+                    "header": "How can I track my orders & payment?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                }
+            ]
+        },
+        {
+            "module": "client-emphasis",
+            "heading": "what our clients says",
+            "intro": "Neque, pulvinar vestibulum non aliquam.",
+            "review": [
+                {
+                    "detail": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
+                    "image": "https://peprojects.dev/images/landscape.jpg",
+                    "name": "Courtney Henry",
+                    "title": "Marketing Coordinator"
+                }
+            ]
+        },
+        {
+            "module": "signup-block",
+            "heading": "Etiam nulla lectus amet nunc ",
+            "intro": "Fringilla non proin nec in in lorem amet eget ac. Mauris.",
+            "image": "https://peprojects.dev/images/square.jpg",
+            "placeholder": "Email Address",
+            "button": "SignUp"
+        }
+    ]
+}
