@@ -1,0 +1,74 @@
+{
+    "id": "footer",
+    "title": "Footer",
+    "intro": "This is a data dedicated to items in the footer. This will help with adding and organizing links.",
+    "lists": [
+        {
+            "header": "Products",
+            "items": [
+                {
+                    "link": "",
+                    "detail": "Diam orci"
+                },
+                {
+                    "link": "",
+                    "detail": "Mi feugiat"
+                },
+                {
+                    "link": "",
+                    "detail": "Netus fermentum"
+                },
+                {
+                    "link": "",
+                    "detail": "Suspendisse viverra"
+                },
+                {
+                    "link": "",
+                    "detail": "Id dolor"
+                },
+                {
+                    "link": "",
+                    "detail": "Erat mattis"
+                }
+            ]
+        },
+        {
+            "header": "Information",
+            "items": [
+                {
+                    "link": "",
+                    "detail": "Nibh"
+                },
+                {
+                    "link": "",
+                    "detail": "Egestas"
+                },
+                {
+                    "link": "",
+                    "detail": "Dictum"
+                }
+            ]
+        },
+        {
+            "header": "Company",
+            "items": [
+                {
+                    "link": "",
+                    "detail": "Id maecenas"
+                },
+                {
+                    "link": "",
+                    "detail": "Id orci"
+                },
+                {
+                    "link": "",
+                    "detail": "Magna ultricies"
+                },
+                {
+                    "link": "",
+                    "detail": "Quis risus"
+                }
+            ]
+        }
+    ]
+}
