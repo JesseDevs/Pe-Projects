@@ -7,12 +7,7 @@
         {
             "module": "big-heading",
             "heading": "Projects",
-            "intro": "I made these.",
-            "items": [
-                {
-                    "title": "Thing number 1"
-                }
-            ]
+            "intro": "I made these."
         },
         {
             "module": "project-section",
