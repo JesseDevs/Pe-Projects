@@ -11,7 +11,7 @@ $heading = $section['heading'] ?? ucfirst($page);
 
     <action-links>
         <?php foreach ($section['actions'] as $link) { ?>
-            <a href="#"> <?= $link ?> </a>
+            <a href="<?= $link['link'] ?>"> <?= $link['title'] ?> </a>
         <?php } ?>
     </action-links>
 

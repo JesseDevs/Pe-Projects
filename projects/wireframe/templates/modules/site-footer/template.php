@@ -10,7 +10,7 @@ $footerData = json_decode($json, true);
         <navigation-block>
             <nav>
                 <ul>
-                    <?php foreach ($footerData['list'] as $list) { ?>
+                    <?php foreach ($footerData['lists'] as $list) { ?>
                         <li>
                             <ul>
                                 <li class='list-header'><?= $list['header'] ?></li>
