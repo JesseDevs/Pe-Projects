@@ -26,22 +26,18 @@
             }
         ],
         "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/php-crud",
-        "images": [
-            "images/projects/fighters/fighter-landing.jpg",
-            "images/projects/fighters/fighter-menu.jpg",
-            "images/projects/fighters/detail.jpg",
-            "images/projects/fighters/create-fighter.jpg"
-        ],
         "casestudy": [
             {
-                "header": "The Challenge",
-                "writeup": [
-                    "The purpose of this project was to build a create, read, update, and delete database. This database would be generated using JSON data to show skills in acquiring and using data from any source. The data would be used and altered using PHP, then displayed on the website in a clean and responsive fashion. Forms would be made to accept user input and add new information to the data."
-                ]
+                "module": "diptech",
+                "title": "The Purpose",
+                "flipped": false,
+                "image": "images/projects/fighters/landing-button.png",
+                "text": "This project was to build a create, read, update, and delete database. This database would be generated using JSON data to show skills in acquiring and using data from any source. The data would be used and altered using PHP, then displayed on the website in a clean and responsive fashion. Forms would be made to accept user input and add new information to the data."
             },
             {
-                "header": "Goals",
-                "writeup": [
+                "module": "goal-block",
+                "title": "Goals",
+                "goals": [
                     "Research CRUD projects.",
                     "Utilize or gather JSON data.",
                     "Turn data into PHP via a function.",
@@ -52,12 +48,28 @@
                 ]
             },
             {
-                "header": "The Approach",
-                "writeup": [
-                    "It all started with displaying the current JSON data. Making a list page to go through the data and display the elements. The objects in my data were structured to have names, images, descriptions, and other information. With the current data I decided to make a list of cards to display a thumbnail that leads to a page with more information.",
-                    "Now that I had a list page, I needed a way to direct users towards that page. In PHP we can use $_GET to obtain a variable given in the URL of the current page. The querystring. This allows me to create a routing system that can then lead to any page I would want the user to have access to, which could be the home page, list page, a detail page, a form page, or even a random page.",
-                    "I created a filter system to see specific characters that the user is looking for. Although, the user may not be familiar with the characters so I chose to give some small details about the parameter I am planning to use to separate them. The filter system goes through the data and checks this parameter for its “playstyle” and then presents those individuals, the others become unclickable."
-                ]
+                "module": "diptech",
+                "title": "The Approach",
+                "flipped": false,
+                "image": "images/projects/fighters/fighter-landing.jpg",
+                "text": "My characters all share a trait under the idea of a playstyle. These playstyles play part in how the character fights and thus was a great value to use to filter the data to show something the user would prefer. I made a home page that contained a title and text under it. The title would then link to the list of character data that is filtered to the specific choice by the user. You could then adjust your choice on the list page or on the home page enter the list page through the main landing button. I learned to take a step back and think as a user on my own sites, what if I were to do this, do that, want this, and want that. Options and more options. It is my website and I get to guide the experience of the user."
+            },
+            {
+                "module": "double-text",
+                "paragraphOne": "It all started with displaying the current JSON data. Making a list page to go through the data and display the elements. The objects in my data were structured to have names, images, descriptions, and other information. With the current data I decided to make a list of cards to display a thumbnail that leads to a page with more information.",
+                "paragraphTwo": "Now that I had a list page, I needed a way to direct users towards that page. In PHP we can use $_GET to obtain a variable given in the URL of the current page. The querystring. This allows me to create a routing system that can then lead to any page I would want the user to have access to, which could be the home page, list page, a detail page, a form page, or even a random page."
+            },
+            {
+                "module": "diptech",
+                "title": false,
+                "flipped": true,
+                "image": "images/projects/fighters/fighter-menu.jpg",
+                "text": "I created a filter system to see specific characters that the user is looking for. Although, the user may not be familiar with the characters so I chose to give some small details about the parameter I am planning to use to separate them. The filter system goes through the data and checks this parameter for its “playstyle” and then presents those individuals, the others become unclickable."
+            },
+            {
+                "module": "double-image",
+                "imageOne": "images/projects/fighters/detail.jpg",
+                "imageTwo": "images/projects/fighters/create-fighter.jpg"
             }
         ]
     },
