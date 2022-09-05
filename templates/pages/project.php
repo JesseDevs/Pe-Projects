@@ -1,9 +1,8 @@
-
-
 <main class="page-content <?= $page ?>">
   <?php foreach ($pageData['sections'] as $section) { ?>
 
-    <section class="<?= $section["module"]?>">
+
+    <section class="<?= $section["module"] ?>">
       <inner-column>
 
         <?php
@@ -13,6 +12,5 @@
       </inner-column>
     </section>
   <?php } ?>
-
 
 </main>

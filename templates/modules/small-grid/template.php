@@ -1,36 +1,30 @@
 <?php
-if($page == 'style'){
+if ($page == 'style') {
 	$_GET['id'] = 'one';
 }
 
 $filtered = [];
 
-foreach ($projectsData as $project){
+foreach ($projectsData as $project) {
 	if ($project['id'] !== $_GET['id']) {
 		array_push($filtered, $project);
 	}
 }
 
-
-
-
-
 ?>
 
-<small-grid>
+<project-section>
 	<text-content>
 		<h2 class='yell-voice'><?= $section['heading']; ?></h2>
 
 		<p class='intro'><?= $section['intro']; ?></p>
 	</text-content>
-	<?php 
+	<?php
 
 
 
-	foreach ($filtered as $project) { 
+	foreach ($filtered as $project) {
 
 		include('templates/modules/project-card/template.php');
-
-
-	}?>
-</small-grid>
+	} ?>
+</project-section>
