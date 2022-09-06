@@ -6,6 +6,7 @@
     "sections": [
         {
             "module": "landing-block",
+            "type": "links",
             "heading": "Arcu suscipit massa aliquam proin amet",
             "intro": "Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor",
             "actions": [
@@ -16,12 +17,15 @@
             ]
         },
         {
-            "module": "upload-block",
+            "module": "support-block",
             "heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
             "intro": "Neque, pulvinar vestibulum non aliquam.",
             "support": "Rhoncus, accumsan dictum",
             "image": "https://peprojects.dev/images/square.jpg",
-            "link": "Learn More"
+            "link": {
+                "title": "Learn More",
+                "link": ""
+            }
         },
         {
             "module": "article-grid",

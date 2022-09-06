@@ -5,7 +5,8 @@
     "metaImage": "",
     "sections": [
         {
-            "module": "landing-email",
+            "module": "landing-block",
+            "type": "email",
             "heading": "Arcu suscipit massa aliquam proin amet",
             "intro": "At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis cursus vestibulum, facilisi ac, sed faucibus.",
             "placeholder": "Email Address",
@@ -37,7 +38,7 @@
             ]
         },
         {
-            "module": "items-grid",
+            "module": "article-grid",
             "heading": "Etiam Nulla Lectus <br> Molestie At Vulputate.",
             "intro": "Neque, pulvinar vestibulum non aliquam.",
             "detail": "Rhoncus, accumsan dictum",

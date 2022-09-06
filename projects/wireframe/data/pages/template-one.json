@@ -6,6 +6,7 @@
     "sections": [
         {
             "module": "landing-block",
+            "type": "links",
             "heading": "Arcu suscipit massa aliquam proin amet",
             "intro": "Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor",
             "actions": [
@@ -27,29 +28,39 @@
             "vid": "https://peprojects.dev/images/landscape.jpg"
         },
         {
-            "module": "image-list",
+            "module": "article-grid",
             "heading": "Etiam Nulla Lectus <br> Molestie At Vulputate.",
             "intro": "Neque, pulvinar vestibulum non aliquam.",
             "image": "https://peprojects.dev/images/square.jpg",
-            "list": [
+            "articles": [
                 {
                     "title": "Sit quam gravida",
+                    "image": "https://peprojects.dev/images/square.jpg",
                     "detail": "Et hendrerit turpis habitant cursus semper ultrices in nunc. Erat eget etiam senectus vestibulum risus."
                 },
                 {
                     "title": "Elementum enim tempus",
+                    "image": "https://peprojects.dev/images/square.jpg",
                     "detail": "At tristique elementum metus blandit id sed vel eu a. Diam sed feugiat diam nisi est. Dictumst elit."
                 },
                 {
                     "title": "Tempor egestas augue",
+                    "image": "https://peprojects.dev/images/square.jpg",
                     "detail": "Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio."
                 },
                 {
                     "title": "Nulla ac lacinia",
+                    "image": "https://peprojects.dev/images/square.jpg",
                     "detail": "Molestie faucibus amet sed ut gravida iaculis sed venenatis. Pulvinar id lacus condimentum ut. Non."
                 },
                 {
                     "title": "Velit nibh a",
+                    "image": "https://peprojects.dev/images/square.jpg",
+                    "detail": "Ac morbi integer orci justo lobortis elementum, massa pulvinar quisque. Porttitor sit convallis quis."
+                },
+                {
+                    "title": "Velit nibh a",
+                    "image": "https://peprojects.dev/images/square.jpg",
                     "detail": "Ac morbi integer orci justo lobortis elementum, massa pulvinar quisque. Porttitor sit convallis quis."
                 }
             ]
