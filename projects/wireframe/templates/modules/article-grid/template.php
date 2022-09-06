@@ -23,7 +23,7 @@
 
         <?php foreach ($section['articles'] as $article) {
 
-            include('templates/components/article-card');
+            include('templates/components/article-card/template.php');
         } ?>
 
     </div>

@@ -22,7 +22,7 @@ $heading = $section['heading'] ?? ucfirst($page);
     <?php
     if ($section['type'] == "email") { ?>
         <field>
-            <input type="email" placeholder=" <?php include("images/mail.php"); ?><?= $section['placeholder'] ?>">
+            <input type="email" placeholder="<?= $section['placeholder'] ?>">
             <button> <?= $section['button'] ?> &#62; </button>
         </field>
 

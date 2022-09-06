@@ -1,6 +1,6 @@
 <article>
     <picture>
-        <img src="<?= $article['img'] ?>" alt="">
+        <img src="<?= $article['image'] ?>" alt="">
     </picture>
 
     <text-content>
