@@ -1,0 +1,14 @@
+client-card {
+    width: 100%;
+    display: block;
+}
+
+.star-box {
+    display: flex;
+    gap: 8px;
+}
+
+.star-box svg {
+    width: 24px;
+    height: 24px;
+}
