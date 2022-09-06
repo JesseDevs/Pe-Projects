@@ -1,0 +1,8 @@
+question-block {
+    display: block;
+    width: 100%;
+}
+
+summary {
+    font-weight: 500;
+}

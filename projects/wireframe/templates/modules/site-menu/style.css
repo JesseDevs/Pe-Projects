@@ -21,6 +21,7 @@ header .logo {
 
 .globe-icon {
     gap: 7px;
+    font-size: 16px;
 }
 
 .menu>ul {

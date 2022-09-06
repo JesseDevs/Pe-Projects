@@ -21,7 +21,7 @@
                             <?php include('images/globe.php') ?>
                             <span>EN</span>
                         </li>
-                        <li><a class='log' href="#">LogIn</a></li>
+                        <li><a class='small-voice log' href="#">LogIn</a></li>
                     </ul>
                 </li>
             </ul>

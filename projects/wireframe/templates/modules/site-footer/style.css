@@ -3,3 +3,12 @@ footer .logo {
     width: 211px;
     height: 53px;
 }
+
+.template-one footer {
+    background-color: var(--highlight);
+    color: var(--page);
+}
+
+.template-one footer .logo path {
+    fill: var(--page);
+}

@@ -42,9 +42,9 @@ $footerData = json_decode($json, true);
                     </li>
                     <li>
                         <ul class='socials'>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Vine?</a></li>
+                            <li><a href="#"><?php include('images/social-svg/linkedin.php'); ?></a></li>
+                            <li><a href="#"><?php include('images/social-svg/facebook.php'); ?></a></li>
+                            <li><a href="#"><?php include('images/social-svg/luicide.php'); ?></a></li>
                         </ul>
                     </li>
                 </ul>
