@@ -17,8 +17,11 @@
                 </li>
                 <li>
                     <ul class='login'>
-                        <li>globe-icon <strong>EN</strong></li>
-                        <button class="log">LogIn</button>
+                        <li class='globe-icon'>
+                            <?php include('images/globe.php') ?>
+                            <span>EN</span>
+                        </li>
+                        <li><a class='log' href="#">LogIn</a></li>
                     </ul>
                 </li>
             </ul>

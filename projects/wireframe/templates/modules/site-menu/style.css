@@ -1,0 +1,36 @@
+header inner-column {
+    padding: 22px 1rem;
+    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 134px;
+    height: 34px;
+
+}
+
+.site-header .actions a {
+    font-size: clamp(0.9rem, 1.5vw, 14px);
+}
+
+.menu ul,
+.globe-icon {
+    display: flex;
+    align-items: center;
+}
+
+.globe-icon {
+    gap: 7px;
+}
+
+.menu>ul {
+    justify-content: space-between;
+}
+
+.menu .actions {
+    gap: 30px;
+}
+
+.menu .login {
+    gap: 20px;
+}
