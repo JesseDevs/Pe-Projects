@@ -1,8 +1,8 @@
 {
     "id": "02",
     "title": "template-three",
-    "intro": "",
-    "metaImage": "",
+    "intro": "This is Template Three",
+    "metaImage": "https://peprojects.dev/alpha-4/jesse/projects/wireframe/images/meta/three.webp",
     "sections": [
         {
             "module": "landing-block",
