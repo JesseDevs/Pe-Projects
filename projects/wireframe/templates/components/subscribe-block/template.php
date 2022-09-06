@@ -1,5 +1,5 @@
 <subscribe-block>
-    <p class'list-header'>Subscribe</p>
+    <p class='list-header'>Subscribe</p>
     <input type="email" placeholder="Email address">
     <button> &#62; </button>
     <p class='small-voice'>
