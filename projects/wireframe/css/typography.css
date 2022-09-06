@@ -18,45 +18,43 @@ em {
 	font-style: italic;
 }
 
-/* these would be scoped to section or to an article element */
-/* this is just a loose setting for now */
+/* typography */
 
-
-.template-one .roar-voice {
+.roar-voice {
 	font-size: clamp(32px, 10vw, 64px);
 	font-weight: 700;
 	letter-spacing: 1.2px;
 	text-transform: capitalize;
 }
 
-.template-one .yell-voice {
+.yell-voice {
 	font-size: clamp(26px, 7vw, 56px);
 	text-transform: capitalize;
 }
 
-.template-one .loud-voice {
+.loud-voice {
 	font-size: clamp(22px, 7vw, 48px);
 	text-transform: capitalize;
 }
 
-.template-one .attention-voice {
+.attention-voice {
 	font-size: clamp(18px, 3.5vw, 22px);
 }
 
-.template-one .calm-voice, p, li {
+.calm-voice, p, li {
 	font-size: clamp(16px, 2vw, 20px);
 	line-height: 1.4;
 }
 
-.template-one a {
+a {
 	font-size: clamp(14px, 2vw, 18px);
 	line-height: 1.4;
 }
 
-.template-one .small-voice {
+.small-voice {
 	font-size: clamp(14px, 1.5vw, 16px);
 }
 
-.template-one .tiny-voice {
+.tiny-voice {
 	font-size: 14px;
 }
