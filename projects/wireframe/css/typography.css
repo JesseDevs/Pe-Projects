@@ -37,6 +37,10 @@ em {
 	text-transform: capitalize;
 }
 
+.strict-voice {
+	font-size: clamp(20px, 3.5vw, 32px);
+}
+
 .attention-voice {
 	font-size: clamp(18px, 3.5vw, 22px);
 }
