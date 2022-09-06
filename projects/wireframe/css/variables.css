@@ -14,7 +14,7 @@ html {
 	--thick: 5px;
 	--Xthick: 9px;
 
-	--gray: rgb(196 193 190);
+	--gray: #e5e5e5;
 	--darkgray: #474747;
 	--white: #fff;
 	--black: rgb(10 5 5);
@@ -24,7 +24,7 @@ html {
 
 html {
 	--ink: rgb(33 33 33);
-	--page: #e5e5e5;
+	--page: #FFFFFF;
 
 	--highlight: #3563e9;
 
