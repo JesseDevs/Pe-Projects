@@ -2,3 +2,8 @@ landing-block {
 	width: 100%;
 	display: block;
 }
+
+landing-block action-links {
+	display: flex;
+	gap: 30px
+}
