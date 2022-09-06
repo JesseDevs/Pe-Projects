@@ -76,9 +76,10 @@
             ]
         },
         {
-            "module": "client-emphasis",
+            "module": "client-review",
             "heading": "what our clients says",
             "intro": "Neque, pulvinar vestibulum non aliquam.",
+            "style": "single",
             "review": [
                 {
                     "detail": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
@@ -96,23 +97,28 @@
             "details": [
                 {
                     "header": "How soon will my order ship?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
                 },
                 {
                     "header": "Is there any warranty exclusions?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": true
                 },
                 {
                     "header": "Are there any return exclusions?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
                 },
                 {
                     "header": "Will I be charged for a replacement item?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
                 },
                 {
                     "header": "How can I track my orders & payment?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
                 }
             ]
         },

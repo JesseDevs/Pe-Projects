@@ -65,15 +65,15 @@
             ]
         },
         {
-            "module": "client-big-review",
+            "module": "client-review",
             "heading": "what our clients says",
             "intro": "Neque, pulvinar vestibulum non aliquam.",
+            "style": "scroll",
             "review": [
                 {
-                    "detail": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
-                    "image": "https://peprojects.dev/images/square.jpg",
-                    "name": "Courtney Henry",
-                    "title": "Marketing Coordinator"
+                    "quote": "“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”",
+                    "portrait": "https://peprojects.dev/images/square.jpg",
+                    "name": "Courtney Henry"
                 }
             ]
         },
@@ -100,23 +100,28 @@
             "details": [
                 {
                     "header": "How soon will my order ship?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
                 },
                 {
                     "header": "Is there any warranty exclusions?",
-                    "text": "Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam. "
+                    "text": "Venenatis, fames a a, in. Morbi pellentesque lacus, purus in tristique justo, pretium egestas. Commodo leo nisl consectetur nisi, tortor, erat sit at aliquet. Ultrices in aliquam maecenas cursus. Sed enim cursus augue quis risus. Ac donec quisque vitae feugiat dignissim diam. ",
+                    "open": true
                 },
                 {
                     "header": "Are there any return exclusions?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
                 },
                 {
                     "header": "Will I be charged for a replacement item?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
                 },
                 {
                     "header": "How can I track my orders & payment?",
-                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
                 }
             ]
         }
