@@ -80,7 +80,7 @@
         {
             "module": "call-to-action",
             "heading": "Etiam Nulla Lectus <br> Molestie At Vulputate.",
-            "support": "Rhoncus, accumsan dictum",
+            "intro": "Rhoncus, accumsan dictum",
             "actions": [
                 {
                     "link": "",

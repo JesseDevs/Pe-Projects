@@ -82,7 +82,7 @@
             "style": "single",
             "review": [
                 {
-                    "detail": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
+                    "quote": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
                     "image": "https://peprojects.dev/images/landscape.jpg",
                     "name": "Courtney Henry",
                     "title": "Marketing Coordinator"
@@ -119,19 +119,6 @@
                     "header": "How can I track my orders & payment?",
                     "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
                     "open": false
-                }
-            ]
-        },
-        {
-            "module": "client-emphasis",
-            "heading": "what our clients says",
-            "intro": "Neque, pulvinar vestibulum non aliquam.",
-            "review": [
-                {
-                    "detail": "“Pellentesque maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.”",
-                    "image": "https://peprojects.dev/images/landscape.jpg",
-                    "name": "Courtney Henry",
-                    "title": "Marketing Coordinator"
                 }
             ]
         },

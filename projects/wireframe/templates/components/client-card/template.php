@@ -25,7 +25,7 @@
         <div class="client-single">
 
             <picture>
-                <img src="<?= $review['portrait'] ?>" alt="">
+                <img src="<?= $review['image'] ?>" alt="">
             </picture>
 
             <p class="strict-voice"><?= $review['quote'] ?></p>
