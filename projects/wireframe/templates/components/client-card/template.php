@@ -11,7 +11,7 @@
     <?php if ($section['style'] == 'scroll') { ?>
 
 
-        <p class="quote small-voice"><?= $review['quote'] ?></p>
+        <p class="quote"><?= $review['quote'] ?></p>
 
         <div class="profile">
 

@@ -4,5 +4,28 @@
 
 call-to-action {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-content: center;
+}
+
+
+call-to-action action-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--simple-gap)
+}
+
+call-to-action action-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+call-to-action .arrow {
     display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
 }
