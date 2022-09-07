@@ -12,6 +12,7 @@
 
 landing-block a {
     padding: 10px 25px;
+    font-weight: 500;
 }
 
 landing-block a:nth-of-type(1) {
@@ -29,11 +30,17 @@ call-to-action a {
     padding: 10px 22px;
     color: var(--page);
     background-color: var(--highlight);
+    font-weight: 500;
 }
 
 @media(min-width:800px) {
     landing-block a {
         padding: 15px 50px;
+    }
+
+    call-to-action a {
+        padding: 12.5px 35px;
+
     }
 
 }
