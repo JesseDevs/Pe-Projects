@@ -30,3 +30,10 @@ call-to-action a {
     color: var(--page);
     background-color: var(--highlight);
 }
+
+@media(min-width:800px) {
+    landing-block a {
+        padding: 15px 50px;
+    }
+
+}

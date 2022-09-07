@@ -2,13 +2,10 @@ html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 
-	--simple-small-space: 5px;
-	--simple-space: 20px;
-	--simple-big-space: 40px;
-
-	--big-general-space: 12vh;
-	--general-space: 5vh;
-	--tight-space: 2.6vh;
+	--simple-gap: 10px;
+	--simple-block-gap: 30px;
+	--block-space: 50px;
+	--landing-space: 95px;
 
 	--thin: 3px;
 	--thick: 5px;
@@ -27,8 +24,22 @@ html {
 	--page: #FFFFFF;
 
 	--highlight: #3563e9;
+	--darkHighlight: #2851E3;
 	--accent: #F7F9FE;
+	--support: #EFF3FD;
 
+	--main-gray: #757575;
+	--second-gray: #424242;
+	--third-gray: #616161;
+}
+
+@media(min-width:800px) {
+	html {
+		--simple-gap: 30px;
+		--simple-block-gap: 60px;
+		--block-space: 80px;
+		--landing-space: 195.5px;
+	}
 }
 
 @media(min-width: 1700px) {
