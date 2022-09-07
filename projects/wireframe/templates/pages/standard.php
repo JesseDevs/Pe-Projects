@@ -1,7 +1,7 @@
-<main class="page-content <?= $page ?>">
+<main class="page-content">
     <?php foreach ($pageData['sections'] as $section) { ?>
 
-        <section>
+        <section class='<?= $section["module"] ?>'>
             <inner-column>
                 <?php
                 include('templates/modules/' . $section["module"] . '/template.php');
