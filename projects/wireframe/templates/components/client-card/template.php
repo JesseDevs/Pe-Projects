@@ -9,29 +9,32 @@
     <?php } ?>
 
     <?php if ($section['style'] == 'scroll') { ?>
-        <div class="client-scroll">
 
-            <p class="small-voice"><?= $review['quote'] ?></p>
 
-            <picture>
+        <p class="quote small-voice"><?= $review['quote'] ?></p>
+
+        <div class="profile">
+
+            <picture class='portrait'>
                 <img src="<?= $review['portrait'] ?>" alt="">
             </picture>
-
             <p class='tiny-voice'><?= $review['name'] ?></p>
+
         </div>
+
     <?php } ?>
 
     <?php if ($section['style']  == 'single') { ?>
-        <div class="client-single">
 
-            <picture>
-                <img src="<?= $review['image'] ?>" alt="">
-            </picture>
 
-            <p class="strict-voice"><?= $review['quote'] ?></p>
+        <picture class='image'>
+            <img src="<?= $review['image'] ?>" alt="">
+        </picture>
 
-            <p><?= $review['name'] ?><span>- <?= $review['title'] ?></span></p>
-        </div>
+        <p class="strict-voice"><?= $review['quote'] ?></p>
+
+        <p><?= $review['name'] ?><span>- <?= $review['title'] ?></span></p>
+
     <?php } ?>
 
 </client-card>

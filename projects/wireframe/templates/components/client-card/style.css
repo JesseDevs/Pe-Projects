@@ -1,6 +1,15 @@
 client-card {
     width: 100%;
-    display: block;
+    display: grid;
+    padding: 26px 10px;
+    gap: 27px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    max-width: 414px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .star-box {
@@ -11,4 +20,20 @@ client-card {
 .star-box svg {
     width: 24px;
     height: 24px;
+}
+
+client-card .portrait {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+client-card .portrait img {
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }

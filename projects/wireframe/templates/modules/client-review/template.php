@@ -4,10 +4,18 @@
         <p class="intro"><?= $section['intro'] ?></p>
     </text-content>
 
-    <div class="scroll-menu">
+    <section class="scroll-menu">
+        <div class="arrow">
+
+            <?php include('images/left-arrow.php'); ?>
+        </div>
         <?php foreach ($section['review'] as $review) {
             include('templates/components/client-card/template.php');
         } ?>
-    </div>
+        <div class="arrow">
+
+            <?php include('images/right-arrow.php'); ?>
+        </div>
+    </section>
 
 </client-block>

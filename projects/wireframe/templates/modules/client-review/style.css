@@ -4,3 +4,18 @@ client-block {
     flex-direction: column;
     gap: 50px;
 }
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    padding: 12.5 18.5;
+}
+
+
+@media(min-width:800px) {
+    .scroll-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 42px;
+    }
+}
