@@ -4,8 +4,10 @@
         <p class="intro"><?= $section['intro'] ?></p>
     </text-content>
 
-    <?php foreach ($section['review'] as $review) {
-        include('templates/components/client-card/template.php');
-    } ?>
+    <div class="scroll-menu">
+        <?php foreach ($section['review'] as $review) {
+            include('templates/components/client-card/template.php');
+        } ?>
+    </div>
 
 </client-block>

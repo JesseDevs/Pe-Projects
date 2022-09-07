@@ -29,7 +29,7 @@ inner-column {
 	margin-right: auto;
 	margin-left: auto;
 	padding: var(--block-space) 1rem;
-	max-width: 980px;
+	max-width: 1200px;
 }
 
 article-grid,

@@ -1,4 +1,5 @@
 .landing-block inner-column {
+	max-width: 980px;
 	padding: var(--landing-space) 1rem;
 }
 

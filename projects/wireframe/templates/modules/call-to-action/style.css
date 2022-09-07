@@ -1,3 +1,7 @@
+.call-to-action inner-column {
+    background-color: var(--accent);
+}
+
 call-to-action {
     width: 100%;
     display: block;
