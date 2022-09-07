@@ -35,32 +35,27 @@
             "articles": [
                 {
                     "title": "Sit quam gravida",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "number": 1,
                     "detail": "Et hendrerit turpis habitant cursus semper ultrices in nunc. Erat eget etiam senectus vestibulum risus."
                 },
                 {
                     "title": "Elementum enim tempus",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "number": 2,
                     "detail": "At tristique elementum metus blandit id sed vel eu a. Diam sed feugiat diam nisi est. Dictumst elit."
                 },
                 {
                     "title": "Tempor egestas augue",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "number": 3,
                     "detail": "Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio."
                 },
                 {
                     "title": "Nulla ac lacinia",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "number": 4,
                     "detail": "Molestie faucibus amet sed ut gravida iaculis sed venenatis. Pulvinar id lacus condimentum ut. Non."
                 },
                 {
                     "title": "Velit nibh a",
-                    "image": "https://peprojects.dev/images/square.jpg",
-                    "detail": "Ac morbi integer orci justo lobortis elementum, massa pulvinar quisque. Porttitor sit convallis quis."
-                },
-                {
-                    "title": "Velit nibh a",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "number": 5,
                     "detail": "Ac morbi integer orci justo lobortis elementum, massa pulvinar quisque. Porttitor sit convallis quis."
                 }
             ]

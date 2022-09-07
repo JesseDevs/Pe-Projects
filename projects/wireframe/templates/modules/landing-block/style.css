@@ -1,9 +1,22 @@
+.landing-block inner-column {
+	padding: var(--landing-space) 1rem;
+}
+
 landing-block {
 	width: 100%;
-	display: block;
+
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-content: center;
+}
+
+landing-block .intro {
+	color: var(--second-gray);
 }
 
 landing-block action-links {
 	display: flex;
-	gap: 30px
+	justify-content: center;
+	gap: var(--simple-gap)
 }

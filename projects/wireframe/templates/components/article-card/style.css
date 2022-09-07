@@ -1,0 +1,24 @@
+article-card {
+    width: 100%;
+    display: flex;
+    gap: 22px;
+    padding: 10px;
+}
+
+article-card text-content {
+    gap: 16px;
+    margin: 0;
+}
+
+article-card .number {
+    font-size: 22px;
+    color: var(--darkHighlight);
+    font-weight: 600;
+    padding: 16px 24px;
+    background-color: var(--support);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+@media (min-width:800px) {}

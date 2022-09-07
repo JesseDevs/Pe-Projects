@@ -1,7 +1,7 @@
 <question-block>
 
     <text-content>
-        <h3 class="loud-voice"><?= $section['heading'] ?></h3>
+        <h3 class="heading loud-voice"><?= $section['heading'] ?></h3>
 
         <p class='intro'> <?= $section["intro"] ?></p>
 

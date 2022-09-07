@@ -4,7 +4,7 @@ $heading = $section['heading'] ?? ucfirst($page);
 
 <landing-block>
     <text-content>
-        <h1 class="roar-voice"><?= $heading ?></h1>
+        <h1 class="heading roar-voice"><?= $heading ?></h1>
 
         <p class='intro'> <?= $section["intro"] ?></p>
     </text-content>

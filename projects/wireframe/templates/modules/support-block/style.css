@@ -2,3 +2,15 @@ support-block {
     width: 100%;
     display: block;
 }
+
+support-block .page-video {
+    padding-top: var(--simple-block-gap);
+}
+
+support-block text-content {
+    gap: 24px;
+}
+
+support-block h2+p {
+    padding-top: 8px;
+}

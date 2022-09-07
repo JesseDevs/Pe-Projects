@@ -3,11 +3,11 @@
     <text-content>
 
         <?php if (isset($section['detail'])) { ?>
-            <p><?= $section['detail'] ?></p>
+            <p class="intro"><?= $section['detail'] ?></p>
         <?php } ?>
 
-        <h3 class="loud-voice"><?= $section['heading'] ?></h3>
-        <p><?= $section['intro'] ?></p>
+        <h3 class="heading loud-voice"><?= $section['heading'] ?></h3>
+        <p class="intro"><?= $section['intro'] ?></p>
 
     </text-content>
 
