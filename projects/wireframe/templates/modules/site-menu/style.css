@@ -1,6 +1,10 @@
+header {
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
 header inner-column {
+    max-width: 1300px;
     padding: 22px 1rem;
-    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -13,6 +17,7 @@ header .logo {
     font-size: clamp(0.9rem, 1.5vw, 14px);
 }
 
+.menu,
 .menu ul,
 .globe-icon {
     display: flex;
@@ -24,7 +29,7 @@ header .logo {
     font-size: 16px;
 }
 
-.menu>ul {
+.menu {
     justify-content: space-between;
 }
 

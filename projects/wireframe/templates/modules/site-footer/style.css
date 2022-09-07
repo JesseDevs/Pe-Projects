@@ -12,3 +12,13 @@ footer .logo {
 .template-one footer .logo path {
     fill: var(--page);
 }
+
+footer .socials {
+    gap: 15px;
+}
+
+footer .socials li {
+    border-radius: 50%;
+    padding: 7px 8px;
+    border: 1.5px solid var(--page);
+}
