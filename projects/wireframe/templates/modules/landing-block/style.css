@@ -28,6 +28,7 @@ landing-block action-links {
 
 .template-three landing-block h1 {
 	color: var(--page);
+	text-transform: uppercase;
 }
 
 .template-three landing-block p {
