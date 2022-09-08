@@ -21,7 +21,23 @@
                 <li><a class='small-voice log' href="#">LogIn</a></li>
             </ul>
 
+            <div class="burger-container">
+                <button class='toggle-burger' rel="toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <nav class="burger">
+                    <a class='chant-voice' href="?page=home">Home</a>
+                    <a class='chant-voice' href="?page=list">Catalog</a>
+
+                    <button class='close' rel="toggle"></button>
+                </nav>
+            </div>
+
         </nav>
+
 
     </inner-column>
 </header>
