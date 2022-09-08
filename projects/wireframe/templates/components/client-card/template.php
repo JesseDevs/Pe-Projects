@@ -18,7 +18,14 @@
             <picture class='portrait'>
                 <img src="<?= $review['portrait'] ?>" alt="">
             </picture>
-            <p class='tiny-voice'><?= $review['name'] ?></p>
+            <text-content>
+
+                <p class='tiny-voice'><?= $review['name'] ?></p>
+
+                <?php if (isset($review['title'])) { ?>
+                    <span class='small-voice'><?= $review['title'] ?></span>
+                <?php } ?>
+            </text-content>
 
         </div>
 

@@ -26,4 +26,8 @@ client-block {
         display: block;
     }
 
+    .template-two client-card {
+        grid-column: span 2;
+    }
+
 }

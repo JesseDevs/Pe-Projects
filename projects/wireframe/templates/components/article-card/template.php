@@ -1,9 +1,10 @@
 <article-card>
 
     <?php if (isset($article['image'])) { ?>
-        <picture>
-            <img src="<?= $article['image'] ?>" alt="">
-        </picture>
+        <div class='feather'>
+            <?php include('images/feather.php'); ?>
+        </div>
+
     <?php } ?>
 
     <?php if (isset($article['number'])) { ?>

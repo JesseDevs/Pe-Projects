@@ -27,6 +27,16 @@ article-grid .grid {
     gap: 20px;
 }
 
+article-grid .feather {
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+article-grid .feather svg {
+    width: 30px;
+    height: 30px;
+}
 
 @media (min-width:800px) {
     article-grid {
@@ -43,6 +53,33 @@ article-grid .grid {
     article-grid .grid {
         grid-row: 1 / span 2;
         grid-column: 2;
+    }
+
+}
+
+.template-two article-grid text-content {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.template-two article-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.template-two article-grid .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+}
+
+
+@media (min-width:800px) {
+
+    .template-two article-grid text-content {
+        grid-column: 1/ span 2;
+        grid-row: 1;
     }
 
 }

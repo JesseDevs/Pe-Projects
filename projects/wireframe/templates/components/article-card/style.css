@@ -21,4 +21,26 @@ article-card .number {
     height: 60px;
 }
 
-@media (min-width:800px) {}
+.template-two h4 {
+    font-weight: 600;
+}
+
+.template-two article-card {
+    padding: 25px;
+    border: 1px solid var(--light);
+    border-radius: 10px;
+
+}
+
+.template-two article-card text-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+@media(min-width:652px) {
+    .template-two article-card {
+        display: flex;
+        flex-direction: column;
+
+    }
+}

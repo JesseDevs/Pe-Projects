@@ -14,8 +14,17 @@ support-block .page-video {
 
 support-block text-content {
     gap: 24px;
+    align-items: center;
 }
 
 support-block h2+p {
     padding-top: 8px;
+}
+
+.feather {
+    width: 90px;
+    height: 90px;
+    padding: 24px;
+    border-radius: 50%;
+    background-color: var(--support);
 }

@@ -14,7 +14,7 @@ $metaImage = $pageData['metaImage'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Recreation: <?= ucfirst($page); ?> Page</title>
+    <title>Wireframe Recreation: <?= ucwords($page); ?> Page</title>
     <meta name='description' content="<?= $pageData['intro'] ?>">
     <meta property="og:image" content="<?= $metaImage ?>">
 

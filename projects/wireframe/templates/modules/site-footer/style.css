@@ -69,6 +69,26 @@ subscribe-block {
     grid-column: span 2;
 }
 
+.template-two .resources .list-header {
+    color: var(--dark);
+}
+
+.template-two .socials li:not(:nth-of-type(3)) path {
+    fill: var(--second-gray);
+}
+
+.template-two .socials path {
+    stroke: var(--second-gray);
+}
+
+.template-two .socials li {
+    border: 1.5px solid var(--gray);
+}
+
+.template-two navigation-block .menu {
+    border-top: 1px solid var(--gray);
+    padding-top: var(--footer-space);
+}
 
 @media(min-width:650px) {
     footer .menu {

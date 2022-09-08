@@ -35,6 +35,8 @@ html {
 	--second-gray: #424242;
 	--third-gray: #616161;
 	--dark: #212121;
+
+	--light: #E0E0E0;
 }
 
 @media(min-width:800px) {

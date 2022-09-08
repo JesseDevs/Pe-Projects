@@ -34,6 +34,16 @@ call-to-action a {
     font-weight: 500;
 }
 
+.template-two call-to-action a:nth-of-type(2) {
+    background: var(--page);
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+
+.template-two call-to-action a:nth-of-type(2) .arrow path {
+    stroke: var(--highlight);
+}
+
 @media(min-width:800px) {
     landing-block a {
         padding: 15px 50px;

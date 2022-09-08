@@ -15,7 +15,6 @@ subscribe-block p {
 }
 
 subscribe-block h5 {
-    color: var(--page);
     font-weight: 700;
 }
 
@@ -46,4 +45,13 @@ subscribe-block email-input .arrow {
     padding: 13px;
     border-radius: 0px 6px 6px 0px;
 
+}
+
+
+.template-two subscribe-block {
+    background-color: var(--support);
+}
+
+.template-two subscribe-block p {
+    color: var(--third-gray);
 }

@@ -1,13 +1,14 @@
 <support-block>
-    <?php if (isset($section['image'])) { ?>
 
-        <picture>
-            <img src="<?= $section['image'] ?>" alt="">
-        </picture>
-
-    <?php } ?>
 
     <text-content>
+        <?php if (isset($section['icon'])) { ?>
+
+            <div class='feather'>
+                <?php include('images/feather.php'); ?>
+            </div>
+
+        <?php } ?>
 
         <p class='intro'> <?= $section["support"] ?></p>
 
