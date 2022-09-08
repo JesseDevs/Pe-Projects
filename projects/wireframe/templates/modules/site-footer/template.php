@@ -13,9 +13,9 @@ $footerData = json_decode($json, true);
                 <?php foreach ($footerData['lists'] as $list) { ?>
 
                     <ul>
-                        <li class='list-header'><?= $list['header'] ?></li>
+                        <li class='small-voice list-header'><?= $list['header'] ?></li>
                         <?php foreach ($list['items'] as $item) { ?>
-                            <li><a href="<?= $item['link'] ?>"><?= $item['detail'] ?></a></li>
+                            <li><a class='small-voice' href="<?= $item['link'] ?>"><?= $item['detail'] ?></a></li>
                         <?php } ?>
                     </ul>
 
