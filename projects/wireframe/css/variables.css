@@ -2,11 +2,13 @@ html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 
+	--small-space: 7px;
 	--simple-gap: 10px;
 	--simple-block-gap: 30px;
 	--question-gap: 35px;
 	--block-space: 50px;
 	--landing-space: 95px;
+	--footer-space: 22px;
 
 	--thin: 3px;
 	--thick: 5px;
@@ -32,15 +34,19 @@ html {
 	--main-gray: #757575;
 	--second-gray: #424242;
 	--third-gray: #616161;
+	--dark: #212121;
 }
 
 @media(min-width:800px) {
 	html {
+
+		--small-space: 13px;
 		--simple-gap: 30px;
 		--simple-block-gap: 60px;
 		--question-gap: 70px;
 		--block-space: 80px;
 		--landing-space: 195.5px;
+		--footer-space: 47px;
 	}
 }
 

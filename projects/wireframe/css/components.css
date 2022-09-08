@@ -1,6 +1,7 @@
 @import '../templates/components/article-card/style.css';
 @import '../templates/components/client-card/style.css';
 @import '../templates/components/subscribe-block/style.css';
+@import '../templates/components/email-input/style.css';
 
 
 .site-header .log {
