@@ -11,7 +11,7 @@ subscribe-block {
 subscribe-block p {
     color: var(--page);
     font-size: 12px;
-
+    max-width: 254px;
 }
 
 subscribe-block h5 {
@@ -54,14 +54,5 @@ subscribe-block email-input .arrow {
 
 .template-two subscribe-block p {
     color: var(--third-gray);
-}
 
-.template-three subscribe-block email-input a {
-
-    background-color: var(--highlight);
-}
-
-.template-three subscribe-block email-input a path {
-
-    stroke: var(--page);
 }

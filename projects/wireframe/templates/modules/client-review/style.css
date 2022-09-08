@@ -47,7 +47,7 @@ client-block {
 }
 
 @media(min-width:800px) {
-    .template-three .arrow {
+    .template-three .client-review .arrow {
         display: none;
     }
 

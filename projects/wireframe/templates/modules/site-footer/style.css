@@ -129,9 +129,11 @@ subscribe-block {
 
 @media(min-width:800px) {
     .resources {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 65px;
         align-items: center;
+        padding-left: 61px;
+        padding-right: 61px;
     }
 
     .resources ul:nth-of-type(2),
@@ -142,7 +144,9 @@ subscribe-block {
     .resources subscribe-block {
         grid-row: 1;
         grid-column: 4/ span 2;
-
+        min-width: 338px;
     }
+
+
 
 }
