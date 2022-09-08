@@ -55,3 +55,13 @@ subscribe-block email-input .arrow {
 .template-two subscribe-block p {
     color: var(--third-gray);
 }
+
+.template-three subscribe-block email-input a {
+
+    background-color: var(--highlight);
+}
+
+.template-three subscribe-block email-input a path {
+
+    stroke: var(--page);
+}
