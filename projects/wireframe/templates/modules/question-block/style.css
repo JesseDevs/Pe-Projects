@@ -6,7 +6,7 @@ question-block {
     width: 100%;
 }
 
-.details-box,
+
 question-block .intro {
     max-width: 843px;
     margin: 0 auto;
@@ -20,6 +20,10 @@ details {
     list-style-type: none;
     cursor: pointer;
     position: relative;
+
+    max-width: 843px;
+    margin: 0 auto;
+
 
 }
 
