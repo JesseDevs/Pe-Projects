@@ -82,6 +82,11 @@ article-grid .feather svg {
         grid-row: 1;
     }
 
+    .template-two article-grid .grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    }
+
 }
 
 .template-three article-grid {

@@ -69,7 +69,23 @@ subscribe-block {
     grid-column: span 2;
 }
 
+.template-two footer {
+    background-color: var(--page);
+}
+
+.template-two footer .logo path {
+    fill: var(--highlight);
+}
+
+.template-two footer .actions {
+    color: var(--ink);
+}
+
 .template-two .resources .list-header {
+    color: var(--dark);
+}
+
+.template-two .resources {
     color: var(--dark);
 }
 
