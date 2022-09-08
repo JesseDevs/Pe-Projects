@@ -20,9 +20,17 @@ $heading = $section['heading'] ?? ucfirst($page);
     <?php } ?>
 
     <?php
-    if ($section['type'] == "email") { 
-        include('templates/components/email-input/template.php');
-    } ?>
+    if ($section['type'] == "email") { ?>
+        <email-input>
+
+            <input type="email" placeholder="Email Address">
+
+
+            <a href="#">
+                SignUp
+            </a>
+        </email-input>
+    <?php } ?>
 
 
 

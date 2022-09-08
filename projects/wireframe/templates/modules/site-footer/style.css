@@ -4,12 +4,12 @@ footer .logo {
     height: 53px;
 }
 
-.template-one footer {
+footer {
     background-color: var(--highlight);
     color: var(--page);
 }
 
-.template-one footer .logo path {
+footer .logo path {
     fill: var(--page);
 }
 

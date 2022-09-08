@@ -1,6 +1,7 @@
 <email-input>
 
-    <input type="email" placeholder="Email address">
+    <input type="email" placeholder="Email Address">
+
 
     <a href="#" class='arrow'>
 

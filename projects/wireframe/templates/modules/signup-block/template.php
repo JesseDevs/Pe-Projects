@@ -6,8 +6,19 @@
         <p class='intro'> <?= $section["intro"] ?></p>
     </text-content>
 
-    <field>
-        <input type="email" placeholder="<?= $section['placeholder'] ?>">
-        <button> <?= $section['button'] ?> &#62; </button>
-    </field>
+
+    <email-input>
+
+        <input type="email" placeholder="Email Address">
+
+
+        <a href="#">
+            SignUp
+        </a>
+    </email-input>
+
+
+    <picture>
+        <img src="<?= $section['image'] ?>" alt="">
+    </picture>
 </signup-block>

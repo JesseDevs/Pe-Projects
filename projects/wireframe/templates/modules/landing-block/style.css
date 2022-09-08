@@ -21,3 +21,43 @@ landing-block action-links {
 	justify-content: center;
 	gap: var(--simple-gap)
 }
+
+.template-three .landing-block {
+	background-color: var(--highlight);
+}
+
+.template-three landing-block h1 {
+	color: var(--page);
+}
+
+.template-three landing-block p {
+	color: var(--light);
+}
+
+.template-three landing-block input {
+	background-color: var(--darkHighlight);
+	background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4.5H20C21.1 4.5 22 5.4 22 6.5V18.5C22 19.6 21.1 20.5 20 20.5H4C2.9 20.5 2 19.6 2 18.5V6.5C2 5.4 2.9 4.5 4 4.5Z' stroke='%23E0E0E0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M22 6.5L12 13.5L2 6.5' stroke='%23E0E0E0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	padding-left: 50px;
+	border: none;
+	border-radius: 6px;
+}
+
+.template-three landing-block input::placeholder {
+	color: var(--light);
+	font-size: 16px;
+}
+
+.template-three landing-block email-input {
+	gap: 20px;
+	max-width: 500px;
+}
+
+.template-three landing-block email-input a {
+	background-color: var(--page);
+	padding: 15px 20px;
+	border-radius: 5px;
+	color: var(--highlight);
+
+}
