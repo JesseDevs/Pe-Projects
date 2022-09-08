@@ -4,6 +4,7 @@ html {
 
 	--small-space: 7px;
 	--simple-gap: 10px;
+	--card-space: 5px;
 	--simple-block-gap: 30px;
 	--question-gap: 35px;
 	--block-space: 50px;
@@ -43,6 +44,7 @@ html {
 	html {
 
 		--small-space: 13px;
+		--card-space: 20px;
 		--simple-gap: 30px;
 		--simple-block-gap: 60px;
 		--question-gap: 70px;
