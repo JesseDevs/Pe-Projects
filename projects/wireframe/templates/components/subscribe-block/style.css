@@ -1,0 +1,49 @@
+subscribe-block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    padding: 30px 42px;
+    background-color: var(--darkHighlight);
+
+}
+
+subscribe-block p {
+    color: var(--page);
+    font-size: 12px;
+
+}
+
+subscribe-block h5 {
+    color: var(--page);
+    font-weight: 700;
+}
+
+subscribe-block email-input {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 248px;
+    height: 50px;
+}
+
+subscribe-block email-input input {
+    padding: 16.5px 15px;
+    border: 1px solid #D6D6D6;
+    border-radius: 6px 0px 0px 6px;
+    border-right: none;
+}
+
+subscribe-block email-input a {
+
+    background-color: var(--highlight);
+}
+
+subscribe-block email-input .arrow {
+    display: block;
+    width: 50px;
+    height: 50.5px;
+    padding: 13px;
+    border-radius: 0px 6px 6px 0px;
+
+}
