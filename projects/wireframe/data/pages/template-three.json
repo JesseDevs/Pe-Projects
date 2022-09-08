@@ -45,32 +45,32 @@
             "articles": [
                 {
                     "title": "Et, odio elementum",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "image": "feather",
                     "detail": "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam."
                 },
                 {
                     "title": "Massa leo scelerisque",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "image": "watch",
                     "detail": "Velit nulla eu tortor elit sed. Volutpat ornare mi tempor, hac morbi faucibus. "
                 },
                 {
                     "title": "Phasellus non sit",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "image": "youtube",
                     "detail": "Lobortis adipiscing sit senectus id. Rhoncus lacus mi aliquam tortor nibh."
                 },
                 {
                     "title": "Enim scelerisque dictum",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "image": "thermo",
                     "detail": "Turpis eget ut sed vitae in sapien egestas ultrices feugiat. Elementum platea."
                 },
                 {
                     "title": "Vulputate et enim",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "image": "chain",
                     "detail": "Amet, eros nisl vestibulum tincidunt pellentesque. Congue id sapien dictum a."
                 },
                 {
                     "title": "Faucibus eget blandit",
-                    "image": "https://peprojects.dev/images/square.jpg",
+                    "image": "glass",
                     "detail": "Tristique viverra lorem nibh eget tellus eget morbi porttitor. Faucibus sit."
                 }
             ]
