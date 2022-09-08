@@ -9,7 +9,7 @@ landing-block {
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
-	align-content: center;
+	align-items: center;
 }
 
 landing-block .intro {
