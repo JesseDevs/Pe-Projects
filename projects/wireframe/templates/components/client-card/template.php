@@ -38,9 +38,10 @@
             <img src="<?= $review['image'] ?>" alt="">
         </picture>
 
-        <p class="strict-voice"><?= $review['quote'] ?></p>
-
-        <p><?= $review['name'] ?><span>- <?= $review['title'] ?></span></p>
+        <text-content>
+            <p class="strict-voice"><?= $review['quote'] ?></p>
+            <p class='name'><?= $review['name'] ?><span> -<?= $review['title'] ?></span></p>
+        </text-content>
 
     <?php } ?>
 

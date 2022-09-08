@@ -9,8 +9,10 @@
     <div class="row">
 
         <?php foreach ($section['cards'] as $card) { ?>
-            <h4 class="another-voice"><?= $card['title'] ?></h4>
-            <p><?= $card['detail'] ?></p>
+            <article>
+                <h4 class="another-voice"><?= $card['title'] ?></h4>
+                <p><?= $card['detail'] ?></p>
+            </article>
 
         <?php } ?>
 
@@ -18,7 +20,7 @@
 
     <action-links>
         <?php foreach ($section['actions'] as $link) { ?>
-            <a href="<?= $link['link'] ?>"> <?= $link['title'] ?> </a>
+            <a href="<?= $link['link'] ?>"> <?= $link['title'] ?> <?php include('images/export.php'); ?> </a>
         <?php } ?>
     </action-links>
 

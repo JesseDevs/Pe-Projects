@@ -1,4 +1,51 @@
 row-cards {
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--simple-block-gap);
+}
+
+div.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    gap: var(--simple-gap);
+    align-self: stretch;
+
+
+}
+
+.row article {
+    padding: 10px 9px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.row article h4 {
+    font-weight: 600;
+}
+
+.row article p {
+    color: var(--main-gray);
+}
+
+row-cards action-links,
+row-cards action-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+row-cards action-links a {
+    gap: 10px;
+    color: var(--highlight);
+}
+
+row-cards action-links svg {
+    width: 25px;
+    height: 25px;
 }

@@ -50,6 +50,10 @@ signup-block {
     max-width: 500px;
 }
 
+.template-three .signup-block inner-column {
+    max-width: 1010px;
+}
+
 @media(min-width:800px) {
     .template-three signup-block {
         display: grid;
@@ -69,6 +73,5 @@ signup-block {
         grid-column: 2;
 
     }
-
 
 }

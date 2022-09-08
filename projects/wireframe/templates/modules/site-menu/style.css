@@ -121,3 +121,20 @@ body.menu-open .burger {
         display: flex;
     }
 }
+
+.template-two header {
+    background-color: var(--highlight);
+    color: var(--page);
+}
+
+.template-two .toggle-burger .icon-bar {
+    background-color: var(--page);
+}
+
+.template-two .globe-icon path {
+    stroke: var(--page);
+}
+
+.template-two .logo path {
+    fill: var(--page);
+}

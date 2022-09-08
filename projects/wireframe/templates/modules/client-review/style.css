@@ -31,3 +31,34 @@ client-block {
     }
 
 }
+
+.template-three client-card {
+    padding: 0;
+}
+
+.template-three client-card .name {
+    color: var(--main-gray);
+    font-weight: 600;
+}
+
+.template-three .name span {
+    color: var(--main-gray);
+    font-weight: 400;
+}
+
+@media(min-width:800px) {
+    .template-three .arrow {
+        display: none;
+    }
+
+    .template-three .scroll-menu {
+        display: block;
+    }
+
+    .template-three client-card {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: none;
+
+    }
+}

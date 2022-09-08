@@ -1,8 +1,10 @@
 <article-card>
 
-    <?php if (isset($article['image'])) { ?>
+    <?php if (isset($article['image'])) {
+        $filepath = "images/" . $article['image'] . ".php";
+    ?>
         <div class='feather'>
-            <?php include('images/feather.php'); ?>
+            <?php include($filepath); ?>
         </div>
 
     <?php } ?>

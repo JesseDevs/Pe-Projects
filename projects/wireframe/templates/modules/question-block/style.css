@@ -99,3 +99,15 @@ summary {
         margin-left: 50px;
     }
 }
+
+@media(min-width:800px) {
+    .template-three question-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .template-three question-block text-content {
+        text-align: left;
+    }
+}
