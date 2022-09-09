@@ -18,6 +18,8 @@ $metaImage = $pageData['metaImage'];
     <meta name='description' content="<?= $pageData['intro'] ?>">
     <meta property="og:image" content="<?= $metaImage ?>">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -53,6 +55,8 @@ $metaImage = $pageData['metaImage'];
 
     ?>
 
+
+    <script src="file.js"></script>
 </body>
 
 </html>

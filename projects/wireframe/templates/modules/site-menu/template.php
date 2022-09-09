@@ -28,12 +28,11 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <nav class="burger">
-                    <a class='chant-voice' href="?page=home">Home</a>
-                    <a class='chant-voice' href="?page=list">Catalog</a>
-
-                    <button class='close' rel="toggle"></button>
-                </nav>
+                <ul class="burger">
+                    <a href="?page=template-one">Template One</a>
+                    <a href="?page=template-two">Template Two</a>
+                    <a href="?page=template-three">Template Three</a>
+                </ul>
             </div>
 
         </nav>
