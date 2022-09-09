@@ -24,30 +24,31 @@ landing-block action-links {
 
 .template-one .landing-block {
 	background: repeating-linear-gradient(-45deg,
-			rgb(195 208 249) 0px,
-			rgb(195 208 249) 1px,
-			rgb(247 249 254) 1px,
-			rgb(247 249 254) 40px);
+		rgb(195 208 249) 0px,
+		rgb(195 208 249) 1px,
+		rgb(247 249 254) 1px,
+		rgb(247 249 254) 40px);
 
 }
 
 .template-two .landing-block {
 	background: repeating-linear-gradient(-45deg,
-			rgb(195 208 249) 0px,
-			rgb(195 208 249) 1px,
-			rgb(247 249 254) 1px,
-			rgb(247 249 254) 40px);
+		rgb(195 208 249) 0px,
+		rgb(195 208 249) 1px,
+		rgb(247 249 254) 1px,
+		rgb(247 249 254) 40px);
 	position: relative;
 	overflow: hidden;
 
 }
 
-.template-one divider {
+divider {
 	display: none;
 }
 
 .template-two divider {
 	position: absolute;
+	display: block;
 	width: 100%;
 
 	bottom: -1px;
