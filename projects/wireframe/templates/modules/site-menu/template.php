@@ -28,11 +28,11 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <ul class="burger">
+                <nav class="burger">
                     <a href="?page=template-one">Template One</a>
                     <a href="?page=template-two">Template Two</a>
                     <a href="?page=template-three">Template Three</a>
-                </ul>
+                </nav>
             </div>
 
         </nav>
