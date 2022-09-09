@@ -6,6 +6,7 @@
 support-block {
     width: 100%;
     display: block;
+    z-index: 20;
 }
 
 support-block .page-video {

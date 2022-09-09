@@ -37,8 +37,36 @@ landing-block action-links {
 			rgb(195 208 249) 1px,
 			rgb(247 249 254) 1px,
 			rgb(247 249 254) 40px);
-	clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 82%, 69% 93%, 34% 86%, 0 98%, 0% 70%, 0% 35%, 0 0);
+	position: relative;
+	overflow: hidden;
+
 }
+
+.template-one divider {
+	display: none;
+}
+
+.template-two divider {
+	position: absolute;
+	width: 100%;
+
+	bottom: -1px;
+	right: 0;
+	z-index: 5;
+}
+
+@media(min-width:1500px) {
+	.template-two divider {
+		bottom: -100px;
+	}
+}
+
+@media(min-width:2000px) {
+	.template-two divider {
+		bottom: -200px;
+	}
+}
+
 
 .template-three .landing-block {
 	background-color: var(--highlight);
