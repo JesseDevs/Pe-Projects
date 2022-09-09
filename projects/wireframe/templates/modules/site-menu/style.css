@@ -48,6 +48,7 @@ header .logo {
 
 .burger {
     display: none;
+
 }
 
 .burger a {
@@ -56,6 +57,7 @@ header .logo {
     text-align: center;
     color: var(--page);
     border-bottom: 1px solid var(--light);
+    font-weight: 500;
 }
 
 .burger a:hover {
@@ -76,7 +78,8 @@ body.menu-open .burger {
     background-color: var(--highlight);
     color: var(--page);
 
-    border: 0px;
+    border-top: 1px solid var(--light);
+
     outline: 0px;
 
     z-index: 100;
@@ -87,6 +90,7 @@ body.menu-open .burger {
     position: relative;
     float: right;
     padding: 10px;
+    height: 40px;
     background-color: transparent;
     border: 0;
     border-radius: 4px;
@@ -148,4 +152,14 @@ body.menu-open .burger {
 
 .template-two .logo path {
     fill: var(--page);
+}
+
+body.template-three .burger a {
+    background-color: var(--page);
+    color: var(--highlight);
+}
+
+body.template-three .burger a:hover {
+    background-color: var(--gray);
+
 }
