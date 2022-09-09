@@ -22,7 +22,15 @@ landing-block action-links {
 	gap: var(--simple-gap)
 }
 
-.template-one .landing-block,
+.template-one .landing-block {
+	background: repeating-linear-gradient(-45deg,
+			rgb(195 208 249) 0px,
+			rgb(195 208 249) 1px,
+			rgb(247 249 254) 1px,
+			rgb(247 249 254) 40px);
+
+}
+
 .template-two .landing-block {
 	background: repeating-linear-gradient(-45deg,
 			rgb(195 208 249) 0px,
