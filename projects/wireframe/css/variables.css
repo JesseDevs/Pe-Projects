@@ -7,8 +7,8 @@ html {
 	--card-space: 5px;
 	--simple-block-gap: 30px;
 	--question-gap: 35px;
-	--block-space: 50px;
-	--landing-space: 150px;
+	--block-space: 70px;
+	--landing-space: 140px;
 	--footer-space: 22px;
 
 	--thin: 3px;
@@ -48,7 +48,7 @@ html {
 		--simple-gap: 30px;
 		--simple-block-gap: 60px;
 		--question-gap: 70px;
-		--block-space: 80px;
+		--block-space: 100px;
 		--landing-space: 195.5px;
 		--footer-space: 47px;
 	}
