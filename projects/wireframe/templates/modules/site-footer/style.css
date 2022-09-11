@@ -14,11 +14,7 @@ footer .logo path {
 }
 
 footer .menu {
-    gap: 20px;
-}
-
-footer .menu .logo {
-    flex-shrink: 2;
+    gap: 10px;
 }
 
 footer .menu .actions {
@@ -113,10 +109,6 @@ subscribe-block {
 
     }
 
-    footer .menu .logo {
-        flex-shrink: 1;
-    }
-
     footer .menu .actions {
         display: flex;
     }
@@ -146,7 +138,5 @@ subscribe-block {
         grid-column: 4/ span 2;
         min-width: 338px;
     }
-
-
 
 }
