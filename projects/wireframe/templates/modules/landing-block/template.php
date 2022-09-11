@@ -1,5 +1,7 @@
 <?php
 $heading = $section['heading'] ?? ucfirst($page);
+
+
 ?>
 
 <landing-block>

@@ -3,7 +3,7 @@
 $description = null;
 $metaImage = null;
 
-$metaImage = $pageData['metaImage'];
+$metaImage = $pageData['metaImage'] ?? "https://peprojects.dev/alpha-4/jesse/projects/wireframe/images/meta/one.webp";
 
 
 ?>
