@@ -16,7 +16,7 @@ body {
 
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
-	background-color: var(--page);
+	background-color: red;
 	color: var(--ink);
 }
 
