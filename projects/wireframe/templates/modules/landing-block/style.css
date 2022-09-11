@@ -148,7 +148,8 @@ body.light subscribe-block .arrow {
 	background-color: var(--ink);
 }
 
-body.light .icon-bar {
+body.light .icon-bar,
+body.light .site-header .log {
 	background-color: var(--ink) !important;
 }
 

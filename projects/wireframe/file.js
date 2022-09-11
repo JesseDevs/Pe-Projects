@@ -28,7 +28,7 @@ changer.addEventListener("input", function () {
 
     const color = chroma(changer.value)
 
-    if (color.luminance() > 0.6) {
+    if (color.luminance() > 0.3) {
         bodyTag.classList.add("light")
     } else {
         bodyTag.classList.remove("light")
