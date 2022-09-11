@@ -26,10 +26,15 @@ client-card .portrait {
     width: 40px;
     height: 40px;
     margin: 0 auto;
+    border-radius: 50%;
 }
 
-client-card .portrait img {
-    border-radius: 50%;
+client-card picture {
+    background-color: var(--support);
+}
+
+client-card img {
+    opacity: 0;
 }
 
 .profile {

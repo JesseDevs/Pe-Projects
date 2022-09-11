@@ -5,12 +5,10 @@
 
 support-block {
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--simple-block-gap);
     z-index: 20;
-}
-
-support-block .page-video {
-    padding-top: var(--simple-block-gap);
 }
 
 support-block text-content {
@@ -27,5 +25,13 @@ support-block h2+p {
     height: 90px;
     padding: 24px;
     border-radius: 50%;
+    background-color: var(--support);
+}
+
+support-block img {
+    opacity: 0;
+}
+
+support-block picture {
     background-color: var(--support);
 }

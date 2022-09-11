@@ -3,7 +3,9 @@
 }
 
 article-grid {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
 }
 
@@ -11,15 +13,19 @@ article-grid .intro {
     margin: 0;
 }
 
+article-grid img {
+    opacity: 0;
+}
+
+article-grid picture {
+    background-color: var(--support);
+}
+
 article-grid text-content {
     gap: 24px;
     text-align: left;
-    margin-bottom: 40px;
 }
 
-article-grid>picture {
-    margin-bottom: 40px;
-}
 
 article-grid .grid {
     display: grid;
