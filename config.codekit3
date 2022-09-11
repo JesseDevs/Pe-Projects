@@ -306,41 +306,95 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/modules.css" : {
-      "aP" : 1,
+    "\/css\/_case.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/css\/modules-min.css",
+      "oAP" : "\/css\/_case.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
-    "\/css\/reset.css" : {
-      "aP" : 1,
+    "\/css\/_modules.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/css\/reset-min.css",
+      "oAP" : "\/css\/_modules.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
-    "\/css\/setup.css" : {
-      "aP" : 1,
+    "\/css\/_reset.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/css\/setup-min.css",
+      "oAP" : "\/css\/_reset.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/css\/_setup.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/_setup.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/css\/_typography.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/_typography.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/css\/_variables.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/_variables.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/css\/style.css" : {
       "aP" : 1,
@@ -354,29 +408,20 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/typography.css" : {
+    "\/css\/style.scss" : {
       "aP" : 1,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/css\/typography-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/variables.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/css\/variables-min.css",
-      "oF" : 0,
-      "pg" : 0
+      "oA" : 0,
+      "oAP" : "\/css\/style.css",
+      "oF" : 1,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/data\/filler-goals.json" : {
       "ft" : 524288,
@@ -513,6 +558,17 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/file.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/file-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/forms\/alcohol-level.php" : {
       "cB" : 0,
@@ -720,6 +776,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/images\/details\/404.jpg" : {
+      "ft" : 16384,
+      "iS" : 426100,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/details\/404.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/details\/computer.jpg" : {
       "ft" : 16384,
       "iS" : 689749,
@@ -791,19 +860,6 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/details\/metoo.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/details\/rip.jpg" : {
-      "ft" : 16384,
-      "iS" : 611568,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/details\/rip.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -900,6 +956,19 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/fighters\/landing-button.png" : {
+      "ft" : 32768,
+      "iS" : 1021177,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/fighters\/landing-button.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/images\/projects\/fighters\/list-code.jpg" : {
@@ -1135,46 +1204,6 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
-    },
-    "\/images\/socials\/icons8-github.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/images\/socials\/icons8-github.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/images\/socials\/icons8-instagram.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/images\/socials\/icons8-instagram.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/images\/socials\/icons8-linkedin.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/images\/socials\/icons8-linkedin.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/images\/socials\/icons8-twitter.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/images\/socials\/icons8-twitter.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
     },
     "\/images\/writing\/gameboy.jpeg" : {
       "ft" : 16384,
@@ -1789,6 +1818,271 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/bartfay\/index.html",
+      "oF" : 0
+    },
+    "\/projects\/base\/css\/modules.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/css\/modules-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/css\/reset.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/css\/reset-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/css\/setup.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/css\/setup-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/css\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/css\/typography.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/css\/typography-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/css\/variables.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/css\/variables-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/file.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/file-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/base\/functions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/functions.php",
+      "oF" : 0
+    },
+    "\/projects\/base\/functions\/routing.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/functions\/routing.php",
+      "oF" : 0
+    },
+    "\/projects\/base\/functions\/utilities.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/functions\/utilities.php",
+      "oF" : 0
+    },
+    "\/projects\/base\/images\/background\/grain.webp" : {
+      "ft" : 8388608,
+      "iS" : 113654,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/images\/background\/grain.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/projects\/base\/images\/background\/landscape.jpg" : {
+      "ft" : 16384,
+      "iS" : 37319,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/images\/background\/landscape.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/base\/images\/background\/landscape.png" : {
+      "ft" : 32768,
+      "iS" : 267118,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/images\/background\/landscape.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/base\/images\/background\/metadata.png" : {
+      "ft" : 32768,
+      "iS" : 15830,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/images\/background\/metadata.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/base\/images\/background\/portrait.jpg" : {
+      "ft" : 16384,
+      "iS" : 127373,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/images\/background\/portrait.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/base\/images\/background\/portrait.png" : {
+      "ft" : 32768,
+      "iS" : 266721,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/images\/background\/portrait.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/base\/images\/background\/square.jpg" : {
+      "ft" : 16384,
+      "iS" : 172970,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/images\/background\/square.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/base\/images\/background\/square.png" : {
+      "ft" : 32768,
+      "iS" : 336821,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/images\/background\/square.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/base\/index.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/index.php",
+      "oF" : 0
+    },
+    "\/projects\/base\/templates\/modules\/site-footer\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/templates\/modules\/site-footer\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/templates\/modules\/site-footer\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/templates\/modules\/site-footer\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/base\/templates\/modules\/site-menu\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/templates\/modules\/site-menu\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/templates\/modules\/site-menu\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/templates\/modules\/site-menu\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/base\/templates\/pages\/home.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/templates\/pages\/home.php",
       "oF" : 0
     },
     "\/projects\/client-project\/client-info.png" : {
@@ -2620,6 +2914,17 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/projects\/manga\/file.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/file-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/projects\/manga\/functions.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2754,6 +3059,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/projects\/manga\/images\/reeds.jpg" : {
+      "ft" : 16384,
+      "iS" : 137622,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/images\/reeds.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/projects\/manga\/images\/socials\/icons8-github.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -2835,6 +3153,26 @@
       "oAP" : "\/projects\/manga\/templates\/modules\/add\/template.php",
       "oF" : 0
     },
+    "\/projects\/manga\/templates\/modules\/detail-card\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/templates\/modules\/detail-card\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/detail-card\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/detail-card\/template.php",
+      "oF" : 0
+    },
     "\/projects\/manga\/templates\/modules\/edit\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -2875,6 +3213,46 @@
       "oAP" : "\/projects\/manga\/templates\/modules\/form\/template.php",
       "oF" : 0
     },
+    "\/projects\/manga\/templates\/modules\/landing\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/templates\/modules\/landing\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/landing\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/landing\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/manga-card\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/manga\/templates\/modules\/manga-card\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/manga\/templates\/modules\/manga-card\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/manga\/templates\/modules\/manga-card\/template.php",
+      "oF" : 0
+    },
     "\/projects\/manga\/templates\/modules\/manga-list\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -2902,7 +3280,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/projects\/manga\/templates\/modules\/site-footer\/style-min.css",
       "oF" : 0,
       "pg" : 0
@@ -3956,25 +4334,6 @@
       "oA" : 0,
       "oAP" : "\/projects\/personal-site-v1\/pages\/resume\/resume-data.php",
       "oF" : 0
-    },
-    "\/projects\/personal-site-v1\/README.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/personal-site-v1\/README.html",
-      "oF" : 0,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
     },
     "\/projects\/personal-site-v1\/router.php" : {
       "cB" : 0,
@@ -6176,268 +6535,6 @@
       "oAP" : "\/projects\/router-boilerplate\/templates\/pages\/standard.php",
       "oF" : 0
     },
-    "\/projects\/simple-manga\/css\/modules.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/simple-manga\/css\/modules-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/simple-manga\/css\/reset.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/simple-manga\/css\/reset-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/simple-manga\/css\/setup.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/simple-manga\/css\/setup-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/simple-manga\/css\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/css\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/simple-manga\/css\/typography.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/simple-manga\/css\/typography-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/simple-manga\/css\/variables.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/simple-manga\/css\/variables-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/simple-manga\/data\/manga.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/simple-manga\/data\/manga-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/simple-manga\/functions.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/functions.php",
-      "oF" : 0
-    },
-    "\/projects\/simple-manga\/functions\/database.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/functions\/database.php",
-      "oF" : 0
-    },
-    "\/projects\/simple-manga\/functions\/routing.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/functions\/routing.php",
-      "oF" : 0
-    },
-    "\/projects\/simple-manga\/functions\/utilities.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/functions\/utilities.php",
-      "oF" : 0
-    },
-    "\/projects\/simple-manga\/images\/background\/grain.webp" : {
-      "ft" : 8388608,
-      "iS" : 113654,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/images\/background\/grain.webp",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-default",
-      "rq" : 75
-    },
-    "\/projects\/simple-manga\/images\/background\/landscape.jpg" : {
-      "ft" : 16384,
-      "iS" : 37319,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/images\/background\/landscape.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/simple-manga\/images\/background\/landscape.png" : {
-      "ft" : 32768,
-      "iS" : 267118,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/images\/background\/landscape.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/projects\/simple-manga\/images\/background\/metadata.png" : {
-      "ft" : 32768,
-      "iS" : 15830,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/images\/background\/metadata.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/projects\/simple-manga\/images\/background\/portrait.jpg" : {
-      "ft" : 16384,
-      "iS" : 127373,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/images\/background\/portrait.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/simple-manga\/images\/background\/portrait.png" : {
-      "ft" : 32768,
-      "iS" : 266721,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/images\/background\/portrait.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/projects\/simple-manga\/images\/background\/square.jpg" : {
-      "ft" : 16384,
-      "iS" : 172970,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/images\/background\/square.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/projects\/simple-manga\/images\/background\/square.png" : {
-      "ft" : 32768,
-      "iS" : 336821,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/images\/background\/square.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/projects\/simple-manga\/images\/socials\/icons8-github.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/projects\/simple-manga\/images\/socials\/icons8-github.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/projects\/simple-manga\/images\/socials\/icons8-instagram.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/projects\/simple-manga\/images\/socials\/icons8-instagram.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/projects\/simple-manga\/images\/socials\/icons8-linkedin.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/projects\/simple-manga\/images\/socials\/icons8-linkedin.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/projects\/simple-manga\/images\/socials\/icons8-twitter.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/projects\/simple-manga\/images\/socials\/icons8-twitter.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/projects\/simple-manga\/index.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/simple-manga\/index.php",
-      "oF" : 0
-    },
     "\/projects\/spider-garden\/css\/reset.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -7253,6 +7350,661 @@
       "oAP" : "\/projects\/ultra-responsive-layout\/index.php",
       "oF" : 0
     },
+    "\/projects\/wireframe\/css\/components.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/css\/components-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/css\/modules.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/css\/modules-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/css\/reset.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/css\/reset-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/css\/setup.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/css\/setup-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/css\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/css\/typography.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/css\/typography-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/css\/variables.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/css\/variables-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/data\/components\/footer.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/data\/components\/footer-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/wireframe\/data\/pages\/404.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/data\/pages\/404-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/wireframe\/data\/pages\/template-one.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/data\/pages\/template-one-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/wireframe\/data\/pages\/template-three.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/data\/pages\/template-three-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/wireframe\/data\/pages\/template-two.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/data\/pages\/template-two-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/wireframe\/file.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/file-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/wireframe\/functions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/functions.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/functions\/routing.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/functions\/routing.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/functions\/utilities.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/functions\/utilities.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/button-arrow.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/button-arrow.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/chain.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/chain.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/export.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/export.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/feather.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/feather.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/glass.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/glass.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/globe.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/globe.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/left-arrow.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/left-arrow.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/logo.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/logo.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/mail.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/mail.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/meta\/clip-art.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/wireframe\/images\/meta\/clip-art.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/wireframe\/images\/meta\/one.webp" : {
+      "ft" : 8388608,
+      "iS" : 4300,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/meta\/one.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/projects\/wireframe\/images\/meta\/three.webp" : {
+      "ft" : 8388608,
+      "iS" : 11812,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/meta\/three.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/projects\/wireframe\/images\/meta\/two.jpeg" : {
+      "ft" : 16384,
+      "iS" : 28122,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/meta\/two.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/wireframe\/images\/right-arrow.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/right-arrow.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/social-svg\/facebook.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/social-svg\/facebook.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/social-svg\/linkedin.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/social-svg\/linkedin.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/social-svg\/luicide.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/social-svg\/luicide.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/star.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/star.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/thermo.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/thermo.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/watch.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/watch.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/images\/youtube.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/images\/youtube.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/index.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/index.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/components\/article-card\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/components\/article-card\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/components\/article-card\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/components\/article-card\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/components\/client-card\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/components\/client-card\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/components\/client-card\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/components\/client-card\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/components\/email-input\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/components\/email-input\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/components\/email-input\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/components\/email-input\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/components\/subscribe-block\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/components\/subscribe-block\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/components\/subscribe-block\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/components\/subscribe-block\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/article-grid\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/article-grid\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/article-grid\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/article-grid\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/call-to-action\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/call-to-action\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/call-to-action\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/call-to-action\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/client-review\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/client-review\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/client-review\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/client-review\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/landing-block\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/landing-block\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/landing-block\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/landing-block\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/question-block\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/question-block\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/question-block\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/question-block\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/row-cards\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/row-cards\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/row-cards\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/row-cards\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/signup-block\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/signup-block\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/signup-block\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/signup-block\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/site-footer\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/site-footer\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/site-footer\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/site-footer\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/site-menu\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/site-menu\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/site-menu\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/site-menu\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/support-block\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/support-block\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/wireframe\/templates\/modules\/support-block\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/modules\/support-block\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/wireframe\/templates\/pages\/standard.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/wireframe\/templates\/pages\/standard.php",
+      "oF" : 0
+    },
+    "\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/scratch\/functions.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7299,6 +8051,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/scratch\/js-practice\/aug-27.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scratch\/js-practice\/aug-27-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/scratch\/js-practice\/dom.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7317,6 +8080,18 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/scratch\/js-practice\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/scratch\/js-practice\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/scratch\/loop.php" : {
       "cB" : 0,
@@ -7390,17 +8165,20 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/templates\/case\/diptech\/style.css" : {
-      "aP" : 1,
+    "\/templates\/case\/diptech\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/case\/diptech\/style-min.css",
+      "oA" : 1,
+      "oAP" : "\/templates\/case\/diptech\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/case\/diptech\/template.php" : {
       "cB" : 0,
@@ -7408,6 +8186,75 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/case\/diptech\/template.php",
+      "oF" : 0
+    },
+    "\/templates\/case\/double-image\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/templates\/case\/double-image\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/templates\/case\/double-image\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/case\/double-image\/template.php",
+      "oF" : 0
+    },
+    "\/templates\/case\/double-text\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/templates\/case\/double-text\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/templates\/case\/double-text\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/case\/double-text\/template.php",
+      "oF" : 0
+    },
+    "\/templates\/case\/goal-block\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/templates\/case\/goal-block\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/templates\/case\/goal-block\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/case\/goal-block\/template.php",
       "oF" : 0
     },
     "\/templates\/cube-sphere.php" : {
@@ -7418,17 +8265,20 @@
       "oAP" : "\/templates\/cube-sphere.php",
       "oF" : 0
     },
-    "\/templates\/modules\/about-card\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/about-card\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/modules\/about-card\/style-min.css",
-      "oF" : 1,
-      "pg" : 0
+      "oA" : 1,
+      "oAP" : "\/templates\/modules\/about-card\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/about-card\/template.php" : {
       "cB" : 0,
@@ -7438,17 +8288,20 @@
       "oAP" : "\/templates\/modules\/about-card\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/big-heading\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/big-heading\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/big-heading\/style-min.css",
+      "oAP" : "\/templates\/modules\/big-heading\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/big-heading\/template.php" : {
       "cB" : 0,
@@ -7458,17 +8311,20 @@
       "oAP" : "\/templates\/modules\/big-heading\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/blog-card\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/blog-card\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/blog-card\/style-min.css",
+      "oAP" : "\/templates\/modules\/blog-card\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/blog-card\/template.php" : {
       "cB" : 0,
@@ -7478,17 +8334,20 @@
       "oAP" : "\/templates\/modules\/blog-card\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/contact-form\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/contact-form\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/contact-form\/style-min.css",
+      "oAP" : "\/templates\/modules\/contact-form\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/contact-form\/template.php" : {
       "cB" : 0,
@@ -7498,17 +8357,20 @@
       "oAP" : "\/templates\/modules\/contact-form\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/form-box\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/form-box\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/form-box\/style-min.css",
+      "oAP" : "\/templates\/modules\/form-box\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/form-box\/template.php" : {
       "cB" : 0,
@@ -7518,17 +8380,20 @@
       "oAP" : "\/templates\/modules\/form-box\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/form-grid\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/form-grid\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/form-grid\/style-min.css",
+      "oAP" : "\/templates\/modules\/form-grid\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/form-grid\/template.php" : {
       "cB" : 0,
@@ -7538,17 +8403,20 @@
       "oAP" : "\/templates\/modules\/form-grid\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/goal-card\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/goal-card\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/goal-card\/style-min.css",
+      "oAP" : "\/templates\/modules\/goal-card\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/goal-card\/template.php" : {
       "cB" : 0,
@@ -7558,17 +8426,20 @@
       "oAP" : "\/templates\/modules\/goal-card\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/goals-section\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/goals-section\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/goals-section\/style-min.css",
+      "oAP" : "\/templates\/modules\/goals-section\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/goals-section\/template.php" : {
       "cB" : 0,
@@ -7578,17 +8449,20 @@
       "oAP" : "\/templates\/modules\/goals-section\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/grid-blog\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/grid-blog\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/grid-blog\/style-min.css",
+      "oAP" : "\/templates\/modules\/grid-blog\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/grid-blog\/template.php" : {
       "cB" : 0,
@@ -7598,17 +8472,20 @@
       "oAP" : "\/templates\/modules\/grid-blog\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/landing-heading\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/landing-heading\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/landing-heading\/style-min.css",
+      "oAP" : "\/templates\/modules\/landing-heading\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/landing-heading\/template.php" : {
       "cB" : 0,
@@ -7618,17 +8495,20 @@
       "oAP" : "\/templates\/modules\/landing-heading\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/missing-heading\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/missing-heading\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/missing-heading\/style-min.css",
+      "oAP" : "\/templates\/modules\/missing-heading\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/missing-heading\/template.php" : {
       "cB" : 0,
@@ -7638,17 +8518,20 @@
       "oAP" : "\/templates\/modules\/missing-heading\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/project-card\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/project-card\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/project-card\/style-min.css",
+      "oAP" : "\/templates\/modules\/project-card\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/project-card\/template.php" : {
       "cB" : 0,
@@ -7658,17 +8541,20 @@
       "oAP" : "\/templates\/modules\/project-card\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/project-page\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/project-page\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/project-page\/style-min.css",
+      "oAP" : "\/templates\/modules\/project-page\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/project-page\/template.php" : {
       "cB" : 0,
@@ -7678,17 +8564,20 @@
       "oAP" : "\/templates\/modules\/project-page\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/project-section\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/project-section\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/project-section\/style-min.css",
+      "oAP" : "\/templates\/modules\/project-section\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/project-section\/template.php" : {
       "cB" : 0,
@@ -7698,17 +8587,20 @@
       "oAP" : "\/templates\/modules\/project-section\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/resume-card\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/resume-card\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/resume-card\/style-min.css",
+      "oAP" : "\/templates\/modules\/resume-card\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/resume-card\/template.php" : {
       "cB" : 0,
@@ -7718,17 +8610,20 @@
       "oAP" : "\/templates\/modules\/resume-card\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/resume-section\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/resume-section\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/resume-section\/style-min.css",
+      "oAP" : "\/templates\/modules\/resume-section\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/resume-section\/template.php" : {
       "cB" : 0,
@@ -7738,17 +8633,20 @@
       "oAP" : "\/templates\/modules\/resume-section\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/site-footer\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/site-footer\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/site-footer\/style-min.css",
+      "oAP" : "\/templates\/modules\/site-footer\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/site-footer\/template.php" : {
       "cB" : 0,
@@ -7758,17 +8656,20 @@
       "oAP" : "\/templates\/modules\/site-footer\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/site-menu\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/site-menu\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/site-menu\/style-min.css",
+      "oAP" : "\/templates\/modules\/site-menu\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/site-menu\/template.php" : {
       "cB" : 0,
@@ -7778,17 +8679,20 @@
       "oAP" : "\/templates\/modules\/site-menu\/template.php",
       "oF" : 0
     },
-    "\/templates\/modules\/small-grid\/style.css" : {
-      "aP" : 1,
+    "\/templates\/modules\/small-grid\/_style.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/templates\/modules\/small-grid\/style-min.css",
+      "oAP" : "\/templates\/modules\/small-grid\/_style.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/templates\/modules\/small-grid\/template.php" : {
       "cB" : 0,
@@ -7903,7 +8807,7 @@
   "projectSettings" : {
     "abortBuildOnError" : 1,
     "allowInjectionReloads" : 1,
-    "alwaysUseExternalServer" : 0,
+    "alwaysUseExternalServer" : 1,
     "animateCSSInjections" : 1,
     "autoBuildNewItems" : 1,
     "autoprefixerEnableIEGrid" : 0,

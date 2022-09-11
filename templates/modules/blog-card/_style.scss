@@ -1,27 +1,31 @@
+@mixin gray90($brightness){
+  filter: grayscale(90%) brightness($brightness);
+}
+
 blog-card {
   display: block;
   width: 100%;
-}
 
-blog-card picture {
-  position: relative;
-}
+  picture{
+    position: relative;
 
-blog-card text-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform: translateY(10%);
+    img {
+      @include gray90(30%);
+    }
+  }
 
-  padding: var(--simple-space) 10px;
-  background-color: transparent;
-  color: var(--white);
-}
-
-blog-card picture img {
-  filter: grayscale(90%) brightness(30%);
+  text-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(10%);
+  
+    padding: var(--simple-space) 10px;
+    background-color: transparent;
+    color: var(--white);
+  }
 }
 
 .podcast {
