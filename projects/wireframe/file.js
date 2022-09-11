@@ -16,3 +16,22 @@ body.addEventListener('click', function (event) {
 
 
 
+
+const changer = document.querySelector("div.color-changer input")
+const bodyTag = document.querySelector("body")
+const htmlTag = document.querySelector("html")
+
+changer.addEventListener("input", function () {
+
+
+    htmlTag.style.setProperty("--highlight", changer.value)
+
+    const color = chroma(changer.value)
+
+    if (color.luminance() > 0.6) {
+        bodyTag.classList.add("light")
+    } else {
+        bodyTag.classList.remove("light")
+    }
+}
+)

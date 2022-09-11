@@ -5,6 +5,12 @@ $heading = $section['heading'] ?? ucfirst($page);
 ?>
 
 <landing-block>
+
+    <div class="color-changer">
+        Color
+        <input type="color">
+    </div>
+
     <text-content>
         <h1 class="heading roar-voice"><?= $heading ?></h1>
 

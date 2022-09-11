@@ -57,6 +57,7 @@ $metaImage = $pageData['metaImage'] ?? "https://peprojects.dev/alpha-4/jesse/pro
 
 
     <script src="file.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
 </body>
 
 </html>
