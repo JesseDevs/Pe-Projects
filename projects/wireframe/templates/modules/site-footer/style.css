@@ -23,6 +23,7 @@ footer .menu .actions {
 
 footer .socials {
     gap: 15px;
+    flex-shrink: 1;
 }
 
 footer .socials li {
