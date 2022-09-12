@@ -39,6 +39,10 @@ article-card:first-of-type .number svg {
     height: 29px;
 }
 
+article-grid .circle svg path {
+    fill: var(--highlight);
+}
+
 
 
 .template-two h4 {
