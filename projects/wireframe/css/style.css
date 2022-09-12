@@ -40,7 +40,8 @@ body.light .burger a {
 
 }
 
-body.light landing-block * {
+body.light landing-block *,
+body.light .site-header .log span {
     color: var(--ink) !important;
 }
 
@@ -49,7 +50,6 @@ body.light subscribe-block .arrow {
 }
 
 body.light .icon-bar,
-body.light .site-header .log,
 body.light article-grid .circle {
     background-color: var(--ink) !important;
 }

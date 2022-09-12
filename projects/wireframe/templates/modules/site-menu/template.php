@@ -27,7 +27,7 @@ $headerData = json_decode($jsonData, true);
                     <?php include('images/globe.php') ?>
                     <span>EN</span>
                 </li>
-                <li><a class='small-voice log' href="#">LogIn</a></li>
+                <li><a class='small-voice log' href="#"><span>LogIn</span></a></li>
             </ul>
 
             <div class="burger-container">
