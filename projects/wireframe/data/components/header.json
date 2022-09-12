@@ -1,0 +1,19 @@
+{
+    "id": "header",
+    "title": "Header",
+    "intro": "This is a data dedicated to items in the header part of the page. This will help with adding and organizing links.",
+    "pages": [
+        {
+            "link": "?page=template-one",
+            "title": "One"
+        },
+        {
+            "link": "?page=template-two",
+            "title": "Two"
+        },
+        {
+            "link": "?page=template-three",
+            "title": "Three"
+        }
+    ]
+}

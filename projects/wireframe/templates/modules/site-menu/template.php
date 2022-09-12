@@ -1,3 +1,11 @@
+<?php
+
+
+$jsonData = file_get_contents("data/components/header.json");
+$headerData = json_decode($jsonData, true);
+
+?>
+
 <header class='site-header'>
     <inner-column>
 
@@ -7,10 +15,11 @@
                 <?php include('images/logo.php'); ?>
             </div>
             <ul class='actions'>
-                <li><a href="?page=template-one">One</a></li>
-                <li><a href="?page=template-two">Two</a></li>
-                <li><a href="?page=template-three">Three</a></li>
 
+                <?php foreach ($headerData['pages'] as $pageLinks) { ?>
+                    <li><a href="<?= $pageLinks['link'] ?>"><?= $pageLinks['title'] ?> </a></li>
+
+                <?php } ?>
             </ul>
 
             <ul class='login'>
@@ -29,9 +38,10 @@
                 </button>
 
                 <nav class="burger">
-                    <a href="?page=template-one">Template One</a>
-                    <a href="?page=template-two">Template Two</a>
-                    <a href="?page=template-three">Template Three</a>
+                    <?php foreach ($headerData['pages'] as $pageLinks) { ?>
+                        <a href="<?= $pageLinks['link'] ?>"><?= $pageLinks['title'] ?> </a>
+
+                    <?php } ?>
                 </nav>
             </div>
 

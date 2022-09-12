@@ -35,17 +35,23 @@ $footerData = json_decode($json, true);
                 </div>
 
                 <ul class='actions'>
-                    <li><a href="?page=template-one">One</a></li>
-                    <li><a href="?page=template-two">Two</a></li>
-                    <li><a href="?page=template-three">Three</a></li>
+                    <?php foreach ($footerData['pages'] as $pageLinks) { ?>
+                        <li><a href="<?= $pageLinks['link'] ?>"><?= $pageLinks['title'] ?> </a></li>
+
+                    <?php } ?>
 
                 </ul>
 
 
                 <ul class='socials'>
-                    <li><a href="https://www.linkedin.com/feed/"><?php include('images/social-svg/linkedin.php'); ?></a></li>
-                    <li><a href="https://www.facebook.com/"><?php include('images/social-svg/facebook.php'); ?></a></li>
-                    <li><a href="https://twitter.com/home"><?php include('images/social-svg/luicide.php'); ?></a></li>
+                    <?php foreach ($footerData['socials'] as $socialLinks) { ?>
+                        <li>
+                            <a href="<?= $socialLinks['link'] ?>">
+                                <?php include("images/social-svg/" . $socialLinks['title'] . ".php"); ?>
+                            </a>
+                        </li>
+
+                    <?php } ?>
                 </ul>
 
 

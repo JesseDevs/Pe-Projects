@@ -70,5 +70,33 @@
                 }
             ]
         }
+    ],
+    "pages": [
+        {
+            "link": "?page=template-one",
+            "title": "One"
+        },
+        {
+            "link": "?page=template-two",
+            "title": "Two"
+        },
+        {
+            "link": "?page=template-three",
+            "title": "Three"
+        }
+    ],
+    "socials": [
+        {
+            "link": "https://www.linkedin.com/feed/",
+            "title": "linkedin"
+        },
+        {
+            "link": "https://www.facebook.com/",
+            "title": "facebook"
+        },
+        {
+            "link": "https://twitter.com/home",
+            "title": "luicide"
+        }
     ]
 }
