@@ -3,15 +3,17 @@
     <?php if (isset($article['image'])) {
         $filepath = "images/" . $article['image'] . ".php";
     ?>
-        <div class='feather'>
+        <div class='circle'>
             <?php include($filepath); ?>
         </div>
 
     <?php } ?>
 
-    <?php if (isset($article['number'])) { ?>
-        <div class='number-circle'>
-            <p class='number'><?= $article['number'] ?></p>
+    <?php if (isset($article['number'])) {
+        $filepath = "images/numbers/" . $article['number'] . ".php";
+    ?>
+        <div class='circle number'>
+            <?php include($filepath); ?>
         </div>
     <?php } ?>
 

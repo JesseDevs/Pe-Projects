@@ -10,16 +10,36 @@ article-card text-content {
     margin: 0;
 }
 
-article-card .number {
-    font-size: 22px;
-    color: var(--darkHighlight);
-    font-weight: 600;
-    padding: 16px 24px;
-    background-color: var(--support);
+
+article-card .circle {
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    padding: 15px;
+    background-color: var(--support);
 }
+
+article-grid .circle svg {
+    width: 30px;
+    height: 30px;
+}
+
+article-card .number {
+    padding: 16px 24px 15px 24px;
+
+}
+
+article-card .number svg {
+    width: 12px;
+    height: 29px;
+}
+
+article-card:first-of-type .number svg {
+    width: 8px;
+    height: 29px;
+}
+
+
 
 .template-two h4 {
     font-weight: 600;

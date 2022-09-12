@@ -33,17 +33,6 @@ article-grid .grid {
     gap: 20px;
 }
 
-article-grid .feather {
-    padding: 15px;
-    width: 60px;
-    height: 60px;
-}
-
-article-grid .feather svg {
-    width: 30px;
-    height: 30px;
-}
-
 @media (min-width:800px) {
     article-grid {
         display: grid;
