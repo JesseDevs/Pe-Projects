@@ -24,19 +24,19 @@ landing-block action-links {
 
 .template-one .landing-block {
 	background: repeating-linear-gradient(-45deg,
-			rgb(195 208 249) 0px,
-			rgb(195 208 249) 1px,
-			rgb(247 249 254) 1px,
-			rgb(247 249 254) 40px);
+		rgb(195 208 249) 0px,
+		rgb(195 208 249) 1px,
+		rgb(247 249 254) 1px,
+		rgb(247 249 254) 40px);
 
 }
 
 .template-two .landing-block {
 	background: repeating-linear-gradient(-45deg,
-			rgb(195 208 249) 0px,
-			rgb(195 208 249) 1px,
-			rgb(247 249 254) 1px,
-			rgb(247 249 254) 40px);
+		rgb(195 208 249) 0px,
+		rgb(195 208 249) 1px,
+		rgb(247 249 254) 1px,
+		rgb(247 249 254) 40px);
 	position: relative;
 	overflow: hidden;
 
@@ -86,7 +86,7 @@ divider {
 	background-color: var(--darkHighlight);
 	background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4.5H20C21.1 4.5 22 5.4 22 6.5V18.5C22 19.6 21.1 20.5 20 20.5H4C2.9 20.5 2 19.6 2 18.5V6.5C2 5.4 2.9 4.5 4 4.5Z' stroke='%23E0E0E0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M22 6.5L12 13.5L2 6.5' stroke='%23E0E0E0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E%0A");
 	background-repeat: no-repeat;
-	background-position: 10px 10px;
+	background-position: 10px 11px;
 	padding: 16.5px 50px;
 	border: none;
 	border-radius: 6px;
@@ -106,7 +106,7 @@ divider {
 
 .template-three landing-block email-input a {
 	background-color: var(--page);
-	padding: 14px 20px;
+	padding: 13px 20px;
 	border-radius: 5px;
 	color: var(--highlight);
 	max-height: 52px;
