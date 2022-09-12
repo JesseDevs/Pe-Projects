@@ -21,6 +21,23 @@ header .logo path {
     font-size: clamp(0.9rem, 1.5vw, 14px);
 }
 
+
+.site-header .log,
+.site-header .sign {
+    padding: 8px 22px;
+    background: var(--highlight);
+    border-radius: 5px;
+    color: var(--page);
+    font-weight: 500;
+}
+
+.site-header .sign {
+
+    background-color: var(--page);
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+
 .menu,
 .menu ul,
 .globe-icon {
@@ -144,6 +161,12 @@ body.menu-open .burger {
 .template-two header {
     background-color: var(--highlight);
     color: var(--page);
+}
+
+.template-two .site-header .log {
+    background-color: var(--page);
+    color: var(--highlight);
+
 }
 
 .template-two .toggle-burger .icon-bar {

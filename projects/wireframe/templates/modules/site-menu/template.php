@@ -23,10 +23,15 @@ $headerData = json_decode($jsonData, true);
             </ul>
 
             <ul class='login'>
-                <li class='globe-icon'>
-                    <?php include('images/globe.php') ?>
-                    <span>EN</span>
-                </li>
+
+                <?php if ($page !== 'template-three') { ?>
+                    <li class='globe-icon'>
+                        <?php include('images/globe.php') ?>
+                        <span>EN</span>
+                    </li>
+                <?php } else { ?>
+                    <li><a class='small-voice sign' href="#"><span>SignUp</span></a></li>
+                <?php } ?>
                 <li><a class='small-voice log' href="#"><span>LogIn</span></a></li>
             </ul>
 
