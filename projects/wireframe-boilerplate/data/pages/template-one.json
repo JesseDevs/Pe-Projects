@@ -1,0 +1,128 @@
+{
+    "id": "01",
+    "title": "template-one",
+    "intro": "This is Template One",
+    "metaImage": "https://peprojects.dev/alpha-4/jesse/projects/wireframe/images/meta/one.webp",
+    "sections": [
+        {
+            "module": "landing-block",
+            "type": "links",
+            "heading": "Arcu suscipit massa aliquam proin amet",
+            "intro": "Luctus felis sit lectus tristique diam ornare bibendum. Arcu auctor suspendisse luctus amet bibendum pellentesque lorem. Malesuada lobortis tristique tortor",
+            "actions": [
+                {
+                    "link": "",
+                    "title": "Get Started"
+                },
+                {
+                    "link": "",
+                    "title": "Start Free Trial"
+                }
+            ]
+        },
+        {
+            "module": "support-block",
+            "heading": "Etiam nulla lectus amet nunc molestie at vulputate.",
+            "intro": "Neque, pulvinar vestibulum non aliquam.",
+            "support": "Rhoncus, accumsan dictum",
+            "vid": "https://peprojects.dev/images/landscape.jpg"
+        },
+        {
+            "module": "article-grid",
+            "heading": "Etiam Nulla Lectus <br> Molestie At Vulputate.",
+            "intro": "Neque, pulvinar vestibulum non aliquam.",
+            "image": "https://peprojects.dev/images/square.jpg",
+            "articles": [
+                {
+                    "title": "Sit quam gravida",
+                    "number": "one",
+                    "detail": "Et hendrerit turpis habitant cursus semper ultrices in nunc. Erat eget etiam senectus vestibulum risus."
+                },
+                {
+                    "title": "Elementum enim tempus",
+                    "number": "two",
+                    "detail": "At tristique elementum metus blandit id sed vel eu a. Diam sed feugiat diam nisi est. Dictumst elit."
+                },
+                {
+                    "title": "Tempor egestas augue",
+                    "number": "three",
+                    "detail": "Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio."
+                },
+                {
+                    "title": "Nulla ac lacinia",
+                    "number": "four",
+                    "detail": "Molestie faucibus amet sed ut gravida iaculis sed venenatis. Pulvinar id lacus condimentum ut. Non."
+                },
+                {
+                    "title": "Velit nibh a",
+                    "number": "five",
+                    "detail": "Ac morbi integer orci justo lobortis elementum, massa pulvinar quisque. Porttitor sit convallis quis."
+                }
+            ]
+        },
+        {
+            "module": "client-review",
+            "heading": "what our clients says",
+            "intro": "Neque, pulvinar vestibulum non aliquam.",
+            "style": "scroll",
+            "review": [
+                {
+                    "quote": "“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”",
+                    "portrait": "https://peprojects.dev/images/square.jpg",
+                    "name": "Courtney Henry",
+                    "rating": 5
+                },
+                {
+                    "quote": "“Tincidunt risus, blandit proin semper. Tellus ac pellentesque convallis vitae. Lorem enim cursus et consequat viverra id justo ullamcorper. Vel.”",
+                    "portrait": "https://peprojects.dev/images/square.jpg",
+                    "name": "Courtney Henry",
+                    "rating": 5
+                }
+            ]
+        },
+        {
+            "module": "call-to-action",
+            "heading": "Etiam Nulla Lectus <br> Molestie At Vulputate.",
+            "intro": "Rhoncus, accumsan dictum",
+            "actions": [
+                {
+                    "link": "",
+                    "title": "Get free quote"
+                }
+            ]
+        },
+        {
+            "module": "question-block",
+            "style": "questions-one",
+            "heading": "Frequent Ask Questions",
+            "intro": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet, lectus aliquam est in neque.",
+            "details": [
+                {
+                    "header": "How soon will my order ship?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
+                },
+                {
+                    "header": "Is there any warranty exclusions?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": true
+                },
+                {
+                    "header": "Are there any return exclusions?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
+                },
+                {
+                    "header": "Will I be charged for a replacement item?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
+                },
+                {
+                    "header": "How can I track my orders & payment?",
+                    "text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa.",
+                    "open": false
+                }
+            ]
+        }
+    ]
+}

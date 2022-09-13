@@ -1,0 +1,77 @@
+client-card {
+    width: 100%;
+    display: grid;
+    padding: 26px 10px;
+    gap: 27px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    max-width: 414px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.star-box {
+    display: flex;
+    gap: 8px;
+}
+
+.star-box svg {
+    width: 24px;
+    height: 24px;
+}
+
+client-card .portrait {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+client-card picture {
+    background-color: var(--support);
+}
+
+client-card img {
+    opacity: 0;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.template-two .profile {
+    display: grid;
+    align-items: center;
+    column-gap: 20px;
+    grid-template-columns: auto 1fr;
+}
+
+.template-two .profile text-content {
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.template-two client-card {
+    max-width: 820px;
+    gap: var(--simple-block-gap);
+}
+
+.template-two client-card .quote {
+    font-weight: 500;
+    font-size: clamp(20px, 5vw, 40px);
+}
+
+.template-two .profile p {
+    color: var(--second-gray);
+    font-weight: 600;
+    font-size: clamp(19px, 3.5vw, 24px);
+
+}
+
+.template-two .profile span {
+    color: var(--main-gray);
+}

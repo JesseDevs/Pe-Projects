@@ -1,0 +1,64 @@
+client-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.arrow {
+    padding: 12.5px 18.5px;
+    margin: 0 auto;
+    display: none;
+}
+
+
+@media(min-width:800px) {
+    .scroll-menu {
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr 10%;
+        column-gap: 42px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .arrow {
+        display: block;
+    }
+
+    .template-two client-card {
+        grid-column: span 2;
+    }
+
+}
+
+.template-three client-card {
+    padding: 0;
+}
+
+.template-three client-card .name {
+    color: var(--main-gray);
+    font-weight: 600;
+}
+
+.template-three .name span {
+    color: var(--main-gray);
+    font-weight: 400;
+}
+
+@media(min-width:800px) {
+    .template-three .client-review .arrow {
+        display: none;
+    }
+
+    .template-three .scroll-menu {
+        display: block;
+    }
+
+    .template-three client-card {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: none;
+
+    }
+}

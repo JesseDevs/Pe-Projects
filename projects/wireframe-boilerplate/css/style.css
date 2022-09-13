@@ -1,0 +1,86 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'variables.css';
+@import 'typography.css';
+@import 'modules.css';
+@import 'components.css';
+
+.intro {
+    color: var(--main-gray);
+    margin: 0 auto;
+}
+
+text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+
+/* JS color changer styles */
+
+body.light action-links a,
+body.light .socials svg path {
+    color: var(--ink) !important;
+    border: 1px solid var(--ink) !important;
+
+}
+
+body.light action-links a path {
+    stroke: var(--ink) !important;
+}
+
+body.light footer a,
+body.light footer .list-header,
+body.light .logo path,
+body.light .burger a {
+    fill: var(--ink) !important;
+    color: var(--ink) !important;
+
+}
+
+body.light landing-block *,
+body.light .site-header .log span {
+    color: var(--ink) !important;
+}
+
+body.light subscribe-block .arrow {
+    background-color: var(--ink);
+}
+
+body.light .icon-bar,
+body.light article-grid .circle {
+    background-color: var(--ink) !important;
+}
+
+body.light .socials path {
+    fill: var(--ink) !important;
+}
+
+body.light .socials li {
+    border: 1.5px solid var(--ink) !important;
+}
+
+
+div.color-changer {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    border: 2px solid #000000;
+    padding: 8px 16px 8px 16px;
+    border-radius: 50px;
+    transition: border 1s;
+    background-color: var(--page);
+    z-index: 100;
+}
+
+
+div.color-changer input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
