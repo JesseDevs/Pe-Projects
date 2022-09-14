@@ -396,18 +396,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/css\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/css\/style.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -417,9 +405,9 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/style.css",
-      "oF" : 1,
-      "oS" : 3,
+      "oAP" : "\/style.css",
+      "oF" : 3,
+      "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
@@ -46062,6 +46050,18 @@
       "oA" : 0,
       "oAP" : "\/scratch\/styleTwo-min.css",
       "oF" : 0,
+      "pg" : 0
+    },
+    "\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style.css",
+      "oF" : 2,
       "pg" : 0
     },
     "\/templates\/case\/diptech\/_style.scss" : {
