@@ -2,12 +2,10 @@
     <inner-column>
         <ul>
             <li>
-                <?php include("templates/svg.php");
-                ?>
-            </li>
-            <li>
                 <a href="?page=home">
                     <h1 class="logo">Jesse&nbsp;Devs</h1>
+                    <?php include("templates/svg.php");
+                    ?>
                 </a>
             </li>
         </ul>
