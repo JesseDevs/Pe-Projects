@@ -22,7 +22,7 @@ projects/music/wp-content/cache/*
 
 # wp core (as of 4.9.5)
 db-config.php
-index.php
+projects/music/wp-content/cache/index.php
 license.txt
 readme.html
 wp-activate.php
