@@ -1,11 +1,11 @@
 <app-header>
     <inner-column>
         <nav>
-            <button id='home'>
+            <button data-route='home'>
                 <span class='logo'>Logo</span>
             </button>
 
-            <button id='profile'>
+            <button data-route='profile'>
                 <div class="circle">
                     <?php include('images/icons/profile.php'); ?>
                 </div>

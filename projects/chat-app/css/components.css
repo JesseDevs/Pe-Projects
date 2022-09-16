@@ -6,4 +6,10 @@ app-header button {
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+
+}
+
+app-footer button *,
+app-header button * {
+    pointer-events: none;
 }

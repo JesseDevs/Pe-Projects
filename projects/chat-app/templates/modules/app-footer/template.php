@@ -3,16 +3,16 @@
 
         <nav>
 
-            <button id='home'>
-                <?php include('images/icons/home.php'); ?>
+            <button data-route='home'>
+                <span><?php include('images/icons/home.php'); ?></span>
             </button>
-            <button id='signIn'>
+            <button data-route='signIn'>
                 <?php include('images/icons/search.php'); ?>
             </button>
-            <button id='mentions'>
+            <button data-route='mentions'>
                 <?php include('images/icons/fire.php'); ?>
             </button>
-            <button id='chat'>
+            <button data-route='chat'>
                 <?php include('images/icons/message.php'); ?>
             </button>
 

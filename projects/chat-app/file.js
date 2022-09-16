@@ -1,32 +1,30 @@
 console.clear();
 
-// assing varibles ot the main buttons on display on all pages.
+// create signin page
+// create comments page
+// create profile page
 
-const homeButton = document.querySelector('#home');
-const searchButton = document.querySelector('#search');
-const mentionsButton = document.querySelector('#mentions');
-const chatButton = document.querySelector('#chat');
-const signIn = document.querySelector('#signIn');
-const profile = document.querySelector('#profile');
-
+const siteName = "Welcome to the Chat";
 const outlet = document.querySelector('[rel="outlet"]');
-const siteName = "Chat sign up?";
 
 var routes = {};
 
 routes.signIn = `
-		<h1 class='attention-voice'>${siteName}</h1>
+	<section>
+		<h1>${siteName}</h1>
 
-        <form action="POST">
-            <input type="text" name="password" placeholder='Username'/>
-            <input type="password" name="password" placeholder='Password'/>
+        <form action="">
+        <input type="text" name="username" placeholder="Username" />
+        <input type="password" name="password" placeholder="Password" />
 
-            <button type="submit">Sign In</button>
-        </form>
+        <button type="submit">Sign In</button>
+    </form>
+	</section>
 `;
 
 routes.home = `
-		<h1>Chat Here</h1>
+	<section>
+		<h1>Chat</h1>
 		
 		<output>
         <!-- message here -->
@@ -38,13 +36,13 @@ routes.home = `
 			<button data-action='add'>Add</button>
 		</form>
 
+	</section>
 `;
 
 routes.profile = `
 	<section>
 		<h1>USERNAME</h1>
 
-		<button data-route='chat'>Chat</button>
 		<button data-route='signIn'>Sign out</button>
 	</section>
 `;
@@ -52,6 +50,13 @@ routes.profile = `
 function renderView(route) {
     outlet.innerHTML = route;
 }
+
+function init() {
+    renderView(routes['signIn']);
+}
+
+init();
+
 
 var messagesData = [];
 
@@ -77,35 +82,24 @@ function renderMessages(messages) {
     document.querySelector('output').innerHTML = template;
 }
 
+// EVENT LISTENERS
+window.addEventListener('click', function (event) {
 
-function init() {
-    renderView(routes['signIn']);
-}
+    if (event.target.matches('[data-route]')) {
+        var route = event.target.dataset.route;
+        renderView(routes[route]);
+        console.log(route);
+        if (route == "home") {
+            renderMessages(messagesData);
+        }
+    }
 
-init();
+    if (event.target.matches('[data-action="add"]')) {
+        event.preventDefault();
+        var input = event.target.closest('form').querySelector('input');
+        var message = input.value;
+        addMesssage(message);
+        input.value = "";
+    }
 
-
-homeButton.addEventListener('click', renderView(routes['home']));
-
-// // EVENT LISTENERS
-// window.addEventListener('click', function (event) {
-
-//     if (event.target.matches('[data-route]')) {
-//         var route = event.target.dataset.route;
-//         console.log(route);
-//         renderView(routes[route]);
-//         if (route == "chat") {
-//             console.log('hi');
-//             renderMessages(messagesData);
-//         }
-//     }
-
-//     if (event.target.matches('[data-action="add"]')) {
-//         event.preventDefault();
-//         var input = event.target.closest('form').querySelector('input');
-//         var message = input.value;
-//         addMesssage(message);
-//         input.value = "";
-//     }
-
-// });
+});
