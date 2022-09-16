@@ -6,45 +6,48 @@ console.clear();
 
 const siteName = "Welcome to the Chat";
 const outlet = document.querySelector('[rel="outlet"]');
+const channelMenu = document.querySelector('#channel-menu');
 
 var routes = {};
 
 routes.signIn = `
-	<section>
-		<h1>${siteName}</h1>
-
-        <form action="">
-        <input type="text" name="username" placeholder="Username" />
-        <input type="password" name="password" placeholder="Password" />
-
-        <button type="submit">Sign In</button>
-    </form>
-	</section>
+    <section>
+        <inner-column>
+            <h1 class='strict-voice'>${siteName}</h1>
+            <form action="">
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+                <button type="submit">Sign In</button>
+            </form>
+        </inner-column>
+    </section>
 `;
 
 routes.home = `
-	<section>
-		<h1>Chat</h1>
-		
-		<output>
-        <!-- message here -->
-      </output>
+    <section>
+        <inner-column>
+            <h1 class='strict-voice'>Chat</h1>
 
-		<form>
-			<label>Message</label>
-			<input />
-			<button data-action='add'>Add</button>
-		</form>
+            <output>
+            <!-- message here -->
+            </output>
 
-	</section>
+            <form>
+                <label>Message</label>
+                <input />
+                <button data-action='add'>Add</button>
+            </form>
+        </inner-column>
+    </section>
 `;
 
 routes.profile = `
-	<section>
-		<h1>USERNAME</h1>
-
-		<button data-route='signIn'>Sign out</button>
-	</section>
+    <section>
+        <inner-column>
+            <h1 class='strict-voice'>USERNAME</h1>
+            <button data-route='signIn'>Sign out</button>
+        </inner-column>
+    </section>
 `;
 
 function renderView(route) {
@@ -71,12 +74,12 @@ function renderMessages(messages) {
     var template = `<ol>`;
     messages.forEach(function (message) {
         template += `
-			<li>
-				<message data-id="" data-timestamp="" data-belongsTo="4">
-					${message}
-				</message>
-			</li>
-		`;
+        <li>
+        <message data-id="" data-timestamp="" data-belongsTo="4">
+        ${message}
+        </message>
+        </li>
+        `;
     });
     template += `</ol>`;
     document.querySelector('output').innerHTML = template;
@@ -102,4 +105,9 @@ window.addEventListener('click', function (event) {
         input.value = "";
     }
 
+    if (event.target.matches('[data-action="channel"]')) {
+        channelMenu.classList.remove("hide");
+    } else {
+        channelMenu.classList.add("hide");
+    }
 });

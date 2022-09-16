@@ -4,52 +4,71 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-/* needs clamp for screen sizes :) */
-
-.roar-voice {
-	font-size: clamp(2.99rem, calc(1.27rem + 8.0vw), 7.0rem);
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.yell-voice {
-	font-size: clamp(2.49rem, calc(1.29rem + 6.00vw), 5.79rem);
-}
-
-.loud-voice {
-	font-size: clamp(2.07rem, calc(1.25rem + 4.12vw), 4.34rem);
-}
-
-.attention-voice {
-	font-size: clamp(1.73rem, calc(1.17rem + 2.78vw), 3.26rem);
-}
-
-.chant-voice {
-	font-size: clamp(1.44rem, calc(1.08rem + 1.50vw), 2.44rem);
-	font-weight: 600;
-}
-
-.strict-voice {
-	font-size: clamp(1.20rem, calc(0.97rem + 1.15vw), 1.83rem);
-}
-
-.calm-voice, p, li, a {
-
-	font-size: clamp(1.00rem, calc(0.86rem + 0.68vw), 1.38rem);
-	line-height: 1.4;
-}
-
-small,
-.small-voice {
-	font-size: clamp(0.83rem, calc(0.76rem + 0.36vw), 1.03rem);
-}
-
 :is(.calm-voice, p, li) em {
 	font-style: italic;
 }
 
 :is(.calm-voice, p, li) strong {
 	font-weight: 700;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+/* typography */
+
+.roar-voice {
+	font-size: clamp(32px, 10vw, 64px);
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	text-transform: capitalize;
+}
+
+.yell-voice {
+	font-size: clamp(26px, 7vw, 56px);
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.loud-voice {
+	font-size: clamp(22px, 7vw, 48px);
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.strict-voice {
+	font-size: clamp(20px, 4vw, 32px);
+}
+
+.another-voice {
+	font-size: clamp(19px, 3.5vw, 24px);
+}
+
+.attention-voice {
+	font-size: clamp(18px, 3.5vw, 22px);
+}
+
+.calm-voice, p, li {
+	font-size: clamp(16px, 2vw, 20px);
+	line-height: 1.4;
+}
+
+a {
+	font-size: clamp(14px, 2vw, 18px);
+	line-height: 1.4;
+}
+
+.small-voice {
+	font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.tiny-voice {
+	font-size: 14px;
 }
 
 /* these would be scoped to section or to an article element */

@@ -10,6 +10,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    position: relative;
+}
+
 
 .logo {
     font-family: 'Lobster', cursive;
@@ -27,10 +31,37 @@ output {
     padding: 1rem;
 }
 
+.hide {
+    display: none;
+}
+
+aside {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(33 33 33);
+    color: rgb(210 210 211);
+    padding: 15px 0;
+}
+
+h2 {
+    border-bottom: 3px solid var(--lightFade);
+    padding-bottom: 10px;
+}
+
+aside ul li {
+    padding: 8px 0;
+}
+
+aside ul li:before {
+    content: '#';
+    margin-right: 20px;
+}
+
 
 @media (min-width: 500px) {
     main {
-        border-left: 3px solid var(--fade);
-        border-right: 3px solid var(--fade);
+        border-left: 3px solid var(--menus);
+        border-right: 3px solid var(--menus);
     }
 }

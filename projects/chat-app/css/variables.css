@@ -18,25 +18,20 @@ html {
 	--gray: #e5e5e5;
 	--white: #fff;
 	--black: rgb(10 5 5);
-	--fade: rgb(5 5 5 / .3);
+	--fade: rgb(10 10 10 / .3);
+	--lightFade: rgb(220 220 220 / .3);
+	--dark: #212121;
+	--light: #E0E0E0;
 }
 
 
 html {
 	--ink: rgb(33 33 33);
-	--page: #FFFFFF;
 
-	--highlight: #3563e9;
-	--darkHighlight: #2851E3;
-	--accent: #F7F9FE;
-	--support: #EFF3FD;
+	--menus: rgb(80 79 77);
+	--menus-support: rgb(80 79 77 /.5);
 
-	--main-gray: #757575;
-	--second-gray: #424242;
-	--third-gray: #616161;
-	--dark: #212121;
 
-	--light: #E0E0E0;
 }
 
 @media(min-width:800px) {
