@@ -18,6 +18,8 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg'
     <meta name='description' content="<?= $pageData['intro'] ?>">
     <meta property="og:image" content="<?= $metaImage ?>">
 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
+
     <link rel="stylesheet" href="style.css">
 
 </head>
