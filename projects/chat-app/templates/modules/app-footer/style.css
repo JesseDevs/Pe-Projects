@@ -3,7 +3,7 @@ app-footer {
     display: block;
     padding: 10px 0 15px;
 
-    background-color: var(--fade);
+    background-color: var(--menus);
     border-top: 3px solid var(--fade);
 }
 
@@ -20,7 +20,7 @@ app-footer nav button {
 }
 
 app-footer nav path {
-    stroke: var(--white);
+    stroke: rgb(210 210 211);
 }
 
 @media (min-width: 500px) {

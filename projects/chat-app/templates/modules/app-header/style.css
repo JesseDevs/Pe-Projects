@@ -4,7 +4,7 @@ app-header {
 
     padding: 15px 0 10px;
 
-    background-color: var(--fade);
+    background-color: var(--menus);
     border-bottom: 3px solid var(--fade);
 }
 
@@ -13,11 +13,7 @@ app-header nav {
     justify-content: space-between;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-
-
 }
-
-
 
 app-header nav button {
     display: flex;
@@ -28,13 +24,17 @@ app-header nav button:last-of-type {
     grid-column: 4;
 }
 
+app-header nav path {
+    stroke: rgb(210 210 211);
+}
+
 app-header .logo {
     color: var(--white);
 }
 
 .circle {
     border-radius: 50%;
-    background-color: #f4f4f4;
+    background-color: var(--dark);
     padding: 5px;
 }
 

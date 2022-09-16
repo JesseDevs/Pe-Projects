@@ -1,8 +1,8 @@
 <app-header>
     <inner-column>
         <nav>
-            <button data-route='home'>
-                <span class='logo'>Logo</span>
+            <button data-action='channel'>
+                <span class='logo'>Channels</span>
             </button>
 
             <button data-route='profile'>
