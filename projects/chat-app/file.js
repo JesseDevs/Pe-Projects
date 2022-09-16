@@ -91,7 +91,6 @@ window.addEventListener('click', function (event) {
     if (event.target.matches('[data-route]')) {
         var route = event.target.dataset.route;
         renderView(routes[route]);
-        console.log(route);
         if (route == "home") {
             renderMessages(messagesData);
         }

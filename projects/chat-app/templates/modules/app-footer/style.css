@@ -5,6 +5,8 @@ app-footer {
 
     background-color: var(--menus);
     border-top: 3px solid var(--fade);
+
+    margin-bottom: 70px;
 }
 
 app-footer nav {
