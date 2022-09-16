@@ -19,18 +19,14 @@
 
     <?php include('templates/modules/app-header/template.php'); ?>
 
+    <main class="page-content">
+        <inner-column rel="outlet">
 
-
-    <main class="page-content" rel="outlet">
-
+        </inner-column>
 
     </main>
 
-
     <?php include('templates/modules/app-footer/template.php'); ?>
-
-
-
 
     <script src="file.js"></script>
 </body>
