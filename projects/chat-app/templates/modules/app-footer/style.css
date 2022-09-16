@@ -1,0 +1,31 @@
+app-footer {
+    width: 100%;
+    display: block;
+    padding: 10px 0 15px;
+
+    background-color: var(--fade);
+    border-top: 3px solid var(--fade);
+}
+
+app-footer nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+app-footer nav button {
+    display: flex;
+    justify-content: center;
+}
+
+app-footer nav path {
+    stroke: var(--white);
+}
+
+@media (min-width: 500px) {
+    app-footer {
+        border-left: 3px solid var(--fade);
+        border-right: 3px solid var(--fade);
+    }
+}
