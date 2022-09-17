@@ -18,7 +18,7 @@ var routes = {};
 routes.signIn = `
     <section class='landing'>
         <inner-column>
-            <h1 class='strict-voice'>${siteName}</h1>
+            <h2 class='strict-voice'>${siteName}</h2>
 
             
 		<button data-route='channels'>Sign in</button>
@@ -31,7 +31,7 @@ routes.signIn = `
 routes.newUser = `
     <section class='landing'>
         <inner-column>
-            <h1 class='strict-voice'>New User ? </h1>
+            <h2 class='strict-voice'>New User ? </h2>
 
             <form action="">
                 <input type="text" name="username" placeholder="Username" />
@@ -60,7 +60,7 @@ routes.channels = `
 routes.chat = `
     <section>
         <inner-column>
-            <h1 class='strict-voice'>Chit-Chat Channel</h1>
+            <h2 class='strict-voice'>Chit-Chat Channel</h2>
 
             <output>
             <!-- message here -->
@@ -78,7 +78,7 @@ routes.chat = `
 routes.music = `
 <section>
     <inner-column>
-        <h1 class='strict-voice'>Music Channel</h1>
+        <h2 class='strict-voice'>Music Channel</h2>
 
         <output>
         <!-- message here -->
@@ -96,7 +96,7 @@ routes.music = `
 routes.movies = `
 <section>
     <inner-column>
-        <h1 class='strict-voice'>Movies Channel</h1>
+        <h2 class='strict-voice'>Movies Channel</h2>
 
         <output>
         <!-- message here -->
@@ -114,7 +114,7 @@ routes.movies = `
 routes.games = `
 <section>
     <inner-column>
-        <h1 class='strict-voice'>Games Channel</h1>
+        <h2 class='strict-voice'>Games Channel</h2>
 
         <output>
         <!-- message here -->
@@ -133,7 +133,7 @@ routes.games = `
 routes.profile = `
     <section>
         <inner-column>
-            <h1 class='strict-voice'>USERNAME</h1>
+            <h2 class='strict-voice'>USERNAME</h2>
             <button data-route='signIn'>Sign out</button>
         </inner-column>
     </section>

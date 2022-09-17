@@ -602,7 +602,7 @@ main {
 }
 
 @media (min-width: 500px) {
-  main {
+  body {
     border-left: 3px solid var(--menus);
     border-right: 3px solid var(--menus);
   }
@@ -621,9 +621,12 @@ main {
 
 output {
   display: block;
-  border: 2px dashed green;
+  border: 3px solid var(--fade);
   height: 100%;
   padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .hide {
@@ -631,8 +634,11 @@ output {
 }
 
 h2 {
+  padding-bottom: 15px;
+}
+
+.channels h2 {
   border-bottom: 2px solid var(--lightFade);
-  padding-bottom: 10px;
 }
 
 .channels ul {
