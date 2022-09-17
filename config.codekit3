@@ -1193,6 +1193,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/wolf.png" : {
+      "ft" : 32768,
+      "iS" : 2219,
+      "oA" : 0,
+      "oAP" : "\/images\/wolf.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/images\/writing\/gameboy.jpeg" : {
       "ft" : 16384,
       "iS" : 19645,
@@ -2071,6 +2084,321 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/base\/templates\/pages\/home.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/css\/_components.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/chat-app\/css\/_components.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/css\/_modules.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/chat-app\/css\/_modules.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/css\/_reset.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/chat-app\/css\/_reset.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/css\/_setup.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/chat-app\/css\/_setup.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/css\/_typography.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/chat-app\/css\/_typography.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/css\/_variables.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/chat-app\/css\/_variables.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/css\/style.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/style.css",
+      "oF" : 3,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/file.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/file-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/chat-app\/functions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/functions.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/functions\/routing.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/functions\/routing.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/functions\/utilities.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/functions\/utilities.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/add.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/add.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/at-sign.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/at-sign.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/back.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/back.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/bell.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/bell.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/delete.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/delete.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/fire.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/fire.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/home.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/home.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/message.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/message.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/profile.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/profile.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/search.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/search.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/icons\/share.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/icons\/share.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/images\/wolf.png" : {
+      "ft" : 32768,
+      "iS" : 2219,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/images\/wolf.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/chat-app\/index.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/index.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/style.css",
+      "oF" : 3,
+      "pg" : 0
+    },
+    "\/projects\/chat-app\/templates\/modules\/app-footer\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/chat-app\/templates\/modules\/app-footer\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/templates\/modules\/app-footer\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/templates\/modules\/app-footer\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/templates\/modules\/app-header\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/chat-app\/templates\/modules\/app-header\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/chat-app\/templates\/modules\/app-header\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/templates\/modules\/app-header\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/chat-app\/templates\/pages\/home.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/chat-app\/templates\/pages\/home.php",
       "oF" : 0
     },
     "\/projects\/client-project\/client-info.png" : {

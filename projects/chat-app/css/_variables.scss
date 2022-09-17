@@ -26,7 +26,8 @@ html {
 
 
 html {
-	--ink: rgb(33 33 33);
+	--ink: rgb(240, 238, 238);
+	--page: rgb(23 23 23);
 
 	--menus: rgb(80 79 77);
 	--menus-support: rgb(80 79 77 /.5);
@@ -45,15 +46,6 @@ html {
 		--block-space: 100px;
 		--landing-space: 195.5px;
 		--footer-space: 47px;
-	}
-}
-
-@media(min-width: 1700px) {
-
-	html {
-		--big-general-space: 7vh;
-		--general-space: 3vh;
-		--tight-space: 1.7vh;
 	}
 }
 

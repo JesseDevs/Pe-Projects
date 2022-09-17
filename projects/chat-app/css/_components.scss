@@ -1,0 +1,26 @@
+.circle {
+    border-radius: 50%;
+    background-color: var(--ink);
+    padding: 5px;
+}
+
+app-footer, app-header  {
+
+    button{
+        border: 0;
+        appearance: none;
+        
+        background-color: transparent;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    button * {
+        pointer-events: none;
+    }
+
+}

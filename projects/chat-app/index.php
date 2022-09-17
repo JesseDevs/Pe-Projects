@@ -23,20 +23,7 @@
 
 
     <main class="page-content ">
-        <aside class="channels hide" id='channel-menu'>
-            <inner-column>
-                <h2 class='another-voice'>Channels</h2>
 
-                <ul>
-                    <li>chit-chat</li>
-                    <li>music</li>
-                    <li>movies</li>
-                    <li>television</li>
-                    <li>games</li>
-                </ul>
-            </inner-column>
-
-        </aside>
 
         <div class="outlet" rel="outlet">
 
