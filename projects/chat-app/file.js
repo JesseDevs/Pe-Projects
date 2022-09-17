@@ -6,9 +6,9 @@
 const siteName = "Welcome to the Chat";
 const outlet = document.querySelector('[rel="outlet"]');
 
-var channelsData = ['chit-chat', 'music', 'movies', 'games'];
-// var messagesData = [];
-var chitchatMessagesData = [];
+var channelsData = ['chat', 'music', 'movies', 'games'];
+
+var chatMessagesData = [];
 var musicMessagesData = [];
 var moviesMessagesData = [];
 var gamesMessagesData = [];
@@ -60,7 +60,7 @@ routes.channels = `
 routes.chat = `
     <section>
         <inner-column>
-            <h1 class='strict-voice'>Chat</h1>
+            <h1 class='strict-voice'>Chit-Chat Channel</h1>
 
             <output>
             <!-- message here -->
@@ -69,11 +69,66 @@ routes.chat = `
             <form>
                 <label>Message</label>
                 <input />
-                <button data-action='add'>Add</button>
+                <button data-action='add-chat'>Add</button>
             </form>
         </inner-column>
     </section>
 `;
+
+routes.music = `
+<section>
+    <inner-column>
+        <h1 class='strict-voice'>Music Channel</h1>
+
+        <output>
+        <!-- message here -->
+        </output>
+
+        <form>
+            <label>Message</label>
+            <input />
+            <button data-action='add-music'>Add</button>
+        </form>
+    </inner-column>
+</section>
+`;
+
+routes.movies = `
+<section>
+    <inner-column>
+        <h1 class='strict-voice'>Movies Channel</h1>
+
+        <output>
+        <!-- message here -->
+        </output>
+
+        <form>
+            <label>Message</label>
+            <input />
+            <button data-action='add-movies'>Add</button>
+        </form>
+    </inner-column>
+</section>
+`;
+
+routes.games = `
+<section>
+    <inner-column>
+        <h1 class='strict-voice'>Games Channel</h1>
+
+        <output>
+        <!-- message here -->
+        </output>
+
+        <form>
+            <label>Message</label>
+            <input />
+            <button data-action='add-games'>Add</button>
+        </form>
+    </inner-column>
+</section>
+`;
+
 
 routes.profile = `
     <section>
@@ -93,29 +148,6 @@ function init() {
 }
 
 init();
-
-function addMesssage(message) {
-    if (message.length) {
-
-        if ('[data-id]' == 'chitchat') {
-            chitchatMessagesData.push(message);
-            renderMessages(chitchatMessagesData);
-        }
-        if ('[data-id]' == 'music') {
-            musicMessagesData.push(message);
-            renderMessages(musicMessagesData);
-        }
-        if ('[data-id]' == 'movies') {
-            moviesMessagesData.push(message);
-            renderMessages(moviesMessagesData);
-        }
-        if ("[data-id]" == "games") {
-            gamesMessagesData.push(message);
-            renderMessages(gamesMessagesData);
-        }
-
-    }
-}
 
 function renderMessages(messages) {
     var template = `<ol>`;
@@ -137,7 +169,7 @@ function renderChannelsList(list) {
     list.forEach(function (item) {
         template += `
         <li>
-            <button data-route='chat' data-id="${item}" data-timestamp="" data-belongsTo="4">
+            <button data-route="${item}" data-timestamp="" data-belongsTo="4">
                 ${item}
             </button>
         </li>
@@ -153,20 +185,23 @@ window.addEventListener('click', function (event) {
     if (event.target.matches('[data-route]')) {
         var route = event.target.dataset.route;
         renderView(routes[route]);
+
         if (route == "chat") {
-            if ('[data-id]' == 'chitchat') {
-                renderMessages(chitchatMessagesData);
-            }
-            if ('[data-id]' == 'music') {
-                renderMessages(musicMessagesData);
-            }
-            if ('[data-id]' == 'movies') {
-                renderMessages(moviesMessagesData);
-            }
-            if ("[data-id]" == "games") {
-                renderMessages(gamesMessagesData);
-            }
+            renderMessages(chatMessagesData);
         }
+
+        if (route == "music") {
+            renderMessages(musicMessagesData);
+        }
+
+        if (route == "movies") {
+            renderMessages(moviesMessagesData);
+        }
+
+        if (route == "games") {
+            renderMessages(gamesMessagesData);
+        }
+
 
         if (route == "channels") {
             renderChannelsList(channelsData);
@@ -174,19 +209,49 @@ window.addEventListener('click', function (event) {
 
     }
 
-    if (event.target.matches('[data-action="add"]')) {
+    if (event.target.matches('[data-action="add-chat"]')) {
         event.preventDefault();
         var input = event.target.closest('form').querySelector('input');
         var message = input.value;
-        addMesssage(message);
+        if (message.length) {
+            chatMessagesData.push(message);
+            renderMessages(chatMessagesData);
+        }
         input.value = "";
     }
 
-    // if (event.target.matches('[data-action="channel"]')) {
-    //     channelMenu.classList.remove("hide");
-    // } else {
-    //     channelMenu.classList.add("hide");
-    // }
+    if (event.target.matches('[data-action="add-music"]')) {
+        event.preventDefault();
+        input = event.target.closest('form').querySelector('input');
+        message = input.value;
+        if (message.length) {
+            musicMessagesData.push(message);
+            renderMessages(musicMessagesData);
+        }
+        input.value = "";
+    }
+
+    if (event.target.matches('[data-action="add-movies"]')) {
+        event.preventDefault();
+        input = event.target.closest('form').querySelector('input');
+        message = input.value;
+        if (message.length) {
+            moviesMessagesData.push(message);
+            renderMessages(moviesMessagesData);
+        }
+        input.value = "";
+    }
+
+    if (event.target.matches('[data-action="add-games"]')) {
+        event.preventDefault();
+        input = event.target.closest('form').querySelector('input');
+        message = input.value;
+        if (message.length) {
+            gamesMessagesData.push(message);
+            renderMessages(gamesMessagesData);
+        }
+        input.value = "";
+    }
+
 });
 
-console.log(chitchatMessagesData);

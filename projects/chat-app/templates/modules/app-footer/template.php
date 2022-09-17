@@ -3,7 +3,7 @@
 
         <nav>
 
-            <button data-route='home'>
+            <button data-route='channels'>
                 <span><?php include('images/icons/home.php'); ?></span>
             </button>
             <button data-route='signIn'>
