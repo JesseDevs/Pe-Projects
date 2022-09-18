@@ -14,13 +14,6 @@ main {
     position: relative;
 }
 
-@media (min-width: 500px) {
-    body {
-        border-left: 3px solid var(--menus);
-        border-right: 3px solid var(--menus);
-    }
-}
-
 .outlet {
     padding: 30px 0;
 }
@@ -46,10 +39,6 @@ output {
 
 .hide {
     display: none;
-}
-
-h2{
-
 }
 
 .channels {

@@ -607,6 +607,7 @@ button {
   border: 0;
   outline: none;
   background-color: var(--ink);
+  color: var(--black);
   cursor: pointer;
 }
 
@@ -619,12 +620,6 @@ main {
   position: relative;
 }
 
-@media (min-width: 500px) {
-  body {
-    border-left: 3px solid var(--menus);
-    border-right: 3px solid var(--menus);
-  }
-}
 .outlet {
   padding: 30px 0;
 }
