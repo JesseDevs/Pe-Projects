@@ -4,12 +4,13 @@
     padding: 5px;
 }
 
-app-footer, app-header  {
+app-footer,
+app-header {
 
-    button{
+    button {
         border: 0;
         appearance: none;
-        
+
         background-color: transparent;
         cursor: pointer;
         text-align: center;
@@ -23,4 +24,23 @@ app-footer, app-header  {
         pointer-events: none;
     }
 
+}
+
+
+buttons-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+button {
+    font-size: clamp(16px, 2vw, 18px);
+
+
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    background-color: var(--ink);
+    cursor: pointer;
 }

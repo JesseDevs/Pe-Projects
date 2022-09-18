@@ -16,20 +16,25 @@ var gamesMessagesData = [];
 var routes = {};
 
 routes.signIn = `
-    <section class='landing'>
+    <section>
         <inner-column>
             <h2 class='strict-voice'>${siteName}</h2>
 
-            
-		<button data-route='channels'>Sign in</button>
-        <button data-route='newUser'>Create Account</button>
+            <p class='signin-intro'>
+                Let's get you started with account and then we could enter any channel with a topic you want to discuss.
+            </p>
+
+            <buttons-container>
+                    <button data-route='channels'>Sign in</button>
+                    <button data-route='newUser'>Create Account</button>
+            </buttons-container>
 	</section>
         </inner-column>
     </section>
 `;
 
 routes.newUser = `
-    <section class='landing'>
+    <section>
         <inner-column>
             <h2 class='strict-voice'>New User ? </h2>
 
@@ -134,7 +139,8 @@ routes.profile = `
     <section>
         <inner-column>
             <h2 class='strict-voice'>USERNAME</h2>
-            <button data-route='signIn'>Sign out</button>
+     
+                <button data-route='signIn'>Sign out</button>
         </inner-column>
     </section>
 `;

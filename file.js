@@ -14,6 +14,7 @@ function changeForm(event) {
         phpForm.style.display = 'block';
         formIntro.textContent = ' These are made using PHP to check what the input field is.'
     }
+
 }
 
 toggle.addEventListener('click', changeForm);
@@ -38,6 +39,7 @@ function promptHello() {
     }
 
     alert(message);
+    event.preventDefault();
 }
 
 hello.addEventListener('click', promptHello);
@@ -56,7 +58,8 @@ function promptString() {
     // Tell the user the amount of characters for their word.
     var message = 'You entered ' + string + '. It has ' + stringLength + ' amount of characters!';
 
-    alert(message)
+    alert(message);
+    event.preventDefault();
 }
 
 stringButton.addEventListener('click', promptString);
@@ -79,7 +82,8 @@ function promptQuote() {
         message = 'Someone must have said "' + quote + '"! Maybe.';
     }
 
-    alert(message)
+    alert(message);
+    event.preventDefault();
 }
 
 authorQuote.addEventListener('click', promptQuote);
@@ -110,7 +114,8 @@ function promptMadlib() {
         message = "We are missing a adverb..";
     }
 
-    alert(message)
+    alert(message);
+    event.preventDefault();
 }
 
 madlib.addEventListener('click', promptMadlib);
@@ -141,6 +146,7 @@ function promptMath() {
 
         alert([" Multiply = " + multiply, " Division = " + divide, " Addition = " + add, " Subtraction = " + sub]);
     }
+    event.preventDefault();
 
 }
 
@@ -168,6 +174,7 @@ function promptRetire() {
     }
 
     alert(message);
+    event.preventDefault();
 }
 
 retirment.addEventListener('click', promptRetire);
@@ -194,6 +201,7 @@ function promptArea() {
     }
 
     alert(message);
+    event.preventDefault();
 }
 
 area.addEventListener('click', promptArea);

@@ -37,7 +37,6 @@ main {
 output {
     display: block;
     border: 3px solid var(--fade);
-    height: 100%;
     padding: 1rem;
 
     background: rgba(255, 255, 255, 0.1);
@@ -50,26 +49,32 @@ output {
 }
 
 h2{
-    padding-bottom: 15px;
+
 }
 
-.channels h2{
-    border-bottom: 2px solid var(--lightFade);
+.channels {
+    h2{
+        border-bottom: 2px solid var(--lightFade);
+        padding-bottom: 10px;
+    }
+
+    ul {
+        margin-top: 10px;
+
+        li {
+            padding: 8px 0;
+        }
+    }
 }
 
-
-
-.channels ul {
-    margin-top: 10px;
-}
-
-.channels ul li {
-    padding: 8px 0;
-}
-
-
-.landing inner-column {
+section inner-column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
+    position: relative;
+}
+
+.signin-intro{
+    max-width: 85%;
+    margin: 0 auto;
 }
