@@ -185,6 +185,7 @@ html {
   --page: #135b80;
   --highlight: rgb(227 120 66);
   --highlightOP: #f0dfd5;
+  --accent: rgb(232, 144, 100);
   --cube-color: rgb(227 120 66 / .6);
   --cube-line: rgb(211 182 165 / 70%);
   --landing-text: rgb(10 5 5);
@@ -943,8 +944,8 @@ g g {
 }
 
 .main-menu ul a:hover {
-  background-color: var(--highlightOP);
-  color: var(--black);
+  background-color: var(--accent);
+  text-shadow: 1px 1px 2px black;
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
 
@@ -956,6 +957,11 @@ g g {
   background-color: var(--highlight);
   color: var(--white);
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+footer .active {
+  background-color: transparent;
+  border: 3px solid var(--highlight);
 }
 
 .main-menu .active:before {
@@ -2251,25 +2257,20 @@ project-page {
   content: "";
 }
 
-project-card .projects-action,
-button,
-form-grid a,
-blog-card a,
-project-page .container a,
-missing-heading a {
+.action-link {
   transition: all 0.4s;
   letter-spacing: 0.1em;
   font-weight: 600;
+  background-color: transparent;
+  border: 3px solid var(--highlight);
 }
 
-project-card .projects-action:hover,
-button:hover,
-form-grid a:hover,
-blog-card a:hover,
-project-page .container a:hover,
-missing-heading a:hover {
-  background-color: var(--highlightOP);
-  color: black;
+.action-link:hover {
+  background-color: var(--highlight);
+}
+
+#menu-toggle:checked ~ .menu a:hover {
+  background-color: var(--accent);
 }
 
 p a:hover,

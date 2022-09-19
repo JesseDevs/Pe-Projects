@@ -12,7 +12,7 @@ $heading = $section['heading'] ?? ucfirst($page);
         <ul>
             <?php foreach ($section['links'] as $link) { ?>
 
-                <li><a target="_blank" href="<?= $link['link'] ?>"><?= $link['title'] ?></a></li>
+                <li><a class='action-link' target="_blank" href="<?= $link['link'] ?>"><?= $link['title'] ?></a></li>
             <?php } ?>
         </ul>
     </nav>

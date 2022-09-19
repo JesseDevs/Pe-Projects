@@ -23,7 +23,7 @@
         <nav class='php'>
             <ul>
                 <?php foreach ($section['items'] as $form) { ?>
-                    <li><a href="?page=form&id=<?= $form["id"] ?>"><?= $form['title'] ?></a></li>
+                    <li><a href="?page=form&id=<?= $form["id"] ?> action-link"><?= $form['title'] ?></a></li>
 
                 <?php } ?>
             </ul>
@@ -32,7 +32,7 @@
         <nav class='js'>
             <ul>
                 <?php foreach ($section['jsItems'] as $form) { ?>
-                    <li><a class="<?= $form['title'] ?>" href=""><?= $form['button'] ?></a></li>
+                    <li><a class="<?= $form['title'] ?> action-link" href=""><?= $form['button'] ?></a></li>
 
                 <?php } ?>
             </ul>

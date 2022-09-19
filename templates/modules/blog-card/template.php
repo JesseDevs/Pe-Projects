@@ -22,5 +22,5 @@
   </blockquote>
 
 
-  <a class="blog-action" href="<?= $item['link']?>" target="_blank" >Read More</a>
+  <a class="blog-action action-link" href="<?= $item['link']?>" target="_blank" >Read More</a>
 </blog-card>

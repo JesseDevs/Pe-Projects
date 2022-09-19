@@ -35,7 +35,7 @@
     </field>
 
 
-    <button type="submit" name="submit" value="Send Message"><?= $section['button'] ?></button>
+    <button class='action-link' type="submit" name="submit" value="Send Message"><?= $section['button'] ?></button>
   </form>
 
 
