@@ -26,3 +26,5 @@ $projectsData = getProjectFile();
             </inner-column>
         </section>
     <?php } ?>
+
+</main>
