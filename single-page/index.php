@@ -20,7 +20,7 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg'
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
