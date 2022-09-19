@@ -487,7 +487,7 @@ html {
 }
 
 .roar-voice {
-  font-size: clamp(2.9rem, 10vw, 8rem);
+  font-size: clamp(2.8rem, 10vw, 8rem);
   font-weight: 700;
   text-transform: uppercase;
   transition: font-size 0.2s;
