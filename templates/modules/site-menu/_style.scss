@@ -25,10 +25,12 @@
 
 }
 
+@media(min-width: 400px){
+
 .site-header ul svg{
 	animation: rotateAnimation 3s linear infinite;
 }
-
+}
 
 .logo-container li:nth-of-type(2){
 	position: absolute;

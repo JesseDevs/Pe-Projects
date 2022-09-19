@@ -834,7 +834,7 @@ footer .page-links li:first-of-type {
   text-decoration: underline;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   footer nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -899,11 +899,12 @@ footer .page-links li:first-of-type {
   background-color: transparent;
 }
 
-.site-header ul svg {
-  -webkit-animation: rotateAnimation 3s linear infinite;
-          animation: rotateAnimation 3s linear infinite;
+@media (min-width: 400px) {
+  .site-header ul svg {
+    -webkit-animation: rotateAnimation 3s linear infinite;
+            animation: rotateAnimation 3s linear infinite;
+  }
 }
-
 .logo-container li:nth-of-type(2) {
   position: absolute;
   top: 0;
