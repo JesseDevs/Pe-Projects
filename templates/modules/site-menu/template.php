@@ -2,14 +2,18 @@
     <inner-column>
         <ul>
             <li>
-                <a href="?page=home">
+                <div class="svg-box">
+                    <?php include("templates/svg.php"); ?>
+                </div>
+
+            </li>
+            <li>
+                <a class='home-link' href="?page=home">
                     <h1 class="logo">Jesse&nbsp;Devs</h1>
-                    <div class="svg-box">
-                        <?php include("templates/svg.php"); ?>
-                    </div>
 
                 </a>
             </li>
+
         </ul>
 
 
