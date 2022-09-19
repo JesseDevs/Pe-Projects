@@ -14,6 +14,7 @@ $projectsData = getProjectFile();
 ?>
 
 <main class="page-content <?= $page ?>">
+
     <?php foreach ($pageData['sections'] as $section) { ?>
 
         <section class="<?= $section["module"] ?>">
@@ -26,3 +27,4 @@ $projectsData = getProjectFile();
             </inner-column>
         </section>
     <?php } ?>
+</main>

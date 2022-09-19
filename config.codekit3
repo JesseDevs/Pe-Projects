@@ -46505,30 +46505,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/single-page\/data\/filler-goals.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/filler-goals-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/single-page\/data\/filler-projects.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/filler-projects-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/single-page\/data\/filler-resume.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/filler-resume-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/single-page\/data\/form.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -46561,66 +46537,10 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/single-page\/data\/pages\/about.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/pages\/about-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/single-page\/data\/pages\/form.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/pages\/form-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/single-page\/data\/pages\/forms.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/pages\/forms-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/single-page\/data\/pages\/home.json" : {
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/single-page\/data\/pages\/home-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/single-page\/data\/pages\/project.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/pages\/project-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/single-page\/data\/pages\/projects.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/pages\/projects-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/single-page\/data\/pages\/style-guide.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/pages\/style-guide-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/single-page\/data\/pages\/writing.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/single-page\/data\/pages\/writing-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
