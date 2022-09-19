@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $resume = file_get_contents('data/resume.json');
 $resumeData = json_decode($resume, true);
@@ -16,14 +16,13 @@ $projectsData = getProjectFile();
 <main class="page-content <?= $page ?>">
     <?php foreach ($pageData['sections'] as $section) { ?>
 
-        <section>
+        <section class="<?= $section["module"] ?>">
             <inner-column>
+
                 <?php
                 include('templates/modules/' . $section["module"] . '/template.php');
                 ?>
-            </inner-column>
 
+            </inner-column>
         </section>
     <?php } ?>
-</main>
-
