@@ -198,6 +198,7 @@ html {
     --page: #f4f4f4;
     --highlight: rgb(19 92 128);
     --highlightOP: rgb(191 215 227);
+    --accent: rgb(164, 192, 212);
     --landing-text: #f4f4f4;
     --cube-color: rgb(126 175 199 / 60%);
     --cube-line: rgb(191 215 227/.7);
@@ -945,7 +946,8 @@ g g {
 
 .main-menu ul a:hover {
   background-color: var(--accent);
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 1px var(--page);
+  color: var(--ink);
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
 
@@ -2263,6 +2265,7 @@ project-page {
   font-weight: 600;
   background-color: transparent;
   border: 3px solid var(--highlight);
+  color: var(--ink);
 }
 
 .action-link:hover {
