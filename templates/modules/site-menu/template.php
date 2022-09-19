@@ -1,6 +1,6 @@
 <header class='site-header'>
     <inner-column>
-        <ul>
+        <ul class='logo-container'>
             <li>
                 <div class="svg-box">
                     <?php include("templates/svg.php"); ?>

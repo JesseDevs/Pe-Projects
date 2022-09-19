@@ -484,11 +484,6 @@ html {
   text-shadow: 0px 1px 1px var(--fade);
   z-index: 100;
   background-color: transparent;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .roar-voice {
@@ -907,6 +902,14 @@ footer .page-links li:first-of-type {
 .site-header ul svg {
   -webkit-animation: rotateAnimation 3s linear infinite;
           animation: rotateAnimation 3s linear infinite;
+}
+
+.logo-container li:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 g rect {
