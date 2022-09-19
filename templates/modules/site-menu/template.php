@@ -4,8 +4,10 @@
             <li>
                 <a href="?page=home">
                     <h1 class="logo">Jesse&nbsp;Devs</h1>
-                    <?php include("templates/svg.php");
-                    ?>
+                    <div class="svg-box">
+                        <?php include("templates/svg.php"); ?>
+                    </div>
+
                 </a>
             </li>
         </ul>
