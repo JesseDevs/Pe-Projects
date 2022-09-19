@@ -2,7 +2,14 @@
 $heading = $section['heading'] ?? ucfirst($page);
 ?>
 
+
+
 <landing-heading>
+
+    <?php
+    include('templates/modules/site-menu/template.php');
+
+    ?>
     <text-content>
         <h1 class="roar-voice"><?= $heading ?></h1>
 

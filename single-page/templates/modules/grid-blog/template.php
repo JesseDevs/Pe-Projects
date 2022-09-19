@@ -1,20 +1,24 @@
-<grid-blog>
-  <h2 class='yell-voice'><?= $section['heading']; ?></h2>
+<div class="row-container">
+  <aside>
 
-  <text-content>
-    <p class='intro'><?= $section['intro']; ?></p>
-  </text-content>
+    <text-content>
+      <h2 class='yell-voice'><?= $section['heading']; ?></h2>
 
-  <ul>
-    <?php foreach($section['items'] as $item) {?>
-      <li>
-        <?php include('templates/modules/blog-card/template.php')?>
-      </li>
 
-    <?php }?>
-  </ul>
+      <p class='intro'><?= $section['intro']; ?></p>
+    </text-content>
+  </aside>
 
-  <div class="blog">
-    <iframe src="https://jessedevs.substack.com/embed"  height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-  </div>
-</grid-blog>
+
+  <?php foreach ($section['items'] as $item) { ?>
+
+
+    <aside>
+      <?php include('templates/modules/blog-card/template.php') ?>
+    </aside>
+
+
+  <?php } ?>
+
+
+</div>

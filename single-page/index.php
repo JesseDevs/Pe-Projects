@@ -26,10 +26,6 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg'
 
 <body class='<?= $page ?>'>
 
-    <?php
-    include('templates/modules/site-menu/template.php');
-
-    ?>
 
 
     <?php

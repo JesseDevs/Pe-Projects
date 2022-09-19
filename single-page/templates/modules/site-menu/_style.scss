@@ -1,18 +1,20 @@
+header{
+	position: absolute;
+	top: -100px;
+	width: 100%;
+
+}
+
 .site-header {
 	background-color: var(--page);
 	color: var(--ink);
-	z-index: 100;
-}
-
-.site-header inner-column {
-	padding: 0 1rem;
 	display: flex;
 	gap: var(--simple-small-space);
 	justify-content: space-between;
-
+	background-color: transparent;
 }
 
-.site-header inner-column ul {
+.site-header  ul {
 	position: relative;
 }
 
@@ -130,6 +132,7 @@ footer .active{
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
+	z-index: 100;
 }
 
 .menu>a {

@@ -1,22 +1,24 @@
-<project-section>
-    <text-content>
-        <h2 class='yell-voice'><?= $section['heading']; ?></h2>
+<div class="row-container">
+    <aside>
 
-        <p class='intro'><?= $section['intro']; ?></p>
-    </text-content>
+        <text-content>
+            <h2 class='yell-voice'><?= $section['heading']; ?></h2>
+
+            <p class='intro'><?= $section['intro']; ?></p>
+        </text-content>
+    </aside>
+
+
     <?php
     if ($page == 'home') {
         foreach ($projectsData as $project) { ?>
+
             <?php if (isset($project['featured'])) { ?>
-                <?php include('templates/modules/project-card/template.php'); ?>
+                <aside>
+                    <?php include('templates/modules/project-card/template.php'); ?>
+                </aside>
     <?php }
         }
     } ?>
 
-    <?php if ($page == 'projects' or $page == 'style') {
-        foreach ($projectsData as $project) {
-            include('templates/modules/project-card/template.php');
-        }
-    } ?>
-
-</project-section>
+</div>

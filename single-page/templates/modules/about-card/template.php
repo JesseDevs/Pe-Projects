@@ -1,5 +1,5 @@
-<about-card>
-    <text-content>
+<div class="row-container">
+    <aside>
         <h2 class='yell-voice'><?= $section['heading']; ?></h2>
         <p class='intro'><?= $section['intro']; ?></p>
 
@@ -16,14 +16,17 @@
         <?php } ?>
 
 
-    </text-content>
-    <div class="image-container">
-        <picture class="about-image">
-            <?php foreach ($section['images'] as $image) { ?>
+    </aside>
+    <aside>
+        <div class='image-container'>
+            <picture class="about-image">
+                <?php foreach ($section['images'] as $image) { ?>
 
-                <img src="<?= $image ?>" alt="Me">
+                    <img src="<?= $image ?>" alt="Me">
 
-            <?php } ?>
-        </picture>
-    </div>
-</about-card>
+                <?php } ?>
+            </picture>
+        </div>
+
+    </aside>
+</div>

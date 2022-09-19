@@ -31,39 +31,6 @@ form-grid a {
 	color: var(--white);
 }
 
-.js {
-	display: none;
-}
-
-div.change-form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-	height: 1rem;
-	margin-bottom: 30px;
-
-}
-
-div.change-form input {
-	margin: 0;
-	max-width: 100px;
-}
-
-div.change-form span {
-	font-weight: 500;
-}
-
-.form div.change-form {
-	margin-top: 30px;
-}
-
-.switch {
-	position: relative;
-	display: inline-block;
-	width: 60px;
-	height: 34px;
-}
 
 /* Hide default HTML checkbox */
 .switch input {
