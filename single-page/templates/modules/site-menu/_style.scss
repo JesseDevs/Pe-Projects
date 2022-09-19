@@ -1,0 +1,286 @@
+.site-header {
+	background-color: var(--page);
+	color: var(--ink);
+	z-index: 100;
+}
+
+.site-header inner-column {
+	padding: 0 1rem;
+	display: flex;
+	gap: var(--simple-small-space);
+	justify-content: space-between;
+
+}
+
+.site-header inner-column ul {
+	position: relative;
+}
+
+
+.site-header ul svg {
+	max-width: 50px;
+	position: absolute;
+	z-index: -2;
+	margin-left: auto;
+	margin-right: auto;
+	top: 2px;
+	left: 10px;
+	bottom: 0;
+	right: 0;
+
+	animation: rotateAnimation 3s linear infinite;
+}
+
+
+g rect {
+	fill: transparent;
+}
+
+g g {
+	stroke-width: 10px;
+	fill: var(--cube-color);
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: var(--cube-line);
+
+}
+
+
+
+.burger {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: var(--page);
+}
+
+.main-menu {
+	display: none;
+	margin-left: auto;
+}
+
+
+.main-menu ul {
+	display: flex;
+	flex-direction: row;
+	gap: var(--simple-small-space);
+	justify-content: flex-end;
+
+}
+
+.main-menu ul a {
+	padding: var(--simple-space);
+	position: relative;
+
+
+}
+
+.main-menu ul a:hover {
+	background-color: var(--accent);
+	text-shadow: 1px 1px 2px black;
+	transition: color .3s ease-out, background-color .3s ease-out;
+}
+
+.main-menu ul a:hover::before {
+	opacity: 1;
+}
+
+.active {
+	background-color: var(--highlight);
+	color: var(--white);
+	transition: color .3s ease-out, background-color .3s ease-out;
+}
+
+footer .active{
+	background-color: transparent;
+	border: 3px solid var(--highlight);
+
+}
+
+
+.main-menu .active:before {
+	content: '';
+	height: var(--thick);
+	width: 100%;
+	background-color: var(--cube-line);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 100;
+}
+
+
+/* menu */
+
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+
+.menu>a {
+	margin: 0 1rem;
+	overflow: hidden;
+	align-items: center;
+
+
+}
+
+.menu-button-container {
+	display: none;
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 25px var(--simple-space);
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+	display: block;
+	background-color: var(--highlight);
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	border-radius: 2px;
+}
+
+.menu-button::before {
+	content: '';
+	margin-top: -8px;
+}
+
+.menu-button::after {
+	content: '';
+	margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+	margin-top: 0px;
+	transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+	background: var(--page);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+	margin-top: 0px;
+	transform: rotate(-405deg);
+}
+
+
+.menu-button-container {
+	display: flex;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	margin-top: 70px;
+	left: 0;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-toggle~.menu a {
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#menu-toggle:checked~.menu a {
+	border: 1px solid var(--highlight);
+	height: 2.5em;
+	padding: 0.5em;
+	transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu>a {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0.5em 0;
+	width: 100%;
+	color: var(--white);
+	background-color: #222;
+}
+
+.menu>absolute:not(:last-child) {
+	border-bottom: 1px solid #444;
+}
+
+
+.large-size {
+	display: none;
+}
+
+.larger-size {
+	display: none;
+}
+
+
+
+@media (min-width: 500px) {
+
+	.main-menu {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.menu {
+		top: 15px;
+		width: 40%;
+		left: auto;
+		right: 0;
+		margin-top: 50px;
+
+	}
+
+	.menu .small-size {
+		display: none;
+	}
+
+
+}
+
+@media(min-width: 650px) {
+	.main-menu .large-size {
+		display: block;
+	}
+}
+
+
+
+@media (min-width: 800px) {
+
+
+	.main-menu .large-size {
+		display: block;
+	}
+
+	.main-menu .larger-size {
+		display: block;
+	}
+
+	.burger {
+		display: none;
+	}
+}

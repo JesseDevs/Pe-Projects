@@ -1,0 +1,88 @@
+@import '_reset';
+@import '_setup';
+@import '_variables';
+@import '_typography';
+@import '_case';
+@import '_modules';
+
+@-moz-document url-prefix() {
+	.remove-me {
+		border: 1px solid red;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+.strong {
+	font-weight: 800;
+}
+
+.intro {
+	margin-bottom: var(--tight-space);
+	color: var(--highlight);
+	font-weight: 500;
+	font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+.intro p {
+	font-weight: 500;
+
+}
+
+.skills {
+	display: flex;
+	text-transform: uppercase;
+	flex-wrap: wrap;
+	gap: 5px;
+	color: var(--highlight);
+}
+
+.skills p:after {
+	content: ',';
+}
+
+.skills p:last-of-type:after {
+	content: '';
+}
+
+.action-link{
+	transition: all .4s;
+	letter-spacing: .1em;
+	font-weight: 600;
+	background-color: transparent;
+	border: 3px solid var(--highlight);
+}
+
+.action-link:hover{
+	background-color: var(--highlight);
+}
+
+#menu-toggle:checked ~ .menu a:hover{
+	background-color: var(--accent);
+	
+}
+
+
+p a:hover,
+p+a:hover {
+	background-color: var(--highlight);
+	transition: all .4s;
+	color: white;
+}
+
+big-heading,
+landing-heading,
+missing-heading {
+
+	margin-top: var(--simple-big-space);
+	margin-bottom: var(--simple-big-space);
+}
+
+
+big-heading,
+missing-heading {
+	animation: upFadeIn .5s forwards;
+	opacity: 0;
+	animation-delay: .3s;
+}

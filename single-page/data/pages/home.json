@@ -1,0 +1,54 @@
+{
+    "id": "home",
+    "title": "Landing",
+    "intro": "Welcome to my personal site! Here you can find a little about me, my work, my personality, and a way to get in contact.",
+    "metaImage": "https://peprojects.dev/alpha-4/jesse/images/details/laptop.jpg",
+    "ad": [
+        {
+            "intro": "Follow my journey!",
+            "blog": "https://jessedevs.substack.com/"
+        }
+    ],
+    "sections": [
+        {
+            "module": "landing-heading",
+            "heading": "Jesse Felix",
+            "intro": "Yeah, thats me!<br>Web Developer. UI / UX Designer.",
+            "details": "I’m a Web Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I'm planning on making things happen! Maybe with you?",
+            "image": "images/details/computer.jpg"
+        },
+        {
+            "module": "project-section",
+            "heading": "Projects",
+            "intro": "Some things I’ve made...",
+            "details": "",
+            "image": ""
+        },
+        {
+            "module": "about-card",
+            "heading": "About Me",
+            "intro": "Here is a little more...",
+            "details": [
+                "I obtained a Bachelor's degree in Business Finance and have built expereince in sales and customer service. I always had a passion for computers and being creative but couldn't make the most of it. Web development and design has become a passion that I want to expand and continue to explore.",
+                "Currently under the mentorship of <a href='https://perpetual.education/'>Perpetual Education</a>, exploring my skills by experimenting in a wide range of coding and design disciplines. I see myself continuing to challenge myself, to learn, and to do amazing things."
+            ],
+            "images": [
+                "images/details/methree.jpg",
+                "images/details/me.jpg",
+                "images/details/metoo.jpg",
+                "images/details/mefour.jpg"
+            ]
+        },
+        {
+            "module": "contact-form",
+            "heading": "Contact Me",
+            "intro": "Lets talk about code? Maybe some life discussion? Or some of the latest music out?",
+            "labelOne": "NAME",
+            "holderOne": "Jesse",
+            "labelTwo": "EMAIL",
+            "labelThree": "MESSAGE",
+            "holderTwo": "Something to say..",
+            "button": "CONNECT"
+        }
+    ]
+}
