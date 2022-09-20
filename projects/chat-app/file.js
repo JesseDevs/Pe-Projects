@@ -3,6 +3,10 @@
 // create comments page
 // create profile page
 
+var currentUser = {};
+
+var username = "Jesse";
+var password = "1234";
 const siteName = "Welcome to the Chat";
 const outlet = document.querySelector('[rel="outlet"]');
 
@@ -24,10 +28,14 @@ routes.signIn = `
                 Let's get you started with account and then we could enter any channel with a topic you want to discuss.
             </p>
 
-            <buttons-container>
-                    <button data-route='channels'>Sign in</button>
-                    <button data-route='newUser'>Create Account</button>
-            </buttons-container>
+            <form action="">
+            <input type="text" name="username" placeholder="Username" value="Jesse" />
+
+            <input type="password" name="password" placeholder="Password" value="1234" />
+
+            <button type="submit" data-action='signIn' >Sign In</button>
+            <form>
+
 	</section>
         </inner-column>
     </section>
@@ -138,7 +146,7 @@ routes.games = `
 routes.profile = `
     <section>
         <inner-column>
-            <h2 class='strict-voice'>USERNAME</h2>
+            <h2 class='strict-voice'>${renderUsername()}</h2>
      
                 <button data-route='signIn'>Sign out</button>
         </inner-column>
@@ -208,7 +216,6 @@ window.addEventListener('click', function (event) {
             renderMessages(gamesMessagesData);
         }
 
-
         if (route == "channels") {
             renderChannelsList(channelsData);
         }
@@ -259,5 +266,34 @@ window.addEventListener('click', function (event) {
         input.value = "";
     }
 
+    if (event.target.matches('[data-action="signIn"]')) {
+        event.preventDefault();
+        var form = event.target.closest('form');
+        var username = form.querySelector('input[type="text"]').value;
+        var password = form.querySelector('input[type="password"]').value;
+
+        handleSignIn(username, password);
+    }
 });
 
+
+function handleSignIn(username, password) {
+
+    if (username == "Jesse" && password == '1234') {
+        console.log(username, password);
+        currentUser.username = username;
+
+        renderView(routes["channels"]);
+        renderChannelsList(channelsData);
+
+    } else {
+        alert("Wrong something");
+    }
+}
+
+function renderUsername() {
+    console.log(currentUser.username);
+    if (window.currentUser.username) {
+        return window.currentUser.username;
+    }
+}
