@@ -1,15 +1,15 @@
 <?php
 
-            // function format($variable)
-            // {
-            //     echo "<pre>";
-            //     echo "<code>";
-            //     print_r($variable);
-            //     echo "</code>";
-            //     echo "</pre>";
-            // }
+// function format($variable)
+// {
+//     echo "<pre>";
+//     echo "<code>";
+//     print_r($variable);
+//     echo "</code>";
+//     echo "</pre>";
+// }
 
-            // format($_POST);
+// format($_POST);
 
 $length = '';
 $width = '';
@@ -54,7 +54,7 @@ if (isset($_POST['submitted'])) {
 
     </field>
 
-    <button type="submit" name='submitted'>Calculate</button>
+    <button class='action-link' type="submit" name='submitted'>Calculate</button>
 
 
 </form>
@@ -68,4 +68,3 @@ if (isset($_POST['submitted'])) {
 
 
 </div>
-

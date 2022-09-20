@@ -5,30 +5,6 @@
 @import '_case';
 @import '_modules';
 
-@-moz-document url-prefix() {
-	.remove-me {
-		border: 1px solid red;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-}
-
-.strong {
-	font-weight: 800;
-}
-
-.intro {
-	margin-bottom: var(--tight-space);
-	color: var(--highlight);
-	font-weight: 500;
-	font-size: clamp(1.2rem, 2vw, 1.4rem);
-}
-
-.intro p {
-	font-weight: 500;
-
-}
 
 .skills {
 	display: flex;
@@ -36,14 +12,14 @@
 	flex-wrap: wrap;
 	gap: 5px;
 	color: var(--highlight);
-}
+	p:after {
+		content: ',';
+	}
 
-.skills p:after {
-	content: ',';
-}
-
-.skills p:last-of-type:after {
-	content: '';
+	p:last-of-type:after {
+		content: '';
+	}
+	
 }
 
 .action-link{
@@ -53,6 +29,10 @@
 	background-color: transparent;
 	border: 3px solid var(--highlight);
 	color: var(--ink);
+
+	text-align: center;
+    text-transform: uppercase;
+	padding: var(--simple-space);
 }
 
 .action-link:hover{

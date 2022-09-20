@@ -1,5 +1,3 @@
-
-
 <?php
 
 $age = null;
@@ -27,7 +25,7 @@ if (isset($_POST['submitted'])) {
 
     </field>
 
-    <button type="submit" name='submitted'>Check Age</button>
+    <button class='action-link' type="submit" name='submitted'>Check Age</button>
 
 
 </form>
@@ -36,7 +34,6 @@ if (isset($_POST['submitted'])) {
     <h3 class="chant-voice"> The Results</h3>
     <p><?= $template ?></p>
 
-    
+
 
 </results>
-

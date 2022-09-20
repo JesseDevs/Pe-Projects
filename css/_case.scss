@@ -14,33 +14,30 @@ double-image,
 double-text,
 goal-block {
     min-height: 300px;
-}
-
-diptech picture,
-double-image picture,
-double-text picture,
-goal-block picture {
-    max-width: 500px;
-    margin: 0 auto;
+    picture {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 .links inner-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--simple-space);
-}
 
-.links inner-column a:first-of-type {
-    display: none;
-}
+    a {
+        padding: var(--simple-space) var(--simple-big-space);
+        border: var(--thin) solid var(--highlight);
+        background-color: var(--highlight);
+        text-align: center;
+        color: var(--white);
+        text-transform: uppercase;
+    }
 
-.links inner-column a {
-    padding: var(--simple-space) var(--simple-big-space);
-    border: var(--thin) solid var(--highlight);
-    background-color: var(--highlight);
-    text-align: center;
-    color: var(--white);
-    text-transform: uppercase;
+    a:first-of-type {
+        display: none;
+    }
+    
 }
 
 .project-page section:nth-of-type(even) {
@@ -58,21 +55,16 @@ goal-block picture {
         grid-template-columns: 1fr 1fr;
         gap: var(--simple-big-space);
         align-items: center;
+        
+        picture {
+            margin: 0;
+            max-width: none;
+        }
     }
 
     diptech text-content,
     double-text p {
         margin-bottom: 0;
     }
-
-
-    diptech picture,
-    double-image picture,
-    double-text picture,
-    goal-block picture {
-        margin: 0;
-        max-width: none;
-    }
-
 
 }

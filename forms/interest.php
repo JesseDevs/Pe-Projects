@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -60,7 +59,7 @@ if (isset($_POST['submitted'])) {
     </field>
 
 
-    <button type="submit" name='submitted'>Calculate</button>
+    <button class='action-link' type="submit" name='submitted'>Calculate</button>
 
 
 </form>
@@ -68,6 +67,6 @@ if (isset($_POST['submitted'])) {
 <results class='feedback'>
     <h3 class="chant-voice"> The Results</h3>
     <p><?= $template ?>
-</p>
+    </p>
 
 </results>

@@ -117,15 +117,15 @@ blog-card {
     column-gap: var(--simple-space);
     row-gap: var(--simple-space);
     /*    grid-template-rows: auto auto 1fr auto;*/
-  }
 
-  blog-card text-content {
-    left: 2%;
-    max-width: 400px;
-  }
+    text-content {
+      left: 2%;
+      max-width: 400px;
+    }
 
-  blog-card picture {
-    grid-column: 1 / 4;
+    picture {
+      grid-column: 1 / 4;
+    }
   }
 
   .blockquote {

@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -105,7 +104,7 @@ if (isset($_POST['submitted'])) {
         </div>
     </field>
 
-    <button type="submit" name='submitted'>Calculate</button>
+    <button class='action-link' type="submit" name='submitted'>Calculate</button>
 
 
 </form>

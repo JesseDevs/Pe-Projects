@@ -1,15 +1,14 @@
-
 <?php
-            // function format($variable)
-            // {
-            //     echo "<pre>";
-            //     echo "<code>";
-            //     print_r($variable);
-            //     echo "</code>";
-            //     echo "</pre>";
-            // }
+// function format($variable)
+// {
+//     echo "<pre>";
+//     echo "<code>";
+//     print_r($variable);
+//     echo "</code>";
+//     echo "</pre>";
+// }
 
-            // format($_POST);
+// format($_POST);
 
 $orderAmount = null;
 $subtotal = null;
@@ -62,7 +61,7 @@ if (isset($_POST['submitted'])) {
 
     </field>
 
-    <button type="submit" name='submitted'>Calculate</button>
+    <button class='action-link' type="submit" name='submitted'>Calculate</button>
 
 
 </form>
@@ -70,6 +69,5 @@ if (isset($_POST['submitted'])) {
 <results class='feedback chant-voice'>
     <h3 class="chant-voice"> The Results</h3>
     <p>The total will be: <?= $total ?></p>
-    
-</results>
 
+</results>

@@ -3,17 +3,44 @@ contact-form {
 	width: 100%;
 	padding-top: var(--general-space);
 	padding-bottom: var(--general-space);
-}
 
-label,
-input,
-button,
-select,
-textarea {
-	font-family: 'Poppins', sans-serif;
-	font-size: clamp(1rem, 2vw, 1.2rem);
-	resize: none;
-	width: 100%;
+	form {
+		max-width: 450px;
+		margin: 0 auto;
+	}
+
+
+	button {
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: 0;
+		margin-top: 0;
+	}
+
+	textarea,
+	input {
+		margin-bottom: var(--simple-big-space);
+		border: 3px solid transparent;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		font-weight: 500;
+	}
+
+	input:focus,
+	textarea:focus {
+		background-color: var(--highlightOP);
+		color: var(--black);
+		border: 3px solid var(--cube-color);
+		border-radius: none;
+		outline: none;
+		transition: background-color 600ms, border-color 400ms;
+	}
+
+	input:focus::placeholder {
+		color: var(--fade);
+	}
 }
 
 input,
@@ -36,31 +63,6 @@ input {
 	margin-bottom: 25px;
 }
 
-contact-form input,
-contact-form textarea {
-	margin-bottom: var(--simple-big-space);
-	border: 3px solid transparent;
-}
-
-contact-form input::placeholder,
-contact-form textarea::placeholder {
-	font-weight: 500;
-}
-
-contact-form input:focus,
-contact-form textarea:focus {
-	background-color: var(--highlightOP);
-	color: var(--black);
-	border: 3px solid var(--cube-color);
-	border-radius: none;
-	outline: none;
-	transition: background-color 600ms, border-color 400ms;
-}
-
-contact-form input:focus::placeholder {
-	color: var(--fade);
-}
-
 select {
 	height: 1.6rem;
 	text-align: center;
@@ -70,24 +72,11 @@ select {
 	height: 10rem;
 }
 
-contact-form form {
-	max-width: 450px;
-	margin: 0 auto;
-}
-
-
 form button {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: fit-content;
 
-}
-
-contact-form button {
-	max-width: 50%;
-	margin-left: auto;
-	margin-right: 0;
-	margin-top: 0;
 }
 
 button {
@@ -126,36 +115,39 @@ button {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		column-gap: var(--simple-space);
 		position: relative;
+
+		text-content {
+			grid-column: 1/ span 2;
+			max-width: 50ch;
+		}
+
+		form {
+			grid-column: 1 / span 2;
+			max-width: none;
+			margin: 0;
+		}
+
+		.fade {
+			display: block;
+			animation: rightFadeIn 1.5s forwards;
+			position: absolute;
+			top: 20px;
+
+		}
+
+
+		.cube-sphere {
+
+			order: 3;
+			display: block;
+			z-index: 1;
+			margin: 0;
+
+			animation: circular 10s infinite linear;
+
+		}
+
 	}
 
-	contact-form text-content {
-		grid-column: 1/ span 4;
-		max-width: 50ch;
-	}
-
-	contact-form form {
-		grid-column: 1 / span 2;
-		max-width: none;
-		margin: 0;
-	}
-
-	.fade {
-		display: block;
-		animation: rightFadeIn 1.5s forwards;
-		position: absolute;
-		top: 20px;
-
-	}
-
-	contact-form .cube-sphere {
-
-		order: 3;
-		display: block;
-		z-index: 1;
-		margin: 0;
-
-		animation: circular 10s infinite linear;
-
-	}
 
 }

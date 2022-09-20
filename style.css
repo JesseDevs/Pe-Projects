@@ -475,6 +475,27 @@ html {
             transform: translateY(-700px) rotate(600deg);
   }
 }
+.intro {
+  margin-bottom: var(--tight-space);
+  color: var(--highlight);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+.intro p {
+  font-weight: 500;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  resize: none;
+  width: 100%;
+}
+
 .logo {
   font-family: "Manrope", sans-serif;
   padding: var(--simple-space) var(--simple-small-space);
@@ -526,12 +547,20 @@ small,
   font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
+.tiny-voice {
+  font-size: clamp(0.8rem, 1.5vw, 14px);
+}
+
 :is(.calm-voice, p, li) em {
   font-style: italic;
 }
 
 :is(.calm-voice, p, li) strong {
   font-weight: 700;
+}
+
+.strong {
+  font-weight: 800;
 }
 
 /* these would be scoped to section or to an article element */
@@ -547,17 +576,15 @@ diptech {
   display: grid;
   gap: var(--simple-space);
 }
-
-diptech.flipped text-content {
-  order: 2;
-}
-
 diptech picture {
   margin-bottom: var(--simple-space);
 }
-
 diptech h3 {
   padding-bottom: var(--simple-space);
+}
+
+diptech.flipped text-content {
+  order: 2;
 }
 
 goal-block {
@@ -565,7 +592,6 @@ goal-block {
   display: grid;
   gap: var(--simple-space);
 }
-
 goal-block ul {
   padding-left: 20px;
   display: grid;
@@ -579,7 +605,6 @@ double-image {
   width: 100%;
   gap: var(--simple-space);
 }
-
 double-image picture {
   margin-bottom: var(--simple-space);
 }
@@ -602,7 +627,6 @@ double-text,
 goal-block {
   min-height: 300px;
 }
-
 diptech picture,
 double-image picture,
 double-text picture,
@@ -616,11 +640,6 @@ goal-block picture {
   grid-template-columns: 1fr 1fr;
   gap: var(--simple-space);
 }
-
-.links inner-column a:first-of-type {
-  display: none;
-}
-
 .links inner-column a {
   padding: var(--simple-space) var(--simple-big-space);
   border: var(--thin) solid var(--highlight);
@@ -628,6 +647,9 @@ goal-block picture {
   text-align: center;
   color: var(--white);
   text-transform: uppercase;
+}
+.links inner-column a:first-of-type {
+  display: none;
 }
 
 .project-page section:nth-of-type(even) {
@@ -644,10 +666,6 @@ goal-block {
     gap: var(--simple-big-space);
     align-items: center;
   }
-  diptech text-content,
-double-text p {
-    margin-bottom: 0;
-  }
   diptech picture,
 double-image picture,
 double-text picture,
@@ -655,13 +673,16 @@ goal-block picture {
     margin: 0;
     max-width: none;
   }
+  diptech text-content,
+double-text p {
+    margin-bottom: 0;
+  }
 }
 big-heading {
   display: block;
   width: 100%;
   text-align: center;
 }
-
 big-heading p {
   max-width: 450px;
   margin: 0 auto;
@@ -1144,17 +1165,11 @@ about-card {
   padding-top: var(--general-space);
   padding-bottom: var(--general-space);
 }
-
 about-card p + a {
   text-decoration: underline;
   color: var(--highlight);
   font-weight: 500;
 }
-
-p.about-content {
-  padding-bottom: var(--simple-space);
-}
-
 about-card .image-container {
   padding-top: var(--tight-space);
   position: relative;
@@ -1162,8 +1177,7 @@ about-card .image-container {
   min-height: 400px;
   margin: 0 auto;
 }
-
-.image-container img {
+about-card .image-container img {
   -webkit-animation: FadeInOut;
           animation: FadeInOut;
   -webkit-animation-timing-function: ease-in-out;
@@ -1177,25 +1191,25 @@ about-card .image-container {
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-.image-container img:nth-of-type(1) {
+about-card .image-container img:nth-of-type(1) {
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
 }
-
-.image-container img:nth-of-type(2) {
+about-card .image-container img:nth-of-type(2) {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
-
-.image-container img:nth-of-type(3) {
+about-card .image-container img:nth-of-type(3) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-
-.image-container img:nth-of-type(4) {
+about-card .image-container img:nth-of-type(4) {
   -webkit-animation-delay: 0;
           animation-delay: 0;
+}
+
+p.about-content {
+  padding-bottom: var(--simple-space);
 }
 
 .home .about-card {
@@ -1211,7 +1225,6 @@ about-card .image-container {
   max-width: 350px;
   margin: 0 auto;
 }
-
 .about-image img {
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
@@ -1433,16 +1446,48 @@ contact-form {
   padding-top: var(--general-space);
   padding-bottom: var(--general-space);
 }
-
-label,
-input,
-button,
-select,
-textarea {
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  resize: none;
-  width: 100%;
+contact-form form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+contact-form button {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 0;
+}
+contact-form textarea,
+contact-form input {
+  margin-bottom: var(--simple-big-space);
+  border: 3px solid transparent;
+}
+contact-form input::-webkit-input-placeholder, contact-form textarea::-webkit-input-placeholder {
+  font-weight: 500;
+}
+contact-form input::-moz-placeholder, contact-form textarea::-moz-placeholder {
+  font-weight: 500;
+}
+contact-form input::placeholder,
+contact-form textarea::placeholder {
+  font-weight: 500;
+}
+contact-form input:focus,
+contact-form textarea:focus {
+  background-color: var(--highlightOP);
+  color: var(--black);
+  border: 3px solid var(--cube-color);
+  border-radius: none;
+  outline: none;
+  transition: background-color 600ms, border-color 400ms;
+}
+contact-form input:focus::-webkit-input-placeholder {
+  color: var(--fade);
+}
+contact-form input:focus::-moz-placeholder {
+  color: var(--fade);
+}
+contact-form input:focus::placeholder {
+  color: var(--fade);
 }
 
 input,
@@ -1465,47 +1510,6 @@ input {
   margin-bottom: 25px;
 }
 
-contact-form input,
-contact-form textarea {
-  margin-bottom: var(--simple-big-space);
-  border: 3px solid transparent;
-}
-
-contact-form input::-webkit-input-placeholder, contact-form textarea::-webkit-input-placeholder {
-  font-weight: 500;
-}
-
-contact-form input::-moz-placeholder, contact-form textarea::-moz-placeholder {
-  font-weight: 500;
-}
-
-contact-form input::placeholder,
-contact-form textarea::placeholder {
-  font-weight: 500;
-}
-
-contact-form input:focus,
-contact-form textarea:focus {
-  background-color: var(--highlightOP);
-  color: var(--black);
-  border: 3px solid var(--cube-color);
-  border-radius: none;
-  outline: none;
-  transition: background-color 600ms, border-color 400ms;
-}
-
-contact-form input:focus::-webkit-input-placeholder {
-  color: var(--fade);
-}
-
-contact-form input:focus::-moz-placeholder {
-  color: var(--fade);
-}
-
-contact-form input:focus::placeholder {
-  color: var(--fade);
-}
-
 select {
   height: 1.6rem;
   text-align: center;
@@ -1515,24 +1519,12 @@ select {
   height: 10rem;
 }
 
-contact-form form {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
 form button {
   margin-left: auto;
   margin-right: auto;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-contact-form button {
-  max-width: 50%;
-  margin-left: auto;
-  margin-right: 0;
-  margin-top: 0;
 }
 
 button {
@@ -1569,7 +1561,7 @@ button {
     position: relative;
   }
   contact-form text-content {
-    grid-column: 1/span 4;
+    grid-column: 1/span 2;
     max-width: 50ch;
   }
   contact-form form {
@@ -1577,7 +1569,7 @@ button {
     max-width: none;
     margin: 0;
   }
-  .fade {
+  contact-form .fade {
     display: block;
     -webkit-animation: rightFadeIn 1.5s forwards;
             animation: rightFadeIn 1.5s forwards;
@@ -2007,6 +1999,24 @@ form-grid {
   width: 100%;
   display: block;
 }
+form-grid a {
+  padding: var(--simple-space);
+  border: var(--thick) solid var(--highlight);
+  background-color: var(--highlight);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+form-grid ul {
+  display: grid;
+  -webkit-column-gap: var(--simple-big-space);
+     -moz-column-gap: var(--simple-big-space);
+          column-gap: var(--simple-big-space);
+  row-gap: var(--simple-space);
+}
+form-grid ul li {
+  transition: all 1s;
+}
 
 .form form-grid {
   border-top: var(--thin) solid var(--cube-line);
@@ -2015,27 +2025,6 @@ form-grid {
 form-box {
   width: 100%;
   display: block;
-}
-
-form-grid ul {
-  display: grid;
-  -webkit-column-gap: var(--simple-big-space);
-     -moz-column-gap: var(--simple-big-space);
-          column-gap: var(--simple-big-space);
-  row-gap: var(--simple-space);
-}
-
-form-grid ul li {
-  transition: all 1s;
-}
-
-form-grid a {
-  padding: var(--simple-space);
-  border: var(--thick) solid var(--highlight);
-  background-color: var(--highlight);
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
 }
 
 .js {
@@ -2050,12 +2039,10 @@ div.change-form {
   height: 1rem;
   margin-bottom: 30px;
 }
-
 div.change-form input {
   margin: 0;
   max-width: 100px;
 }
-
 div.change-form span {
   font-weight: 500;
 }
@@ -2138,6 +2125,7 @@ input:checked + .slider:before {
   form-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-top: var(--tight-space);
   }
   form-grid nav {
     grid-column: span 4;
@@ -2183,7 +2171,6 @@ results {
   display: block;
   width: 100%;
 }
-
 results .chant-voice {
   margin-bottom: var(--tight-space);
 }
@@ -2194,14 +2181,13 @@ form-box {
      -moz-column-gap: var(--simple-big-space);
           column-gap: var(--simple-big-space);
 }
+form-box field {
+  margin-bottom: var(--general-space);
+}
 
 label {
   padding-bottom: 15px;
   font-size: clamp(1.1rem, 2vw, 1.3rem);
-}
-
-form-box field {
-  margin-bottom: var(--general-space);
 }
 
 @media (min-width: 600px) {
@@ -2227,29 +2213,6 @@ project-page {
   display: block;
 }
 
-@-moz-document url-prefix() {
-  .remove-me {
-    border: 1px solid red;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-.strong {
-  font-weight: 800;
-}
-
-.intro {
-  margin-bottom: var(--tight-space);
-  color: var(--highlight);
-  font-weight: 500;
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
-}
-
-.intro p {
-  font-weight: 500;
-}
-
 .skills {
   display: flex;
   text-transform: uppercase;
@@ -2257,11 +2220,9 @@ project-page {
   gap: 5px;
   color: var(--highlight);
 }
-
 .skills p:after {
   content: ",";
 }
-
 .skills p:last-of-type:after {
   content: "";
 }
@@ -2273,6 +2234,9 @@ project-page {
   background-color: transparent;
   border: 3px solid var(--highlight);
   color: var(--ink);
+  text-align: center;
+  text-transform: uppercase;
+  padding: var(--simple-space);
 }
 
 .action-link:hover {

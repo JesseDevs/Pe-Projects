@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -45,7 +44,7 @@ if (isset($_POST['submitted'])) {
 
     </field>
 
-    <button type="submit" name='submitted' formtarget="_blank">Calculate</button>
+    <button class='action-link' type="submit" name='submitted' formtarget="_blank">Calculate</button>
 
 
 </form>
@@ -59,8 +58,6 @@ if (isset($_POST['submitted'])) {
         <li><?= $num1 ?> / <?= $num2 ?> = <?= $divide ?></li>
     </ul>
 
-    
+
 
 </results>
-
-

@@ -5,16 +5,20 @@
 results {
 	display: block;
 	width: 100%;
-}
 
-results .chant-voice {
-	margin-bottom: var(--tight-space);
+	.chant-voice {
+		margin-bottom: var(--tight-space);
+	}
+
 }
 
 form-box {
 	display: grid;
 	column-gap: var(--simple-big-space);
 
+	field {
+		margin-bottom: var(--general-space);
+	}
 }
 
 label {
@@ -22,29 +26,27 @@ label {
 	font-size: clamp(1.1rem, 2vw, 1.3rem);
 }
 
-form-box field {
-	margin-bottom: var(--general-space);
-}
-
-
 @media(min-width: 600px) {
 	form-box {
 		grid-template-columns: repeat(4, 1fr);
-	}
 
-	form-box text-content {
-		grid-column: 1 /span 2;
-	}
+		text-content {
+			grid-column: 1 /span 2;
 
-	form-box form {
-		grid-column: 1 /span 2;
-	}
 
-	form-box .feedback {
-		grid-column: 3 / span 2;
-		grid-row: 1;
-		justify-self: center;
-		margin: 0;
-		text-align: center;
+		}
+
+		form {
+			grid-column: 1 /span 2;
+		}
+
+		.feedback {
+			grid-column: 3 / span 2;
+			grid-row: 1;
+			justify-self: center;
+			margin: 0;
+			text-align: center;
+		}
+
 	}
 }

@@ -1,6 +1,3 @@
-
-
-
 <?php
 
 
@@ -44,7 +41,7 @@ if (isset($_POST['submitted'])) {
 
     </field>
 
-    <button type="submit" name='submitted'>Calculate</button>
+    <button class='action-link' type="submit" name='submitted'>Calculate</button>
 
 
 </form>
@@ -53,6 +50,5 @@ if (isset($_POST['submitted'])) {
     <h3 class="chant-voice"> The Results</h3>
     <p> The ceiling of the room is: <?= $area ?></p>
     <p> You'll need: <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
-    
-</results>
 
+</results>

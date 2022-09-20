@@ -2,13 +2,12 @@ goal-block {
     width: 100%;
     display: grid;
     gap: var(--simple-space);
-}
 
-
-goal-block ul {
-    padding-left: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    list-style: square;
+    ul {
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        list-style: square;
+    }
 }

@@ -4,51 +4,54 @@ about-card {
 	color: var(--ink);
 	padding-top: var(--general-space);
 	padding-bottom: var(--general-space);
-}
 
-about-card p+a {
-	text-decoration: underline;
-	color: var(--highlight);
-	font-weight: 500;
+	p+a {
+		text-decoration: underline;
+		color: var(--highlight);
+		font-weight: 500;
+	}
+
+	.image-container {
+		padding-top: var(--tight-space);
+		position: relative;
+		max-width: 350px;
+		min-height: 400px;
+		margin: 0 auto;
+
+		img {
+			animation: FadeInOut;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-duration: 8s;
+			position: absolute;
+			left: 0;
+			object-fit: contain;
+		}
+
+		img:nth-of-type(1) {
+			animation-delay: 6s;
+		}
+
+		img:nth-of-type(2) {
+			animation-delay: 4s;
+		}
+
+		img:nth-of-type(3) {
+			animation-delay: 2s;
+		}
+
+		img:nth-of-type(4) {
+			animation-delay: 0;
+		}
+		
+	}
+	
 }
 
 p.about-content {
 	padding-bottom: var(--simple-space);
 }
 
-about-card .image-container {
-	padding-top: var(--tight-space);
-	position: relative;
-	max-width: 350px;
-	min-height: 400px;
-	margin: 0 auto;
-}
-
-.image-container img {
-	animation: FadeInOut;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-duration: 8s;
-	position: absolute;
-	left: 0;
-	object-fit: contain;
-}
-
-.image-container img:nth-of-type(1) {
-	animation-delay: 6s;
-}
-
-.image-container img:nth-of-type(2) {
-	animation-delay: 4s;
-}
-
-.image-container img:nth-of-type(3) {
-	animation-delay: 2s;
-}
-
-.image-container img:nth-of-type(4) {
-	animation-delay: 0;
-}
 
 .home .about-card {
 	background-color: var(--fade);
@@ -63,14 +66,16 @@ about-card .image-container {
 	aspect-ratio: 5 /6;
 	max-width: 350px;
 	margin: 0 auto;
+
+	img {
+		filter: brightness(80%);
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	
 }
 
-.about-image img {
-	filter: brightness(80%);
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
 
 .about-blog {
 	max-width: fit-content;
@@ -83,19 +88,19 @@ about-card .image-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		column-gap: var(--simple-big-space);
-	}
 
-	about-card text-content {
-		grid-column: 1 / span 2;
-
-	}
-
-	about-card .image-container {
-		grid-column: 3 /span 2;
-		align-self: center;
-		min-width: 350px;
-		padding-top: 0;
-
+		text-content {
+			grid-column: 1 / span 2;
+	
+		}
+			.image-container {
+				grid-column: 3 /span 2;
+				align-self: center;
+				min-width: 350px;
+				padding-top: 0;
+		
+			}
+		
 	}
 
 
