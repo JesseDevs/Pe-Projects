@@ -12,7 +12,7 @@
 
 	p {
 		font-weight: 500;
-	}	
+	}
 }
 
 label,
@@ -24,17 +24,6 @@ textarea {
 	font-size: clamp(1rem, 2vw, 1.2rem);
 	resize: none;
 	width: 100%;
-}
-
-.logo {
-	font-family: 'Manrope', sans-serif;
-	padding: var(--simple-space) var(--simple-small-space);
-	font-size: clamp(1.3rem, 2vw, 1.5rem);
-	line-height: 1;
-	font-weight: 800;
-	text-shadow: 0px 1px 1px var(--fade);
-	z-index: 100;
-	background-color: transparent;
 }
 
 .roar-voice {
@@ -68,7 +57,10 @@ textarea {
 	font-size: clamp(1.2rem, 3.5vw, 1.6rem);
 }
 
-.calm-voice, p, li, a {
+.calm-voice,
+p,
+li,
+a {
 
 	font-size: clamp(1rem, 2vw, 1.1rem);
 	line-height: 1.4;
@@ -79,7 +71,7 @@ small,
 	font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
-.tiny-voice{
+.tiny-voice {
 	font-size: clamp(0.8rem, 1.5vw, 14px);
 }
 

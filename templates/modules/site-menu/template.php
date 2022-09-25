@@ -1,14 +1,11 @@
 <header class='site-header'>
     <inner-column>
         <ul class='logo-container'>
-            <li>
-                <div class="svg-box">
-                    <?php include("templates/svg.php"); ?>
-                </div>
-
+            <li class="svg-box">
+                <?php include("templates/svg.php"); ?>
             </li>
             <li>
-                <a class='home-link' href="?page=home">
+                <a class='logo-link' href="?page=home">
                     <h1 class="logo">Jesse&nbsp;Devs</h1>
 
                 </a>

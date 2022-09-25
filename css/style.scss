@@ -12,6 +12,7 @@
 	flex-wrap: wrap;
 	gap: 5px;
 	color: var(--highlight);
+
 	p:after {
 		content: ',';
 	}
@@ -19,10 +20,10 @@
 	p:last-of-type:after {
 		content: '';
 	}
-	
+
 }
 
-.action-link{
+.action-link {
 	transition: all .4s;
 	letter-spacing: .1em;
 	font-weight: 600;
@@ -31,17 +32,22 @@
 	color: var(--ink);
 
 	text-align: center;
-    text-transform: uppercase;
+	text-transform: uppercase;
 	padding: var(--simple-space);
 }
 
-.action-link:hover{
+.action-link:hover {
 	background-color: var(--highlight);
 }
 
-#menu-toggle:checked ~ .menu a:hover{
+form .action-link {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+#menu-toggle:checked~.menu a:hover {
 	background-color: var(--accent);
-	
+
 }
 
 
