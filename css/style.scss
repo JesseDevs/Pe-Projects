@@ -28,21 +28,52 @@
 	letter-spacing: .1em;
 	font-weight: 600;
 	background-color: transparent;
-	border: 3px solid var(--highlight);
+	border: var(--thin) solid var(--highlight);
 	color: var(--ink);
 
 	text-align: center;
 	text-transform: uppercase;
-	padding: var(--simple-space);
+	padding: 15px var(--simple-space);
 }
 
 .action-link:hover {
 	background-color: var(--highlight);
 }
 
+project-card .action-link {
+
+	margin-top: var(--simple-space);
+
+	max-width: 50%;
+	margin-left: auto;
+}
+
+blog-card .action-link {
+
+	margin-top: var(--simple-space);
+	padding: 15px;
+
+	max-width: 50%;
+	margin-left: auto;
+}
+
+@media(min-width:600px) {
+
+	project-card .action-link,
+	blog-card .action-link {
+
+		grid-column: 4/ span 1;
+		max-width: none;
+		align-self: flex-end;
+		margin: 0;
+	}
+}
+
 form .action-link {
 	margin-left: auto;
 	margin-right: 0;
+
+	max-width: 50%;
 }
 
 #menu-toggle:checked~.menu a:hover {

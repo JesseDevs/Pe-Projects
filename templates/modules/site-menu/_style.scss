@@ -114,13 +114,6 @@ g g {
 	transition: color .3s ease-out, background-color .3s ease-out;
 }
 
-footer .active {
-	background-color: transparent;
-	border: 3px solid var(--highlight);
-
-}
-
-
 .main-menu .active:before {
 	content: '';
 	height: var(--thick);

@@ -16,17 +16,18 @@
 		ul li {
 			color: var(--white);
 		}
+	}
 
-		ul a {
-			padding: 10px 0;
-			font-size: clamp(0.8rem, 1.5vw, 14px);
+	a {
+		padding: 10px 0;
+		font-size: clamp(0.8rem, 1.5vw, 14px);
+		border: 2px solid transparent;
 
-			color: var(--white);
-		}
+		color: var(--white);
+	}
 
-		ul a:hover {
-			background-color: var(--highlight);
-		}
+	a:hover {
+		background-color: var(--highlight);
 	}
 }
 
@@ -56,6 +57,11 @@ footer {
 		width: 100%;
 		transform: translate(0, 460%);
 		position: absolute;
+	}
+
+	.active {
+		background-color: transparent;
+		border: 2px solid var(--highlight);
 	}
 
 }

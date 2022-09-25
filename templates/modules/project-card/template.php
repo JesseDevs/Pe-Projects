@@ -21,5 +21,5 @@ $projectDetailPageLink = $project['links'][0]['link']  ?? $project['direct-link'
 
 	<p class="project-detail"><?= $project['detail'] ?></p>
 
-	<a class="projects-action action-link" href="<?= $projectDetailPageLink ?>"><?= $project['links'][0]['title'] ?></a>
+	<a class=" action-link" href="<?= $projectDetailPageLink ?>"><?= $project['links'][0]['title'] ?></a>
 </project-card>

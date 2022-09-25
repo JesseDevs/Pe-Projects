@@ -32,18 +32,6 @@ project-card:last-of-type {
 
 }
 
-.projects-action {
-	padding: 15px var(--simple-space);
-	border: var(--thick) solid var(--highlight);
-	background-color: var(--highlight);
-	margin-top: var(--simple-space);
-	text-align: center;
-	color: var(--white);
-	text-transform: uppercase;
-	max-width: 50%;
-	margin-left: auto;
-}
-
 project-card .span-title {
 	font-size: 3rem;
 	font-weight: 600;
