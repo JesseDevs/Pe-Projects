@@ -4,7 +4,6 @@
         <nav>
 
             <ul class='page-links'>
-                <li><span><strong>pages</strong></span></li>
                 <li><a href="?page=home" class=" <?php activePage("home") ?>">Home</a></li>
                 <li><a href="?page=about" class=" <?php activePage("about") ?>">About</a></li>
                 <li><a href="?page=about#resume">Resume</a></li>
@@ -13,7 +12,6 @@
             </ul>
 
             <ul class='socials'>
-                <li><span><strong>Socials</strong></span></li>
                 <li><a href="https://github.com/JesseDevs">GitHub</a></li>
                 <li><a href="https://twitter.com/Jesse_Devs">Twitter</a></li>
                 <li><a href="https://www.linkedin.com/in/felix-jesser1223/">LinkedIn</a></li>
@@ -23,7 +21,7 @@
             </ul>
 
             <ul>
-                <li>© 2022 Portfolio from Jesse</li>
+                <li class='small-voice'>© 2022 Portfolio from Jesse</li>
             </ul>
 
         </nav>

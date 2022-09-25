@@ -113,7 +113,7 @@ button {
 	contact-form {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: var(--simple-space);
+		column-gap: var(--simple-big-space);
 		position: relative;
 
 		text-content {

@@ -4,17 +4,22 @@ project-card {
 	padding-bottom: var(--big-general-space);
 	background-color: transparent;
 	z-index: 10;
+
+	h3 {
+		padding-bottom: 15px;
+	}
+
+
+	text-content {
+		position: relative;
+		padding-bottom: var(--simple-small-space);
+	}
+
 }
 
-project-card h3 {
-	padding-bottom: 15px;
+project-card:last-of-type {
+	padding-bottom: 0;
 }
-
-project-card text-content {
-	position: relative;
-	padding-bottom: var(--simple-small-space);
-}
-
 
 .project-detail {
 	margin-top: var(--simple-space);
