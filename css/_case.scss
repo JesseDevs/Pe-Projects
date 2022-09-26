@@ -4,7 +4,6 @@
 @import '../templates/case/double-text/_style';
 
 .project-page>inner-column {
-    padding: var(--general-space) 0;
     margin: 0;
     max-width: none;
 }
@@ -13,37 +12,27 @@ diptech,
 double-image,
 double-text,
 goal-block {
-    min-height: 300px;
+
     picture {
         max-width: 500px;
         margin: 0 auto;
     }
 }
 
-.links inner-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--simple-space);
+.links {
 
-    a {
-        padding: var(--simple-space) var(--simple-big-space);
-        border: var(--thin) solid var(--highlight);
-        background-color: var(--highlight);
-        text-align: center;
-        color: var(--white);
-        text-transform: uppercase;
+    inner-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--simple-big-space);
+        max-width: 800px;
+        margin: 10px auto;
     }
 
-    a:first-of-type {
+    .action-link:first-of-type {
         display: none;
     }
-    
 }
-
-.project-page section:nth-of-type(even) {
-    background-color: var(--fade);
-}
-
 
 @media (min-width: 700px) {
 
@@ -55,7 +44,7 @@ goal-block {
         grid-template-columns: 1fr 1fr;
         gap: var(--simple-big-space);
         align-items: center;
-        
+
         picture {
             margin: 0;
             max-width: none;

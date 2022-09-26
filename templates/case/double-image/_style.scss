@@ -1,9 +1,13 @@
 double-image {
     display: grid;
     width: 100%;
-    gap: var(--simple-space);
+    gap: var(--simple-big-space);
 
     picture {
         margin-bottom: var(--simple-space);
     }
+}
+
+.project-page .double-image {
+    background-color: var(--fade);
 }

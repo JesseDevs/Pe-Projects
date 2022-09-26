@@ -48,17 +48,6 @@ footer {
 		position: relative;
 	}
 
-	.socials:before,
-	.page-links:before {
-		content: '';
-		height: 1px;
-		background-color: var(--gray);
-		bottom: 0;
-		width: 100%;
-		transform: translate(0, 460%);
-		position: absolute;
-	}
-
 	.active {
 		background-color: transparent;
 		border: 2px solid var(--highlight);

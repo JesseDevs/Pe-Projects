@@ -1,7 +1,8 @@
 goal-block {
     width: 100%;
     display: grid;
-    gap: var(--simple-space);
+    gap: var(--simple-big-space);
+
 
     ul {
         padding-left: 20px;
@@ -10,4 +11,8 @@ goal-block {
         gap: 10px;
         list-style: square;
     }
+}
+
+.project-page .goal-block {
+    background-color: var(--fade);
 }
