@@ -32,10 +32,11 @@ var hello = document.querySelector('.hello');
 
 function promptHello() {
     var name = prompt('What is your name?');
+    let message = '';
     if (name) {
-        var message = "Hello, " + capitalizeFirstLetter(name) + ". nice to meet you!"
+        message = "Hello, " + capitalizeFirstLetter(name) + ". nice to meet you!"
     } else if (name == '') {
-        var message = "Oh wait.. we're missing something.."
+        message = "Oh wait.. we're missing something.."
     }
 
     alert(message);
@@ -72,7 +73,7 @@ function promptQuote() {
     var quote = prompt('Enter your favorite quote.');
     var author = prompt('Enter who said this quote.')
 
-    var message = capitalizeFirstLetter(author) + ' said "' + quote + '"!';
+    let message = capitalizeFirstLetter(author) + ' said "' + quote + '"!';
 
     if (quote == '' & author == '') {
         message = "Someone must have said nothing once. Maybe."
@@ -100,7 +101,7 @@ function promptMadlib() {
     var adjective = prompt('Enter a adjective');
     var adverb = prompt('Enter a adverb');
 
-    var message = noun + ' is ' + verb + adverb + ' while maintaining ' + adjective + ' poise!';
+    let message = noun + ' is ' + verb + adverb + ' while maintaining ' + adjective + ' poise!';
 
     if (noun == '' & verb == '' & adjective == '' & adverb == '') {
         message = "We need to start over..."
@@ -128,8 +129,8 @@ function promptMath() {
     var numOne = prompt('Enter your first number.');
     var numTwo = prompt('Enter your second number.');
 
-    var numOne = parseInt(numOne);
-    var numTwo = parseInt(numTwo);
+    numOne = parseInt(numOne);
+    numTwo = parseInt(numTwo);
 
     var multiply = numOne * numTwo;
     var divide = numOne / numTwo;
