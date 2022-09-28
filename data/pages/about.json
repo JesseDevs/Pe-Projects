@@ -13,7 +13,7 @@
     {
       "module": "big-heading",
       "heading": "About Me",
-      "intro": "Software Engineer<br>Web Developer",
+      "intro": "Front End<br>Web Developer",
       "details": ""
     },
     {
@@ -33,16 +33,16 @@
       ]
     },
     {
+      "module": "resume-section",
+      "heading": "Resume",
+      "intro": "My history..."
+    },
+    {
       "module": "goals-section",
       "heading": "Goals",
       "intro": "My plans...",
       "lead": "By the end of the...",
       "goals": ""
-    },
-    {
-      "module": "resume-section",
-      "heading": "Resume",
-      "intro": "My history..."
     }
   ]
 }
