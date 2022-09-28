@@ -9,8 +9,6 @@ $goalsData = json_decode($goals, true);
 $json = file_get_contents('data/form.json');
 $formData = json_decode($json, true);
 
-$projectsData = getProjectFile();
-
 ?>
 
 <main class="page-content <?= $page ?>">

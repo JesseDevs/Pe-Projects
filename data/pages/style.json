@@ -47,7 +47,10 @@
                 "It loops through it all."
             ],
             "images": [
-                "https://peprojects.dev/images/square.jpg"
+                "https://peprojects.dev/images/square.jpg",
+                "https://peprojects.dev/images/landscape.jpg",
+                "https://peprojects.dev/images/square.jpg",
+                "https://peprojects.dev/images/landscape.jpg"
             ]
         },
         {
@@ -124,13 +127,6 @@
                     "link": "https://www.youtube.com/results?search_query=evo+moment+37"
                 }
             ]
-        },
-        {
-            "module": "small-grid",
-            "heading": "Other projects",
-            "intro": "Projects to display when on a dedicated project page.",
-            "details": "",
-            "image": ""
         },
         {
             "module": "contact-form",

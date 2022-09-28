@@ -48,7 +48,7 @@
                 "module": "diptech",
                 "title": "Now What?",
                 "flipped": true,
-                "image": "images/projects/fighters/fighter-landing.jpg",
+                "image": "https://peprojects.dev/images/landscape.jpg",
                 "text": "Another text block paired with an image. This version of the module is flipped."
             },
             {

@@ -12,6 +12,8 @@ if (isset($_GET['page'])) {
 if ($page == 'home') {
     $json = file_get_contents('data/pages/home.json');
     $pageData = json_decode($json, true);
+
+    $projectsData = getProjectFile();
 }
 
 if ($page == 'about') {
@@ -65,11 +67,23 @@ if ($page == 'form') {
 
 
 if ($page == 'style') {
-    $json = file_get_contents('data/pages/style-guide.json');
+    $json = file_get_contents('data/pages/style.json');
     $pageData = json_decode($json, true);
 
-    $json = file_get_contents('data/filler-projects.json');
-    $projectsData = json_decode($json, true);
+
+    $resume = file_get_contents('data/filler-resume.json');
+    $resumeData = json_decode($resume, true);
+
+    $goals = file_get_contents('data/filler-goals.json');
+    $goalsData = json_decode($goals, true);
+
+    $json = file_get_contents('data/form.json');
+    $formData = json_decode($json, true);
+
+    $projects = file_get_contents('data/filler-projects.json');
+    $projectsData = json_decode($projects, true);
+
+    $projectData = $projectsData[0];
 }
 
 

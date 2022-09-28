@@ -1,8 +1,13 @@
+.contact-form {
+	overflow-x: hidden;
+}
+
 contact-form {
 	display: block;
 	width: 100%;
 	padding-top: var(--general-space);
 	padding-bottom: var(--general-space);
+
 
 	form {
 		max-width: 450px;
@@ -94,7 +99,8 @@ button {
 .fade {
 	display: none;
 	grid-column: 3/ span 2;
-	scale: .9;
+	scale: 1.1;
+
 
 }
 
