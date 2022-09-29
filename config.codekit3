@@ -3706,6 +3706,52 @@
       "oAP" : "\/projects\/fighters-crud\/templates\/modules\/fighter-card\/template.php",
       "oF" : 0
     },
+    "\/projects\/fighters-crud\/templates\/modules\/general-diptech\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/fighters-crud\/templates\/modules\/general-diptech\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/fighters-crud\/templates\/modules\/general-diptech\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/templates\/modules\/general-diptech\/template.php",
+      "oF" : 0
+    },
+    "\/projects\/fighters-crud\/templates\/modules\/info-block\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/fighters-crud\/templates\/modules\/info-block\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/fighters-crud\/templates\/modules\/info-block\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/templates\/modules\/info-block\/template.php",
+      "oF" : 0
+    },
     "\/projects\/fighters-crud\/templates\/modules\/playstyle-card\/_style.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3773,29 +3819,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/fighters-crud\/templates\/modules\/site-menu\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/fighters-crud\/templates\/modules\/specials\/_style.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/fighters-crud\/templates\/modules\/specials\/_style.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/projects\/fighters-crud\/templates\/modules\/specials\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/fighters-crud\/templates\/modules\/specials\/template.php",
       "oF" : 0
     },
     "\/projects\/fighters-crud\/templates\/pages\/create\/_style.scss" : {
@@ -45005,7 +45028,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 115303,
+      "iS" : 37319,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",

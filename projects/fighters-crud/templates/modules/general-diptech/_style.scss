@@ -1,0 +1,54 @@
+general-diptech {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .portrait {
+        box-shadow: 0 0 0 3px var(--main-color);
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.809);
+
+        img {
+            max-height: 500px;
+        }
+    }
+
+    .audio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .costumes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-gap: 15px 10px;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 500px;
+
+        picture {
+            max-width: 180px;
+            box-shadow: 0 0 0 3px var(--accent-color);
+            background-color: rgba(255, 255, 255, 0.809);
+        }
+
+    }
+
+
+}
+
+@media only screen and (min-width:500px) {
+    audio {
+        height: 50px;
+        width: 280px;
+        border-radius: 50px;
+        border: 2px solid var(--main-color);
+        font-family: arial;
+        color: white;
+        font-size: 0.75em;
+        overflow: hidden;
+    }
+
+}

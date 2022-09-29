@@ -1,0 +1,224 @@
+info-block {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+            max-width: 65ch;
+            padding-left: 1rem;
+            border-left: 3px solid var(--main-color);
+        }
+
+        p:last-of-type {
+            padding-left: 0;
+            border-left: 3px solid transparent;
+        }
+    }
+
+}
+
+
+div.specials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    picture {
+        max-width: fit-content;
+        max-height: fit-content;
+        margin: 0 auto;
+    }
+
+    img {
+        max-height: 100px;
+        min-height: 80px;
+        max-width: 100%;
+
+        display: block;
+        margin: 0 auto;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+
+        border: 3px solid var(--main-color);
+        padding-bottom: 5px;
+        min-height: 150px;
+        max-height: 150px;
+        width: 100%;
+
+        a {
+            width: 100%;
+            height: 100%;
+        }
+
+        h3 {
+            background-color: var(--darkshade);
+            color: var(--white);
+            padding: 1vh 6px;
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+}
+
+@media(min-width:500px) {
+    div.specials {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+
+        article {
+            justify-content: space-between;
+        }
+    }
+
+}
+
+
+ally-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .relation {
+        text-align: center;
+        background-color: var(--shado);
+        border: 5px solid var(--darkshade);
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        color: var(--black);
+        justify-content: space-between;
+        transition: color .6s ease-out;
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        picture {
+            max-width: 200px;
+            margin: 0;
+            position: relative;
+            transition: all .5s ease-out;
+            flex-shrink: 2;
+
+            img {
+                margin: 0;
+            }
+
+        }
+
+        .container {
+            margin-right: 12%;
+        }
+
+    }
+
+    .enemy {
+        cursor: crosshair;
+    }
+
+    .friend {
+        cursor: alias;
+    }
+
+    .friend:hover {
+        border-color: var(--main-color);
+        background-color: rgb(91, 147, 193);
+        color: var(--white);
+    }
+
+    .friend picture::before {
+        content: '';
+        opacity: 0;
+        width: 80%;
+        height: 90%;
+        background-color: transparent;
+        border: 10px solid var(--accent-color);
+        outline: 1px solid var(--white);
+        box-shadow: 0px 0px 5px #fff;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-55%, 5%);
+        transition: all .5s ease-out;
+    }
+
+    .friend picture {
+        position: relative;
+        mix-blend-mode: multiply;
+    }
+
+    .friend:hover picture::before {
+        opacity: 100%;
+    }
+
+    .enemy picture:before,
+    .enemy picture:after {
+
+        opacity: 0;
+        width: 10px;
+        height: 106%;
+        background-color: black;
+        content: '';
+        outline: 1px solid var(--white);
+
+        position: absolute;
+        transition: all .5s ease-out;
+
+    }
+
+    .enemy picture:before {
+        bottom: -5px;
+        left: 0;
+    }
+
+    .enemy picture:after {
+        bottom: -5px;
+        right: 0;
+    }
+
+
+
+    .enemy:hover {
+        border-color: var(--error);
+        color: var(--white);
+    }
+
+
+    .enemy:hover picture:before {
+        opacity: 100%;
+
+        transform: translate(900%) rotate(45deg);
+        border-radius: 20px;
+    }
+
+    .enemy:hover picture:after {
+
+        opacity: 100%;
+        transform: translate(-900%) rotate(-45deg);
+        border-radius: 20px;
+    }
+
+    .enemy:hover picture {
+        mix-blend-mode: multiply;
+    }
+
+    .enemy:hover {
+        background-color: var(--errorBG);
+    }
+}
