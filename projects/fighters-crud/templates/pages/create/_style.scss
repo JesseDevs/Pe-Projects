@@ -1,37 +1,35 @@
-.form h1 {
+.create h1 {
 	text-align: center;
 	padding: 4vh 1rem;
 	background-color: var(--accent-color);
 	color: var(--white);
 }
 
-.form inner-column {
+.create-page inner-column {
 	padding-top: 3vh;
 }
 
-/* 
-div.required{
-	display: flex;
-	flex-direction: column;
-} */
-form .error {
 
+form .error {
 	outline-color: var(--errorBG);
 	color: var(--errorBG);
 }
 
-span a {
-	display: inline;
-	text-decoration: underline;
-	padding-left: 2px;
-	padding-right: 2px;
-}
+span {
+	a {
+		display: inline;
+		text-decoration: underline;
+		padding-left: 2px;
+		padding-right: 2px;
 
-span a:hover {
-	background-color: var(--hover);
-	text-decoration: none;
-	color: white;
+		a:hover {
+			background-color: var(--hover);
+			text-decoration: none;
+			color: white;
 
+		}
+
+	}
 }
 
 .asterisk {
@@ -69,23 +67,23 @@ field {
 	margin-bottom: 30px;
 	border-radius: 3px;
 	width: 100%;
+
+	h4 {
+		color: var(--main-color);
+		background-color: var(--white);
+		max-width: fit-content;
+		font-weight: 700;
+		letter-spacing: .05em;
+		text-align: center;
+		margin-top: -10px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.2rem;
+		text-shadow: -1px 2px 5px rgb(0 0 0 /.2);
+	}
 }
 
-field h4 {
-	color: var(--main-color);
-	background-color: var(--white);
-	max-width: fit-content;
-	font-weight: 700;
-	letter-spacing: .05em;
-	text-align: center;
-	margin-top: -10px;
-	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 1.2rem;
-}
-
-field h4,
 label {
 	text-shadow: -1px 2px 5px rgb(0 0 0 /.2);
 }
@@ -114,7 +112,7 @@ label {
 	font-size: 1rem;
 	font-weight: 500;
 	letter-spacing: .05em;
-	font-family: 'Work sans', Helvetica, sans-serif;
+	font-family: 'Inter', Helvetica, sans-serif;
 }
 
 input[type="text"],
@@ -140,7 +138,7 @@ select {
 	padding-left: 10px;
 	color: var(--main-color);
 	background: var(--white);
-	font-family: 'Work sans', "Times New Roman", Times, serif;
+	font-family: 'Inter', "Times New Roman", Times, serif;
 }
 
 input[type="text"],
@@ -175,7 +173,7 @@ field>span {
 	width: 100%;
 	text-align: center;
 	color: #C0C0C0;
-	font-family: 'Work sans', Helvetica, sans-serif;
+	font-family: 'Inter', Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	border-bottom-left-radius: 1px;

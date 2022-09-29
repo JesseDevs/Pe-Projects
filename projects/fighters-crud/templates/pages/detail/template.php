@@ -26,7 +26,7 @@ $chosenFighter = getFighterById($requestedId);
 
             <?php include('templates/modules/info-block/template.php') ?>
 
-            <?php if ($chosenFighter['id'] > 8) { ?>
+            <?php if ($chosenFighter['id'] !== 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8) { ?>
 
                 <form method="POST" class='delete'>
 

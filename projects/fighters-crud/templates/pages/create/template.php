@@ -1,148 +1,5 @@
-<section class='form'>
-    <?php
-
-    //bring in data
-    $json = file_get_contents("data/playstyle.json");
-    $playstyleData = json_decode($json, true);
-    $playstyle = $playstyleData["playstyle"];
-
-    $fighters = json_decode(file_get_contents("data/originalFighters.json"), true);
-
-    $name = "";
-    $quote = "";
-    $job = "";
-    $style = "";
-    $description = '';
-    $enemyData = '';
-    $allyData = '';
-    $enemyId = [];
-    $allyId = [];
-
-
-    $nameError = false;
-    $quoteError = false;
-    $jobError = false;
-    $styleError = false;
-    $descriptionError = false;
-
-    $fileDestination = null;
-    $portrait = null;
-
-
-    if (isset($_POST["add"])) :
-
-        //name
-        if (isset($_POST["name"])) {
-            $name = $_POST["name"];
-
-            if (strlen($name) > 0) {
-                $name = htmlspecialchars($_POST["name"]);
-            } else {
-                $nameError = "No name. No battle, bud.";
-            }
-        }
-
-        //quote
-        if (isset($_POST["quote"])) {
-            $quote = $_POST['quote'];
-
-            if (strlen($quote) > 0) {
-                $quote = htmlspecialchars($_POST["quote"]);
-            } else {
-                $quoteError = "Needs a cool phrase to yell..";
-            }
-        }
-
-        //style
-        if (isset($_POST["style"])) {
-            $style = $_POST['style'];
-
-            if (strlen($style) > 0) {
-                $style = htmlspecialchars($_POST["style"]);
-            } else {
-                $styleError = "You need a style to evolve beyond it.";
-            }
-        }
-
-        //job
-        if (isset($_POST["job"])) {
-            $job = $_POST['job'];
-
-            if (strlen($job) > 0) {
-                $job = htmlspecialchars($_POST["job"]);
-            } else {
-                $jobError = "Fighting don't pay the bills..";
-            }
-        }
-
-        //description
-        if (isset($_POST["description"])) {
-            $description = $_POST["description"];
-
-            if (strlen($description) > 0) {
-                $description = htmlspecialchars($_POST["description"]);
-            } else {
-                $descriptionError = "Needs an inspirational story..";
-            }
-        }
-
-        //enemy
-        if (isset($_POST["enemy"])) {
-            $enemyData = $_POST["enemy"];
-
-
-            $enemyInfo = explode(" -- ", $enemyData);
-
-            $enemyId = intval($enemyInfo);
-        }
-
-        //ally
-        if (isset($_POST["ally"])) {
-            $allyData = $_POST["ally"];
-
-            $allyInfo = explode(" -- ", $allyData);
-
-            $allyId = array_push($allyId, intval($allyInfo[0]));
-        }
-
-        if ($_FILES['portrait']['size'] > 0) {
-            $portrait_filepath = "images/uploads/" . $_FILES['portrait']['name'];
-            move_uploaded_file($_FILES['portrait']['tmp_name'], $portrait_filepath);
-            $portrait = $portrait_filepath;
-            $hasportrait = true;
-        } else {
-            $portraitError = "Please upload the book's cover";
-        }
-
-
-
-
-    endif;
-
-    if (isset($_POST["add"])) {
-        $input = [
-
-            // 'id'=> uniqid("a");
-            'id' => rand(9, 1000),
-            'name' => $name,
-            'quote' => $quote,
-            'occupation' => $job,
-            'playstyle' => $style,
-            'description' => $description,
-            'enemy' => [$enemyId],
-            'ally' => [$allyId],
-            'portrait' => $portrait
-
-        ];
-
-        array_push($fighters, $input);
-
-        $newFighters = json_encode($fighters);
-        file_put_contents('data/fighter.json', $newFighters);
-
-        header("Location: index.php?page=list", TRUE, 301);
-    }
-    ?>
+<section class='create-page'>
+    <?php require('functions/form-backend.php') ?>
 
     <h1 class="loud-voice">CREATE A FIGHTER</h1>
 
@@ -203,30 +60,7 @@
                 <?php } ?>
 
             </field>
-            <field class="required">
-                <field>
-                    <select name="enemy">
-                        <option disabled selected>Select Your Enemy?</option>
-                        <?php foreach ($fighters as $fighter) { ?>
-                            <option value="<?= $enemyId ?>">
-                                <?= $fighter['id'] ?> -- <?= $fighter['name'] ?>
-                            </option>
-                        <?php } ?>
-                    </select>
-                    <span>Do you have any Enemies?</span>
-                </field>
-                <field>
-                    <select name="ally">
-                        <option disabled selected>Select Your Ally?</option>
-                        <?php foreach ($fighters as $fighter) { ?>
-                            <option value="<?= $allyId ?>">
-                                <?= $fighter['id'] ?> -- <?= $fighter['name'] ?>
-                            </option>
-                        <?php } ?>
-                    </select>
-                    <span>Who stands on your side?</span>
-                </field>
-            </field>
+
             <field class="form-images">
                 <field>
                     <label>Portrait</label>
@@ -234,69 +68,14 @@
                     <span>Your main image.</span>
                 </field>
             </field>
-                <!-- <field>
-                    <label>Alternate Costumes</label>
-                    <input type="file" name="costumes" accept="image/*" multiple>
-                    <span>Other images? Costumes?</span>
-                </field>
-            </field>
-            <field>
-                <label>Audio</label>
-                <input type="file" name="audio" accept="audio/*">
-                <span>Audio quote.</span>
-            </field>
 
-            <field class="specials">
+            <button type="submit" name='add'>
+                Create
+            </button>
 
-                <h4>Special Move One</h4>
-                <field>
-                    <label>Name Of The Move</label>
-                    <input type="text" name='specials[0][0]' maxlength='20'>
-                </field>
+        </form>
 
-                <field>
-                    <label>Image Of The Move</label>
-                    <input type="file" name="specials[0][1]" accept="image/*">
-                </field>
-                <span>What's your first special move?</span>
-            </field>
-
-            <field class="specials">
-                <h4>Special Move Two</h4>
-                <field>
-                    <label>Name Of The Move</label>
-                    <input type="text" name='specials[1][0]' maxlength='20'>
-                </field>
-
-                <field>
-                    <label>Image Of The Move</label>
-                    <input type="file" name="specials[1][1]" accept="image/*">
-                </field>
-                <span>Got a second one?</span>
-            </field>
-
-            <field class="specials">
-                <h4>Special Move Three</h4>
-                <field>
-                    <label>Name Of The Move</label>
-                    <input type="text" name='specials[2][0]' maxlength='20'>
-                </field>
-
-                <field>
-                    <label>Image Of The Move</label>
-                    <input type="file" name="specials[3][0]" accept="image/*">
-                </field>
-                <span>How about a third?</span>
-            </field>
-        -->
-
-        <button type="submit" name='add'>
-            Create
-        </button>
-
-    </form>
-
-</inner-column>
+    </inner-column>
 </section>
 
 <script>

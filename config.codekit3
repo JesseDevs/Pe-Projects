@@ -2764,6 +2764,14 @@
       "oAP" : "\/projects\/fighters-crud\/functions\/database.php",
       "oF" : 0
     },
+    "\/projects\/fighters-crud\/functions\/form-backend.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/functions\/form-backend.php",
+      "oF" : 0
+    },
     "\/projects\/fighters-crud\/functions\/routing.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3538,6 +3546,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/fighters-crud\/images\/streetfighter-metadata.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/fighters-crud\/images\/uploads\/Rika.jpeg" : {
+      "ft" : 16384,
+      "iS" : 178474,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/uploads\/Rika.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -45028,7 +45049,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 37319,
+      "iS" : 115303,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",
