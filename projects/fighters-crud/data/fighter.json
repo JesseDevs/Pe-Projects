@@ -278,5 +278,32 @@
                 "image": ".\/images\/dha\/kick.gif"
             }
         ]
+    },
+    {
+        "id": 132,
+        "name": "dds",
+        "quote": "dsds",
+        "occupation": "",
+        "playstyle": "Shoto",
+        "description": "",
+        "portrait": null
+    },
+    {
+        "id": 109,
+        "name": "dad",
+        "quote": "dada",
+        "occupation": "",
+        "playstyle": "Shoto",
+        "description": "",
+        "portrait": null
+    },
+    {
+        "id": 756,
+        "name": "fafa",
+        "quote": "fafa",
+        "occupation": "",
+        "playstyle": "Shoto",
+        "description": "",
+        "portrait": null
     }
 ]

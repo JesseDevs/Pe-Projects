@@ -1,13 +1,14 @@
 <info-block>
-
-    <text-content>
-        <p><strong>Playstyle:</strong>&nbsp;<?= $chosenFighter['playstyle'] ?> </p>
-        <p><strong>Occupation:</strong>&nbsp; <?= $chosenFighter['occupation'] ?>
-        </p>
-
-        <p><?= $chosenFighter['description'] ?></p>
-    </text-content>
-
+    <div class='costumes'>
+        <?php
+        if (isset($chosenFighter['costumes'])) {
+            foreach ($chosenFighter['costumes'] as $costumes) { ?>
+                <picture>
+                    <img src="<?= $costumes ?>" alt=''>
+                </picture>
+        <?php }
+        } ?>
+    </div>
 
     <div class='specials'>
         <?php
@@ -29,11 +30,12 @@
 
 
 
+    <?php if (isset($chosenFighter['ally']) || isset($chosenFighter['enemy'])) { ?>
+        <ally-container>
 
-    <ally-container>
-
-        <?php displayEnemies($chosenFighter); ?>
-        <?php displayFriends($chosenFighter); ?>
-    </ally-container>
+            <?php displayEnemies($chosenFighter); ?>
+            <?php displayFriends($chosenFighter); ?>
+        </ally-container>
+    <?php } ?>
 
 </info-block>

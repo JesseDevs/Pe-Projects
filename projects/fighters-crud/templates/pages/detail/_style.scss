@@ -35,17 +35,16 @@ fighter-page {
 }
 
 
-.delete {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
+.data-buttons {
+    display: block;
+    gap: 30px;
 }
 
 @media (min-width: 850px) {
     fighter-page {
         flex-direction: row;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 30px;
 
         .container {

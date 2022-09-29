@@ -5,23 +5,34 @@ info-block {
     flex-direction: column;
     gap: 20px;
 
-    text-content {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    .costumes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-gap: 15px 10px;
+        align-items: center;
+        max-width: 500px;
 
-        p {
-            max-width: 65ch;
-            padding-left: 1rem;
-            border-left: 3px solid var(--main-color);
+        picture {
+            max-width: 180px;
+            box-shadow: 0 0 0 3px var(--accent-color);
+            background-color: rgba(255, 255, 255, 0.809);
         }
 
-        p:last-of-type {
-            padding-left: 0;
-            border-left: 3px solid transparent;
-        }
     }
 
+    @media(min-width: 800px) {
+        .costumes {
+            gap: 20px;
+            max-width: none;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+
+            picture {
+                max-width: 250px;
+            }
+        }
+
+
+    }
 }
 
 

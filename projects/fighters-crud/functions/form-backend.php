@@ -88,8 +88,7 @@ if (isset($_POST["add"])) :
         $portraitError = "No image??";
     }
 
-    if (!empty($name) && !empty($quote) && !empty($occupation) && !empty($playstyle) && !empty($description)) {
-        $chapters = $_POST["chapters"];
+    if ($name && $quote) {
 
         $newFighter = [
             'id' => rand(9, 1000),
@@ -102,10 +101,8 @@ if (isset($_POST["add"])) :
         ];
 
         addFighter($newFighter);
-
-        //redirect page to homepage to prevent resubmition.
-        header('Location: ?page=list');
     }
 
+    header('Location: ?page=list');
 
 endif;

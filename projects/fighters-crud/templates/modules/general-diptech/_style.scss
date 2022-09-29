@@ -4,6 +4,24 @@ general-diptech {
     flex-direction: column;
     gap: 20px;
 
+
+    text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+            max-width: 65ch;
+            padding-left: 1rem;
+            border-left: 3px solid var(--main-color);
+        }
+
+        p:last-of-type {
+            padding-left: 0;
+            border-left: 3px solid transparent;
+        }
+    }
+
     .portrait {
         box-shadow: 0 0 0 3px var(--main-color);
         max-width: 600px;
@@ -18,22 +36,6 @@ general-diptech {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .costumes {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        grid-gap: 15px 10px;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 500px;
-
-        picture {
-            max-width: 180px;
-            box-shadow: 0 0 0 3px var(--accent-color);
-            background-color: rgba(255, 255, 255, 0.809);
-        }
-
     }
 
 

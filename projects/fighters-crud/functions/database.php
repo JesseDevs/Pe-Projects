@@ -57,7 +57,7 @@ function addFighter($addition)
 
 function deletefighter($item)
 {
-    //get the associative array
+
     $fighters = getFighters();
     $filtered = [];
     //remove the $id from the array.
@@ -66,7 +66,6 @@ function deletefighter($item)
             array_push($filtered, $fighter);
         }
     }
-
 
     //turn the associative array back into json.
     encodeFighters($filtered);
@@ -91,5 +90,4 @@ function editManga($idToEdit, $editedFighter)
     array_push($filtered, $editedFighter);
 
     encodeFighters($filtered);
-    header('https://peprojects.dev/alpha-4/jesse/projects/manga/?page=list');
 }

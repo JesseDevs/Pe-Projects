@@ -1,6 +1,5 @@
+<?php require('functions/form-backend.php') ?>
 <section class='create-page'>
-    <?php require('functions/form-backend.php') ?>
-
     <h1 class="loud-voice">CREATE A FIGHTER</h1>
 
     <inner-column>

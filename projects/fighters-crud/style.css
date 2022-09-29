@@ -864,6 +864,20 @@ general-diptech {
   flex-direction: column;
   gap: 20px;
 }
+general-diptech text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+general-diptech text-content p {
+  max-width: 65ch;
+  padding-left: 1rem;
+  border-left: 3px solid var(--main-color);
+}
+general-diptech text-content p:last-of-type {
+  padding-left: 0;
+  border-left: 3px solid transparent;
+}
 general-diptech .portrait {
   box-shadow: 0 0 0 3px var(--main-color);
   max-width: 600px;
@@ -876,19 +890,6 @@ general-diptech .audio-container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-general-diptech .costumes {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 15px 10px;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 500px;
-}
-general-diptech .costumes picture {
-  max-width: 180px;
-  box-shadow: 0 0 0 3px var(--accent-color);
-  background-color: rgba(255, 255, 255, 0.809);
 }
 
 @media only screen and (min-width: 500px) {
@@ -909,19 +910,27 @@ info-block {
   flex-direction: column;
   gap: 20px;
 }
-info-block text-content {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+info-block .costumes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 15px 10px;
+  align-items: center;
+  max-width: 500px;
 }
-info-block text-content p {
-  max-width: 65ch;
-  padding-left: 1rem;
-  border-left: 3px solid var(--main-color);
+info-block .costumes picture {
+  max-width: 180px;
+  box-shadow: 0 0 0 3px var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.809);
 }
-info-block text-content p:last-of-type {
-  padding-left: 0;
-  border-left: 3px solid transparent;
+@media (min-width: 800px) {
+  info-block .costumes {
+    gap: 20px;
+    max-width: none;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  info-block .costumes picture {
+    max-width: 250px;
+  }
 }
 
 div.specials {
@@ -1396,17 +1405,16 @@ fighter-page h2 {
   text-align: center;
 }
 
-.delete {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
+.data-buttons {
+  display: block;
+  gap: 30px;
 }
 
 @media (min-width: 850px) {
   fighter-page {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px;
   }
   fighter-page .container {

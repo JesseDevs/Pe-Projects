@@ -24,14 +24,18 @@ $chosenFighter = getFighterById($requestedId);
 
             <?php include('templates/modules/general-diptech/template.php') ?>
 
-            <?php include('templates/modules/info-block/template.php') ?>
+            <?php if ($chosenFighter['id'] < 8) {
+                include('templates/modules/info-block/template.php');
+            } ?>
 
-            <?php if ($chosenFighter['id'] !== 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8) { ?>
+            <?php if ($chosenFighter['id'] > 8) { ?>
+                <div class="data-buttons">
 
-                <form method="POST" class='delete'>
+                    <a class=" button delete" href="?page=delete&id=<?= $chosenFighter['id'] ?>"><span>Delete</span></a>
 
-                    <button type="submit" name='delete'>Delete</button>
-                </form>
+                    <a class=" button edit" href="?page=edit&id=<?= $chosenFighter['id'] ?>"><span>Edit</span></a>
+                </div>
+
             <?php } ?>
 
         </fighter-page>

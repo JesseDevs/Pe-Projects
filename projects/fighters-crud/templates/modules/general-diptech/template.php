@@ -3,26 +3,27 @@
     <picture class='portrait'>
         <img src="<?= $chosenFighter['portrait'] ?>" alt="SFV:<?= $chosenFighter['name'] ?> ">
     </picture>
-    <div class='costumes'>
-        <?php
-        if (isset($chosenFighter['costumes'])) {
-            foreach ($chosenFighter['costumes'] as $costumes) { ?>
-                <picture>
-                    <img src="<?= $costumes ?>" alt=''>
-                </picture>
-        <?php }
-        } ?>
-    </div>
+
+    <text-content>
+        <p><strong>Playstyle:</strong>&nbsp;<?= $chosenFighter['playstyle'] ?> </p>
+        <p><strong>Occupation:</strong>&nbsp; <?= $chosenFighter['occupation'] ?>
+        </p>
+
+        <p><?= $chosenFighter['description'] ?></p>
+    </text-content>
 
     <em class='calm-voice'><?= $chosenFighter['quote'] ?></em>
 
-    <div class="audio-container">
 
-        <audio controls>
-            <source src="<?= $chosenFighter['audio'] ?>" type='audio/wav'>
-            </source>
-        </audio>
-    </div>
+    <?php if (isset($chosenFighter['audio'])) { ?>
+        <div class="audio-container">
+
+            <audio controls>
+                <source src="<?= $chosenFighter['audio'] ?>" type='audio/wav'>
+                </source>
+            </audio>
+        </div>
+    <?php } ?>
 
 
 </general-diptech>
