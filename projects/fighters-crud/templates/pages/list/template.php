@@ -34,7 +34,9 @@ if (isset($_GET['playstyle'])) {
         <ul class='fighters-list'>
             <?php foreach ($fighters as $fighter) { ?>
                 <li class='fighter <?= isSelected($playstyle, $fighter['playstyle']) ?>'>
+
                     <?php include('templates/modules/fighter-card/template.php') ?>
+
                 </li>
             <?php } ?>
         </ul>

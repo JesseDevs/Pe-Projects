@@ -1,45 +1,46 @@
-.specials-page{
+.specials-page {
     pointer-events: none;
 }
 
 
-.detail-header{
+.detail-header {
     background-color: var(--accent-color);
     padding: 20px 1rem;
     text-align: center;
     color: var(--white);
 }
 
-.detail-header inner-column{
+.detail-header inner-column {
     padding: 0;
 }
 
-.fighter-detail{
+.fighter-detail {
     position: relative;
     z-index: 0;
 }
 
-.fighter-detail inner-column{
+.fighter-detail inner-column {
     padding-top: 3vh;
 }
 
-audio{
+audio {
+    margin: auto;
     margin-bottom: 20px;
 }
 
-fighter-page{
+fighter-page {
     display: flex;
     flex-direction: column;
 }
 
-fighter-page .portrait{
+fighter-page .portrait {
     box-shadow: 0 0 0 3px var(--main-color);
     margin-bottom: 2vh;
     max-width: 600px;
     background-color: rgba(255, 255, 255, 0.809);
 }
 
-fighter-page .portrait img{
+fighter-page .portrait img {
     max-height: 500px;
 }
 
@@ -48,35 +49,35 @@ fighter-page text-content {
     flex-direction: column;
 }
 
-fighter-page em{
+fighter-page em {
     display: block;
     margin-bottom: 10px;
     text-align: center;
 }
 
 fighter-page text-content p,
-fighter-page text-content div{
+fighter-page text-content div {
     margin: 10px 0;
     max-width: 65ch;
     padding-left: 1rem;
-    border-left: 3px solid var(--main-color); 
+    border-left: 3px solid var(--main-color);
 }
 
-text-content div p{
+text-content div p {
     padding: 0;
-    border:none;
+    border: none;
     margin: 0 0;
 
 }
 
-fighter-page h2{
+fighter-page h2 {
     text-align: center;
 }
 
-.costumes{
+.costumes {
     display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-	grid-gap: 15px 10px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 15px 10px;
     justify-content: space-between;
     align-items: center;
     max-width: 500px;
@@ -84,13 +85,13 @@ fighter-page h2{
     margin-bottom: 20px;
 }
 
-.costumes picture{
+.costumes picture {
     max-width: 180px;
     box-shadow: 0 0 0 3px var(--accent-color);
     background-color: rgba(255, 255, 255, 0.809);
 }
 
-article-grid.specials{
+article-grid.specials {
     display: flex;
     flex-direction: column;
 
@@ -98,13 +99,13 @@ article-grid.specials{
     gap: 10px;
 }
 
-.specials picture{
+.specials picture {
     max-width: fit-content;
     max-height: fit-content;
     margin: 0 auto;
 }
 
-.specials picture img{
+.specials picture img {
     max-height: 100px;
     min-height: 80px;
     max-width: 100%;
@@ -113,7 +114,7 @@ article-grid.specials{
     margin: 0 auto;
 }
 
-.specials article{
+.specials article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,12 +129,12 @@ article-grid.specials{
 
 }
 
-.specials article a{
+.specials article a {
     width: 100%;
     height: 100%;
 }
 
-.specials article h3{
+.specials article h3 {
     background-color: var(--darkshade);
     color: var(--white);
     padding: 1vh 6px;
@@ -141,19 +142,19 @@ article-grid.specials{
     text-align: center;
 }
 
- 
+
 /* ENEMY  \\ Ally */
-.relation *{
+.relation * {
     margin: 5px auto;
     padding: 0;
     border: none;
 }
 
-.relation h3{
+.relation h3 {
     text-transform: uppercase;
 }
 
-.relation{
+.relation {
     max-width: fit-content;
     text-align: center;
     margin-top: 10px;
@@ -170,32 +171,32 @@ article-grid.specials{
     transition: color .6s ease-out;
 }
 
-.relation picture{
+.relation picture {
     max-width: 200px;
     margin: 0;
     position: relative;
     transition: all .5s ease-out;
 }
 
-.relation picture img{
+.relation picture img {
     margin: 0;
 }
 
-.enemy{
-    cursor:crosshair;
+.enemy {
+    cursor: crosshair;
 }
 
-.friend{
+.friend {
     cursor: alias;
 }
 
-.friend:hover{
+.friend:hover {
     border-color: var(--main-color);
     background-color: rgb(91, 147, 193);
     color: var(--white);
 }
 
-.friend picture::before{
+.friend picture::before {
     content: '';
     opacity: 0;
     width: 80%;
@@ -215,17 +216,17 @@ article-grid.specials{
     mix-blend-mode: multiply;
 }
 
-.friend:hover picture::before{
+.friend:hover picture::before {
     opacity: 100%;
 }
 
 .enemy picture:before,
-.enemy picture:after{
+.enemy picture:after {
 
     opacity: 0;
     width: 10px;
     height: 106%;
-    background-color:black;
+    background-color: black;
     content: '';
     outline: 1px solid var(--white);
 
@@ -234,39 +235,39 @@ article-grid.specials{
 
 }
 
-.enemy picture:before{
+.enemy picture:before {
     bottom: -5px;
     left: 0;
 }
 
-.enemy picture:after{
+.enemy picture:after {
     bottom: -5px;
     right: 0;
 }
 
 
 
-.enemy:hover{
+.enemy:hover {
     border-color: var(--error);
     color: var(--white);
 }
 
 
-.enemy:hover picture:before{
+.enemy:hover picture:before {
     opacity: 100%;
 
     transform: translate(900%) rotate(45deg);
     border-radius: 20px;
 }
 
-.enemy:hover picture:after{
+.enemy:hover picture:after {
 
     opacity: 100%;
-    transform: translate(-900%) rotate(-45deg) ;
+    transform: translate(-900%) rotate(-45deg);
     border-radius: 20px;
 }
 
-.enemy:hover picture{
+.enemy:hover picture {
     mix-blend-mode: multiply;
 }
 
@@ -274,47 +275,47 @@ article-grid.specials{
     background-color: var(--errorBG);
 }
 
-.delete{
+.delete {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
 }
 
-@media(min-width:500px){
-    article-grid.specials{
+@media(min-width:500px) {
+    article-grid.specials {
         flex-direction: row;
         justify-content: center;
         gap: 10px;
     }
 
-    .specials article{
+    .specials article {
         justify-content: space-between;
     }
 
 
 }
 
-@media (min-width: 850px){
-    fighter-page{
+@media (min-width: 850px) {
+    fighter-page {
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
         gap: 30px;
     }
 
-    fighter-page .container{
+    fighter-page .container {
         position: sticky;
         top: 20px;
     }
 
-    article-grid.specials{
+    article-grid.specials {
         gap: 20px;
         justify-content: center;
     }
 }
 
-@media only screen and (min-width:500px){
-    audio{
+@media only screen and (min-width:500px) {
+    audio {
         height: 50px;
         width: 280px;
         border-radius: 50px;
@@ -324,7 +325,7 @@ article-grid.specials{
         font-size: 0.75em;
         overflow: hidden;
     }
-    
-    
-    
+
+
+
 }
