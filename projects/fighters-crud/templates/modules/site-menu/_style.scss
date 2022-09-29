@@ -1,0 +1,35 @@
+.site-header {
+    background-color: var(--main-color);
+    color: var(--white);
+
+    inner-column {
+        padding: 0;
+    }
+}
+
+
+.site-menu {
+    display: flex;
+
+}
+
+.site-menu {
+    a {
+        padding: 20px 5vw;
+    }
+
+    a.active {
+        background-color: var(--shadow);
+    }
+
+    a:hover {
+        background-color: var(--hover);
+    }
+
+}
+
+@media(min-width:400px) {
+    .site-menu a {
+        padding: 20px 3vw;
+    }
+}

@@ -21,13 +21,13 @@ $metaImage = null;
 
 <body class="<?= $page ?>">
 
-    <?php include('modules/site-menu/template.php'); ?>
+    <?php include('templates/modules/site-menu/template.php'); ?>
 
     <main class='page-content'>
-        <?php getTemplate($page); ?>
-    </main>
 
-    <?php include('modules/site-footer/template.php'); ?>
+        <?php getTemplate($page); ?>
+
+    </main>
 
 </body>
 

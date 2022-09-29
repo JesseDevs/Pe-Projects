@@ -4,7 +4,7 @@
 function getTemplate($page)
 {
     if (isset($page)) {
-        $template = 'modules/' . $page . '/template.php';
+        $template = 'templates/pages/' . $page . '/template.php';
     }
     include($template);
 }

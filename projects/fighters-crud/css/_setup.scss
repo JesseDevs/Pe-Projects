@@ -2,7 +2,9 @@ html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
@@ -28,7 +30,7 @@ inner-column {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	padding: var(--block-space) 1rem;
+	padding: var(--med-height) 1rem;
 	max-width: 1200px;
 }
 

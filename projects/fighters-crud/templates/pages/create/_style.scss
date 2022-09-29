@@ -1,0 +1,273 @@
+.form h1 {
+	text-align: center;
+	padding: 4vh 1rem;
+	background-color: var(--accent-color);
+	color: var(--white);
+}
+
+.form inner-column {
+	padding-top: 3vh;
+}
+
+/* 
+div.required{
+	display: flex;
+	flex-direction: column;
+} */
+form .error {
+
+	outline-color: var(--errorBG);
+	color: var(--errorBG);
+}
+
+span a {
+	display: inline;
+	text-decoration: underline;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+span a:hover {
+	background-color: var(--hover);
+	text-decoration: none;
+	color: white;
+
+}
+
+.asterisk {
+	color: red;
+	display: inline;
+}
+
+.form-images,
+.required {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-betwwen;
+	align-items: stretch;
+	gap: 10px;
+
+	margin-bottom: 0;
+
+	border: none;
+}
+
+
+form {
+	max-width: 900px;
+	margin: 3vh auto;
+	background: var(--white);
+	border-radius: 2px;
+	padding: 20px;
+	font-family: Work sans;
+}
+
+field {
+	display: block;
+	border: 2px solid var(--shadow);
+	margin-bottom: 30px;
+	border-radius: 3px;
+	width: 100%;
+}
+
+field h4 {
+	color: var(--main-color);
+	background-color: var(--white);
+	max-width: fit-content;
+	font-weight: 700;
+	letter-spacing: .05em;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2rem;
+}
+
+field h4,
+label {
+	text-shadow: -1px 2px 5px rgb(0 0 0 /.2);
+}
+
+.specials field {
+	max-width: 90% !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form>field:last-child {
+	border: none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+label {
+	display: block;
+	float: left;
+	margin-top: -10px;
+	margin-left: 10px;
+	background: var(--white);
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: var(--main-color);
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: .05em;
+	font-family: 'Work sans', Helvetica, sans-serif;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="datetime"],
+input[type="file"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="time"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+	width: 95%;
+	display: block;
+	outline: none;
+	margin: 15px auto;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding-left: 10px;
+	color: var(--main-color);
+	background: var(--white);
+	font-family: 'Work sans', "Times New Roman", Times, serif;
+}
+
+input[type="text"],
+textarea,
+select {
+	border-left: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="file"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+	border: 2px solid var(--hover);
+	color: var(--black);
+}
+
+field>span {
+	background: var(--black);
+	display: block;
+	padding: 5px;
+
+	outline: 2px solid var(--black);
+	width: 100%;
+	text-align: center;
+	color: #C0C0C0;
+	font-family: 'Work sans', Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+}
+
+textarea {
+	height: 50px;
+}
+
+button {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin: 0 auto;
+	display: block;
+
+}
+
+
+button[type="submit"] {
+
+	background: linear-gradient(to right, var(--hover), var(--hover));
+	background-color: var(--main-color);
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-position: left;
+	color: var(--white);
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	color: #D2E2FF;
+	outline: none;
+	font-size: 1.3rem;
+	transition: all .5s;
+	position: relative;
+	text-decoration: none;
+
+}
+
+button[type="submit"]::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	background: transparent;
+	border: 3px solid transparent;
+
+}
+
+button[type="submit"]:hover::before {
+	animation: animate .3s linear forwards;
+}
+
+button[type="submit"]:hover {
+	background-size: 100% 100%;
+	color: var(--white);
+}
+
+
+button[type="submit"]::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	background: transparent;
+	border: 3px solid transparent;
+
+	border-radius: 5px;
+}
+
+button[type="submit"]:hover::after {
+	animation: animates .3s linear forwards;
+}
+
+@media(min-width:600px) {
+
+	.form-images,
+	.required {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	.form-images field,
+	.required field {
+		margin-bottom: 0;
+		min-width: 48%;
+		max-width: 50%
+	}
+
+}

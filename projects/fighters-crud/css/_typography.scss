@@ -29,14 +29,11 @@ em {
 
 .yell-voice {
 	font-size: clamp(26px, 7vw, 56px);
-	text-transform: capitalize;
-	font-weight: 600;
+
 }
 
 .loud-voice {
 	font-size: clamp(22px, 7vw, 48px);
-	font-weight: 600;
-	text-transform: capitalize;
 }
 
 .strict-voice {
@@ -51,7 +48,9 @@ em {
 	font-size: clamp(18px, 3.5vw, 22px);
 }
 
-.calm-voice, p, li {
+.calm-voice,
+p,
+li {
 	font-size: clamp(16px, 2vw, 20px);
 	line-height: 1.4;
 }
