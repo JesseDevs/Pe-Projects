@@ -777,6 +777,27 @@ playstyle-card:hover p:before {
     min-height: 485px;
   }
 }
+fighter-card {
+  display: flex;
+  flex-direction: column;
+}
+fighter-card picture {
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+fighter-card h2 {
+  background-color: var(--shade);
+  padding: 1vh 0;
+}
+fighter-card a {
+  cursor: alias;
+}
+
+fighter-card:hover h2 {
+  background-color: var(--hover);
+}
+
 playstyle-grid {
   display: grid;
   width: 100%;
@@ -1433,59 +1454,55 @@ article-grid.specials {
     overflow: hidden;
   }
 }
-.list-intro {
+.playstyle-menu {
   background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 5vh 1rem;
   color: var(--white);
 }
-
-.list-intro nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 10px 5px;
-  max-width: 800px;
-  margin: 0 auto;
+.playstyle-menu nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  align-items: center;
+  gap: 20px;
+  max-width: 480px;
 }
-
-.list-intro h1 {
+.playstyle-menu nav a {
   text-align: center;
-  padding: 2vh 0;
-}
-
-nav div.dash {
-  padding-right: 0;
-}
-
-.list-intro nav * {
-  padding: 5px;
-}
-
-.list-intro nav a {
-  min-width: 40px;
   background-color: transparent;
-  box-shadow: inset 0 -2px 0 0 var(--white);
+  border-bottom: 2px solid var(--white);
   transition: box-shadow 0.2s;
   font-weight: 500;
 }
-
-.list-intro nav a.filter {
-  box-shadow: inset 0 -2px 0 0 var(--main-color);
-  color: var(--main-color);
-}
-
-.list-intro nav a:hover {
+.playstyle-menu nav a:hover {
   text-decoration: none;
   color: var(--white);
   background-color: var(--hover);
-  box-shadow: inset 0 -2px 0 0 transparent;
+  border-bottom: 2px solid transparent;
+}
+.playstyle-menu nav a.filter {
+  border-bottom: 2px solid transparent;
+  color: var(--main-color);
+}
+.playstyle-menu nav a:last-of-type {
+  grid-column: span 2;
+}
+.playstyle-menu h1 {
+  text-align: center;
 }
 
-fighter-card picture {
-  min-height: 180px;
-  background-size: cover;
-  background-position: center;
+@media (min-width: 492px) {
+  .playstyle-menu nav {
+    margin: auto;
+  }
+  .playstyle-menu nav a:last-of-type {
+    grid-column: span 4;
+  }
+}
+.list-grid inner-column {
+  max-width: 840px;
 }
 
 .fighters-list {
@@ -1494,7 +1511,6 @@ fighter-card picture {
   grid-gap: 20px 15px;
   text-align: center;
 }
-
 .fighters-list .fighter {
   max-width: 300px;
   max-height: 290px;
@@ -1502,44 +1518,17 @@ fighter-card picture {
   color: var(--white);
   box-shadow: 0 0 0 3px var(--accent-color);
 }
-
 .fighters-list .fighter:hover {
   box-shadow: 0 0 0 3px var(--hover);
-}
-
-.fighter h2 {
-  background-color: var(--shade);
-  padding: 1vh 0;
-}
-
-.fighter:hover h2 {
-  background-color: var(--hover);
-}
-
-.fighter a {
-  cursor: alias;
 }
 
 .fighter:not(.selected) {
   pointer-events: none;
 }
-
 .fighter:not(.selected) picture {
   background-color: rgba(10, 10, 10, 0.5);
   mix-blend-mode: multiply;
 }
-
 .fighter:not(.selected) h2 {
   color: var(--shade);
-}
-
-@media (min-width: 500px) {
-  .list-intro nav {
-    justify-content: center;
-  }
-}
-@media (max-width: 448px) {
-  .list-intro nav * {
-    padding-right: 40px;
-  }
 }

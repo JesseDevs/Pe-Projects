@@ -1,0 +1,26 @@
+fighter-card {
+    display: flex;
+    flex-direction: column;
+
+    picture {
+        min-height: 180px;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    h2 {
+        background-color: var(--shade);
+        padding: 1vh 0;
+    }
+
+    a {
+        cursor: alias;
+    }
+}
+
+fighter-card:hover {
+    h2 {
+        background-color: var(--hover);
+    }
+}
