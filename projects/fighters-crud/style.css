@@ -72,7 +72,7 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  background-color: var(--page);
+  background-color: var(--white);
   color: var(--ink);
 }
 
@@ -457,6 +457,110 @@ html {
             transform: translateY(-700px) rotate(600deg);
   }
 }
+@-webkit-keyframes animates {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: var(--white);
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--white);
+    border-left-color: var(--white);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--white);
+    border-left-color: var(--white);
+  }
+}
+@keyframes animates {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: var(--white);
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--white);
+    border-left-color: var(--white);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--white);
+    border-left-color: var(--white);
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: var(--white);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: var(--white);
+    border-right-color: var(--white);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: var(--white);
+    border-right-color: var(--white);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: var(--white);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: var(--white);
+    border-right-color: var(--white);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: var(--white);
+    border-right-color: var(--white);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
 :is(.calm-voice, p, li) em {
   font-style: italic;
 }
@@ -602,7 +706,8 @@ playstyle-card {
   flex-direction: column;
   width: 100%;
   gap: 10px;
-  min-height: 485px;
+  min-height: 250px;
+  position: relative;
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
   border-bottom: 2px solid transparent;
@@ -617,9 +722,38 @@ playstyle-card a {
   color: var(--main-color);
   border-bottom: 2px solid var(--main-color);
   transition: border 0.5s;
+  background-color: var(--white);
+  z-index: 5;
 }
 playstyle-card p {
   padding: 5px 10px;
+}
+playstyle-card p:before {
+  content: "";
+  height: 250px;
+  width: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+playstyle-card p:after {
+  content: "";
+  height: 2px;
+  width: 275px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+playstyle-card:nth-of-type(even) p:before,
+playstyle-card:nth-of-type(even) p:after {
+  top: 3vh;
+  left: 0px;
+}
+playstyle-card:nth-of-type(even) p:after {
+  display: none;
 }
 
 playstyle-card:hover {
@@ -633,7 +767,16 @@ playstyle-card:hover a {
   color: var(--white);
   border-bottom: 2px solid transparent;
 }
+playstyle-card:hover p:after,
+playstyle-card:hover p:before {
+  background-color: transparent;
+}
 
+@media (min-width: 550px) {
+  playstyle-card {
+    min-height: 485px;
+  }
+}
 playstyle-grid {
   display: grid;
   width: 100%;
@@ -652,8 +795,11 @@ playstyle-grid h2 {
   playstyle-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 1fr;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
   }
-  h2 {
+  playstyle-grid h2 {
     grid-column: span 2;
   }
 }
@@ -663,7 +809,7 @@ playstyle-grid h2 {
 }
 
 .action a {
-  padding: 1rem;
+  padding: 15px 30px;
   background: linear-gradient(to right, var(--hover), var(--hover));
   background-color: var(--main-color);
   background-repeat: no-repeat;
@@ -673,8 +819,8 @@ playstyle-grid h2 {
   font-weight: 500;
   border: 3px solid transparent;
   color: var(--white);
-  border-radius: 5px;
-  transition: all 0.4s;
+  border-radius: 2px;
+  transition: all 0.2s;
 }
 
 .action a::before {
@@ -694,59 +840,6 @@ playstyle-grid h2 {
           animation: animate 0.4s linear forwards;
 }
 
-@-webkit-keyframes animate {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: var(--white);
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  50% {
-    width: 100%;
-    height: 0;
-    border-top-color: var(--white);
-    border-right-color: var(--white);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: var(--white);
-    border-right-color: var(--white);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-}
-
-@keyframes animate {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: var(--white);
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  50% {
-    width: 100%;
-    height: 0;
-    border-top-color: var(--white);
-    border-right-color: var(--white);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: var(--white);
-    border-right-color: var(--white);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-}
 .action a::after {
   content: "";
   position: absolute;
@@ -764,76 +857,10 @@ playstyle-grid h2 {
           animation: animates 0.4s linear forwards;
 }
 
-@-webkit-keyframes animates {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: var(--white);
-  }
-  50% {
-    width: 0;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--white);
-    border-left-color: var(--white);
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--white);
-    border-left-color: var(--white);
-  }
-}
-
-@keyframes animates {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: var(--white);
-  }
-  50% {
-    width: 0;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--white);
-    border-left-color: var(--white);
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--white);
-    border-left-color: var(--white);
-  }
-}
 .action a:hover {
   background-size: 100% 100%;
 }
 
-@media (min-width: 650px) {
-  .info article-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .info article {
-    width: 50%;
-    min-height: 300px;
-    justify-content: space-between;
-  }
-}
 .form h1 {
   text-align: center;
   padding: 4vh 1rem;

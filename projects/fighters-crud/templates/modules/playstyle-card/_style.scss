@@ -3,7 +3,9 @@ playstyle-card {
     flex-direction: column;
     width: 100%;
     gap: 10px;
-    min-height: 485px;
+    min-height: 250px;
+
+    position: relative;
 
 
     border-left: 2px solid transparent;
@@ -23,10 +25,46 @@ playstyle-card {
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
         transition: border .5s;
+        background-color: var(--white);
+        z-index: 5;
     }
 
     p {
         padding: 5px 10px;
+    }
+
+    p:before {
+        content: '';
+        height: 250px;
+        width: 2px;
+        background-color: var(--main-color);
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+    }
+
+    p:after {
+        content: '';
+        height: 2px;
+        width: 275px;
+        background-color: var(--main-color);
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+    }
+}
+
+playstyle-card:nth-of-type(even) {
+
+    p:before,
+    p:after {
+        top: 3vh;
+        left: 0px;
+
+    }
+
+    p:after {
+        display: none;
     }
 }
 
@@ -41,4 +79,26 @@ playstyle-card:hover {
         color: var(--white);
         border-bottom: 2px solid transparent;
     }
+
+    p:after,
+    p:before {
+        background-color: transparent;
+    }
+}
+
+
+
+@media(min-width: 550px) {
+    playstyle-card {
+
+        min-height: 485px;
+    }
+
+    // playstyle-card:nth-of-type(even) {
+
+    //     p:before,
+    //     p:after {
+    //         top: 43.5px;
+    //     }
+    // }
 }
