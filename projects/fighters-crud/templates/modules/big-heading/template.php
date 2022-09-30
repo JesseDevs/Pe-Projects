@@ -5,9 +5,9 @@
 
 
 
-        <div class="action">
-            <a class='deep-voice' href="?page=list">Enter Battleground</a>
-        </div>
+
+        <a class='button deep-voice' href="?page=list">Enter Battleground</a>
+
 
 
 

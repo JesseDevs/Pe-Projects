@@ -1,6 +1,6 @@
 <?php
 
-$fighters = getFighters();
+$fighters = array_reverse(getFighters());
 
 $playstyle = null;
 

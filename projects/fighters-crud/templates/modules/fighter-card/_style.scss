@@ -3,7 +3,7 @@ fighter-card {
     flex-direction: column;
 
     picture {
-        min-height: 180px;
+        min-height: 250px;
         background-size: cover;
         background-position: center;
 
@@ -22,5 +22,15 @@ fighter-card {
 fighter-card:hover {
     h2 {
         background-color: var(--hover);
+    }
+}
+
+@media(min-width: 350px) {
+    fighter-card {
+
+
+        picture {
+            min-height: 180px;
+        }
     }
 }

@@ -1,144 +1,99 @@
 [
     {
-        "id": 0,
-        "name": "Ryu",
-        "playstyle": "Shoto",
-        "portrait": "https:\/\/game.capcom.com\/cfn\/sfv\/as\/common\/character\/bustup\/l\/ryu.png?h=51778c13c01235d62adfa5eb90016638",
-        "quote": "This is the path of my destiny!",
-        "audio": ".\/voice\/ryu.mp3",
-        "occupation": "Martial Artist",
-        "description": "The main protagonist of the Street Fighter series, first appearing in the original Street Fighter. He is an experienced martial artist, highly focused on his training, aiming to become the strongest he can.",
-        "enemy": [
-            1
-        ],
-        "ally": [
-            2
-        ],
-        "costumes": [
-            ".\/images\/ryu\/ryu-one.webp",
-            ".\/images\/ryu\/ryu-two.webp",
-            ".\/images\/ryu\/ryu-three.webp",
-            ".\/images\/ryu\/ryu-four.webp",
-            ".\/images\/ryu\/ryu-five.webp",
-            ".\/images\/ryu\/ryu-six.webp"
-        ],
-        "specials": [
-            {
-                "name": "Hadouken",
-                "image": ".\/images\/ryu\/hado.gif",
-                "still": ".\/images\/ryu\/hado.jpeg",
-                "description": "The Hadoken (\u6ce2\u52d5\u62f3 Had\u014dken?, 'Surge Fist' or 'Wave Motion Fist') is a special attack that originated in Street Fighter. It is often referred to as a 'fireball' due to its appearance, despite few instances of the move actually producing flames. It is one of the most famous special moves in the Street Fighter series, along with the <a href='?page=specials&special=Shoryuken'>Shoryuken<\/a> and <a href='?page=specials&special=Tatsumaki'>Tatsumaki.<\/a>"
-            },
-            {
-                "name": "Tatsumaki",
-                "image": ".\/images\/ryu\/tatsu.gif",
-                "still": ".\/images\/ryu\/tatsu.jpeg"
-            },
-            {
-                "name": "Shoryuken",
-                "image": ".\/images\/ryu\/shoru.gif",
-                "still": ".\/images\/ryu\/shoru.png"
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "name": "M.Bison",
-        "playstyle": "Charge",
-        "portrait": "https:\/\/game.capcom.com\/cfn\/sfv\/as\/common\/character\/bustup\/l\/veg.png?h=05940c2c8feafe94aa6ced8003b4b2dc",
-        "quote": "Bow down before my Psycho Power!",
-        "audio": ".\/voice\/dictator.mp3",
-        "occupation": "Shadaloo King (leader)",
-        "description": "M. Bison is an archetypal villain motivated by his own self-serving interests and lust for absolute power through world domination. He is a megalomaniacal and psychopathic dictator and terrorist who seeks to rule the world with an iron fist whilst also being universally regarded as the greatest and most powerful martial artist of all time",
-        "enemy": [
-            0
-        ],
-        "ally": [],
-        "costumes": [
-            ".\/images\/bison\/bison-one.webp",
-            ".\/images\/bison\/bison-two.webp",
-            ".\/images\/bison\/bison-three.webp",
-            ".\/images\/bison\/bison-four.webp"
-        ],
-        "specials": [
-            {
-                "name": "Crusher",
-                "image": ".\/images\/bison\/crusher.webp"
-            },
-            {
-                "name": "Knee Press",
-                "image": ".\/images\/bison\/knee.webp"
-            },
-            {
-                "name": "Devil Rev.",
-                "image": " .\/images\/bison\/devil.webp"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Guile",
+        "id": 7,
+        "name": "Dhalsim",
         "playstyle": "Zoner",
-        "portrait": "https:\/\/game.capcom.com\/cfn\/sfv\/as\/common\/character\/bustup\/l\/gul.png?h=13fa8b86069fbb4beafe9622893ae48b",
-        "quote": "No need for talk. Let\u2019s do this!",
-        "audio": ".\/voice\/guile.mp3",
-        "occupation": "Major of the United States Air Force",
-        "description": "A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.",
+        "portrait": "images/dha/dsm.png",
+        "quote": "I\u2019m not very fond of conflict.",
+        "audio": "voice\/dha.mp3",
+        "occupation": "Yoga Master",
+        "description": "Dhalsim enters the tournament to raise money for his village, but realizes that it contradicts his pacifist beliefs. Dhalsim retires from fighting after the second World Warrior tournament, and continues to roam the world helping those in need. This character possesses limbs that extend across the screen to keep opponents away.",
         "enemy": [],
         "ally": [
             0
         ],
         "costumes": [
-            ".\/images\/guile\/gul-one.webp",
-            ".\/images\/guile\/gul-two.webp",
-            ".\/images\/guile\/gul-three.webp",
-            ".\/images\/guile\/gul-four.webp",
-            ".\/images\/guile\/gul-five.webp"
+            "images\/dha\/dha-two.webp",
+            "images\/dha\/dha-three.webp",
+            "images\/dha\/dha-four.webp",
+            "images\/dha\/dha-five.webp"
         ],
         "specials": [
             {
-                "name": "Sonic Boom",
-                "image": ".\/images\/guile\/booom.webp"
+                "name": "Yoga Fire",
+                "image": "images\/dha\/fire.webp"
             },
             {
-                "name": "Flash Kick",
-                "image": ".\/images\/guile\/kick.webp"
+                "name": "Yoga Flame",
+                "image": "images\/dha\/flame.webp"
             },
             {
-                "name": "Hurricane",
-                "image": ".\/images\/guile\/hurricane.webp"
+                "name": "Yoga Kick",
+                "image": "images\/dha\/kick.gif"
             }
         ]
     },
     {
-        "id": 3,
-        "name": "Zangief",
+        "id": 6,
+        "name": "Necalli",
         "playstyle": "Grappler",
-        "portrait": "https:\/\/game.capcom.com\/cfn\/sfv\/as\/common\/character\/bustup\/l\/zgf.png?h=4ae8ea4293c0db3829278dba98deac8a",
-        "quote": "I am...the Red Cyclone!",
-        "audio": ".\/voice\/zan.mp3",
-        "occupation": "Professional Wrestler",
-        "description": "Zangief enters any and all Street Fighting tournaments purely to prove his worth as the greatest wrestler in the world and to maintain his reputation as the Red Cyclone. He is extremely proud of his motherland, the Soviet Union, and he is determined to represent it as the champion of each tournament.",
+        "portrait": "images/nec/ncl.png",
+        "quote": "Devour-our-our...",
+        "audio": "voice\/nec.mp3",
+        "occupation": "-",
+        "description": "Necalli is described as the 'Emissary of the Gods', with a rather ominous moniker of 'The Soul Consuming Darkness'. As the Warrior Prophet reveals, every few hundred years the stars herald the 'Hour of Battle' ('Hour of Necalli'). During this period of time Necalli awakens to consume the souls of strong warriors.",
         "enemy": [],
         "ally": [],
         "costumes": [
-            ".\/images\/zan\/zan-one.webp",
-            ".\/images\/zan\/zan-two.webp",
-            ".\/images\/zan\/zan-three.webp",
-            ".\/images\/zan\/zan-five.webp"
+            "images\/nec\/nec-one.webp",
+            "images\/nec\/nec-two.webp",
+            "images\/nec\/nec-three.webp",
+            "images\/nec\/nec-five.webp"
         ],
         "specials": [
             {
-                "name": "Piledriver",
-                "image": ".\/images\/zan\/pile.gif"
+                "name": "Mask of Tlalli",
+                "image": "images\/nec\/mask.webp"
             },
             {
-                "name": "Lariat",
-                "image": ".\/images\/zan\/lariat.webp"
+                "name": "Rebellion",
+                "image": "images\/nec\/rebl.webp"
             },
             {
-                "name": "Green Hand",
-                "image": ".\/images\/zan\/hand.webp"
+                "name": "Raging Light",
+                "image": "images\/nec\/light.webp"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Rashid",
+        "playstyle": "Shoto",
+        "portrait": "images/ras/rsd.png",
+        "quote": "I\u2019m Rashid of the Turbulent Wind! Remember the name well!",
+        "audio": "voice\/ras.mp3",
+        "occupation": "Socialite",
+        "description": "Rashid is the eldest son of an old aristocratic Middle Eastern family who\u2019s traveling the world in search of a missing friend who has been kidnapped by Shadaloo. Rashid is incredibly agile. Pile the pressure on from above and below with his V-Trigger Ysaar, his jump, dash, and Eagle Spike among other moves will be much faster on contact with his tornado. Use an EX Spinning Mixer to stop airborne attacks!",
+        "enemy": [],
+        "ally": [],
+        "costumes": [
+            "images\/ras\/ras-one.webp",
+            "images\/ras\/ras-two.webp",
+            "images\/ras\/ras-four.webp",
+            "images\/ras\/ras-six.webp"
+        ],
+        "specials": [
+            {
+                "name": "Whirlwind",
+                "image": "images\/ras\/shot.webp"
+            },
+            {
+                "name": "Eagle Spike",
+                "image": "images\/ras\/spike.webp"
+            },
+            {
+                "name": "Mixer",
+                "image": "images\/ras\/mixer.webp"
             }
         ]
     },
@@ -146,9 +101,9 @@
         "id": 4,
         "name": "Chun-li",
         "playstyle": "Charge",
-        "portrait": "https:\/\/game.capcom.com\/cfn\/sfv\/as\/common\/character\/bustup\/l\/cnl.png?h=cdcdad24aed42606eede35add77e6d11",
+        "portrait": "images/chun/cnl.png",
         "quote": "Want to see my Kung-Fu? I\u2019ll show you.",
-        "audio": ".\/voice\/chun.mp3",
+        "audio": "voice\/chun.mp3",
         "occupation": "Investigator for the ICPO",
         "description": "Freshly initiated into the Interpol ranks, Chun-Li is in pursuit of M. Bison and all of the information that she can obtain about his army\u2019s whereabouts. However, many of Chun-Li\u2019s efforts are thwarted and she makes little progress in locating Bison throughout the tournament. Bison\u2019s attentions are on a particular martial artist known as Ryu",
         "enemy": [
@@ -159,151 +114,169 @@
             2
         ],
         "costumes": [
-            ".\/images\/chun\/chun-one.webp",
-            ".\/images\/chun\/chun-two.webp",
-            ".\/images\/chun\/chun-three.webp",
-            ".\/images\/chun\/chun-four.webp",
-            ".\/images\/chun\/chun-five.webp",
-            ".\/images\/chun\/chun-six.webp"
+            "images\/chun\/chun-one.webp",
+            "images\/chun\/chun-two.webp",
+            "images\/chun\/chun-three.webp",
+            "images\/chun\/chun-four.webp",
+            "images\/chun\/chun-five.webp",
+            "images\/chun\/chun-six.webp"
         ],
         "specials": [
             {
                 "name": "Kikoken",
-                "image": ".\/images\/chun\/kiko.webp"
+                "image": "images\/chun\/kiko.webp"
             },
             {
                 "name": "Spinning Bird",
-                "image": ".\/images\/chun\/bird.webp"
+                "image": "images\/chun\/bird.webp"
             },
             {
                 "name": "Lightning Legs",
-                "image": ".\/images\/chun\/legs.webp"
+                "image": "images\/chun\/legs.webp"
             }
         ]
     },
     {
-        "id": 5,
-        "name": "Rashid",
-        "playstyle": "Shoto",
-        "portrait": "https:\/\/game.capcom.com\/cfn\/sfv\/as\/common\/character\/bustup\/l\/rsd.png?h=f2a8cc6f5fb27836fa517e96cddc2337",
-        "quote": "I\u2019m Rashid of the Turbulent Wind! Remember the name well!",
-        "audio": ".\/voice\/ras.mp3",
-        "occupation": "Socialite",
-        "description": "Rashid is the eldest son of an old aristocratic Middle Eastern family who\u2019s traveling the world in search of a missing friend who has been kidnapped by Shadaloo. Rashid is incredibly agile. Pile the pressure on from above and below with his V-Trigger Ysaar, his jump, dash, and Eagle Spike among other moves will be much faster on contact with his tornado. Use an EX Spinning Mixer to stop airborne attacks!",
-        "enemy": [],
-        "ally": [],
-        "costumes": [
-            ".\/images\/ras\/ras-one.webp",
-            ".\/images\/ras\/ras-two.webp",
-            ".\/images\/ras\/ras-four.webp",
-            ".\/images\/ras\/ras-six.webp"
-        ],
-        "specials": [
-            {
-                "name": "Whirlwind",
-                "image": ".\/images\/ras\/shot.webp"
-            },
-            {
-                "name": "Eagle Spike",
-                "image": ".\/images\/ras\/spike.webp"
-            },
-            {
-                "name": "Mixer",
-                "image": ".\/images\/ras\/mixer.webp"
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Necalli",
+        "id": 3,
+        "name": "Zangief",
         "playstyle": "Grappler",
-        "portrait": "https:\/\/game.capcom.com\/cfn\/sfv\/as\/common\/character\/bustup\/l\/ncl.png?h=0339842bc100b496aa5ebcc60168a6c6",
-        "quote": "Devour-our-our...",
-        "audio": ".\/voice\/nec.mp3",
-        "occupation": "-",
-        "description": "Necalli is described as the 'Emissary of the Gods', with a rather ominous moniker of 'The Soul Consuming Darkness'. As the Warrior Prophet reveals, every few hundred years the stars herald the 'Hour of Battle' ('Hour of Necalli'). During this period of time Necalli awakens to consume the souls of strong warriors.",
+        "portrait": "images/zan/zgf.png",
+        "quote": "I am...the Red Cyclone!",
+        "audio": "voice\/zan.mp3",
+        "occupation": "Professional Wrestler",
+        "description": "Zangief enters any and all Street Fighting tournaments purely to prove his worth as the greatest wrestler in the world and to maintain his reputation as the Red Cyclone. He is extremely proud of his motherland, the Soviet Union, and he is determined to represent it as the champion of each tournament.",
         "enemy": [],
         "ally": [],
         "costumes": [
-            ".\/images\/nec\/nec-one.webp",
-            ".\/images\/nec\/nec-two.webp",
-            ".\/images\/nec\/nec-three.webp",
-            ".\/images\/nec\/nec-five.webp"
+            "images\/zan\/zan-one.webp",
+            "images\/zan\/zan-two.webp",
+            "images\/zan\/zan-three.webp",
+            "images\/zan\/zan-five.webp"
         ],
         "specials": [
             {
-                "name": "Mask of Tlalli",
-                "image": ".\/images\/nec\/mask.webp"
+                "name": "Piledriver",
+                "image": "images\/zan\/pile.gif"
             },
             {
-                "name": "Rebellion",
-                "image": ".\/images\/nec\/rebl.webp"
+                "name": "Lariat",
+                "image": "images\/zan\/lariat.webp"
             },
             {
-                "name": "Raging Light",
-                "image": ".\/images\/nec\/light.webp"
+                "name": "Green Hand",
+                "image": "images\/zan\/hand.webp"
             }
         ]
     },
     {
-        "id": 7,
-        "name": "Dhalsim",
+        "id": 2,
+        "name": "Guile",
         "playstyle": "Zoner",
-        "portrait": "https:\/\/game.capcom.com\/cfn\/sfv\/as\/common\/character\/bustup\/l\/dsm.png?h=831bf42208028686d3edefc248f28bdb",
-        "quote": "I\u2019m not very fond of conflict.",
-        "audio": ".\/voice\/dha.mp3",
-        "occupation": "Yoga Master",
-        "description": "Dhalsim enters the tournament to raise money for his village, but realizes that it contradicts his pacifist beliefs. Dhalsim retires from fighting after the second World Warrior tournament, and continues to roam the world helping those in need. This character possesses limbs that extend across the screen to keep opponents away.",
+        "portrait": "images/guile/gul.png",
+        "quote": "No need for talk. Let\u2019s do this!",
+        "audio": "voice\/guile.mp3",
+        "occupation": "Major of the United States Air Force",
+        "description": "A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.",
         "enemy": [],
         "ally": [
             0
         ],
         "costumes": [
-            ".\/images\/dha\/dha-two.webp",
-            ".\/images\/dha\/dha-three.webp",
-            ".\/images\/dha\/dha-four.webp",
-            ".\/images\/dha\/dha-five.webp"
+            "images\/guile\/gul-one.webp",
+            "images\/guile\/gul-two.webp",
+            "images\/guile\/gul-three.webp",
+            "images\/guile\/gul-four.webp",
+            "images\/guile\/gul-five.webp"
         ],
         "specials": [
             {
-                "name": "Yoga Fire",
-                "image": ".\/images\/dha\/fire.webp"
+                "name": "Sonic Boom",
+                "image": "images\/guile\/booom.webp"
             },
             {
-                "name": "Yoga Flame",
-                "image": ".\/images\/dha\/flame.webp"
+                "name": "Flash Kick",
+                "image": "images\/guile\/kick.webp"
             },
             {
-                "name": "Yoga Kick",
-                "image": ".\/images\/dha\/kick.gif"
+                "name": "Hurricane",
+                "image": "images\/guile\/hurricane.webp"
             }
         ]
     },
     {
-        "id": 132,
-        "name": "dds",
-        "quote": "dsds",
-        "occupation": "",
-        "playstyle": "Shoto",
-        "description": "",
-        "portrait": null
+        "id": 1,
+        "name": "M.Bison",
+        "playstyle": "Charge",
+        "portrait": "images/bison/veg.png",
+        "quote": "Bow down before my Psycho Power!",
+        "audio": "voice\/dictator.mp3",
+        "occupation": "Shadaloo King (leader)",
+        "description": "M. Bison is an archetypal villain motivated by his own self-serving interests and lust for absolute power through world domination. He is a megalomaniacal and psychopathic dictator and terrorist who seeks to rule the world with an iron fist whilst also being universally regarded as the greatest and most powerful martial artist of all time",
+        "enemy": [
+            0
+        ],
+        "ally": [],
+        "costumes": [
+            "images\/bison\/bison-one.webp",
+            "images\/bison\/bison-two.webp",
+            "images\/bison\/bison-three.webp",
+            "images\/bison\/bison-four.webp"
+        ],
+        "specials": [
+            {
+                "name": "Crusher",
+                "image": "images\/bison\/crusher.webp"
+            },
+            {
+                "name": "Knee Press",
+                "image": "images\/bison\/knee.webp"
+            },
+            {
+                "name": "Devil Rev.",
+                "image": " images\/bison\/devil.webp"
+            }
+        ]
     },
     {
-        "id": 109,
-        "name": "dad",
-        "quote": "dada",
-        "occupation": "",
+        "id": 0,
+        "name": "Ryu",
         "playstyle": "Shoto",
-        "description": "",
-        "portrait": null
-    },
-    {
-        "id": 756,
-        "name": "fafa",
-        "quote": "fafa",
-        "occupation": "",
-        "playstyle": "Shoto",
-        "description": "",
-        "portrait": null
+        "portrait": "images/ryu/ryu.png",
+        "quote": "This is the path of my destiny!",
+        "audio": "voice\/ryu.mp3",
+        "occupation": "Martial Artist",
+        "description": "The main protagonist of the Street Fighter series, first appearing in the original Street Fighter. He is an experienced martial artist, highly focused on his training, aiming to become the strongest he can.",
+        "enemy": [
+            1
+        ],
+        "ally": [
+            2
+        ],
+        "costumes": [
+            "images\/ryu\/ryu-one.webp",
+            "images\/ryu\/ryu-two.webp",
+            "images\/ryu\/ryu-three.webp",
+            "images\/ryu\/ryu-four.webp",
+            "images\/ryu\/ryu-five.webp",
+            "images\/ryu\/ryu-six.webp"
+        ],
+        "specials": [
+            {
+                "name": "Hadouken",
+                "image": "images\/ryu\/hado.gif",
+                "still": "images\/ryu\/hado.jpeg",
+                "description": "The Hadoken (\u6ce2\u52d5\u62f3 Had\u014dken?, 'Surge Fist' or 'Wave Motion Fist') is a special attack that originated in Street Fighter. It is often referred to as a 'fireball' due to its appearance, despite few instances of the move actually producing flames. It is one of the most famous special moves in the Street Fighter series, along with the <a href='?page=specials&special=Shoryuken'>Shoryuken<\/a> and <a href='?page=specials&special=Tatsumaki'>Tatsumaki.<\/a>"
+            },
+            {
+                "name": "Tatsumaki",
+                "image": "images\/ryu\/tatsu.gif",
+                "still": "images\/ryu\/tatsu.jpeg"
+            },
+            {
+                "name": "Shoryuken",
+                "image": "images\/ryu\/shoru.gif",
+                "still": "images\/ryu\/shoru.png"
+            }
+        ]
     }
 ]

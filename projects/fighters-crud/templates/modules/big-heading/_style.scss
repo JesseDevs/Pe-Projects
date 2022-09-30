@@ -40,6 +40,7 @@ big-heading {
         margin: 2vh auto;
 
     }
+
 }
 
 @media(min-width: 575px) {
@@ -55,73 +56,10 @@ big-heading {
             margin-right: auto;
         }
 
-        .action {
+        .button {
             margin-left: 50px;
         }
     }
 
 
-}
-
-
-.action {
-    text-align: center;
-    position: relative;
-
-    a {
-
-        padding: 15px 30px;
-        background: linear-gradient(to right, var(--hover), var(--hover));
-        background-color: var(--main-color);
-        background-repeat: no-repeat;
-        background-size: 0% 100%;
-        background-position: left;
-        font-size: 1.3rem;
-        font-weight: 500;
-        border: 3px solid transparent;
-        color: var(--white);
-        border-radius: 2px;
-        transition: all .2s;
-    }
-
-    a::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        background: transparent;
-        border: 3px solid transparent;
-        border-radius: 5px;
-    }
-
-    a::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        background: transparent;
-        border: 3px solid transparent;
-
-        border-radius: 5px;
-    }
-
-
-}
-
-
-.action a:hover::before {
-    animation: animate .4s linear forwards;
-}
-
-
-.action a:hover::after {
-    animation: animates .4s linear forwards;
-}
-
-.action a:hover {
-    background-size: 100% 100%;
 }

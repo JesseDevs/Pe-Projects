@@ -1,0 +1,20 @@
+.button {
+
+    padding: 15px 30px;
+    background: linear-gradient(to right, var(--hover), var(--hover));
+    background-color: var(--main-color);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: left;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 3px solid transparent;
+    color: var(--white);
+    border-radius: 2px;
+    transition: all .2s;
+}
+
+
+.button:hover {
+    background-size: 100% 100%;
+}

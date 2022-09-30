@@ -33,7 +33,9 @@ $chosenFighter = getFighterById($requestedId);
 
                     <a class=" button delete" href="?page=delete&id=<?= $chosenFighter['id'] ?>"><span>Delete</span></a>
 
+
                     <a class=" button edit" href="?page=edit&id=<?= $chosenFighter['id'] ?>"><span>Edit</span></a>
+
                 </div>
 
             <?php } ?>

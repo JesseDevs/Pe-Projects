@@ -19,8 +19,8 @@
 }
 
 fighter-page {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 30px;
 
     em {
@@ -36,13 +36,16 @@ fighter-page {
 
 
 .data-buttons {
-    display: block;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+
 }
 
 @media (min-width: 850px) {
     fighter-page {
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
         align-items: flex-start;
         justify-content: center;
         gap: 30px;
@@ -59,5 +62,20 @@ fighter-page {
 
     }
 
+    .edit-page fighter-page {
+        grid-template-columns: 1fr;
+    }
 
+
+    .edit-page inner-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .data-buttons {
+        grid-template-columns: 1fr;
+    }
 }

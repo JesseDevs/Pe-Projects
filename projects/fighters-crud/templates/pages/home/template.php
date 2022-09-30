@@ -23,3 +23,5 @@ $playstyle = $playstyleData["playstyle"];
 
     </inner-column>
 </section>
+
+<?php include('templates/modules/site-footer/template.php'); ?>

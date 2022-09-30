@@ -2873,6 +2873,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/projects\/fighters-crud\/images\/bison\/veg.png" : {
+      "ft" : 32768,
+      "iS" : 123011,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/bison\/veg.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/projects\/fighters-crud\/images\/chun\/bird.webp" : {
       "ft" : 8388608,
       "iS" : 78304,
@@ -2950,6 +2963,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/projects\/fighters-crud\/images\/chun\/cnl.png" : {
+      "ft" : 32768,
+      "iS" : 113469,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/chun\/cnl.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/projects\/fighters-crud\/images\/chun\/kiko.webp" : {
       "ft" : 8388608,
       "iS" : 21906,
@@ -3025,6 +3051,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/projects\/fighters-crud\/images\/dha\/dsm.png" : {
+      "ft" : 32768,
+      "iS" : 165346,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/dha\/dsm.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/projects\/fighters-crud\/images\/dha\/fire.webp" : {
@@ -3136,6 +3175,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/projects\/fighters-crud\/images\/guile\/gul.png" : {
+      "ft" : 32768,
+      "iS" : 130787,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/guile\/gul.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/projects\/fighters-crud\/images\/guile\/hurricane.webp" : {
       "ft" : 8388608,
       "iS" : 47188,
@@ -3182,6 +3234,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/projects\/fighters-crud\/images\/missing-image.jpg" : {
+      "ft" : 16384,
+      "iS" : 306082,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/missing-image.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/projects\/fighters-crud\/images\/nec\/disc.webp" : {
       "ft" : 8388608,
       "iS" : 8360,
@@ -3213,6 +3278,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/projects\/fighters-crud\/images\/nec\/ncl.png" : {
+      "ft" : 32768,
+      "iS" : 176755,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/nec\/ncl.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/projects\/fighters-crud\/images\/nec\/nec-five.webp" : {
@@ -3358,6 +3436,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/projects\/fighters-crud\/images\/ras\/rsd.png" : {
+      "ft" : 32768,
+      "iS" : 140167,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/ras\/rsd.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/projects\/fighters-crud\/images\/ras\/shot.webp" : {
       "ft" : 8388608,
       "iS" : 759800,
@@ -3478,6 +3569,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/projects\/fighters-crud\/images\/ryu\/ryu.png" : {
+      "ft" : 32768,
+      "iS" : 135572,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/ryu\/ryu.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/projects\/fighters-crud\/images\/ryu\/shoru.gif" : {
@@ -3661,6 +3765,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/projects\/fighters-crud\/images\/zan\/zgf.png" : {
+      "ft" : 32768,
+      "iS" : 141841,
+      "oA" : 0,
+      "oAP" : "\/projects\/fighters-crud\/images\/zan\/zgf.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/projects\/fighters-crud\/index.php" : {

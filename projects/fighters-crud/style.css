@@ -86,7 +86,7 @@ inner-column {
   margin-right: auto;
   margin-left: auto;
   padding: var(--med-height) 1rem;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 article-grid,
@@ -627,8 +627,26 @@ a {
   font-size: 14px;
 }
 
+footer {
+  background-color: var(--hover);
+  color: var(--white);
+  text-transform: uppercase;
+}
 footer inner-column {
   padding: 1vh 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  font-size: 14px;
+}
+footer a {
+  font-size: 14px;
+}
+footer a:hover {
+  background-color: var(--main-color);
 }
 
 .site-header {
@@ -703,65 +721,10 @@ big-heading picture {
     text-align: left;
     margin-right: auto;
   }
-  big-heading .action {
+  big-heading .button {
     margin-left: 50px;
   }
 }
-.action {
-  text-align: center;
-  position: relative;
-}
-.action a {
-  padding: 15px 30px;
-  background: linear-gradient(to right, var(--hover), var(--hover));
-  background-color: var(--main-color);
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  background-position: left;
-  font-size: 1.3rem;
-  font-weight: 500;
-  border: 3px solid transparent;
-  color: var(--white);
-  border-radius: 2px;
-  transition: all 0.2s;
-}
-.action a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 3px solid transparent;
-  border-radius: 5px;
-}
-.action a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 3px solid transparent;
-  border-radius: 5px;
-}
-
-.action a:hover::before {
-  -webkit-animation: animate 0.4s linear forwards;
-          animation: animate 0.4s linear forwards;
-}
-
-.action a:hover::after {
-  -webkit-animation: animates 0.4s linear forwards;
-          animation: animates 0.4s linear forwards;
-}
-
-.action a:hover {
-  background-size: 100% 100%;
-}
-
 playstyle-card {
   display: flex;
   flex-direction: column;
@@ -843,7 +806,7 @@ fighter-card {
   flex-direction: column;
 }
 fighter-card picture {
-  min-height: 180px;
+  min-height: 250px;
   background-size: cover;
   background-position: center;
 }
@@ -859,6 +822,11 @@ fighter-card:hover h2 {
   background-color: var(--hover);
 }
 
+@media (min-width: 350px) {
+  fighter-card picture {
+    min-height: 180px;
+  }
+}
 general-diptech {
   display: flex;
   flex-direction: column;
@@ -1160,24 +1128,29 @@ span a a:hover {
   flex-direction: column;
   justify-content: space-betwwen;
   align-items: stretch;
-  gap: 10px;
+  gap: 30px;
   margin-bottom: 0;
   border: none;
 }
 
 form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   max-width: 900px;
-  margin: 3vh auto;
+  margin: 0 auto;
   background: var(--white);
   border-radius: 2px;
-  padding: 20px;
-  font-family: Work sans;
+  font-family: "Inter";
+}
+form h4 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 field {
   display: block;
   border: 2px solid var(--shadow);
-  margin-bottom: 30px;
   border-radius: 3px;
   width: 100%;
 }
@@ -1215,6 +1188,7 @@ form > field:last-child {
 }
 
 label {
+  max-width: 42%;
   display: block;
   float: left;
   margin-top: -10px;
@@ -1297,75 +1271,11 @@ textarea {
   height: 50px;
 }
 
-button {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  margin: 0 auto;
-  display: block;
-}
-
-button[type=submit] {
-  background: linear-gradient(to right, var(--hover), var(--hover));
-  background-color: var(--main-color);
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  background-position: left;
-  color: var(--white);
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  color: #D2E2FF;
-  outline: none;
-  font-size: 1.3rem;
-  transition: all 0.5s;
-  position: relative;
-  text-decoration: none;
-}
-
-button[type=submit]::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 3px solid transparent;
-}
-
-button[type=submit]:hover::before {
-  -webkit-animation: animate 0.3s linear forwards;
-          animation: animate 0.3s linear forwards;
-}
-
-button[type=submit]:hover {
-  background-size: 100% 100%;
-  color: var(--white);
-}
-
-button[type=submit]::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 3px solid transparent;
-  border-radius: 5px;
-}
-
-button[type=submit]:hover::after {
-  -webkit-animation: animates 0.3s linear forwards;
-          animation: animates 0.3s linear forwards;
-}
-
 @media (min-width: 600px) {
   .form-images,
 .required {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30px;
   }
   .form-images field,
 .required field {
@@ -1393,8 +1303,8 @@ button[type=submit]:hover::after {
 }
 
 fighter-page {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 fighter-page em {
@@ -1406,13 +1316,15 @@ fighter-page h2 {
 }
 
 .data-buttons {
-  display: block;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: center;
 }
 
 @media (min-width: 850px) {
   fighter-page {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
     align-items: flex-start;
     justify-content: center;
     gap: 30px;
@@ -1425,6 +1337,19 @@ fighter-page h2 {
   fighter-page .specials {
     gap: 35px;
     justify-content: center;
+  }
+  .edit-page fighter-page {
+    grid-template-columns: 1fr;
+  }
+  .edit-page inner-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .data-buttons {
+    grid-template-columns: 1fr;
   }
 }
 .playstyle-menu {
@@ -1504,4 +1429,47 @@ fighter-page h2 {
 }
 .fighter:not(.selected) h2 {
   color: var(--shade);
+}
+
+.edit-page inner-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: baseline;
+}
+.edit-page inner-column h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 650px) {
+  .edit-page inner-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .edit-page inner-column form {
+    max-width: none;
+    margin: 0;
+  }
+}
+.button {
+  padding: 15px 30px;
+  background: linear-gradient(to right, var(--hover), var(--hover));
+  background-color: var(--main-color);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position: left;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 3px solid transparent;
+  color: var(--white);
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background-size: 100% 100%;
 }

@@ -68,7 +68,7 @@
                 </field>
             </field>
 
-            <button type="submit" name='add'>
+            <button class='button' type="submit" name='add'>
                 Create
             </button>
 

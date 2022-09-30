@@ -1,7 +1,7 @@
 <general-diptech class="container">
 
     <picture class='portrait'>
-        <img src="<?= $chosenFighter['portrait'] ?>" alt="SFV:<?= $chosenFighter['name'] ?> ">
+        <img src="<?= $chosenFighter['portrait'] ?>" alt="Image of something:<?= $chosenFighter['name'] ?> ">
     </picture>
 
     <text-content>

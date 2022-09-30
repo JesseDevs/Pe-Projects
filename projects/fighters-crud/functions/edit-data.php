@@ -1,5 +1,10 @@
 <?php
 
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $chosenFighter = getFighterById($id);
+}
+
 if (isset($_POST["edit"])) {
 
     if (isset($_POST["name"])) {
@@ -18,17 +23,19 @@ if (isset($_POST["edit"])) {
         $newJob = htmlspecialchars(trim($_POST["job"]));
     }
 
-    if (!empty($newName) && !empty($newQuote)) {
+    if ($newName && $newQuote) {
         $editedFighter = [
 
-            "name" => $newTitle,
+            "name" => $newName,
             "quote" => $newQuote,
             "description" => $newDescription,
             "occupation" => $newJob,
-            "id" => $chosenFighter['id']
+            "playstyle" => $chosenFighter['playstyle'],
+            "id" => $chosenFighter['id'],
+            "portrait" => $chosenFighter['portrait'],
         ];
     }
 
-    editManga($chosenFighter['id'], $editedFighter);
+    editFighter($chosenFighter['id'], $editedFighter);
     header('Location: ?page=list');
 }

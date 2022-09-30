@@ -55,7 +55,7 @@ function addFighter($addition)
     header('https://peprojects.dev/alpha-4/jesse/projects/fighters-crud/?page=list');
 }
 
-function deletefighter($item)
+function deleteFighter($item)
 {
 
     $fighters = getFighters();
@@ -73,7 +73,7 @@ function deletefighter($item)
 }
 
 
-function editManga($idToEdit, $editedFighter)
+function editFighter($idToEdit, $editedFighter)
 {
     //returns an associatve array of the json
     $fighters = getFighters();
@@ -81,9 +81,9 @@ function editManga($idToEdit, $editedFighter)
     $filtered = [];
 
     //remove the $id from the array.
-    foreach ($fighters as $fighters) {
-        if ($fighters['id'] !== $idToEdit) {
-            array_push($filtered, $fighters);
+    foreach ($fighters as $fighter) {
+        if ($fighter['id'] !== $idToEdit) {
+            array_push($filtered, $fighter);
         }
     }
 

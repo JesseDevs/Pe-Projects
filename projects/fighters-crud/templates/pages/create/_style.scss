@@ -44,27 +44,34 @@ span {
 	flex-direction: column;
 	justify-content: space-betwwen;
 	align-items: stretch;
-	gap: 10px;
+	gap: 30px;
 
 	margin-bottom: 0;
 
 	border: none;
 }
 
-
 form {
+
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
 	max-width: 900px;
-	margin: 3vh auto;
+	margin: 0 auto;
 	background: var(--white);
 	border-radius: 2px;
-	padding: 20px;
-	font-family: Work sans;
+	font-family: "Inter";
+
+	h4 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
 }
 
 field {
 	display: block;
 	border: 2px solid var(--shadow);
-	margin-bottom: 30px;
 	border-radius: 3px;
 	width: 100%;
 
@@ -101,6 +108,7 @@ form>field:last-child {
 }
 
 label {
+	max-width: 42%;
 	display: block;
 	float: left;
 	margin-top: -10px;
@@ -184,73 +192,6 @@ textarea {
 	height: 50px;
 }
 
-button {
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	margin: 0 auto;
-	display: block;
-
-}
-
-
-button[type="submit"] {
-
-	background: linear-gradient(to right, var(--hover), var(--hover));
-	background-color: var(--main-color);
-	background-repeat: no-repeat;
-	background-size: 0% 100%;
-	background-position: left;
-	color: var(--white);
-	padding: 1rem 2rem;
-	border-radius: 5px;
-	color: #D2E2FF;
-	outline: none;
-	font-size: 1.3rem;
-	transition: all .5s;
-	position: relative;
-	text-decoration: none;
-
-}
-
-button[type="submit"]::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 0;
-	background: transparent;
-	border: 3px solid transparent;
-
-}
-
-button[type="submit"]:hover::before {
-	animation: animate .3s linear forwards;
-}
-
-button[type="submit"]:hover {
-	background-size: 100% 100%;
-	color: var(--white);
-}
-
-
-button[type="submit"]::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 0;
-	background: transparent;
-	border: 3px solid transparent;
-
-	border-radius: 5px;
-}
-
-button[type="submit"]:hover::after {
-	animation: animates .3s linear forwards;
-}
 
 @media(min-width:600px) {
 
@@ -258,7 +199,6 @@ button[type="submit"]:hover::after {
 	.required {
 		flex-direction: row;
 		justify-content: space-between;
-		margin-bottom: 30px;
 	}
 
 	.form-images field,

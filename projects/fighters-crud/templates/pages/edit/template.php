@@ -1,4 +1,9 @@
-<?php require('functions/edit-data') ?>
+<?php require('functions/edit-data.php') ?>
+
+<?php
+
+$fighters = getFighters();
+?>
 
 <header class="detail-header">
     <inner-column>
@@ -14,28 +19,29 @@
             <?php include('templates/modules/general-diptech/template.php') ?>
         </fighter-page>
 
+
+
         <form method="POST">
-
-            <label class='chant-voice' for="form">Update Information?</label>
-
+            <h4 class='another-voice'>Update Information?</h4>
             <field>
+                <label for="form">New name?</label>
 
                 <input name="name" type="text" value="<?= $chosenFighter['name'] ?>">
             </field>
 
             <field>
-
+                <label for="form">Different quote?</label>
                 <input name="quote" type="text" value="<?= $chosenFighter['quote'] ?>">
             </field>
 
             <field>
-
-                <input name="job" type="number" value="<?= $chosenFighter['job'] ?>">
+                <label for="form">Change career?</label>
+                <input name="job" type="text" value="<?= $chosenFighter['occupation'] ?>">
             </field>
 
             <field>
-
-                <input name="description" type="number" value="<?= $chosenFighter['description'] ?>">
+                <label for="form">Story changed?</label>
+                <input name="description" type="text" value="<?= $chosenFighter['description'] ?>">
             </field>
 
             <button name="edit" type="submit" class="button" role="button"><span class="text">Update</span></button>

@@ -19,7 +19,7 @@ $styleError = false;
 $descriptionError = false;
 
 $fileDestination = null;
-$portrait = null;
+$portrait = 'images/missing-image.jpg';
 
 
 if (isset($_POST["add"])) :
@@ -84,11 +84,10 @@ if (isset($_POST["add"])) :
         move_uploaded_file($_FILES['portrait']['tmp_name'], $portrait_filepath);
         $portrait = $portrait_filepath;
         $hasportrait = true;
-    } else {
-        $portraitError = "No image??";
     }
 
-    if ($name && $quote) {
+    if ($name && $quote & $job & $description) {
+
 
         $newFighter = [
             'id' => rand(9, 1000),
@@ -98,11 +97,13 @@ if (isset($_POST["add"])) :
             'playstyle' => $style,
             'description' => $description,
             'portrait' => $portrait
+
         ];
 
         addFighter($newFighter);
+
+        header('Location: ?page=list');
     }
 
-    header('Location: ?page=list');
 
 endif;
