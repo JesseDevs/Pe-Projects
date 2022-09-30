@@ -1188,7 +1188,7 @@ form > field:last-child {
 }
 
 label {
-  max-width: 42%;
+  max-width: 55%;
   display: block;
   float: left;
   margin-top: -10px;
