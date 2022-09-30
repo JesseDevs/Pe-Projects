@@ -18,14 +18,14 @@
             },
             {
                 "title": "GitHub",
-                "link": "https://github.com/JesseDevs/pe-projects/tree/main/projects/php-crud"
+                "link": "https://github.com/JesseDevs/pe-projects/tree/main/projects/fighters-crud"
             },
             {
                 "title": "Live",
-                "link": "https://peprojects.dev/alpha-4/jesse/projects/php-crud/"
+                "link": "https://peprojects.dev/alpha-4/jesse/projects/fighters-crud/"
             }
         ],
-        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/php-crud",
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/fighters-crud",
         "casestudy": [
             {
                 "module": "diptech",
