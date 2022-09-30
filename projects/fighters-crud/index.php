@@ -13,8 +13,8 @@ $metaImage = null;
 
     <title>Fighters</title>
 
-    <meta name='description' content="Fighters">
-    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/php-crud/images/streetfighter-metadata.jpeg">
+    <meta name='description' content="CRUD Projects based on my favorite fighting game. Who's the next challenger??">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/fighters-crud/images/streetfighter-metadata.jpeg">
 
     <link rel="stylesheet" href="style.css">
 </head>
