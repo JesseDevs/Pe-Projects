@@ -12,7 +12,7 @@
         <p><?= $chosenFighter['description'] ?></p>
     </text-content>
 
-    <em class='calm-voice'><?= $chosenFighter['quote'] ?></em>
+    <em class='quote calm-voice'><?= $chosenFighter['quote'] ?></em>
 
 
     <?php if (isset($chosenFighter['audio'])) { ?>

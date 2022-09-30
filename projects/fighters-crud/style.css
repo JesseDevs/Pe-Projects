@@ -836,6 +836,10 @@ general-diptech text-content {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 general-diptech text-content p {
   max-width: 65ch;
@@ -845,6 +849,44 @@ general-diptech text-content p {
 general-diptech text-content p:last-of-type {
   padding-left: 0;
   border-left: 3px solid transparent;
+  position: relative;
+  padding: 5px;
+}
+general-diptech text-content p:last-of-type:before {
+  content: "";
+  height: 60px;
+  width: 3px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: -3px;
+  left: -3px;
+}
+general-diptech text-content p:last-of-type:after {
+  content: "";
+  height: 3px;
+  width: 60px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: -3px;
+  left: -3px;
+}
+general-diptech text-content p:first-of-type:before {
+  content: "";
+  height: 60px;
+  width: 3px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+}
+general-diptech text-content p:first-of-type:after {
+  content: "";
+  height: 3px;
+  width: 60px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
 }
 general-diptech .portrait {
   box-shadow: 0 0 0 3px var(--main-color);
@@ -1304,7 +1346,7 @@ textarea {
 
 fighter-page {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 30px;
 }
 fighter-page em {
