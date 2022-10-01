@@ -1,0 +1,143 @@
+footer .logo {
+
+    width: 211px;
+    height: 53px;
+}
+
+footer {
+    background-color: var(--highlight);
+    color: var(--page);
+}
+
+footer .logo path {
+    fill: var(--page);
+}
+
+footer .menu {
+    gap: 10px;
+}
+
+footer .menu .actions {
+    display: none;
+}
+
+footer .socials {
+    gap: 15px;
+    flex-shrink: 1;
+}
+
+footer .socials li {
+    border-radius: 50%;
+    padding: 7px 8px;
+    border: 1.5px solid var(--page);
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-bottom: var(--footer-space);
+}
+
+.resources li:not(.list-header) {
+    opacity: .7;
+}
+
+.resources .list-header {
+    padding-bottom: 2px;
+
+    font-weight: 700;
+    color: var(--page);
+}
+
+.resources ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-space);
+}
+
+navigation-block .menu {
+    border-top: 1px solid var(--page);
+    padding-top: var(--footer-space);
+}
+
+subscribe-block {
+    grid-row: 3;
+    grid-column: span 2;
+}
+
+.template-two footer {
+    background-color: var(--page);
+}
+
+.template-two footer .logo path {
+    fill: var(--highlight);
+}
+
+.template-two footer .actions {
+    color: var(--ink);
+}
+
+.template-two .resources .list-header {
+    color: var(--dark);
+}
+
+.template-two .resources {
+    color: var(--dark);
+}
+
+.template-two .socials li:not(:nth-of-type(3)) path {
+    fill: var(--second-gray);
+}
+
+.template-two .socials path {
+    stroke: var(--second-gray);
+}
+
+.template-two .socials li {
+    border: 1.5px solid var(--gray);
+}
+
+.template-two navigation-block .menu {
+    border-top: 1px solid var(--gray);
+    padding-top: var(--footer-space);
+}
+
+@media(min-width:650px) {
+    footer .menu {
+        gap: 0px;
+        justify-content: space-between;
+
+    }
+
+    footer .menu .actions {
+        display: flex;
+    }
+
+    subscribe-block {
+        grid-row: 2;
+        grid-column: 2/ span 1;
+    }
+}
+
+@media(min-width:800px) {
+    .resources {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 65px;
+        align-items: center;
+        padding-left: 61px;
+        padding-right: 61px;
+    }
+
+    .resources ul:nth-of-type(2),
+    .resources ul:nth-of-type(3) {
+        align-self: baseline;
+    }
+
+    .resources subscribe-block {
+        grid-row: 1;
+        grid-column: 4/ span 2;
+        min-width: 338px;
+    }
+
+}

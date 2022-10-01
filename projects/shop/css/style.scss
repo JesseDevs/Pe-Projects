@@ -1,0 +1,18 @@
+@import '_reset';
+@import '_setup';
+@import '_variables';
+@import '_typography';
+@import '_modules';
+@import '_components';
+
+.intro {
+    color: var(--main-gray);
+    margin: 0 auto;
+}
+
+text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}

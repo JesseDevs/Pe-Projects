@@ -1,0 +1,52 @@
+@import '../templates/components/article-card/_style.scss';
+@import '../templates/components/client-card/_style.scss';
+@import '../templates/components/subscribe-block/_style.scss';
+@import '../templates/components/email-input/_style.scss';
+
+
+landing-block a {
+    padding: 15px 24px;
+    font-weight: 500;
+}
+
+landing-block a:nth-of-type(1) {
+    background: var(--highlight);
+    color: var(--page);
+    border: 1px solid var(--highlight);
+
+}
+
+landing-block a:nth-of-type(2) {
+    background: var(--page);
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+
+call-to-action a {
+    padding: 15px 15px;
+    color: var(--page);
+    background-color: var(--highlight);
+    font-weight: 500;
+}
+
+.template-two call-to-action a:nth-of-type(2) {
+    background: var(--page);
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+
+.template-two call-to-action a:nth-of-type(2) .arrow path {
+    stroke: var(--highlight);
+}
+
+@media(min-width:800px) {
+    landing-block a {
+        padding: 15px 50px;
+    }
+
+    call-to-action a {
+        padding: 15px 35px;
+
+    }
+
+}

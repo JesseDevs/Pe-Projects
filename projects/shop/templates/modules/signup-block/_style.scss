@@ -1,0 +1,86 @@
+signup-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+}
+
+
+signup-block picture {
+    background-color: var(--support);
+}
+
+signup-block img {
+    opacity: 0;
+}
+
+
+.template-three signup-block input {
+    background-color: var(--page);
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4.5H20C21.1 4.5 22 5.4 22 6.5V18.5C22 19.6 21.1 20.5 20 20.5H4C2.9 20.5 2 19.6 2 18.5V6.5C2 5.4 2.9 4.5 4 4.5Z' stroke='%23E0E0E0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M22 6.5L12 13.5L2 6.5' stroke='%23E0E0E0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding-left: 50px;
+    border: 1px solid #9E9E9E;
+    border-radius: 5px;
+
+}
+
+.template-three signup-block input::placeholder {
+    color: #BDBDBD;
+    font-size: 16px;
+}
+
+.template-three signup-block email-input {
+    gap: 20px;
+    max-width: 500px;
+    align-self: start;
+}
+
+.template-three signup-block email-input a {
+    background-color: var(--highlight);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: var(--page);
+
+}
+
+.template-three signup-block text-content {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.template-three signup-block text-content p {
+    margin: 0;
+}
+
+.template-three signup-block picture {
+    max-width: 500px;
+}
+
+.template-three .signup-block inner-column {
+    max-width: 1010px;
+}
+
+@media(min-width:800px) {
+    .template-three signup-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0px;
+
+    }
+
+    .template-three signup-block email-input,
+    .template-three signup-block text-content {
+        grid-column: 1;
+
+    }
+
+    .template-three signup-block picture {
+        grid-row: 1 /span 2;
+        grid-column: 2;
+
+    }
+
+}
