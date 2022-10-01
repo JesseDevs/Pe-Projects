@@ -107,6 +107,11 @@ project-card .span-title {
 		text-shadow: none;
 	}
 
+	project-card:first-of-type .project-detail {
+		position: static;
+		margin-top: 0;
+	}
+
 	project-card:first-of-type text-content {
 		grid-column: 3 / span 2;
 	}
@@ -139,11 +144,13 @@ project-card .span-title {
 	}
 
 	project-card:not(:first-of-type) {
-		grid-template-rows: auto;
+		grid-template-rows: 70px auto auto auto;
+		row-gap: var(--simple-space);
 	}
 
 	project-card:not(:first-of-type) .project-thumbnail {
 		grid-column: span 4;
+		aspect-ratio: auto;
 	}
 
 	project-card:not(:first-of-type) text-content {
@@ -153,6 +160,7 @@ project-card .span-title {
 	project-card:not(:first-of-type) .project-detail {
 
 		padding: 0;
+		margin: 0;
 		position: static;
 		grid-row: 3;
 		grid-column: span 4;
@@ -161,7 +169,6 @@ project-card .span-title {
 
 	project-card:not(:first-of-type) .action-link {
 		grid-column: 3/span 2;
-		margin-top: var(--simple-space);
 	}
 
 }
