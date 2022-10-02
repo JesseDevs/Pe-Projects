@@ -15,7 +15,7 @@ $projectDetailPageLink = $project['links'][0]['link']  ?? $project['direct-link'
 	</text-content>
 	<picture class='project-thumbnail'>
 
-		<img src=" <?= $project['thumbnail'] ?>" alt="">
+		<img src=" <?= $project['thumbnail'] ?>" alt="" loading='lazy'>
 	</picture>
 
 

@@ -28,7 +28,7 @@ $article["title"]
     </text-content>
 
     <picture>
-        <img src="<?= $article["image"] ?>" alt="">
+        <img src="<?= $article["image"] ?>" alt="" loading='lazy'>
     </picture>
 
 

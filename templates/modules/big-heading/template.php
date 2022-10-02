@@ -8,7 +8,7 @@ $intro = $section['intro'] ?? $formThing['intro'];
     <h1 class="roar-voice"><?= $heading ?></h1>
     <p class="intro"><?= $intro ?></p>
     <?php if (isset($section['image'])) { ?>
-        <img src=" <?= $section['image'] ?>" alt="thing">
+        <img src=" <?= $section['image'] ?>" alt="thing" loading='lazy'>
 
     <?php } ?>
 </big-heading>

@@ -21,7 +21,7 @@
         <picture class="about-image">
             <?php foreach ($section['images'] as $image) { ?>
 
-                <img src="<?= $image ?>" alt="Me">
+                <img src="<?= $image ?>" alt="Me" loading='lazy'>
 
             <?php } ?>
         </picture>

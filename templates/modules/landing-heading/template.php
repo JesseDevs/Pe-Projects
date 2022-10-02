@@ -13,7 +13,7 @@ $heading = $section['heading'] ?? ucfirst($page);
 
     <picture class="landing-image">
 
-        <img src=" <?= $section['image'] ?>" alt="comp">
+        <img src=" <?= $section['image'] ?>" alt="comp" loading='lazy'>
     </picture>
 
 </landing-heading>
