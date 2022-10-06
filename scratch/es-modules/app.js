@@ -1,4 +1,4 @@
-import library from './library';
+import library from './library.js';
 
 const outlet = document.querySelector('output');
 
