@@ -47269,6 +47269,36 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/scratch\/es-modules\/app.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scratch\/es-modules\/app-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/scratch\/es-modules\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scratch\/es-modules\/index.html",
+      "oF" : 0
+    },
+    "\/scratch\/es-modules\/library.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/scratch\/es-modules\/library-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/scratch\/functions.php" : {
       "cB" : 0,
       "ft" : 8192,

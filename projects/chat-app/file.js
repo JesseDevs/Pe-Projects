@@ -1,12 +1,12 @@
-
-// create signin page
-// create comments page
-// create profile page
-
 var currentUser = {};
 
-var username = "Jesse";
-var password = "1234";
+var userData = [
+    {
+        username: "jesse",
+        password: "1234",
+    },
+];
+
 const siteName = "Welcome to the Chat";
 const outlet = document.querySelector('[rel="outlet"]');
 
@@ -28,7 +28,7 @@ routes.signIn = `
                 Let's get you started with account and then we could enter any channel with a topic you want to discuss.
             </p>
 
-            <form action="">
+            <form action="" id='signIn'>
             <input type="text" name="username" placeholder="Username" value="Jesse" />
 
             <input type="password" name="password" placeholder="Password" value="1234" />
@@ -36,7 +36,6 @@ routes.signIn = `
             <button type="submit" data-action='signIn' >Sign In</button>
             <form>
 
-	</section>
         </inner-column>
     </section>
 `;
@@ -146,7 +145,7 @@ routes.games = `
 routes.profile = `
     <section>
         <inner-column>
-            <h2 class='strict-voice'>${renderUsername()}</h2>
+            <h2 class='strict-voice'>${currentUser.name}</h2>
      
                 <button data-route='signIn'>Sign out</button>
         </inner-column>
@@ -191,6 +190,20 @@ function renderChannelsList(list) {
     });
     template += `</ul>`;
     document.querySelector('#channels-list').innerHTML = template;
+}
+
+
+function handleSignIn(userData, usernameInput, passwordInput) {
+    for (var step = 0; step < userData.length; step++) {
+        if (userData[step].username == usernameInput) {
+            console.log(`username is ${usernameInput}`);
+            if (userData[step].password == passwordInput) {
+                console.log(`password is ${passwordInput}`);
+                return true;
+            }
+        }
+    }
+    return false; // otherwise - explicitly 
 }
 
 // EVENT LISTENERS
@@ -268,32 +281,17 @@ window.addEventListener('click', function (event) {
 
     if (event.target.matches('[data-action="signIn"]')) {
         event.preventDefault();
-        var form = event.target.closest('form');
-        var username = form.querySelector('input[type="text"]').value;
-        var password = form.querySelector('input[type="password"]').value;
-
-        handleSignIn(username, password);
-    }
-});
-
-
-function handleSignIn(username, password) {
-
-    if (username == "Jesse" && password == '1234') {
-        console.log(username, password);
-        currentUser.username = username;
+        var form = event.target.closest('#signIn');
+        var user = form.querySelector('#signIn input[type="text"]').value;
+        var pass = form.querySelector('#signIn input[type="password"]').value;
+        if (handleSignIn(userData, user, pass)) {
+            console.log('must be signed in!!!');
+            currentUser.name = user;
+            console.log('currentUser: ', currentUser);
+        }
 
         renderView(routes["channels"]);
         renderChannelsList(channelsData);
-
-    } else {
-        alert("Wrong something");
+        console.log(`username is ${usernameInput}`);
     }
-}
-
-function renderUsername() {
-    console.log(currentUser.username);
-    if (window.currentUser.username) {
-        return window.currentUser.username;
-    }
-}
+});

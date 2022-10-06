@@ -26,7 +26,24 @@
 
 
         <div class="outlet" rel="outlet">
+            <section>
+                <inner-column>
+                    <h2 class='strict-voice'>${siteName}</h2>
 
+                    <p class='signin-intro'>
+                        Let's get you started with account and then we could enter any channel with a topic you want to discuss.
+                    </p>
+
+                    <form action="">
+                        <input type="text" name="username" placeholder="Username" value="Jesse" />
+
+                        <input type="password" name="password" placeholder="Password" value="1234" />
+
+                        <button type="submit" data-action='signIn'>Sign In</button>
+                        <form>
+
+                </inner-column>
+            </section>
 
         </div>
 
