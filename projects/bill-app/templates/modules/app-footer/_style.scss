@@ -1,0 +1,17 @@
+app-footer {
+    width: 100%;
+    display: block;
+    padding: 10px 0 15px;
+
+    nav {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    nav path {
+        stroke: var(--ink);
+    }
+
+}

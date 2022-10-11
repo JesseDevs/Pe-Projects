@@ -1,0 +1,21 @@
+app-header {
+    width: 100%;
+    display: block;
+
+    padding: 15px 0 10px;
+
+    nav {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    nav path {
+        stroke: var(--page);
+    }
+
+    nav button:last-of-type {
+        grid-column: 4;
+    }
+}
