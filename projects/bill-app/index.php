@@ -20,8 +20,9 @@
         <inner-column>
 
             <h1>What's the <em><span>B</span>ill?</em></h1>
-            <output></output>
-
+            <output class='output-one'></output>
+            <output class='output-two'></output>
+            <output class='output-three'></output>
         </inner-column>
     </header>
 

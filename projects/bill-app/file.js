@@ -1,31 +1,36 @@
 console.clear();
 
-const billContainer = {
-    currentAmount,
-    currentTip
-}
-
 let currentAmount = 0;
 let currentTip = 0;
+let finalSum = 0;
+let perPersonSum = 0;
 
 const outlet = document.querySelector(".outlet");
-const output = document.querySelector("output");
+const outputOne = document.querySelector(".output-one");
+const outputTwo = document.querySelector(".output-two");
+const outputThree = document.querySelector(".output-three");
+
+function updateAmount(amount) {
+    outputOne.textContent = amount;
+    currentAmount = amount;
+}
+
+function calculateTotal(amount, tip) {
+    finalSum = parseFloat(amount) + parseFloat(tip);
+}
+
+function calculatePerPerson(amount, people) {
+    perPersonSum = parseFloat(amount) / parseInt(people);
+}
 
 function calculateTip(amount, tip) {
     var rawTip = amount * (parseFloat(tip) * .01);
     var roundedTip = rawTip.toFixed(2);
 
     currentTip = roundedTip;
-}
+    outputTwo.textContent = currentTip;
 
-function updateAmount(amount) {
-    output.textContent = amount;
-    currentAmount = amount;
-    console.log(currentAmount);
-}
-
-function renderPage(window) {
-    outlet.innerHTML = window;
+    calculateTotal(currentAmount, currentTip);
 }
 
 function showButton(hasInput, selector) {
@@ -37,6 +42,10 @@ function showButton(hasInput, selector) {
     }
     // if theres an input make the button appear
     // if theres no input then the button doesn't appear
+}
+
+function renderPage(window) {
+    outlet.innerHTML = window;
 }
 
 const homeTemplate = `
@@ -57,7 +66,7 @@ const tipTemplate = `
 
 <field rel='tip'>
     <label for="">How much should we tip?</label>
-    <input id='tip' type="range" min="0" max="10">
+    <input id='tip' type="range" min="0" max="10" value='5'>
 </field>
 
 <action-block>
@@ -71,11 +80,11 @@ const splitTemplate = `
 
 <field rel='split'>
     <label for="">Spliting how many way?</label>
-    <input type="number" min='1'>
+    <input id='split' type="number" min='1' value='1'>
 </field>
 
 <action-block>
-    <button id='total' data-route="total">Total</button>
+    <button id='perPerson' data-route="perPerson" >Total</button>
 </action-block>
 
 `;
@@ -83,11 +92,27 @@ const splitTemplate = `
 const totalTemplate = `
 <h2>TOTAL</h2>
 
-<div rel='total'>
-    <p class='total-amount'>
+<output id='total'> 
 
-    </p>
-</div>
+</output>
+
+<field rel='split'>
+    <label for="">Want to split?</label>
+    <input id='split' type="number" min='1' placeholder='1'>
+</field>
+
+<action-block>
+    <button id='perPerson' data-route="perPerson" >Total</button>
+</action-block>
+
+`;
+
+const perPersonTemplate = `
+<h2>TOTAL</h2>
+
+<output id='person-total'> 
+
+</output>
 
 `;
 
@@ -95,19 +120,53 @@ const routes = {
     home: homeTemplate,
     tip: tipTemplate,
     split: splitTemplate,
-    total: totalTemplate
+    total: totalTemplate,
+    perPerson: perPersonTemplate
 };
 
 renderPage(homeTemplate);
 
 window.addEventListener("click", function (event) {
+
     if (event.target.matches("[data-route]")) {
         var destination = event.target.dataset.route;
         renderPage(routes[destination]);
+
+
+        if (destination == "total") {
+            const totalOutput = document.querySelector("#total");
+            totalOutput.textContent = finalSum;
+
+            const finalReceipt = {
+                subTotal: currentAmount,
+                tip: currentTip,
+                total: finalSum,
+                personAmount: perPersonSum
+            }
+
+            console.log(finalReceipt);
+        }
+
+        if (destination == "perPerson") {
+            const personOutput = document.querySelector("#person-total");
+            personOutput.textContent = perPersonSum;
+
+            const finalReceipt = {
+                subTotal: currentAmount,
+                tip: currentTip,
+                total: finalSum,
+                personAmount: perPersonSum
+            }
+
+            console.log(finalReceipt);
+        }
+
     }
+
 });
 
 window.addEventListener("input", function (event) {
+
     if (event.target.matches("#sub-total")) {
         updateAmount(event.target.value);
         showButton(event.target.value.length, "#start");
@@ -115,6 +174,13 @@ window.addEventListener("input", function (event) {
 
     if (event.target.matches("#tip")) {
         calculateTip(currentAmount, event.target.value);
-        console.log(currentTip);
+        outputThree.textContent = finalSum;
     }
+
+    if (event.target.matches("#split")) {
+        calculatePerPerson(finalSum, event.target.value);
+        console.log(perPersonSum);
+    }
+
 });
+
