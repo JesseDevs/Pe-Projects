@@ -415,8 +415,10 @@ output {
   border: 3px dotted green;
   display: block;
   width: 100%;
-  padding: 10px;
-  height: 50px;
+}
+
+output:before {
+  content: "$";
 }
 
 button {
@@ -424,9 +426,57 @@ button {
   margin-left: auto;
 }
 
-main h2 {
-  font-family: "Cinzel", serif;
-  font-weight: 600;
+input {
+  padding: 15px;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+input[type=range] {
+  padding: 0;
+}
+
+input:focus {
+  outline-color: var(--green-shadow);
+}
+
+receipt-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--ink);
+  color: var(--page);
+  font-family: "VT323", monospace;
+  padding: 1rem;
+  border-bottom: 5px inset rgb(214, 60, 60);
+  border-top: 5px inset rgb(214, 60, 60);
+  border-image: linear-gradient(white, rgb(187, 182, 182), rgb(120, 118, 118), white) 80;
+}
+receipt-block div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+receipt-block h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+receipt-block h4:after {
+  bottom: -10px;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-bottom: 2px dotted black;
+}
+receipt-block output {
+  font-size: 1.3rem;
+  min-height: 30px;
+  text-align: right;
+  width: 50%;
 }
 
 #home {
@@ -452,15 +502,4 @@ action-block {
 
 .receipt {
   display: block;
-}
-
-receipt-block {
-  display: block;
-  background-color: var(--ink);
-  color: var(--page);
-  font-family: "VT323", monospace;
-  padding: 1rem;
-  border-bottom: 5px inset rgb(214, 60, 60);
-  border-top: 5px inset rgb(214, 60, 60);
-  border-image: linear-gradient(white, rgb(187, 182, 182), rgb(120, 118, 118), white) 80;
 }

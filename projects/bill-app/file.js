@@ -52,7 +52,7 @@ const homeTemplate = `
 <output-block>
     <field>
         <label for="">Total amount?</label>
-        <input id='sub-total' type="number">
+        <input id='sub-total' min="1" type="number">
     </field>
 
     <action-block>

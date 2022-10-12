@@ -5,13 +5,6 @@
 @import '_modules';
 @import '_components';
 
-main {
-    h2 {
-        font-family: 'Cinzel', serif;
-        font-weight: 600;
-    }
-}
-
 #home {
     display: none;
 }
@@ -36,18 +29,4 @@ action-block {
 
 .receipt {
     display: block;
-}
-
-receipt-block {
-    display: block;
-    background-color: var(--ink);
-    color: var(--page);
-    font-family: 'VT323', monospace;
-
-    padding: 1rem;
-
-    border-bottom: 5px inset rgb(214, 60, 60);
-    border-top: 5px inset rgb(214, 60, 60);
-
-    border-image: linear-gradient(white, rgb(187, 182, 182), rgb(120, 118, 118), white) 80;
 }

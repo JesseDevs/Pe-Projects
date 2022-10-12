@@ -32,7 +32,20 @@
                 <!-- final totals will be here displayed like a reciept -->
 
                 <receipt-block>
-                    hello
+                    <h2 class='yell-voice'>Receipt</h2>
+
+                    <div>
+                        <h4 class='attention-voice'>Sub Total </h4>
+                        <output class='output-one'></output>
+                    </div>
+                    <div>
+                        <h4 class='attention-voice'>Tip Amount </h4>
+                        <output class='output-two'></output>
+                    </div>
+                    <div>
+                        <h4 class='attention-voice'>Total </h4>
+                        <output class='output-three'></output>
+                    </div>
                 </receipt-block>
 
             </inner-column>
