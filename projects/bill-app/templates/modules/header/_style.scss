@@ -1,0 +1,35 @@
+header {
+
+    inner-column {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    h1,
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Cinzel', serif;
+        font-weight: 800;
+    }
+
+    h1 {
+        flex-direction: column;
+    }
+
+    span {
+        text-shadow: -3px 2px 5px var(--green-shadow);
+        letter-spacing: 1px;
+    }
+
+    svg {
+        display: inline-block;
+
+        max-width: 60px;
+        max-width: 100px;
+    }
+
+}

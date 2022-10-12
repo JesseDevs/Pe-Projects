@@ -4,6 +4,8 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -82,6 +84,8 @@ html {
   --page: rgb(23 23 23);
   --menus: rgb(80 79 77);
   --menus-support: rgb(80 79 77 /.5);
+  --green-shadow: rgb(86, 145, 65);
+  --green: rgb(73 98 67);
 }
 
 @media (min-width: 800px) {
@@ -240,8 +244,8 @@ inner-column {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 3rem 1rem;
-  max-width: 1200px;
+  padding: 2rem 1rem;
+  max-width: 1000px;
 }
 
 article-grid,
@@ -332,7 +336,6 @@ em {
 
 .yell-voice {
   font-size: clamp(26px, 7vw, 56px);
-  text-transform: capitalize;
   font-weight: 600;
 }
 
@@ -354,7 +357,9 @@ em {
   font-size: clamp(18px, 3.5vw, 22px);
 }
 
-.calm-voice, p, li {
+.calm-voice,
+p,
+li {
   font-size: clamp(16px, 2vw, 20px);
   line-height: 1.4;
 }
@@ -380,10 +385,82 @@ code {
   color: green;
 }
 
+header inner-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+header h1,
+header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cinzel", serif;
+  font-weight: 800;
+}
+header h1 {
+  flex-direction: column;
+}
+header span {
+  text-shadow: -3px 2px 5px var(--green-shadow);
+  letter-spacing: 1px;
+}
+header svg {
+  display: inline-block;
+  max-width: 60px;
+  max-width: 100px;
+}
+
 output {
   border: 3px dotted green;
   display: block;
   width: 100%;
   padding: 10px;
   height: 50px;
+}
+
+button {
+  max-width: 50%;
+  margin-left: auto;
+}
+
+main h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+
+#home {
+  display: none;
+}
+
+output-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+output-block field {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+action-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.receipt {
+  display: block;
+}
+
+receipt-block {
+  display: block;
+  background-color: var(--ink);
+  color: var(--page);
+  font-family: "VT323", monospace;
+  padding: 1rem;
+  border-bottom: 5px inset rgb(214, 60, 60);
+  border-top: 5px inset rgb(214, 60, 60);
+  border-image: linear-gradient(white, rgb(187, 182, 182), rgb(120, 118, 118), white) 80;
 }

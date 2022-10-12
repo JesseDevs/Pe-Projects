@@ -16,15 +16,7 @@
 </head>
 
 <body>
-    <header>
-        <inner-column>
-
-            <h1>What's the <em><span>B</span>ill?</em></h1>
-            <output class='output-one'></output>
-            <output class='output-two'></output>
-            <output class='output-three'></output>
-        </inner-column>
-    </header>
+    <?php include('templates/modules/header/template.php') ?>
 
     <main class="page-content ">
         <section>
@@ -34,12 +26,23 @@
 
             </inner-column>
         </section>
+
+        <section class='totals-container'>
+            <inner-column class='receipt'>
+                <!-- final totals will be here displayed like a reciept -->
+
+                <receipt-block>
+                    hello
+                </receipt-block>
+
+            </inner-column>
+        </section>
     </main>
 
     <footer>
         <inner-column>
             <action-block>
-                <button data-route='home'>Home</button>
+                <button data-route='home' id='home'>Home</button>
             </action-block>
         </inner-column>
     </footer>

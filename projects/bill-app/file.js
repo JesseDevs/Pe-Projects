@@ -49,70 +49,75 @@ function renderPage(window) {
 }
 
 const homeTemplate = `
-<h2>HOME</h2>
+<output-block>
+    <field>
+        <label for="">Total amount?</label>
+        <input id='sub-total' type="number">
+    </field>
 
-<field>
-    <label for="">Total amount?</label>
-    <input id='sub-total' type="number">
-</field>
-
-<action-block>
-    <button id='start' data-route="tip" disabled  >Start</button>
-</action-block>
+    <action-block>
+        <button id='start' data-route="tip" disabled  >Start</button>
+    </action-block>
+</output-block>
 `;
 
 const tipTemplate = `
-<h2>TIP</h2>
 
-<field rel='tip'>
-    <label for="">How much should we tip?</label>
-    <input id='tip' type="range" min="0" max="10" value='5'>
-</field>
+<output-block>
+    <field>
+        <label for="">How much should we tip?</label>
+        <input id='tip' type="range" min="0" max="10" value='5'>
+    </field>
 
-<action-block>
-    <button id='total' data-route="total">Total</button>
-    <button data-route="split">Are we spliting?</button>
-</action-block>
+    <action-block>
+        <button id='total' data-route="total">Total</button>
+        <button data-route="split">Are we spliting?</button>
+    </action-block>
+</output-block>
 `;
 
 const splitTemplate = `
-<h2>SPLIT</h2>
+<output-block>
+    <field>
+        <label for="">Spliting how many way?</label>
+        <input id='split' type="number" min='1' value='1'>
+    </field>
 
-<field rel='split'>
-    <label for="">Spliting how many way?</label>
-    <input id='split' type="number" min='1' value='1'>
-</field>
-
-<action-block>
-    <button id='perPerson' data-route="perPerson" >Total</button>
-</action-block>
+    <action-block>
+        <button id='perPerson' data-route="perPerson" >Total</button>
+    </action-block>
+</output-block>
 
 `;
 
 const totalTemplate = `
-<h2>TOTAL</h2>
+<output-block>
+    <h3 class='strict-voice'>TOTAL</h3>
 
-<output id='total'> 
+    <output id='total'> 
 
-</output>
+    </output>
 
-<field rel='split'>
-    <label for="">Want to split?</label>
-    <input id='split' type="number" min='1' placeholder='1'>
-</field>
+    <field rel='split'>
+        <label for="">Want to split?</label>
+        <input id='split' type="number" min='1' placeholder='1'>
+    </field>
 
-<action-block>
-    <button id='perPerson' data-route="perPerson" >Total</button>
-</action-block>
+    <action-block>
+        <button id='perPerson' data-route="perPerson" >Total</button>
+    </action-block>
+</output-block>
 
 `;
 
 const perPersonTemplate = `
-<h2>TOTAL</h2>
+<output-block>
+    <h3 class='strict-voice'>TOTAL</h3>
 
-<output id='person-total'> 
+    <output id='person-total'> 
 
-</output>
+    </output>
+</output-block>
 
 `;
 
@@ -132,6 +137,10 @@ window.addEventListener("click", function (event) {
         var destination = event.target.dataset.route;
         renderPage(routes[destination]);
 
+        if (destination !== "home") {
+            document.querySelector('#home').style.display = "block";
+        }
+
 
         if (destination == "total") {
             const totalOutput = document.querySelector("#total");
@@ -143,8 +152,6 @@ window.addEventListener("click", function (event) {
                 total: finalSum,
                 personAmount: perPersonSum
             }
-
-            console.log(finalReceipt);
         }
 
         if (destination == "perPerson") {
@@ -157,8 +164,6 @@ window.addEventListener("click", function (event) {
                 total: finalSum,
                 personAmount: perPersonSum
             }
-
-            console.log(finalReceipt);
         }
 
     }
@@ -183,4 +188,5 @@ window.addEventListener("input", function (event) {
     }
 
 });
+
 

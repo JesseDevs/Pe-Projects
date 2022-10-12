@@ -2210,6 +2210,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/projects\/bill-app\/images\/bill.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/bill-app\/images\/bill.php",
+      "oF" : 0
+    },
     "\/projects\/bill-app\/images\/wolf.png" : {
       "ft" : 32768,
       "iS" : 2219,
@@ -2242,6 +2250,29 @@
       "oAP" : "\/projects\/bill-app\/style-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/projects\/bill-app\/templates\/modules\/header\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/bill-app\/templates\/modules\/header\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/bill-app\/templates\/modules\/header\/template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/bill-app\/templates\/modules\/header\/template.php",
+      "oF" : 0
     },
     "\/projects\/chat-app\/css\/_components.scss" : {
       "aP" : 0,
