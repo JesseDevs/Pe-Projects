@@ -2204,9 +2204,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/projects\/bill-app\/file-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -2242,60 +2242,6 @@
       "oAP" : "\/projects\/bill-app\/style-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/projects\/bill-app\/templates\/modules\/app-footer\/_style.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/bill-app\/templates\/modules\/app-footer\/_style.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/projects\/bill-app\/templates\/modules\/app-footer\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/bill-app\/templates\/modules\/app-footer\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/bill-app\/templates\/modules\/app-header\/_style.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/projects\/bill-app\/templates\/modules\/app-header\/_style.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/projects\/bill-app\/templates\/modules\/app-header\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/bill-app\/templates\/modules\/app-header\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/bill-app\/templates\/pages\/home.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/bill-app\/templates\/pages\/home.php",
-      "oF" : 0
     },
     "\/projects\/chat-app\/css\/_components.scss" : {
       "aP" : 0,
@@ -44171,7 +44117,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 115303,
+      "iS" : 37319,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",

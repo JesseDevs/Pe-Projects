@@ -240,21 +240,17 @@ inner-column {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 1rem;
+  padding: 3rem 1rem;
   max-width: 1200px;
 }
 
-app-block {
-  max-width: 500px;
-}
-
 article-grid,
+action-block,
 text-content,
 label,
 input,
 field,
-button,
-app-block {
+button {
   display: block;
   width: 100%;
 }
@@ -384,35 +380,10 @@ code {
   color: green;
 }
 
-app-header {
-  width: 100%;
+output {
+  border: 3px dotted green;
   display: block;
-  padding: 15px 0 10px;
-}
-app-header nav {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-}
-app-header nav path {
-  stroke: var(--page);
-}
-app-header nav button:last-of-type {
-  grid-column: 4;
-}
-
-app-footer {
   width: 100%;
-  display: block;
-  padding: 10px 0 15px;
-}
-app-footer nav {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-}
-app-footer nav path {
-  stroke: var(--ink);
+  padding: 10px;
+  height: 50px;
 }

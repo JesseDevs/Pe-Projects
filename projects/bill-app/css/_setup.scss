@@ -32,22 +32,17 @@ inner-column {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 0 1rem;
+	padding: 3rem 1rem;
 	max-width: 1200px;
 }
 
-app-block {
-	max-width: 500px;
-
-}
-
 article-grid,
+action-block,
 text-content,
 label,
 input,
 field,
-button,
-app-block {
+button {
 	display: block;
 	width: 100%;
 }
