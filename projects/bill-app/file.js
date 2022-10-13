@@ -24,6 +24,9 @@ function calculateTotal(amount, tip) {
 
 function calculatePerPerson(amount, people) {
     calculatedSum = parseFloat(amount) / parseInt(people);
+    if (isNaN(calculatedSum)) {
+        calculatedSum = parseFloat(amount);
+    }
     perPersonSum = calculatedSum.toFixed(2);
 
 }
@@ -70,7 +73,7 @@ const tipTemplate = `
 
 <output-block>
     <field class='range-container'>
-        <label for=""><span>How much should we tip?</span></label>
+        <label for=""><span>How much tip?</span></label>
         <div class="percentage">
             <p></p>
         </div>
@@ -101,10 +104,10 @@ const splitTemplate = `
 `;
 
 const totalTemplate = `
-<output-block>
+<output-block calss='total'>
     <h3 class='strict-voice'>TOTAL</h3>
 
-    <output id='total'> 
+    <output id='total' class='roar-voice'> 
 
     </output>
 
@@ -122,10 +125,10 @@ const totalTemplate = `
 `;
 
 const perPersonTemplate = `
-<output-block>
+<output-block class='total'>
     <h3 class='strict-voice'>TOTAL</h3>
 
-    <output id='person-total'> 
+    <output id='person-total'  class='roar-voice'> 
 
     </output>
 </output-block>

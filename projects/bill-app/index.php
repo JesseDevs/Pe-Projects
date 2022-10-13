@@ -19,46 +19,48 @@
     <?php include('templates/modules/header/template.php') ?>
 
     <main class="page-content ">
-        <section>
-            <inner-column class="outlet" rel='outlet'>
+        <inner-column>
+            <section>
+                <inner-column class="outlet" rel='outlet'>
 
-                <!-- Stuff goes here. -->
+                    <!-- Stuff goes here. -->
 
-            </inner-column>
-        </section>
+                </inner-column>
+            </section>
 
-        <section class='totals-container'>
-            <inner-column class='receipt'>
-                <!-- final totals will be here displayed like a reciept -->
+            <section class='totals-container'>
+                <inner-column class='receipt'>
+                    <!-- final totals will be here displayed like a reciept -->
 
-                <receipt-block>
-                    <h2 class='yell-voice'>Receipt</h2>
+                    <receipt-block>
+                        <h2 class='yell-voice'>Receipt</h2>
 
-                    <div>
-                        <h4 class='attention-voice'>Sub Total </h4>
-                        <output class='output-one'></output>
-                    </div>
-                    <div>
-                        <h4 class='attention-voice'>Tip Amount </h4>
-                        <output class='output-two'></output>
-                    </div>
-                    <div>
-                        <h4 class='attention-voice'>Total </h4>
-                        <output class='output-three'></output>
-                    </div>
-                    <div>
-                        <h4 class='attention-voice'>People</h4>
-                        <output class='output-four'></output>
-                    </div>
-                    <div>
-                        <h4 class='attention-voice'>Per Person</h4>
-                        <output class='output-five'></output>
-                    </div>
+                        <div>
+                            <h4 class='attention-voice'>Sub Total </h4>
+                            <output class='output-one'></output>
+                        </div>
+                        <div>
+                            <h4 class='attention-voice'>Tip Amount </h4>
+                            <output class='output-two'></output>
+                        </div>
+                        <div>
+                            <h4 class='attention-voice'>Total </h4>
+                            <output class='output-three'></output>
+                        </div>
+                        <div>
+                            <h4 class='attention-voice'>People</h4>
+                            <output class='output-four'></output>
+                        </div>
+                        <div>
+                            <h4 class='attention-voice'>Per Person</h4>
+                            <output class='output-five'></output>
+                        </div>
 
-                </receipt-block>
+                    </receipt-block>
 
-            </inner-column>
-        </section>
+                </inner-column>
+            </section>
+        </inner-column>
     </main>
     <?php include('templates/modules/footer/template.php') ?>
 

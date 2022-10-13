@@ -437,7 +437,6 @@ div:nth-of-type(4) output:before {
 
 button {
   max-width: 50%;
-  margin-left: auto;
   background-color: #DD9F54;
   border: 0 solid #e2e8f0;
   border-radius: 2px;
@@ -486,7 +485,6 @@ input[type=range] {
   border-radius: 3px;
   height: 5px;
   width: 115px;
-  margin-top: 120px;
   align-self: flex-end;
   justify-self: flex-start;
 }
@@ -564,6 +562,25 @@ receipt-block output {
   width: 50%;
 }
 
+@media (min-width: 600px) {
+  main > inner-column {
+    padding: 0;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  button {
+    max-width: 40%;
+  }
+  header inner-column {
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+  }
+}
+field {
+  min-height: 120px;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   appearance: none;
@@ -577,16 +594,27 @@ input[type=number] {
 
 output-block {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
-  min-height: 170px;
+}
+output-block h3 {
+  font-family: "Lobster", serif;
+  letter-spacing: 2px;
+  max-width: fit-content;
+  color: #e7e3b6;
+  padding-bottom: 20px;
 }
 output-block input[type=number],
 output-block label,
 output-block span {
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border: none;
   font-size: 22px;
+}
+output-block label {
+  color: #EBE9D9;
+  line-height: 1.4;
 }
 output-block input[type=number]:focus {
   outline: 0;
@@ -668,10 +696,25 @@ output-block .percentage p:after {
   content: "%";
 }
 
+output.roar-voice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
 action-block {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 20px;
+}
+action-block button {
+  margin: 0;
+}
+
+.range-container + action-block {
+  justify-content: center;
 }
 
 .receipt {

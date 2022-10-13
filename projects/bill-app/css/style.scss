@@ -5,6 +5,31 @@
 @import '_modules';
 @import '_components';
 
+@media(min-width:600px) {
+    main {
+        >inner-column {
+            padding: 0;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    button {
+        max-width: 40%;
+    }
+
+    header inner-column {
+        padding: 1.5rem;
+        padding-bottom: 3rem;
+    }
+}
+
+field {
+    min-height: 120px;
+}
+
+
 //removes scroll from numbe input
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -21,17 +46,29 @@ input[type=number] {
 
 output-block {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 10px;
-    min-height: 170px;
+
+    h3 {
+        font-family: 'Lobster', serif;
+        letter-spacing: 2px;
+        max-width: fit-content;
+        color: #e7e3b6;
+        padding-bottom: 20px;
+    }
 
     input[type="number"],
     label,
     span {
-        // margin: 10px;
-        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         border: none;
         font-size: 22px;
+    }
+
+    label {
+        color: #EBE9D9;
+        line-height: 1.4;
     }
 
     input[type="number"]:focus {
@@ -81,7 +118,6 @@ output-block {
 
     input[type="number"]:valid+label {
         border-color: #1e293b;
-        ;
     }
 
 
@@ -131,10 +167,27 @@ output-block {
     }
 }
 
+output.roar-voice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: monospace;
+}
+
 action-block {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 20px;
+
+    button {
+        margin: 0;
+    }
+}
+
+.range-container+action-block {
+    justify-content: center;
 }
 
 .receipt {
