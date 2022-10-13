@@ -4,7 +4,6 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -231,7 +230,7 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  background-color: var(--page);
+  background-color: var(--green);
   color: var(--ink);
 }
 
@@ -244,7 +243,7 @@ inner-column {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   max-width: 1000px;
 }
 
@@ -389,14 +388,17 @@ header inner-column {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 header h1,
 header span {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Cinzel", serif;
+  font-family: "Lobster", serif;
   font-weight: 800;
+  letter-spacing: 2px;
 }
 header h1 {
   flex-direction: column;
@@ -411,8 +413,15 @@ header svg {
   max-width: 100px;
 }
 
+footer inner-column {
+  padding-top: 0;
+}
+
+footer.home {
+  display: none;
+}
+
 output {
-  border: 3px dotted green;
   display: block;
   width: 100%;
 }
@@ -421,11 +430,46 @@ output:before {
   content: "$";
 }
 
+div:nth-of-type(4) output:before {
+  content: "";
+}
+
 button {
   max-width: 50%;
   margin-left: auto;
+  background-color: #e7e3b6;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
+button:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
 input {
   padding: 15px;
   font-size: 2rem;
@@ -448,6 +492,7 @@ receipt-block {
   color: var(--page);
   font-family: "VT323", monospace;
   padding: 1rem;
+  padding-bottom: 40px;
   border-bottom: 5px inset rgb(214, 60, 60);
   border-top: 5px inset rgb(214, 60, 60);
   border-image: linear-gradient(white, rgb(187, 182, 182), rgb(120, 118, 118), white) 80;
@@ -457,6 +502,9 @@ receipt-block div {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+receipt-block div:nth-of-type(4) {
+  margin-top: 20px;
 }
 receipt-block h2 {
   text-align: center;
@@ -473,25 +521,95 @@ receipt-block h4:after {
   border-bottom: 2px dotted black;
 }
 receipt-block output {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   min-height: 30px;
   text-align: right;
   width: 50%;
 }
 
-#home {
-  display: none;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 output-block {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 10px;
+  min-height: 170px;
 }
-output-block field {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+output-block input[type=number],
+output-block label,
+output-block span {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+}
+output-block input[type=number]:focus {
+  outline: 0;
+}
+output-block input[type=number] {
+  font-size: 48px;
+  color: var(--ink);
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden;
+  /* Hack to make "rows" attribute apply in Firefox. */
+}
+output-block input[type=number] + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 3px solid #DD9F54;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+output-block input[type=number]:focus + label {
+  width: 80%;
+}
+output-block input[type=number]:focus,
+output-block input[type=number]:valid {
+  margin-top: 35px;
+}
+output-block input[type=number]:focus + label > span,
+output-block input[type=number]:valid + label > span {
+  top: -105px;
+  font-size: 22px;
+  color: #e7e3b6;
+}
+output-block input[type=number]:valid + label {
+  border-color: #1e293b;
+}
+output-block input[type=number] + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #EBE9D9;
+  font-size: 48px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+output-block .split-container {
+  min-height: 105px;
 }
 
 action-block {
