@@ -69,15 +69,18 @@ const homeTemplate = `
 const tipTemplate = `
 
 <output-block>
-    <field>
-    <label for=""><span>How much should we tip?</span></label>
-        <input id='tip' required type="range" min="0" max="30" value="15">
+    <field class='range-container'>
+        <label for=""><span>How much should we tip?</span></label>
+        <div class="percentage">
+            <p></p>
+        </div>
+        <input id='tip' required type="range" orient="vertical" min="0" max="30" value="15">
 
     </field>
 
     <action-block>
         <button id='total' data-route="total">Total</button>
-        <button data-route="split">Are we spliting?</button>
+        <button data-route="split">Split?</button>
     </action-block>
 </output-block>
 `;
@@ -87,7 +90,7 @@ const splitTemplate = `
     <field>
 
         <input id='split' required type="number" min='1'>
-        <label for=""><span>Spliting how many way?</span></label>
+        <label for=""><span>Spliting how many ways?</span></label>
     </field>
 
     <action-block>
@@ -108,7 +111,7 @@ const totalTemplate = `
     <field class='split-container'>
 
         <input id='split' required type="number" min='1'>
-        <label for=""><span>Want to split?</span></label>
+        <label for=""><span>Split instead?</span></label>
     </field>
 
     <action-block>
@@ -174,7 +177,7 @@ window.addEventListener("click", function (event) {
             }
         }
 
-        if (destination == "perPerson" || destination == "total") {
+        if (destination == "perPerson") {
             outputFive.textContent = perPersonSum;
         }
 
@@ -190,8 +193,11 @@ window.addEventListener("input", function (event) {
     }
 
     if (event.target.matches("#tip")) {
+        const percentage = document.querySelector('.percentage p');
+
         calculateTip(currentAmount, event.target.value);
         outputThree.textContent = finalSum;
+        percentage.textContent = event.target.value;
     }
 
     if (event.target.matches("#split")) {
@@ -200,5 +206,3 @@ window.addEventListener("input", function (event) {
     }
 
 });
-
-

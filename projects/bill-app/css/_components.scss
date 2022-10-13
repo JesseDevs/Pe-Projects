@@ -14,11 +14,11 @@ div:nth-of-type(4) output:before {
 button {
     max-width: 50%;
     margin-left: auto;
-    background-color: #e7e3b6;
+    background-color: #DD9F54;
     border: 0 solid #e2e8f0;
-    border-radius: 1.5rem;
+    border-radius: 2px;
     box-sizing: border-box;
-    color: #0d172a;
+    color: #1e293b;
     cursor: pointer;
     display: inline-block;
     font-family: 'Inter', sans-serif;
@@ -27,7 +27,7 @@ button {
     line-height: 1;
     padding: 1rem 1.6rem;
     text-align: center;
-    text-decoration: none #0d172a solid;
+    text-decoration: none #1e293b solid;
     text-decoration-thickness: auto;
     transition: all .1s cubic-bezier(.4, 0, .2, 1);
     box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
@@ -56,8 +56,54 @@ input {
 
 input[type="range"] {
     padding: 0;
+    appearance: none;
+    transform: rotate(270deg);
+    transform-origin: top left;
+    border: none;
+    border-radius: 3px;
+    height: 5px;
+    width: 115px;
+    margin-top: 120px;
+
+    align-self: flex-end;
+    justify-self: flex-start;
 }
 
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    width: 5px;
+    background: #EBE9D9;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #1e293b;
+    margin-top: -5px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+
+// input[type="range"]::slider-thumb {
+//     height: 15px;
+//     width: 15px;
+//     background-color: #1c1c1c;
+//     border-radius: 50%;
+//     cursor: pointer;
+// }
 
 input:focus {
     outline-color: var(--green-shadow);
