@@ -46,19 +46,21 @@
                         <h4 class='attention-voice'>Total </h4>
                         <output class='output-three'></output>
                     </div>
+                    <div>
+                        <h4 class='attention-voice'>People</h4>
+                        <output class='output-four'></output>
+                    </div>
+                    <div>
+                        <h4 class='attention-voice'>Per Person</h4>
+                        <output class='output-five'></output>
+                    </div>
+
                 </receipt-block>
 
             </inner-column>
         </section>
     </main>
-
-    <footer>
-        <inner-column>
-            <action-block>
-                <button data-route='home' id='home'>Home</button>
-            </action-block>
-        </inner-column>
-    </footer>
+    <?php include('templates/modules/footer/template.php') ?>
 
     <script src="file.js"></script>
 </body>

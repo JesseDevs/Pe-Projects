@@ -9,6 +9,8 @@ const outlet = document.querySelector(".outlet");
 const outputOne = document.querySelector(".output-one");
 const outputTwo = document.querySelector(".output-two");
 const outputThree = document.querySelector(".output-three");
+const outputFour = document.querySelector(".output-four");
+const outputFive = document.querySelector(".output-five");
 
 function updateAmount(amount) {
     outputOne.textContent = amount;
@@ -16,11 +18,14 @@ function updateAmount(amount) {
 }
 
 function calculateTotal(amount, tip) {
-    finalSum = parseFloat(amount) + parseFloat(tip);
+    calculatedSum = parseFloat(amount) + parseFloat(tip);
+    finalSum = calculatedSum.toFixed(2);
 }
 
 function calculatePerPerson(amount, people) {
-    perPersonSum = parseFloat(amount) / parseInt(people);
+    calculatedSum = parseFloat(amount) / parseInt(people);
+    perPersonSum = calculatedSum.toFixed(2);
+
 }
 
 function calculateTip(amount, tip) {
@@ -51,8 +56,8 @@ function renderPage(window) {
 const homeTemplate = `
 <output-block>
     <field>
-        <label for="">Total amount?</label>
-        <input id='sub-total' min="1" type="number">
+        <input id='sub-total' required min="1" type="number">
+        <label for=""><span>Total amount?</span></label>
     </field>
 
     <action-block>
@@ -65,8 +70,9 @@ const tipTemplate = `
 
 <output-block>
     <field>
-        <label for="">How much should we tip?</label>
-        <input id='tip' type="range" min="0" max="10" value='5'>
+    <label for=""><span>How much should we tip?</span></label>
+        <input id='tip' required type="range" min="0" max="30" value="15">
+
     </field>
 
     <action-block>
@@ -79,8 +85,9 @@ const tipTemplate = `
 const splitTemplate = `
 <output-block>
     <field>
-        <label for="">Spliting how many way?</label>
-        <input id='split' type="number" min='1' value='1'>
+
+        <input id='split' required type="number" min='1'>
+        <label for=""><span>Spliting how many way?</span></label>
     </field>
 
     <action-block>
@@ -98,9 +105,10 @@ const totalTemplate = `
 
     </output>
 
-    <field rel='split'>
-        <label for="">Want to split?</label>
-        <input id='split' type="number" min='1' placeholder='1'>
+    <field class='split-container'>
+
+        <input id='split' required type="number" min='1'>
+        <label for=""><span>Want to split?</span></label>
     </field>
 
     <action-block>
@@ -138,7 +146,7 @@ window.addEventListener("click", function (event) {
         renderPage(routes[destination]);
 
         if (destination !== "home") {
-            document.querySelector('#home').style.display = "block";
+            document.querySelector('footer.home').style.display = "block";
         }
 
 
@@ -166,6 +174,10 @@ window.addEventListener("click", function (event) {
             }
         }
 
+        if (destination == "perPerson" || destination == "total") {
+            outputFive.textContent = perPersonSum;
+        }
+
     }
 
 });
@@ -184,7 +196,7 @@ window.addEventListener("input", function (event) {
 
     if (event.target.matches("#split")) {
         calculatePerPerson(finalSum, event.target.value);
-        console.log(perPersonSum);
+        outputFour.textContent = event.target.value;
     }
 
 });

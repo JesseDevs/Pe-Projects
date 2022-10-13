@@ -1,7 +1,7 @@
 <header>
     <inner-column>
 
-        <h1 class='yell-voice'>What's the <span> <?php include('images/bill.php') ?>ill?</span></h1>
+        <h1 class='yell-voice'>Bill / Split</h1>
 
     </inner-column>
 </header>
