@@ -47,6 +47,14 @@ button:hover {
     }
 }
 
+button:disabled,
+button[disabled] {
+    pointer-events: none;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
 input {
     padding: 15px;
     font-size: 2rem;

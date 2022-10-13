@@ -93,7 +93,7 @@ const splitTemplate = `
     <field>
 
         <input id='split' required type="number" min='1'>
-        <label for=""><span>Spliting how many ways?</span></label>
+        <label for=""><span>Split by?</span></label>
     </field>
 
     <action-block>
