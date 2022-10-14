@@ -3,6 +3,7 @@ console.clear();
 let currentAmount = 0;
 let currentTip = 0;
 let finalSum = 0;
+let people = 0;
 let perPersonSum = 0;
 
 const outlet = document.querySelector(".outlet");
@@ -20,6 +21,8 @@ function updateAmount(amount) {
 function calculateTotal(amount, tip) {
     calculatedSum = parseFloat(amount) + parseFloat(tip);
     finalSum = calculatedSum.toFixed(2);
+
+    outputThree.textContent = finalSum;
 }
 
 function calculatePerPerson(amount, people) {
@@ -28,6 +31,7 @@ function calculatePerPerson(amount, people) {
         calculatedSum = parseFloat(amount);
     }
     perPersonSum = calculatedSum.toFixed(2);
+    outputFour.textContent = people;
 
 }
 
@@ -153,8 +157,21 @@ window.addEventListener("click", function (event) {
 
         if (destination !== "home") {
             document.querySelector('footer.home').style.display = "block";
+
         }
 
+        if (destination == 'home') {
+            currentAmount = 0;
+            currentTip = 0;
+            finalSum = 0;
+            people = 0;
+            perPersonSum = 0;
+
+            updateAmount(currentAmount);
+            calculateTip(currentAmount, currentTip);
+            calculatePerPerson(finalSum, people);
+            outputFive.textContent = perPersonSum;
+        }
 
         if (destination == "total") {
             const totalOutput = document.querySelector("#total");
@@ -199,13 +216,12 @@ window.addEventListener("input", function (event) {
         const percentage = document.querySelector('.percentage p');
 
         calculateTip(currentAmount, event.target.value);
-        outputThree.textContent = finalSum;
         percentage.textContent = event.target.value;
     }
 
     if (event.target.matches("#split")) {
-        calculatePerPerson(finalSum, event.target.value);
-        outputFour.textContent = event.target.value;
+        people = event.target.value;
+        calculatePerPerson(finalSum, people);
     }
 
 });
