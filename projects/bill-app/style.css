@@ -576,9 +576,6 @@ receipt-block output {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  button {
-    max-width: 40%;
-  }
   header inner-column {
     padding: 1.5rem;
     padding-bottom: 3rem;
