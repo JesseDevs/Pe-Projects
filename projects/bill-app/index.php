@@ -7,7 +7,7 @@
 
     <title>What's the bill?</title>
     <meta name='description' content="stuff">
-    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/manga/images/reeds.jpg">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/bill-app/images/calc.jpg">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
 

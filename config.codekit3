@@ -2218,6 +2218,19 @@
       "oAP" : "\/projects\/bill-app\/images\/bill.php",
       "oF" : 0
     },
+    "\/projects\/bill-app\/images\/calc.jpg" : {
+      "ft" : 16384,
+      "iS" : 23778,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/bill-app\/images\/calc.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/projects\/bill-app\/images\/wolf.png" : {
       "ft" : 32768,
       "iS" : 2219,
