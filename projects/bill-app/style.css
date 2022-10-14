@@ -436,7 +436,6 @@ div:nth-of-type(4) output:before {
 }
 
 button {
-  max-width: 50%;
   background-color: #DD9F54;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -713,13 +712,12 @@ output.roar-voice {
 }
 
 action-block {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-action-block button {
-  margin: 0;
+action-block button.custom-btn {
+  grid-column: span 2;
 }
 
 .range-container + action-block {

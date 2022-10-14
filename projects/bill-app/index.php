@@ -9,7 +9,7 @@
     <meta name='description' content="stuff">
     <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/bill-app/images/calc.jpg">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/dollar.png" />
 
     <link rel="stylesheet" href="style.css">
 

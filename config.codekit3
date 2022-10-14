@@ -2210,14 +2210,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/projects\/bill-app\/images\/bill.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/bill-app\/images\/bill.php",
-      "oF" : 0
-    },
     "\/projects\/bill-app\/images\/calc.jpg" : {
       "ft" : 16384,
       "iS" : 23778,
@@ -2229,6 +2221,19 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/bill-app\/images\/dollar.png" : {
+      "ft" : 32768,
+      "iS" : 33598,
+      "oA" : 0,
+      "oAP" : "\/projects\/bill-app\/images\/dollar.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/projects\/bill-app\/images\/wolf.png" : {

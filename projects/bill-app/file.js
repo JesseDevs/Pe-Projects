@@ -74,7 +74,19 @@ const homeTemplate = `
     </field>
 
     <action-block>
-        <button id='start' data-route="tip" disabled  >Start</button>
+        
+        <button id='fifteen' class='tip-btn' data-route="total" disabled  >
+            15%
+        </button>
+
+        <button id='twenty' class='tip-btn' data-route="total" disabled >
+            20%
+        </button>
+
+        <button id='start' class='tip-btn custom-btn' data-route="tip" disabled >Custom Tip</button>
+
+
+        <button id='no-tip' class='tip-btn custom-btn' data-route="total" disabled>No Tip</button>
     </action-block>
 </output-block>
 `;
@@ -107,7 +119,7 @@ const splitTemplate = `
     </field>
 
     <action-block>
-        <button id='perPerson' data-route="perPerson" >Total</button>
+        <button id='perPerson' disabled data-route="perPerson" >Total</button>
     </action-block>
 </output-block>
 
@@ -128,7 +140,9 @@ const totalTemplate = `
     </field>
 
     <action-block>
-        <button id='perPerson' data-route="perPerson" >Total</button>
+        <button data-route='home' id='home'>Home</button>
+
+        <button id='perPerson' disabled data-route="perPerson" >Split</button>
     </action-block>
 </output-block>
 
@@ -142,6 +156,12 @@ const perPersonTemplate = `
 
     </output>
 </output-block>
+
+<action-block>
+    <button data-route='home' id='home'>Home</button>
+
+    <button data-route='split' id='peopleChange'>Change People</button>
+</action-block>
 
 `;
 
@@ -161,9 +181,10 @@ window.addEventListener("click", function (event) {
         var destination = event.target.dataset.route;
         renderPage(routes[destination]);
 
-        if (destination !== "home") {
+        if (destination == "tip" || destination == "split") {
             document.querySelector('footer.home').style.display = "block";
-
+        } else {
+            document.querySelector('footer.home').style.display = "none";
         }
 
         if (destination == 'home') {
@@ -183,24 +204,18 @@ window.addEventListener("click", function (event) {
             const totalOutput = document.querySelector("#total");
             totalOutput.textContent = numberFormatter.format(finalSum);
 
-            const finalReceipt = {
-                subTotal: currentAmount,
-                tip: currentTip,
-                total: finalSum,
-                personAmount: perPersonSum
-            }
+            // const finalReceipt = {
+            //     subTotal: currentAmount,
+            //     tip: currentTip,
+            //     total: finalSum,
+            //     personAmount: perPersonSum
+            // }
         }
 
         if (destination == "perPerson") {
             const personOutput = document.querySelector("#person-total");
             personOutput.textContent = numberFormatter.format(perPersonSum);
 
-            const finalReceipt = {
-                subTotal: currentAmount,
-                tip: currentTip,
-                total: finalSum,
-                personAmount: perPersonSum
-            }
         }
 
         if (destination == "perPerson") {
@@ -209,13 +224,34 @@ window.addEventListener("click", function (event) {
 
     }
 
+    if (event.target.matches("#fifteen")) {
+        calculateTip(currentAmount, 15);
+        const totalOutput = document.querySelector("#total");
+        totalOutput.textContent = numberFormatter.format(finalSum);
+    }
+
+    if (event.target.matches("#twenty")) {
+        calculateTip(currentAmount, 20);
+        const totalOutput = document.querySelector("#total");
+        totalOutput.textContent = numberFormatter.format(finalSum);
+    }
+
+    if (event.target.matches("#no-tip")) {
+        calculateTip(currentAmount, 0);
+        const totalOutput = document.querySelector("#total");
+        totalOutput.textContent = numberFormatter.format(finalSum);
+    }
+
 });
 
 window.addEventListener("input", function (event) {
 
     if (event.target.matches("#sub-total")) {
         updateAmount(event.target.value);
-        showButton(event.target.value.length, "#start");
+        showButton(event.target.value.length, ".tip-btn:nth-of-type(1)");
+        showButton(event.target.value.length, ".tip-btn:nth-of-type(2)");
+        showButton(event.target.value.length, ".tip-btn:nth-of-type(3)");
+        showButton(event.target.value.length, ".tip-btn:nth-of-type(4)");
     }
 
     if (event.target.matches("#tip")) {
@@ -226,8 +262,12 @@ window.addEventListener("input", function (event) {
     }
 
     if (event.target.matches("#split")) {
+
         people = event.target.value;
+        showButton(event.target.value.length, "#perPerson");
         calculatePerPerson(finalSum, people);
+
     }
 
 });
+
