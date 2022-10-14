@@ -155,13 +155,13 @@ const perPersonTemplate = `
     <output id='person-total'  class='roar-voice'> 
 
     </output>
+
+    <action-block>
+        <button data-route='home' id='home'>Home</button>
+    
+        <button data-route='split' id='peopleChange'>Change People</button>
+    </action-block>
 </output-block>
-
-<action-block>
-    <button data-route='home' id='home'>Home</button>
-
-    <button data-route='split' id='peopleChange'>Change People</button>
-</action-block>
 
 `;
 
