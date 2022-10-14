@@ -23,7 +23,7 @@ function updateAmount(amount) {
 
 function calculateTotal(amount, tip) {
     calculatedSum = parseFloat(amount) + parseFloat(tip);
-    finalSum = calculatedSum.toFixed(2);
+    finalSum = calculatedSum.toFixed(3);
 
     outputThree.textContent = numberFormatter.format(finalSum);
 }
@@ -51,6 +51,11 @@ function calculateTip(amount, tip) {
     calculateTotal(currentAmount, currentTip);
 }
 
+function undoSplit(people, amount) {
+    var originalValue = parseFloat(amount) * parseInt(people);
+    finalSum = numberFormatter.format(originalValue);
+}
+
 function showButton(hasInput, selector) {
     const button = document.querySelector(selector);
     button.disabled = true;
@@ -69,7 +74,7 @@ function renderPage(window) {
 const homeTemplate = `
 <output-block class='home'>
     <field>
-        <input id='sub-total' required min="1" type="number">
+        <input id='sub-total' required min="1" type="number" pattern="[0-9]*" inputmode="numeric">
         <label for=""><span>Total amount?</span></label>
     </field>
 
@@ -114,7 +119,7 @@ const splitTemplate = `
 <output-block>
     <field>
 
-        <input id='split' required type="number" min='1'>
+        <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
         <label for=""><span>Split by?</span></label>
     </field>
 
@@ -135,8 +140,8 @@ const totalTemplate = `
 
     <field class='split-container'>
 
-        <input id='split' required type="number" min='1'>
-        <label for=""><span>Split instead?</span></label>
+        <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
+        <label for=""><span>Split it?</span></label>
     </field>
 
     <action-block>
@@ -158,8 +163,8 @@ const perPersonTemplate = `
 
     <action-block>
         <button data-route='home' id='home'>Home</button>
-    
-        <button data-route='split' id='peopleChange'>Change People</button>
+
+        <button data-route='split' id='peopleChange'>Undo</button>
     </action-block>
 </output-block>
 
@@ -239,6 +244,12 @@ window.addEventListener("click", function (event) {
     if (event.target.matches("#no-tip")) {
         calculateTip(currentAmount, 0);
         const totalOutput = document.querySelector("#total");
+        totalOutput.textContent = numberFormatter.format(finalSum);
+    }
+
+
+    if (event.target.matches("#people-change")) {
+        undoSplit(people, perPersonSum);
         totalOutput.textContent = numberFormatter.format(finalSum);
     }
 

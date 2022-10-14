@@ -173,6 +173,10 @@ output.roar-voice {
     font-family: monospace;
 }
 
+output#person-total+action-block {
+    padding-top: 30px;
+}
+
 action-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
