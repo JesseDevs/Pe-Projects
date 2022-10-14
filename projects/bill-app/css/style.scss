@@ -43,6 +43,7 @@ input[type=number] {
 }
 
 ////////
+/// 
 
 output-block {
     display: grid;
@@ -98,6 +99,7 @@ output-block {
         border-top: 3px solid #DD9F54;
         transition: width 0.4s ease;
         height: 0px;
+        z-index: -5;
     }
 
     input[type="number"]:focus+label {

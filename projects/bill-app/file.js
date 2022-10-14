@@ -6,6 +6,9 @@ let finalSum = 0;
 let people = 0;
 let perPersonSum = 0;
 
+// add comma to big
+const numberFormatter = Intl.NumberFormat('en-US');
+
 const outlet = document.querySelector(".outlet");
 const outputOne = document.querySelector(".output-one");
 const outputTwo = document.querySelector(".output-two");
@@ -14,7 +17,7 @@ const outputFour = document.querySelector(".output-four");
 const outputFive = document.querySelector(".output-five");
 
 function updateAmount(amount) {
-    outputOne.textContent = amount;
+    outputOne.textContent = numberFormatter.format(amount);
     currentAmount = amount;
 }
 
@@ -22,7 +25,7 @@ function calculateTotal(amount, tip) {
     calculatedSum = parseFloat(amount) + parseFloat(tip);
     finalSum = calculatedSum.toFixed(2);
 
-    outputThree.textContent = finalSum;
+    outputThree.textContent = numberFormatter.format(finalSum);
 }
 
 function calculatePerPerson(amount, people) {
@@ -39,8 +42,11 @@ function calculateTip(amount, tip) {
     var rawTip = amount * (parseFloat(tip) * .01);
     var roundedTip = rawTip.toFixed(2);
 
+    if (isNaN(roundedTip)) {
+        calculatedTip = 0;
+    }
     currentTip = roundedTip;
-    outputTwo.textContent = currentTip;
+    outputTwo.textContent = numberFormatter.format(currentTip);
 
     calculateTotal(currentAmount, currentTip);
 }
@@ -61,7 +67,7 @@ function renderPage(window) {
 }
 
 const homeTemplate = `
-<output-block>
+<output-block class='home'>
     <field>
         <input id='sub-total' required min="1" type="number">
         <label for=""><span>Total amount?</span></label>
@@ -175,7 +181,7 @@ window.addEventListener("click", function (event) {
 
         if (destination == "total") {
             const totalOutput = document.querySelector("#total");
-            totalOutput.textContent = finalSum;
+            totalOutput.textContent = numberFormatter.format(finalSum);
 
             const finalReceipt = {
                 subTotal: currentAmount,
@@ -187,7 +193,7 @@ window.addEventListener("click", function (event) {
 
         if (destination == "perPerson") {
             const personOutput = document.querySelector("#person-total");
-            personOutput.textContent = perPersonSum;
+            personOutput.textContent = numberFormatter.format(perPersonSum);
 
             const finalReceipt = {
                 subTotal: currentAmount,
@@ -198,7 +204,7 @@ window.addEventListener("click", function (event) {
         }
 
         if (destination == "perPerson") {
-            outputFive.textContent = perPersonSum;
+            outputFive.textContent = numberFormatter.format(perPersonSum);
         }
 
     }

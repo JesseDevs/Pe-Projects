@@ -649,6 +649,7 @@ output-block input[type=number] + label {
   border-top: 3px solid #DD9F54;
   transition: width 0.4s ease;
   height: 0px;
+  z-index: -5;
 }
 output-block input[type=number]:focus + label {
   width: 80%;
