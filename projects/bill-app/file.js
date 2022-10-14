@@ -164,7 +164,7 @@ const perPersonTemplate = `
     <action-block>
         <button data-route='home' id='home'>Home</button>
 
-        <button data-route='split' id='peopleChange'>Undo</button>
+        <button data-route='split' id='peopleChange'>Edit</button>
     </action-block>
 </output-block>
 
