@@ -16,6 +16,7 @@ const outputThree = document.querySelector(".output-three");
 const outputFour = document.querySelector(".output-four");
 const outputFive = document.querySelector(".output-five");
 
+
 function updateAmount(amount) {
     outputOne.textContent = numberFormatter.format(amount);
     currentAmount = amount;
@@ -67,6 +68,14 @@ function showButton(hasInput, selector) {
     // if theres no input then the button doesn't appear
 }
 
+function activate(input) {
+
+    const box = document.querySelector('label');
+    if (input) {
+        box.classList.add('activated');
+    }
+}
+
 function renderPage(window) {
     outlet.innerHTML = window;
 }
@@ -74,8 +83,9 @@ function renderPage(window) {
 const homeTemplate = `
 <output-block class='home'>
     <field>
+        <label for=""><span>Enter Amount?</span></label>
         <input id='sub-total' required min="1" type="number" pattern="[0-9]*" inputmode="numeric">
-        <label for=""><span>Total amount?</span></label>
+
     </field>
 
     <action-block>
@@ -118,9 +128,9 @@ const tipTemplate = `
 const splitTemplate = `
 <output-block>
     <field>
-
-        <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
         <label for=""><span>Split by?</span></label>
+        <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
+      
     </field>
 
     <action-block>
@@ -139,9 +149,9 @@ const totalTemplate = `
     </output>
 
     <field class='split-container'>
-
-        <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
         <label for=""><span>Split it?</span></label>
+        <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
+
     </field>
 
     <action-block>
@@ -164,7 +174,7 @@ const perPersonTemplate = `
     <action-block>
         <button data-route='home' id='home'>Home</button>
 
-        <button data-route='split' id='peopleChange'>Edit</button>
+        <button data-route='total' id='peopleChange'>Edit</button>
     </action-block>
 </output-block>
 
@@ -263,6 +273,7 @@ window.addEventListener("input", function (event) {
         showButton(event.target.value.length, ".tip-btn:nth-of-type(2)");
         showButton(event.target.value.length, ".tip-btn:nth-of-type(3)");
         showButton(event.target.value.length, ".tip-btn:nth-of-type(4)");
+
     }
 
     if (event.target.matches("#tip")) {
@@ -275,6 +286,10 @@ window.addEventListener("input", function (event) {
     if (event.target.matches("#split")) {
 
         people = event.target.value;
+        if (people == 0) {
+            people = 1;
+        }
+
         showButton(event.target.value.length, "#perPerson");
         calculatePerPerson(finalSum, people);
 

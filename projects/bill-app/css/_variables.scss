@@ -2,26 +2,20 @@ html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 
-	--small-space: 7px;
-	--simple-gap: 10px;
-	--card-space: 5px;
-	--simple-block-gap: 30px;
-	--question-gap: 35px;
-	--block-space: 70px;
-	--landing-space: 140px;
-	--footer-space: 22px;
-
+	--line: 1px;
 	--thin: 3px;
 	--thick: 5px;
 	--Xthick: 9px;
 
-	--gray: #e5e5e5;
 	--white: #fff;
 	--black: rgb(10 5 5);
 	--fade: rgb(10 10 10 / .3);
 	--lightFade: rgb(220 220 220 / .3);
+
+	--gray: #999999;
+	--dark-gray: #4c4c4c;
 	--dark: #212121;
-	--light: #E0E0E0;
+	--light: #cccccc;
 }
 
 
@@ -35,21 +29,13 @@ html {
 	--green-shadow: rgb(86, 145, 65);
 	--green: rgb(73 98 67);
 
+	--textaccent: #EBE9D9;
+	--darktextaccent: #d5d1a4;
+	--accent: #DD9F54;
+	--support: #1e293b;
+
 }
 
-@media(min-width:800px) {
-	html {
-
-		--small-space: 13px;
-		--card-space: 20px;
-		--simple-gap: 30px;
-		--simple-block-gap: 60px;
-		--question-gap: 70px;
-		--block-space: 100px;
-		--landing-space: 195.5px;
-		--footer-space: 47px;
-	}
-}
 
 @keyframes squeeze {
 	0% {

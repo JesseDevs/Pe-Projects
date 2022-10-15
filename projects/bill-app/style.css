@@ -58,24 +58,18 @@ table {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  --small-space: 7px;
-  --simple-gap: 10px;
-  --card-space: 5px;
-  --simple-block-gap: 30px;
-  --question-gap: 35px;
-  --block-space: 70px;
-  --landing-space: 140px;
-  --footer-space: 22px;
+  --line: 1px;
   --thin: 3px;
   --thick: 5px;
   --Xthick: 9px;
-  --gray: #e5e5e5;
   --white: #fff;
   --black: rgb(10 5 5);
   --fade: rgb(10 10 10 / .3);
   --lightFade: rgb(220 220 220 / .3);
+  --gray: #999999;
+  --dark-gray: #4c4c4c;
   --dark: #212121;
-  --light: #E0E0E0;
+  --light: #cccccc;
 }
 
 html {
@@ -85,20 +79,12 @@ html {
   --menus-support: rgb(80 79 77 /.5);
   --green-shadow: rgb(86, 145, 65);
   --green: rgb(73 98 67);
+  --textaccent: #EBE9D9;
+  --darktextaccent: #d5d1a4;
+  --accent: #DD9F54;
+  --support: #1e293b;
 }
 
-@media (min-width: 800px) {
-  html {
-    --small-space: 13px;
-    --card-space: 20px;
-    --simple-gap: 30px;
-    --simple-block-gap: 60px;
-    --question-gap: 70px;
-    --block-space: 100px;
-    --landing-space: 195.5px;
-    --footer-space: 47px;
-  }
-}
 @keyframes squeeze {
   0% {
     transform: scale(1, 1);
@@ -326,6 +312,9 @@ header h1 {
   cursor: pointer;
   transition: transform 1s;
 }
+header h1 span {
+  pointer-events: none;
+}
 header span:nth-of-type(1) {
   display: inline-block;
   animation: drop-in 0.7s ease-in-out;
@@ -371,13 +360,13 @@ output#person-total + action-block {
 output-block {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 output-block h3 {
   font-family: "Lobster", serif;
   letter-spacing: 2px;
   max-width: fit-content;
-  color: #e7e3b6;
+  color: var(--darktextaccent);
   padding-bottom: 20px;
 }
 output-block input[type=number],
@@ -389,10 +378,12 @@ output-block span {
   font-size: 22px;
 }
 output-block label {
-  color: #EBE9D9;
+  color: var(--textaccent);
   line-height: 1.4;
+  padding-left: 1rem;
 }
 output-block input[type=number]:focus {
+  border-color: var(--accent);
   outline: 0;
 }
 output-block input[type=number] {
@@ -402,50 +393,12 @@ output-block input[type=number] {
   border-radius: 2px;
   margin: 0;
   border: none;
-  background: rgba(0, 0, 0, 0);
-  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  border: 2px solid var(--darktextaccent);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.182);
+  transition: border-color 0.2s ease, margin-top 0.2s ease;
   overflow-x: hidden;
   /* Hack to make "rows" attribute apply in Firefox. */
-}
-output-block input[type=number] + label {
-  display: block;
-  position: relative;
-  white-space: nowrap;
-  padding: 0;
-  margin: 0;
-  width: 25%;
-  border-bottom: 3px solid #DD9F54;
-  transition: width 0.4s ease;
-  height: 0px;
-  z-index: -5;
-}
-output-block input[type=number]:focus + label {
-  width: 80%;
-  border-top: 3px solid #DD9F54;
-}
-output-block input[type=number]:focus,
-output-block input[type=number]:valid {
-  margin-top: 35px;
-}
-output-block input[type=number]:focus + label > span,
-output-block input[type=number]:valid + label > span {
-  top: -100px;
-  font-size: 22px;
-  color: #e7e3b6;
-}
-output-block input[type=number]:valid + label {
-  border-color: #1e293b;
-}
-output-block input[type=number] + label > span {
-  font-weight: 300;
-  margin: 0;
-  position: absolute;
-  color: #EBE9D9;
-  font-size: 40px;
-  top: -55px;
-  left: 0px;
-  z-index: -1;
-  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
 }
 output-block .split-container {
   min-height: 105px;
@@ -487,8 +440,8 @@ receipt-block {
   font-family: "VT323", monospace;
   padding: 1rem;
   padding-bottom: 40px;
-  border-bottom: 5px inset rgb(214, 60, 60);
-  border-top: 5px inset rgb(214, 60, 60);
+  border-bottom: var(--thick) inset rgb(214, 60, 60);
+  border-top: var(--thick) inset rgb(214, 60, 60);
   border-image: linear-gradient(white, rgb(187, 182, 182), rgb(120, 118, 118), white) 80;
 }
 receipt-block div {
@@ -512,7 +465,7 @@ receipt-block h4:after {
   position: absolute;
   width: 100%;
   height: 3px;
-  border-bottom: 2px dotted black;
+  border-bottom: var(--thin) dotted black;
 }
 receipt-block output {
   font-size: 1.8rem;
@@ -522,11 +475,11 @@ receipt-block output {
 }
 
 button {
-  background-color: #DD9F54;
-  border: 1px solid transparent;
+  background-color: var(--accent);
+  border: var(--line) solid transparent;
   border-radius: 2px;
   box-sizing: border-box;
-  color: #1e293b;
+  color: var(--support);
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
@@ -535,7 +488,7 @@ button {
   line-height: 1;
   padding: 1rem 1.6rem;
   text-align: center;
-  text-decoration: none #1e293b solid;
+  text-decoration: none var(--support) solid;
   text-decoration-thickness: auto;
   transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
@@ -545,8 +498,8 @@ button {
 }
 
 button:hover {
-  background-color: #1e293b;
-  color: #fff;
+  background-color: var(--support);
+  color: var(--white);
 }
 
 @media (min-width: 768px) {
@@ -558,13 +511,9 @@ button:hover {
 button:disabled,
 button[disabled] {
   pointer-events: none;
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
-}
-
-field {
-  min-height: 120px;
+  border: var(--line) solid var(--gray);
+  background-color: var(--dark);
+  color: var(--dark-gray);
 }
 
 input::-webkit-outer-spin-button,
@@ -600,7 +549,7 @@ input[type=range] {
 input[type=range]::-webkit-slider-runnable-track {
   height: 5px;
   width: 5px;
-  background: #EBE9D9;
+  background: var(--textaccent);
   border: none;
   border-radius: 3px;
 }
@@ -611,7 +560,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: #1e293b;
+  background: var(--support);
   margin-top: -5px;
 }
 
@@ -620,7 +569,7 @@ input[type=range]:focus {
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ccc;
+  background: var(--light);
 }
 
 input:focus {
