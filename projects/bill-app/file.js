@@ -120,7 +120,7 @@ const tipTemplate = `
     </field>
 
     <action-block>
-        <button id='total' data-route="total">Total</button>
+        <button id='calculateTotal' data-route="total">Total</button>
         <button data-route="split">Split It</button>
         <button data-route='home' id='home'>Home</button>
     </action-block>
