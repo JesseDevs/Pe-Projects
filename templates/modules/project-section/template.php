@@ -7,7 +7,7 @@
     <?php
     if ($page == 'home') {
         foreach ($projectsData as $project) { ?>
-            <?php if (isset($project['featured'])) { ?>
+            <?php if ($project['featured']) { ?>
                 <?php include('templates/modules/project-card/template.php'); ?>
     <?php }
         }

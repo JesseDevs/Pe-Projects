@@ -165,6 +165,7 @@
             "css",
             "php"
         ],
+        "featured": false,
         "links": [
             {
                 "title": "Details"
