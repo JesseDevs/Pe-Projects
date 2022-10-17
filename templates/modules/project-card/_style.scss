@@ -150,7 +150,6 @@ project-card .span-title {
 
 	project-card:not(:first-of-type) .project-thumbnail {
 		grid-column: span 4;
-		aspect-ratio: auto;
 	}
 
 	project-card:not(:first-of-type) text-content {

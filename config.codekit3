@@ -881,6 +881,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/projects\/bill\/bank.jpeg" : {
+      "ft" : 16384,
+      "iS" : 141283,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/bank.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/bill\/bank.jpg" : {
+      "ft" : 16384,
+      "iS" : 111681,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/bank.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/projects\/fighters\/create-fighter.jpg" : {
       "ft" : 16384,
       "iS" : 141041,
@@ -933,9 +959,9 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/projects\/fighters\/fighters.jpg" : {
+    "\/images\/projects\/fighters\/fighters.jpeg" : {
       "ft" : 16384,
-      "iS" : 484306,
+      "iS" : 701293,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/projects\/fighters\/fighters.jpg",
@@ -991,6 +1017,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/projects\/garden\/grid.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/garden\/layout.jpeg" : {
+      "ft" : 16384,
+      "iS" : 124542,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/garden\/layout.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1076,6 +1115,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/projects\/legends\/legend.jpeg" : {
+      "ft" : 16384,
+      "iS" : 154966,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/legends\/legend.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/projects\/legends\/legends.jpg" : {
       "ft" : 16384,
       "iS" : 560779,
@@ -1108,6 +1160,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/projects\/legends\/selected-card.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/theme\/basket.jpeg" : {
+      "ft" : 16384,
+      "iS" : 169171,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/theme\/basket.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

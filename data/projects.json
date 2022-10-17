@@ -4,7 +4,7 @@
         "title": "Fighters: CRUD",
         "intro": "crud",
         "detail": "This project uses fighters from the video game Street Fighter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
-        "thumbnail": "images/projects/fighters/fighters.jpg",
+        "thumbnail": "images/projects/fighters/fighters.jpeg",
         "skills": [
             "html",
             "css",
@@ -74,11 +74,38 @@
         ]
     },
     {
+        "id": "bill",
+        "title": "Bill App",
+        "intro": "JS APP",
+        "detail": "An app dedicated to solving one of life's many problems.. splitting the bill amongst a group.",
+        "thumbnail": "images/projects/bill/bank.jpeg",
+        "skills": [
+            "html",
+            "css",
+            "javascript"
+        ],
+        "featured": true,
+        "links": [
+            {
+                "title": "Details"
+            },
+            {
+                "title": "GitHub",
+                "link": "https://github.com/JesseDevs/pe-projects/tree/main/projects/bill-app"
+            },
+            {
+                "title": "Live",
+                "link": "https://peprojects.dev/alpha-4/jesse/projects/bill-app/"
+            }
+        ],
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/bill-app"
+    },
+    {
         "id": "theme",
         "title": "Theme Challenge",
         "intro": "theme",
         "detail": "A project taking a templated out structure and crafting it to match an industry standard website. My focus was based on sports news outlets.",
-        "thumbnail": "images/projects/theme/theme.jpg",
+        "thumbnail": "images/projects/theme/basket.jpeg",
         "skills": [
             "html",
             "css",
@@ -98,46 +125,20 @@
                 "link": "https://peprojects.dev/alpha-4/jesse/projects/theme-challenge/"
             }
         ],
-        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/theme-challenge",
-        "images": [
-            "images/projects/theme/theme-landing.jpg",
-            "images/projects/theme/grid.jpg",
-            "images/projects/theme/cta.jpg",
-            "images/projects/theme/footer.jpg"
-        ],
-        "casestudy": [
-            {
-                "header": "The Challenge",
-                "writeup": [
-                    null
-                ]
-            },
-            {
-                "header": "Goals",
-                "writeup": [
-                    null
-                ]
-            },
-            {
-                "header": "The Approach",
-                "writeup": [
-                    null
-                ]
-            }
-        ]
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/theme-challenge"
     },
     {
         "id": "legends",
         "title": "Legends",
         "intro": "php",
         "detail": "The key points of this project is looping through data, specifc data styling, and a responsive layout for file path.",
-        "thumbnail": "images/projects/legends/legends.jpg",
+        "thumbnail": "images/projects/legends/legend.jpeg",
         "skills": [
             "html",
             "css",
             "php"
         ],
-        "featured": true,
+        "featured": false,
         "links": [
             {
                 "title": "Details"
@@ -151,39 +152,14 @@
                 "link": "https://peprojects.dev/alpha-4/jesse/projects/legends/"
             }
         ],
-        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/legends",
-        "images": [
-            "images/projects/legends/card.jpg",
-            "images/projects/legends/mid-size.jpg",
-            "images/projects/legends/selected-card.jpg"
-        ],
-        "casestudy": [
-            {
-                "header": "The Challenge",
-                "writeup": [
-                    null
-                ]
-            },
-            {
-                "header": "Goals",
-                "writeup": [
-                    null
-                ]
-            },
-            {
-                "header": "The Approach",
-                "writeup": [
-                    null
-                ]
-            }
-        ]
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/legends"
     },
     {
         "id": "layout-garden",
         "title": "Layout",
         "intro": "Garden",
         "detail": "This project takes some time to analyze some more complicated layout designs. Combining these together to form a layout garden for viewing.",
-        "thumbnail": "./images/projects/garden/layout.jpg",
+        "thumbnail": "./images/projects/garden/layout.jpeg",
         "skills": [
             "html",
             "css",
@@ -202,32 +178,6 @@
                 "link": "https://peprojects.dev/alpha-4/jesse/projects/layouts/"
             }
         ],
-        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/layouts",
-        "images": [
-            "images/projects/garden/grid.jpg",
-            "images/projects/garden/mon.jpg",
-            "images/projects/garden/wed.jpg",
-            "images/projects/garden/tues.jpg"
-        ],
-        "casestudy": [
-            {
-                "header": "The Challenge",
-                "writeup": [
-                    null
-                ]
-            },
-            {
-                "header": "Goals",
-                "writeup": [
-                    null
-                ]
-            },
-            {
-                "header": "The Approach",
-                "writeup": [
-                    null
-                ]
-            }
-        ]
+        "direct-link": "https://peprojects.dev/alpha-4/jesse/projects/layouts"
     }
 ]
