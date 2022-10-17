@@ -75,8 +75,8 @@
     },
     {
         "id": "bill",
-        "title": "Bill App",
-        "intro": "JS APP",
+        "title": "Bill Split",
+        "intro": "APP",
         "detail": "An app dedicated to solving one of life's many problems.. splitting the bill amongst a group.",
         "thumbnail": "images/projects/bill/bank.jpeg",
         "skills": [
