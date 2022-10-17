@@ -894,6 +894,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/projects\/bill\/landing.png" : {
+      "ft" : 32768,
+      "iS" : 446407,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/landing.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/images\/projects\/fighters\/create-fighter.jpg" : {
       "ft" : 16384,
       "iS" : 141041,
@@ -44262,7 +44275,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 115303,
+      "iS" : 37319,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",
