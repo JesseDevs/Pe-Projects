@@ -4,6 +4,7 @@
         "title": "Fighters: CRUD",
         "intro": "crud",
         "detail": "This project uses fighters from the video game Street Fighter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
+        "one-line": "Database backed by JSON data",
         "thumbnail": "images/projects/fighters/fighters.jpeg",
         "skills": [
             "html",
@@ -79,6 +80,7 @@
         "intro": "APP",
         "detail": "An app dedicated to solving one of life's many problems.. splitting the bill amongst a group.",
         "thumbnail": "images/projects/bill/bank.jpeg",
+        "one-line": "Javascript calculations",
         "skills": [
             "html",
             "css",
@@ -104,7 +106,7 @@
                 "module": "diptech",
                 "title": "The Purpose",
                 "flipped": false,
-                "image": "images/projects/bills/landing.png",
+                "image": "images/projects/bill/landing.png",
                 "text": "The goal of this project was to get myself and others away from a calculator app when the bill arrives at the table. This app would be a one way stop to gather the total amount, take the tip and then check if you’d like to split it amongst the group. Javascript provides the buttons with capabilities of loading new template pages to the output box on the landing page, to create a seamless experience for the user. In addition to loading these templates, create functions that will calculate all the necessary math and display it to the user. Present all the information to the user and keep it simple, understandable, and frictionless. "
             },
             {

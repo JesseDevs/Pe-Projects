@@ -2,6 +2,10 @@
 $heading = $section['heading'] ?? $projectData['title'] ?? ucfirst($formThing['title']);
 
 $intro = $section['intro'] ?? $formThing['intro'];
+
+if ($page == 'project') {
+    $intro = $projectData['one-line'];
+}
 ?>
 
 <big-heading>
