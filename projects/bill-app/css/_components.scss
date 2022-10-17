@@ -17,7 +17,6 @@ button {
     transition: all .1s cubic-bezier(.4, 0, .2, 1);
     box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
 }
 
@@ -41,65 +40,52 @@ button[disabled] {
     color: var(--dark-gray);
 }
 
-//removes scroll from numbe input
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    appearance: none;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     margin: 0;
 }
 
-/* Firefox */
-input[type=number] {
-    appearance: textfield;
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
-input {
+input[type=number] {
     padding: 15px;
     font-size: 2rem;
     font-family: monospace;
 }
 
-input[type=range] {
-    padding: 0;
-    appearance: none;
-    transform: rotate(270deg);
-    transform-origin: top left;
-    border: none;
-    border-radius: 3px;
-    height: 5px;
-    width: 115px;
+input[type='range'] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
 
-    align-self: flex-end;
-    justify-self: flex-start;
-}
+    &:focus {
+        outline: none;
+    }
 
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        box-shadow: none;
+        background: var(--textaccent);
+        border-radius: 0px;
+        border: 0px solid var(--accent);
+    }
 
-input[type=range]::-webkit-slider-runnable-track {
-    height: 5px;
-    width: 5px;
-    background: var(--textaccent);
-    border: none;
-    border-radius: 3px;
-}
+    &::-webkit-slider-thumb {
+        box-shadow: none;
+        border: 0px solid #ffffff;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        height: 42px;
+        width: 22px;
+        border-radius: 22px;
+        background: var(--red);
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -20px;
+    }
 
-input[type=range]::-webkit-slider-thumb {
-    appearance: none;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    background: var(--support);
-    margin-top: -5px;
-}
-
-input[type=range]:focus {
-    outline: none;
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: var(--light);
-}
-
-input:focus {
-    outline-color: var(--green-shadow);
 }

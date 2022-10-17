@@ -23,7 +23,6 @@ output-block {
     label {
         color: var(--textaccent);
         line-height: 1.4;
-        padding-left: 1rem;
     }
 
     input[type="number"]:focus {
@@ -53,16 +52,8 @@ output-block {
 
     .range-container {
         display: grid;
-        grid-template-columns: 1fr 10%;
+        grid-template-columns: minmax(0, 1fr);
         gap: 20px;
-
-        label {
-            grid-column: span 2;
-
-            span {
-                padding: 0;
-            }
-        }
     }
 
     .percentage {

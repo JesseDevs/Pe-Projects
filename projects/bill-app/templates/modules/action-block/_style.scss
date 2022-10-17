@@ -1,0 +1,10 @@
+output-block.custom-tip {
+
+    action-block button:last-of-type {
+        grid-column: span 2;
+    }
+}
+
+output#person-total+action-block {
+    padding-top: 30px;
+}

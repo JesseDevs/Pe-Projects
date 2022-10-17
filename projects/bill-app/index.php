@@ -62,7 +62,6 @@
             </section>
         </inner-column>
     </main>
-    <?php include('templates/modules/footer/template.php') ?>
 
     <script src="file.js"></script>
 </body>

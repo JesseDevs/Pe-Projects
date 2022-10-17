@@ -108,19 +108,20 @@ const homeTemplate = `
 
 const tipTemplate = `
 
-<output-block>
+<output-block class='custom-tip'>
     <field class='range-container'>
         <label for=""><span>How much tip?</span></label>
         <div class="percentage">
-            <p></p>
+            <p>15</p>
         </div>
-        <input id='tip' required type="range" orient="vertical" min="0" max="30" value="15">
+        <input id='tip' required type="range" min="0" max="30" value="15">
 
     </field>
 
     <action-block>
         <button id='total' data-route="total">Total</button>
-        <button data-route="split">Split?</button>
+        <button data-route="split">Split It</button>
+        <button data-route='home' id='home'>Home</button>
     </action-block>
 </output-block>
 `;
@@ -128,7 +129,7 @@ const tipTemplate = `
 const splitTemplate = `
 <output-block>
     <field>
-        <label for=""><span>Split by?</span></label>
+        <label for=""><span>How many people?</span></label>
         <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
       
     </field>
@@ -149,7 +150,7 @@ const totalTemplate = `
     </output>
 
     <field class='split-container'>
-        <label for=""><span>Split it?</span></label>
+        <label for=""><span>Split it? How many people?</span></label>
         <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
 
     </field>
@@ -195,12 +196,6 @@ window.addEventListener("click", function (event) {
     if (event.target.matches("[data-route]")) {
         var destination = event.target.dataset.route;
         renderPage(routes[destination]);
-
-        if (destination == "tip" || destination == "split") {
-            document.querySelector('footer.home').style.display = "block";
-        } else {
-            document.querySelector('footer.home').style.display = "none";
-        }
 
         if (destination == 'home') {
             currentAmount = 0;

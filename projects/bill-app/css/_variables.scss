@@ -33,6 +33,7 @@ html {
 	--darktextaccent: #d5d1a4;
 	--accent: #DD9F54;
 	--support: #1e293b;
+	--red: #DC5965;
 
 }
 
@@ -71,7 +72,7 @@ html {
 	}
 
 	50% {
-		transform: translateX(-40px) scale(.4, 2);
+		transform: translateX(-50px) scale(.4, 2);
 		opacity: .7;
 	}
 
