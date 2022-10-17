@@ -23,6 +23,7 @@ function updateAmount(amount) {
 }
 
 function calculateTotal(amount, tip) {
+
     calculatedSum = parseFloat(amount) + parseFloat(tip);
     finalSum = calculatedSum.toFixed(3);
 
@@ -98,7 +99,7 @@ const homeTemplate = `
             20%
         </button>
 
-        <button id='start' class='tip-btn custom-btn' data-route="tip" disabled >Custom Tip</button>
+        <button id='fifteen' class='tip-btn custom-btn' data-route="tip" disabled >Custom Tip</button>
 
 
         <button id='no-tip' class='tip-btn custom-btn' data-route="total" disabled>No Tip</button>
@@ -251,7 +252,6 @@ window.addEventListener("click", function (event) {
         const totalOutput = document.querySelector("#total");
         totalOutput.textContent = numberFormatter.format(finalSum);
     }
-
 
     if (event.target.matches("#people-change")) {
         undoSplit(people, perPersonSum);
