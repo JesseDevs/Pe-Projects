@@ -17,6 +17,12 @@ goal-block {
         max-width: 500px;
         margin: 0 auto;
     }
+
+    p {
+        line-height: 1.9;
+    }
+
+
 }
 
 .links {
@@ -42,7 +48,7 @@ goal-block {
     goal-block {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: var(--simple-big-space);
+        column-gap: 60px;
         align-items: center;
 
         picture {
@@ -51,9 +57,18 @@ goal-block {
         }
     }
 
+    double-text {
+        align-items: baseline;
+        grid-template-rows: auto auto 100px;
+    }
+
     diptech text-content,
     double-text p {
         margin-bottom: 0;
     }
 
+    double-text p:nth-of-type(2) {
+        grid-row: span 3;
+        align-self: flex-end;
+    }
 }

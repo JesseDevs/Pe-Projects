@@ -3,3 +3,11 @@ double-text {
     width: 100%;
     gap: var(--simple-big-space);
 }
+
+@media (min-width:700px) {
+
+    double-text h3 {
+        grid-column: span 2;
+    }
+
+}
