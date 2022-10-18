@@ -138,8 +138,8 @@
             },
             {
                 "module": "double-image",
-                "imageOne": "images/projects/bill/tip.jpg",
-                "imageTwo": "images/projects/bill/tip-code.jpg"
+                "imageOne": "images/projects/bill/tip.jpeg",
+                "imageTwo": "images/projects/bill/tip-code.jpeg"
             },
             {
                 "module": "diptech",
