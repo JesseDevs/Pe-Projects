@@ -6,8 +6,8 @@ project-page {
 .project-page>inner-column {
     padding: 0;
 
-    // inner-column {
-    //     padding-top: 10vh;
-    //     padding-bottom: 10vh;
-    // }
+    section:nth-of-type(odd) {
+        background-color: var(--fade);
+    }
+
 }

@@ -920,6 +920,58 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/images\/projects\/bill\/split.jpeg" : {
+      "ft" : 16384,
+      "iS" : 146609,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/split.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/bill\/tip-code.jpeg" : {
+      "ft" : 16384,
+      "iS" : 128960,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/tip-code.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/bill\/tip.jpeg" : {
+      "ft" : 16384,
+      "iS" : 142010,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/tip.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/bill\/total.jpeg" : {
+      "ft" : 16384,
+      "iS" : 139486,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/total.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/projects\/fighters\/create-fighter.jpg" : {
       "ft" : 16384,
       "iS" : 141041,
