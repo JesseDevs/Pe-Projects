@@ -894,6 +894,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/projects\/bill\/figma.jpeg" : {
+      "ft" : 16384,
+      "iS" : 149187,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/figma.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/projects\/bill\/landing.png" : {
       "ft" : 32768,
       "iS" : 446407,
@@ -44275,7 +44288,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 37319,
+      "iS" : 115303,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",

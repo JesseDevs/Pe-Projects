@@ -440,8 +440,6 @@ receipt-block {
   padding-bottom: 40px;
   border-bottom: var(--thick) inset rgb(214, 60, 60);
   border-top: var(--thick) inset rgb(214, 60, 60);
-  border-left: var(--thin) solid var(--red);
-  border-right: var(--thin) solid var(--red);
   border-image: linear-gradient(white, rgb(120, 118, 118) 20%, rgba(0, 0, 0, 0.616) 70%, rgb(120, 118, 118) 80%, white) 80;
 }
 receipt-block div {
