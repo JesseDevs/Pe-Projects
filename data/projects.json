@@ -122,6 +122,13 @@
                     "Organize variables for output fields, numerical amounts, and items to click.",
                     "Stylize app to make use of some new little tricks to display cool techniques to the user."
                 ]
+            },
+            {
+                "module": "diptech",
+                "title": "The Approach",
+                "flipped": false,
+                "image": "images/projects/bill/figma.jpeg",
+                "text": "I started with the idea of making different templates that would represent the pages that would appear on the app. When I thought of the idea, I led with a homepage that would allow an input of an amount - ideally an amount that you receive on a bill at the table. Next, I wanted to lead the user to a tip page. On this page the user would scroll to select the percentage of tip they would like to add to their meal. I chose to make a slider range value input because I thought it would be interesting and give me the opportunity to use Javascript to grab the value and live update the amounts on display. Finally the page would appear where they have a total and could decide to split that amount among a number of their choosing. Intial idea layout was drawn up in a figma file that would replicate the users pathway on an ideal interaction."
             }
         ]
     },
