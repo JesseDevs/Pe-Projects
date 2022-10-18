@@ -22,9 +22,12 @@ $article["title"]
             </h3>
         <?php } ?>
 
-        <p>
-            <?= $article["text"] ?>
-        </p>
+        <?php
+        foreach ($article["text"]  as $paragraph) { ?>
+
+            <p><?= $paragraph ?></p>
+
+        <?php } ?>
     </text-content>
 
     <picture>

@@ -33,7 +33,10 @@
                 "title": "The Purpose",
                 "flipped": false,
                 "image": "images/projects/fighters/landing-button.png",
-                "text": "This project was to build a create, read, update, and delete database. This database would be generated using JSON data to show skills in acquiring and using data from any source. The data would be used and altered using PHP, then displayed on the website in a clean and responsive fashion. Forms would be made to accept user input and add new information to the data."
+                "text": [
+                    "This project was to build a create, read, update, and delete database. This database would be generated using JSON data to show skills in acquiring and using data from any source.",
+                    "The data would be used and altered using PHP, then displayed on the website in a clean and responsive fashion. Forms would be made to accept user input and add new information to the data."
+                ]
             },
             {
                 "module": "goal-block",
@@ -53,19 +56,31 @@
                 "title": "The Approach",
                 "flipped": false,
                 "image": "images/projects/fighters/fighter-landing.jpg",
-                "text": "My characters all share a trait under the idea of a playstyle. These playstyles play part in how the character fights and thus was a great value to use to filter the data to show something the user would prefer. I made a home page that contained a title and text under it. The title would then link to the list of character data that is filtered to the specific choice by the user. You could then adjust your choice on the list page or on the home page enter the list page through the main landing button. I learned to take a step back and think as a user on my own sites, what if I were to do this, do that, want this, and want that. Options and more options. It is my website and I get to guide the experience of the user."
+                "text": [
+                    "My characters all share a trait under the idea of a playstyle. These playstyles play part in how the character fights and thus was a great value to use to filter the data to show something the user would prefer.",
+                    "I made a home page that contained a title and text under it. The title would then link to the list of character data that is filtered to the specific choice by the user. You could then adjust your choice on the list page or on the home page enter the list page through the main landing button.",
+                    "I learned to take a step back and think as a user on my own sites, what if I were to do this, do that, want this, and want that. Options and more options. It is my website and I get to guide the experience of the user."
+                ]
             },
             {
                 "module": "double-text",
-                "paragraphOne": "It all started with displaying the current JSON data. Making a list page to go through the data and display the elements. The objects in my data were structured to have names, images, descriptions, and other information. With the current data I decided to make a list of cards to display a thumbnail that leads to a page with more information.",
-                "paragraphTwo": "Now that I had a list page, I needed a way to direct users towards that page. In PHP we can use $_GET to obtain a variable given in the URL of the current page. The querystring. This allows me to create a routing system that can then lead to any page I would want the user to have access to, which could be the home page, list page, a detail page, a form page, or even a random page."
+                "text-one": [
+                    "It all started with displaying the current JSON data. Making a list page to go through the data and display the elements. The objects in my data were structured to have names, images, descriptions, and other information. With the current data I decided to make a list of cards to display a thumbnail that leads to a page with more information."
+                ],
+                "text-two": [
+                    "Now that I had a list page, I needed a way to direct users towards that page. In PHP we can use $_GET to obtain a variable given in the URL of the current page. The querystring.",
+                    "This allows me to create a routing system that can then lead to any page I would want the user to have access to, which could be the home page, list page, a detail page, a form page, or even a random page."
+                ]
             },
             {
                 "module": "diptech",
                 "title": false,
                 "flipped": true,
                 "image": "images/projects/fighters/fighter-menu.jpg",
-                "text": "I created a filter system to see specific characters that the user is looking for. Although, the user may not be familiar with the characters so I chose to give some small details about the parameter I am planning to use to separate them. The filter system goes through the data and checks this parameter for its “playstyle” and then presents those individuals, the others become unclickable."
+                "text": [
+                    "I created a filter system to see specific characters that the user is looking for. Although, the user may not be familiar with the characters so I chose to give some small details about the parameter I am planning to use to separate them.",
+                    "The filter system goes through the data and checks this parameter for its “playstyle” and then presents those individuals, the others become unclickable."
+                ]
             },
             {
                 "module": "double-image",
@@ -108,7 +123,11 @@
                 "title": "The Purpose",
                 "flipped": false,
                 "image": "images/projects/bill/landing.png",
-                "text": "The goal of this project was to get myself and others away from a calculator app when the bill arrives at the table. This app would be a one way stop to gather the total amount, take the tip and then check if you’d like to split it amongst the group. Javascript provides the buttons with capabilities of loading new template pages to the output box on the landing page, to create a seamless experience for the user. In addition to loading these templates, create functions that will calculate all the necessary math and display it to the user. Present all the information to the user and keep it simple, understandable, and frictionless. "
+                "text": [
+                    "The goal of this project was to get myself and others away from a calculator app when the bill arrives at the table. This app would be a one way stop to gather the total amount, take the tip and then check if you’d like to split it amongst the group.",
+                    "Javascript provides the buttons with capabilities of loading new template pages to the output box on the landing page, to create a seamless experience for the user. In addition to loading these templates, create functions that will calculate all the necessary math and display it to the user. ",
+                    "Present all the information to the user and keep it simple, understandable, and frictionless. "
+                ]
             },
             {
                 "module": "goal-block",
@@ -129,7 +148,11 @@
                 "title": "The Approach",
                 "flipped": false,
                 "image": "images/projects/bill/figma.jpeg",
-                "text": "I started with the idea of making different templates that would represent the pages that would appear on the app. When I thought of the idea, I led with a homepage that would allow an input of an amount - ideally an amount that you receive on a bill at the table. Next, I wanted to lead the user to a tip page. On this page the user would scroll to select the percentage of tip they would like to add to their meal. I chose to make a slider range value input because I thought it would be interesting and give me the opportunity to use Javascript to grab the value and live update the amounts on display. Finally the page would appear where they have a total and could decide to split that amount among a number of their choosing. Initial idea layout was drawn up in a Figma file that would replicate the users pathway on an ideal interaction."
+                "text": [
+                    "I started with the idea of making different templates that would represent the pages that would appear on the app. When I thought of the idea, I led with a homepage that would allow an input of an amount - ideally an amount that you receive on a bill at the table.",
+                    "Next, I wanted to lead the user to a tip page. On this page the user would scroll to select the percentage of tip they would like to add to their meal. I chose to make a slider range value input because I thought it would be interesting and give me the opportunity to use Javascript to grab the value and live update the amounts on display.",
+                    "Finally the page would appear where they have a total and could decide to split that amount among a number of their choosing. Initial idea layout was drawn up in a Figma file that would replicate the users pathway on an ideal interaction."
+                ]
             },
             {
                 "module": "double-image",
@@ -138,28 +161,51 @@
             },
             {
                 "module": "double-text",
-                "paragraphOne": "A challenge was setting up buttons so that they would route towards a specific page but also make them take the input and show calculations. I had originally set up an event listener on the window that was looking specifically for clicks and if those clicked items matched a “data-route” that I had set up. I soon learned that I needed an additional set up to listen for an input so that I could grab the value. When the input value is entered it then displays it for the user to see live changes to their amounts. Okay, but now I need to be able to make calculations on the clicks. I revisited my initial set up so that it could listen for clicks on buttons ID classes to then do the appropriate function.",
-                "paragraphTwo": "I worked through some blockers and was able to build the base version of my app that accomplished the goal I had set out at the very beginning. Take an amount, calculate a tip percentage, split it by an amount of people and share the amount to the user. I decided to work on some styling at this point and this is a way to present the information to the user. Well, making a bill splitting app made me think of a receipt you receive at the end of an outing. I made an element and designed it with the idea of representing that very receipt that would then show each item the user is processing though as they follow the data path. Now that some style is in place, the information is displayed to the user, and the base path was set up, it was time to get some feedback to see some paths I may not have considered."
+                "text-one": [
+                    "A challenge was setting up buttons so that they would route towards a specific page but also make them take the input and show calculations. I had originally set up an event listener on the window that was looking specifically for clicks and if those clicked items matched a “data-route” that I had set up.",
+                    "I soon learned that I needed an additional set up to listen for an input so that I could grab the value. When the input value is entered it then displays it for the user to see live changes to their amounts.",
+                    "I revisited my initial set up so that it could listen for clicks on buttons ID classes to then do the appropriate function."
+                ],
+                "text-two": [
+                    "I worked through some blockers and was able to build the base version of my app that accomplished the goal I had set out at the very beginning. Take an amount, calculate a tip percentage, split it by an amount of people and share the amount to the user.",
+                    "I decided to work on some styling at this point and this is a way to present the information to the user. Well, making a bill splitting app made me think of a receipt you receive at the end of an outing. I made an element and designed it with the idea of representing that very receipt that would then show each item the user is processing though as they follow the data path.",
+                    "Now that some style is in place, the information is displayed to the user, and the base path was set up, it was time to get some feedback to see some paths I may not have considered."
+                ]
             },
             {
                 "module": "diptech",
                 "title": "Feedback",
                 "flipped": true,
                 "image": "images/projects/bill/split.jpeg",
-                "text": "Although there were a lot of positive interactions with the app, there were some hiccups that caused friction in the user's experience or at least made them second guess themselves. A big note was that the input fields were not legible, they didn't seem clickable. To compensate for this I added a border and focus changes when typing a value and made the question in the label element more direct and simple. I took some time to add some attributes to the element so that when opened on mobile, it would prompt a number pad similar to a phone contact."
+                "text": [
+                    "Although there were a lot of positive interactions with the app, there were some hiccups that caused friction in the user's experience or at least made them second guess themselves.",
+                    "A big note was that the input fields were not legible, they didn't seem clickable. To compensate for this I added a border and focus changes when typing a value and made the question in the label element more direct and simple. I took some time to add some attributes to the element so that when opened on mobile, it would prompt a number pad similar to a phone contact."
+                ]
             },
             {
                 "module": "double-text",
                 "title": "More Feedback",
-                "paragraphOne": "The input range field was originally displayed vertically because I thought it would be more intuitive for the user to adjust their tip amount but it actually hurt their impression more than anything. Not only was it assumed to be a write in field similar to the other menu but the slider did not read as a slider on the first viewing. That became a key target of interest to fix because it is not the user’s fault if they don’t see what I want them to see, it’s mine. To account for this I added a default value to be presented in the box and returned the slider back to its original horizontal position.",
-                "paragraphTwo": "The goal of the site was to be able to calculate the tip for a total but that doesn’t mean a user always wants to tip or give a custom amount. What about a set amount? What about no tip? At this point I reviewed my buttons and tried to analyze more situations the user might go through to give them more options but still in my control. Buttons are disabled unless the user has entered a value, that way there’s no funny business going on. I added a home button on some pages to return the user back to the beginning if a mistake was made. I also added an edit button so if the group were to split the amount among more or less people, they could go back to the total and adjust the amount of people."
+                "text-one": [
+                    "The input range field was originally displayed vertically because I thought it would be more intuitive for the user to adjust their tip amount but it actually hurt their impression more than anything.",
+                    "Not only was it assumed to be a write in field similar to the other menu but the slider did not read as a slider on the first viewing.",
+                    "That became a key target of interest to fix because it is not the user’s fault if they don’t see what I want them to see, it’s mine. To account for this I added a default value to be presented in the box and returned the slider back to its original horizontal position."
+                ],
+                "text-two": [
+                    "The goal of the site was to be able to calculate the tip for a total but that doesn’t mean a user always wants to tip or give a custom amount. What about a set amount? What about no tip? At this point I reviewed my buttons and tried to analyze more situations the user might go through to give them more options but still in my control.",
+                    "Buttons are disabled unless the user has entered a value, that way there’s no funny business going on. I added a home button on some pages to return the user back to the beginning if a mistake was made.",
+                    "I also added an edit button so if the group were to split the amount among more or less people, they could go back to the total and adjust the amount of people."
+                ]
             },
             {
                 "module": "diptech",
                 "title": "Learning",
                 "flipped": false,
                 "image": "images/projects/bill/total.jpeg",
-                "text": "This project gave me the opportunity to take a look at a simple problem or circumstance and provide a solution for it. This took time to solve all the interworking pieces and functions that would come together to showcase all the proper information. As a designer I also realize how important it is to give the user an enjoyable experience and make it readable to all on the first go through. It is my responsibility as the Frontend Developer to shape an enjoyable, functional, and frictionless experience."
+                "text": [
+                    "This project gave me the opportunity to take a look at a simple problem or circumstance and provide a solution for it. This took time to solve all the interworking pieces and functions that would come together to showcase all the proper information.",
+                    "As a designer I also realize how important it is to give the user an enjoyable experience and make it readable to all on the first go through.",
+                    "It is my responsibility as the Frontend Developer to shape an enjoyable, functional, and frictionless experience."
+                ]
             }
         ]
     },

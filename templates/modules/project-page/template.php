@@ -18,7 +18,7 @@
 <section class="links">
     <inner-column>
         <?php foreach ($projectData['links'] as $linkData) { ?>
-            <a class=' action-link' href=" <?= $linkData['link'] ?>"><?= $linkData['title'] ?></a>
+            <a class=' action-link' target='project' href=" <?= $linkData['link'] ?>"><?= $linkData['title'] ?></a>
         <?php } ?>
     </inner-column>
 </section>
