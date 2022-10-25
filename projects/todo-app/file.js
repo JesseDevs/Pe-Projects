@@ -1,40 +1,44 @@
-function print(note = '') {
-    console.log(`---------- ${note}`);
-    console.log('todos: ', todos);
+const todoApp = {
+
+    todos: [],
+    idMaker: 0,
+
+    print: function (note = '') {
+        console.log(`---------- ${note}`);
+        console.log('todos: ', this.todos);
+    },
+
+    add: function (content) {
+        var todo = {
+            id: `a${this.idMaker++}`,
+            content: content,
+        };
+        this.todos.push(todo);
+        this.print(`Added ${content}`);
+    },
+
+
+    remove: function (id) {
+        this.print(`Removed ${this.todos[id].content}`);
+        this.todos.splice(id, 1);
+    },
+
+    complete: function (id) {
+        this.todos[id].complete = true;
+        this.print(`Completed ${this.todos[id].content}`);
+    },
+
+    update: function (id, content) {
+        this.todos[id].content = content;
+        this.print(`Updated ${this.todos[id].content}`);
+    },
+
 }
 
-const todos = [];
-var count = 0;
-
-function add(content) {
-    var todo = {
-        id: `a${count++}`,
-        content: content,
-    };
-    todos.push(todo);
-    print(`Added ${content}`);
-}
-
-
-function remove(id) {
-    print(`Removed ${todos[id].content}`);
-    todos.splice(id, 1);
-}
-
-function complete(id) {
-    todos[id].complete = true;
-    print(`Completed ${todos[id].content}`);
-}
-
-function update(id, content) {
-    todos[id].content = content;
-    print(`Updated ${todos[id].content}`);
-}
-
-add("Get some more sleep");
-add("Go to the gym");
-add("Eat some food");
+todoApp.add("Get some more sleep");
+todoApp.add("Go to the gym");
+todoApp.add("Eat some food");
 
 // complete(2);
 // remove(2);
-update(0, "New Todo");
+todoApp.update(0, "New Todo");
