@@ -1,0 +1,83 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+	--line: 1px;
+	--thin: 3px;
+	--thick: 5px;
+	--Xthick: 9px;
+
+	--white: #fff;
+	--black: rgb(10 5 5);
+	--fade: rgb(10 10 10 / .3);
+	--lightFade: rgb(220 220 220 / .3);
+
+	--gray: #999999;
+	--dark-gray: #4c4c4c;
+	--dark: #212121;
+	--light: #cccccc;
+}
+
+
+html {
+	--ink: rgb(240, 238, 238);
+	--page: rgb(23 23 23);
+
+	--menus: rgb(80 79 77);
+	--menus-support: rgb(80 79 77 /.5);
+
+	--green-shadow: rgb(86, 145, 65);
+	--green: rgb(73 98 67);
+
+	--textaccent: #EBE9D9;
+	--darktextaccent: #d5d1a4;
+	--accent: #DD9F54;
+	--support: #1e293b;
+	--red: #DC5965;
+
+}
+
+
+@keyframes squeeze {
+	0% {
+		transform: scale(1, 1);
+	}
+
+	50% {
+		transform: scale(.4, 1.3);
+	}
+
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes drop-in {
+	0% {
+		transform: translateY(-40px) scale(5);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0) scale(1);
+		opacity: 1;
+	}
+}
+
+
+@keyframes slide-in-right {
+	0% {
+		transform: translateX(500px) scale(2, 2);
+		opacity: 0;
+	}
+
+	50% {
+		transform: translateX(-50px) scale(.4, 2);
+		opacity: .7;
+	}
+
+	100% {
+		transform: translateX(0) scale(1, 1);
+		opacity: 1;
+	}
+}
