@@ -6,12 +6,16 @@ function print(note = '') {
 }
 
 const workouts = [];
-var count = 0;
-console.log(workouts)
+
+const pushWorkouts = [];
+const pullWorkouts = [];
+const legWorkouts = [];
+
+var idMaker = 0;
 
 function add(content, type) {
     var workout = {
-        id: `a${count++}`,
+        id: `a${idMaker++}`,
         content: content,
         type: type,
     };
@@ -54,10 +58,6 @@ function filterWorkout(array, value) {
         }
     }
 }
-
-const pushWorkouts = [];
-const pullWorkouts = [];
-const legWorkouts = [];
 
 filterWorkout(pushWorkouts, "Push");
 filterWorkout(pullWorkouts, "Pull");
