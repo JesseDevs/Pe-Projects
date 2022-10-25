@@ -3,8 +3,11 @@
 $description = null;
 $metaImage = null;
 
-$metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg'
+$metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 
+if ($page == 'project') {
+    $metaImage = $project['thumbnail'];
+}
 
 ?>
 
