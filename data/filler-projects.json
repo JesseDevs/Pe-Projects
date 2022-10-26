@@ -130,7 +130,10 @@
                 "title": "Describe Project",
                 "flipped": false,
                 "image": "https://peprojects.dev/images/landscape.jpg",
-                "text": "This is an introductory text to the project. Describes the initial purpose. Include a general learning moment. Along side this text is a general image of said project."
+                "text": [
+                    "This is an introductory text to the project. Describes the initial purpose.",
+                    "Include a general learning moment. Along side this text is a general image of said project."
+                ]
             },
             {
                 "module": "goal-block",
@@ -147,12 +150,21 @@
                 "title": "Now What?",
                 "flipped": true,
                 "image": "https://peprojects.dev/images/landscape.jpg",
-                "text": "Another text block paired with an image. This version of the module is flipped."
+                "text": [
+                    "Another text block paired with an image. This version of the module is flipped.",
+                    "Another text block paired with an image. This version of the module is flipped."
+                ]
             },
             {
                 "module": "double-text",
-                "paragraphOne": "This is a double text block module.",
-                "paragraphTwo": "This is the second text block in this module, paired with another text block."
+                "textOne": [
+                    "This is a double text block module.",
+                    "This is a double text block module."
+                ],
+                "textTwo": [
+                    "This is the second text block in this module, paired with another text block.",
+                    "This is the second text block in this module, paired with another text block."
+                ]
             },
             {
                 "module": "double-image",
