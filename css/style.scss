@@ -89,7 +89,7 @@ form .action-link {
 p a:hover,
 p+a:hover {
 	background-color: var(--highlight);
-	transition: all .4s;
+	transition: background-color .4s;
 	color: white;
 }
 
