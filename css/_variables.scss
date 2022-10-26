@@ -25,22 +25,19 @@ html {
 
 html {
 	--ink: #f1f2f4;
-	--page: #584142;
+	--page: #4c4b52;
 
-	// --highlight: #93BDB5 #c59885;
-	--highlight: #9C877E;
-	--highlightOP: #f0dfd5;
+	--highlight: rgb(46, 174, 140);
+	--highlightFade: rgba(46 174 140 /0.4);
+	--highlightOP: rgb(187, 216, 209);
 
-	--accent: #e89064;
-
-	--cube-color: rgba(226, 118, 64, 0.6);
-	--cube-line: rgb(211 182 165 / 70%);
+	--accent: #517670;
+	--cube-color: rgba(106, 167, 150, 0.6);
+	--cube-line: rgba(181, 227, 215, 0.7);
 
 	--landing-text: rgb(10 5 5);
 
-
-
-	background-color: rgb(5, 5, 5);
+	background-color: var(--page);
 }
 
 
@@ -52,6 +49,7 @@ html {
 		--page: #f1f2f4;
 
 		--highlight: rgb(128, 19, 19);
+		--highlightFade: rgb(128 19 19 / .4);
 		--highlightOP: #c26d6d;
 
 		--accent: #cf7e6e;

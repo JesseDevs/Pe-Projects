@@ -31,12 +31,10 @@ if ($page == 'project') {
 
     <?php
     include('templates/modules/site-menu/template.php');
-
     ?>
 
 
     <?php
-
     if (file_exists("data/pages/" . $page . ".json")) {
 
         include('templates/pages/standard.php');
@@ -47,15 +45,17 @@ if ($page == 'project') {
         $pageData = json_decode($json, true);
         include('templates/pages/standard.php');
     }
-
-
     ?>
 
 
+    <output>
+        <output-block>
+
+        </output-block>
+    </output>
 
     <?php
     include('templates/modules/site-footer/template.php');
-
     ?>
 
 
