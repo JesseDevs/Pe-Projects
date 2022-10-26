@@ -13,7 +13,7 @@ const todoApp = {
             id: `a${this.idMaker++}`,
             content: content,
         };
-        this.todos.push(todo);
+        this.todos = [...this.todos, todo];
         this.print(`Added ${content}`);
     },
 
