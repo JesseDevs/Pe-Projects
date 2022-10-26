@@ -35,7 +35,7 @@ contact-form {
 
 	input:focus,
 	textarea:focus {
-		background-color: var(--highlightOP);
+		background-color: var(--cube-color);
 		color: var(--black);
 		border: 3px solid var(--cube-color);
 		border-radius: none;
@@ -43,8 +43,9 @@ contact-form {
 		transition: background-color 600ms, border-color 400ms;
 	}
 
-	input:focus::placeholder {
-		color: var(--fade);
+	input:focus::placeholder,
+	textarea:focus::placeholder {
+		color: rgba(0, 0, 0, 0.64);
 	}
 }
 

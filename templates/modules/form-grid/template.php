@@ -8,7 +8,7 @@
         <div class="change-form">
             <span class='chant-voice'>PHP</span>
             <label class="switch">
-                <input class="toggle-checkbox" type="checkbox">
+                <input type="checkbox" id="switch" name="accept" value="yes">
                 <span class="slider round"></span>
             </label>
             <span class='chant-voice'>JS</span>
@@ -32,10 +32,11 @@
         <nav class='js'>
             <ul>
                 <?php foreach ($section['jsItems'] as $form) { ?>
-                    <li><a class=" <?= $form['title'] ?> action-link" href=""><?= $form['button'] ?></a></li>
+                    <li><button data-route=" <?= $form['title'] ?>Form" class=" action-link"><?= $form['button'] ?></button></li>
 
                 <?php } ?>
             </ul>
+
         </nav>
 
     </form-grid>

@@ -81,7 +81,7 @@ project-card .span-title {
 		grid-row: 2;
 		padding: 10px;
 		text-shadow: 2px 2px 5px var(--darkgray);
-		background-color: var(--fade);
+		background-color: rgba(0, 0, 0, 0.641);
 	}
 
 
@@ -106,6 +106,7 @@ project-card .span-title {
 	project-card:first-of-type .project-detail {
 		position: static;
 		margin-top: 0;
+		padding: 0;
 	}
 
 	project-card:first-of-type text-content {
