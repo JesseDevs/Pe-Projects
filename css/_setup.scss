@@ -2,7 +2,9 @@ html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
@@ -63,8 +65,9 @@ a p {
 p a {
 	display: inline-block;
 	text-decoration: underline;
-	color: var(--highlight);
+	color: var(--accent);
 	font-weight: 500;
+	text-shadow: 0 0;
 }
 
 p {

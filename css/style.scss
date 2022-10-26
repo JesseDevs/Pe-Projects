@@ -5,6 +5,9 @@
 @import '_case';
 @import '_modules';
 
+body {
+	position: relative;
+}
 
 .skills {
 	display: flex;
@@ -104,4 +107,10 @@ missing-heading {
 	animation: upFadeIn .5s forwards;
 	opacity: 0;
 	animation-delay: .3s;
+}
+
+
+input,
+textarea {
+	outline: 2px solid var(--accent);
 }
