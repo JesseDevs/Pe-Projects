@@ -77,12 +77,12 @@
                 },
                 {
                     "id": 2,
-                    "title": "count-string",
+                    "title": "string",
                     "button": "count string"
                 },
                 {
                     "id": 3,
-                    "title": "author-quote",
+                    "title": "quote",
                     "button": "quote"
                 },
                 {
@@ -92,13 +92,13 @@
                 },
                 {
                     "id": 8,
-                    "title": "simple-math",
+                    "title": "simpleMath",
                     "button": "simple math"
                 },
                 {
                     "id": 6,
-                    "title": "retirment",
-                    "button": "retirment"
+                    "title": "retirement",
+                    "button": "retirement"
                 },
                 {
                     "id": 7,
