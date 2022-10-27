@@ -48,12 +48,6 @@ if ($page == 'project') {
     ?>
 
 
-    <output>
-        <output-block>
-
-        </output-block>
-    </output>
-
     <?php
     include('templates/modules/site-footer/template.php');
     ?>

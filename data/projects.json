@@ -5,7 +5,7 @@
         "intro": "crud",
         "detail": "This project uses fighters from the video game Street Fighter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
         "one-line": "Database backed by JSON data",
-        "thumbnail": "images/projects/fighters/fighters.jpeg",
+        "thumbnail": "images/projects/fighters/fighters.jpg",
         "skills": [
             "html",
             "css",
@@ -94,7 +94,7 @@
         "title": "Bill Split",
         "intro": "APP",
         "detail": "An app dedicated to solving one of life's many problems.. splitting the bill amongst a group.",
-        "thumbnail": "images/projects/bill/bank.jpeg",
+        "thumbnail": "images/projects/bill/bank.jpg",
         "one-line": "Javascript calculations",
         "skills": [
             "html",

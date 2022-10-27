@@ -1,5 +1,15 @@
 .feedback {
-	margin-top: var(--tight-space);
+	margin-top: var(--general-space);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+	min-height: 22vh;
+}
+
+form.none button {
+	opacity: .1;
+	pointer-events: none;
 }
 
 results {
@@ -15,11 +25,30 @@ results {
 form-box {
 	display: grid;
 	column-gap: var(--simple-big-space);
+	align-items: center;
 
 	field {
 		margin-bottom: var(--general-space);
 	}
 
+}
+
+div.change-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	height: 1rem;
+	margin-bottom: var(--simple-big-space);
+
+	input {
+		margin: 0;
+		max-width: 100px;
+	}
+
+	span {
+		font-weight: 500;
+	}
 }
 
 label {
@@ -37,16 +66,21 @@ label {
 
 		}
 
+		div.change-form {
+			grid-column: span 4;
+
+		}
+
 		form {
 			grid-column: 1 /span 2;
 		}
 
 		.feedback {
 			grid-column: 3 / span 2;
-			grid-row: 1;
 			justify-self: center;
 			margin: 0;
-			text-align: center;
+
+			min-height: 0;
 		}
 
 	}

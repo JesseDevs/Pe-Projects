@@ -3,16 +3,18 @@
     $intro = $section['intro'] ?? "Check it out!";
     ?>
 
-    <form-grid>
+    <?php
+    if ($page == "form") { ?>
 
-        <div class="change-form">
-            <span class='chant-voice'>PHP</span>
-            <label class="switch">
-                <input type="checkbox" id="switch" name="accept" value="yes">
-                <span class="slider round"></span>
-            </label>
-            <span class='chant-voice'>JS</span>
-        </div>
+        <style>
+            form-grid text-content {
+                margin-top: var(--simple-space);
+            }
+        </style>
+
+    <?php } ?>
+
+    <form-grid>
 
         <text-content>
 
@@ -27,16 +29,6 @@
 
                 <?php } ?>
             </ul>
-        </nav>
-
-        <nav class='js'>
-            <ul>
-                <?php foreach ($section['jsItems'] as $form) { ?>
-                    <li><button data-route=" <?= $form['title'] ?>Form" class=" action-link"><?= $form['button'] ?></button></li>
-
-                <?php } ?>
-            </ul>
-
         </nav>
 
     </form-grid>
