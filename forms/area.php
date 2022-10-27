@@ -1,16 +1,5 @@
 <?php
 
-// function format($variable)
-// {
-//     echo "<pre>";
-//     echo "<code>";
-//     print_r($variable);
-//     echo "</code>";
-//     echo "</pre>";
-// }
-
-// format($_POST);
-
 $length = '';
 $width = '';
 $area = null;
@@ -40,31 +29,78 @@ if (isset($_POST['submitted'])) {
 
 ?>
 
-<form action="" method="post">
+<form method="post" id="area">
 
     <field>
         <label for="">What is the length of the room?</label>
-        <input type="number" name='length' value='<?= $length ?>' required min='0'>
+        <input type="number" name='length' value='<?= $length ?>' id="length" required min='0'>
     </field>
 
     <field>
 
         <label for="">What is the width of the room?</label>
-        <input type="number" name='width' value='<?= $width ?>' required min='0'>
+        <input type="number" name='width' value='<?= $width ?>' id="width" required min='0'>
 
     </field>
 
-    <button class='action-link' type="submit" name='submitted'>Calculate</button>
+    <button class='action-link' type="submit" name='submitted' id="calculate">Calculate</button>
 
 
 </form>
 
 <div class='feedback'>
-    <h3 class="chant-voice"> The Results</h3>
     <p> <?= $templateOne ?></p>
     <p> <?= $templateTwo ?> </p>
 
     <p><strong> <?= $final ?></strong> </p>
-
-
 </div>
+
+<script>
+    const $areaForm = document.querySelector('#area');
+
+    calculateArea = function() {
+
+        const $lengthInput = document.querySelector('#length');
+        const $widthInput = document.querySelector('#width');
+
+        $areaForm.addEventListener('input', function(event) {
+            var length = numberFormatter.format($lengthInput.value);
+            var width = numberFormatter.format($widthInput.value);
+
+            $feedback.querySelector("p:first-of-type").textContent = `The length is: ${length}`;
+            $feedback.querySelector("p:nth-of-type(2)").textContent = `The length is: ${width}`;
+
+            var area = parseInt(length) * parseInt(width);
+            var displayArea = numberFormatter.format(area);
+            let meters = area * .09290304;
+
+            meters = numberFormatter.format(meters.toFixed(2));
+
+            let message = `You entered a dimensions of ${length} feet by ${width} feet. The area is ${displayArea} square feet. That is ${meters} square meters`;
+
+            if (length == '' & width == '') {
+                message = "Can't calculate..."
+            } else if (length == '') {
+                message = "Missing a length.."
+            } else if (width == '') {
+                message = "Missing a width.."
+            }
+
+            $feedback.querySelector("p:last-of-type strong").textContent = `${message}`;
+
+
+        });
+    }
+
+    window.addEventListener('click', function(event) {
+        if (event.target.matches("#switch")) {
+
+
+            if ($areaForm) {
+                calculateArea();
+
+            }
+
+        }
+    })
+</script>
