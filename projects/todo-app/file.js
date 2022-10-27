@@ -1,3 +1,16 @@
+function Monster(name, age) {
+    this.name = name;
+    this.age = age;
+
+    this.roar = function () {
+        alert(`${name}!!!!`)
+    }
+}
+
+const chunky = new Monster("chunky", 15);
+chunky.roar();
+
+
 const todoApp = {
 
     todos: [],
