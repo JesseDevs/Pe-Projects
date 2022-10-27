@@ -112,5 +112,10 @@ missing-heading {
 
 input,
 textarea {
-	outline: 2px solid var(--accent);
+	outline: 3px solid var(--accent);
+}
+
+input:focus,
+textarea:focus {
+	outline: 3px solid var(--highlight);
 }

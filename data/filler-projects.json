@@ -29,10 +29,13 @@
         "casestudy": [
             {
                 "module": "diptech",
-                "title": "Describe Project",
+                "title": "The Purpose",
                 "flipped": false,
                 "image": "https://peprojects.dev/images/landscape.jpg",
-                "text": "This is an introductory text to the project. Describes the initial purpose. Include a general learning moment. Along side this text is a general image of said project."
+                "text": [
+                    "This is an introductory text to the project. Describes the initial purpose.",
+                    "Include a general learning moment. Along side this text is a general image of said project."
+                ]
             },
             {
                 "module": "goal-block",
@@ -46,15 +49,34 @@
             },
             {
                 "module": "diptech",
-                "title": "Now What?",
-                "flipped": true,
+                "title": "The Approach",
+                "flipped": false,
                 "image": "https://peprojects.dev/images/landscape.jpg",
-                "text": "Another text block paired with an image. This version of the module is flipped."
+                "text": [
+                    "This is an introductory text to the project. Describes the initial purpose.",
+                    "Include a general learning moment. Along side this text is a general image of said project."
+                ]
             },
             {
                 "module": "double-text",
-                "paragraphOne": "This is a double text block module.",
-                "paragraphTwo": "This is the second text block in this module, paired with another text block."
+                "text-one": [
+                    "This is a text block",
+                    "This is a text block"
+                ],
+                "text-two": [
+                    "This is a text block two",
+                    "This is a text block two"
+                ]
+            },
+            {
+                "module": "diptech",
+                "title": false,
+                "flipped": true,
+                "image": "https://peprojects.dev/images/landscape.jpg",
+                "text": [
+                    "More text but flipped",
+                    "More text but flipped"
+                ]
             },
             {
                 "module": "double-image",

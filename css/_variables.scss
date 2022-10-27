@@ -27,15 +27,15 @@ html {
 	--ink: #f1f2f4;
 	--page: #4c4b52;
 
-	--highlight: rgb(46, 174, 140);
-	--highlightFade: rgba(46 174 140 /0.4);
-	--highlightOP: rgb(187, 216, 209);
+	--highlight: #2eae8c;
+	--highlightFade: #2eae8c66;
+	--highlightOP: #bbd8d1;
 
 	--accent: #80b2aa;
-	--cube-color: rgba(106, 167, 150, 0.6);
-	--cube-line: rgba(181, 227, 215, 0.7);
+	--cube-color: #6aa79699;
+	--cube-line: #b5e3d7b3;
 
-	--landing-text: rgb(10 5 5);
+	--landing-text: #0a0505;
 
 	background-color: var(--page);
 }
