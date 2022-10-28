@@ -31,10 +31,6 @@ const storedCount = data.getItem('score')
 
 data.clear();
 
-//function 2
-
-// save to local storage
-
 function saveToStorage(key, item) {
     if (typeof item !== "string") {
         this.localStorage.setItem(key, JSON.stringify(item));
@@ -51,3 +47,11 @@ function grabFromStorage(key) {
 var test = grabFromStorage("favoriteColor");
 
 console.log(test);
+
+function initialize() {
+    if (data.getItem('game')) { //local storage is setup
+        // great
+    } else {
+        data.setItem('game', JSON.stringify({ score: 0 }))
+    }
+}

@@ -22,7 +22,7 @@
         </section>
     </main>
 
-    <script src="storage.js"></script>
+    <script src="file.js"></script>
 </body>
 
 </html>

@@ -22,6 +22,26 @@ console.log(chunky)
 
 
 
+function saveToStorage(key, item) {
+    if (typeof item !== "string") {
+        this.localStorage.setItem(key, JSON.stringify(item));
+    }
+}
+
+saveToStorage("favoriteColor", { color: "red" });
+
+function grabFromStorage(key) {
+    var thing = localStorage.getItem(key);
+    return JSON.parse(thing);
+}
+
+function initialize() {
+    if (data.getItem('game')) { //local storage is setup
+        // great
+    } else {
+        data.setItem('game', JSON.stringify({ score: 0 }))
+    }
+}
 
 
 const todoApp = {
