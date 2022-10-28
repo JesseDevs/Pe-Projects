@@ -63,7 +63,6 @@ const todoApp = {
         this.print(`Added ${content}`);
     },
 
-
     remove: function (id) {
         this.print(`Removed ${this.todos[id].content}`);
         this.todos.splice(id, 1);
