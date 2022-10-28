@@ -1,53 +1,59 @@
 <?php
 
-$string = null;
-$results = null;
-$typed = '';
-$template = '';
+
+$phrase = null;
+$message = null;
+$template = null;
+$characterCount = 0;
+
+
+function countString($string)
+{
+    $counter = 0;
+
+    for ($i = 0; $i < strlen($string); $i++) {
+
+        $character = $string[$i]; // 
+
+        if ($character != ' ') {
+            $counter++;
+        }
+    }
+
+    return $counter;
+}
 
 if (isset($_POST['submitted'])) {
-    $string = $_POST['string'];
-    $results = strlen($string) . " characters";
 
-    $typed = 'You typed: ' . $string;
-    $template = 'That string has: ' . $results;
+    $phrase = $_POST['phrase'];
+    $characterCount = countString($phrase);
+
+    if ($phrase == '') {
+        $message = "That phrase has... nothing..";
+    }
+
+    $template = "You entered: ";
+    $message = 'That phrase has: ' . $characterCount . ' characters.';
 }
 
 ?>
 
 
 
-<form action="" method="post">
+<form action="" method="post" id="count-characters">
 
     <field>
 
         <label for="">Type a word? Or phrase?</label>
-        <input type="text" name='string'>
-
+        <input type="text" name='phrase' id="phrase">
     </field>
 
-    <button class='action-link' type="submit" name='submitted'>Calculate</button>
+    <button class='action-link' type=" submit" name='submitted'>Calculate</button>
 
 
 </form>
+<div class='feedback'>
 
-<results class='feedback'>
-    <?php
-    if (isset($results) && $results == 0) {
-
-        $results = "Type something"; ?>
-
-        <article>
-            <p><?= $results ?></p>
-        </article>
-
-    <?php } else { ?>
-        <h3 class="chant-voice"> The Results</h3>
-        <p><?= $typed ?></p>
-
-        <p><strong><?= $template ?></strong> </p>
-
-    <?php } ?>
-
-
-</results>
+    <p><?= $template ?><strong> <?= $phrase ?></strong> </p>
+    <p><strong> <?= $message ?></strong> </p>
+</div>
