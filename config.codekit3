@@ -333,6 +333,14 @@
       "oAP" : "\/forms\/password-check.php",
       "oF" : 0
     },
+    "\/forms\/quote.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/forms\/quote.php",
+      "oF" : 0
+    },
     "\/forms\/self-checkout.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -45883,6 +45891,17 @@
       "oA" : 0,
       "oAP" : "\/projects\/todo-app\/index.php",
       "oF" : 0
+    },
+    "\/projects\/todo-app\/storage.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/todo-app\/storage-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/projects\/todo-app\/style.css" : {
       "aP" : 1,

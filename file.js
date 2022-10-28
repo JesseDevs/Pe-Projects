@@ -1,23 +1,8 @@
-var toggle = document.querySelector('.toggle-checkbox');
-var phpForm = document.querySelector('.php');
-var jsForm = document.querySelector('.js');
-
-var formIntro = document.querySelector('.form-intro');
-
-function changeForm(event) {
-    if (event.target.checked) {
-        phpForm.style.display = 'none';
-        jsForm.style.display = 'block';
-        formIntro.textContent = ' These use Javascript to ask you questions. Give them a click!'
-    } else {
-        jsForm.style.display = 'none';
-        phpForm.style.display = 'block';
-        formIntro.textContent = ' These are made using PHP to check what the input field is.'
-    }
-
-}
-
-toggle.addEventListener('click', changeForm);
+var toggle = document.querySelector('#switch');
+const $form = document.querySelector('form');
+const $feedback = document.querySelector(".feedback");
+const $calculate = document.querySelector('#calculate');
+const numberFormatter = Intl.NumberFormat('en-US');
 
 // converting first letter to uppercase
 function capitalizeFirstLetter(str) {
@@ -26,73 +11,109 @@ function capitalizeFirstLetter(str) {
     return capitalized;
 }
 
-
-// button 1
-var hello = document.querySelector('.hello');
+const $helloForm = document.querySelector('#hello');
+const $countForm = document.querySelector('#count-characters');
+const $quoteForm = document.querySelector('#quote');
 
 function promptHello() {
-    var name = prompt('What is your name?');
-    let message = '';
-    if (name) {
-        message = "Hello, " + capitalizeFirstLetter(name) + ". nice to meet you!"
-    } else if (name == '') {
-        message = "Oh wait.. we're missing something.."
-    }
+    const $nameInput = document.querySelector('#name');
+    $helloForm.addEventListener('input', function (event) {
 
-    alert(message);
-    event.preventDefault();
+        var name = $nameInput.value;
+        let message = '';
+
+        if (name) {
+            message = `<p>Hello, <strong>${name}</strong>. Nice to meet you!</p>`;
+        } else if (name == '') {
+            message = `<p>Oh wait.. we're missing something..</p>`;
+        };
+
+        $feedback.innerHTML = `${message}`;
+
+    });
 }
-
-hello.addEventListener('click', promptHello);
-
-// button 2
-var stringButton = document.querySelector('.count-string');
 
 function promptString() {
-    var string = prompt('Enter a word...')
-    // Go through the word and count amount of characters(letters) it takes to make the word.
-    if (string == '') {
-        string = 'nothing'
-    }
+    const $phraseInput = document.querySelector('#phrase');
+    $countForm.addEventListener('input', function (event) {
 
-    var stringLength = string.length;
-    // Tell the user the amount of characters for their word.
-    var message = 'You entered ' + string + '. It has ' + stringLength + ' amount of characters!';
+        let string = $phraseInput.value;
+        let counter = 0
+        if (string == '') {
+            message = 'nothing'
+        }
 
-    alert(message);
-    event.preventDefault();
-}
+        for (i = 0; i < string.length; i++) {
+            character = string[i]; // 
 
-stringButton.addEventListener('click', promptString);
+            if (character != ' ') {
+                counter++;
+            }
+        }
 
+        var template = `You entered: `;
+        var message = 'That phrase has: ';
 
-// button 3
-var authorQuote = document.querySelector('.author-quote');
+        $feedback.innerHTML = `
+        <p> ${template} <strong> ${string} </strong> </p>
+        <p> ${message} <strong> ${counter} </strong> characters. </p>
+
+        `
+    });
+};
+
 
 function promptQuote() {
-    var quote = prompt('Enter your favorite quote.');
-    var author = prompt('Enter who said this quote.')
+    const $quoteInput = $quoteForm.querySelector("field:nth-of-type(2) input")
+    const $authorInput = $quoteForm.querySelector("field:nth-of-type(1) input")
 
-    let message = capitalizeFirstLetter(author) + ' said "' + quote + '"!';
+    $quoteForm.addEventListener('input', function (event) {
+        let quote = $quoteInput.value;
+        let author = $authorInput.value;
+        author = capitalizeFirstLetter(author);
 
-    if (quote == '' & author == '') {
-        message = "Someone must have said nothing once. Maybe."
-    } else if (quote == '') {
-        message = capitalizeFirstLetter(author) + ' must have said something, right?';
-    } else if (author == '') {
-        message = 'Someone must have said "' + quote + '"! Maybe.';
-    }
+        $feedback.innerHTML = `
+                <p><strong>${author}</strong> said <strong>“${quote}”</strong> </p>
+            `
 
-    alert(message);
-    event.preventDefault();
+    })
 }
 
-authorQuote.addEventListener('click', promptQuote);
+validateform = function () {
+    if (toggle.checked) {
+        $form.classList.add("none");
 
+        if ($helloForm) {
+            promptHello();
+        }
 
+        if ($countForm) {
+            promptString();
+        }
 
-// button 4
-var madlib = document.querySelector('.madlib');
+        if ($quoteForm) {
+            promptQuote();
+        }
+
+    } else {
+        $form.classList.remove("none");
+    }
+
+}
+
+window.addEventListener('click', function (event) {
+    if (event.target.matches('[rel="hamburger"]')) {
+        event.preventDefault();
+
+        var header = document.querySelector("header");
+        header.classList.toggle("display-menu");
+    }
+
+    if (event.target.matches("#switch")) {
+        validateform();
+    }
+
+})
 
 function promptMadlib() {
 
@@ -119,10 +140,7 @@ function promptMadlib() {
     event.preventDefault();
 }
 
-madlib.addEventListener('click', promptMadlib);
 
-// button 5
-var simpleMath = document.querySelector('.simple-math');
 
 function promptMath() {
 
@@ -151,11 +169,10 @@ function promptMath() {
 
 }
 
-simpleMath.addEventListener('click', promptMath);
 
 
 // button 6
-var retirment = document.querySelector('.retirment');
+
 
 function promptRetire() {
 
@@ -177,32 +194,3 @@ function promptRetire() {
     alert(message);
     event.preventDefault();
 }
-
-retirment.addEventListener('click', promptRetire);
-
-// button 7
-var area = document.querySelector('.area');
-
-function promptArea() {
-
-    var length = prompt('What is the length of the room in feet?');
-    var width = prompt('What is the width of the room in feet?');
-
-    var area = parseInt(length) * parseInt(width);
-    var meters = area * .09290304;
-
-    var message = 'You entered a dimensions of ' + length + ' feet by ' + width + ' feet. The area is ' + area + ' square feet. That is ' + meters + ' square meters';
-
-    if (length == '' & width == '') {
-        message = "Can calculate nothing.."
-    } else if (length == '') {
-        message = "Missing a side.."
-    } else if (width == '') {
-        message = "Missing a side.."
-    }
-
-    alert(message);
-    event.preventDefault();
-}
-
-area.addEventListener('click', promptArea);
