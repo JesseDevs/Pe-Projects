@@ -14,15 +14,34 @@
 
 <body>
 
+    <header>
+        <inner-column>
+            <h1 class="roar-voice">Todo App</h1>
+        </inner-column>
+
+    </header>
+
     <main class="page-content ">
         <section>
-            <inner-column class="outlet">
+            <inner-column>
+                <form>
+                    <field>
+                        <label for="x">What is your next todo?</label>
+                        <input id='x' type="text">
+                    </field>
+
+                    <button type="submit">Add</button>
+                </form>
+
+                <output>
+
+                </output>
 
             </inner-column>
         </section>
     </main>
 
-    <script src="file.js"></script>
+    <script src="render.js"></script>
 </body>
 
 </html>

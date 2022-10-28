@@ -4,3 +4,35 @@
 @import '_typography';
 @import '_modules';
 @import '_components';
+
+form,
+field {
+    display: grid;
+    gap: 20px;
+}
+
+form input {
+    font: inherit;
+    padding: .5em 1em;
+}
+
+main {
+    inner-column {
+        display: grid;
+        gap: 20px;
+    }
+
+    output {
+        display: grid;
+        gap: 10px;
+    }
+}
+
+action-block {
+    display: grid;
+    gap: 10px;
+}
+
+.complete {
+    opacity: .4;
+}

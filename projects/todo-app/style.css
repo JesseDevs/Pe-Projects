@@ -73,17 +73,8 @@ html {
 }
 
 html {
-  --ink: rgb(240, 238, 238);
-  --page: rgb(23 23 23);
-  --menus: rgb(80 79 77);
-  --menus-support: rgb(80 79 77 /.5);
-  --green-shadow: rgb(86, 145, 65);
-  --green: rgb(73 98 67);
-  --textaccent: #EBE9D9;
-  --darktextaccent: #d5d1a4;
-  --accent: #DD9F54;
-  --support: #1e293b;
-  --red: #DC5965;
+  --ink: rgb(23 23 23);
+  --page: rgb(240, 238, 238);
 }
 
 @keyframes squeeze {
@@ -293,11 +284,11 @@ code {
 }
 
 button {
-  background-color: var(--accent);
-  border: var(--line) solid transparent;
+  background-color: var(--page);
+  border: 2px solid rgba(0, 0, 0, 0.387);
   border-radius: 2px;
   box-sizing: border-box;
-  color: var(--support);
+  color: var(--ink);
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
@@ -306,17 +297,16 @@ button {
   line-height: 1;
   padding: 1rem 1.6rem;
   text-align: center;
-  text-decoration: none var(--support) solid;
   text-decoration-thickness: auto;
   transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  box-shadow: 1px 1px 2px rgba(166, 175, 195, 0.25);
   user-select: none;
   touch-action: manipulation;
 }
 
 button:hover {
-  background-color: var(--support);
-  color: var(--white);
+  background-color: var(--ink);
+  color: var(--page);
 }
 
 @media (min-width: 768px) {
@@ -331,4 +321,33 @@ button[disabled] {
   border: var(--line) solid var(--gray);
   background-color: var(--dark);
   color: var(--dark-gray);
+}
+
+form,
+field {
+  display: grid;
+  gap: 20px;
+}
+
+form input {
+  font: inherit;
+  padding: 0.5em 1em;
+}
+
+main inner-column {
+  display: grid;
+  gap: 20px;
+}
+main output {
+  display: grid;
+  gap: 10px;
+}
+
+action-block {
+  display: grid;
+  gap: 10px;
+}
+
+.complete {
+  opacity: 0.4;
 }
