@@ -1,18 +1,9 @@
-const workoutsApp = {
-    workouts: [],
+function workoutPlan() {
 
-    pushWorkouts: [],
-    pullWorkouts: [],
-    legWorkouts: [],
+    this.workouts = [];
+    this.idMaker = 0;
 
-    idMaker: 0,
-
-    print: function (note = '') {
-        console.log(`---------- ${note}`);
-        console.log('Workouts: ', this.workouts);
-    },
-
-    add: function (content, type) {
+    this.add = function (content, type) {
         var workout = {
             id: `a${this.idMaker++}`,
             content: content,
@@ -20,24 +11,24 @@ const workoutsApp = {
         };
         this.workouts.push(workout);
         // print(`Added ${content} to workouts.`);
-    },
+    };
 
-    remove: function (id) {
-        print(`Removed ${this.workouts[id].content}`);
+    this.remove = function (id) {
         this.workouts.splice(id, 1);
-    },
+        print(`Removed ${this.workouts[id].content}`);
+    };
 
-    complete: function (id) {
+    this.complete = function (id) {
         this.workouts[id].complete = true;
         print(`Completed ${this.workouts[id].content}`);
-    },
+    };
 
-    update: function (workouts, id, content) {
+    this.update = function (id, content) {
         this.workouts[id].content = content;
         print(`Updated ${this.workouts[id].content} in workouts.`);
-    },
+    };
 
-    filterWorkout: function (value) {
+    this.filterWorkout = function (value) {
         const newSet = [];
         for (let i = 0; i < this.workouts.length; i++) {
             if (this.workouts[i].type == value) {
@@ -45,25 +36,39 @@ const workoutsApp = {
             }
         }
         return newSet;
-    },
+    };
 }
 
-workoutsApp.add("Pull-ups", "Pull");
-workoutsApp.add("Barbell-rows", "Pull");
-workoutsApp.add("Lat Pulls", "Pull");
+workoutPlan.prototype.print = function (note = '') {
+    console.log(`---------- ${note}`);
+    console.log('Workouts: ', this.workouts);
+}
 
-workoutsApp.add("Flat Bench", "Push");
-workoutsApp.add("Incline Bench", "Push");
-workoutsApp.add("Shoulder Press", "Push");
+let workoutPlanTwo = new workoutPlan;
+console.log(workoutPlanTwo)
 
-workoutsApp.add("Squats", "Legs");
-workoutsApp.add("Leg Press", "Legs");
-workoutsApp.add("Deadlifts", "Legs");
+function workout(name, type) {
+    this.name = name;
+    this.type = type;
+};
 
-workoutsApp.pullWorkouts = workoutsApp.filterWorkout("Pull");
-workoutsApp.pushWorkouts = workoutsApp.filterWorkout("Push");
-workoutsApp.legWorkouts = workoutsApp.filterWorkout("Legs");
 
-console.log(workoutsApp.pullWorkouts);
-console.log(workoutsApp.pushWorkouts);
-console.log(workoutsApp.legsWorkouts);
+// add("Pull-ups", "Pull");
+// add("Barbell-rows", "Pull");
+// add("Lat Pulls", "Pull");
+
+// add("Flat Bench", "Push");
+// add("Incline Bench", "Push");
+// add("Shoulder Press", "Push");
+
+// add("Squats", "Legs");
+// add("Leg Press", "Legs");
+// add("Deadlifts", "Legs");
+
+// pullWorkouts = filterWorkout("Pull");
+// pushWorkouts = filterWorkout("Push");
+// legWorkouts = filterWorkout("Legs");
+
+// console.log(pullWorkouts);
+// console.log(pushWorkouts);
+// console.log(legsWorkouts);

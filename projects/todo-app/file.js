@@ -5,10 +5,23 @@ function Monster(name, age) {
     this.roar = function () {
         alert(`${name}!!!!`)
     }
+
+    //returns this;
+    //for example returns chunky as an object
 }
 
 const chunky = new Monster("chunky", 15);
 chunky.roar();
+
+Monster.prototype.whisper = function () {
+    console.log(`...hi my name is ${this.name}`);
+}
+
+chunky.whisper();
+console.log(chunky)
+
+
+
 
 
 const todoApp = {
