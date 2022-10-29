@@ -22,7 +22,8 @@ main {
         gap: 20px;
     }
 
-    output {
+    output,
+    ul {
         display: grid;
         gap: 10px;
     }

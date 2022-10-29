@@ -27,7 +27,7 @@
                 <form>
                     <field>
                         <label for="x">What is your next todo?</label>
-                        <input id='x' type="text">
+                        <input id='x' type="text" required>
                     </field>
 
                     <button type="submit">Add</button>

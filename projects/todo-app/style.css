@@ -338,7 +338,8 @@ main inner-column {
   display: grid;
   gap: 20px;
 }
-main output {
+main output,
+main ul {
   display: grid;
   gap: 10px;
 }

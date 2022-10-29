@@ -1,11 +1,19 @@
 let todos = [];
 let idCount = 0;
-let trashCan = []
+let trash = []
 
 const $form = document.querySelector('form');
 const $input = $form.querySelector('input');
 const $output = document.querySelector('output');
 
+function saveToStorage(key, item) {
+    this.localStorage.setItem(key, JSON.stringify(item));
+}
+
+function removeFromStorage(key) {
+    this.localStorage.removeItem(key);
+
+}
 
 function add(content) {
     const todo = {
@@ -16,6 +24,7 @@ function add(content) {
 
     todos = [...todos, todo];
     renderTodos(todos);
+    saveToStorage(todo.id, todo)
 }
 
 function remove(id) {
@@ -23,16 +32,32 @@ function remove(id) {
         return todo.id != id;
     });
 
+    for (i = 0; i < todos.length; i++) {
+        if (todos[i].id == id) {
+            trash.push(todos[i]);
+        }
+    }
+
     todos = [...filtered];
     renderTodos(todos);
+    removeFromStorage(id);
+
+    saveToStorage("Trashcan", trash);
 }
 
 function complete(id) {
     for (let i = 0; i < todos.length; i++) {
         if (todos[i].id == id) {
             todos[i].complete = true;
+            saveToStorage(todos[i].id, todos[i])
         }
     }
+    renderTodos(todos);
+
+}
+
+function clearAll() {
+    todos = [];
     renderTodos(todos);
 }
 
