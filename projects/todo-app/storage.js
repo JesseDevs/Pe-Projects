@@ -55,3 +55,13 @@ function initialize() {
         data.setItem('game', JSON.stringify({ score: 0 }))
     }
 }
+
+dateCreated = new Date();
+
+       // printDate(dateData){
+        //     this.day = dateData.getdate();
+        //     this.month = this.dateCreated.getMonth() + 1;
+        //     this.year = this.dateCreated.getFullYear();
+
+        //     this.fullDate = `${day}/${month}/${year}`;
+        // }

@@ -1,107 +1,148 @@
-let todos = [];
-let idCount = 0;
-let trash = []
+class Todo {
+    constructor(id, content) {
+        this.id = id;
+        this.content = content;
+        this.complete = false;
 
-const $form = document.querySelector('form');
-const $input = $form.querySelector('input');
-const $output = document.querySelector('output');
+        this.dateCreated = new Date();
 
-function saveToStorage(key, item) {
-    this.localStorage.setItem(key, JSON.stringify(item));
-}
-
-function removeFromStorage(key) {
-    this.localStorage.removeItem(key);
-
-}
-
-function add(content) {
-    const todo = {
-        id: `a${idCount++}`,
-        content,
-        complete: false
     }
 
-    todos = [...todos, todo];
-    renderTodos(todos);
-    saveToStorage(todo.id, todo)
+    toggleComplete() {
+        this.complete = !this.complete;
+    }
+
+    get isComplete() {
+        return (this.complete) ? "complete" : "";
+    }
+
+    render() {
+        const { id, content, isComplete } = this
+        return `
+        <li>
+            <item-card data-id='${id}' class="${isComplete}">
+                <h2> ${content}</h2>
+    
+                <action-block>
+                    <button data-action="remove" >Remove</button>
+                    <button data-action="complete">Complete</button>
+                </action-block>
+    
+            </item-card>
+        </li>
+    `
+    }
 }
 
-function remove(id) {
-    const filtered = todos.filter(function (todo) {
-        return todo.id != id;
-    });
+class TodoApp {
 
-    for (i = 0; i < todos.length; i++) {
-        if (todos[i].id == id) {
-            trash.push(todos[i]);
+    constructor(name) {
+        this.data = localStorage;
+
+        this.name = name;
+        this.todos = [];
+        this.idCount = 0;
+        this.trashList = [];
+        this.completedList = [];
+
+
+        this.$form = document.querySelector('form');
+        this.$input = this.$form.querySelector('input');
+        this.$output = document.querySelector('output');
+
+        this.initialize();
+        this.addEventListeners();
+    }
+
+    initialize() {
+        if (this.data.getItem("Todos")) {
+            var thing = this.data.getItem("Todos");
+            this.todos = JSON.parse(thing);
+
+            this.renderList(this.todos);
+        } else {
+            this.data.setItem('Todos', JSON.stringify(""))
         }
+
+    }
+    saveToStorage() {
+        localStorage.setItem("Todos", JSON.stringify(this.todos));
     }
 
-    todos = [...filtered];
-    renderTodos(todos);
-    removeFromStorage(id);
-
-    saveToStorage("Trashcan", trash);
-}
-
-function complete(id) {
-    for (let i = 0; i < todos.length; i++) {
-        if (todos[i].id == id) {
-            todos[i].complete = true;
-            saveToStorage(todos[i].id, todos[i])
-        }
-    }
-    renderTodos(todos);
-
-}
-
-function clearAll() {
-    todos = [];
-    renderTodos(todos);
-}
-
-function renderTodo(todo) {
-    return `
-    <li>
-        <todo-card data-id='${todo.id}' class="${todo.complete ? "complete" : ""}">
-            <h2> ${todo.content}</h2>
-
-            <action-block>
-                <button data-action="remove" >Remove</button>
-                <button data-action="complete">Complete</button>
-            </action-block>
-        </todo-card>
-    </li>
-`
-}
-
-function renderTodos(todos) {
-    var template = `<ul>`;
-    todos.forEach(todo => {
-        template += renderTodo(todo);
-    });
-    template += `</ul>`;
-    $output.innerHTML = template;
-}
-
-
-$form.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    add($input.value);
-    $input.value = "";
-    console.log('todos:', todos);
-});
-
-$output.addEventListener('click', function (event) {
-    if (event.target.dataset.action == 'remove') {
-        const id = event.target.closest('todo-card').dataset.id;
-        remove(id);
+    removeFromStorage(key) {
+        localStorage.removeItem(key);
     }
 
-    if (event.target.dataset.action == 'complete') {
-        const id = event.target.closest('todo-card').dataset.id;
-        complete(id);
+    add(content) {
+        var todo = new Todo(`a${this.idCount++}`, content);
+
+        this.todos = [...this.todos, todo];
+        this.renderList(this.todos);
+
+        this.saveToStorage()
     }
-});
+
+    getTodoById(id) {
+        return this.todos.find(function (todo) {
+            return todo.id == id;
+        })
+    }
+
+    remove(id) {
+        const filtered = this.todos.filter(function (savedTodo) {
+            return savedTodo.id != id;
+        });
+
+        this.trash.push(this.getTodoById(id));
+
+        this.todos = [...filtered];
+        this.renderList(this.todos);
+    }
+
+    complete(id) {
+
+        this.getTodoById(id).toggleComplete();
+        this.renderList(this.todos);
+
+    }
+
+    renderList(todos) {
+        console.log(todos);
+        var template = `<ul>`;
+        this.todos.forEach(todo => {
+            template += todo.render();
+        });
+        template += `</ul>`;
+        this.$output.innerHTML = template;
+    }
+
+    addEventListeners() {
+        this.$form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            console.log(this.$input.value)
+            this.add(this.$input.value);
+            this.$input.value = "";
+            console.log('todos:', this.todos);
+        });
+
+        this.$output.addEventListener('click', (event) => {
+            if (event.target.dataset.action == 'remove') {
+                const id = event.target.closest('item-card').dataset.id;
+                this.remove(id);
+            }
+
+            if (event.target.dataset.action == 'complete') {
+                const id = event.target.closest('item-card').dataset.id;
+                this.complete(id);
+            }
+        });
+    }
+}
+
+const newTodo = new TodoApp();
+
+// function clearAll() {
+//     todos = [];
+//     renderList(todos);
+// }
