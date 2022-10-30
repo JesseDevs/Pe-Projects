@@ -51,20 +51,18 @@ class TodoApp {
         this.$output = document.querySelector('output');
 
         this.initialize();
+        this.renderList(this.todos);
         this.addEventListeners();
     }
 
     initialize() {
         if (this.data.getItem("Todos")) {
-            var thing = this.data.getItem("Todos");
-            this.todos = JSON.parse(thing);
-
-            this.renderList(this.todos);
+            this.todos = JSON.parse(this.data.getItem("Todos"));
         } else {
-            this.data.setItem('Todos', JSON.stringify(""))
+            this.todos = this.data.setItem('Todos', JSON.stringify([]))
         }
-
     }
+
     saveToStorage() {
         localStorage.setItem("Todos", JSON.stringify(this.todos));
     }
@@ -109,9 +107,11 @@ class TodoApp {
     renderList(todos) {
         console.log(todos);
         var template = `<ul>`;
+
         this.todos.forEach(todo => {
             template += todo.render();
         });
+
         template += `</ul>`;
         this.$output.innerHTML = template;
     }
