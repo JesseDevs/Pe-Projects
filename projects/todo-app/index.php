@@ -39,6 +39,11 @@
 
             </inner-column>
         </section>
+        <!-- <div class="trash">
+
+            <button id="trashcan" data-action="trash">Trash</button>
+
+        </div> -->
     </main>
 
     <script src="render.js"></script>

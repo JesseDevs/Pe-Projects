@@ -49,15 +49,15 @@ class TodoApp {
         this.$form = document.querySelector('form');
         this.$input = this.$form.querySelector('input');
         this.$output = document.querySelector('output');
+        this.$trashCan = document.querySelector("#trashcan");
 
         this.initialize();
-        this.renderList(this.todos);
         this.addEventListeners();
     }
 
     initialize() {
         if (this.data.getItem("Todos")) {
-            this.todos = JSON.parse(this.data.getItem("Todos"));
+            var thing = JSON.parse(this.data.getItem("Todos"));
         } else {
             this.todos = this.data.setItem('Todos', JSON.stringify([]))
         }
@@ -76,7 +76,6 @@ class TodoApp {
 
         this.todos = [...this.todos, todo];
         this.renderList(this.todos);
-
         this.saveToStorage()
     }
 
@@ -91,7 +90,8 @@ class TodoApp {
             return savedTodo.id != id;
         });
 
-        this.trash.push(this.getTodoById(id));
+        this.trashList.push(this.getTodoById(id));
+        console.log(this.trashList)
 
         this.todos = [...filtered];
         this.renderList(this.todos);
@@ -105,7 +105,6 @@ class TodoApp {
     }
 
     renderList(todos) {
-        console.log(todos);
         var template = `<ul>`;
 
         this.todos.forEach(todo => {
@@ -120,10 +119,8 @@ class TodoApp {
         this.$form.addEventListener('submit', (event) => {
             event.preventDefault();
 
-            console.log(this.$input.value)
             this.add(this.$input.value);
             this.$input.value = "";
-            console.log('todos:', this.todos);
         });
 
         this.$output.addEventListener('click', (event) => {
@@ -137,6 +134,17 @@ class TodoApp {
                 this.complete(id);
             }
         });
+
+        // this.$trashCan.addEventListener("click", (event) => {
+        //     if (event.target.dataset.action == 'trash') {
+        //         this.$form.innerHTML = `
+        //         <h1 class="roar-voice">Trash Can</h1>
+        //         `
+        //         this.$output.innerHTML = ""
+        //         console.log(this.trashList)
+        //         this.renderList(this.trashList);
+        //     }
+        // })
     }
 }
 

@@ -16,6 +16,13 @@ form input {
     padding: .5em 1em;
 }
 
+header {
+
+    inner-column {
+        padding-top: 6rem;
+    }
+}
+
 main {
     inner-column {
         display: grid;
@@ -36,4 +43,10 @@ action-block {
 
 .complete {
     opacity: .4;
+}
+
+div.trash {
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
