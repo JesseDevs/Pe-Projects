@@ -45,7 +45,6 @@ if (isset($_POST['submitted'])) {
 
     <button class='action-link' type="submit" name='submitted' id="calculate">Calculate</button>
 
-
 </form>
 
 <div class='feedback'>

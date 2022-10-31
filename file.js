@@ -11,10 +11,54 @@ function capitalizeFirstLetter(str) {
     return capitalized;
 }
 
+window.addEventListener('click', function (event) {
+    if (event.target.matches('[rel="hamburger"]')) {
+        event.preventDefault();
+
+        var header = document.querySelector("header");
+        header.classList.toggle("display-menu");
+    }
+
+    if (event.target.matches("#switch")) {
+        validateform();
+    }
+
+});
+
+validateform = function () {
+    if (toggle.checked) {
+        $form.classList.add("none");
+
+        if ($helloForm) {
+            promptHello();
+        }
+
+        if ($countForm) {
+            promptString();
+        }
+
+        if ($quoteForm) {
+            promptQuote();
+        }
+
+        if ($madlibForm) {
+            promptMadlib();
+        }
+
+        if ($retireForm) {
+            promptRetire();
+        }
+    } else {
+        $form.classList.remove("none");
+    }
+
+}
+
 const $helloForm = document.querySelector('#hello');
 const $countForm = document.querySelector('#count-characters');
 const $quoteForm = document.querySelector('#quote');
 const $madlibForm = document.querySelector('#madlib');
+const $retireForm = document.querySelector('#retire');
 
 function promptHello() {
     const $nameInput = document.querySelector('#name');
@@ -63,7 +107,6 @@ function promptString() {
     });
 };
 
-
 function promptQuote() {
     const $quoteInput = $quoteForm.querySelector("field:nth-of-type(2) input")
     const $authorInput = $quoteForm.querySelector("field:nth-of-type(1) input")
@@ -81,8 +124,6 @@ function promptQuote() {
 }
 
 function promptMadlib() {
-
-
 
     const $noun = $madlibForm.querySelector("field:nth-of-type(1) input");
     const $verb = $madlibForm.querySelector("field:nth-of-type(2) input");
@@ -114,44 +155,28 @@ function promptMadlib() {
 
 }
 
-validateform = function () {
-    if (toggle.checked) {
-        $form.classList.add("none");
+function promptRetire() {
 
-        if ($helloForm) {
-            promptHello();
-        }
+    const $age = $retireForm.querySelector("field:nth-of-type(1) input");
+    const $retire = $retireForm.querySelector("field:nth-of-type(2) input");
 
-        if ($countForm) {
-            promptString();
-        }
+    var retirementAge = parseFloat($retire) - parsefloat($age);
+    var retireDate = 2015 + retirementAge;
 
-        if ($quoteForm) {
-            promptQuote();
-        }
+    var message = 'It will be ' + retirementAge + ' years until you can retire in ' + retireDate + '.';
 
-        if ($madlibForm) {
-            promptMadlib();
-        }
-    } else {
-        $form.classList.remove("none");
+    if (age == '') {
+        message = "No age. No retirement."
+    } else if (retire == '') {
+        message = "We need to plan..."
     }
 
+    alert(message);
+    event.preventDefault();
 }
 
-window.addEventListener('click', function (event) {
-    if (event.target.matches('[rel="hamburger"]')) {
-        event.preventDefault();
 
-        var header = document.querySelector("header");
-        header.classList.toggle("display-menu");
-    }
 
-    if (event.target.matches("#switch")) {
-        validateform();
-    }
-
-})
 
 
 function promptMath() {
@@ -179,30 +204,4 @@ function promptMath() {
     }
     event.preventDefault();
 
-}
-
-
-
-// button 6
-
-
-function promptRetire() {
-
-    var age = prompt('How old are you?');
-    var retire = prompt('At what age do you plan to retire?');
-
-    var retirementAge = parseInt(retire) - parseInt(age);
-
-    var retireDate = 2015 + retirementAge;
-
-    var message = 'It will be ' + retirementAge + ' years until you can retire in ' + retireDate + '.';
-
-    if (age == '') {
-        message = "No age. No retirement."
-    } else if (retire == '') {
-        message = "We need to plan..."
-    }
-
-    alert(message);
-    event.preventDefault();
 }
