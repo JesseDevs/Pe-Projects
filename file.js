@@ -48,6 +48,11 @@ validateform = function () {
         if ($retireForm) {
             promptRetire();
         }
+
+        if ($mathForm) {
+            promptMath();
+        }
+
     } else {
         $form.classList.remove("none");
     }
@@ -59,6 +64,7 @@ const $countForm = document.querySelector('#count-characters');
 const $quoteForm = document.querySelector('#quote');
 const $madlibForm = document.querySelector('#madlib');
 const $retireForm = document.querySelector('#retire');
+const $mathForm = document.querySelector('#math');
 
 function promptHello() {
     const $nameInput = document.querySelector('#name');
@@ -157,51 +163,64 @@ function promptMadlib() {
 
 function promptRetire() {
 
+    let date = new Date();
+    var currentYear = date.getFullYear();
+
     const $age = $retireForm.querySelector("field:nth-of-type(1) input");
     const $retire = $retireForm.querySelector("field:nth-of-type(2) input");
 
-    var retirementAge = parseFloat($retire) - parsefloat($age);
-    var retireDate = 2015 + retirementAge;
+    $retireForm.addEventListener('input', function (event) {
+        var age = $age.value;
+        var retire = $retire.value;
 
-    var message = 'It will be ' + retirementAge + ' years until you can retire in ' + retireDate + '.';
+        var ageDifference = parseFloat(retire) - parseFloat(age);
+        var retireYear = currentYear + ageDifference;
 
-    if (age == '') {
-        message = "No age. No retirement."
-    } else if (retire == '') {
-        message = "We need to plan..."
-    }
+        let template = `<p>
+        <strong>${ageDifference}</strong> years left until you can retire.<br> It's <strong>${currentYear}</strong>, so you can retire in <strong>${retireYear}</strong>.
+        </p>
+        `;
 
-    alert(message);
-    event.preventDefault();
+        if (age == '') {
+            template = "No age. No retirement."
+        } else if (retire == '') {
+            template = "We need to plan..."
+        }
+
+        $feedback.innerHTML = template;
+    })
 }
-
-
-
-
 
 function promptMath() {
 
-    var numOne = prompt('Enter your first number.');
-    var numTwo = prompt('Enter your second number.');
+    const $numOne = $mathForm.querySelector("field:nth-of-type(1) input");
+    const $numTwo = $mathForm.querySelector("field:nth-of-type(2) input");
 
-    numOne = parseInt(numOne);
-    numTwo = parseInt(numTwo);
+    $mathForm.addEventListener('input', function (event) {
 
-    var multiply = numOne * numTwo;
-    var divide = numOne / numTwo;
-    var add = numOne + numTwo;
-    var sub = numOne - numTwo;
+        let numOne = parseInt($numOne.value);
+        let numTwo = parseInt($numTwo.value);
 
-    if (numOne == '') {
-        alert('Missing a number.')
-    } else if (numTwo == '') {
-        alert('Missing a number.')
-    } else if (numOne == '' & numTwo == '') {
-        alert('Nothing to calculate.')
-    } else if (numOne & numTwo) {
+        if (isNaN(numOne)) {
+            numOne = 0;
+        }
 
-        alert([" Multiply = " + multiply, " Division = " + divide, " Addition = " + add, " Subtraction = " + sub]);
-    }
-    event.preventDefault();
+        if (isNaN(numTwo)) {
+            numTwo = 0;
+        }
+        var multiply = numOne * numTwo;
+        var divide = numOne / numTwo;
+        var add = numOne + numTwo;
+        var sub = numOne - numTwo;
 
+
+        var template = `
+    <p>${numOne} + ${numTwo}= <strong>${add}</strong></p>
+    <p>${numOne} - ${numTwo}= <strong>${sub}</strong></p>
+    <p>${numOne} x ${numTwo}= <strong>${multiply}</strong></p>
+    <p>${numOne} / ${numTwo}= <strong>${divide}</strong></p>
+    `;
+
+        $feedback.innerHTML = template;
+    })
 }
