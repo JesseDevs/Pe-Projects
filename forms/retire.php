@@ -43,7 +43,7 @@ if (isset($_POST['submitted'])) {
 
     <field>
         <label for="">What age would you like to retire?</label>
-        <input type="text" inputmode="numeric" pattern="[0-9]*" required name="retireAge" value="<?= $retireAge ?>" min="0">
+        <input type="number" inputmode=decimal required name="retireAge" value="<?= $retireAge ?>" min="0">
 
     </field>
 
