@@ -196,10 +196,14 @@ function promptMath() {
     const $numOne = $mathForm.querySelector("field:nth-of-type(1) input");
     const $numTwo = $mathForm.querySelector("field:nth-of-type(2) input");
 
+
     $mathForm.addEventListener('input', function (event) {
 
-        let numOne = parseInt($numOne.value);
-        let numTwo = parseInt($numTwo.value);
+        let numOne = $numOne.value;
+        let numTwo = $numTwo.value;
+
+        numOne = parseFloat(numOne).toFixed(2).replace(/[.,]00$/, "");
+        numTwo = parseFloat(numTwo).toFixed(2).replace(/[.,]00$/, "");
 
         if (isNaN(numOne)) {
             numOne = 0;
@@ -208,17 +212,21 @@ function promptMath() {
         if (isNaN(numTwo)) {
             numTwo = 0;
         }
-        var multiply = numOne * numTwo;
-        var divide = numOne / numTwo;
-        var add = numOne + numTwo;
-        var sub = numOne - numTwo;
+        var multiply = parseFloat(numOne) * parseFloat(numTwo);
+        var divide = parseFloat(numOne) / parseFloat(numTwo);
+        var add = parseFloat(numOne) + parseFloat(numTwo);
+        var sub = parseFloat(numOne) - parseFloat(numTwo);
 
+        multiply = parseFloat(multiply).toFixed(2).replace(/[.,]00$/, "");
+        add = parseFloat(add).toFixed(2).replace(/[.,]00$/, "");
+        sub = parseFloat(sub).toFixed(2).replace(/[.,]00$/, "");
+        divide = parseFloat(divide).toFixed(2).replace(/[.,]00$/, "");
 
         var template = `
-    <p>${numOne} + ${numTwo}= <strong>${add}</strong></p>
-    <p>${numOne} - ${numTwo}= <strong>${sub}</strong></p>
-    <p>${numOne} x ${numTwo}= <strong>${multiply}</strong></p>
-    <p>${numOne} / ${numTwo}= <strong>${divide}</strong></p>
+    <p>${numOne} + ${numTwo} = <strong>${add}</strong></p>
+    <p>${numOne} - ${numTwo} = <strong>${sub}</strong></p>
+    <p>${numOne} x ${numTwo} = <strong>${multiply}</strong></p>
+    <p>${numOne} / ${numTwo} = <strong>${divide}</strong></p>
     `;
 
         $feedback.innerHTML = template;
