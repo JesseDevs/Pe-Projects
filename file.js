@@ -14,6 +14,7 @@ function capitalizeFirstLetter(str) {
 const $helloForm = document.querySelector('#hello');
 const $countForm = document.querySelector('#count-characters');
 const $quoteForm = document.querySelector('#quote');
+const $madlibForm = document.querySelector('#madlib');
 
 function promptHello() {
     const $nameInput = document.querySelector('#name');
@@ -79,6 +80,40 @@ function promptQuote() {
     })
 }
 
+function promptMadlib() {
+
+
+
+    const $noun = $madlibForm.querySelector("field:nth-of-type(1) input");
+    const $verb = $madlibForm.querySelector("field:nth-of-type(2) input");
+    const $adjective = $madlibForm.querySelector("field:nth-of-type(3) input");
+    const $adverb = $madlibForm.querySelector("field:nth-of-type(4) input");
+
+    $madlibForm.addEventListener('input', function (event) {
+
+        let noun = $noun.value;
+        let verb = $verb.value;
+        let adjective = $adjective.value;
+        let adverb = $adverb.value;
+
+        if (noun.length == 0) {
+            noun = "X"
+        }
+        if (verb.length == 0) {
+            verb = "X"
+        }
+        if (adjective.length == 0) {
+            adjective = "X"
+        }
+        if (adverb.length == 0) {
+            adverb = "X"
+        }
+
+        $feedback.innerHTML = `<p><strong>${noun}</strong> is <strong>${verb}</strong> <strong>${adverb}</strong>  while maintaining <strong>${adjective}</strong> poise! </p>`;
+    })
+
+}
+
 validateform = function () {
     if (toggle.checked) {
         $form.classList.add("none");
@@ -95,6 +130,9 @@ validateform = function () {
             promptQuote();
         }
 
+        if ($madlibForm) {
+            promptMadlib();
+        }
     } else {
         $form.classList.remove("none");
     }
@@ -114,32 +152,6 @@ window.addEventListener('click', function (event) {
     }
 
 })
-
-function promptMadlib() {
-
-    var noun = prompt('Enter a noun');
-    var verb = prompt('Enter a verb');
-    var adjective = prompt('Enter a adjective');
-    var adverb = prompt('Enter a adverb');
-
-    let message = noun + ' is ' + verb + adverb + ' while maintaining ' + adjective + ' poise!';
-
-    if (noun == '' & verb == '' & adjective == '' & adverb == '') {
-        message = "We need to start over..."
-    } else if (verb == '') {
-        message = "We are missing a verb..";
-    } else if (noun == '') {
-        message = "We are missing a noun..";
-    } else if (adjective == '') {
-        message = "We are missing a adjective..";
-    } else if (adverb == '') {
-        message = "We are missing a adverb..";
-    }
-
-    alert(message);
-    event.preventDefault();
-}
-
 
 
 function promptMath() {

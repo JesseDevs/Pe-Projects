@@ -12,7 +12,7 @@
         {
             "module": "form-grid",
             "heading": "Exercise Grid",
-            "intro": "These are little apps that solve everyday problems. <br> Entirely made using PHP to check what the input field is.",
+            "intro": "Little apps to solve everyday problems.<br>Decide your programming language.",
             "items": [
                 {
                     "id": 1,
@@ -32,7 +32,7 @@
                     "id": 4,
                     "title": "madlib",
                     "button": "madlib",
-                    "file-name": "quote",
+                    "file-name": "madlib",
                     "intro": "Building out a phrase"
                 },
                 {

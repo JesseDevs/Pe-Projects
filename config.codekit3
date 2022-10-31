@@ -317,6 +317,14 @@
       "oAP" : "\/forms\/interest.php",
       "oF" : 0
     },
+    "\/forms\/madlib.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/forms\/madlib.php",
+      "oF" : 0
+    },
     "\/forms\/paint-calc.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -43964,7 +43972,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 37319,
+      "iS" : 115303,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",
