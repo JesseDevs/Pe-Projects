@@ -37,7 +37,7 @@ if (isset($_POST['submitted'])) {
 
     <field>
         <label for="">What is your age?</label>
-        <input type="text" inputmode="numeric" pattern="[0-9]*" required name="currentAge" value="<?= $currentAge ?>" min="0">
+        <input type="number" inputmode=decimal required name="currentAge" value="<?= $currentAge ?>" min="0">
 
     </field>
 

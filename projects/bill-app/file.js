@@ -85,7 +85,7 @@ const homeTemplate = `
 <output-block class='home'>
     <field>
         <label for=""><span>Enter Amount?</span></label>
-        <input id='sub-total' required min="1" type="number" pattern="[0-9]*" inputmode="numeric">
+        <input id='sub-total' required min="1" type="number" inputmode=decimal >
 
     </field>
 
@@ -131,7 +131,7 @@ const splitTemplate = `
 <output-block>
     <field>
         <label for=""><span>How many people?</span></label>
-        <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
+        <input id='split' required type="number" inputmode=decimal >
       
     </field>
 
@@ -152,7 +152,7 @@ const totalTemplate = `
 
     <field class='split-container'>
         <label for=""><span>Split it? How many people?</span></label>
-        <input id='split' required type="number" min='1' pattern="[0-9]*" inputmode="numeric">
+        <input id='split' required min='1' type="number" inputmode=decimal>
 
     </field>
 
