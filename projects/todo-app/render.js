@@ -1,11 +1,15 @@
+export {
+    TodoApp,
+    Todo,
+}
+
 class Todo {
-    constructor(id, content) {
+    constructor(id, content, record) {
         this.id = id;
         this.content = content;
         this.complete = false;
 
         this.dateCreated = new Date();
-
     }
 
     toggleComplete() {
@@ -32,12 +36,11 @@ class Todo {
         </li>
     `
     }
-}
+};
 
 class TodoApp {
 
     constructor(name) {
-        this.data = localStorage;
 
         this.name = name;
         this.todos = [];
@@ -45,22 +48,22 @@ class TodoApp {
         this.trashList = [];
         this.completedList = [];
 
-
         this.$form = document.querySelector('form');
         this.$input = this.$form.querySelector('input');
         this.$output = document.querySelector('output');
         this.$trashCan = document.querySelector("#trashcan");
 
-        this.initialize();
+        this.setupApp();
         this.addEventListeners();
     }
 
-    initialize() {
-        if (this.data.getItem("Todos")) {
-            var thing = JSON.parse(this.data.getItem("Todos"));
-        } else {
-            this.todos = this.data.setItem('Todos', JSON.stringify([]))
-        }
+    setupApp() {
+        const data = JSON.parse(localStorage.getItem(this.name)) || [];
+        data.forEach((todoData) => {
+            this.todos = [...this.todos, new Todo(todoData)];
+
+        });
+        this.renderList();
     }
 
     saveToStorage() {
@@ -113,6 +116,7 @@ class TodoApp {
 
         template += `</ul>`;
         this.$output.innerHTML = template;
+
     }
 
     addEventListeners() {
@@ -147,10 +151,3 @@ class TodoApp {
         // })
     }
 }
-
-const newTodo = new TodoApp();
-
-// function clearAll() {
-//     todos = [];
-//     renderList(todos);
-// }

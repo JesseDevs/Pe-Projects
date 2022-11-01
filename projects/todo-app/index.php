@@ -46,7 +46,7 @@
         </div> -->
     </main>
 
-    <script src="render.js"></script>
+    <script src="script.js" type='module'></script>
 </body>
 
 </html>
