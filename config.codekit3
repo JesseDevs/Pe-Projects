@@ -515,7 +515,7 @@
       "oAP" : "\/images\/details\/404.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -528,7 +528,7 @@
       "oAP" : "\/images\/details\/computer.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -541,7 +541,7 @@
       "oAP" : "\/images\/details\/laptop.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -554,7 +554,7 @@
       "oAP" : "\/images\/details\/me.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -567,7 +567,7 @@
       "oAP" : "\/images\/details\/mefour.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -580,7 +580,7 @@
       "oAP" : "\/images\/details\/methree.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -593,7 +593,7 @@
       "oAP" : "\/images\/details\/metoo.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -606,7 +606,7 @@
       "oAP" : "\/images\/details\/spark.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -619,7 +619,7 @@
       "oAP" : "\/images\/details\/table.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
