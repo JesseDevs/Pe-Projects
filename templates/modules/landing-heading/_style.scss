@@ -1,21 +1,24 @@
 landing-heading {
 	text-align: center;
 	position: relative;
-}
 
+	h1 {
+		text-shadow: 1px 1px 3px var(--fade);
+		opacity: 0;
+		animation: upFadeIn 0.5s forwards ease-in-out;
+		animation-delay: 0.3s;
+	}
 
-landing-heading h1 {
-	text-shadow: 1px 1px 3px var(--fade);
-	opacity: 0;
-	animation: upFadeIn 0.5s forwards ease-in-out;
-	animation-delay: 0.3s;
-}
+	.intro {
+		opacity: 0;
+		animation: upFadeIn 0.5s forwards ease-in-out;
+		animation-delay: 0.6s;
+	}
 
+	p {
+		padding-left: 1rem;
+	}
 
-landing-heading .intro {
-	opacity: 0;
-	animation: upFadeIn 0.5s forwards ease-in-out;
-	animation-delay: 0.6s;
 }
 
 .landing-image {
@@ -28,6 +31,12 @@ landing-heading .intro {
 	opacity: 0;
 	animation: upFadeIn 0.5s forwards ease-in-out;
 	animation-delay: 0.9s;
+
+	img {
+		filter: brightness(64%) grayscale(10%);
+		z-index: 1;
+
+	}
 }
 
 .details {
@@ -48,12 +57,6 @@ landing-heading .intro {
 	opacity: 0;
 	animation: upFadeIn 0.5s forwards ease-in-out;
 	animation-delay: 0.9s;
-
-}
-
-.landing-image img {
-	filter: brightness(64%) grayscale(10%);
-	z-index: 1;
 
 }
 
