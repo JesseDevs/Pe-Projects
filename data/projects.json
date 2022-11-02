@@ -5,7 +5,7 @@
         "intro": "crud",
         "detail": "This project uses fighters from the video game Street Fighter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
         "one-line": "Database backed by JSON data",
-        "thumbnail": "images/projects/fighters/fighters.jpg",
+        "thumbnail": "images/projects/fighters/fighters.webp",
         "skills": [
             "html",
             "css",
@@ -32,7 +32,7 @@
                 "module": "diptech",
                 "title": "The Purpose",
                 "flipped": false,
-                "image": "images/projects/fighters/landing-button.png",
+                "image": "images/projects/fighters/landing-button.webp",
                 "text": [
                     "This project was to build a create, read, update, and delete database. This database would be generated using JSON data to show skills in acquiring and using data from any source.",
                     "The data would be used and altered using PHP, then displayed on the website in a clean and responsive fashion. Forms would be made to accept user input and add new information to the data."
@@ -55,7 +55,7 @@
                 "module": "diptech",
                 "title": "The Approach",
                 "flipped": false,
-                "image": "images/projects/fighters/fighter-landing.jpg",
+                "image": "images/projects/fighters/fighter-landing.webp",
                 "text": [
                     "My characters all share a trait under the idea of a playstyle. These playstyles play part in how the character fights and thus was a great value to use to filter the data to show something the user would prefer.",
                     "I made a home page that contained a title and text under it. The title would then link to the list of character data that is filtered to the specific choice by the user. You could then adjust your choice on the list page or on the home page enter the list page through the main landing button.",
@@ -76,7 +76,7 @@
                 "module": "diptech",
                 "title": false,
                 "flipped": true,
-                "image": "images/projects/fighters/fighter-menu.jpg",
+                "image": "images/projects/fighters/fighter-menu.webp",
                 "text": [
                     "I created a filter system to see specific characters that the user is looking for. Although, the user may not be familiar with the characters so I chose to give some small details about the parameter I am planning to use to separate them.",
                     "The filter system goes through the data and checks this parameter for its “playstyle” and then presents those individuals, the others become unclickable."
@@ -84,8 +84,8 @@
             },
             {
                 "module": "double-image",
-                "imageOne": "images/projects/fighters/detail.jpg",
-                "imageTwo": "images/projects/fighters/create-fighter.jpg"
+                "imageOne": "images/projects/fighters/detail.webp",
+                "imageTwo": "images/projects/fighters/create-fighter.webp"
             }
         ]
     },
