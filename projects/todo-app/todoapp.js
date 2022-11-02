@@ -1,42 +1,4 @@
-export {
-    TodoApp,
-    Todo,
-}
-
-class Todo {
-    constructor(id, content, record) {
-        this.id = id;
-        this.content = content;
-        this.complete = false;
-
-        this.dateCreated = new Date();
-    }
-
-    toggleComplete() {
-        this.complete = !this.complete;
-    }
-
-    get isComplete() {
-        return (this.complete) ? "complete" : "";
-    }
-
-    render() {
-        const { id, content, isComplete } = this
-        return `
-        <li>
-            <item-card data-id='${id}' class="${isComplete}">
-                <h2> ${content}</h2>
-    
-                <action-block>
-                    <button data-action="remove" >Remove</button>
-                    <button data-action="complete">Complete</button>
-                </action-block>
-    
-            </item-card>
-        </li>
-    `
-    }
-};
+import { Todo } from "./todo.js";
 
 class TodoApp {
 
@@ -55,12 +17,15 @@ class TodoApp {
 
         this.setupApp();
         this.addEventListeners();
+        if (!this.todos.length) {
+            this.add("Create a Todo");
+        }
     }
 
     setupApp() {
         const data = JSON.parse(localStorage.getItem(this.name)) || [];
         data.forEach((todoData) => {
-            this.todos = [...this.todos, new Todo(todoData)];
+            this.todos = [...this.todos, new Todo(todoData.data)];
 
         });
         this.renderList();
@@ -75,7 +40,7 @@ class TodoApp {
     }
 
     add(content) {
-        var todo = new Todo(`a${this.idCount++}`, content);
+        var todo = new Todo({ content: content });
 
         this.todos = [...this.todos, todo];
         this.renderList(this.todos);
@@ -84,17 +49,17 @@ class TodoApp {
 
     getTodoById(id) {
         return this.todos.find(function (todo) {
-            return todo.id == id;
+            return todo.data.id == id;
         })
     }
 
     remove(id) {
         const filtered = this.todos.filter(function (savedTodo) {
-            return savedTodo.id != id;
+            return savedTodo.data.id != id;
         });
 
-        this.trashList.push(this.getTodoById(id));
-        console.log(this.trashList)
+        // this.trashList.push(this.getTodoById(id));
+        // console.log(this.trashList)
 
         this.todos = [...filtered];
         this.renderList(this.todos);
@@ -151,3 +116,5 @@ class TodoApp {
         // })
     }
 }
+
+export default TodoApp;

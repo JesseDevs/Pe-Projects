@@ -1,3 +1,4 @@
-import { Todo, TodoApp } from "./render.js";
+import TodoApp from "./todoapp.js";
 
 const newTodoApp = new TodoApp("Todos");
+
