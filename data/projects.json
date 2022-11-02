@@ -122,7 +122,7 @@
                 "module": "diptech",
                 "title": "The Purpose",
                 "flipped": false,
-                "image": "images/projects/bill/landing.png",
+                "image": "images/projects/bill/landing.webp",
                 "text": [
                     "The goal of this project was to get myself and others away from a calculator app when the bill arrives at the table. This app would be a one way stop to gather the total amount, take the tip and then check if you’d like to split it amongst the group.",
                     "Javascript provides the buttons with capabilities of loading new template pages to the output box on the landing page, to create a seamless experience for the user. In addition to loading these templates, create functions that will calculate all the necessary math and display it to the user. ",
@@ -147,7 +147,7 @@
                 "module": "diptech",
                 "title": "The Approach",
                 "flipped": false,
-                "image": "images/projects/bill/figma.jpeg",
+                "image": "images/projects/bill/figma.webp",
                 "text": [
                     "I started with the idea of making different templates that would represent the pages that would appear on the app. When I thought of the idea, I led with a homepage that would allow an input of an amount - ideally an amount that you receive on a bill at the table.",
                     "Next, I wanted to lead the user to a tip page. On this page the user would scroll to select the percentage of tip they would like to add to their meal. I chose to make a slider range value input because I thought it would be interesting and give me the opportunity to use Javascript to grab the value and live update the amounts on display.",
@@ -156,8 +156,8 @@
             },
             {
                 "module": "double-image",
-                "imageOne": "images/projects/bill/tip.jpeg",
-                "imageTwo": "images/projects/bill/tip-code.jpeg"
+                "imageOne": "images/projects/bill/tip.webp",
+                "imageTwo": "images/projects/bill/tip-code.webp"
             },
             {
                 "module": "double-text",
@@ -176,7 +176,7 @@
                 "module": "diptech",
                 "title": "Feedback",
                 "flipped": true,
-                "image": "images/projects/bill/split.jpeg",
+                "image": "images/projects/bill/split.webp",
                 "text": [
                     "Although there were a lot of positive interactions with the app, there were some hiccups that caused friction in the user's experience or at least made them second guess themselves.",
                     "A big note was that the input fields were not legible, they didn't seem clickable. To compensate for this I added a border and focus changes when typing a value and made the question in the label element more direct and simple. I took some time to add some attributes to the element so that when opened on mobile, it would prompt a number pad similar to a phone contact."
@@ -200,7 +200,7 @@
                 "module": "diptech",
                 "title": "Learning",
                 "flipped": false,
-                "image": "images/projects/bill/total.jpeg",
+                "image": "images/projects/bill/total.webp",
                 "text": [
                     "This project gave me the opportunity to take a look at a simple problem or circumstance and provide a solution for it. This took time to solve all the interworking pieces and functions that would come together to showcase all the proper information.",
                     "As a designer I also realize how important it is to give the user an enjoyable experience and make it readable to all on the first go through.",

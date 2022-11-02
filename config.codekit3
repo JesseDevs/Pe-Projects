@@ -637,32 +637,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/projects\/bill\/figma.jpeg" : {
-      "ft" : 16384,
-      "iS" : 149187,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/projects\/bill\/figma.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "ou" : "lpckwebp-default",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/projects\/bill\/figma.jpg" : {
-      "ft" : 16384,
-      "iS" : 121052,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/projects\/bill\/figma.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/images\/projects\/bill\/figma.webp" : {
       "ft" : 8388608,
       "iS" : 32108,
@@ -674,69 +648,59 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/images\/projects\/bill\/landing.png" : {
-      "ft" : 32768,
-      "iS" : 446407,
+    "\/images\/projects\/bill\/landing.webp" : {
+      "ft" : 8388608,
+      "iS" : 32176,
       "oA" : 0,
-      "oAP" : "\/images\/projects\/bill\/landing.png",
+      "oAP" : "\/images\/projects\/bill\/landing.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/images\/projects\/bill\/split.jpeg" : {
-      "ft" : 16384,
-      "iS" : 146609,
-      "jF" : 0,
+    "\/images\/projects\/bill\/split.webp" : {
+      "ft" : 8388608,
+      "iS" : 36908,
       "oA" : 0,
-      "oAP" : "\/images\/projects\/bill\/split.jpg",
+      "oAP" : "\/images\/projects\/bill\/split.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/images\/projects\/bill\/tip-code.jpeg" : {
-      "ft" : 16384,
-      "iS" : 128960,
-      "jF" : 0,
+    "\/images\/projects\/bill\/tip-code.webp" : {
+      "ft" : 8388608,
+      "iS" : 39342,
       "oA" : 0,
-      "oAP" : "\/images\/projects\/bill\/tip-code.jpg",
+      "oAP" : "\/images\/projects\/bill\/tip-code.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/images\/projects\/bill\/tip.jpeg" : {
-      "ft" : 16384,
-      "iS" : 142010,
-      "jF" : 0,
+    "\/images\/projects\/bill\/tip.webp" : {
+      "ft" : 8388608,
+      "iS" : 36480,
       "oA" : 0,
-      "oAP" : "\/images\/projects\/bill\/tip.jpg",
+      "oAP" : "\/images\/projects\/bill\/tip.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/images\/projects\/bill\/total.jpeg" : {
-      "ft" : 16384,
-      "iS" : 139486,
-      "jF" : 0,
+    "\/images\/projects\/bill\/total.webp" : {
+      "ft" : 8388608,
+      "iS" : 34896,
       "oA" : 0,
-      "oAP" : "\/images\/projects\/bill\/total.jpg",
+      "oAP" : "\/images\/projects\/bill\/total.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/images\/projects\/fighters\/create-fighter.jpg" : {
@@ -44004,7 +43968,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 37319,
+      "iS" : 115303,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",
