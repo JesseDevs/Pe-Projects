@@ -38,7 +38,8 @@ footer {
 	}
 
 	.page-links,
-	.socials{
+	.socials {
+		max-width: 700px;
 		display: grid;
 		width: 100%;
 		row-gap: 10px;
@@ -93,7 +94,7 @@ footer {
 		.socials,
 		.page-links {
 			display: grid;
-			grid-template-columns: repeat(5, 1fr);
+			grid-template-columns: repeat(4, 1fr);
 			text-align: center;
 		}
 
