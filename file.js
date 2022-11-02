@@ -1,3 +1,4 @@
+
 var toggle = document.querySelector('#switch');
 const $form = document.querySelector('form');
 const $feedback = document.querySelector(".feedback");

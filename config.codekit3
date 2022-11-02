@@ -405,6 +405,17 @@
       "oAP" : "\/functions\/utilities.php",
       "oF" : 0
     },
+    "\/hello.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/hello-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/images\/background\/grain.webp" : {
       "ft" : 8388608,
       "iS" : 113654,
@@ -43956,7 +43967,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 37319,
+      "iS" : 115303,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",

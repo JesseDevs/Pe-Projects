@@ -20,7 +20,7 @@
 
 	a {
 		padding: 10px 0;
-		font-size: clamp(0.8rem, 1.5vw, 14px);
+		font-size: clamp(0.7rem, 1.5vw, 13px);
 		border: 2px solid transparent;
 
 		color: var(--white);
@@ -37,15 +37,15 @@ footer {
 		text-align: center;
 	}
 
-	.socials,
-	.page-links {
+	.page-links,
+	.socials{
 		display: grid;
 		width: 100%;
-		grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
 		row-gap: 10px;
 		column-gap: 5px;
 		text-align: center;
 		position: relative;
+		grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
 	}
 
 	.active {
