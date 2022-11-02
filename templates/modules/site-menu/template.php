@@ -1,4 +1,4 @@
-<header class='site-header'>
+<header class='main-tool-bar site-header'>
     <inner-column>
         <ul class='logo-container'>
             <li class="svg-box">

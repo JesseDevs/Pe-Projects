@@ -1,5 +1,5 @@
-@mixin gray90($brightness) {
-  filter: grayscale(90%) brightness($brightness);
+@mixin bright30($brightness) {
+  filter: brightness($brightness);
 }
 
 blog-card {
@@ -8,9 +8,11 @@ blog-card {
 
   picture {
     position: relative;
+    overflow-y: hidden;
 
     img {
-      @include gray90(30%);
+      @include bright30(30%);
+      transition: filter 1s;
     }
   }
 
@@ -101,8 +103,6 @@ blog-card {
     max-width: fit-content;
     margin-left: auto;
   }
-
-
 }
 
 @media(min-width:650px) {

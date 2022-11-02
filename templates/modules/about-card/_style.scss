@@ -13,11 +13,12 @@ about-card {
 	}
 
 	.image-container {
-		padding-top: var(--tight-space);
+		margin-top: var(--simple-big-space);
 		position: relative;
 		max-width: 350px;
-		min-height: 400px;
-		margin: 0 auto;
+		height: 444px;
+		margin-left: auto;
+		margin-right: auto;
 
 		img {
 			animation: FadeInOut;

@@ -15,6 +15,13 @@ project-card {
 		padding-bottom: var(--simple-small-space);
 	}
 
+	.reveal {
+		transform-origin: left;
+		transform: scaleX(1);
+		transition: .5s;
+		transition-delay: .5s;
+	}
+
 }
 
 .project-detail {

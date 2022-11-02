@@ -17,7 +17,7 @@
 
 
     </text-content>
-    <div class="image-container">
+    <div class="image-container gs_reveal gs_reveal_fromRight">
         <picture class="about-image">
             <?php foreach ($section['images'] as $image) { ?>
 

@@ -94,9 +94,9 @@ p+a:hover {
 big-heading,
 landing-heading,
 missing-heading {
-
-	margin-top: var(--simple-big-space);
+	margin-top: var(--simple-bigbig);
 	margin-bottom: var(--simple-big-space);
+
 }
 
 
@@ -116,4 +116,10 @@ textarea {
 input:focus,
 textarea:focus {
 	outline: 3px solid var(--highlight);
+}
+
+.gs_reveal {
+	opacity: 0;
+	visibility: hidden;
+	will-change: transform, opacity;
 }

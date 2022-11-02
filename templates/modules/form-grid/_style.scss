@@ -18,6 +18,10 @@ form-grid {
 		row-gap: var(--simple-space);
 	}
 
+	.action-link {
+		max-width: 100%;
+	}
+
 }
 
 .form form-grid {
