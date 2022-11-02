@@ -28,7 +28,6 @@ about-card {
 			position: absolute;
 			left: 0;
 			object-fit: contain;
-			border: 2px solid var(--cube-line);
 			max-width: fit-content;
 		}
 
@@ -129,7 +128,6 @@ p.about-content {
 			img {
 				animation: none;
 				transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-				border: 2px solid var(--cube-line);
 				max-width: fit-content;
 			}
 
