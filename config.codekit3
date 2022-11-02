@@ -645,9 +645,33 @@
       "oAP" : "\/images\/projects\/bill\/figma.jpg",
       "oF" : 0,
       "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/bill\/figma.jpg" : {
+      "ft" : 16384,
+      "iS" : 121052,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/figma.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/projects\/bill\/figma.webp" : {
+      "ft" : 8388608,
+      "iS" : 32108,
+      "oA" : 0,
+      "oAP" : "\/images\/projects\/bill\/figma.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/images\/projects\/bill\/landing.png" : {
@@ -45908,17 +45932,6 @@
       "oAP" : "\/projects\/todo-app\/index.php",
       "oF" : 0
     },
-    "\/projects\/todo-app\/render.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/projects\/todo-app\/render-min.js",
-      "oF" : 1,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/projects\/todo-app\/script.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -45952,6 +45965,28 @@
       "oAP" : "\/projects\/todo-app\/style-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/projects\/todo-app\/todo.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/projects\/todo-app\/todo-min.js",
+      "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/todo-app\/todoapp.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/projects\/todo-app\/todoapp-min.js",
+      "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/projects\/ultra-responsive-layout\/css\/reset.css" : {
       "aP" : 1,
