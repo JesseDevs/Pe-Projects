@@ -33,7 +33,8 @@ blog-card {
 }
 
 .podcast {
-  color: var(--white);
+  color: var(--grey);
+  text-transform: uppercase;
   letter-spacing: .1em;
 }
 
@@ -115,7 +116,7 @@ blog-card {
 
     text-content {
       left: 2%;
-      max-width: 400px;
+      max-width: 435px;
     }
 
     picture {
