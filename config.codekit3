@@ -747,15 +747,17 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/images\/projects\/fighters\/fighters.webp" : {
-      "ft" : 8388608,
-      "iS" : 23002,
+    "\/images\/projects\/fighters\/fighters.jpg" : {
+      "ft" : 16384,
+      "iS" : 60066,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/images\/projects\/fighters\/fighters.webp",
+      "oAP" : "\/images\/projects\/fighters\/fighters.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-default",
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/images\/projects\/fighters\/landing-button.webp" : {

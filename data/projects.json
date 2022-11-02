@@ -5,7 +5,7 @@
         "intro": "crud",
         "detail": "This project uses fighters from the video game Street Fighter and the concept of <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> to create a database system. ",
         "one-line": "Database backed by JSON data",
-        "thumbnail": "images/projects/fighters/fighters.webp",
+        "thumbnail": "images/projects/fighters/fighters.jpg",
         "skills": [
             "html",
             "css",
