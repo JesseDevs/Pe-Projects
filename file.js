@@ -72,6 +72,10 @@ validateform = function () {
             promptDrivingAge();
         }
 
+        if ($interestForm) {
+            promptInterest();
+        }
+
     } else {
         $form.classList.remove("none");
     }
@@ -85,6 +89,38 @@ const $madlibForm = document.querySelector('#madlib');
 const $retireForm = document.querySelector('#retire');
 const $mathForm = document.querySelector('#math');
 const $drivingForm = document.querySelector('#driving');
+const $interestForm = document.querySelector('#interest');
+
+function promptInterest() {
+
+    const $principal = $interestForm.querySelector("field:nth-of-type(1) input");
+    const $rate = $interestForm.querySelector("field:nth-of-type(2) input");
+    const $years = $interestForm.querySelector("field:nth-of-type(3) input");
+
+
+    $interestForm.addEventListener('input', function (event) {
+
+        let principal = $principal.value;
+        let interest = $rate.value;
+        let rate = interest / 100;
+
+        let years = $years.value;
+
+        if (years.length == 0) {
+            years = 5;
+        }
+
+        var amount = parseFloat(principal).toFixed(2).replace(/[.,]00$/, "") * (1 + (parseFloat(interest).toFixed(2).replace(/[.,]00$/, "") * parseFloat(years).toFixed(2).replace(/[.,]00$/, "")));
+
+        if (isNaN(amount)) {
+            amount = 0;
+        }
+
+        var template = `<p>After ${years} years at ${interest}% interest, the investment will be worth <strong>${amount}</strong>.</p> `;
+
+        $feedback.innerHTML = `${template}`;
+    })
+}
 
 function promptHello() {
     const $nameInput = document.querySelector('#name');

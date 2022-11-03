@@ -1,7 +1,5 @@
 <?php
 
-
-
 $principal = '';
 $interest = '';
 $time = '';
@@ -36,7 +34,7 @@ if (isset($_POST['submitted'])) {
 }
 ?>
 
-<form action="" method="post">
+<form action="" method="post" id='interest'>
 
 
     <field>
@@ -64,9 +62,8 @@ if (isset($_POST['submitted'])) {
 
 </form>
 
-<results class='feedback'>
-    <h3 class="chant-voice"> The Results</h3>
-    <p><?= $template ?>
-    </p>
+<div class='feedback'>
 
-</results>
+    <p><?= $template ?> </p>
+
+</div>
