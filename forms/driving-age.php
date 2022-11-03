@@ -29,11 +29,8 @@ if (isset($_POST['submitted'])) {
 
 
 </form>
+<div class='feedback'>
 
-<results class='feedback'>
-    <h3 class="chant-voice"> The Results</h3>
-    <p><?= $template ?></p>
+    <p><?= $template ?> </p>
 
-
-
-</results>
+</div>
