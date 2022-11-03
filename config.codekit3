@@ -269,14 +269,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/forms\/alcohol-level.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/alcohol-level.php",
-      "oF" : 0
-    },
     "\/forms\/area.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -371,14 +363,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/forms\/simple-math.php",
-      "oF" : 0
-    },
-    "\/forms\/tax-calculator.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/tax-calculator.php",
       "oF" : 0
     },
     "\/functions.php" : {

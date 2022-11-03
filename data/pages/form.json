@@ -97,12 +97,6 @@
 					"title": "simple math",
 					"file-name": "simple-math",
 					"intro": "Lets do some simple math?"
-				},
-				{
-					"id": 16,
-					"title": "tax calc",
-					"file-name": "tax-calculator",
-					"intro": "Calculate the amount of tax!"
 				}
 			]
 		}
