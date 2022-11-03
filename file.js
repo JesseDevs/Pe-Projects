@@ -8,6 +8,8 @@ var toggle = document.querySelector('#switch');
 const $form = document.querySelector('form');
 const $feedback = document.querySelector(".feedback");
 const $calculate = document.querySelector('#calculate');
+var header = document.querySelector("header");
+
 const numberFormatter = Intl.NumberFormat('en-US');
 
 // converting first letter to uppercase
@@ -18,15 +20,22 @@ function capitalizeFirstLetter(str) {
 }
 
 window.addEventListener('click', function (event) {
+
+
     if (event.target.matches('[rel="hamburger"]')) {
         event.preventDefault();
 
-        var header = document.querySelector("header");
         header.classList.toggle("display-menu");
     }
 
     if (event.target.matches("#switch")) {
         validateform();
+    }
+    if (header.classList.contains("display-menu")) {
+        if (!event.target.matches("header *")) {
+
+            header.classList.remove("display-menu");
+        }
     }
 
 });
@@ -243,7 +252,7 @@ function promptMath() {
 // GSAP
 
 const showAnim = gsap.from('.main-tool-bar', {
-    yPercent: -120,
+    yPercent: -100,
     paused: true,
     duration: 0.2
 }).progress(1);
