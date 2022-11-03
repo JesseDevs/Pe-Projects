@@ -16,7 +16,7 @@ if (isset($_POST['submitted'])) {
 }
 ?>
 
-<form action="" method="post">
+<form action="" method="post" id='driving'>
 
     <field>
 

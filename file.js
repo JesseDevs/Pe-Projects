@@ -68,6 +68,10 @@ validateform = function () {
             promptMath();
         }
 
+        if ($drivingForm) {
+            promptDrivingAge();
+        }
+
     } else {
         $form.classList.remove("none");
     }
@@ -80,10 +84,11 @@ const $quoteForm = document.querySelector('#quote');
 const $madlibForm = document.querySelector('#madlib');
 const $retireForm = document.querySelector('#retire');
 const $mathForm = document.querySelector('#math');
+const $drivingForm = document.querySelector('#driving');
 
 function promptHello() {
     const $nameInput = document.querySelector('#name');
-    $helloForm.addEventListener('input', function (event) {
+    $drivingForm.addEventListener('input', function (event) {
 
         var name = $nameInput.value;
         let message = '';
@@ -93,6 +98,18 @@ function promptHello() {
         } else if (name == '') {
             message = `<p>Oh wait.. we're missing something..</p>`;
         };
+
+        $feedback.innerHTML = `${message}`;
+
+    });
+}
+
+function promptDrivingAge() {
+    const $ageInput = $drivingForm.querySelector("field input")
+    $drivingForm.addEventListener('input', function (event) {
+
+        var age = $ageInput.value;
+        let message = age >= 16 ? `<p>You <strong>are</strong> old enough to legally drive.</p>` : `<p>You <strong>can not</strong> legally drive.</p>`;
 
         $feedback.innerHTML = `${message}`;
 

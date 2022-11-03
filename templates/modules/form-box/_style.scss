@@ -41,6 +41,10 @@ form-box {
 		margin-bottom: var(--general-space);
 	}
 
+	input {
+		font-size: clamp(1.2rem, 2.8vw, 1.3rem);
+	}
+
 }
 
 div.change-form {
@@ -63,7 +67,7 @@ div.change-form {
 
 label {
 	padding-bottom: 15px;
-	font-size: clamp(1.1rem, 2vw, 1.3rem);
+	font-size: clamp(1.2rem, 2.8vw, 1.3rem);
 }
 
 @media(min-width: 600px) {
