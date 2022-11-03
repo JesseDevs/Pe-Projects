@@ -7,6 +7,7 @@ class WorkoutApp {
         this.name = name;
         this.workouts = [];
         this.idCount = 0;
+        this.types = ["chest", "back", "legs", "shoulders", "cardio"];
         this.completedList = [];
 
         this.$form = document.querySelector('form');
@@ -21,7 +22,6 @@ class WorkoutApp {
         this.$cardio = [];
 
         this.setupApp();
-        this.filterWorkoutByType("chest");
         this.addEventListeners();
     }
 
@@ -30,12 +30,18 @@ class WorkoutApp {
         data.forEach((workoutData) => {
             this.workouts = [...this.workouts, new Workout(workoutData.data)];
 
+            this.filterWorkoutByType(type);
+
         });
         this.renderList();
     }
 
     saveToStorage() {
-        localStorage.setItem("Workout", JSON.stringify(this.workout));
+        localStorage.setItem("Chest", JSON.stringify(this.$chest));
+        localStorage.setItem("Back", JSON.stringify(this.$back));
+        localStorage.setItem("Legs", JSON.stringify(this.$legs));
+        localStorage.setItem("Shoulders", JSON.stringify(this.$shoulders));
+        localStorage.setItem("Cardio", JSON.stringify(this.$cardio));
     }
 
     removeFromStorage(key) {
@@ -46,7 +52,14 @@ class WorkoutApp {
         var workout = new Workout({ content: content, type: type });
 
         this.workouts = [...this.workouts, workout];
-        this.renderList(this.workouts);
+        this.filterWorkoutByType(type);
+
+        this.renderList(this.$chest);
+        this.renderList(this.$back);
+        this.renderList(this.$legs);
+        this.renderList(this.$shoulders);
+        this.renderList(this.$cardio);
+
         this.saveToStorage()
     }
 
@@ -63,6 +76,7 @@ class WorkoutApp {
 
         if (type == "chest") {
             this.$chest = [...reps];
+
         } else if (type == "back") {
             this.$back = [...reps];
 
@@ -97,7 +111,7 @@ class WorkoutApp {
 
     }
 
-    renderList() {
+    renderList(array) {
         var template = `<ul>`;
 
         this.workouts.forEach(workout => {
