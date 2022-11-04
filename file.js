@@ -5,6 +5,7 @@
 // });
 
 var toggle = document.querySelector('#switch');
+const $formBox = document.querySelector(".form-box")
 const $form = document.querySelector('form');
 const $feedback = document.querySelector(".feedback");
 const $calculate = document.querySelector('#calculate');
@@ -30,6 +31,9 @@ window.addEventListener('click', function (event) {
 
     if (event.target.matches("#switch")) {
         validateform();
+        $formBox.scrollIntoView({
+            behavior: 'smooth'
+        });
     }
     if (header.classList.contains("display-menu")) {
         if (!event.target.matches("header *")) {
@@ -155,7 +159,7 @@ function promptInterest() {
 
 function promptHello() {
     const $nameInput = document.querySelector('#name');
-    $drivingForm.addEventListener('input', function (event) {
+    $helloForm.addEventListener('input', function (event) {
 
         var name = $nameInput.value;
         let message = '';
