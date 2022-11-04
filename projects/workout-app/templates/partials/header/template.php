@@ -1,6 +1,5 @@
 <header>
     <inner-column>
-        <h1 class="roar-voice">Todo App</h1>
+        <h1 class="roar-voice"><span>Workout</span><span>Tracker</span></h1>
     </inner-column>
-
 </header>
