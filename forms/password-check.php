@@ -28,23 +28,23 @@ if (isset($_POST['submitted'])) {
     }
 } ?>
 
-<form action="" method="post">
+<form action="" method="post" id='password'>
 
     <field>
 
         <label for="">Enter username:</label>
-        <input type="text" name='username' value='<?= $inputUsername ?>' required min='0'>
+        <input type="text" name='username' autocomplete="off" value='<?= $inputUsername ?>' required min='0'>
 
-        <span><em>*Hint: It's JohnDoe </em>😉</span>
+        <span>*Hint: <em>JohnDoe </em></span>
 
     </field>
 
     <field>
 
         <label for="">Enter password:</label>
-        <input type="password" name='password' value='<?= $inputUsername ?>' required min='0'>
+        <input type="password" name='password' autocomplete="off" value='<?= $inputUsername ?>' required min='0'>
 
-        <span><em>*Hint: It may or may not be - 1020World, try it.</em></span>
+        <span>*Hint: <em>1020World</em></span>
 
     </field>
 
@@ -53,8 +53,6 @@ if (isset($_POST['submitted'])) {
 
 </form>
 
-<results class='feedback'>
-    <h3 class="chant-voice"> The Results</h3>
+<div class='feedback'>
     <p><?= $template ?></p>
-
-</results>
+</div>

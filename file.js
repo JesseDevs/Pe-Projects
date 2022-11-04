@@ -76,6 +76,10 @@ validateform = function () {
             promptInterest();
         }
 
+        if ($passwordForm) {
+            promptPassword();
+        }
+
     } else {
         $form.classList.remove("none");
     }
@@ -90,6 +94,33 @@ const $retireForm = document.querySelector('#retire');
 const $mathForm = document.querySelector('#math');
 const $drivingForm = document.querySelector('#driving');
 const $interestForm = document.querySelector('#interest');
+const $passwordForm = document.querySelector('#password');
+
+function promptPassword() {
+    const $usernameInput = $passwordForm.querySelector("field:nth-of-type(1) input")
+    const $passwordInput = $passwordForm.querySelector("field:nth-of-type(2) input")
+
+    $passwordForm.addEventListener('input', function (event) {
+        const name = "JohnDoe";
+        const pass = "1020World";
+        let username = $usernameInput.value;
+        let password = $passwordInput.value;
+        let template = ``;
+
+        if (username) {
+            template = `Typing...<br>
+            Username: ${username} <br>
+            Password: ${password} `;
+        }
+
+        if (username == name && password == pass) {
+            template = `You're logged in! Welcome!`;
+        }
+
+        $feedback.innerHTML = `<p>${template}</p>`;
+
+    })
+}
 
 function promptInterest() {
 
@@ -110,7 +141,7 @@ function promptInterest() {
             years = 5;
         }
 
-        var amount = parseFloat(principal).toFixed(2).replace(/[.,]00$/, "") * (1 + (parseFloat(interest).toFixed(2).replace(/[.,]00$/, "") * parseFloat(years).toFixed(2).replace(/[.,]00$/, "")));
+        var amount = parseFloat(principal).toFixed(2).replace(/[.,]00$/, "") * (1 + (parseFloat(rate).toFixed(2).replace(/[.,]00$/, "") * parseFloat(years).toFixed(2).replace(/[.,]00$/, "")));
 
         if (isNaN(amount)) {
             amount = 0;
@@ -250,9 +281,9 @@ function promptRetire() {
         `;
 
         if (age == '') {
-            template = "No age. No retirement."
+            template = `<p>No age. No retirement.</p>`
         } else if (retire == '') {
-            template = "We need to plan..."
+            template = `<p>We need to plan...</p>`
         }
 
         $feedback.innerHTML = template;
