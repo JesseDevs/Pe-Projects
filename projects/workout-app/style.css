@@ -284,7 +284,7 @@ code {
   color: green;
 }
 
-button {
+.big-button {
   background-color: var(--page);
   border: 2px solid rgba(0, 0, 0, 0.387);
   border-radius: 2px;
@@ -305,19 +305,19 @@ button {
   touch-action: manipulation;
 }
 
-button:hover {
+.big-button:hover {
   background-color: var(--ink);
   color: var(--page);
 }
 
 @media (min-width: 768px) {
-  button {
+  .big-button {
     font-size: 1.125rem;
     padding: 1rem 2rem;
   }
 }
-button:disabled,
-button[disabled] {
+.big-button:disabled,
+.big-button[disabled] {
   pointer-events: none;
   border: var(--line) solid var(--gray);
   background-color: var(--dark);

@@ -20,10 +20,10 @@ class Workout {
     }
 
     render() {
-        const { id, content, isComplete } = this.data
+        const { id, content } = this.data
         return `
         <li>
-            <item-card data-id='${id}' class="${isComplete}">
+            <item-card data-id='${id}' class="${this.isComplete}">
                 <h2> ${content}</h2>
     
                 <action-block>

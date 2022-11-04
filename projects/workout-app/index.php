@@ -37,7 +37,7 @@
 
                     </field>
 
-                    <button type="submit">Add</button>
+                    <button type="submit" class='big-button'>Add</button>
                 </form>
 
                 <output>
@@ -46,11 +46,6 @@
 
             </inner-column>
         </section>
-        <!-- <div class="trash">
-
-            <button id="trashcan" data-action="trash">Trash</button>
-
-        </div> -->
     </main>
 
     <script src="script.js" type='module'></script>

@@ -15,12 +15,6 @@ class WorkoutApp {
         this.$output = document.querySelector('output');
         this.$options = document.querySelector("#workoutType");
 
-        this.$chest = [];
-        this.$back = [];
-        this.$legs = [];
-        this.$shoulders = [];
-        this.$cardio = [];
-
         this.setupApp();
         this.addEventListeners();
     }
@@ -29,19 +23,13 @@ class WorkoutApp {
         const data = JSON.parse(localStorage.getItem(this.name)) || [];
         data.forEach((workoutData) => {
             this.workouts = [...this.workouts, new Workout(workoutData.data)];
-
-            this.filterWorkoutByType(type);
-
         });
-        this.renderList();
+
+        this.renderLists();
     }
 
     saveToStorage() {
-        localStorage.setItem("Chest", JSON.stringify(this.$chest));
-        localStorage.setItem("Back", JSON.stringify(this.$back));
-        localStorage.setItem("Legs", JSON.stringify(this.$legs));
-        localStorage.setItem("Shoulders", JSON.stringify(this.$shoulders));
-        localStorage.setItem("Cardio", JSON.stringify(this.$cardio));
+        localStorage.setItem("Workouts", JSON.stringify(this.workouts, null, 2));
     }
 
     removeFromStorage(key) {
@@ -52,47 +40,21 @@ class WorkoutApp {
         var workout = new Workout({ content: content, type: type });
 
         this.workouts = [...this.workouts, workout];
-        this.filterWorkoutByType(type);
 
-        this.renderList(this.$chest);
-        this.renderList(this.$back);
-        this.renderList(this.$legs);
-        this.renderList(this.$shoulders);
-        this.renderList(this.$cardio);
-
+        this.renderLists()
         this.saveToStorage()
     }
 
     getWorkoutById(id) {
         return this.workouts.find(function (workout) {
-            return workoutData.data.id == id;
+            return workout.data.id == id;
         })
+
     }
-
     filterWorkoutByType(type) {
-        const reps = this.workouts.filter(function (typeOfWorkout) {
-            return typeOfWorkout.data.type == type;
+        return this.workouts.filter(function (workout) {
+            return workout.data.type == type;
         });
-
-        if (type == "chest") {
-            this.$chest = [...reps];
-
-        } else if (type == "back") {
-            this.$back = [...reps];
-
-        } else if (type == "legs") {
-            this.$legs = [...reps];
-
-        } else if (type == "shoulders") {
-            this.$shoulders = [...reps];
-
-        } else if (type == "cardio") {
-            this.$cardio = [...reps];
-        } else {
-            this.workouts = [...reps];
-        }
-
-        this.renderList(this.workouts);
     }
 
     remove(id) {
@@ -101,24 +63,43 @@ class WorkoutApp {
         });
 
         this.workouts = [...filtered];
-        this.renderList(this.workouts);
+        this.renderLists();
+        //alert idea
     }
 
     complete(id) {
-
         this.getWorkoutById(id).toggleComplete();
-        this.renderList(this.workouts);
-
+        this.renderLists();
+        this.saveToStorage();
     }
 
-    renderList(array) {
-        var template = `<ul>`;
+    renderList(workouts) {
+        var template = `<list-container>
+                            <ul>`;
 
-        this.workouts.forEach(workout => {
+        workouts.forEach(workout => {
             template += workout.render();
         });
 
-        template += `</ul>`;
+        template += `</list-container>
+        </ul>`;
+        return template;
+    }
+
+    renderLists() {
+        var template = `<section>
+        `;
+
+        this.types.forEach(type => {
+            const newSet = this.filterWorkoutByType(type);
+            if (newSet.length) {
+                template += `<h1>${type} </h1>`
+                template += this.renderList(newSet);
+            }
+
+        })
+
+        template += `</section>`;
         this.$output.innerHTML = template;
     }
 
@@ -145,5 +126,11 @@ class WorkoutApp {
         });
     }
 }
+
+// user makes routines.
+// pick which routine youre going to do.
+// log the day you picked routine.
+// based on complete add data to rack record.
+// different view - use data to graph routine workout amounts across the board.
 
 export default WorkoutApp;
