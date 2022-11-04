@@ -1,0 +1,20 @@
+output,
+ul {
+    display: grid;
+    gap: 10px;
+}
+
+action-block {
+    display: grid;
+    gap: 10px;
+}
+
+.complete {
+    opacity: .4;
+}
+
+div.trash {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}

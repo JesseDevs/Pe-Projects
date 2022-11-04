@@ -19,30 +19,10 @@
     <main class="page-content ">
         <section>
             <inner-column>
-                <form>
-                    <field>
-                        <label for="x">What is your next todo?</label>
-                        <input id='x' type="text" autocomplete="off" required>
 
-                        <div class="select-container">
-                            <select name="workoutType" id="workoutType">
-                                <option value="" disabled>-- Workout Type --</option>
-                                <option value="chest">Chest</option>
-                                <option value="back">Back</option>
-                                <option value="legs">Legs</option>
-                                <option value="shoulders">Shoulders</option>
-                                <option value="cardio">Cardio</option>
-                            </select>
-                        </div>
+                <?php include("templates/partials/form/template.php") ?>
 
-                    </field>
-
-                    <button type="submit" class='big-button'>Add</button>
-                </form>
-
-                <output>
-
-                </output>
+                <?php include("templates/partials/output/template.php") ?>
 
             </inner-column>
         </section>

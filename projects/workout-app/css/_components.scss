@@ -1,8 +1,7 @@
 .big-button {
-    background-color: var(--page);
-    border: 2px solid rgba(0, 0, 0, 0.387);
-    border-radius: 2px;
-    box-sizing: border-box;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 25px;
     color: var(--ink);
     cursor: pointer;
     display: inline-block;
@@ -40,50 +39,3 @@
 }
 
 // Select
-
-
-select {
-    /* Reset Select */
-    appearance: none;
-    outline: 0;
-    border: 0;
-    box-shadow: none;
-    /* Personalize */
-    flex: 1;
-    padding: 0 1em;
-    color: #fff;
-    background-color: darkgray;
-    background-image: none;
-    cursor: pointer;
-}
-
-/* Remove IE arrow */
-select::-ms-expand {
-    display: none;
-}
-
-.select-container {
-    position: relative;
-    display: flex;
-    height: 3em;
-    border-radius: .25em;
-    overflow: hidden;
-}
-
-/* Arrow */
-.select-container::after {
-    content: '\25BC';
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1em;
-    background-color: #34495e;
-    transition: .25s all ease;
-    pointer-events: none;
-}
-
-/* Transition */
-.select-container:hover::after {
-    color: #f39c12;
-}

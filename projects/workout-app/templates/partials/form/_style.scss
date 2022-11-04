@@ -1,0 +1,93 @@
+form {
+    display: grid;
+    position: relative;
+    gap: 20px;
+
+    input {
+        font-size: clamp(19px, 3.5vw, 24px);
+        padding: .5em 1em;
+        outline: none;
+        border: none;
+
+        border-left: 2px solid var(--color);
+        border-bottom: 2px solid var(--color);
+        border-bottom-left-radius: 5px;
+        appearance: none;
+    }
+
+    input::placeholder {
+        font-style: italic;
+    }
+
+    label {
+        grid-column: span 2;
+    }
+
+
+    select {
+        appearance: none;
+        outline: none;
+        box-shadow: none;
+
+        border: none;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        flex: 1;
+        padding: 0 1em;
+        cursor: pointer;
+    }
+
+    /* Remove IE arrow */
+    select::-ms-expand {
+        display: none;
+    }
+
+    .select-container {
+        position: relative;
+        display: flex;
+        height: 3em;
+        overflow: hidden;
+
+        border-left: 2px solid var(--color);
+        border-right: 2px solid var(--color);
+
+        border-bottom: 2px solid var(--color);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    /* Arrow */
+    .select-container::after {
+        content: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 18L15.5 12L9.5 6' stroke='%23757575' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        color: #fff;
+        position: absolute;
+        padding-top: 3px;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 18%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--page);
+        transition: .25s all ease;
+        pointer-events: none;
+
+        border-left: 2px solid var(--color);
+    }
+
+    /* Transition */
+    .select-container:hover::after {
+        background-color: var(--color);
+    }
+}
+
+field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 20px;
+
+}

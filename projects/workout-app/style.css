@@ -1,11 +1,10 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,11 +73,14 @@ html {
 }
 
 html {
+  --color: rgba(206, 198, 237);
+  --support: rgba(137, 173, 226);
+  --support: rgba(133, 227, 225);
   --light-color: rgba(206, 198, 237, 0.3);
   --light-support: rgba(137, 173, 226, 0.3);
   --off-support: rgba(133, 227, 225, 0.3);
   --ink: rgb(23 23 23);
-  --page: #f7f4ea;
+  --page: #f4f3f0;
 }
 
 @keyframes squeeze {
@@ -133,8 +135,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
+  background-color: var(--page);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
 main {
@@ -169,7 +172,7 @@ a {
 }
 
 p {
-  line-height: 1.3;
+  line-height: 1.4;
 }
 p a {
   display: inline-block;
@@ -293,6 +296,7 @@ body {
 
 header inner-column {
   padding-top: 0;
+  position: relative;
 }
 header h1 {
   display: grid;
@@ -303,7 +307,7 @@ header h1 span:nth-of-type(1) {
   padding-left: 1rem;
   margin-left: -1rem;
   background-color: var(--light-color);
-  font-family: "Anton", sans-serif;
+  font-family: "Abril Fatface", cursive;
   letter-spacing: 0.06em;
 }
 header h1 span:nth-of-type(2) {
@@ -312,23 +316,111 @@ header h1 span:nth-of-type(2) {
   background-color: var(--light-support);
   font-family: "Londrina Outline", cursive;
   letter-spacing: 0.05em;
+  margin-right: -1rem;
 }
-header h1 span:nth-of-type(2):before {
-  content: "";
-  background-color: var(--off-support);
-  width: 100%;
-  height: 100%;
+
+form {
+  display: grid;
+  position: relative;
+  gap: 20px;
+  /* Remove IE arrow */
+  /* Arrow */
+  /* Transition */
+}
+form input {
+  font-size: clamp(19px, 3.5vw, 24px);
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  border-left: 2px solid var(--color);
+  border-bottom: 2px solid var(--color);
+  border-bottom-left-radius: 5px;
+  appearance: none;
+}
+form input::placeholder {
+  font-style: italic;
+}
+form label {
+  grid-column: span 2;
+}
+form select {
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  flex: 1;
+  padding: 0 1em;
+  cursor: pointer;
+}
+form select::-ms-expand {
+  display: none;
+}
+form .select-container {
+  position: relative;
+  display: flex;
+  height: 3em;
+  overflow: hidden;
+  border-left: 2px solid var(--color);
+  border-right: 2px solid var(--color);
+  border-bottom: 2px solid var(--color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+form .select-container::after {
+  content: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 18L15.5 12L9.5 6' stroke='%23757575' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  color: #fff;
   position: absolute;
-  right: 1rem;
-  transform: translateY(100%) rotate(180deg);
-  transform-origin: top right;
+  padding-top: 3px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--page);
+  transition: 0.25s all ease;
+  pointer-events: none;
+  border-left: 2px solid var(--color);
+}
+form .select-container:hover::after {
+  background-color: var(--color);
+}
+
+field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+output,
+ul {
+  display: grid;
+  gap: 10px;
+}
+
+action-block {
+  display: grid;
+  gap: 10px;
+}
+
+.complete {
+  opacity: 0.4;
+}
+
+div.trash {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 
 .big-button {
-  background-color: var(--page);
-  border: 2px solid rgba(0, 0, 0, 0.387);
-  border-radius: 2px;
-  box-sizing: border-box;
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 25px;
   color: var(--ink);
   cursor: pointer;
   display: inline-block;
@@ -362,86 +454,4 @@ header h1 span:nth-of-type(2):before {
   border: var(--line) solid var(--gray);
   background-color: var(--dark);
   color: var(--dark-gray);
-}
-
-select {
-  /* Reset Select */
-  appearance: none;
-  outline: 0;
-  border: 0;
-  box-shadow: none;
-  /* Personalize */
-  flex: 1;
-  padding: 0 1em;
-  color: #fff;
-  background-color: darkgray;
-  background-image: none;
-  cursor: pointer;
-}
-
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none;
-}
-
-.select-container {
-  position: relative;
-  display: flex;
-  height: 3em;
-  border-radius: 0.25em;
-  overflow: hidden;
-}
-
-/* Arrow */
-.select-container::after {
-  content: "▼";
-  color: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1em;
-  background-color: #34495e;
-  transition: 0.25s all ease;
-  pointer-events: none;
-}
-
-/* Transition */
-.select-container:hover::after {
-  color: #f39c12;
-}
-
-form,
-field {
-  display: grid;
-  gap: 20px;
-}
-
-form input {
-  font: inherit;
-  padding: 0.5em 1em;
-}
-
-main inner-column {
-  display: grid;
-  gap: 20px;
-}
-main output,
-main ul {
-  display: grid;
-  gap: 10px;
-}
-
-action-block {
-  display: grid;
-  gap: 10px;
-}
-
-.complete {
-  opacity: 0.4;
-}
-
-div.trash {
-  position: fixed;
-  top: 10px;
-  right: 10px;
 }
