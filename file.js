@@ -84,6 +84,15 @@ validateform = function () {
             promptPassword();
         }
 
+        if ($paintForm) {
+            promptPaint();
+        }
+
+        if ($areaForm) {
+            calculateArea();
+
+        }
+
     } else {
         $form.classList.remove("none");
     }
@@ -91,6 +100,7 @@ validateform = function () {
 }
 
 const $helloForm = document.querySelector('#hello');
+const $areaForm = document.querySelector('#area');
 const $countForm = document.querySelector('#count-characters');
 const $quoteForm = document.querySelector('#quote');
 const $madlibForm = document.querySelector('#madlib');
@@ -99,6 +109,38 @@ const $mathForm = document.querySelector('#math');
 const $drivingForm = document.querySelector('#driving');
 const $interestForm = document.querySelector('#interest');
 const $passwordForm = document.querySelector('#password');
+const $paintForm = document.querySelector('#paint');
+
+function promptPaint() {
+    const $lengthInput = $paintForm.querySelector("field:nth-of-type(1) input");
+    const $widthInput = $paintForm.querySelector("field:nth-of-type(2) input");
+
+    $paintForm.addEventListener('input', function (event) {
+        var length = parseInt($lengthInput.value, 10);
+        var width = parseInt($widthInput.value, 10);
+
+        var area = length * width;
+        var paint = Math.ceil(area / 350);
+
+        var displayArea = numberFormatter.format(area);
+
+        if (isNaN(paint)) {
+            paint = "X";
+        }
+
+        if (isNaN(parseInt(displayArea), 10)) {
+            displayArea = "X";
+        }
+
+        console.log(displayArea)
+
+        template = `<p>The ceiling of the room is: <strong>${displayArea}</strong><br>
+        You'll need: <strong>${paint}</strong> gallons to cover the entire ceiling </p>`;
+
+        $feedback.innerHTML = `${template}`;
+
+    })
+}
 
 function promptPassword() {
     const $usernameInput = $passwordForm.querySelector("field:nth-of-type(1) input")
@@ -113,7 +155,7 @@ function promptPassword() {
 
         if (username) {
             template = `Typing...<br>
-            Username: ${username} <br>
+        Username: ${username} <br>
             Password: ${password} `;
         }
 
@@ -124,6 +166,46 @@ function promptPassword() {
         $feedback.innerHTML = `<p>${template}</p>`;
 
     })
+}
+
+function calculateArea() {
+
+    const $lengthInput = $paintForm.querySelector("field:nth-of-type(1) input");
+    const $widthInput = $paintForm.querySelector("field:nth-of-type(2) input");
+
+    $areaForm.addEventListener('input', function (event) {
+        var length = parseInt($lengthInput.value, 10);
+        var width = parseInt($widthInput.value, 10);
+
+
+        $feedback.querySelector("p:first-of-type").textContent = `The length is: ${length}`;
+        $feedback.querySelector("p:nth-of-type(2)").textContent = `The length is: ${width}`;
+
+        var area = parseInt(length) * parseInt(width);
+        var displayArea = numberFormatter.format(area);
+
+        if (isNaN(parseInt(displayArea), 10)) {
+            displayArea = "X";
+        }
+
+        let meters = area * .09290304;
+
+        meters = numberFormatter.format(meters.toFixed(2));
+
+        let message = `You entered a dimensions of ${length} feet by ${width} feet. The area is ${displayArea} square feet. That is ${meters} square meters`;
+
+        if (length == '' & width == '') {
+            message = "Can't calculate..."
+        } else if (length == '') {
+            message = "Missing a length.."
+        } else if (width == '') {
+            message = "Missing a width.."
+        }
+
+        $feedback.querySelector("p:last-of-type strong").textContent = `${message}`;
+
+
+    });
 }
 
 function promptInterest() {
@@ -198,7 +280,7 @@ function promptString() {
         }
 
         for (i = 0; i < string.length; i++) {
-            character = string[i]; // 
+            character = string[i]; //
 
             if (character != ' ') {
                 counter++;
@@ -209,10 +291,10 @@ function promptString() {
         var message = 'That phrase has: ';
 
         $feedback.innerHTML = `
-        <p> ${template} <strong> ${string} </strong> </p>
-        <p> ${message} <strong> ${counter} </strong> characters. </p>
+            <p> ${template} <strong> ${string} </strong> </p>
+            <p> ${message} <strong> ${counter} </strong> characters. </p>
 
-        `
+            `
     });
 };
 
@@ -226,7 +308,7 @@ function promptQuote() {
         author = capitalizeFirstLetter(author);
 
         $feedback.innerHTML = `
-                <p><strong>${author}</strong> said <strong>“${quote}”</strong> </p>
+            <p><strong>${author}</strong> said <strong>“${quote}”</strong> </p>
             `
 
     })
@@ -280,9 +362,9 @@ function promptRetire() {
         var retireYear = currentYear + ageDifference;
 
         let template = `<p>
-        <strong>${ageDifference}</strong> years left until you can retire.<br> It's <strong>${currentYear}</strong>, so you can retire in <strong>${retireYear}</strong>.
-        </p>
-        `;
+                <strong>${ageDifference}</strong> years left until you can retire.<br> It's <strong>${currentYear}</strong>, so you can retire in <strong>${retireYear}</strong>.
+            </p>
+            `;
 
         if (age == '') {
             template = `<p>No age. No retirement.</p>`
@@ -326,11 +408,11 @@ function promptMath() {
         divide = parseFloat(divide).toFixed(2).replace(/[.,]00$/, "");
 
         var template = `
-    <p>${numOne} + ${numTwo} = <strong>${add}</strong></p>
-    <p>${numOne} - ${numTwo} = <strong>${sub}</strong></p>
-    <p>${numOne} x ${numTwo} = <strong>${multiply}</strong></p>
-    <p>${numOne} / ${numTwo} = <strong>${divide}</strong></p>
-    `;
+            <p>${numOne} + ${numTwo} = <strong>${add}</strong></p>
+            <p>${numOne} - ${numTwo} = <strong>${sub}</strong></p>
+            <p>${numOne} x ${numTwo} = <strong>${multiply}</strong></p>
+            <p>${numOne} / ${numTwo} = <strong>${divide}</strong></p>
+            `;
 
         $feedback.innerHTML = template;
     })

@@ -5,6 +5,7 @@ $length = '';
 $width = '';
 $area = null;
 $paint = null;
+$template = '';
 
 if (isset($_POST['submitted'])) {
 
@@ -22,11 +23,13 @@ if (isset($_POST['submitted'])) {
 
     $area = floatval($length) * floatval($width);
     $paint = ceil($area / 350);
+
+    $template = "<p> The ceiling of the room is: " . $area . " feet</p> <p> You'll need: <strong>" . $paint . "</strong> gallons to cover the entire ceiling</p>";
 }
 ?>
 
 
-<form action="" method="post">
+<form action="" method="post" id='paint'>
     <field>
 
         <label for="">What is the length of the ceiling?</label>
@@ -39,6 +42,8 @@ if (isset($_POST['submitted'])) {
         <label for="">What is the width of the ceiling?</label>
         <input type="number" name='width' value='<?= $width ?>' required min='0'>
 
+        <span>350 feet requires 1 gallon of paint.</span>
+
     </field>
 
     <button class='action-link' type="submit" name='submitted'>Calculate</button>
@@ -46,9 +51,7 @@ if (isset($_POST['submitted'])) {
 
 </form>
 
-<results class='feedback'>
-    <h3 class="chant-voice"> The Results</h3>
-    <p> The ceiling of the room is: <?= $area ?></p>
-    <p> You'll need: <strong><?= $paint ?></strong> gallons to cover the entire ceiling</p>
+<div class='feedback'>
+    <?= $template ?>
 
-</results>
+</div>
