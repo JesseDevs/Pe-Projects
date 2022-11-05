@@ -4,7 +4,7 @@
         "title": "Project One",
         "intro": "Topic",
         "detail": "Cute little description for this project.",
-        "thumbnail": "https://peprojects.dev/images/landscape.jpg",
+        "thumbnail": "https://peprojects.dev/images/landscape.webp",
         "skills": [
             "skill",
             "skill",
@@ -31,7 +31,7 @@
                 "module": "diptech",
                 "title": "The Purpose",
                 "flipped": false,
-                "image": "https://peprojects.dev/images/landscape.jpg",
+                "image": "https://peprojects.dev/images/landscape.webp",
                 "text": [
                     "This is an introductory text to the project. Describes the initial purpose.",
                     "Include a general learning moment. Along side this text is a general image of said project."
@@ -51,7 +51,7 @@
                 "module": "diptech",
                 "title": "The Approach",
                 "flipped": false,
-                "image": "https://peprojects.dev/images/landscape.jpg",
+                "image": "https://peprojects.dev/images/landscape.webp",
                 "text": [
                     "This is an introductory text to the project. Describes the initial purpose.",
                     "Include a general learning moment. Along side this text is a general image of said project."
@@ -72,7 +72,7 @@
                 "module": "diptech",
                 "title": false,
                 "flipped": true,
-                "image": "https://peprojects.dev/images/landscape.jpg",
+                "image": "https://peprojects.dev/images/landscape.webp",
                 "text": [
                     "More text but flipped",
                     "More text but flipped"
@@ -80,8 +80,8 @@
             },
             {
                 "module": "double-image",
-                "imageOne": "https://peprojects.dev/images/landscape.jpg",
-                "imageTwo": "https://peprojects.dev/images/landscape.jpg"
+                "imageOne": "https://peprojects.dev/images/landscape.webp",
+                "imageTwo": "https://peprojects.dev/images/landscape.webp"
             }
         ]
     },
@@ -90,7 +90,7 @@
         "title": "Project Two",
         "intro": "Topic",
         "detail": "Cute little description for this project.",
-        "thumbnail": "https://peprojects.dev/images/landscape.jpg",
+        "thumbnail": "https://peprojects.dev/images/landscape.webp",
         "skills": [
             "skill",
             "skill",
@@ -113,10 +113,10 @@
         ],
         "direct-link": null,
         "images": [
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg",
-            "https://peprojects.dev/images/landscape.jpg"
+            "https://peprojects.dev/images/landscape.webp",
+            "https://peprojects.dev/images/landscape.webp",
+            "https://peprojects.dev/images/landscape.webp",
+            "https://peprojects.dev/images/landscape.webp"
         ]
     },
     {
@@ -124,7 +124,7 @@
         "title": "Project Three",
         "intro": "Topic",
         "detail": "Cute little description for this project.",
-        "thumbnail": "https://peprojects.dev/images/landscape.jpg",
+        "thumbnail": "https://peprojects.dev/images/landscape.webp",
         "skills": [
             "skill",
             "skill",
@@ -151,7 +151,7 @@
                 "module": "diptech",
                 "title": "Describe Project",
                 "flipped": false,
-                "image": "https://peprojects.dev/images/landscape.jpg",
+                "image": "https://peprojects.dev/images/landscape.webp",
                 "text": [
                     "This is an introductory text to the project. Describes the initial purpose.",
                     "Include a general learning moment. Along side this text is a general image of said project."
@@ -171,7 +171,7 @@
                 "module": "diptech",
                 "title": "Now What?",
                 "flipped": true,
-                "image": "https://peprojects.dev/images/landscape.jpg",
+                "image": "https://peprojects.dev/images/landscape.webp",
                 "text": [
                     "Another text block paired with an image. This version of the module is flipped.",
                     "Another text block paired with an image. This version of the module is flipped."
@@ -190,8 +190,8 @@
             },
             {
                 "module": "double-image",
-                "imageOne": "https://peprojects.dev/images/landscape.jpg",
-                "imageTwo": "https://peprojects.dev/images/landscape.jpg"
+                "imageOne": "https://peprojects.dev/images/landscape.webp",
+                "imageTwo": "https://peprojects.dev/images/landscape.webp"
             }
         ]
     }
