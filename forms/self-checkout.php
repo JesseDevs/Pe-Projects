@@ -63,29 +63,29 @@ if (isset($_POST['submitted'])) {
     </strong>";
 } ?>
 
-<form action="" method="post">
+<form action="" method="post" id="checkout">
 
     <field>
         <div class="container">
             <label for="">How many <em>Apples</em> are you taking?</label>
-            <input type="number" name='quantityOne' value='<?= $quantityOne ?>' required min='0'>
+            <input type="number" name='quantityOne' value='<?= $quantityOne ?>' id='appleAmount' required min='0'>
         </div>
 
         <div class="container">
-            <label for="">Whats the price of the <em>Apples</em> you are taking?</label>
-            <input type="number" name='priceOne' value='<?= $priceOne ?>' required min='0'>
+            <label for="">Whats the price of the <em>Apples</em>?</label>
+            <input type="number" name='priceOne' value='<?= $priceOne ?>' required id='applePrice' min='0'>
         </div>
     </field>
 
     <field>
         <div class="container">
             <label for="">How many <em>Oranges</em> are you taking?</label>
-            <input type="number" name='quantityTwo' value='<?= $quantityTwo ?>' required min='0'>
+            <input type="number" name='quantityTwo' value='<?= $quantityTwo ?>' id='orangeAmount' required min='0'>
         </div>
 
         <div class="container">
-            <label for="">Whats the price of the <em>Oranges</em> you are taking?</label>
-            <input type="number" name='priceTwo' value='<?= $priceTwo ?>' required min='0'>
+            <label for="">Whats the price of the <em>Oranges</em>?</label>
+            <input type="number" id='orangePrice' name='priceTwo' value='<?= $priceTwo ?>' required min='0'>
         </div>
 
         <span> Tax is 5.5% in this equation</span>

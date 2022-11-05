@@ -90,8 +90,12 @@ validateform = function () {
 
         if ($areaForm) {
             calculateArea();
-
         }
+
+        if ($checkoutForm) {
+            promptCheck();
+        }
+
 
     } else {
         $form.classList.remove("none");
@@ -110,6 +114,64 @@ const $drivingForm = document.querySelector('#driving');
 const $interestForm = document.querySelector('#interest');
 const $passwordForm = document.querySelector('#password');
 const $paintForm = document.querySelector('#paint');
+const $checkoutForm = document.querySelector('#checkout');
+
+function promptCheck() {
+    const $appleAmount = $checkoutForm.querySelector("#appleAmount");
+    const $applePrice = $checkoutForm.querySelector("#applePrice");
+
+    const $orangeAmount = $checkoutForm.querySelector("#orangeAmount");
+    const $orangePrice = $checkoutForm.querySelector("#orangePrice");
+
+    $checkoutForm.addEventListener('input', function (event) {
+        var apples = parseInt($appleAmount.value, 10);
+        var aPrice = parseInt($applePrice.value, 10);
+
+        var oranges = parseInt($orangeAmount.value, 10);
+        var oPrice = parseInt($orangePrice.value, 10);
+
+        var aTotal = numberFormatter.format(apples * aPrice);
+        var oTotal = numberFormatter.format(oranges * oPrice);
+
+        var subTotal = numberFormatter.format(parseInt(aTotal, 10) + parseInt(oTotal, 10));
+        var tax = .055;
+
+        var taxAmount = numberFormatter.format(subTotal * tax);
+        var total = numberFormatter.format(subTotal + taxAmount);
+
+        if (isNaN(parseInt(aTotal), 10)) {
+            aTotal = "X";
+        }
+
+        if (isNaN(parseInt(oTotal), 10)) {
+            oTotal = "X";
+            console.log('er')
+        }
+
+        if (isNaN(parseInt(subTotal), 10)) {
+            subTotal = "X";
+        }
+
+        if (isNaN(parseInt(taxAmount), 10)) {
+            taxAmount = "X";
+        }
+
+        if (isNaN(parseInt(total), 10)) {
+            total = "X";
+        }
+
+        template = ` <p>The subtotal of Apples is: ${aTotal}</p>
+        <p>The subtotal of Oranges is: ${oTotal}</p>
+        <p>The subtotal of all items is: ${subTotal}</p>
+        <p>The tax on this purchase is:  ${taxAmount}</p>
+        <strong>
+            <p>The total is: ${total}</p>
+        </strong>`;
+
+        $feedback.innerHTML = `${template}`;
+
+    })
+}
 
 function promptPaint() {
     const $lengthInput = $paintForm.querySelector("field:nth-of-type(1) input");
