@@ -21,7 +21,7 @@
             "heading": "Landing",
             "intro": "Cute little intro",
             "details": "Placeholder detail text",
-            "image": "https://peprojects.dev/images/background/portrait.webp"
+            "image": "images/background/portrait.jpeg"
         },
         {
             "module": "big-heading",
