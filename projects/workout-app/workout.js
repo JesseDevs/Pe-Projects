@@ -8,6 +8,8 @@ class Workout {
             complete: record.complete || false,
 
             dateCreated: record.dateCreated || new Date(),
+
+            //value: 0; if complete value = 1 then add them up and present a graph.
         }
     }
 
