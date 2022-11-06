@@ -26,10 +26,15 @@ class Workout {
         return `
         <li>
             <item-card data-id='${id}' class="${this.isComplete}">
-                <h2> ${content}</h2>
+                <h4 class='attention-voice'> ${content.toLowerCase()}</h4>
+
+                <button data-action="remove" class="remove-btn">
+                <span class="inner">
+                    <span class="label">Remove</span>
+                </span>
+                </button>
     
                 <action-block>
-                    <button data-action="remove" >Remove</button>
                     <button data-action="complete">Complete</button>
                 </action-block>
     

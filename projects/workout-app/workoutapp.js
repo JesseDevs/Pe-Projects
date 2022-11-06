@@ -74,32 +74,30 @@ class WorkoutApp {
     }
 
     renderList(workouts) {
-        var template = `<list-container>
-                            <ul>`;
+        var template = `<ul>`;
 
         workouts.forEach(workout => {
             template += workout.render();
         });
 
-        template += `</list-container>
-        </ul>`;
+        template += `</ul>`;
         return template;
     }
 
     renderLists() {
-        var template = `<section>
+        var template = `<list-container>
         `;
 
         this.types.forEach(type => {
             const newSet = this.filterWorkoutByType(type);
             if (newSet.length) {
-                template += `<h1>${type} </h1>`
+                template += `<h3 class='strict-voice'>${type} </h3>`
                 template += this.renderList(newSet);
             }
 
         })
 
-        template += `</section>`;
+        template += `</list-container>`;
         this.$output.innerHTML = template;
     }
 

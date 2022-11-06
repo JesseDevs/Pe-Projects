@@ -2,6 +2,7 @@ form {
     display: grid;
     position: relative;
     gap: 20px;
+    max-width: 450px;
 
     input {
         font-size: clamp(19px, 3.5vw, 24px);
@@ -9,8 +10,9 @@ form {
         outline: none;
         border: none;
 
-        border-left: 2px solid var(--color);
-        border-bottom: 2px solid var(--color);
+        background-color: var(--page);
+        border-left: 2px solid var(--accent);
+        border-bottom: 2px solid var(--accent);
         border-bottom-left-radius: 5px;
         appearance: none;
     }
@@ -29,9 +31,11 @@ form {
         outline: none;
         box-shadow: none;
 
+        color: rgb(129 129 129);
         border: none;
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
+        background-color: var(--page);
         flex: 1;
         padding: 0 1em;
         cursor: pointer;
@@ -48,10 +52,10 @@ form {
         height: 3em;
         overflow: hidden;
 
-        border-left: 2px solid var(--color);
-        border-right: 2px solid var(--color);
+        border-left: 2px solid var(--accent);
+        border-right: 2px solid var(--accent);
 
-        border-bottom: 2px solid var(--color);
+        border-bottom: 2px solid var(--accent);
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
@@ -74,7 +78,7 @@ form {
         transition: .25s all ease;
         pointer-events: none;
 
-        border-left: 2px solid var(--color);
+        border-left: 2px solid var(--accent);
     }
 
     /* Transition */

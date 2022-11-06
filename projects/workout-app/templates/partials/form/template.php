@@ -1,6 +1,6 @@
 <form class='main-form'>
     <field>
-        <label for="x" class='strict-voice'>What's the next workout?</label>
+        <label for="x" class='loud-voice'>Add next workout!</label>
         <input id='x' type="text" autocomplete="off" placeholder="ex. Barebell Bench Press" required>
 
         <div class="select-container">

@@ -18,7 +18,7 @@
     <?php include("templates/partials/header/template.php") ?>
     <main class="page-content ">
         <section>
-            <inner-column>
+            <inner-column class="main-container">
 
                 <?php include("templates/partials/form/template.php") ?>
 

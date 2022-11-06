@@ -4,3 +4,9 @@
 @import '_typography';
 @import '_modules';
 @import '_components';
+
+.main-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+}

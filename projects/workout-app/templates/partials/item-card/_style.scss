@@ -1,0 +1,25 @@
+item-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: rgb(10 10 10/.1);
+    border: 2px solid rgb(10 10 10/.2);
+
+    border-radius: 5px;
+
+    h4 {
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    .remove-btn {
+        padding: 0;
+        width: fit-content;
+        margin-left: auto;
+    }
+}

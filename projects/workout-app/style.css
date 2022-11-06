@@ -74,10 +74,10 @@ html {
 
 html {
   --color: rgba(206, 198, 237);
-  --support: rgba(137, 173, 226);
+  --accent: rgba(137, 173, 226);
   --support: rgba(133, 227, 225);
   --light-color: rgba(206, 198, 237, 0.3);
-  --light-support: rgba(137, 173, 226, 0.3);
+  --light-accent: rgba(137, 173, 226, 0.3);
   --off-support: rgba(133, 227, 225, 0.3);
   --ink: rgb(23 23 23);
   --page: #f4f3f0;
@@ -255,11 +255,11 @@ em {
 }
 
 .another-voice {
-  font-size: clamp(19px, 3.5vw, 24px);
+  font-size: clamp(19px, 3vw, 24px);
 }
 
 .attention-voice {
-  font-size: clamp(18px, 3.5vw, 22px);
+  font-size: clamp(18px, 3vw, 22px);
 }
 
 .calm-voice,
@@ -313,7 +313,7 @@ header h1 span:nth-of-type(1) {
 header h1 span:nth-of-type(2) {
   grid-column-start: 2;
   grid-row: 2;
-  background-color: var(--light-support);
+  background-color: var(--light-accent);
   font-family: "Londrina Outline", cursive;
   letter-spacing: 0.05em;
   margin-right: -1rem;
@@ -323,6 +323,7 @@ form {
   display: grid;
   position: relative;
   gap: 20px;
+  max-width: 450px;
   /* Remove IE arrow */
   /* Arrow */
   /* Transition */
@@ -332,8 +333,9 @@ form input {
   padding: 0.5em 1em;
   outline: none;
   border: none;
-  border-left: 2px solid var(--color);
-  border-bottom: 2px solid var(--color);
+  background-color: var(--page);
+  border-left: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
   border-bottom-left-radius: 5px;
   appearance: none;
 }
@@ -347,9 +349,11 @@ form select {
   appearance: none;
   outline: none;
   box-shadow: none;
+  color: rgb(129, 129, 129);
   border: none;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  background-color: var(--page);
   flex: 1;
   padding: 0 1em;
   cursor: pointer;
@@ -362,9 +366,9 @@ form .select-container {
   display: flex;
   height: 3em;
   overflow: hidden;
-  border-left: 2px solid var(--color);
-  border-right: 2px solid var(--color);
-  border-bottom: 2px solid var(--color);
+  border-left: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -383,7 +387,7 @@ form .select-container::after {
   background-color: var(--page);
   transition: 0.25s all ease;
   pointer-events: none;
-  border-left: 2px solid var(--color);
+  border-left: 2px solid var(--accent);
 }
 form .select-container:hover::after {
   background-color: var(--color);
@@ -417,11 +421,54 @@ div.trash {
   right: 10px;
 }
 
+list-container {
+  border: 2px solid var(--color);
+  border-radius: 5px;
+  display: grid;
+  gap: 10px;
+}
+list-container ul {
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+}
+list-container h3 {
+  padding: 10px;
+  background-color: var(--light-color);
+  border-bottom: 2px solid var(--color);
+  font-family: "Londrina Outline", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+item-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: rgba(10, 10, 10, 0.1);
+  border: 2px solid rgba(10, 10, 10, 0.2);
+  border-radius: 5px;
+}
+item-card h4 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+item-card .remove-btn {
+  padding: 0;
+  width: fit-content;
+  margin-left: auto;
+}
+
 .big-button {
   background-color: var(--white);
   border: 2px solid var(--black);
   border-radius: 25px;
-  color: var(--ink);
+  color: var(--white);
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", sans-serif;
@@ -431,14 +478,16 @@ div.trash {
   padding: 1rem 1.6rem;
   text-align: center;
   text-decoration-thickness: auto;
-  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 1px 1px 2px rgba(166, 175, 195, 0.25);
+  transition: background-position 0.4s cubic-bezier(0.4, 0, 0.2, 1), height 1ms;
   user-select: none;
   touch-action: manipulation;
+  background-size: 500% 100%;
+  background-image: radial-gradient(circle, gray, black);
 }
 
 .big-button:hover {
-  background-color: var(--ink);
+  background-position: 80% 0;
+  transition: background-position 0.3s ease-in-out;
   color: var(--page);
 }
 
@@ -454,4 +503,73 @@ div.trash {
   border: var(--line) solid var(--gray);
   background-color: var(--dark);
   color: var(--dark-gray);
+}
+
+.remove-btn {
+  text-decoration: none;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 50px;
+  pointer-events: all;
+}
+.remove-btn span {
+  pointer-events: none;
+}
+.remove-btn .inner {
+  display: block;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remove-btn .inner:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background-color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: ease-out 0.2s all;
+  pointer-events: none;
+}
+.remove-btn .inner:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background-color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: ease-out 0.2s all;
+  pointer-events: none;
+}
+.remove-btn .label {
+  color: black;
+  opacity: 0;
+  transition: linear 0.3s all;
+  pointer-events: none;
+}
+.remove-btn:hover .inner:before, .remove-btn:focus .inner:before {
+  transform: translate(-50%, 0%) rotate(0);
+  top: 25%;
+}
+.remove-btn:hover .inner:after, .remove-btn:focus .inner:after {
+  transform: translate(-50%, 0%) rotate(0);
+  top: 76%;
+}
+.remove-btn:hover .label, .remove-btn:focus .label {
+  opacity: 1;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
 }
