@@ -36,13 +36,16 @@ class WorkoutApp {
         localStorage.removeItem(key);
     }
 
+    saveAndUpdate() {
+        this.renderLists();
+        this.saveToStorage();
+    }
+
     add(content, type) {
         var workout = new Workout({ content: content, type: type });
 
         this.workouts = [...this.workouts, workout];
-
-        this.renderLists()
-        this.saveToStorage()
+        this.saveAndUpdate()
     }
 
     getWorkoutById(id) {
@@ -63,14 +66,13 @@ class WorkoutApp {
         });
 
         this.workouts = [...filtered];
-        this.renderLists();
+        this.saveAndUpdate()
         //alert idea
     }
 
     complete(id) {
         this.getWorkoutById(id).toggleComplete();
-        this.renderLists();
-        this.saveToStorage();
+        this.saveAndUpdate()
     }
 
     renderList(workouts) {
