@@ -63,7 +63,7 @@ html {
   --thick: 5px;
   --Xthick: 9px;
   --white: #fff;
-  --black: rgb(10 5 5);
+  --black: rgb(10 15 15);
   --fade: rgb(10 10 10 / .3);
   --lightFade: rgb(220 220 220 / .3);
   --gray: #999999;
@@ -328,14 +328,22 @@ form {
   /* Arrow */
   /* Transition */
 }
+form:hover input {
+  background-color: var(--light-accent);
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+form:hover select {
+  background-color: var(--light-accent);
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 form input {
   font-size: clamp(19px, 3.5vw, 24px);
   padding: 0.5em 1em;
   outline: none;
   border: none;
   background-color: var(--page);
-  border-left: 2px solid var(--accent);
-  border-bottom: 2px solid var(--accent);
+  border-left: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
   border-bottom-left-radius: 5px;
   appearance: none;
 }
@@ -366,9 +374,9 @@ form .select-container {
   display: flex;
   height: 3em;
   overflow: hidden;
-  border-left: 2px solid var(--accent);
-  border-right: 2px solid var(--accent);
-  border-bottom: 2px solid var(--accent);
+  border-left: 2px solid var(--black);
+  border-right: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -387,7 +395,7 @@ form .select-container::after {
   background-color: var(--page);
   transition: 0.25s all ease;
   pointer-events: none;
-  border-left: 2px solid var(--accent);
+  border-left: 2px solid var(--black);
 }
 form .select-container:hover::after {
   background-color: var(--color);
@@ -400,10 +408,9 @@ field {
   gap: 20px;
 }
 
-output,
-ul {
+output {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 
 action-block {
@@ -450,7 +457,7 @@ item-card {
   align-items: center;
   gap: 15px;
   padding: 10px;
-  background-color: rgba(10, 10, 10, 0.1);
+  background-color: rgba(10, 10, 10, 0.05);
   border: 2px solid rgba(10, 10, 10, 0.2);
   border-radius: 5px;
 }

@@ -4,6 +4,18 @@ form {
     gap: 20px;
     max-width: 450px;
 
+    &:hover {
+        input {
+            background-color: var(--light-accent);
+            transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        select {
+            background-color: var(--light-accent);
+            transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    }
+
     input {
         font-size: clamp(19px, 3.5vw, 24px);
         padding: .5em 1em;
@@ -11,8 +23,8 @@ form {
         border: none;
 
         background-color: var(--page);
-        border-left: 2px solid var(--accent);
-        border-bottom: 2px solid var(--accent);
+        border-left: 2px solid var(--black);
+        border-bottom: 2px solid var(--black);
         border-bottom-left-radius: 5px;
         appearance: none;
     }
@@ -52,10 +64,10 @@ form {
         height: 3em;
         overflow: hidden;
 
-        border-left: 2px solid var(--accent);
-        border-right: 2px solid var(--accent);
+        border-left: 2px solid var(--black);
+        border-right: 2px solid var(--black);
 
-        border-bottom: 2px solid var(--accent);
+        border-bottom: 2px solid var(--black);
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
@@ -78,7 +90,7 @@ form {
         transition: .25s all ease;
         pointer-events: none;
 
-        border-left: 2px solid var(--accent);
+        border-left: 2px solid var(--black);
     }
 
     /* Transition */

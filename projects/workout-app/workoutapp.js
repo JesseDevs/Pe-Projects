@@ -85,19 +85,20 @@ class WorkoutApp {
     }
 
     renderLists() {
-        var template = `<list-container>
+        var template = `
         `;
 
         this.types.forEach(type => {
             const newSet = this.filterWorkoutByType(type);
             if (newSet.length) {
-                template += `<h3 class='strict-voice'>${type} </h3>`
+                template += `<list-container>
+                <h3 class='strict-voice'>${type} </h3>`
                 template += this.renderList(newSet);
+                template += `</list-container>`
             }
 
         })
 
-        template += `</list-container>`;
         this.$output.innerHTML = template;
     }
 
