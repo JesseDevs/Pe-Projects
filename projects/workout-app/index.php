@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>To-do APP</title>
-    <meta name='description' content="What's next? What to do.">
+    <title>Workout Planner</title>
+    <meta name='description' content="What's next?">
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
 
     <link rel="stylesheet" href="style.css">
@@ -19,6 +19,7 @@
     <main class="page-content ">
         <section>
             <inner-column class="main-container">
+                <!-- <div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div> -->
 
                 <?php include("templates/partials/form/template.php") ?>
 
@@ -28,6 +29,7 @@
         </section>
     </main>
 
+    <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
     <script src="script.js" type='module'></script>
 </body>
 

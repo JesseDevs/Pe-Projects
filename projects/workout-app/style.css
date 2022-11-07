@@ -452,12 +452,11 @@ list-container {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 list-container ul {
   display: grid;
   gap: 20px;
-  padding: 10px;
+  padding: 20px;
 }
 list-container h3 {
   padding: 10px;
@@ -480,12 +479,16 @@ list-container h3 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 20px;
+  }
+  list-container {
+    gap: 0px;
   }
   list-container ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 item-card {

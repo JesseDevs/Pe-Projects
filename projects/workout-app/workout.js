@@ -25,7 +25,7 @@ class Workout {
     render() {
         const { id, content, type } = this.data
         return `
-
+        <li>
             <item-card data-id='${id}' class="${this.isComplete} ${type}">
                 <h4 class='attention-voice'> ${content.toLowerCase()}</h4>
 
@@ -40,7 +40,7 @@ class Workout {
                 </action-block>
     
             </item-card>
-
+        </li>
     `
     }
 };
