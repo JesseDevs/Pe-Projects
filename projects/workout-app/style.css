@@ -149,7 +149,7 @@ inner-column {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   max-width: 1000px;
 }
 
@@ -296,6 +296,7 @@ body {
 
 header inner-column {
   padding-top: 0;
+  padding-bottom: 1rem;
   position: relative;
 }
 header h1 {
