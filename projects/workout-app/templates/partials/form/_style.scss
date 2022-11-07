@@ -106,14 +106,4 @@ field {
     justify-content: center;
 
     gap: 20px;
-
-}
-
-@media(min-width:950px) {
-    form {
-        position: absolute;
-        width: 100%;
-        left: 1rem;
-        top: 1rem;
-    }
 }
