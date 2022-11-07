@@ -7,6 +7,8 @@
 
     <title>Workout Planner</title>
     <meta name='description' content="What's next?">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/workout-app/images/workout.jpg">
+
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
 
     <link rel="stylesheet" href="style.css">

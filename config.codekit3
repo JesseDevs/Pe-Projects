@@ -44048,7 +44048,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 115303,
+      "iS" : 37319,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",
@@ -47647,6 +47647,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/workout-app\/images\/workout.jpg" : {
+      "ft" : 16384,
+      "iS" : 57178,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/workout-app\/images\/workout.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/projects\/workout-app\/index.php" : {
