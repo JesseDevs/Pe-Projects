@@ -21,7 +21,8 @@ div.trash {
 list-container {
     border: 2px solid var(--black);
     border-radius: 5px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 
     ul {
@@ -38,5 +39,40 @@ list-container {
         font-family: 'Londrina Outline', cursive;
         text-transform: uppercase;
         letter-spacing: .15em;
+    }
+}
+
+@media(min-width:550px) {
+    output {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media(min-width:950px) {
+    output {
+        top: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: -100;
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+
+        list-container:nth-of-type(1) {
+            grid-column-start: 3;
+        }
+
+        list-container:nth-of-type(3) {
+            transform: translateY(-234.4px);
+        }
+
+        list-container:nth-of-type(4) {
+            transform: translateY(-234.4px);
+        }
     }
 }
