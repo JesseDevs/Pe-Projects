@@ -6,7 +6,7 @@ class Workout {
             content: record.content,
             type: record.type,
             complete: record.complete || false,
-
+            value: 0,
             dateCreated: record.dateCreated || new Date(),
 
             //value: 0; if complete value = 1 then add them up and present a graph.
@@ -15,6 +15,7 @@ class Workout {
 
     toggleComplete() {
         this.data.complete = !this.data.complete;
+        this.data.value = 1;
     }
 
     get isComplete() {

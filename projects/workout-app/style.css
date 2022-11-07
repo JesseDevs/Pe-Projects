@@ -427,6 +427,14 @@ field {
   gap: 20px;
 }
 
+@media (min-width: 950px) {
+  form {
+    position: absolute;
+    width: 100%;
+    left: 1rem;
+    top: 1rem;
+  }
+}
 output {
   display: grid;
   gap: 20px;
@@ -477,24 +485,22 @@ list-container h3 {
 }
 @media (min-width: 950px) {
   output {
-    top: 0;
-    position: absolute;
-    left: 0;
     width: 100%;
-    z-index: -100;
+    padding-top: 3rem;
     display: grid;
-    column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 1rem;
+    grid-template-rows: 250px 250px 1fr;
+    column-gap: 10px;
   }
   output list-container:nth-of-type(1) {
     grid-column-start: 3;
+    grid-row: span 2;
   }
   output list-container:nth-of-type(3) {
-    transform: translateY(-234.4px);
+    grid-row: 2/span 2;
   }
   output list-container:nth-of-type(4) {
-    transform: translateY(-234.4px);
+    grid-row: 2/span 2;
   }
 }
 item-card {
@@ -668,6 +674,6 @@ item-card.cardio {
 .main-container {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  row-gap: 8vh;
+  row-gap: 6vh;
   position: relative;
 }
