@@ -9,7 +9,8 @@
         "skills": [
             "html",
             "css",
-            "php"
+            "php",
+            "json"
         ],
         "featured": true,
         "links": [
@@ -150,8 +151,7 @@
                 "image": "images/projects/bill/figma.webp",
                 "text": [
                     "I started with the idea of making different templates that would represent the pages that would appear on the app. When I thought of the idea, I led with a homepage that would allow an input of an amount - ideally an amount that you receive on a bill at the table.",
-                    "Next, I wanted to lead the user to a tip page. On this page the user would scroll to select the percentage of tip they would like to add to their meal. I chose to make a slider range value input because I thought it would be interesting and give me the opportunity to use Javascript to grab the value and live update the amounts on display.",
-                    "Finally the page would appear where they have a total and could decide to split that amount among a number of their choosing. Initial idea layout was drawn up in a Figma file that would replicate the users pathway on an ideal interaction."
+                    "Next, I wanted to lead the user to a tip page. On this page the user would scroll to select the percentage of tip they would like to add to their meal. I chose to make a slider range value input because I thought it would be interesting and give me the opportunity to use Javascript to grab the value and live update the amounts on display."
                 ]
             },
             {
@@ -168,7 +168,6 @@
                 ],
                 "text-two": [
                     "I worked through some blockers and was able to build the base version of my app that accomplished the goal I had set out at the very beginning. Take an amount, calculate a tip percentage, split it by an amount of people and share the amount to the user.",
-                    "I decided to work on some styling at this point and this is a way to present the information to the user. Well, making a bill splitting app made me think of a receipt you receive at the end of an outing. I made an element and designed it with the idea of representing that very receipt that would then show each item the user is processing though as they follow the data path.",
                     "Now that some style is in place, the information is displayed to the user, and the base path was set up, it was time to get some feedback to see some paths I may not have considered."
                 ]
             },
@@ -188,11 +187,10 @@
                 "text-one": [
                     "The input range field was originally displayed vertically because I thought it would be more intuitive for the user to adjust their tip amount but it actually hurt their impression more than anything.",
                     "Not only was it assumed to be a write in field similar to the other menu but the slider did not read as a slider on the first viewing.",
-                    "That became a key target of interest to fix because it is not the user’s fault if they don’t see what I want them to see, it’s mine. To account for this I added a default value to be presented in the box and returned the slider back to its original horizontal position."
+                    "To account for this I added a default value to be presented in the box and returned the slider back to its original horizontal position."
                 ],
                 "text-two": [
                     "The goal of the site was to be able to calculate the tip for a total but that doesn’t mean a user always wants to tip or give a custom amount. What about a set amount? What about no tip? At this point I reviewed my buttons and tried to analyze more situations the user might go through to give them more options but still in my control.",
-                    "Buttons are disabled unless the user has entered a value, that way there’s no funny business going on. I added a home button on some pages to return the user back to the beginning if a mistake was made.",
                     "I also added an edit button so if the group were to split the amount among more or less people, they could go back to the total and adjust the amount of people."
                 ]
             },
@@ -245,7 +243,8 @@
         "skills": [
             "html",
             "css",
-            "php"
+            "php",
+            "json"
         ],
         "featured": false,
         "links": [

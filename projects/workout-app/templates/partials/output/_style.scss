@@ -19,7 +19,7 @@ div.trash {
 }
 
 list-container {
-    border: 2px solid var(--color);
+    border: 2px solid var(--black);
     border-radius: 5px;
     display: grid;
     gap: 10px;
@@ -32,8 +32,9 @@ list-container {
 
     h3 {
         padding: 10px;
-        background-color: var(--light-color);
-        border-bottom: 2px solid var(--color);
+        color: var(--white);
+        background-color: var(--black);
+        border-bottom: 2px solid var(--black);
         font-family: 'Londrina Outline', cursive;
         text-transform: uppercase;
         letter-spacing: .15em;

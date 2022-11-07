@@ -44048,7 +44048,7 @@
     },
     "\/projects\/router-boilerplate\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
-      "iS" : 37319,
+      "iS" : 115303,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/router-boilerplate\/images\/background\/landscape.jpg",
@@ -47627,6 +47627,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/projects\/workout-app\/images\/dumbell.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/workout-app\/images\/dumbell.php",
+      "oF" : 0
     },
     "\/projects\/workout-app\/images\/wolf.png" : {
       "ft" : 32768,

@@ -22,10 +22,10 @@ class Workout {
     }
 
     render() {
-        const { id, content } = this.data
+        const { id, content, type } = this.data
         return `
 
-            <item-card data-id='${id}' class="${this.isComplete}">
+            <item-card data-id='${id}' class="${this.isComplete} ${type}">
                 <h4 class='attention-voice'> ${content.toLowerCase()}</h4>
 
                 <button data-action="remove" class="remove-btn">
@@ -35,7 +35,7 @@ class Workout {
                 </button>
     
                 <action-block>
-                    <button data-action="complete">Complete</button>
+                    <button class='complete-btn' data-action="complete">Complete</button>
                 </action-block>
     
             </item-card>

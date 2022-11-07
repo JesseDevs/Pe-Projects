@@ -93,7 +93,7 @@ class WorkoutApp {
         this.types.forEach(type => {
             const newSet = this.filterWorkoutByType(type);
             if (newSet.length) {
-                template += `<list-container>
+                template += `<list-container '>
                 <h3 class='strict-voice'>${type} </h3>`
                 template += this.renderList(newSet);
                 template += `</list-container>`
