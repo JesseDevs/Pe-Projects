@@ -5,7 +5,7 @@ class Workout {
             id: record.id || new Date(),
             content: record.content,
             type: record.type,
-            complete: record.complete || false,
+            complete: false,
             value: 0,
             dateCreated: record.dateCreated || new Date(),
 
