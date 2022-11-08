@@ -43,6 +43,16 @@
     color: var(--dark-gray);
 }
 
+.add-btn {
+    border-radius: 50%;
+    padding: 15px 10px;
+    color: black;
+    outline: none;
+    border: 2px solid var(--black);
+    background-color: var(--white);
+    max-width: fit-content;
+}
+
 
 .remove-btn {
     text-decoration: none;
@@ -105,7 +115,7 @@
         .inner {
             &:before {
                 transform: translate(-50%, 0%) rotate(0);
-                top: 25%;
+                top: 16%;
             }
 
             &:after {

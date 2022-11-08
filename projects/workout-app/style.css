@@ -139,7 +139,7 @@ body {
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: var(--page);
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -323,6 +323,7 @@ header h1 span:nth-of-type(2) {
   font-family: "Londrina Outline", cursive;
   letter-spacing: 0.05em;
   margin-right: -1rem;
+  font-weight: 900;
 }
 header dumbell {
   display: block;
@@ -358,11 +359,9 @@ form input {
   font-size: clamp(19px, 3.5vw, 24px);
   padding: 0.5em 1em;
   outline: none;
-  border: none;
   background-color: var(--page);
-  border-left: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
-  border-bottom-left-radius: 5px;
+  border: 2px solid var(--black);
+  border-radius: 5px;
   appearance: none;
 }
 form input::placeholder {
@@ -378,8 +377,6 @@ form select {
   box-shadow: none;
   color: rgb(129, 129, 129);
   border: none;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
   background-color: var(--page);
   flex: 1;
   padding: 0 1em;
@@ -392,12 +389,9 @@ form .select-container {
   position: relative;
   display: flex;
   height: 3em;
+  border: 2px solid var(--black);
+  border-radius: 5px;
   overflow: hidden;
-  border-left: 2px solid var(--black);
-  border-right: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 form .select-container::after {
   content: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 18L15.5 12L9.5 6' stroke='%23757575' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -510,7 +504,7 @@ item-card h4 {
 }
 item-card .remove-btn {
   padding: 0;
-  width: fit-content;
+  margin-right: 45px;
   margin-left: auto;
 }
 item-card .complete-btn {
@@ -596,6 +590,16 @@ item-card.cardio {
   color: var(--dark-gray);
 }
 
+.add-btn {
+  border-radius: 50%;
+  padding: 15px 10px;
+  color: black;
+  outline: none;
+  border: 2px solid var(--black);
+  background-color: var(--white);
+  max-width: fit-content;
+}
+
 .remove-btn {
   text-decoration: none;
   background: transparent;
@@ -649,7 +653,7 @@ item-card.cardio {
 }
 .remove-btn:hover .inner:before, .remove-btn:focus .inner:before {
   transform: translate(-50%, 0%) rotate(0);
-  top: 25%;
+  top: 16%;
 }
 .remove-btn:hover .inner:after, .remove-btn:focus .inner:after {
   transform: translate(-50%, 0%) rotate(0);

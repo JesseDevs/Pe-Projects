@@ -20,12 +20,11 @@ form {
         font-size: clamp(19px, 3.5vw, 24px);
         padding: .5em 1em;
         outline: none;
-        border: none;
 
         background-color: var(--page);
-        border-left: 2px solid var(--black);
-        border-bottom: 2px solid var(--black);
-        border-bottom-left-radius: 5px;
+        border: 2px solid var(--black);
+
+        border-radius: 5px;
         appearance: none;
     }
 
@@ -46,8 +45,7 @@ form {
 
         color: rgb(129 129 129);
         border: none;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
+
         background-color: var(--page);
         flex: 1;
         padding: 0 1em;
@@ -63,14 +61,10 @@ form {
         position: relative;
         display: flex;
         height: 3em;
+        border: 2px solid var(--black);
+
+        border-radius: 5px;
         overflow: hidden;
-
-        border-left: 2px solid var(--black);
-        border-right: 2px solid var(--black);
-
-        border-bottom: 2px solid var(--black);
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
     }
 
     /* Arrow */

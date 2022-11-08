@@ -1,6 +1,6 @@
 <form class='main-form'>
     <field>
-        <label for="x">Add Workouts!</label>
+        <label for="x">Create a routine</label>
         <input id='x' type="text" autocomplete="off" placeholder="ex. Barebell Bench Press" required>
 
         <div class="select-container">
