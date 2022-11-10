@@ -4,24 +4,22 @@ missing-heading {
 	text-align: center;
 	position: relative;
 	min-height: 600px;
-
-	p {
-		max-width: 400px;
-		margin: 0 auto;
-	}
-
-	ul {
-		display: flex;
-		flex-direction: column;
-		gap: 20px
-	}
-
-
-	.action-link {
-		max-width: none;
-	}
 }
 
+missing-heading p {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+missing-heading ul a {
+	padding: 15px var(--simple-space);
+	border: var(--thick) solid var(--highlight);
+	background-color: var(--highlight);
+	text-align: center;
+	margin-top: var(--simple-space);
+	color: var(--white);
+	text-transform: uppercase;
+}
 
 .cube-sphere {
 	margin-top: var(--general-space);
@@ -105,7 +103,7 @@ missing-heading .cube-sphere {
 		margin: 0;
 		scale: 1.2;
 		z-index: 1;
-		animation: circular 12s infinite linear;
+		animation: circular 10s infinite linear;
 	}
 
 

@@ -47,10 +47,10 @@
                 "It loops through it all."
             ],
             "images": [
-                "images/background/portrait.jpeg",
-                "images/background/portrait.jpeg",
-                "images/background/portrait.jpeg",
-                "images/background/portrait.jpeg"
+                "https://peprojects.dev/images/square.webp",
+                "https://peprojects.dev/images/landscape.webp",
+                "https://peprojects.dev/images/square.webp",
+                "https://peprojects.dev/images/landscape.webp"
             ]
         },
         {
@@ -75,7 +75,7 @@
                     "intro": "Little intro for article",
                     "quote": "Quote from the article.",
                     "link": "https://jessedevs.substack.com/p/a-beautiful-lie-perpetual-education",
-                    "thumbnail": "images/background/landscape.jpg",
+                    "thumbnail": "https://peprojects.dev/images/landscape.webp",
                     "podcast": false
                 },
                 {
@@ -83,7 +83,7 @@
                     "intro": "Little intro for article",
                     "quote": "Quote from the article.",
                     "link": "https://jessedevs.substack.com/p/perpetual-education",
-                    "thumbnail": "images/background/landscape.jpg",
+                    "thumbnail": "https://peprojects.dev/images/landscape.webp",
                     "podcast": true
                 }
             ]
