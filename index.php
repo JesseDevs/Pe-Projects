@@ -5,10 +5,6 @@ $metaImage = null;
 
 $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 
-if ($page == 'project') {
-    $metaImage = $project['thumbnail'];
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -31,24 +27,9 @@ if ($page == 'project') {
 
     <?php
     include('templates/modules/site-menu/template.php');
-    ?>
 
+    renderPage();
 
-    <?php
-    if (file_exists("data/pages/" . $page . ".json")) {
-
-        include('templates/pages/standard.php');
-    } else {
-        $page = '404';
-
-        $json = file_get_contents('data/pages/404.json');
-        $pageData = json_decode($json, true);
-        include('templates/pages/standard.php');
-    }
-    ?>
-
-
-    <?php
     include('templates/modules/site-footer/template.php');
     ?>
 
