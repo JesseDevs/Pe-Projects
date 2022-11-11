@@ -6,9 +6,7 @@ class WorkoutApp {
 
         this.name = name;
         this.workouts = [];
-        this.idCount = 0;
         this.types = ["chest", "back", "legs", "shoulders", "cardio"];
-        this.completedList = [];
 
         this.$form = document.querySelector('form');
         this.$input = this.$form.querySelector('input');

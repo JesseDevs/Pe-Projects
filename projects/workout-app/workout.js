@@ -1,12 +1,16 @@
+var uniqueId = (() => {
+    var counter = 0
+
+    return function () {
+        return counter++
+    }
+})()
+
 class Workout {
     constructor(record) {
-        var uniqueId = (() => {
-            var counter = 0
-            return counter++
 
-        })()
         this.data = {
-            id: record.id || uniqueId,
+            id: record.id || uniqueId(),
             content: record.content,
             type: record.type,
             complete: false,
