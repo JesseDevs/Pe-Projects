@@ -11,3 +11,8 @@
     row-gap: 6vh;
     position: relative;
 }
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}

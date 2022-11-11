@@ -21,7 +21,6 @@
     <main class="page-content ">
         <section>
             <inner-column class="main-container">
-                <!-- <div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div> -->
 
                 <?php include("templates/partials/form/template.php") ?>
 
@@ -31,7 +30,6 @@
         </section>
     </main>
 
-    <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
     <script src="script.js" type='module'></script>
 </body>
 

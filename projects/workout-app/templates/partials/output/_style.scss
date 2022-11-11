@@ -8,8 +8,14 @@ action-block {
     gap: 10px;
 }
 
-.complete {
+item-card.complete {
     opacity: .4;
+    transition: all 1s ease;
+
+    h4 {
+        text-decoration: line-through;
+
+    }
 }
 
 div.trash {
@@ -24,10 +30,23 @@ list-container {
     display: flex;
     flex-direction: column;
 
+    &:nth-of-type(even) {
+        ul {
+            background-color: var(--accent);
+        }
+    }
+
+    &:nth-of-type(odd) {
+        ul {
+            background-color: var(--color);
+        }
+    }
+
     ul {
         display: grid;
         gap: 20px;
         padding: 20px;
+
     }
 
     h3 {
@@ -35,10 +54,12 @@ list-container {
         color: var(--white);
         background-color: var(--black);
         border-bottom: 2px solid var(--black);
-        font-family: 'Londrina Outline', cursive;
+        font-family: 'Abril Fatface', cursive;
+
         text-transform: uppercase;
         letter-spacing: .15em;
     }
+
 }
 
 @media(min-width:550px) {

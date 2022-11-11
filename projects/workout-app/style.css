@@ -74,18 +74,15 @@ html {
 
 html {
   --color: rgba(206, 198, 237);
-  --accent: rgba(137, 173, 226);
+  --accent-off: rgba(137, 173, 226);
+  --accent: rgb(226, 137, 137);
   --support: rgba(133, 227, 225);
   --light-color: rgba(206, 198, 237, 0.3);
-  --light-accent: rgba(137, 173, 226, 0.3);
+  --light-accent-off: rgba(137, 173, 226, 0.3);
+  --light-accent: rgba(226, 137, 137, 0.3);
   --off-support: rgba(133, 227, 225, 0.3);
   --ink: rgb(23 23 23);
   --page: #f4f3f0;
-  --pink-lavender: #cdb4dbff;
-  --orchid-pink: #ffc8ddff;
-  --nadeshiko-pink: #ffafccff;
-  --uranian-blue: #bde0feff;
-  --baby-blue-eyes: #a2d2ffff;
 }
 
 @keyframes squeeze {
@@ -347,13 +344,9 @@ form {
   /* Arrow */
   /* Transition */
 }
-form:hover input {
-  background-color: var(--light-accent);
-  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-form:hover select {
-  background-color: var(--light-accent);
-  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+form input:focus,
+form select:focus {
+  border-color: var(--color);
 }
 form input {
   font-size: clamp(19px, 3.5vw, 24px);
@@ -361,7 +354,7 @@ form input {
   outline: none;
   background-color: var(--page);
   border: 2px solid var(--black);
-  border-radius: 5px;
+  border-radius: 10px;
   appearance: none;
 }
 form input::placeholder {
@@ -390,7 +383,7 @@ form .select-container {
   display: flex;
   height: 3em;
   border: 2px solid var(--black);
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
 }
 form .select-container::after {
@@ -431,8 +424,12 @@ action-block {
   gap: 10px;
 }
 
-.complete {
+item-card.complete {
   opacity: 0.4;
+  transition: all 1s ease;
+}
+item-card.complete h4 {
+  text-decoration: line-through;
 }
 
 div.trash {
@@ -447,6 +444,12 @@ list-container {
   display: flex;
   flex-direction: column;
 }
+list-container:nth-of-type(even) ul {
+  background-color: var(--accent);
+}
+list-container:nth-of-type(odd) ul {
+  background-color: var(--color);
+}
 list-container ul {
   display: grid;
   gap: 20px;
@@ -457,7 +460,7 @@ list-container h3 {
   color: var(--white);
   background-color: var(--black);
   border-bottom: 2px solid var(--black);
-  font-family: "Londrina Outline", cursive;
+  font-family: "Abril Fatface", cursive;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
@@ -496,22 +499,31 @@ item-card {
   padding: 10px;
   border: 2px solid var(--black);
   text-align: center;
-  border-radius: 5px;
+  border-radius: 20px;
+  opacity: 1;
+  background-color: var(--black);
+  color: var(--white);
+  transition: all 1s ease;
 }
 item-card h4 {
-  font-weight: 400;
+  font-weight: 500;
   text-transform: capitalize;
+}
+item-card action-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 item-card .remove-btn {
   padding: 0;
   margin-right: 45px;
   margin-left: auto;
 }
-item-card .complete-btn {
+item-card .complete-btn,
+item-card .edit-btn {
   background-color: var(--white);
   border: 2px solid var(--black);
-  border-radius: 50px;
-  color: var(--white);
+  border-radius: 10px;
+  color: var(--black);
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -521,38 +533,18 @@ item-card .complete-btn {
   padding: 0.5rem 0.8rem;
   text-align: center;
   text-decoration-thickness: auto;
-  background-color: var(--black);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-item-card .complete-btn:hover {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-item-card.chest {
-  background-color: var(--pink-lavender);
-}
-
-item-card.back {
-  background-color: var(--uranian-blue);
-}
-
-item-card.legs {
-  background-color: var(--nadeshiko-pink);
-}
-
-item-card.shoulders {
-  background-color: var(--baby-blue-eyes);
-}
-
-item-card.cardio {
-  background-color: var(--orchid-pink);
+item-card .complete-btn:hover,
+item-card .edit-btn:hover {
+  background-color: rgba(255, 255, 255, 0.489);
+  color: var(--white);
 }
 
 .big-button {
   background-color: var(--white);
   border: 2px solid var(--black);
-  border-radius: 25px;
+  border-radius: 10px;
   color: var(--white);
   cursor: pointer;
   display: inline-block;
@@ -560,20 +552,23 @@ item-card.cardio {
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  max-width: 50%;
+  margin-left: auto;
   padding: 1rem 1.6rem;
   text-align: center;
   text-decoration-thickness: auto;
   transition: background-position 0.4s cubic-bezier(0.4, 0, 0.2, 1), height 1ms;
   user-select: none;
   touch-action: manipulation;
-  background-size: 500% 100%;
-  background-image: radial-gradient(circle, gray, black);
+  background: linear-gradient(to left, var(--black) 50%, var(--color) 50%) right;
+  background-size: 200% 100%;
 }
 
 .big-button:hover {
-  background-position: 130% 0;
-  transition: background-position 0.3s ease-in-out;
-  color: var(--page);
+  color: var(--black);
+  background-position: left;
 }
 
 @media (min-width: 768px) {
@@ -588,16 +583,6 @@ item-card.cardio {
   border: var(--line) solid var(--gray);
   background-color: var(--dark);
   color: var(--dark-gray);
-}
-
-.add-btn {
-  border-radius: 50%;
-  padding: 15px 10px;
-  color: black;
-  outline: none;
-  border: 2px solid var(--black);
-  background-color: var(--white);
-  max-width: fit-content;
 }
 
 .remove-btn {
@@ -626,7 +611,7 @@ item-card.cardio {
   position: absolute;
   height: 3px;
   width: 40px;
-  background-color: black;
+  background-color: var(--white);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
@@ -638,7 +623,7 @@ item-card.cardio {
   position: absolute;
   height: 3px;
   width: 40px;
-  background-color: black;
+  background-color: var(--white);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
@@ -646,7 +631,7 @@ item-card.cardio {
   pointer-events: none;
 }
 .remove-btn .label {
-  color: black;
+  color: var(--white);
   opacity: 0;
   transition: linear 0.3s all;
   pointer-events: none;
@@ -654,10 +639,12 @@ item-card.cardio {
 .remove-btn:hover .inner:before, .remove-btn:focus .inner:before {
   transform: translate(-50%, 0%) rotate(0);
   top: 16%;
+  background-color: rgba(255, 255, 255, 0.489);
 }
 .remove-btn:hover .inner:after, .remove-btn:focus .inner:after {
   transform: translate(-50%, 0%) rotate(0);
   top: 76%;
+  background-color: rgba(255, 255, 255, 0.489);
 }
 .remove-btn:hover .label, .remove-btn:focus .label {
   opacity: 1;
@@ -668,4 +655,9 @@ item-card.cardio {
   grid-template-columns: minmax(0, 1fr);
   row-gap: 6vh;
   position: relative;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }

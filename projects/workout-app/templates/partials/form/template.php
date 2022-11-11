@@ -5,7 +5,7 @@
 
         <div class="select-container">
             <select name="workoutType" id="workoutType" class='another-voice'>
-                <option value="" disabled>-- Workout Type --</option>
+                <option value="">-- Workout Type --</option>
                 <option value="chest">Chest</option>
                 <option value="back">Back</option>
                 <option value="legs">Legs</option>
@@ -13,6 +13,7 @@
                 <option value="cardio">Cardio</option>
             </select>
         </div>
+
 
     </field>
 

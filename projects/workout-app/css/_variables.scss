@@ -22,23 +22,18 @@ html {
 html {
 
 	--color: rgba(206, 198, 237);
-	--accent: rgba(137, 173, 226);
+	--accent-off: rgba(137, 173, 226);
+	--accent: rgb(226, 137, 137);
 	--support: rgba(133, 227, 225);
 
 	--light-color: rgba(206, 198, 237, 0.3);
-	--light-accent: rgba(137, 173, 226, 0.3);
+	--light-accent-off: rgba(137, 173, 226, 0.3);
+	--light-accent: rgba(226, 137, 137, 0.3);
 	--off-support: rgba(133, 227, 225, 0.3);
+
 
 	--ink: rgb(23 23 23);
 	--page: #f4f3f0;
-
-
-	//pallete
-	--pink-lavender: #cdb4dbff;
-	--orchid-pink: #ffc8ddff;
-	--nadeshiko-pink: #ffafccff;
-	--uranian-blue: #bde0feff;
-	--baby-blue-eyes: #a2d2ffff;
 }
 
 

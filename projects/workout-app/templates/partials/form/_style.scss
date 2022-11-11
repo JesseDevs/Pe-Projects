@@ -4,17 +4,13 @@ form {
     gap: 20px;
     max-width: 450px;
 
-    &:hover {
-        input {
-            background-color: var(--light-accent);
-            transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
 
-        select {
-            background-color: var(--light-accent);
-            transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
+
+    input:focus,
+    select:focus {
+        border-color: var(--color);
     }
+
 
     input {
         font-size: clamp(19px, 3.5vw, 24px);
@@ -24,7 +20,7 @@ form {
         background-color: var(--page);
         border: 2px solid var(--black);
 
-        border-radius: 5px;
+        border-radius: 10px;
         appearance: none;
     }
 
@@ -63,7 +59,7 @@ form {
         height: 3em;
         border: 2px solid var(--black);
 
-        border-radius: 5px;
+        border-radius: 10px;
         overflow: hidden;
     }
 

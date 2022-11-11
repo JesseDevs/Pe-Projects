@@ -1,7 +1,7 @@
 .big-button {
     background-color: var(--white);
     border: 2px solid var(--black);
-    border-radius: 25px;
+    border-radius: 10px;
     color: var(--white);
     cursor: pointer;
     display: inline-block;
@@ -9,6 +9,11 @@
     font-size: 1.1rem;
     font-weight: 600;
     line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    max-width: 50%;
+    margin-left: auto;
+
     padding: 1rem 1.6rem;
     text-align: center;
     text-decoration-thickness: auto;
@@ -17,15 +22,15 @@
     user-select: none;
     touch-action: manipulation;
 
-    background-size: 500% 100%;
-    background-image: radial-gradient(circle, gray, black);
+    background: linear-gradient(to left, var(--black) 50%, var(--color) 50%) right;
+
+    background-size: 200% 100%;
+
 }
 
 .big-button:hover {
-    background-position: 130% 0;
-    transition: background-position 0.3s ease-in-out;
-
-    color: var(--page);
+    color: var(--black);
+    background-position: left;
 }
 
 @media (min-width: 768px) {
@@ -42,17 +47,6 @@
     background-color: var(--dark);
     color: var(--dark-gray);
 }
-
-.add-btn {
-    border-radius: 50%;
-    padding: 15px 10px;
-    color: black;
-    outline: none;
-    border: 2px solid var(--black);
-    background-color: var(--white);
-    max-width: fit-content;
-}
-
 
 .remove-btn {
     text-decoration: none;
@@ -81,7 +75,7 @@
             position: absolute;
             height: 3px;
             width: 40px;
-            background-color: black;
+            background-color: var(--white);
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) rotate(-45deg);
@@ -94,7 +88,7 @@
             position: absolute;
             height: 3px;
             width: 40px;
-            background-color: black;
+            background-color: var(--white);
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
@@ -104,7 +98,7 @@
     }
 
     .label {
-        color: black;
+        color: var(--white);
         opacity: 0;
         transition: linear .3s all;
         pointer-events: none;
@@ -116,11 +110,13 @@
             &:before {
                 transform: translate(-50%, 0%) rotate(0);
                 top: 16%;
+                background-color: rgba(255, 255, 255, 0.489);
             }
 
             &:after {
                 transform: translate(-50%, 0%) rotate(0);
                 top: 76%;
+                background-color: rgba(255, 255, 255, 0.489);
 
             }
         }
