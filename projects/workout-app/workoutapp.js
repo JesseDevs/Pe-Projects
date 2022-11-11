@@ -117,7 +117,7 @@ class WorkoutApp {
         this.$output.addEventListener('click', (event) => {
             if (event.target.dataset.action == 'remove') {
 
-                const id = item.dataset.id;
+                const id = event.target.closest('item-card').dataset.id;
                 this.remove(id);
             }
 
