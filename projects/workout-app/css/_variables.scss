@@ -9,7 +9,7 @@ html {
 
 	--white: #fff;
 	--black: rgb(10 15 15);
-	--fade: rgb(10 10 10 / .3);
+	--fade: rgb(10 10 10 / .6);
 	--lightFade: rgb(220 220 220 / .3);
 
 	--gray: #999999;
@@ -48,6 +48,52 @@ html {
 
 	100% {
 		transform: scale(1, 1);
+	}
+}
+
+@keyframes text-roll {
+
+	0%,
+	10%,
+	100% {
+		width: 0%;
+	}
+
+	70%,
+	90% {
+		width: 100%;
+	}
+}
+
+@keyframes shift-background {
+
+	from {
+		background-position: right;
+		color: var(--color);
+	}
+
+	to {
+		background-position: left;
+		color: var(--black);
+	}
+}
+
+@keyframes low-up {
+	0% {
+		transform: translateY(100px) scale(5);
+		opacity: 0;
+		color: white;
+	}
+
+	50% {
+		opacity: 0;
+		color: rgba(0, 0, 0, 0.561);
+	}
+
+	100% {
+		transform: translateY(0) scale(1);
+		opacity: 1;
+		color: var(--accent-off);
 	}
 }
 

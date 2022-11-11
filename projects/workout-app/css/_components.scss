@@ -1,4 +1,26 @@
-.big-button {
+.action-link {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    color: var(--black);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: .5rem .8rem;
+    text-align: center;
+    text-decoration-thickness: auto;
+    transition: background-color .3s cubic-bezier(.4, 0, .2, 1);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.489);
+        color: var(--white);
+    }
+}
+
+.route-link {
     background-color: var(--white);
     border: 2px solid var(--black);
     border-radius: 10px;
@@ -11,7 +33,6 @@
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: .05em;
-    max-width: 50%;
     margin-left: auto;
 
     padding: 1rem 1.6rem;
@@ -26,22 +47,21 @@
 
     background-size: 200% 100%;
 
-}
-
-.big-button:hover {
-    color: var(--black);
-    background-position: left;
+    &:hover {
+        color: var(--black);
+        background-position: left;
+    }
 }
 
 @media (min-width: 768px) {
-    .big-button {
+    .route-link {
         font-size: 1.125rem;
         padding: 1rem 2rem;
     }
 }
 
-.big-button:disabled,
-.big-button[disabled] {
+.route-link:disabled,
+.route-link[disabled] {
     pointer-events: none;
     border: var(--line) solid var(--gray);
     background-color: var(--dark);

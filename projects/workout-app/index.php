@@ -11,7 +11,7 @@
 
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -22,15 +22,12 @@
         <section>
             <inner-column class="main-container">
 
-                <?php include("templates/partials/form/template.php") ?>
-
-                <?php include("templates/partials/output/template.php") ?>
 
             </inner-column>
         </section>
     </main>
 
-    <script src="script.js" type='module'></script>
+    <script src="scripts/script-min.js" type='module'></script>
 </body>
 
 </html>

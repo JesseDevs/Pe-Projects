@@ -47739,6 +47739,18 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/projects\/workout-app\/css\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/workout-app\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/projects\/workout-app\/css\/style.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -47748,7 +47760,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/workout-app\/style.css",
+      "oAP" : "\/projects\/workout-app\/css\/style.css",
       "oF" : 3,
       "oS" : 0,
       "pg" : 0,
@@ -47796,28 +47808,49 @@
       "oAP" : "\/projects\/workout-app\/index.php",
       "oF" : 0
     },
-    "\/projects\/workout-app\/script.js" : {
+    "\/projects\/workout-app\/scripts\/script-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/workout-app\/scripts\/script-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/workout-app\/scripts\/script.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/workout-app\/scripts\/script-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/workout-app\/scripts\/workout.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/projects\/workout-app\/script-min.js",
-      "oF" : 1,
+      "oAP" : "\/projects\/workout-app\/scripts\/workout-min.js",
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
-    "\/projects\/workout-app\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
+    "\/projects\/workout-app\/scripts\/workoutapp.js" : {
+      "bF" : 0,
+      "ft" : 64,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/workout-app\/style-min.css",
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/projects\/workout-app\/scripts\/workoutapp-min.js",
       "oF" : 0,
-      "pg" : 0
+      "sC" : 3,
+      "tS" : 0
     },
     "\/projects\/workout-app\/templates\/partials\/form\/_style.scss" : {
       "aP" : 0,
@@ -47833,14 +47866,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/projects\/workout-app\/templates\/partials\/form\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/workout-app\/templates\/partials\/form\/template.php",
-      "oF" : 0
     },
     "\/projects\/workout-app\/templates\/partials\/header\/_style.scss" : {
       "aP" : 0,
@@ -47864,6 +47889,21 @@
       "oA" : 0,
       "oAP" : "\/projects\/workout-app\/templates\/partials\/header\/template.php",
       "oF" : 0
+    },
+    "\/projects\/workout-app\/templates\/partials\/homeTemplate\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/workout-app\/templates\/partials\/homeTemplate\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/projects\/workout-app\/templates\/partials\/item-card\/_style.scss" : {
       "aP" : 0,
@@ -47894,36 +47934,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/projects\/workout-app\/templates\/partials\/output\/template.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/workout-app\/templates\/partials\/output\/template.php",
-      "oF" : 0
-    },
-    "\/projects\/workout-app\/workout.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/projects\/workout-app\/workout-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/projects\/workout-app\/workoutapp.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/projects\/workout-app\/workoutapp-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/README.md" : {
       "cB" : 0,
@@ -49120,7 +49130,7 @@
         "optionString" : "{'exceptMethods': [], 'enforceForClassFields': true}"
       },
       "comma-dangle" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "'never'"
       },
       "comma-spacing" : {

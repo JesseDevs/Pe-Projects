@@ -14,6 +14,11 @@ header {
     h1 {
         display: grid;
         grid-template-columns: 9% 1fr;
+        cursor: pointer;
+
+        span {
+            pointer-events: none;
+        }
 
         span:nth-of-type(1) {
             padding-top: 3rem;
@@ -39,14 +44,13 @@ header {
         display: block;
         width: 80px;
         position: absolute;
-        top: 15%;
-        right: 5%;
+        top: 5%;
+        right: 2%;
 
         svg {
             width: 100%;
             height: 100%;
-            filter: drop-shadow(4px 6px 20px var(--gray));
+
         }
     }
-
 }

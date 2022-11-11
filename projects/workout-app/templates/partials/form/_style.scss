@@ -6,19 +6,18 @@ form {
 
 
 
-    input:focus,
-    select:focus {
-        border-color: var(--color);
+    input:focus {
+        border: 2px solid var(--black);
+        outline: 3px solid var(--color);
     }
 
 
     input {
-        font-size: clamp(19px, 3.5vw, 24px);
         padding: .5em 1em;
-        outline: none;
 
         background-color: var(--page);
         border: 2px solid var(--black);
+        outline: 3px solid transparent;
 
         border-radius: 10px;
         appearance: none;
@@ -30,7 +29,6 @@ form {
 
     label {
         grid-column: span 2;
-        font-size: clamp(22px, 7vw, 36px);
     }
 
 
