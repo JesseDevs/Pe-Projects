@@ -1,16 +1,19 @@
 class Workout {
     constructor(record) {
+        var uniqueId = (() => {
+            var counter = 0
+            return counter++
 
+        })()
         this.data = {
-            id: record.id || new Date(),
+            id: record.id || uniqueId,
             content: record.content,
             type: record.type,
             complete: false,
             value: 0,
             dateCreated: record.dateCreated || new Date(),
-
-            //value: 0; if complete value = 1 then add them up and present a graph.
         }
+        console.log(this.data.id)
     }
 
     toggleComplete() {

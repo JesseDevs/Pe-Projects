@@ -491,8 +491,7 @@ list-container h3 {
 item-card {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 25%;
-  flex-direction: column;
+  grid-template-columns: minmax(0, 1fr) 25%;
   justify-content: center;
   align-items: center;
   gap: 15px;
