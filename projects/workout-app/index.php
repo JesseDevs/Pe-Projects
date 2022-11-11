@@ -26,8 +26,10 @@
             </inner-column>
         </section>
     </main>
+    <button class='save-btn' data-action="save">SAVE +</button>
+    <output>
 
-    <script src="scripts/script-min.js" type='module'></script>
+        <script src="scripts/script-min.js" type='module'></script>
 </body>
 
 </html>

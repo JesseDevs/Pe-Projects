@@ -68,6 +68,26 @@
     color: var(--dark-gray);
 }
 
+.save-btn {
+    text-decoration: none;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    pointer-events: all;
+
+    background-color: var(--black);
+    color: var(--white);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+
+}
+
 .remove-btn {
     text-decoration: none;
     background: transparent;

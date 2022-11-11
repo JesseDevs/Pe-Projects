@@ -2,6 +2,25 @@ import WorkoutApp from "./workoutapp.js";
 
 const outlet = document.querySelector(".main-container");
 
+function buildDayDisplay() {
+    var secondTime = 1000;
+    var minuteTime = 1000 * 60;
+    var hourTime = 1000 * 60 * 60;
+    var dayTime = 1000 * 60 * 60 * 24;
+    var weekTime = 1000 * 60 * 60 * 24 * 7;
+    var yearTime = 1000 * 60 * 60 * 24 * 365;
+
+    var date = new Date()
+    var dateTime = new Date().getTime();
+
+    var yesterday = new Date(dateTime - (1000 * 60 * 60 * 24 * 1));
+
+    var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    let day = days[date.getDay()];
+}
+
+buildDayDisplay();
+
 function renderPage(template) {
     outlet.innerHTML = template;
 }
@@ -24,7 +43,7 @@ const homeTemplate = `
 const listTemplate = `
 <form class='main-form'>
     <field>
-        <label for="x" class='loud-voice'>Create a routine</label>
+        <label for="x" class='loud-voice'>Add A Workout..</label>
         <input id='x' class='attention-voice' type="text" autocomplete="off" placeholder="ex. Bench Press" required>
 
         <div class="select-container">
@@ -44,8 +63,8 @@ const listTemplate = `
         <button class='route-link' data-route="home">Home</button>
         <button type="submit" class='route-link'>Add</button>
     </action-block>
+
 </form>
-<output>
 
 </output>
 `;

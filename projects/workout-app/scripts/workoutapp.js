@@ -1,4 +1,5 @@
 import Workout from "./workout.js";
+import Routine from "./routine.js";
 
 class WorkoutApp {
 
@@ -8,6 +9,7 @@ class WorkoutApp {
         this.workouts = [];
         this.types = ["chest", "back", "legs", "shoulders", "cardio", "core"];
 
+        this.$body = document.querySelector("body")
         this.$form = document.querySelector('form');
         this.$input = this.$form.querySelector('input');
         this.$output = document.querySelector('output');
@@ -15,6 +17,7 @@ class WorkoutApp {
 
         this.setupApp();
         this.addEventListeners();
+
         // if (this.workouts == []) {
         //     this.add("ex. Bench Press", "chest");
         // }
@@ -107,6 +110,19 @@ class WorkoutApp {
     }
 
     addEventListeners() {
+
+        this.$body.addEventListener('click', (event) => {
+            if (event.target.dataset.action == 'save') {
+
+                const rountine = Routine(this.workouts);
+                // save current workout list to an array
+
+                // on load show list of workout lists 
+
+                // on click load up list from storage
+            }
+        });
+
         this.$form.addEventListener('submit', (event) => {
             event.preventDefault();
 
