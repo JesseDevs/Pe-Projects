@@ -52,8 +52,8 @@ class WorkoutApp {
         return this.workouts.find(function (workout) {
             return workout.data.id == id;
         })
-
     }
+
     filterWorkoutByType(type) {
         return this.workouts.filter(function (workout) {
             return workout.data.type == type;
@@ -93,8 +93,8 @@ class WorkoutApp {
         this.types.forEach(type => {
             const newSet = this.filterWorkoutByType(type);
             if (newSet.length) {
-                template += `<list-container '>
-                <h3 class='strict-voice'>${type} </h3>`
+                template += `<list-container>
+                    <h3 class='strict-voice'>${type} </h3> `
                 template += this.renderList(newSet);
                 template += `</list-container>`
             }
@@ -116,13 +116,43 @@ class WorkoutApp {
 
         this.$output.addEventListener('click', (event) => {
             if (event.target.dataset.action == 'remove') {
-                const id = event.target.closest('item-card').dataset.id;
+
+                const id = item.dataset.id;
                 this.remove(id);
             }
 
             if (event.target.dataset.action == 'complete') {
+
                 const id = event.target.closest('item-card').dataset.id;
                 this.complete(id);
+            }
+
+            if (event.target.dataset.action == 'edit') {
+
+                const id = event.target.closest('item-card').dataset.id;
+                let workout = this.getWorkoutById(id);
+
+                const item = event.target.closest('item-card');
+                item.classList.toggle("editMode");
+
+                if (item.classList.contains("editMode")) {
+
+                    var title = item.querySelector("h4");
+                    let oldContent = title.textContent;
+
+                    title.innerHTML = `<input class='edit-input' placeholder='${oldContent}' name='Update' id = 'y' type = "text" autocomplete = "off"> `;
+                } else {
+                    var title = item.querySelector("h4");
+
+                    var editInput = item.querySelector(".edit-input");
+                    var value = editInput.value;
+
+                    workout.data.content = value;
+                    title.innerHTML = `${value}`;
+
+                    this.saveAndUpdate();
+                }
+
             }
         });
     }

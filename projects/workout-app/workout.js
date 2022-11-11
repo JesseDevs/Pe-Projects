@@ -27,7 +27,7 @@ class Workout {
         return `
         <li>
             <item-card data-id='${id}' class="${this.isComplete} ${type}">
-                <h4 class='attention-voice'> ${content.toLowerCase()}</h4>
+                    <h4 class='attention-voice'> ${content.toLowerCase()}</h4>
 
                 <button data-action="remove" class="remove-btn">
                 <span class="inner">
@@ -37,6 +37,7 @@ class Workout {
     
                 <action-block>
                     <button class='complete-btn' data-action="complete">Complete</button>
+                    <button class='edit-btn' data-action="edit">Edit</button>
                 </action-block>
     
             </item-card>
