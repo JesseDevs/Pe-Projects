@@ -44,6 +44,10 @@ goal-block {
     .action-link:first-of-type {
         display: none;
     }
+
+    .action-link {
+        max-width: none;
+    }
 }
 
 @media (min-width: 700px) {
