@@ -1,0 +1,48 @@
+output-block.home {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px;
+
+    text-content {
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        position: relative;
+        word-spacing: 5px;
+
+        span {
+            background-color: var(--color);
+            font-family: 'Londrina Outline', cursive;
+            padding: 10px;
+            display: inline-block;
+            letter-spacing: .07em;
+            animation: shift-background 2s forwards;
+            transition: background-position 1s ease;
+
+            background: linear-gradient(to left, transparent 50%, var(--color) 50%) right;
+            background-size: 300% 100%;
+        }
+
+    }
+
+    h6 {
+        font-style: italic;
+        animation: low-up 1s;
+        color: var(--accent-off);
+        font-family: 'Abril Fatface', cursive;
+        transition: font-family .2s ease;
+        letter-spacing: .06em;
+    }
+
+    action-block {
+        button {
+            grid-column: span 2;
+            max-width: 50%;
+        }
+    }
+}
