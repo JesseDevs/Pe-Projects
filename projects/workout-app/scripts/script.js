@@ -65,6 +65,7 @@ const listTemplate = `
     </action-block>
 
 </form>
+<output>
 
 </output>
 `;
