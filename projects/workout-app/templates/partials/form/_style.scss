@@ -13,7 +13,7 @@ form {
 
 
     input {
-        padding: .5em 1em;
+        padding: .5em .5em;
 
         background-color: var(--page);
         border: 2px solid var(--black);
@@ -42,7 +42,7 @@ form {
 
         background-color: var(--page);
         flex: 1;
-        padding: 0 1em;
+        padding: 0 .5em;
         cursor: pointer;
     }
 

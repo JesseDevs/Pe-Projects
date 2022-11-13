@@ -13,7 +13,7 @@ class WorkoutApp {
         this.$form = document.querySelector('form');
         this.$input = this.$form.querySelector('input');
         this.$output = document.querySelector('output');
-        this.$options = document.querySelector("#workoutType");
+        this.option = document.querySelector("#workoutType");
 
         this.setupApp();
         this.addEventListeners();
@@ -126,7 +126,7 @@ class WorkoutApp {
         this.$form.addEventListener('submit', (event) => {
             event.preventDefault();
 
-            var value = this.$options.options[this.$options.selectedIndex].value;
+            var value = this.option.options[this.option.selectedIndex].value;
 
             this.add(this.$input.value, value);
             this.$input.value = "";

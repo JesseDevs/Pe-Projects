@@ -1,6 +1,6 @@
 import WorkoutApp from "./workoutapp.js";
 
-const outlet = document.querySelector(".main-container");
+const view = document.querySelector(".main-container");
 
 function buildDayDisplay() {
     var secondTime = 1000;
@@ -22,7 +22,7 @@ function buildDayDisplay() {
 buildDayDisplay();
 
 function renderPage(template) {
-    outlet.innerHTML = template;
+    view.innerHTML = template;
 }
 
 const homeTemplate = `
