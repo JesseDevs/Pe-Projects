@@ -1,0 +1,21 @@
+{
+    "id": "menu",
+    "actions": [
+        {
+            "link": "#",
+            "link-name": "Home"
+        },
+        {
+            "link": "#",
+            "link-name": "Login"
+        },
+        {
+            "link": "#",
+            "link-name": "About"
+        }
+    ],
+    "button": {
+        "link": "#",
+        "link-name": "Get a Plant"
+    }
+}

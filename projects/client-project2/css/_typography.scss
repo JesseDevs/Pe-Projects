@@ -1,46 +1,19 @@
-.roar-voice {
-	font-size: clamp(2.8rem, 10vw, 8rem);
+/* Should we pull in @fonts here? */
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.yell-voice {
-	font-size: clamp(2.4rem, 7vw, 3.8rem);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
-}
-
-.loud-voice {
-	font-size: clamp(2.2rem, 7vw, 3.5rem);
-}
-
-.attention-voice {
-	font-size: clamp(1.8rem, 7vw, 2.2rem);
-
-}
-
-.chant-voice {
-	font-size: clamp(1.5rem, 4vw, 2rem);
-}
-
-.strict-voice {
-	font-size: clamp(1.2rem, 3.5vw, 1.6rem);
-}
-
-.calm-voice,
-p,
-li,
-a {
-
-	font-size: clamp(1rem, 2vw, 1.1rem);
-	line-height: 1.4;
-}
-
-small,
-.small-voice {
-	font-size: clamp(0.9rem, 1.5vw, 1rem);
-}
-
-.tiny-voice {
-	font-size: clamp(0.8rem, 1.5vw, 14px);
+:root {
+	--step--2: clamp(0.65rem, calc(0.58rem + 0.35vw), 0.80rem);
+	--step--1: clamp(0.78rem, calc(0.68rem + 0.51vw), 1.00rem);
+	--step-0: clamp(0.94rem, calc(0.79rem + 0.74vw), 1.25rem);
+	--step-1: clamp(1.13rem, calc(0.92rem + 1.03vw), 1.56rem);
+	--step-2: clamp(1.35rem, calc(1.07rem + 1.42vw), 1.95rem);
+	--step-3: clamp(1.62rem, calc(1.23rem + 1.93vw), 2.44rem);
+	--step-4: clamp(1.94rem, calc(1.42rem + 2.61vw), 3.05rem);
+	--step-5: clamp(2.33rem, calc(1.63rem + 3.49vw), 3.82rem);
+	--step-6: clamp(2.80rem, calc(1.87rem + 4.2vw), 4.3rem);
 }
 
 :is(.calm-voice, p, li) em {
@@ -51,11 +24,54 @@ small,
 	font-weight: 700;
 }
 
-.strong {
-	font-weight: 800;
+strong {
+	font-weight: bold;
 }
 
+em {
+	font-style: italic;
+}
 
+/* typography */
+
+.roar-voice {
+	font-size: var(--step-6);
+}
+
+.yell-voice {
+	font-size: var(--step-5);
+}
+
+.loud-voice {
+	font-size: var(--step-4);
+}
+
+.strict-voice {
+	font-size: var(--step-3);
+}
+
+.another-voice {
+	font-size: var(--step-2);
+}
+
+.attention-voice {
+	font-size: var(--step-1);
+}
+
+.calm-voice,
+p,
+li {
+	font-size: var(--step-0);
+	line-height: 1.4;
+}
+
+.small-voice {
+	font-size: var(--step--1);
+}
+
+.tiny-voice {
+	font-size: var(--step--2);
+}
 
 /* these would be scoped to section or to an article element */
 /* this is just a loose setting for now */

@@ -4471,6 +4471,21 @@
       "oAP" : "\/projects\/client-project\/index.html",
       "oF" : 0
     },
+    "\/projects\/client-project2\/css\/_components.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/client-project2\/css\/_components.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/projects\/client-project2\/css\/_modules.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -4573,6 +4588,14 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/projects\/client-project2\/data\/menu.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/client-project2\/data\/menu-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/projects\/client-project2\/data\/pages\/404.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -4621,6 +4644,43 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/client-project2\/images\/landing-pot.jpeg" : {
+      "ft" : 16384,
+      "iS" : 235988,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/client-project2\/images\/landing-pot.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/client-project2\/images\/lone-flower.jpg" : {
+      "ft" : 16384,
+      "iS" : 55089,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/client-project2\/images\/lone-flower.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/projects\/client-project2\/images\/long-plant.webp" : {
+      "ft" : 8388608,
+      "iS" : 177430,
+      "oA" : 0,
+      "oAP" : "\/projects\/client-project2\/images\/long-plant.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/projects\/client-project2\/images\/wolf.png" : {
@@ -4679,12 +4739,27 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/projects\/client-project2\/templates\/modules\/header\/template.php" : {
+    "\/projects\/client-project2\/templates\/modules\/landing\/_style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/client-project2\/templates\/modules\/landing\/_style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/client-project2\/templates\/modules\/landing\/template.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/projects\/client-project2\/templates\/modules\/header\/template.php",
+      "oAP" : "\/projects\/client-project2\/templates\/modules\/landing\/template.php",
       "oF" : 0
     },
     "\/projects\/client-project2\/templates\/modules\/site-footer\/_style.scss" : {
