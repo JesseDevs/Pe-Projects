@@ -1,6 +1,7 @@
 output {
     display: grid;
     gap: 20px;
+    padding-bottom: 6vh;
 }
 
 action-block {
@@ -87,8 +88,7 @@ list-container {
 @media(min-width:950px) {
     output {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 20px;
     }
 
@@ -99,9 +99,9 @@ list-container {
         ul {
 
             display: flex;
-            flex-direction: row;
+
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
     }
 }

@@ -12,8 +12,6 @@
                         <div class="face back"></div>
                     </div>
                 </div>
-
-
             </li>
             <li>
                 <a class='logo-link' href="?page=home">

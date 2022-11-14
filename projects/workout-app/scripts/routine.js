@@ -9,7 +9,12 @@ var uniqueId = (() => {
 class Routine {
     constructor(list) {
 
-
+        this.data = {
+            id: list.id || uniqueId(),
+            content: [list],
+            value: 0,
+            dateCreated: list.dateCreated || new Date()
+        }
     }
 
 };

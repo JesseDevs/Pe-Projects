@@ -38,6 +38,10 @@ const homeTemplate = `
         
     </action-block>
 </output-block>
+
+<output id='routine-display'>
+
+</output>
 `;
 
 const listTemplate = `

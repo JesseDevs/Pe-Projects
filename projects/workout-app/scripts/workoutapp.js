@@ -6,6 +6,7 @@ class WorkoutApp {
     constructor(name) {
 
         this.name = name;
+        this.routines = [];
         this.workouts = [];
         this.types = ["chest", "back", "legs", "shoulders", "cardio", "core"];
 
@@ -13,6 +14,7 @@ class WorkoutApp {
         this.$form = document.querySelector('form');
         this.$input = this.$form.querySelector('input');
         this.$output = document.querySelector('output');
+        this.$routineBlock = document.querySelector('#routine-display');
         this.option = document.querySelector("#workoutType");
 
         this.setupApp();
@@ -92,8 +94,7 @@ class WorkoutApp {
     }
 
     renderLists() {
-        var template = `
-        `;
+        var template = ``;
 
         this.types.forEach(type => {
             const newSet = this.filterWorkoutByType(type);
@@ -109,13 +110,44 @@ class WorkoutApp {
         this.$output.innerHTML = template;
     }
 
+    renderRoutines(routines, index) {
+        var template = `<li>`;
+
+        routines.forEach(routine => {
+            template += `
+        
+            <button class='route-link' data-route="load-routine">Routine ${index}</button>
+            `;
+        });
+
+        template += `</li>`;
+        return template;
+    }
+
+    renderRoutineDisplay() {
+        var template = `<div>
+                        <ul>
+        `;
+
+        template += this.renderRoutines(this.routines);
+        template += `</ul>
+        </div>
+        `;
+
+
+        this.$routineBlock.innerHTML = template;
+    }
+
     addEventListeners() {
 
         this.$body.addEventListener('click', (event) => {
             if (event.target.dataset.action == 'save') {
 
-                const rountine = Routine(this.workouts);
-                // save current workout list to an array
+                const routine = new Routine(this.workouts);
+
+                this.routines = [...this.routines, routine];
+
+                this.renderRoutineDisplay();
 
                 // on load show list of workout lists 
 
@@ -164,6 +196,9 @@ class WorkoutApp {
 
                     var editInput = item.querySelector(".edit-input");
                     var value = editInput.value;
+                    if (value == "") {
+                        value = "-"
+                    }
 
                     workout.data.content = value;
                     title.innerHTML = `${value}`;

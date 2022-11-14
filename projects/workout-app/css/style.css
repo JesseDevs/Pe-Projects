@@ -387,7 +387,7 @@ form input:focus {
   outline: 3px solid var(--color);
 }
 form input {
-  padding: 0.5em 0.5em;
+  padding: 0.3em 0.5em;
   background-color: var(--page);
   border: 2px solid var(--black);
   outline: 3px solid transparent;
@@ -408,7 +408,7 @@ form select {
   border: none;
   background-color: var(--page);
   flex: 1;
-  padding: 0 0.5em;
+  padding: 0.3em 0.3em;
   cursor: pointer;
 }
 form select::-ms-expand {
@@ -417,7 +417,6 @@ form select::-ms-expand {
 form .select-container {
   position: relative;
   display: flex;
-  height: 3em;
   border: 2px solid var(--black);
   border-radius: 10px;
   overflow: hidden;
@@ -447,12 +446,13 @@ field {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 output {
   display: grid;
   gap: 20px;
+  padding-bottom: 6vh;
 }
 
 action-block {
@@ -521,8 +521,7 @@ list-container h3 {
 @media (min-width: 950px) {
   output {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
   }
   list-container {
@@ -530,9 +529,8 @@ list-container h3 {
   }
   list-container ul {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 item-card {
@@ -563,7 +561,8 @@ item-card select:focus {
   border-color: var(--color);
 }
 item-card input {
-  padding: 0.5em 1em;
+  padding: 0.3em 0.5em;
+  max-height: 34.5px;
   outline: none;
   background-color: var(--page);
   border: 2px solid var(--black);
@@ -589,6 +588,9 @@ output-block.home {
 }
 output-block.home text-content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 output-block.home h2 {
   text-transform: uppercase;
@@ -619,6 +621,11 @@ output-block.home action-block button {
   max-width: 50%;
 }
 
+@media (min-width: 600px) {
+  output-block.home action-block {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .action-link {
   background-color: var(--white);
   border: 2px solid var(--black);

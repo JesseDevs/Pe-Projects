@@ -30,7 +30,8 @@ item-card {
     }
 
     input {
-        padding: .5em 1em;
+        padding: .3em .5em;
+        max-height: 34.5px;
         outline: none;
 
         background-color: var(--page);
