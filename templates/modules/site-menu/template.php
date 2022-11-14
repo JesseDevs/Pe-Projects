@@ -2,7 +2,18 @@
     <inner-column>
         <ul class='logo-container'>
             <li class="svg-box">
-                <?php include("templates/svg.php"); ?>
+                <div class="container">
+                    <div class="cube">
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                        <div class="face left"></div>
+                        <div class="face right"></div>
+                        <div class="face front"></div>
+                        <div class="face back"></div>
+                    </div>
+                </div>
+
+
             </li>
             <li>
                 <a class='logo-link' href="?page=home">
@@ -12,8 +23,6 @@
             </li>
 
         </ul>
-
-
 
         <nav class='main-menu'>
             <ul>
