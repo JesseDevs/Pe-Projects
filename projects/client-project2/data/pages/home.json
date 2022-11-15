@@ -14,11 +14,13 @@
             "actions": [
                 {
                     "link": "#",
-                    "link-name": "Buy Now"
+                    "link-name": "Buy Now",
+                    "icon": "arrow"
                 },
                 {
                     "link": "#",
-                    "link-name": "Taking Care"
+                    "link-name": "Taking Care",
+                    "icon": "therm"
                 }
             ]
         }

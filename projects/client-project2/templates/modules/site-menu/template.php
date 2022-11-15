@@ -18,7 +18,8 @@ $menuData = json_decode($menu, true);
         </nav>
 
         <?php $menuButton = $menuData['button']; ?>
-        <a class='action-link' href="<?= $menuButton["link"] ?>" target="_blank" rel=""><span><?= $menuButton["link-name"] ?></span></a>
+        <a class='header-button' href="<?= $menuButton["link"] ?>" target="_blank" rel="">
+            <span><?= $menuButton["link-name"] ?></span></a>
 
 
     </inner-column>

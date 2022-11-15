@@ -1,16 +1,18 @@
 landing-block {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 40px;
+    gap: 20px;
 
     @media(min-width:750px) {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        column-gap: 50px;
+        row-gap: 0px;
 
         picture {
             grid-row: span 2;
+            max-width: 450px;
         }
 
         action-block {
@@ -19,7 +21,7 @@ landing-block {
     }
 
     h1 {
-        line-height: 1.2;
+        line-height: 1.1;
         font-weight: 900;
         font-family: 'Nunito', sans-serif;
     }
@@ -42,7 +44,7 @@ landing-block {
 
         &::after {
             border-radius: 10px;
-            width: 20%;
+            width: 32%;
             height: var(--thick)
         }
 
@@ -67,7 +69,7 @@ landing-block {
 
         &::after {
             border-radius: 10px;
-            width: 20%;
+            width: 32%;
             height: var(--thick)
         }
 
@@ -78,4 +80,25 @@ landing-block {
         }
     }
 
+    action-block {
+        display: flex;
+        gap: 12px;
+
+        .action-link {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .svg-container {
+
+        svg {
+            max-width: 30px;
+            max-height: 30px;
+            fill: var(--white);
+
+        }
+    }
 }

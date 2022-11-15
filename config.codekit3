@@ -4620,6 +4620,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/projects\/client-project2\/images\/arrow.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/client-project2\/images\/arrow.php",
+      "oF" : 0
+    },
     "\/projects\/client-project2\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
       "iS" : 31346,
@@ -4682,6 +4690,14 @@
       "opt" : 0,
       "ou" : "lpckwebp-default",
       "rq" : 75
+    },
+    "\/projects\/client-project2\/images\/therm.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/client-project2\/images\/therm.php",
+      "oF" : 0
     },
     "\/projects\/client-project2\/images\/wolf.png" : {
       "ft" : 32768,

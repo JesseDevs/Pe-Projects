@@ -1,4 +1,4 @@
-.action-link {
+.header-button {
     background-color: var(--color);
     border: none;
     border-radius: 12px;
@@ -17,4 +17,19 @@
         background-color: var(--off-color);
         color: var(--black);
     }
+}
+
+.action-link {
+    background-color: var(--color);
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    padding: .7em 1.3em;
+    text-align: center;
+    text-decoration-thickness: auto;
+
 }
