@@ -108,10 +108,10 @@ class WorkoutApp {
     }
 
     renderRoutines(routines, index) {
+        console.log(routines)
 
-        if (!routines) {
-            var template = `<div>
-                <ul>`;
+        if (routines) {
+            var template = `<ul>`;
 
             routines.forEach(routine => {
                 console.log(routine);
@@ -122,8 +122,7 @@ class WorkoutApp {
             `;
             });
 
-            template += `</ul>
-                </div>`;
+            template += `</ul>`;
 
             this.routineBlock.innerHTML = template;
         }
@@ -134,15 +133,11 @@ class WorkoutApp {
         this.$body.addEventListener('click', (event) => {
             if (event.target.dataset.action == 'save') {
 
-                const routine = this.workouts;
-                this.routines = [...this.routines, routine];
+                this.routines = [...this.workouts];
 
-                this.renderRoutines(this.routines);
+                let routine = new Routine(this.routines);
 
-
-                // on load show list of workout lists 
-
-                // on click load up list from storage
+                localStorage.setItem("Routine", JSON.stringify(this.routines, null, 2));
             }
         });
 
@@ -171,14 +166,11 @@ class WorkoutApp {
             if (event.target.dataset.action == 'edit') {
 
                 const id = event.target.closest('item-card').dataset.id;
-
                 let workout = this.getWorkoutById(id);
-
                 const item = event.target.closest('item-card');
                 item.classList.toggle("editMode");
 
                 let button = item.querySelector(".edit-btn");
-
                 var title = item.querySelector("h4");
 
 

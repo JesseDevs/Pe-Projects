@@ -82,7 +82,7 @@ html {
   --light-accent: rgba(226, 137, 137, 0.3);
   --off-support: rgba(133, 227, 225, 0.3);
   --ink: rgb(23 23 23);
-  --page: #f4f3f0;
+  --page: rgb(247, 242, 242);
 }
 
 @keyframes squeeze {
@@ -345,7 +345,7 @@ header h1 span {
   pointer-events: none;
 }
 header h1 span:nth-of-type(1) {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-left: 1rem;
   margin-left: -1rem;
   background-color: var(--light-color);
@@ -363,10 +363,11 @@ header h1 span:nth-of-type(2) {
 }
 header dumbell {
   display: block;
-  width: 80px;
+  width: 70px;
   position: absolute;
   top: 5%;
   right: 2%;
+  pointer-events: none;
 }
 header dumbell svg {
   width: 100%;
@@ -598,7 +599,6 @@ output-block.home h2 {
   word-spacing: 5px;
 }
 output-block.home h2 span {
-  background-color: var(--color);
   font-family: "Londrina Outline", cursive;
   padding: 10px;
   display: inline-block;
@@ -626,6 +626,54 @@ output-block.home action-block button {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+output-block.graph {
+  row-gap: 5vh;
+}
+output-block.graph h3 {
+  text-transform: capitalize;
+  border-bottom: 0.5px solid var(--light-accent);
+  max-width: fit-content;
+}
+output-block.graph output.contains-graph {
+  display: grid;
+  grid-template-columns: 15% auto;
+  gap: 0;
+  max-width: 500px;
+}
+output-block.graph output.contains-graph ul.graphValues {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-right: 0.5px solid var(--black);
+  padding-top: 5vh;
+  background-color: var(--light-color);
+}
+output-block.graph output.contains-graph ul.graphValues li {
+  position: relative;
+}
+output-block.graph output.contains-graph ul.graphValues li:last-of-type {
+  border-bottom: 0.5px solid var(--black);
+}
+output-block.graph output.contains-graph ul.graphValues p {
+  text-align: center;
+  line-height: 1;
+}
+output-block.graph output.contains-graph ul.graphValues p:after {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+output-block.graph output.contains-graph ul#graphLabels {
+  grid-column: 2;
+}
+output-block.graph output.contains-graph div {
+  padding-top: 5vh;
+  border-bottom: 0.5px solid black;
+  position: relative;
+}
+
 .action-link {
   background-color: var(--white);
   border: 2px solid var(--black);
@@ -690,6 +738,7 @@ output-block.home action-block button {
 }
 
 .save-btn {
+  display: none;
   text-decoration: none;
   background: transparent;
   box-shadow: none;

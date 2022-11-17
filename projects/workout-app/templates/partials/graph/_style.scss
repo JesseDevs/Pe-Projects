@@ -1,0 +1,61 @@
+output-block.graph {
+
+    row-gap: 5vh;
+
+    h3 {
+        text-transform: capitalize;
+        border-bottom: .5px solid var(--light-accent);
+        max-width: fit-content;
+    }
+
+    output.contains-graph {
+
+        display: grid;
+        grid-template-columns: 15% auto;
+        gap: 0;
+        max-width: 500px;
+
+        ul.graphValues {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            border-right: .5px solid var(--black);
+            padding-top: 5vh;
+
+            background-color: var(--light-color);
+
+            li {
+                position: relative;
+            }
+
+            li:last-of-type {
+                border-bottom: .5px solid var(--black);
+            }
+
+            p {
+                text-align: center;
+                line-height: 1;
+
+                &:after {
+                    content: "-";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(50%, -50%);
+
+                }
+            }
+        }
+
+        ul#graphLabels {
+            grid-column: 2;
+        }
+
+        div {
+            padding-top: 5vh;
+            border-bottom: .5px solid black;
+            position: relative;
+
+        }
+    }
+}

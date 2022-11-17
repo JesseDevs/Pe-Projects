@@ -17,9 +17,8 @@ function buildDayDisplay() {
 
     var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
     let day = days[date.getDay()];
+    return day;
 }
-
-buildDayDisplay();
 
 function renderPage(template) {
     view.innerHTML = template;
@@ -80,10 +79,44 @@ const routineTemplate = `
 </output-block>
 `;
 
+let day = buildDayDisplay();
+
+const types = ["chest", "back", "legs", "shoulders", "cardio", "core"];
+function graphLabels() {
+    const labels = document.querySelector("#graphLabels");
+
+    for (let x = 0; x < types.length; x++) {
+        const element = types[x];
+
+        var li = document.createElement('li');
+        li.innerHTML = `<p>${types[x]}</p>`;
+        labels.appendChild(li)
+    }
+
+}
+
 
 const graphTemplate = `
 <output-block class='graph'>
-    <output id='graph-display'>
+
+    <h3 class='loud-voice'> ${day}</h3>
+    <output id='graph-display' class= "contains-graph">
+
+
+        <ul class="graphValues">
+            <li><p> 12</p></li>
+            <li><p> 10</p></li>
+            <li><p> 8</p></li>
+            <li><p> 6</p></li>
+            <li><p> 4</p></li>
+            <li><p> 2</p></li>
+            <li><p> 0</p></li>
+        </ul>
+
+        <div></div>
+        <ul id="graphLabels">
+     
+        </ul>
 
     </output>
 </output-block>
@@ -99,6 +132,7 @@ const routes = {
 
 renderPage(homeTemplate);
 
+// save routine to local storage and load when it access the routines page.
 //workout app has to be called after the list template gets loaded in.
 //maybe window.listen for dom load list template or something when more templates.
 
@@ -110,20 +144,19 @@ window.addEventListener("click", function (event) {
 
         event.preventDefault();
 
+        if (destination !== "home") {
+            document.querySelector("#save").style.display = "block";
+        }
+
         if (destination == "list") {
             const workoutApp = new WorkoutApp("Workouts");
             // localStorage.setItem("template", JSON.stringify(routes.list, null, 2));
         }
 
+        if (destination == "graph") {
+            graphLabels();
+        }
+
     }
 });
 
-
-
-// load template on page load so it doesnt start at home if reloaded on list page
-
-// window.addEventListener('DOMContentLoaded', (event) => {
-
-//     const loadedTemplate = JSON.parse(localStorage.getItem("template")) || homeTemplate;
-//     renderPage(loadedTemplate);
-// });

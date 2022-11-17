@@ -4,11 +4,13 @@ class Routine {
 
         this.data = {
             id: list.id || new Date().getTime(),
-            content: list.content,
+            arr: list,
             value: 0,
             dateCreated: list.dateCreated || new Date()
         }
     }
+
+
 
 };
 
