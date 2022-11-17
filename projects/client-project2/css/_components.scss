@@ -6,9 +6,8 @@
     cursor: pointer;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
     line-height: 1;
-    padding: .7em .9em;
+    padding: .7em 1.3em;
     text-align: center;
     text-decoration-thickness: auto;
 
@@ -28,8 +27,17 @@
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     line-height: 1;
-    padding: .7em 1.3em;
+    padding: .9em 1.3em;
     text-align: center;
     text-decoration-thickness: auto;
 
+    &:hover {
+        transition: background-color, color .3s ease-in-out;
+        background-color: var(--off-color);
+        color: var(--black);
+
+        svg {
+            fill: black;
+        }
+    }
 }

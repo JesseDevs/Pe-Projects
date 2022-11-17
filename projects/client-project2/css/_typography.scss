@@ -60,13 +60,13 @@ em {
 
 .calm-voice,
 p,
-li {
+li,
+a {
 	font-size: var(--step-0);
 	line-height: 1.4;
 }
 
-.small-voice,
-a {
+.small-voice {
 	font-size: var(--step--1);
 }
 

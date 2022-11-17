@@ -86,7 +86,7 @@ landing-block {
 
         .action-link {
             display: flex;
-            gap: 10px;
+            gap: 5px;
             align-items: center;
             justify-content: center;
         }
@@ -95,8 +95,8 @@ landing-block {
     .svg-container {
 
         svg {
-            max-width: 30px;
-            max-height: 30px;
+            max-width: 20px;
+            max-height: 20px;
             fill: var(--white);
 
         }
