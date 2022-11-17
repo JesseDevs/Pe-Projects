@@ -108,22 +108,25 @@ class WorkoutApp {
     }
 
     renderRoutines(routines, index) {
-        var template = `<div>
-        <ul>`;
 
-        routines.forEach(routine => {
-            console.log(routine);
-            template += `
-        <li>
+        if (!routines) {
+            var template = `<div>
+                <ul>`;
+
+            routines.forEach(routine => {
+                console.log(routine);
+                template += `
+                <li>
             <button class='route-link' data-route="load-routine">Routine ${index}</button>
-        </li>    
+                </li>    
             `;
-        });
+            });
 
-        template += `</ul>
-        </div>`;
+            template += `</ul>
+                </div>`;
 
-        this.routineBlock.innerHTML = template;
+            this.routineBlock.innerHTML = template;
+        }
     }
 
     addEventListeners() {
@@ -168,16 +171,21 @@ class WorkoutApp {
             if (event.target.dataset.action == 'edit') {
 
                 const id = event.target.closest('item-card').dataset.id;
+
                 let workout = this.getWorkoutById(id);
 
                 const item = event.target.closest('item-card');
                 item.classList.toggle("editMode");
 
+                let button = item.querySelector(".edit-btn");
+
                 var title = item.querySelector("h4");
+
 
                 if (item.classList.contains("editMode")) {
 
                     let oldContent = title.textContent;
+                    button.textContent = "Update";
 
                     title.innerHTML = `<input class='edit-input attention-voice' placeholder='${oldContent}' name='Update' id = 'y' type = "text" autocomplete = "off"> `;
                 } else {

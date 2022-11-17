@@ -1,16 +1,9 @@
-var uniqueId = (() => {
-    var counter = 0
-
-    return function () {
-        return counter++
-    }
-})()
 
 class Routine {
     constructor(list) {
 
         this.data = {
-            id: list.id || uniqueId(),
+            id: list.id || new Date().getTime(),
             content: list.content,
             value: 0,
             dateCreated: list.dateCreated || new Date()
