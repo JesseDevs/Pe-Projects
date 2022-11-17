@@ -701,9 +701,10 @@ output-block.home action-block button {
   color: var(--white);
   width: 70px;
   height: 70px;
+  border: 5px solid red;
   border-radius: 50px;
-  position: absolute;
-  bottom: 5%;
+  position: fixed;
+  bottom: 3%;
   right: 5%;
 }
 
@@ -772,10 +773,10 @@ output-block.home action-block button {
   opacity: 1;
 }
 
-.main-container {
+output-block {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  row-gap: 6vh;
+  row-gap: 4vh;
   position: relative;
 }
 

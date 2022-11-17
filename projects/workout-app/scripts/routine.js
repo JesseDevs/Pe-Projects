@@ -11,7 +11,7 @@ class Routine {
 
         this.data = {
             id: list.id || uniqueId(),
-            content: [list],
+            content: list.content,
             value: 0,
             dateCreated: list.dateCreated || new Date()
         }

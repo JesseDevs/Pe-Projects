@@ -14,21 +14,18 @@ class WorkoutApp {
         this.$form = document.querySelector('form');
         this.$input = this.$form.querySelector('input');
         this.$output = document.querySelector('output');
-        this.$routineBlock = document.querySelector('#routine-display');
+
+        this.routineBlock = document.querySelector('#routine-display');
         this.option = document.querySelector("#workoutType");
 
         this.setupApp();
         this.addEventListeners();
-
-        // if (this.workouts == []) {
-        //     this.add("ex. Bench Press", "chest");
-        // }
-
     }
 
     setupApp() {
         const data = JSON.parse(localStorage.getItem(this.name)) || [];
         data.forEach((workoutData) => {
+
             this.workouts = [...this.workouts, new Workout(workoutData.data)];
         });
 
@@ -111,31 +108,22 @@ class WorkoutApp {
     }
 
     renderRoutines(routines, index) {
-        var template = `<li>`;
+        var template = `<div>
+        <ul>`;
 
         routines.forEach(routine => {
+            console.log(routine);
             template += `
-        
+        <li>
             <button class='route-link' data-route="load-routine">Routine ${index}</button>
+        </li>    
             `;
         });
 
-        template += `</li>`;
-        return template;
-    }
-
-    renderRoutineDisplay() {
-        var template = `<div>
-                        <ul>
-        `;
-
-        template += this.renderRoutines(this.routines);
         template += `</ul>
-        </div>
-        `;
+        </div>`;
 
-
-        this.$routineBlock.innerHTML = template;
+        this.routineBlock.innerHTML = template;
     }
 
     addEventListeners() {
@@ -143,11 +131,11 @@ class WorkoutApp {
         this.$body.addEventListener('click', (event) => {
             if (event.target.dataset.action == 'save') {
 
-                const routine = new Routine(this.workouts);
-
+                const routine = this.workouts;
                 this.routines = [...this.routines, routine];
 
-                this.renderRoutineDisplay();
+                this.renderRoutines(this.routines);
+
 
                 // on load show list of workout lists 
 

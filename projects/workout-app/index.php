@@ -26,7 +26,7 @@
             </inner-column>
         </section>
     </main>
-    <button class='save-btn' data-action="save" data-route="home">SAVE +</button>
+    <button class='save-btn' data-action="save" data-route="routines">SAVE +</button>
 
     <script src="scripts/script-min.js" type='module'></script>
 </body>

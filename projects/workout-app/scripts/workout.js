@@ -1,16 +1,15 @@
-var uniqueId = (() => {
-    var counter = 0
 
-    return function () {
-        return counter++
-    }
-})()
+
+// if workouts List is [] start id at 0
+// if not continue from last position
+// HOW??
+
 
 class Workout {
     constructor(record) {
 
         this.data = {
-            id: record.id || uniqueId(),
+            id: record.id || new Date().getTime(),
             content: record.content,
             type: record.type,
             complete: false,
