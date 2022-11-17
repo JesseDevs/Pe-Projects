@@ -9,7 +9,7 @@ class Workout {
     constructor(record) {
 
         this.data = {
-            id: record.id || new Date().getTime(),
+            id: record.id || new Date().getTime() + `${record.type}`,
             content: record.content,
             type: record.type,
             complete: false,
