@@ -34,6 +34,7 @@ const homeTemplate = `
     <action-block>
 
         <button class='route-link' data-route="list">Build</button>
+        <button class='route-link' data-route="graph">graph</button>
         
     </action-block>
 </output-block>
@@ -60,14 +61,18 @@ const listTemplate = `
         </field>
     
         <action-block>
-    
             <button type="submit" class='route-link'>Add</button>
         </action-block>
     
     </form>
+
     <output>
     
     </output>
+
+    <div id="save-routine-modal">
+        <input id='z' class='attention-voice' type="name" autocomplete="off" placeholder="ex. Bench Press" required>
+    </div>
 </output-block>
 `;
 
@@ -122,6 +127,9 @@ const graphTemplate = `
 </output-block>
 `;
 
+function graphAmounts() {
+
+}
 
 const routes = {
     home: homeTemplate,

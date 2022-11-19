@@ -1,0 +1,103 @@
+@import '_reset';
+@import '_variables';
+@import '_setup';
+@import '_typography';
+@import '_modules';
+@import '_components';
+
+
+main {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+}
+
+section:nth-of-type(odd) inner-column {
+    border: 2px solid darkblue;
+}
+
+section:nth-of-type(even) inner-column {
+    border: 2px solid darkred;
+}
+
+output {
+    display: block;
+    padding: 20px;
+    background-color: black;
+    color: lime;
+    font-family: monospace;
+    margin-top: 40px;
+    transition: color .5s ease-in-out;
+}
+
+.nay output {
+    color: red;
+}
+
+output:empty {
+    display: none;
+}
+
+my-cool-thing {
+    display: block;
+    max-width: 450px;
+}
+
+#one {
+    border: 1px solid red;
+}
+
+#two {
+    border: 1px solid blue;
+}
+
+#three {
+    border: 1px solid green;
+}
+
+form {
+    display: grid;
+    position: relative;
+    gap: 20px;
+    max-width: 450px;
+
+    h3 {
+        border-bottom: 3px solid;
+        border-image: linear-gradient(white, black) 30;
+
+    }
+
+    input:focus {
+        border: 2px solid var(--black);
+        outline: 3px solid var(--color);
+    }
+
+    input {
+        padding: .5em .8em;
+        font: inherit;
+
+        background-color: var(--page);
+        border: 2px solid var(--black);
+        outline: 3px solid transparent;
+
+        border-radius: 10px;
+        appearance: none;
+    }
+
+    input::placeholder {
+        font-style: italic;
+    }
+
+    label {
+        grid-column: span 2;
+    }
+
+}
+
+field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 15px;
+}

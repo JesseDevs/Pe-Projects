@@ -1,0 +1,562 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  --line: 1px;
+  --thin: 3px;
+  --thick: 5px;
+  --Xthick: 9px;
+  --white: #fff;
+  --black: rgb(10 15 15);
+  --fade: rgb(10 10 10 / .6);
+  --lightFade: rgb(220 220 220 / .3);
+  --gray: #999999;
+  --dark-gray: #4c4c4c;
+  --dark: #212121;
+  --light: #cccccc;
+}
+
+html {
+  --color: rgba(206, 198, 237);
+  --accent-off: rgba(137, 173, 226);
+  --accent: rgb(226, 137, 137);
+  --support: rgba(133, 227, 225);
+  --light-color: rgba(206, 198, 237, 0.3);
+  --light-accent-off: rgba(137, 173, 226, 0.3);
+  --light-accent: rgba(226, 137, 137, 0.3);
+  --off-support: rgba(133, 227, 225, 0.3);
+  --ink: rgb(23 23 23);
+  --page: rgb(247, 242, 242);
+}
+
+@keyframes squeeze {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.4, 1.3);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes text-roll {
+  0%, 10%, 100% {
+    width: 0%;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
+@keyframes shift-background {
+  from {
+    background-position: right;
+    color: var(--color);
+  }
+  to {
+    background-position: left;
+    color: var(--black);
+  }
+}
+@keyframes low-up {
+  0% {
+    transform: translateY(100px) scale(5);
+    opacity: 0;
+    color: white;
+  }
+  50% {
+    opacity: 0;
+    color: rgba(0, 0, 0, 0.561);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    color: var(--accent-off);
+  }
+}
+@keyframes drop-in {
+  0% {
+    transform: translateY(-40px) scale(5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(500px) scale(2, 2);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-50px) scale(0.4, 2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0) scale(1, 1);
+    opacity: 1;
+  }
+}
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  background-color: var(--page);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+main {
+  flex-grow: 1;
+}
+
+inner-column {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem 1rem;
+  max-width: 1000px;
+}
+
+article-grid,
+action-block,
+text-content,
+label,
+input,
+field,
+button {
+  display: block;
+  width: 100%;
+}
+
+/* display elements */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.4;
+}
+p a {
+  display: inline-block;
+  text-decoration: underline;
+  color: blue;
+  font-weight: 500;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* images */
+picture {
+  display: block;
+}
+
+picture img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+svg {
+  display: block;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Should we pull in @fonts here? */
+:root {
+  --step--2: clamp(0.65rem, calc(0.58rem + 0.35vw), 0.80rem);
+  --step--1: clamp(0.78rem, calc(0.68rem + 0.51vw), 1.00rem);
+  --step-0: clamp(0.94rem, calc(0.79rem + 0.74vw), 1.25rem);
+  --step-1: clamp(1.13rem, calc(0.92rem + 1.03vw), 1.56rem);
+  --step-2: clamp(1.35rem, calc(1.07rem + 1.42vw), 1.95rem);
+  --step-3: clamp(1.62rem, calc(1.23rem + 1.93vw), 2.44rem);
+  --step-4: clamp(1.94rem, calc(1.42rem + 2.61vw), 3.05rem);
+  --step-5: clamp(2.33rem, calc(1.63rem + 3.49vw), 3.82rem);
+  --step-6: clamp(2.80rem, calc(1.87rem + 4.63vw), 4.77rem);
+}
+
+:is(.calm-voice, p, li) em {
+  font-style: italic;
+}
+
+:is(.calm-voice, p, li) strong {
+  font-weight: 700;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* typography */
+.roar-voice {
+  font-size: var(--step-6);
+}
+
+.yell-voice {
+  font-size: var(--step-5);
+}
+
+.loud-voice {
+  font-size: var(--step-4);
+}
+
+.strict-voice {
+  font-size: var(--step-3);
+}
+
+.another-voice {
+  font-size: var(--step-2);
+}
+
+.attention-voice {
+  font-size: var(--step-1);
+}
+
+.calm-voice,
+p,
+li {
+  font-size: var(--step-0);
+  line-height: 1.4;
+}
+
+.small-voice {
+  font-size: var(--step--1);
+}
+
+.tiny-voice {
+  font-size: var(--step--2);
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+code {
+  font-family: monospace;
+  font-size: 1.1em;
+  color: green;
+}
+
+.action-link {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  color: var(--black);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  text-decoration-thickness: auto;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.action-link:hover {
+  background-color: black;
+  color: var(--white);
+}
+
+.route-link {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: auto;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration-thickness: auto;
+  transition: background-position 0.4s cubic-bezier(0.4, 0, 0.2, 1), height 1ms;
+  user-select: none;
+  touch-action: manipulation;
+  background: linear-gradient(to left, var(--black) 50%, var(--color) 50%) right;
+  background-size: 200% 100%;
+}
+.route-link:hover {
+  color: var(--black);
+  background-position: left;
+}
+
+@media (min-width: 768px) {
+  .route-link {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+.route-link:disabled,
+.route-link[disabled] {
+  pointer-events: none;
+  border: var(--line) solid var(--gray);
+  background-color: var(--dark);
+  color: var(--dark-gray);
+}
+
+.save-btn {
+  display: none;
+  text-decoration: none;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  pointer-events: all;
+  background-color: var(--black);
+  color: var(--white);
+  width: 70px;
+  height: 70px;
+  border: 5px solid red;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+}
+
+.remove-btn {
+  text-decoration: none;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 50px;
+  pointer-events: all;
+}
+.remove-btn span {
+  pointer-events: none;
+}
+.remove-btn .inner {
+  display: block;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remove-btn .inner:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background-color: var(--white);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: ease-out 0.2s all;
+  pointer-events: none;
+}
+.remove-btn .inner:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background-color: var(--white);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: ease-out 0.2s all;
+  pointer-events: none;
+}
+.remove-btn .label {
+  color: var(--white);
+  opacity: 0;
+  transition: linear 0.3s all;
+  pointer-events: none;
+}
+.remove-btn:hover .inner:before, .remove-btn:focus .inner:before {
+  transform: translate(-50%, 0%) rotate(0);
+  top: 16%;
+  background-color: rgba(255, 255, 255, 0.489);
+}
+.remove-btn:hover .inner:after, .remove-btn:focus .inner:after {
+  transform: translate(-50%, 0%) rotate(0);
+  top: 76%;
+  background-color: rgba(255, 255, 255, 0.489);
+}
+.remove-btn:hover .label, .remove-btn:focus .label {
+  opacity: 1;
+}
+
+main {
+  display: grid;
+  gap: 30px;
+  padding: 20px;
+}
+
+section:nth-of-type(odd) inner-column {
+  border: 2px solid darkblue;
+}
+
+section:nth-of-type(even) inner-column {
+  border: 2px solid darkred;
+}
+
+output {
+  display: block;
+  padding: 20px;
+  background-color: black;
+  color: lime;
+  font-family: monospace;
+  margin-top: 40px;
+  transition: color 0.5s ease-in-out;
+}
+
+.nay output {
+  color: red;
+}
+
+output:empty {
+  display: none;
+}
+
+my-cool-thing {
+  display: block;
+  max-width: 450px;
+}
+
+#one {
+  border: 1px solid red;
+}
+
+#two {
+  border: 1px solid blue;
+}
+
+#three {
+  border: 1px solid green;
+}
+
+form {
+  display: grid;
+  position: relative;
+  gap: 20px;
+  max-width: 450px;
+}
+form h3 {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(white, black) 30;
+}
+form input:focus {
+  border: 2px solid var(--black);
+  outline: 3px solid var(--color);
+}
+form input {
+  padding: 0.5em 0.8em;
+  font: inherit;
+  background-color: var(--page);
+  border: 2px solid var(--black);
+  outline: 3px solid transparent;
+  border-radius: 10px;
+  appearance: none;
+}
+form input::placeholder {
+  font-style: italic;
+}
+form label {
+  grid-column: span 2;
+}
+
+field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}

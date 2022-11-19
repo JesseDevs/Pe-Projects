@@ -4,6 +4,7 @@
 // if not continue from last position
 // HOW??
 
+//graph is a class that has a function that accumulates the value when a item is completed.
 
 class Workout {
     constructor(record) {

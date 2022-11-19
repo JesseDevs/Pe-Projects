@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workout Planner</title>
+    <meta name='description' content="Let's build a routine. One day at a time.">
+    <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/workout-app/images/workout.jpg">
+
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main class="page-content ">
+        <section>
+            <inner-column>
+
+                <div id='drive-app' :class="outputStyle">
+
+                    <form>
+
+                        <h3 class="attention-voice">Driving Age</h3>
+                        <field>
+                            <label for='age'>What is your age?</label>
+                            <input type='number' required min='0' v-model='age'>
+                        </field>
+
+                        <button type='submit' class="action-link" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+
+
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
+                <div id="area-app" :class="outputStyle">
+
+                    <form>
+                        <h3 class="attention-voice">Calculate Area <span>In Feet<span></h3>
+                        <field>
+                            <label for="length">What is the length of the room?</label>
+                            <input type="number" required min='0' v-model='length'>
+                        </field>
+                        <field>
+                            <label for="width">What is the width of the room?</label>
+                            <input type="number" required min='0' v-model='width'>
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+        <section>
+            <inner-column>
+                <div id="count-string-app" :class="outputStyle">
+
+                    <form>
+                        <h3 class="attention-voice">Count Letters in Phrase</h3>
+                        <field>
+
+                            <label for="x">Type a word? Or phrase?</label>
+                            <input type="text" name='x' v-model="phrase">
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+        <section>
+            <inner-column>
+                <div id="interest-app" :class="outputStyle">
+
+                    <form>
+                        <h3 class="attention-voice">Interest Calculator</h3>
+                        <field>
+                            <label for="">What's the principal investment?</label>
+                            <input type="number" v-model='principal' required min='0' placeholder="$1000">
+                        </field>
+
+                        <field>
+
+                            <label for="">What is the yearly interest?</label>
+                            <input type="number" v-model='interest' required min='0' placeholder="10%" step=".01">
+                        </field>
+
+                        <field>
+
+                            <label for="">How long do you want to invest for?</label>
+                            <input type="number" v-model='time' required min='0' placeholder="5">
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
+                <div id="madlib-app" :class="outputStyle">
+
+                    <form>
+                        <h3 class="attention-voice">Madlib</h3>
+                        <field>
+                            <label for="">Enter a noun.</label>
+                            <input type="text" required v-model='noun'>
+                        </field>
+
+                        <field>
+                            <label for="">Enter a verb.</label>
+                            <input type="text" required v-model='verb'>
+
+                        </field>
+
+
+                        <field>
+                            <label for="">Enter an adverb.</label>
+                            <input type="text" required v-model='adverb'>
+
+                        </field>
+
+                        <field>
+                            <label for="">Enter an adjective.</label>
+                            <input type="text" required v-model='adjective'>
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+        <section>
+            <inner-column>
+                <div id='vue-app-context' :class="outputStyle">
+
+                    <form>
+                        <h3 class="attention-voice">Hello World</h3>
+                        <field class='text'>
+                            <label for='userName'>What is your name?</label>
+                            <input autocomplete="off" id='userName' type='text' v-model='username'>
+                        </field>
+
+                        <button class='action-link' type='submit' v-on:click="update">Enter</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+        <section>
+            <inner-column>
+                <div id="paint-app" :class="outputStyle">
+
+                    <form>
+
+                        <h3 class="attention-voice">Paint Ceiling </h3>
+                        <field>
+                            <label for="length">What is the length of the room?</label>
+                            <input type="number" required min='0' v-model='length'>
+                        </field>
+                        <field>
+                            <label for="width">What is the width of the room?</label>
+                            <input type="number" required min='0' v-model='width'>
+
+                            <span>350 feet requires 1 gallon of paint.</span>
+
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+        <section>
+            <inner-column>
+                <div id="login-app" :class="outputStyle">
+
+                    <form>
+                        <h3 class="attention-voice">Login Checker</h3>
+                        <field>
+
+                            <label for="">Enter username:</label>
+                            <input type="text" v-model='username' autocomplete="off" required min='0'>
+
+                            <span>*Hint: <em>JohnDoe </em></span>
+
+                        </field>
+
+                        <field>
+
+                            <label for="">Enter password:</label>
+                            <input type="password" v-model='password' autocomplete="off" required min='0'>
+
+                            <span>*Hint: <em>1020World</em></span>
+
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

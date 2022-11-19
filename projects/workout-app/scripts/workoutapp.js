@@ -133,11 +133,9 @@ class WorkoutApp {
         this.$body.addEventListener('click', (event) => {
             if (event.target.dataset.action == 'save') {
 
-                this.routines = [...this.workouts];
+                let saveRoutine = document.querySelector("#save-routine-modal");
+                let name = saveRoutine.closest("input");
 
-                let routine = new Routine(this.routines);
-
-                localStorage.setItem("Routine", JSON.stringify(this.routines, null, 2));
             }
         });
 
