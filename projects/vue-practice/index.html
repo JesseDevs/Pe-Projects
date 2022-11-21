@@ -355,6 +355,30 @@
                 </div>
             </inner-column>
         </section>
+
+        <section>
+            <inner-column>
+                <div id="pizza-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Pizza Party</h3>
+                        <field>
+                            <label for="people">How many people will attend the party?</label>
+                            <input type="number" required min='0' v-model='people'>
+                        </field>
+                        <field>
+                            <label for="pizza">How many pizzas do you have?</label>
+                            <input type="number" required min='0' v-model='pizza'>
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>

@@ -165,7 +165,7 @@ const interest = new Vue({
 
             let rate = parseInt(z) / 100;
 
-            var amount = parseFloat(x).toFixed(2).replace(/[.,]00$/, "") * (1 + (parseFloat(rate).toFixed(2).replace(/[.,]00$/, "") * parseFloat(y).toFixed(2).replace(/[.,]00$/, "")));
+            var amount = parseInt(x).toFixed(2).replace(/[.,]00$/, "") * (1 + (parseInt(rate).toFixed(2).replace(/[.,]00$/, "") * parseInt(y).toFixed(2).replace(/[.,]00$/, "")));
 
             return amount;
         }
@@ -396,10 +396,10 @@ const math = new Vue({
 
             if (this.numOne && this.numTwo) {
 
-                var multiply = parseFloat(this.numOne) * parseFloat(this.numTwo);
-                var divide = parseFloat(this.numOne) / parseFloat(this.numTwo);
-                var add = parseFloat(this.numOne) + parseFloat(this.numTwo);
-                var sub = parseFloat(this.numOne) - parseFloat(this.numTwo);
+                var multiply = parseInt(this.numOne) * parseInt(this.numTwo);
+                var divide = parseInt(this.numOne) / parseInt(this.numTwo);
+                var add = parseInt(this.numOne) + parseInt(this.numTwo);
+                var sub = parseInt(this.numOne) - parseInt(this.numTwo);
 
                 this.outputStyle = "yay";
                 this.message = `${this.numOne} + ${this.numTwo} = ${add}
@@ -407,6 +407,70 @@ const math = new Vue({
                 ${this.numOne} x ${this.numTwo} = ${multiply}
                 ${this.numOne} / ${this.numTwo} = ${divide}
                 `;
+
+            } else {
+
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});
+
+
+const pizza = new Vue({
+    el: "#pizza-app",
+
+    data: function () {
+        return {
+            people: "",
+            pizza: "",
+            plural: "pizza",
+
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.people && this.pizza) {
+
+                var slices = 8;
+                var totalSlices = slices * parseInt(this.pizza);
+                if (this.pizza > 1) {
+                    this.plural = "pizzas";
+                }
+
+                var slicesPer = Math.floor(parseInt(totalSlices) / parseInt(this.people));
+                var pluralSlices = "piece";
+
+                var leftoverSlices = Math.floor(parseInt(totalSlices) % parseInt(this.people));
+                var pluralLeftovers = "piece";
+
+                if (leftoverSlices > 1) {
+                    pluralLeftovers = "pieces";
+                }
+
+
+                if (slicesPer > 1) {
+                    pluralSlices = "pieces";
+                }
+
+                console.log(Math.floor(slicesPer));
+
+                this.message = `
+                ${this.people} people with ${this.pizza} pizzas.
+                Each person gets ${Math.floor(slicesPer)} ${pluralSlices} of pizza.
+                There are ${leftoverSlices} leftover ${pluralLeftovers}.
+                `;
+
+                if (this.people > totalSlices) {
+                    this.message = `There is only ${slices} slices but ${this.people} people.`;
+                }
 
             } else {
 
