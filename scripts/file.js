@@ -165,7 +165,7 @@ function promptCheck() {
         <p>The subtotal of all items is: ${subTotal}</p>
         <p>The tax on this purchase is:  ${taxAmount}</p>
         <strong>
-            <p>The total is: ${total}</p>
+        <p>The total is: ${total}</p>
         </strong>`;
 
         $feedback.innerHTML = `${template}`;
@@ -217,7 +217,7 @@ function promptPassword() {
 
         if (username) {
             template = `Typing...<br>
-        Username: ${username} <br>
+            Username: ${username} <br>
             Password: ${password} `;
         }
 
@@ -353,10 +353,10 @@ function promptString() {
         var message = 'That phrase has: ';
 
         $feedback.innerHTML = `
-            <p> ${template} <strong> ${string} </strong> </p>
-            <p> ${message} <strong> ${counter} </strong> characters. </p>
+        <p> ${template} <strong> ${string} </strong> </p>
+        <p> ${message} <strong> ${counter} </strong> characters. </p>
 
-            `
+        `
     });
 };
 
@@ -370,8 +370,8 @@ function promptQuote() {
         author = capitalizeFirstLetter(author);
 
         $feedback.innerHTML = `
-            <p><strong>${author}</strong> said <strong>“${quote}”</strong> </p>
-            `
+        <p><strong>${author}</strong> said <strong>“${quote}”</strong> </p>
+        `
 
     })
 }
@@ -424,9 +424,9 @@ function promptRetire() {
         var retireYear = currentYear + ageDifference;
 
         let template = `<p>
-                <strong>${ageDifference}</strong> years left until you can retire.<br> It's <strong>${currentYear}</strong>, so you can retire in <strong>${retireYear}</strong>.
-            </p>
-            `;
+        <strong>${ageDifference}</strong> years left until you can retire.<br> It's <strong>${currentYear}</strong>, so you can retire in <strong>${retireYear}</strong>.
+        </p>
+        `;
 
         if (age == '') {
             template = `<p>No age. No retirement.</p>`
@@ -470,11 +470,11 @@ function promptMath() {
         divide = parseFloat(divide).toFixed(2).replace(/[.,]00$/, "");
 
         var template = `
-            <p>${numOne} + ${numTwo} = <strong>${add}</strong></p>
-            <p>${numOne} - ${numTwo} = <strong>${sub}</strong></p>
-            <p>${numOne} x ${numTwo} = <strong>${multiply}</strong></p>
-            <p>${numOne} / ${numTwo} = <strong>${divide}</strong></p>
-            `;
+        <p>${numOne} + ${numTwo} = <strong>${add}</strong></p>
+        <p>${numOne} - ${numTwo} = <strong>${sub}</strong></p>
+        <p>${numOne} x ${numTwo} = <strong>${multiply}</strong></p>
+        <p>${numOne} / ${numTwo} = <strong>${divide}</strong></p>
+        `;
 
         $feedback.innerHTML = template;
     })
@@ -500,7 +500,7 @@ ScrollTrigger.create({
 function animateFrom(elem, direction) {
     direction = direction || 1;
     var x = 0,
-        y = direction * 100;
+    y = direction * 100;
     if (elem.classList.contains("gs_reveal_fromLeft")) {
         x = -100;
         y = 0;

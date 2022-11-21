@@ -22,7 +22,7 @@
 
                 <div id='drive-app' :class="outputStyle">
 
-                    <form>
+                    <form autocomplete="off">
 
                         <h3 class="attention-voice">Driving Age</h3>
                         <field>
@@ -45,7 +45,7 @@
             <inner-column>
                 <div id="area-app" :class="outputStyle">
 
-                    <form>
+                    <form autocomplete="off">
                         <h3 class="attention-voice">Calculate Area <span>In Feet<span></h3>
                         <field>
                             <label for="length">What is the length of the room?</label>
@@ -68,7 +68,7 @@
             <inner-column>
                 <div id="count-string-app" :class="outputStyle">
 
-                    <form>
+                    <form autocomplete="off">
                         <h3 class="attention-voice">Count Letters in Phrase</h3>
                         <field>
 
@@ -88,7 +88,7 @@
             <inner-column>
                 <div id="interest-app" :class="outputStyle">
 
-                    <form>
+                    <form autocomplete="off">
                         <h3 class="attention-voice">Interest Calculator</h3>
                         <field>
                             <label for="">What's the principal investment?</label>
@@ -120,7 +120,7 @@
             <inner-column>
                 <div id="madlib-app" :class="outputStyle">
 
-                    <form>
+                    <form autocomplete="off">
                         <h3 class="attention-voice">Madlib</h3>
                         <field>
                             <label for="">Enter a noun.</label>
@@ -157,7 +157,7 @@
             <inner-column>
                 <div id='vue-app-context' :class="outputStyle">
 
-                    <form>
+                    <form autocomplete="off">
                         <h3 class="attention-voice">Hello World</h3>
                         <field class='text'>
                             <label for='userName'>What is your name?</label>
@@ -176,7 +176,7 @@
             <inner-column>
                 <div id="paint-app" :class="outputStyle">
 
-                    <form>
+                    <form autocomplete="off">
 
                         <h3 class="attention-voice">Paint Ceiling </h3>
                         <field>
@@ -203,14 +203,14 @@
             <inner-column>
                 <div id="login-app" :class="outputStyle">
 
-                    <form>
+                    <form autocomplete="off">
                         <h3 class="attention-voice">Login Checker</h3>
                         <field>
 
                             <label for="">Enter username:</label>
                             <input type="text" v-model='username' autocomplete="off" required min='0'>
 
-                            <span>*Hint: <em>JohnDoe </em></span>
+                            <span class="small-voice">*Hint: <em>JohnDoe </em></span>
 
                         </field>
 
@@ -219,9 +219,133 @@
                             <label for="">Enter password:</label>
                             <input type="password" v-model='password' autocomplete="off" required min='0'>
 
-                            <span>*Hint: <em>1020World</em></span>
+                            <span class="small-voice">*Hint: <em>1020World</em></span>
 
                         </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+        <section>
+            <inner-column>
+                <div id="quote-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Quote Display</h3>
+                        <field>
+                            <label for="">Who is the author?</label>
+                            <input type="text" name='author' v-model="author" required>
+                        </field>
+
+                        <field>
+                            <label for="">What is your quote?</label>
+                            <input type="text" name='quote' v-model="quote" required>
+                        </field>
+
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+        <section>
+            <inner-column>
+                <div id="retire-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Retirement</h3>
+                        <field>
+                            <label for="">What is your age?</label>
+                            <input type="number" inputmode=decimal required v-model="age" min="0">
+
+                        </field>
+
+                        <field>
+                            <label for="">What age would you like to retire?</label>
+                            <input type="number" inputmode=decimal required v-model="retireAge" min="0">
+
+                        </field>
+
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
+                <div id="checkout-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Self Checkout</h3>
+                        <div class="container">
+                            <field>
+                                <label for="">How many <em>Apples</em> are you taking?</label>
+                                <input type="number" v-model='quantityOne' required min='0'>
+                            </field>
+
+                            <field>
+                                <label for="">Whats the price of the <em>Apples</em>?</label>
+                                <input type="number" v-model='priceOne' required min='0'>
+                            </field>
+                        </div>
+
+                        <div class="container">
+                            <field>
+                                <label for="">How many <em>Oranges</em> are you taking?</label>
+                                <input type=" number" v-model='quantityTwo' required min='0'>
+                            </field>
+
+                            <field>
+                                <label for="">Whats the price of the <em>Oranges</em>?</label>
+                                <input type="number" v-model='priceTwo' required min='0'>
+                            </field>
+
+                            <span class="small-voice"><em> Tax is 5.5% in this equation</em></span>
+                        </div>
+
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+        <section>
+            <inner-column>
+                <div id="math-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Quick Math</h3>
+
+                        <field>
+
+                            <label for="">Enter a number.</label>
+                            <input type="number" inputmode=decimal v-model='numOne' required min='1'>
+
+                        </field>
+
+                        <field>
+                            <label for="">Enter a second number.</label>
+                            <input type="number" inputmode=decimal v-model='numTwo' required min='1'>
+
+                        </field>
+
+
 
                         <button class='action-link' type="submit" v-on:click="update">Calculate</button>
                     </form>

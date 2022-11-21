@@ -92,6 +92,15 @@ form {
         grid-column: span 2;
     }
 
+    div.container,
+    field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 15px;
+    }
+
 }
 
 field {

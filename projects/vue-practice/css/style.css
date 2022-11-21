@@ -553,6 +553,13 @@ form input::placeholder {
 form label {
   grid-column: span 2;
 }
+form div.container,
+form field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
 
 field {
   display: flex;

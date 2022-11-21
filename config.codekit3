@@ -46434,6 +46434,17 @@
       "oAP" : "\/projects\/vue-practice\/index.html",
       "oF" : 0
     },
+    "\/projects\/vue-practice\/scripts\/script-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/vue-practice\/scripts\/script-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/projects\/vue-practice\/scripts\/script.js" : {
       "bF" : 0,
       "ft" : 64,

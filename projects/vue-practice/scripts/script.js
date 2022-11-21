@@ -266,3 +266,155 @@ const login = new Vue({
         }
     }
 });
+
+const quote = new Vue({
+    el: "#quote-app",
+
+    data: function () {
+        return {
+            author: "",
+            quote: "",
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.author && this.quote) {
+
+                this.author = capitalizeFirstLetter(this.author);
+                this.outputStyle = "yay";
+                this.message = `${author} said “${quote}” `;
+
+            } else {
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});
+
+
+const retire = new Vue({
+    el: "#retire-app",
+
+    data: function () {
+        return {
+            age: "",
+            retireAge: "",
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.age && this.retireAge) {
+
+                var ageDifference = parseInt(this.retireAge) - parseInt(this.age);
+                let date = new Date();
+                var currentYear = date.getFullYear();
+                var retireYear = currentYear + ageDifference;
+
+                this.outputStyle = "yay";
+                this.message = `${ageDifference} years left until you can retire. It's ${currentYear}, so you can retire in ${retireYear} `;
+
+            } else {
+
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});
+
+const checkout = new Vue({
+    el: "#checkout-app",
+
+    data: function () {
+        return {
+            quantityOne: "",
+            quantityTwo: "",
+
+            priceOne: "",
+            priceTwo: "",
+
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.quantityOne && this.quantityTwo && this.priceOne && this.priceTwo) {
+
+                var totalOne = parseInt(this.quantityOne) * parseInt(this.priceOne);
+                var totalTwo = parseInt(this.quantityTwo) * parseInt(this.priceTwo);
+
+
+                var subTotal = parseInt(totalOne, 10) + parseInt(totalTwo, 10);
+                var tax = .055;
+
+                this.outputStyle = "yay";
+                this.message = `${ageDifference} years left until you can retire. It's ${currentYear}, so you can retire in ${retireYear} `;
+
+            } else {
+
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});
+
+const math = new Vue({
+    el: "#math-app",
+
+    data: function () {
+        return {
+            numOne: "",
+            numTwo: "",
+
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.numOne && this.numTwo) {
+
+                var multiply = parseFloat(this.numOne) * parseFloat(this.numTwo);
+                var divide = parseFloat(this.numOne) / parseFloat(this.numTwo);
+                var add = parseFloat(this.numOne) + parseFloat(this.numTwo);
+                var sub = parseFloat(this.numOne) - parseFloat(this.numTwo);
+
+                this.outputStyle = "yay";
+                this.message = `${this.numOne} + ${this.numTwo} = ${add}
+                ${this.numOne} - ${this.numTwo} = ${sub}
+                ${this.numOne} x ${this.numTwo} = ${multiply}
+                ${this.numOne} / ${this.numTwo} = ${divide}
+                `;
+
+            } else {
+
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});
+
