@@ -110,3 +110,14 @@ field {
 
     gap: 15px;
 }
+
+#temp-app {
+    field:first-of-type {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+
+        h4 {
+            grid-column: span 2;
+        }
+    }
+}

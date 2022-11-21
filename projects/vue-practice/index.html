@@ -379,6 +379,38 @@
                 </div>
             </inner-column>
         </section>
+
+        <section>
+            <inner-column>
+                <div id="temp-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Temperature Converter</h3>
+                        <field>
+                            <h4 for="people">Convert Temperature from {{picked}}?</h4>
+                            <div class="radio-btn-container">
+
+                                <input type="radio" id="one" value="Fahrenheit" v-model="picked">
+                                <label for="one">Fahrenheit</label>
+                            </div>
+                            <div class="radio-btn-container">
+                                <input type="radio" id="two" value="Celsius" v-model="picked">
+                                <label for="two">Celsius</label>
+                            </div>
+                        </field>
+                        <field>
+                            <label for="degree">What is the current tempature? <em>({{picked}})</em></label>
+                            <input type="number" required min='0' v-model='degree'>
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>

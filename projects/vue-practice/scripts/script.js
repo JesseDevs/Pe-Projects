@@ -482,3 +482,44 @@ const pizza = new Vue({
     }
 });
 
+const temp = new Vue({
+    el: "#temp-app",
+
+    data: function () {
+        return {
+            picked: "Fahrenheit",
+            degree: "",
+
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.degree) {
+
+                var newTemp = "";
+                var notPicked = "Celsius";
+                if (this.picked == "Celsius") {
+                    newTemp = (parseInt(this.degree) * 9 / 5) + 32;
+                    notPicked = "Fahrenheit";
+
+                } else {
+
+                    newTemp = (parseInt(this.degree) - 32) * 5 / 9;
+                }
+
+                this.message = `The temperature in ${notPicked} is ${newTemp}°.`;
+
+            } else {
+
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});

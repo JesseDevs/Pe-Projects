@@ -475,6 +475,13 @@ code {
   opacity: 1;
 }
 
+.radio-btn-container input,
+.radio-btn-container label {
+  display: inline;
+  appearance: auto;
+  width: auto;
+}
+
 main {
   display: grid;
   gap: 30px;
@@ -566,4 +573,12 @@ field {
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+}
+
+#temp-app field:first-of-type {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+#temp-app field:first-of-type h4 {
+  grid-column: span 2;
 }
