@@ -446,19 +446,23 @@
             </inner-column>
         </section>
 
-        <!-- <section>
+        <section>
             <inner-column>
                 <div id="cali-tax-app" :class="outputStyle">
 
                     <form autocomplete="off">
                         <h3 class="attention-voice">California Tax Calculator</h3>
                         <field>
-                            <label for="people">How many people will attend the party?</label>
-                            <input type="number" required min='0' v-model='people'>
+                            <label for="amount">What is the order amount?</label>
+                            <input type="number" required min='0' v-model='amount'>
                         </field>
                         <field>
-                            <label for="pizza">How many pizzas do you have?</label>
-                            <input type="number" required min='0' v-model='pizza'>
+                            <label for="amount">What county in California is this being purchased?</label>
+                            <select v-model="selected">
+                                <option v-for="option in options" :value="option.value">
+                                    {{ option.text }}
+                                </option>
+                            </select>
                         </field>
 
                         <button class='action-link' type="submit" v-on:click="update">Calculate</button>
@@ -468,7 +472,7 @@
 
                 </div>
             </inner-column>
-        </section> -->
+        </section>
 
         <section>
             <inner-column>

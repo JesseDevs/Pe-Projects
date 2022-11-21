@@ -607,62 +607,99 @@ const calendar = new Vue({
     }
 });
 
+const cali = new Vue({
+    el: "#cali-tax-app",
 
-var californiaTaxesLocal = [
-    {
-        name: "Los Angeles",
-        tax: .105
+    data() {
+        return {
+            amount: "",
+            selected: '.105',
+            options: [
+                {
+                    text: "Los Angeles",
+                    tax: .105
+                },
+                {
+                    text: "Alameda",
+                    tax: .1075
+                },
+                {
+                    text: "Fresno",
+                    tax: .09225
+                },
+                {
+                    text: "Humboldt",
+                    tax: .0925
+                },
+                {
+                    text: "Imperial",
+                    tax: .0875
+                },
+                {
+                    text: "Kings",
+                    tax: .0825
+                },
+                {
+                    text: "Mariposa",
+                    tax: .0875
+                },
+                {
+                    text: "Merced",
+                    tax: .0875
+                },
+                {
+                    text: "Orange",
+                    tax: .1025
+                },
+                {
+                    text: "Riverside",
+                    tax: .0925
+                },
+                {
+                    text: "San Bernardino",
+                    tax: .1025
+                },
+                {
+                    text: "San Diego",
+                    tax: .0875
+                },
+                {
+                    text: "San Francisco",
+                    tax: .09875
+                },
+                {
+                    text: "Santa Cruz",
+                    tax: .0975
+                }
+            ],
+
+            message: "",
+            outputStyle: "none"
+        }
     },
-    {
-        name: "Alameda",
-        tax: .1075
-    },
-    {
-        name: "Fresno",
-        tax: .09225
-    },
-    {
-        name: "Humboldt",
-        tax: .0925
-    },
-    {
-        name: "Imperial",
-        tax: .0875
-    },
-    {
-        name: "Kings",
-        tax: .0825
-    },
-    {
-        name: "Mariposa",
-        tax: .0875
-    },
-    {
-        name: "Merced",
-        tax: .0875
-    },
-    {
-        name: "Orange",
-        tax: .1025
-    },
-    {
-        name: "Riverside",
-        tax: .0925
-    },
-    {
-        name: "San Bernardino",
-        tax: .1025
-    },
-    {
-        name: "San Diego",
-        tax: .0875
-    },
-    {
-        name: "San Francisco",
-        tax: .09875
-    },
-    {
-        name: "Santa Cruz",
-        tax: .0975
-    },
-]
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.month) {
+
+                if (this.month > 12) {
+                    this.message = "That number does not correspond with a month. Try again."
+                } else {
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                    let selected = months[this.month - 1];
+                    this.message = `The name of the month is ${selected}.`
+                }
+
+
+            } else {
+
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});
