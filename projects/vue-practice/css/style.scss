@@ -58,7 +58,7 @@ my-cool-thing {
 form {
     display: grid;
     position: relative;
-    gap: 20px;
+    gap: 25px;
     max-width: 450px;
 
     h3 {
@@ -112,12 +112,43 @@ field {
 }
 
 #temp-app {
+    .radio-btn-container {
+
+        input,
+        label {
+            display: inline;
+            appearance: auto;
+            width: auto;
+        }
+    }
+
+    field:first-of-type {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        display: grid;
+
+        h4 {
+            grid-column: span 2;
+        }
+    }
+}
+
+#bmi-app {
+
     field:first-of-type {
         grid-template-columns: 1fr 1fr;
         display: grid;
 
         h4 {
             grid-column: span 2;
+        }
+
+        .height-btn-container {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+
         }
     }
 }

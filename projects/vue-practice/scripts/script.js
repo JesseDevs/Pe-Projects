@@ -503,16 +503,61 @@ const temp = new Vue({
 
                 var newTemp = "";
                 var notPicked = "Celsius";
+                var letter = "C";
                 if (this.picked == "Celsius") {
                     newTemp = (parseInt(this.degree) * 9 / 5) + 32;
                     notPicked = "Fahrenheit";
+                    letter = "F";
 
                 } else {
 
                     newTemp = (parseInt(this.degree) - 32) * 5 / 9;
                 }
 
-                this.message = `The temperature in ${notPicked} is ${newTemp}°.`;
+                this.message = `The temperature in ${notPicked} is ${newTemp}° ${letter}.`;
+
+            } else {
+
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});
+
+const bmi = new Vue({
+    el: "#bmi-app",
+
+    data: function () {
+        return {
+            feet: "",
+            inches: "",
+            weight: "",
+
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.feet && this.inches && this.weight) {
+
+                var totalHeight = (parseInt(this.feet) * 12) + parseInt(this.inches);
+                var bmi = (parseInt(this.weight) / (totalHeight * totalHeight)) * 703;
+
+                if (bmi < 18.5) {
+                    this.message = `Your BMI is ${bmi.toFixed(1)}. According to BMI standards you are currently underweight.`;
+                } else if (bmi > 25) {
+                    this.message = `Your BMI is ${bmi.toFixed(1)}. According to BMI standards you are currently overweight.`;
+                } else {
+                    this.message = `Your BMI is ${bmi.toFixed(1)}. According to BMI standards you are at a normal weight.`;
+                }
+
+
 
             } else {
 

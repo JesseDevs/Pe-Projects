@@ -387,7 +387,7 @@
                     <form autocomplete="off">
                         <h3 class="attention-voice">Temperature Converter</h3>
                         <field>
-                            <h4 for="people">Convert Temperature from {{picked}}?</h4>
+                            <h4>Convert Temperature from {{picked}}?</h4>
                             <div class="radio-btn-container">
 
                                 <input type="radio" id="one" value="Fahrenheit" v-model="picked">
@@ -401,6 +401,40 @@
                         <field>
                             <label for="degree">What is the current tempature? <em>({{picked}})</em></label>
                             <input type="number" required min='0' v-model='degree'>
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
+
+        <section>
+            <inner-column>
+                <div id="bmi-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">BMI Calculator</h3>
+                        <field>
+                            <h4 for="height">What is your height?</h4>
+                            <div class="height-btn-container">
+                                <label for="feet">Feet</label>
+                                <input type="number" id="feet" required min='0' v-model="feet">
+
+                            </div>
+                            <div class="height-btn-container">
+                                <label for="inches">Inches</label>
+                                <input type="number" id="inches" required min='0' v-model="inches">
+
+                            </div>
+                        </field>
+                        <field>
+                            <label for="weight">What is your weight in pounds?</label>
+                            <input type="number" id="weight" required min='0' v-model='weight'>
                         </field>
 
                         <button class='action-link' type="submit" v-on:click="update">Calculate</button>
