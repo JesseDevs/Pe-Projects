@@ -568,3 +568,101 @@ const bmi = new Vue({
         }
     }
 });
+
+const calendar = new Vue({
+    el: "#calendar-app",
+
+    data: function () {
+        return {
+            month: "",
+
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.month) {
+
+                if (this.month > 12) {
+                    this.message = "That number does not correspond with a month. Try again."
+                } else {
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                    let selected = months[this.month - 1];
+                    this.message = `The name of the month is ${selected}.`
+                }
+
+
+            } else {
+
+                this.outputStyle = "nay";
+                this.message = "Nope. Try again.";
+            }
+
+        }
+    }
+});
+
+
+var californiaTaxesLocal = [
+    {
+        name: "Los Angeles",
+        tax: .105
+    },
+    {
+        name: "Alameda",
+        tax: .1075
+    },
+    {
+        name: "Fresno",
+        tax: .09225
+    },
+    {
+        name: "Humboldt",
+        tax: .0925
+    },
+    {
+        name: "Imperial",
+        tax: .0875
+    },
+    {
+        name: "Kings",
+        tax: .0825
+    },
+    {
+        name: "Mariposa",
+        tax: .0875
+    },
+    {
+        name: "Merced",
+        tax: .0875
+    },
+    {
+        name: "Orange",
+        tax: .1025
+    },
+    {
+        name: "Riverside",
+        tax: .0925
+    },
+    {
+        name: "San Bernardino",
+        tax: .1025
+    },
+    {
+        name: "San Diego",
+        tax: .0875
+    },
+    {
+        name: "San Francisco",
+        tax: .09875
+    },
+    {
+        name: "Santa Cruz",
+        tax: .0975
+    },
+]
