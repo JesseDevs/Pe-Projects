@@ -703,3 +703,61 @@ const cali = new Vue({
         }
     }
 });
+
+const compare = new Vue({
+    el: "#compare-app",
+
+    data: function () {
+        return {
+            numbers: [],
+            number: "",
+            phrase: "Enter your first number!",
+
+            message: "",
+            outputStyle: "none"
+        };
+    },
+
+    methods: {
+        update(event) {
+            event.preventDefault();
+
+            if (this.number == '') {
+                this.number = 0;
+            }
+            var numberInput = this.number;
+            this.numbers.push(numberInput);
+
+            numberList = [...new Set(this.numbers)];
+
+            this.number = "";
+            var highest = numberList[0];
+
+            for (let x = 0; x < numberList.length; x++) {
+                if (numberList[x] > highest) {
+                    highest = numberList[x];
+                }
+            }
+
+            if (this.numbers.length > 0) {
+                this.phrase = "Add more numbers to compare..";
+            }
+
+            var template = `List of numbers: [`;
+
+            for (let x = 0; x < numberList.length; x++) {
+                const element = numberList[x];
+                if (x == 0) {
+                    template += `${element}`;
+                } else {
+                    template += `, ${element}`;
+                }
+            }
+
+            template += `]`;
+
+            this.message = `${template}         
+            This highest number is ${highest}!`
+        }
+    }
+});

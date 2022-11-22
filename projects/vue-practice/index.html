@@ -493,6 +493,27 @@
                 </div>
             </inner-column>
         </section>
+
+
+        <section>
+            <inner-column>
+                <div id="compare-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Get the Highest Number</h3>
+                        <field>
+                            <label for="number"> {{phrase}}</label>
+                            <input type="number" required min='0' v-model.number="number">
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
