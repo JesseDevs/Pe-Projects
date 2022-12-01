@@ -19,7 +19,26 @@
     <main class="page-content ">
         <section>
             <inner-column>
+                <div id='vue-app-context' :class="outputStyle">
 
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Hello World</h3>
+                        <field class='text'>
+                            <label for='userName'>What is your name?</label>
+                            <input autocomplete="off" id='userName' type='text' v-model='username'>
+                        </field>
+
+                        <button class='action-link' type='submit' v-on:click="update">Enter</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
                 <div id='drive-app' :class="outputStyle">
 
                     <form autocomplete="off">
@@ -36,34 +55,9 @@
                     <output>{{message}}</output>
 
                 </div>
-
-
             </inner-column>
         </section>
 
-        <section>
-            <inner-column>
-                <div id="area-app" :class="outputStyle">
-
-                    <form autocomplete="off">
-                        <h3 class="attention-voice">Calculate Area <span>In Feet<span></h3>
-                        <field>
-                            <label for="length">What is the length of the room?</label>
-                            <input type="number" required min='0' v-model='length'>
-                        </field>
-                        <field>
-                            <label for="width">What is the width of the room?</label>
-                            <input type="number" required min='0' v-model='width'>
-                        </field>
-
-                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
-                    </form>
-
-                    <output>{{message}}</output>
-
-                </div>
-            </inner-column>
-        </section>
         <section>
             <inner-column>
                 <div id="count-string-app" :class="outputStyle">
@@ -84,28 +78,23 @@
                 </div>
             </inner-column>
         </section>
+
         <section>
             <inner-column>
-                <div id="interest-app" :class="outputStyle">
+                <div id="quote-app" :class="outputStyle">
 
                     <form autocomplete="off">
-                        <h3 class="attention-voice">Interest Calculator</h3>
+                        <h3 class="attention-voice">Quote Display</h3>
                         <field>
-                            <label for="">What's the principal investment?</label>
-                            <input type="number" v-model='principal' required min='0' placeholder="$1000">
+                            <label for="">Who is the author?</label>
+                            <input type="text" name='author' v-model="author" required>
                         </field>
 
                         <field>
-
-                            <label for="">What is the yearly interest?</label>
-                            <input type="number" v-model='interest' required min='0' placeholder="10%" step=".01">
+                            <label for="">What is your quote?</label>
+                            <input type="text" name='quote' v-model="quote" required>
                         </field>
 
-                        <field>
-
-                            <label for="">How long do you want to invest for?</label>
-                            <input type="number" v-model='time' required min='0' placeholder="5">
-                        </field>
 
                         <button class='action-link' type="submit" v-on:click="update">Calculate</button>
                     </form>
@@ -153,109 +142,7 @@
                 </div>
             </inner-column>
         </section>
-        <section>
-            <inner-column>
-                <div id='vue-app-context' :class="outputStyle">
 
-                    <form autocomplete="off">
-                        <h3 class="attention-voice">Hello World</h3>
-                        <field class='text'>
-                            <label for='userName'>What is your name?</label>
-                            <input autocomplete="off" id='userName' type='text' v-model='username'>
-                        </field>
-
-                        <button class='action-link' type='submit' v-on:click="update">Enter</button>
-                    </form>
-
-                    <output>{{message}}</output>
-
-                </div>
-            </inner-column>
-        </section>
-        <section>
-            <inner-column>
-                <div id="paint-app" :class="outputStyle">
-
-                    <form autocomplete="off">
-
-                        <h3 class="attention-voice">Paint Ceiling </h3>
-                        <field>
-                            <label for="length">What is the length of the room?</label>
-                            <input type="number" required min='0' v-model='length'>
-                        </field>
-                        <field>
-                            <label for="width">What is the width of the room?</label>
-                            <input type="number" required min='0' v-model='width'>
-
-                            <span>350 feet requires 1 gallon of paint.</span>
-
-                        </field>
-
-                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
-                    </form>
-
-                    <output>{{message}}</output>
-
-                </div>
-            </inner-column>
-        </section>
-        <section>
-            <inner-column>
-                <div id="login-app" :class="outputStyle">
-
-                    <form autocomplete="off">
-                        <h3 class="attention-voice">Login Checker</h3>
-                        <field>
-
-                            <label for="">Enter username:</label>
-                            <input type="text" v-model='username' autocomplete="off" required min='0'>
-
-                            <span class="small-voice">*Hint: <em>JohnDoe </em></span>
-
-                        </field>
-
-                        <field>
-
-                            <label for="">Enter password:</label>
-                            <input type="password" v-model='password' autocomplete="off" required min='0'>
-
-                            <span class="small-voice">*Hint: <em>1020World</em></span>
-
-                        </field>
-
-                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
-                    </form>
-
-                    <output>{{message}}</output>
-
-                </div>
-            </inner-column>
-        </section>
-        <section>
-            <inner-column>
-                <div id="quote-app" :class="outputStyle">
-
-                    <form autocomplete="off">
-                        <h3 class="attention-voice">Quote Display</h3>
-                        <field>
-                            <label for="">Who is the author?</label>
-                            <input type="text" name='author' v-model="author" required>
-                        </field>
-
-                        <field>
-                            <label for="">What is your quote?</label>
-                            <input type="text" name='quote' v-model="quote" required>
-                        </field>
-
-
-                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
-                    </form>
-
-                    <output>{{message}}</output>
-
-                </div>
-            </inner-column>
-        </section>
         <section>
             <inner-column>
                 <div id="retire-app" :class="outputStyle">
@@ -274,6 +161,82 @@
 
                         </field>
 
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
+                <div id="area-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Calculate Area <span>In Feet<span></h3>
+                        <field>
+                            <label for="length">What is the length of the room?</label>
+                            <input type="number" required min='0' v-model='length'>
+                        </field>
+                        <field>
+                            <label for="width">What is the width of the room?</label>
+                            <input type="number" required min='0' v-model='width'>
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
+                <div id="pizza-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Pizza Party</h3>
+                        <field>
+                            <label for="people">How many people will attend the party?</label>
+                            <input type="number" required min='0' v-model='people'>
+                        </field>
+                        <field>
+                            <label for="pizza">How many pizzas do you have?</label>
+                            <input type="number" required min='0' v-model='pizza'>
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
+                <div id="paint-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+
+                        <h3 class="attention-voice">Paint Ceiling </h3>
+                        <field>
+                            <label for="length">What is the length of the room?</label>
+                            <input type="number" required min='0' v-model='length'>
+                        </field>
+                        <field>
+                            <label for="width">What is the width of the room?</label>
+                            <input type="number" required min='0' v-model='width'>
+
+                            <span>350 feet requires 1 gallon of paint.</span>
+
+                        </field>
 
                         <button class='action-link' type="submit" v-on:click="update">Calculate</button>
                     </form>
@@ -325,6 +288,72 @@
                 </div>
             </inner-column>
         </section>
+
+        <section>
+            <inner-column>
+                <div id="interest-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Interest Calculator</h3>
+                        <field>
+                            <label for="">What's the principal investment?</label>
+                            <input type="number" v-model='principal' required min='0' placeholder="$1000">
+                        </field>
+
+                        <field>
+
+                            <label for="">What is the yearly interest?</label>
+                            <input type="number" v-model='interest' required min='0' placeholder="10%" step=".01">
+                        </field>
+
+                        <field>
+
+                            <label for="">How long do you want to invest for?</label>
+                            <input type="number" v-model='time' required min='0' placeholder="5">
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
+                <div id="login-app" :class="outputStyle">
+
+                    <form autocomplete="off">
+                        <h3 class="attention-voice">Login Checker</h3>
+                        <field>
+
+                            <label for="">Enter username:</label>
+                            <input type="text" v-model='username' autocomplete="off" required min='0'>
+
+                            <span class="small-voice">*Hint: <em>JohnDoe </em></span>
+
+                        </field>
+
+                        <field>
+
+                            <label for="">Enter password:</label>
+                            <input type="password" v-model='password' autocomplete="off" required min='0'>
+
+                            <span class="small-voice">*Hint: <em>1020World</em></span>
+
+                        </field>
+
+                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+                    </form>
+
+                    <output>{{message}}</output>
+
+                </div>
+            </inner-column>
+        </section>
+
         <section>
             <inner-column>
                 <div id="math-app" :class="outputStyle">
@@ -346,30 +375,6 @@
                         </field>
 
 
-
-                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
-                    </form>
-
-                    <output>{{message}}</output>
-
-                </div>
-            </inner-column>
-        </section>
-
-        <section>
-            <inner-column>
-                <div id="pizza-app" :class="outputStyle">
-
-                    <form autocomplete="off">
-                        <h3 class="attention-voice">Pizza Party</h3>
-                        <field>
-                            <label for="people">How many people will attend the party?</label>
-                            <input type="number" required min='0' v-model='people'>
-                        </field>
-                        <field>
-                            <label for="pizza">How many pizzas do you have?</label>
-                            <input type="number" required min='0' v-model='pizza'>
-                        </field>
 
                         <button class='action-link' type="submit" v-on:click="update">Calculate</button>
                     </form>
@@ -509,7 +514,7 @@
                         <button class='action-link' type="submit" v-on:click="update">Calculate</button>
                     </form>
 
-                    <output>{{message}}</output>
+                    <output v-html='message'></output>
 
                 </div>
             </inner-column>

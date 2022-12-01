@@ -47,10 +47,18 @@ const drive = new Vue({
     methods: {
         update(event) {
             event.preventDefault();
-            if (this.age >= 16) {
+            if (this.age >= 21) {
                 this.something = "Yes."
                 this.outputStyle = "yay";
-                this.message = `You are ${this.age} years old, enough to legally drive.`;
+                this.message = `You are ${this.age} years old, enough to legally drive. There's some more responsibility at this point.`;
+            } else if (this.age < 21 && this.age >= 16) {
+                this.something = "Yes."
+                this.outputStyle = "yay";
+                this.message = `You are ${this.age} years old, enough to legally drive. Insurance payments will be through the roof.`;
+            } else if (this.age < 16 && this.age >= 13) {
+                this.something = "Yes."
+                this.outputStyle = "yay";
+                this.message = `You are ${this.age} years old. Too young to drive but your time is coming.`;
             } else {
                 this.something = "..."
                 this.outputStyle = "nay";
@@ -682,16 +690,8 @@ const cali = new Vue({
         update(event) {
             event.preventDefault();
 
-            if (this.month) {
+            if (this.amount) {
 
-                if (this.month > 12) {
-                    this.message = "That number does not correspond with a month. Try again."
-                } else {
-                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-                    let selected = months[this.month - 1];
-                    this.message = `The name of the month is ${selected}.`
-                }
 
 
             } else {
@@ -756,8 +756,8 @@ const compare = new Vue({
 
             template += `]`;
 
-            this.message = `${template}         
-            This highest number is ${highest}!`
+            this.message = `<span>${template}</span>  <br>    
+            <span>This highest number is ${highest}!</span>`
         }
     }
 });
