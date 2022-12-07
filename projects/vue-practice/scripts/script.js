@@ -85,13 +85,19 @@ const area = new Vue({
             event.preventDefault();
             if (this.length && this.width) {
 
-                var area = parseInt(this.length) * parseInt(this.width);
+                var area = this.length * this.width;
                 this.outputStyle = "yay";
                 this.message = `The area of a room with those dimensions is ${area} feet.`;
             } else {
                 this.outputStyle = "nay";
                 this.message = "Nope. Try again";
             }
+        }
+    },
+
+    computed: {
+        area() {
+            return this.length * this.width
         }
     }
 });
@@ -690,15 +696,15 @@ const cali = new Vue({
         update(event) {
             event.preventDefault();
 
-            if (this.amount) {
+            // if (this.amount) {
 
 
 
-            } else {
+            // } else {
 
-                this.outputStyle = "nay";
-                this.message = "Nope. Try again.";
-            }
+            //     this.outputStyle = "nay";
+            //     this.message = "Nope. Try again.";
+            // }
 
         }
     }

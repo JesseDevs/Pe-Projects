@@ -175,21 +175,22 @@
             <inner-column>
                 <div id="area-app" :class="outputStyle">
 
+
                     <form autocomplete="off">
                         <h3 class="attention-voice">Calculate Area <span>In Feet<span></h3>
                         <field>
                             <label for="length">What is the length of the room?</label>
-                            <input type="number" required min='0' v-model='length'>
+                            <input type="number" required min='0' v-model.number='length'>
                         </field>
                         <field>
                             <label for="width">What is the width of the room?</label>
-                            <input type="number" required min='0' v-model='width'>
+                            <input type="number" required min='0' v-model.number='width'>
                         </field>
 
-                        <button class='action-link' type="submit" v-on:click="update">Calculate</button>
+
                     </form>
 
-                    <output>{{message}}</output>
+                    <output v-if="area > 0">{{ area }}</output>
 
                 </div>
             </inner-column>
