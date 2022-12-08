@@ -21,6 +21,7 @@ projects/music/wp-content/cache/*
 
 
 # wp core (as of 4.9.5)
+node_modules
 db-config.php
 projects/music/wp-content/cache/index.php
 license.txt
