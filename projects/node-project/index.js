@@ -1,69 +1,48 @@
-/*
+// cd desktop/pe-projects/projects/node-project
 
-// destructured
-// individual functions
-import { double, triple, square } from "./math.js";
-console.log(double(10))
+import http from "node:http";
+import FileSystem from 'node:fs';
 
-// pulls all functions
-// const math = require('./math.js');
-console.log(double(4))
-console.log(triple(4))
-console.log(square(4))
+var path = null;
 
+// Server logic
+const server = http.createServer((request, response) => {
+    if (request.url !== "/favicon.ico") {
+        console.log("The request made is: " + request.url);
+        response.writeHead(200, { 'Content-Type': 'text/html' });
 
-import _ from 'lodash';
-const exampleArr = [5, 6, 7, 8, 9];
-const reversedArr = _.reverse(exampleArr);
-console.log(reversedArr);
-
-*/
-
-import fileSystem from 'node:fs';
-
-fileSystem.readdir('./css', function (err, files) {
-    if (err) {
-        console.error(err);
-        return;
-    }
-
-    const cssFiles = files.filter(file => file.endsWith('.css'));
-    let totalContent = '';
-    const destination = 'compiled.css';
-
-    cssFiles.forEach(function (file) {
-        const fileContents = fileSystem.readFileSync(`./css/${file}`, 'utf8');
-
-        totalContent += fileContents;
-    })
-
-    fileSystem.writeFileSync(`./css/${destination}`, totalContent, function (err) {
-        if (err) {
-            console.error(err);
-            return;
+        switch (request.url) {
+            case "/":
+                path = "home.html";
+                break;
+            case "/about":
+                path = "about.html";
+                break;
+            case "/contact":
+                path = "contact.html";
+                break;
+            default:
+                path = "404.html";
         }
-    })
-    console.log("Done :)")
+
+        if (path == "404.html") {
+            response.writeHead(404, { 'Content-Type': 'text/html' });
+        }
+
+        FileSystem.readFile(`${path}`, null, (error, data) => {
+            if (error) {
+                response.write('File not found!');
+            } else {
+                response.write(data);
+            }
+            response.end();
+        });
+    }
 })
 
-/*
-
-The way I think about it ...
-
-What does readdir do again?
-
-    Asynchronously reads the contents of a give directory.
-    We have our path of css and our callback
-
-1) I need to go through every file that has "css" attached.
-
-2) For each file I need to get the lines of code written on them.
-
-    fs.copyFile( src, dest, mode, callback )
-
-3) Create a copy of it and compile them into one new file.
-
-    fileSystem.writeFileSync('<fileName>',<contenet>, callbackFunction)
-
-
-*/
+// Run server 
+const PORT = 1994;
+const HOST = 'localhost';
+server.listen(PORT, HOST, function () {
+    console.log(`Server runnnning at http://localhost:${PORT}`)
+})
