@@ -1,0 +1,12 @@
+<%- include ../partials/header %>
+
+<h1>EJS Home</h1>
+
+<ul>
+    <% pokemon.forEach(poke => { %>
+      <li><%= poke.name %> - <%= poke.type %></li>
+    <% }) %>
+</ul>
+
+
+<%- include ../partials/footer %>
