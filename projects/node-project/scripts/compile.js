@@ -32,7 +32,11 @@ fileSystem.readdir('./css', function (err, files) {
     const destination = 'compiled.css';
 
     cssFiles.forEach(function (file) {
-        const fileContents = fileSystem.readFileSync(`./css/${file}`, 'utf8');
+
+        var fileContents = fileSystem.readFileSync(`./css/${file}`, 'utf8');
+        if (file == 'compiled.css') {
+            var fileContents = ''
+        }
 
         totalContent += fileContents;
     })
@@ -45,7 +49,6 @@ fileSystem.readdir('./css', function (err, files) {
     })
     console.log("Done :)")
 })
-
 /*
 
 The way I think about it ...
