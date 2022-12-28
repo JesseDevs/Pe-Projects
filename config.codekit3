@@ -3130,6 +3130,78 @@
       "oAP" : "\/projects\/barbajs-tutorial\/page.html",
       "oF" : 0
     },
+    "\/projects\/base\/better-ss\/modules.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/better-ss\/modules-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/better-ss\/reset.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/better-ss\/reset-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/better-ss\/setup.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/better-ss\/setup-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/better-ss\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/base\/better-ss\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/better-ss\/typography.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/better-ss\/typography-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/base\/better-ss\/variables.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/base\/better-ss\/variables-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/projects\/base\/css\/modules.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -4830,6 +4902,344 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/client-project2\/templates\/pages\/standard.php",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/.gitignore",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/css\/compiled.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/css\/compiled-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/contentful-app\/css\/components.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/css\/components.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/css\/modules.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/css\/modules.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/css\/modules\/card.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/css\/modules\/card.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/css\/modules\/site-menu.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/css\/modules\/site-menu.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/css\/reset.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/css\/reset.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/css\/setup.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/css\/setup.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/css\/style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/css\/style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/css\/typography.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/css\/typography.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/css\/variables.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/css\/variables.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/contentful-app\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/contentful-app\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/contentful-app\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/contentful-app\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/contentful-app\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/contentful-app\/views\/pages\/404.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/views\/pages\/404.ejs",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/views\/pages\/characters.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/views\/pages\/characters.ejs",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/views\/pages\/home.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/views\/pages\/home.ejs",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/views\/partials\/card.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/views\/partials\/card.ejs",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/views\/partials\/footer.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/views\/partials\/footer.ejs",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/views\/partials\/head.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/views\/partials\/head.ejs",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/views\/partials\/header.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/views\/partials\/header.ejs",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/views\/partials\/site-menu.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/views\/partials\/site-menu.ejs",
+      "oF" : 0
+    },
+    "\/projects\/contentful-app\/wolf.png" : {
+      "ft" : 32768,
+      "iS" : 2219,
+      "oA" : 0,
+      "oAP" : "\/projects\/contentful-app\/wolf.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/express-project-practice\/about.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/express-project-practice\/about.html",
+      "oF" : 0
+    },
+    "\/projects\/express-project-practice\/app.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/express-project-practice\/app-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/express-project-practice\/data\/pokemon-data.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/express-project-practice\/data\/pokemon-data-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/express-project-practice\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/express-project-practice\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/express-project-practice\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/express-project-practice\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/express-project-practice\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/express-project-practice\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/express-project-practice\/views\/pages\/home.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/express-project-practice\/views\/pages\/home.ejs",
+      "oF" : 0
+    },
+    "\/projects\/express-project-practice\/views\/partials\/footer.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/express-project-practice\/views\/partials\/footer.ejs",
+      "oF" : 0
+    },
+    "\/projects\/express-project-practice\/views\/partials\/header.ejs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/express-project-practice\/views\/partials\/header.ejs",
       "oF" : 0
     },
     "\/projects\/fighters-crud\/css\/_components.scss" : {
@@ -44542,6 +44952,198 @@
       "oAP" : "\/projects\/music\/xmlrpc.php",
       "oF" : 0
     },
+    "\/projects\/node-project\/404.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/404.html",
+      "oF" : 0
+    },
+    "\/projects\/node-project\/about.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/about.html",
+      "oF" : 0
+    },
+    "\/projects\/node-project\/contact.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/contact.html",
+      "oF" : 0
+    },
+    "\/projects\/node-project\/css\/compiled.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/css\/compiled-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/node-project\/css\/reset.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/css\/reset-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/node-project\/css\/setup.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/css\/setup-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/node-project\/css\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/css\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/node-project\/css\/typography.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/css\/typography-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/node-project\/css\/variables.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/css\/variables-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/node-project\/home.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/home.html",
+      "oF" : 0
+    },
+    "\/projects\/node-project\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/node-project\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/node-project\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/node-project\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/node-project\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/node-project\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/node-project\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/node-project\/scripts\/cloud.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/scripts\/cloud-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/node-project\/scripts\/compile.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/scripts\/compile-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/node-project\/scripts\/datetime.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/scripts\/datetime-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/node-project\/scripts\/index-old.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/scripts\/index-old-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects\/node-project\/scripts\/math.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects\/node-project\/scripts\/math-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/projects\/shop\/css\/_components.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -48392,6 +48994,66 @@
       "oAP" : "\/scratch\/monster.php",
       "oF" : 0
     },
+    "\/scratch\/node-practice-module\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scratch\/node-practice-module\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/scratch\/node-practice-module\/module.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/scratch\/node-practice-module\/module-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/scratch\/node-practice-module\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/scratch\/node-practice-module\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/scratch\/node-practice\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/scratch\/node-practice\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/scratch\/node-practice\/practice-one-index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scratch\/node-practice\/practice-one-index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/scratch\/node-practice\/practice-one.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/scratch\/node-practice\/practice-one-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/scratch\/refactored.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -48431,17 +49093,6 @@
       "oAP" : "\/scratch\/styleTwo-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/scripts\/file-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/scripts\/file-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/scripts\/file.js" : {
       "bF" : 0,
