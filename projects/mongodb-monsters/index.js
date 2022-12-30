@@ -1,13 +1,18 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
 
+dotenv.config();
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }))
 
 async function connection() {
-	await mongoose.connect('mongodb+srv://Jessedevs:ThisPassword622@practice.htfphyy.mongodb.net/nintentdo-app');
+	await mongoose.connect(process.env.MONGODB_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	});
 }
 
 connection().catch(err => console.log(err));
@@ -19,7 +24,7 @@ const ninSchema = new mongoose.Schema({
 });
 const Character = mongoose.model('Character', ninSchema);
 
-app.listen(2000);
+app.listen(1111);
 app.get('/', function (req, res) {
 	res.send(`<h1> HOME </h1>
 		<a href='/list'> List </a>
