@@ -1,0 +1,13 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'typography.css';
+@import 'modules.css';
+@import 'variables.css';
+@import 'components.css';
+
+
+module ul {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+}
