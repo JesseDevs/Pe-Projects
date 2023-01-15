@@ -1,0 +1,208 @@
+:root {
+	--white: #ffffff;
+	--white-soft: #f8f8f8;
+	--white-mute: #f2f2f2;
+
+	--black: #181818;
+	--black-soft: #222222;
+	--black-mute: #282828;
+	--black-off: #4c4b52;
+
+	--color: #2eae8c;
+	--color-soft: #bbd8d1;
+	--color-mute: #80b2aa;
+	--color-dark: #2eae8c66;
+
+	--cube-color: #6aa79699;
+	--cube-line: #b5e3d7b3;
+
+	--ink: var(--white-mute);
+	--page: var(--black-mute);
+
+	--divider-light-1: rgba(60, 60, 60, 0.29);
+	--divider-light-2: rgba(60, 60, 60, 0.12);
+	--divider-dark-1: rgba(84, 84, 84, 0.65);
+	--divider-dark-2: rgba(84, 84, 84, 0.48);
+
+	--text-light-1: rgba(60, 60, 60, 0.66);
+	--text-dark-1: rgba(235, 235, 235, 0.64);
+
+	--landing-text: var(--black-mute);
+}
+
+@media(prefers-color-scheme: light) {
+	:root {
+		--color: rgb(195 107 84);
+		--color-soft: rgb(237, 191, 176);
+		--color-mute: rgb(199 123 100);
+		--color-dark: rgb(144, 83, 69);
+
+		--cube-color: ;
+		--cube-line: ;
+
+		--ink: var(--black-mute);
+		--page: rgb(249 244 227);
+		--landing-text: var(--white-mute);
+
+	}
+}
+
+:root {
+	--s-small: 5px;
+	--s-small-space: 10px;
+	--s-space: 20px;
+	--s-big-space: 40px;
+	--s-bigbig: 70px;
+	--section-gap: 160px;
+
+	--big-general-space: 12vh;
+	--general-space: 5vh;
+	--tight-space: 2.6vh;
+
+	--thin: 3px;
+	--thick: 5px;
+	--Xthick: 9px;
+}
+
+@media(min-width: 1700px) {
+
+	html {
+		--big-general-space: 7vh;
+		--general-space: 3vh;
+		--tight-space: 1.7vh;
+	}
+}
+
+/* $animations*/
+
+@keyframes turn {
+	from {
+		transform: rotate3d(0, 0, 0, 0);
+	}
+
+	to {
+		transform: rotate3d(2, -1, 1, 360deg);
+	}
+}
+
+
+@keyframes drop-in {
+	from {
+		transform: translateY(-200px);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(-100%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes smooth {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes rotateAnimation {
+	from {
+		transform: rotateY(45deg);
+	}
+
+	to {
+		transform: rotateY(225deg);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate3d(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: rotate3d(1, 0, 360deg);
+	}
+}
+
+
+@keyframes spin {
+	0% {
+		transform: rotateY(0deg) rotateX(0deg);
+
+	}
+
+	100% {
+		transform: rotateY(360deg) rotateX(360deg);
+	}
+
+}
+
+@keyframes circular {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+@keyframes alertIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes upFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes rightFadeIn {
+	from {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes leftFadeIn {
+	from {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}

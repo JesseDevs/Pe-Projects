@@ -1,0 +1,23 @@
+@import '../css/modules/big-heading.scss';
+@import '../css/modules/landing-heading.scss';
+@import '../css/modules/about-card.scss';
+@import '../css/modules/project-card.scss';
+@import '../css/modules/project-section.scss';
+@import '../css/modules/contact-form.scss';
+@import '../css/modules/resume-section.scss';
+@import '../css/modules/resume-card.scss';
+@import '../css/modules/grid-blog.scss';
+@import '../css/modules/blog-card.scss';
+@import '../css/modules/missing-heading.scss';
+@import '../css/modules/goals-section.scss';
+@import '../css/modules/form-grid.scss';
+@import '../css/modules/form-box.scss';
+@import '../css/modules/project-page.scss';
+@import '../css/modules/small-grid.scss';
+
+module ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 15px;
+	align-items: center;
+}
