@@ -1,0 +1,8 @@
+@import '../css/modules/site-menu.scss';
+
+module ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 15px;
+	align-items: center;
+}
