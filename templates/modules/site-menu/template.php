@@ -25,18 +25,7 @@
 		<nav class='main-menu'>
 			<ul>
 
-				<li><a href="" class=" <?php activePage("") ?>">Home</a></li>
-				<li><a href="about" class=" <?php activePage("about") ?>">About</a></li>
-				<li><a href="projects" class=" <?php activePage("projects") ?>">Projects</a></li>
-				<li class="large-size">
-					<a href="writing" class="<?php activePage("writing") ?>">Writing</a>
-				</li>
-				<li class="larger-size">
-					<a href="forms" class="<?php activePage("forms") ?>">Forms</a>
-				</li>
-				<li class="larger-size">
-					<a href="style" class="<?php activePage("style") ?>">Guide</a>
-				</li>
+
 			</ul>
 
 		</nav>
