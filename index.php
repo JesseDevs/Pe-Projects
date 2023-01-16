@@ -1,3 +1,4 @@
+<?php include('config.php'); ?>
 <?php include('router/functions.php');
 
 $description = null;
@@ -11,32 +12,33 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesse Felix Personal Site: <?= ucfirst($page); ?> Page</title>
-    <meta name='description' content="<?= $pageData['intro'] ?>">
-    <meta property="og:image" content="<?= $metaImage ?>">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jesse Felix Personal Site: <?= ucfirst($page); ?> Page</title>
+	<meta name='description' content="<?= $pageData['intro'] ?>">
+	<meta property="og:image" content="<?= $metaImage ?>">
+	<base href="<?= BASE_URL ?>">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
 
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body class='<?= $page ?>'>
 
-    <?php
-    include('templates/modules/site-menu/template.php');
+	<?php
+	include('templates/modules/site-menu/template.php');
 
-    renderPage();
+	renderPage();
 
-    include('templates/modules/site-footer/template.php');
-    ?>
+	include('templates/modules/site-footer/template.php');
+	?>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="scripts/file.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+	<script src="scripts/file.js"></script>
 
 </body>
 
