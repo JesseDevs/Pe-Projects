@@ -1,4 +1,3 @@
-<?php include('config.php'); ?>
 <?php include('router/functions.php');
 
 $description = null;
