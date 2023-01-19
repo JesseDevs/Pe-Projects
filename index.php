@@ -17,7 +17,6 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 	<title>Jesse Felix Personal Site: <?= ucfirst($page); ?> Page</title>
 	<meta name='description' content="<?= $pageData['intro'] ?>">
 	<meta property="og:image" content="<?= $metaImage ?>">
-	<base href="<?= BASE_URL ?>">
 
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
 
