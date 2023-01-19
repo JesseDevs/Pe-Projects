@@ -1,4 +1,4 @@
-<?php include('router/functions.php');
+<?php require('router/functions.php');
 
 $description = null;
 $metaImage = null;
@@ -25,7 +25,6 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 </head>
 
 <body class='<?= $page ?>'>
-
 	<?php
 	include('templates/modules/site-menu/template.php');
 
