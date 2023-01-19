@@ -1,4 +1,4 @@
-<?php require('router/functions.php');
+<?php include('router/functions.php');
 
 $description = null;
 $metaImage = null;
@@ -11,6 +11,7 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 <html lang="en">
 
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jesse Felix Personal Site: <?= ucfirst($page); ?> Page</title>
