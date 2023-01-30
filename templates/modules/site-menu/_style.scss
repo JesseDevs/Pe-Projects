@@ -256,21 +256,21 @@ header.display-menu .burger {
 }
 
 .container {
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 }
 
 .cube {
 	position: relative;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	transform-style: preserve-3d;
 	animation: turn 5s linear infinite;
 }
 
 .face {
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	background: var(--cube-color);
 	border: 3px solid var(--cube-line);
 	;
