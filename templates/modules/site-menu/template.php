@@ -1,24 +1,16 @@
 <header class='main-tool-bar site-header'>
 	<inner-column>
-		<ul class='logo-container'>
-			<li class="svg-box">
-				<div class="container">
-					<div class="cube">
-						<div class="face top"></div>
-						<div class="face bottom"></div>
-						<div class="face left"></div>
-						<div class="face right"></div>
-						<div class="face front"></div>
-						<div class="face back"></div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<a class='logo-link' href="?page=home">
-					<h1 class="logo">Jesse&nbsp;Devs</h1>
 
-				</a>
-			</li>
+		<div class="container">
+			<div class="cube">
+				<div class="face top"></div>
+				<div class="face bottom"></div>
+				<div class="face left"></div>
+				<div class="face right"></div>
+				<div class="face front"></div>
+				<div class="face back"></div>
+			</div>
+		</div>
 
 		</ul>
 
