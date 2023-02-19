@@ -6,6 +6,10 @@
 @import 'modules.scss';
 @import 'case.scss';
 
+section>inner-column>*>text-content {
+	padding-top: var(--s-big-space)
+}
+
 portfolio-grid {
 	display: block;
 	scroll-snap-type: y mandatory;
