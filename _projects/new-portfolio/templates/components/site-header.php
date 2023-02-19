@@ -2,14 +2,16 @@
 	<inner-column>
 
 		<div class="box-container">
-			<div class="cube">
-				<div class="face top"></div>
-				<div class="face bottom"></div>
-				<div class="face left"></div>
-				<div class="face right"></div>
-				<div class="face front"></div>
-				<div class="face back"></div>
-			</div>
+			<a href="?page=home">
+				<div class="cube">
+					<div class="face top"></div>
+					<div class="face bottom"></div>
+					<div class="face left"></div>
+					<div class="face right"></div>
+					<div class="face front"></div>
+					<div class="face back"></div>
+				</div>
+			</a>
 		</div>
 
 		<nav class='main-menu'>
