@@ -57,12 +57,11 @@ portfolio-grid {
 
 .action-link {
 	letter-spacing: .05em;
-	font-weight: 600;
-	background-color: transparent;
+	font-weight: 500;
+	background-color: rgba(0, 0, 0, 0);
 	border: var(--thin) solid var(--highlight);
 	color: var(--ink);
-	max-width: 50%;
-
+	max-width: 70%;
 	text-align: center;
 	text-transform: uppercase;
 	padding: 15px var(--simple-space);

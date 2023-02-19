@@ -27,23 +27,26 @@
 	--text-light-1: rgba(60, 60, 60, 0.66);
 	--text-dark-1: rgba(235, 235, 235, 0.64);
 
+	--overlay: rgba(0, 0, 0, 0.4);
+
 	--landing-text: var(--black-mute);
 }
 
 @media(prefers-color-scheme: light) {
 	:root {
-		--color: rgb(195 107 84);
-		--color-soft: rgb(237, 191, 176);
-		--color-mute: rgb(199 123 100);
-		--color-dark: rgb(144, 83, 69);
+		--color: rgb(149 98 148);
+		--color-soft: rgb(197, 111, 170);
+		--color-mute: rgb(129, 70, 111);
+		--color-dark: rgb(88, 61, 88);
 
-		--cube-color: ;
-		--cube-line: ;
+		--cube-color: rgb(191 111 172/.7);
+		--cube-line: rgb(193 110 170/ .5);
 
 		--ink: var(--black-mute);
-		--page: rgb(249, 244, 227);
+		--page: rgb(255, 255, 254);
 		--landing-text: var(--white-mute);
 
+		--overlay: rgba(255, 255, 255, 0.2);
 	}
 }
 

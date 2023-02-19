@@ -12,9 +12,10 @@ row-container {
 	align-items: center;
 
 	project-card {
-		min-width: 90vw;
+		min-width: 80vw;
 		height: 100vh;
 		scroll-snap-align: start;
+		margin-right: 20px;
 	}
 
 }
