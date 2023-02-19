@@ -14,17 +14,19 @@ if ($page !== 'style') {
 ?>
 
 <main class="page-content <?= $page ?>">
-	<?php foreach ($pageData['sections'] as $section) { ?>
+	<portfolio-grid>
+		<?php foreach ($pageData['sections'] as $section) { ?>
 
-		<section class="has-a-module has-<?= $section["module"] ?>">
-			<inner-column>
+			<section class="has-a-module has-<?= $section["module"] ?>">
+				<inner-column>
 
-				<?php
-				include('templates/modules/' . $section["module"] . '.php');
-				?>
+					<?php
+					include('templates/modules/' . $section["module"] . '.php');
+					?>
 
-			</inner-column>
-		</section>
-	<?php } ?>
+				</inner-column>
+			</section>
+		<?php } ?>
+	</portfolio-grid>
 
 </main>
