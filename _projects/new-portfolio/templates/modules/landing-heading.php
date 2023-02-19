@@ -3,17 +3,22 @@ $heading = $section['heading'] ?? ucfirst($page);
 ?>
 
 <landing-heading>
-    <text-content>
-        <h1 class="roar-voice"><?= $heading ?></h1>
+	<text-content class='title'>
 
-        <p class='intro'> <?= $section["intro"] ?></p>
+		<h1 class="roar-voice"><?= $heading ?></h1>
 
-        <p class="details"><?= $section["details"] ?></p>
-    </text-content>
 
-    <picture class="landing-image">
 
-        <img src=" <?= $section['image'] ?>" alt="comp" loading='lazy'>
-    </picture>
+		<p class='intro'> <?= $section["intro"] ?></p>
+
+
+		<p class="details"><?= $section["details"] ?></p>
+
+	</text-content>
+
+	<picture class="landing-image">
+
+		<img src=" <?= $section['image'] ?>" alt="comp" loading='lazy'>
+	</picture>
 
 </landing-heading>

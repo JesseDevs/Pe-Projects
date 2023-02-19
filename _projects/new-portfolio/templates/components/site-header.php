@@ -27,6 +27,7 @@
 				<li class="larger-size">
 					<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
 				</li>
+
 			</ul>
 
 		</nav>
