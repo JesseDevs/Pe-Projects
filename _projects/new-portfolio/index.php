@@ -30,7 +30,8 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 
 	renderPage();
 
-	include('templates/components/site-footer.php');
+	// include('templates/components/site-footer.php');
+	// 
 	?>
 
 
