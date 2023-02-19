@@ -1,6 +1,6 @@
 <about-card>
 	<text-content>
-		<h2 class='yell-voice'><?= $section['heading']; ?></h2>
+		<h2 class='loud-voice'><?= $section['heading']; ?></h2>
 		<p class='intro'><?= $section['intro']; ?></p>
 
 
