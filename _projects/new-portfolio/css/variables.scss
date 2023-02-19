@@ -41,7 +41,7 @@
 		--cube-line: ;
 
 		--ink: var(--black-mute);
-		--page: rgb(249 244 227);
+		--page: rgb(249, 244, 227);
 		--landing-text: var(--white-mute);
 
 	}
@@ -74,6 +74,50 @@
 }
 
 /* $animations*/
+
+@keyframes text-clip {
+	from {
+		opacity: 0;
+		clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+	}
+
+	to {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		opacity: 1;
+	}
+}
+
+@keyframes outer-left {
+	from {
+		opacity: 0;
+		transform: translateX(50%);
+	}
+
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes inner-left {
+	from {
+		transform: translateX(-50%);
+	}
+
+	to {
+		transform: none;
+	}
+}
+
+@keyframes image-in {
+	from {
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	to {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
 
 @keyframes turn {
 	from {
