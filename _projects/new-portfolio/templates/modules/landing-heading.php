@@ -17,6 +17,7 @@ $heading = $section['heading'] ?? ucfirst($page);
 	</text-content>
 
 	<picture class="landing-image">
+		<div class="overlay"></div>
 
 		<img src=" <?= $section['image'] ?>" alt="comp" loading='lazy'>
 	</picture>
