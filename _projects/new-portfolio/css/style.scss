@@ -31,14 +31,15 @@ portfolio-grid {
 	}
 
 	section:not(:first-of-type) {
-
 		height: 90%;
-
 	}
 
-	// section:last-of-type{
-	// 	height: ;
-	// }
+	section:first-of-type {
+		height: 50%;
+	}
+
+
+
 }
 
 
