@@ -6,14 +6,15 @@
 @import 'modules.scss';
 @import 'case.scss';
 
-section>inner-column>*>text-content {
-	padding-top: 30px
-}
+// section>inner-column>*>text-content {
+// 	padding-top: 30px
+// }
 
 portfolio-grid {
 	display: block;
 	scroll-snap-type: y mandatory;
 	height: 100vh;
+	margin-top: 60px;
 	overflow-y: scroll;
 
 	section {
