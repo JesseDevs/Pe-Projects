@@ -7,7 +7,7 @@
 @import 'case.scss';
 
 section>inner-column>*>text-content {
-	padding-top: var(--s-big-space)
+	padding-top: 30px
 }
 
 portfolio-grid {
@@ -24,6 +24,10 @@ portfolio-grid {
 		background-position: center;
 		scroll-snap-align: start;
 	}
+}
+
+button {
+	font-family: inherit;
 }
 
 .intro {
@@ -58,11 +62,12 @@ portfolio-grid {
 .action-link {
 	letter-spacing: .03em;
 	font-weight: 500;
+	width: 100%;
 	border: var(--thin) solid var(--color);
 	color: var(--ink);
 	text-align: center;
 	text-transform: uppercase;
-	padding: 12px 22px;
+	padding: 12px 20px;
 	background-color: rgb(var(--color-rgb), .2);
 	transition: background-color .3s ease-in-out;
 }
