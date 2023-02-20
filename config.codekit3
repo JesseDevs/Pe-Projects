@@ -43929,10 +43929,10 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/_projects\/new-portfolio\/scripts\/file-min.js",
-      "oF" : 0,
-      "sC" : 3,
+      "oF" : 1,
+      "sC" : 0,
       "tS" : 0
     },
     "\/_projects\/new-portfolio\/templates\/case\/diptech.php" : {
