@@ -15,6 +15,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 	color: var(--ink);
 	background-color: var(--page);
 	font-weight: 300;
