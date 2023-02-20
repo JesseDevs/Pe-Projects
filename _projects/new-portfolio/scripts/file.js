@@ -12,7 +12,7 @@ function scrollToSection() {
 	});
 }
 
-const formInputs = document.querySelectorAll('form input');
+const formInputs = document.querySelectorAll('form textarea');
 
 formInputs.forEach((input) => {
 	input.addEventListener('focus', () => {
