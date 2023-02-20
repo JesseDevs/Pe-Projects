@@ -12,6 +12,20 @@ function scrollToSection() {
 	});
 }
 
+const formInputs = document.querySelectorAll('form input');
+
+formInputs.forEach((input) => {
+	input.addEventListener('focus', () => {
+		const parentElement = document.querySelector('#parent-element');
+		parentElement.style.scrollSnapType = 'none';
+	});
+
+	input.addEventListener('blur', () => {
+		const parentElement = document.querySelector('#parent-element');
+		parentElement.style.scrollSnapType = 'y mandatory';
+	});
+});
+
 var toggle = document.querySelector('#switch');
 const $formBox = document.querySelector('.form-box');
 const $form = document.querySelector('form');
