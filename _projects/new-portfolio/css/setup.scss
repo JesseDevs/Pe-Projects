@@ -15,7 +15,6 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 	color: var(--ink);
 	background-color: var(--page);
 	font-weight: 300;
@@ -39,7 +38,6 @@ inner-column {
 	margin-left: auto;
 	padding: 2rem 1rem;
 	max-width: 1100px;
-	overflow-y: hidden;
 }
 
 article-grid,
