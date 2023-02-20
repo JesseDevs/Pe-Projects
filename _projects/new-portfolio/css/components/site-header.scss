@@ -14,7 +14,7 @@
 	}
 
 	inner-column {
-		padding: 0 1rem;
+		padding: 5px 1rem 0;
 		display: flex;
 		min-height: 50px;
 		gap: var(--simple-space);
@@ -114,20 +114,28 @@ g {
 
 .burger {
 	display: none;
-	border-top: var(--thin) solid var(--color);
-	background-color: var(--page);
-
 	text-align: center;
 	position: absolute;
-	right: 0;
-	bottom: -215px;
 	width: 100%;
+	height: 100vh;
+	top: 70px;
+	left: 0;
+	background-color: var(--dark-overlay);
+
+	ul {
+		background-color: var(--page);
+
+		li:hover {
+			background-color: rgb(var(--color-rgb), .2);
+
+		}
+	}
 
 	a {
-		border: var(--thin) solid var(--highlight);
-		border-top: 0;
-		padding: 5px;
+		border: 2px solid var(--color-mute);
+		padding: 10px;
 	}
+
 }
 
 header.display-menu {
@@ -149,6 +157,7 @@ header.display-menu {
 
 	.burger {
 		display: block;
+		z-index: 200;
 
 		a:hover {
 			background-color: var(--highlightFade);

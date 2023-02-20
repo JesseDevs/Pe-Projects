@@ -39,13 +39,27 @@
 		</button>
 
 		<nav class="burger">
-			<a class="small-size" href="?page=home" class=" <?php activePage("home") ?>">Home</a>
-			<a class="small-size" href="?page=about" class=" <?php activePage("about") ?>">About</a>
-			<a class="small-size" href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
-			<a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
+			<ul>
+				<li>
+					<a class="small-size" href="?page=home" class=" <?php activePage("home") ?>">Home</a>
+				</li>
+				<li>
+					<a class="small-size" href="?page=about" class=" <?php activePage("about") ?>">About</a>
+				</li>
+				<li>
+					<a class="small-size" href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
+				</li>
+				<li>
+					<a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
+				</li>
+				<li>
+					<a href="?page=forms" class="<?php activePage("forms") ?>">Forms</a>
+				</li>
+				<li>
+					<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
+				</li>
+			</ul>
 
-			<a href="?page=forms" class="<?php activePage("forms") ?>">Forms</a>
-			<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
 		</nav>
 	</inner-column>
 </header>
