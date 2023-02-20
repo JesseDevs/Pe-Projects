@@ -6,9 +6,9 @@
 @import 'modules.scss';
 @import 'case.scss';
 
-section>inner-column>*>text-content {
-	padding-top: 30px
-}
+// section>inner-column>*>text-content {
+// 	padding-top: 30px
+// }
 
 portfolio-grid {
 	display: block;
@@ -18,7 +18,7 @@ portfolio-grid {
 
 	section {
 		width: 100%;
-		height: 100vh;
+		height: 90%;
 		background-size: cover;
 		background-position: center;
 		scroll-snap-align: start;
