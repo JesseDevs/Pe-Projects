@@ -1,4 +1,4 @@
-<header class='main-tool-bar site-header'>
+<header class='site-header'>
 	<inner-column>
 
 		<div class="box-container">
