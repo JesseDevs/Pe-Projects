@@ -44,7 +44,6 @@ contact-form {
 	}
 }
 
-
 form-field {
 	grid-column: 1 / -1;
 	padding: 5px 8px;
@@ -55,34 +54,12 @@ form-field {
 		width: 85%;
 	}
 
-	div.contains-textarea {
-		height: 100px;
-	}
-
-	select {
-		border: 1px solid black;
-		height: 100%;
-		width: 100%;
-	}
-
-	label {
-		text-align: left;
-		font-weight: 500;
-		padding-left: 8px;
-	}
-
-	@media (hover: hover) {
-		&:hover {
-			background-color: rgba(var(--color-rgb), 0.3);
-		}
-
-		&:hover :is(input, textarea, select) {
-			border-color: transparent;
-		}
+	&:hover {
+		background-color: rgba(var(--color-rgb), 0.3);
 	}
 
 	&:hover :is(input, textarea, select) {
-		border-color: var(--color);
+		border-color: var(--color-soft);
 	}
 
 }
