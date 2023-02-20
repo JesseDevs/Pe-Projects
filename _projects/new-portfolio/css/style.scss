@@ -13,6 +13,8 @@
 portfolio-grid {
 	display: block;
 	scroll-snap-type: y mandatory;
+	width: 100%;
+	position: absolute;
 	height: 100vh;
 	overflow-y: scroll;
 
@@ -25,11 +27,6 @@ portfolio-grid {
 	}
 }
 
-.has-contact-form {
-	inner-column {
-		max-height: 60vh;
-	}
-}
 
 .intro {
 	margin-bottom: var(--intro-space);
