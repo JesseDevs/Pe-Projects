@@ -16,12 +16,12 @@ const formInputs = document.querySelectorAll('form input');
 
 formInputs.forEach((input) => {
 	input.addEventListener('focus', () => {
-		const parentElement = document.querySelector('#parent-element');
+		const parentElement = document.querySelector('portfolio-grid');
 		parentElement.style.scrollSnapType = 'none';
 	});
 
 	input.addEventListener('blur', () => {
-		const parentElement = document.querySelector('#parent-element');
+		const parentElement = document.querySelector('portfolio-grid');
 		parentElement.style.scrollSnapType = 'y mandatory';
 	});
 });
