@@ -21,6 +21,8 @@
 				<img src="<?= $image ?>" alt="Me" loading='lazy'>
 
 			<?php } ?>
+			<!-- 
+			"Currently under the mentorship of <a href='https://perpetual.education/'>Perpetual Education</a>, exploring my skills by experimenting in a wide range of coding and design disciplines. I see myself continuing to challenge myself, to learn, and to do amazing things." -->
 		</picture>
 	</div>
 </about-card>
