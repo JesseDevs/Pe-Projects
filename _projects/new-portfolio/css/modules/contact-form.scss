@@ -15,7 +15,7 @@ contact-form {
 		width: 100%;
 		font-family: "Montserrat", sans-serif;
 		padding: 10px 15px;
-		font-size: 1.1rem;
+		font-size: var(--step-0);
 		border: 1px solid var(--black);
 		outline: none;
 		resize: none;
@@ -46,13 +46,8 @@ contact-form {
 
 
 form-field {
-	display: flex;
-	flex-direction: column;
 	grid-column: 1 / -1;
-	gap: 3px;
-	padding: 8px;
-	justify-content: center;
-	align-items: center;
+	padding: 5px 8px;
 	width: 100%;
 	position: relative;
 
@@ -76,17 +71,20 @@ form-field {
 		padding-left: 8px;
 	}
 
-	&:hover {
-		background-color: rgba(var(--color-rgb), 0.3);
+	@media (hover: hover) {
+		&:hover {
+			background-color: rgba(var(--color-rgb), 0.3);
+		}
+
+		&:hover :is(input, textarea, select) {
+			border-color: transparent;
+		}
 	}
 
 	&:hover :is(input, textarea, select) {
 		border-color: var(--color);
 	}
 
-	:is(input, textarea, select):focus {
-		box-shadow: 0 0 0 0.2rem var(--color);
-	}
 }
 
 @media(min-width:400px) {
