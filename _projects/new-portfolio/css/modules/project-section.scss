@@ -9,11 +9,11 @@ row-container {
 	overflow-y: scroll;
 
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 
 	project-card {
 		min-width: 80vw;
-		height: 100vh;
+		height: auto;
 		scroll-snap-align: start;
 		margin-right: 20px;
 	}
