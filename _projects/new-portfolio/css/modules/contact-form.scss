@@ -9,27 +9,6 @@ contact-form {
 		grid-column: 1/-1;
 	}
 
-	input,
-	textarea,
-	select {
-		width: 100%;
-		font-family: "Montserrat", sans-serif;
-		padding: 10px 15px;
-		font-size: var(--step-0);
-		border: 2px solid var(--black);
-		outline: none;
-		resize: none;
-	}
-
-	input:focus,
-	textarea:focus {
-		border: 2px solid var(--color);
-	}
-
-	textarea {
-		min-height: 100px;
-	}
-
 	form {
 		grid-column: 1/-1;
 		display: grid;
@@ -50,69 +29,25 @@ form-field {
 	width: 100%;
 	position: relative;
 
-	div {
-		width: 85%;
+	input,
+	textarea,
+	select {
+		width: 100%;
+		font-family: "Montserrat", sans-serif;
+		padding: 10px 15px;
+		font-size: var(--step-0);
+		border: 2px solid var(--black);
+		outline: none;
+		resize: none;
 	}
 
-	&:hover {
-		background-color: rgba(var(--color-rgb), 0.3);
+	input:focus,
+	textarea:focus {
+		border: 2px solid var(--color);
 	}
 
-	&:hover :is(input, textarea, select) {
-		border-color: var(--color-soft);
+	textarea {
+		min-height: 100px;
 	}
-
-}
-
-@media(min-width:400px) {
-	contact-form text-content {
-		grid-column: 1/ span 2;
-		max-width: 80%;
-	}
-
-}
-
-@media(min-width: 800px) {
-
-	contact-form {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		column-gap: var(--simple-big-space);
-		position: relative;
-
-		text-content {
-			grid-column: 1/ span 2;
-			max-width: 50ch;
-		}
-
-		form {
-			grid-column: 1 / span 2;
-			max-width: none;
-			margin: 0;
-		}
-
-		.fade {
-			display: block;
-			animation: rightFadeIn 1.5s forwards;
-			position: absolute;
-			top: 20px;
-			margin-left: 3%;
-
-		}
-
-
-		.cube-sphere {
-
-			order: 3;
-			display: block;
-			z-index: 1;
-			margin: 0;
-
-			animation: circular 10s infinite linear;
-
-		}
-
-	}
-
 
 }
