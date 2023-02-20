@@ -36,7 +36,7 @@
 		{
 			"module": "contact-form",
 			"heading": "Contact",
-			"intro": "Lets talk about code? Maybe some life discussion? Or some of the latest music out?",
+			"intro": "Lets talk?",
 			"labelOne": "NAME",
 			"holderOne": "Jesse",
 			"labelTwo": "EMAIL",

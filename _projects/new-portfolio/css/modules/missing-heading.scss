@@ -4,6 +4,9 @@ missing-heading {
 	text-align: center;
 	position: relative;
 	min-height: 600px;
+	animation: upFadeIn .5s forwards;
+	opacity: 0;
+	animation-delay: .3s;
 
 	p {
 		max-width: 400px;
