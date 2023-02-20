@@ -69,6 +69,13 @@ p a {
 	color: var(--color);
 }
 
+p a:hover,
+p+a:hover {
+	background-color: var(--highlight);
+	transition: background-color .4s;
+	color: white;
+}
+
 p {
 	line-height: 1.6;
 	max-width: 60ch;

@@ -32,7 +32,7 @@
 .roar-voice {
 	font-size: var(--step-6);
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .yell-voice {
@@ -41,6 +41,8 @@
 
 .loud-voice {
 	font-size: var(--step-4);
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .attention-voice {

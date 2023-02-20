@@ -8,7 +8,8 @@
 	--black-mute: #282828;
 	--black-off: #4c4b52;
 
-	--color: #2eae8c;
+	--color: rgb(46, 174, 140);
+	--color-rgb: 46, 174, 140;
 	--color-soft: #bbd8d1;
 	--color-mute: #80b2aa;
 	--color-dark: #2eae8c66;
@@ -28,6 +29,7 @@
 	--text-dark-1: rgba(235, 235, 235, 0.64);
 
 	--overlay: rgba(0, 0, 0, 0.4);
+	--dark-overlay: rgba(0, 0, 0, 0.65);
 
 	--landing-text: var(--black-mute);
 }
@@ -35,6 +37,7 @@
 @media(prefers-color-scheme: light) {
 	:root {
 		--color: rgb(149 98 148);
+		--color-rgb: 149 98 148;
 		--color-soft: rgb(197, 111, 170);
 		--color-mute: rgb(129, 70, 111);
 		--color-dark: rgb(88, 61, 88);
@@ -60,6 +63,7 @@
 
 	--big-general-space: 12vh;
 	--general-space: 5vh;
+	--intro-space: 4vh;
 	--tight-space: 2.6vh;
 
 	--thin: 3px;
@@ -72,6 +76,7 @@
 	html {
 		--big-general-space: 7vh;
 		--general-space: 3vh;
+		--intro-space: 2.3vh;
 		--tight-space: 1.7vh;
 	}
 }
