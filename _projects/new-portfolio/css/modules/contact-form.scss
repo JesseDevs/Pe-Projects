@@ -1,94 +1,92 @@
-.contact-form {
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-
 contact-form {
-	display: block;
 	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	max-width: 450px;
+	position: relative;
 
-
-	form {
-		margin: 0 auto;
+	text-content {
+		grid-column: 1/-1;
 	}
 
-
-	button {
-		margin-left: auto;
-		margin-right: 0;
-		margin-top: 0;
-	}
-
+	input,
 	textarea,
-	input {
-		margin-bottom: var(--simple-big-space);
-		border: 3px solid transparent;
-	}
-
-	input::placeholder,
-	textarea::placeholder {
-		font-weight: 500;
+	select {
+		width: 100%;
+		font-family: "Montserrat", sans-serif;
+		padding: 10px 15px;
+		font-size: 1.1rem;
+		border: 1px solid var(--black);
+		outline: none;
+		resize: none;
 	}
 
 	input:focus,
 	textarea:focus {
-		color: var(--black);
-
-		border-radius: none;
-		transition: background-color 600ms, border-color 400ms;
+		border: 1px solid var(--color);
 	}
 
-	input:focus::placeholder,
-	textarea:focus::placeholder {
-		color: rgba(0, 0, 0, 0.64);
+	textarea {
+		min-height: 100px;
 	}
 
-}
+	form {
+		grid-column: 1/-1;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		row-gap: 20px;
+	}
 
-input,
-textarea {
-	padding: var(--simple-space) 10px;
-	border-radius: 0;
-	border: 0;
-}
+	button {
+		grid-column: 2/-1;
+		justify-self: flex-end;
 
-textarea {
-	min-height: 150px;
-}
-
-label {
-	margin-bottom: 5px;
-	line-height: 1.2;
-}
-
-input {
-	height: 1.6rem;
-	margin-bottom: 25px;
-}
-
-select {
-	height: 1.6rem;
-	text-align: center;
-}
-
-.message input {
-	height: 10rem;
-}
-
-form button {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: fit-content;
-
+	}
 }
 
 
-.fade {
-	display: none;
-	grid-column: 3/ span 2;
-	scale: 1.1;
-	padding-left: 10px;
-	margin-top: 100px;
+form-field {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / -1;
+	gap: 3px;
+	padding: 8px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+
+	div {
+		width: 85%;
+	}
+
+	div.contains-textarea {
+		height: 100px;
+	}
+
+	select {
+		border: 1px solid black;
+		height: 100%;
+		width: 100%;
+	}
+
+	label {
+		text-align: left;
+		font-weight: 500;
+		padding-left: 8px;
+	}
+
+	&:hover {
+		background-color: rgba(var(--color-rgb), 0.3);
+	}
+
+	&:hover :is(input, textarea, select) {
+		border-color: var(--color);
+	}
+
+	:is(input, textarea, select):focus {
+		box-shadow: 0 0 0 0.2rem var(--color);
+	}
 }
 
 @media(min-width:400px) {
@@ -98,8 +96,6 @@ form button {
 	}
 
 }
-
-
 
 @media(min-width: 800px) {
 

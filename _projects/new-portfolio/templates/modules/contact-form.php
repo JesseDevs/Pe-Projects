@@ -20,28 +20,22 @@
 	</text-content>
 
 	<form method="POST">
-		<field>
+		<form-field>
 			<input type="text" placeholder="<?= $section['labelOne'] ?>">
-		</field>
+		</form-field>
 
 
-		<field>
+		<form-field>
 			<input name='email' placeholder="<?= $section['labelTwo'] ?>" type=" email">
-		</field>
+		</form-field>
 
 
-		<field class='message'>
+		<form-field class='message'>
 			<textarea name="message" type="text" placeholder="<?= $section['labelThree'] ?>"></textarea>
-		</field>
+		</form-field>
 
 
 		<button class='action-link' type="submit" name="submit" value="Send Message"><?= $section['button'] ?></button>
 	</form>
 
-
-	<div class='fade'>
-		<div class="cube-sphere">
-			<?php include('templates/cube-sphere.php'); ?>
-		</div>
-	</div>
 </contact-form>
