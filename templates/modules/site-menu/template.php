@@ -1,15 +1,17 @@
 <header class='main-tool-bar site-header'>
 	<inner-column>
 
-		<div class="container">
-			<div class="cube">
-				<div class="face top"></div>
-				<div class="face bottom"></div>
-				<div class="face left"></div>
-				<div class="face right"></div>
-				<div class="face front"></div>
-				<div class="face back"></div>
-			</div>
+		<div class="box-container">
+			<a href="?page=home">
+				<div class="cube">
+					<div class="face top"></div>
+					<div class="face bottom"></div>
+					<div class="face left"></div>
+					<div class="face right"></div>
+					<div class="face front"></div>
+					<div class="face back"></div>
+				</div>
+			</a>
 		</div>
 
 		</ul>

@@ -2,6 +2,10 @@ landing-heading {
 	text-align: center;
 	position: relative;
 
+	.roar-voice {
+		font-size: var(--step-5);
+	}
+
 	h1 {
 		text-shadow: 1px 1px 3px var(--fade);
 		opacity: 0;
@@ -62,6 +66,10 @@ landing-heading {
 		column-gap: var(--simple-space);
 
 		position: relative;
+
+		.roar-voice {
+			font-size: var(--step-6);
+		}
 
 		h1 {
 			margin-bottom: var(--general-space);
