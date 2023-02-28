@@ -189,6 +189,18 @@ header.display-menu .burger {
 	}
 }
 
+.site-header inner-column .hamburger-button {
+	margin-top: 0;
+	margin-right: -1rem;
+	padding: 0;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+	width: 30%;
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+
 
 @media (min-width: 500px) {
 
@@ -206,15 +218,27 @@ header.display-menu .burger {
 		width: 50%;
 	}
 
+	.site-header inner-column .hamburger-button {
+		width: 15%;
+	}
+
 	.site-header inner-column button {
 		width: 10%;
 	}
+
+	.box-container {
+
+		margin-top: 6px;
+	}
 }
+
 
 @media(min-width: 650px) {
 	.main-menu .large-size {
 		display: block;
 	}
+
+
 }
 
 
@@ -235,17 +259,7 @@ header.display-menu .burger {
 	}
 }
 
-.site-header inner-column .hamburger-button {
-	margin-top: 0;
-	margin-right: -1rem;
-	padding: 0;
-	border: 0;
-	background-color: rgba(0, 0, 0, 0);
-	position: relative;
-	width: 30%;
-	cursor: pointer;
-	padding-bottom: 5px;
-}
+
 
 
 @keyframes turn {
@@ -263,6 +277,7 @@ header.display-menu .burger {
 	width: 30px;
 	height: 30px;
 	padding-left: 5px;
+	margin-top: 10px;
 }
 
 .cube {
