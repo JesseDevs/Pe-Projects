@@ -1,0 +1,72 @@
+@import '../css/components/site-header.scss';
+@import '../css/components/site-footer.scss';
+@import '../css/components/side-bar.scss';
+
+action-links {
+	display: flex;
+	gap: 5px;
+}
+
+.action-link {
+	letter-spacing: .03em;
+	font-weight: 500;
+	width: 100%;
+	border: var(--thin) solid var(--color);
+	color: var(--ink);
+	text-align: center;
+	text-transform: uppercase;
+	padding: 12px 20px;
+	background-color: rgb(var(--color-rgb), .2);
+	transition: background-color .3s ease-in-out;
+	font-family: 'IBM Plex Serif', serif;
+}
+
+.action-link:hover {
+
+	background-color: var(--highlight);
+	color: var(--white);
+}
+
+#menu-toggle:checked~.menu a:hover {
+	background-color: var(--accent);
+}
+
+
+.button {
+	appearance: none;
+	background-color: transparent;
+	border: 2px solid #1A1A1A;
+	color: #3B3B3B;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+	min-width: 0;
+	outline: none;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 300ms cubic-bezier(.23, 1, 0.32, 1);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 100%;
+	will-change: transform;
+}
+
+.button:disabled {
+	pointer-events: none;
+}
+
+.button:hover {
+	color: #fff;
+	background-color: #1A1A1A;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+}
+
+.button:active {
+	box-shadow: none;
+	transform: translateY(0);
+}

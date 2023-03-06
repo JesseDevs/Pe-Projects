@@ -1,0 +1,47 @@
+{
+	"id": "home",
+	"title": "Landing",
+	"intro": "Welcome to my personal site! Here you can find a little about me, my work, my personality, and a way to get in contact.",
+	"metaImage": "https://peprojects.dev/alpha-4/jesse/images/details/laptop.jpg",
+	"sections": [
+		{
+			"module": "landing-heading",
+			"heading": "Jesse Felix",
+			"intro": "Front End - Web&nbsp;Developer",
+			"details": "I’m a Web Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. I'm planning on making things happen! Maybe with you?",
+			"image": "images/details/comp.webp"
+		},
+		{
+			"module": "project-section",
+			"heading": "Projects",
+			"intro": "Some things I’ve made...",
+			"details": "",
+			"image": ""
+		},
+		{
+			"module": "about-card",
+			"heading": "About Me",
+			"intro": "Here is a little more...",
+			"details": [
+				"I obtained a Bachelor's degree in Business Finance. While exploring my inherent passion for computers, I wanted to allow myself to be more creative. I discovered Frontend Web Development and design. This became something I fully immersed myself into and want to expand by continuing to learn and explore."
+			],
+			"images": [
+				"images/details/methree.jpg",
+				"images/details/me.jpg",
+				"images/details/metoo.jpg",
+				"images/details/mefour.jpg"
+			]
+		},
+		{
+			"module": "contact-form",
+			"heading": "Contact",
+			"intro": "Lets talk?",
+			"labelOne": "NAME",
+			"holderOne": "Jesse",
+			"labelTwo": "EMAIL",
+			"labelThree": "MESSAGE",
+			"holderTwo": "Something to say..",
+			"button": "CONNECT"
+		}
+	]
+}

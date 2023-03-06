@@ -1,0 +1,14 @@
+big-heading {
+	display: block;
+	width: 100%;
+	text-align: center;
+	animation: upFadeIn .5s forwards;
+	opacity: 0;
+	animation-delay: .3s;
+
+	p {
+		max-width: 450px;
+		margin: 0 auto;
+	}
+
+}

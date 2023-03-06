@@ -1,0 +1,53 @@
+contact-form {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	max-width: 450px;
+	position: relative;
+
+	text-content {
+		grid-column: 1/-1;
+	}
+
+	form {
+		grid-column: 1/-1;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		row-gap: 20px;
+	}
+
+	button {
+		grid-column: 2/-1;
+		justify-self: flex-end;
+
+	}
+}
+
+form-field {
+	grid-column: 1 / -1;
+	padding: 5px 8px;
+	width: 100%;
+	position: relative;
+
+	input,
+	textarea,
+	select {
+		width: 100%;
+		font-family: "Montserrat", sans-serif;
+		padding: 10px 15px;
+		font-size: var(--step-0);
+		border: 2px solid var(--black);
+		outline: none;
+		resize: none;
+	}
+
+	input:focus,
+	textarea:focus {
+		border: 2px solid var(--color);
+	}
+
+	textarea {
+		min-height: 100px;
+	}
+
+}
