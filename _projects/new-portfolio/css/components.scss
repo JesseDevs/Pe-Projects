@@ -2,6 +2,36 @@
 @import '../css/components/site-footer.scss';
 @import '../css/components/side-bar.scss';
 
+.side-nav {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	background-color: #ccc;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.circle:hover {
+	background-color: #333;
+}
+
+.has-a-module {
+	scroll-margin-top: 80px;
+	/* Adjust this value to offset the fixed nav bar */
+}
+
 action-links {
 	display: flex;
 	gap: 5px;

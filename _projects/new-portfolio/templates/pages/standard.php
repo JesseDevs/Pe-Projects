@@ -17,7 +17,8 @@ if ($page !== 'style') {
 	<portfolio-grid>
 		<?php foreach ($pageData['sections'] as $section) { ?>
 
-			<section class="has-a-module has-<?= $section["module"] ?>">
+			<section id="<?= $section['module'] ?>" class="has-a-module has-<?= $section['module'] ?>">
+
 				<inner-column>
 
 					<?php
@@ -28,5 +29,13 @@ if ($page !== 'style') {
 			</section>
 		<?php } ?>
 	</portfolio-grid>
+
+	<nav class="side-nav">
+		<?php foreach ($pageData['sections'] as $section) { ?>
+			<a href="#<?= $section['module'] ?>">
+				<div class="circle"></div>
+			</a>
+		<?php } ?>
+	</nav>
 
 </main>

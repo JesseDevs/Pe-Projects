@@ -3,6 +3,7 @@ landing-heading {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	align-items: end;
+	margin-top: 70px;
 
 	.roar-voice {
 		font-size: var(--step-5);
@@ -16,7 +17,7 @@ landing-heading {
 		font-size: 8vw;
 		width: 100%;
 		z-index: 2;
-		padding-bottom: 250px;
+		padding-bottom: 200px;
 		animation: outer-left 1.6s cubic-bezier(0.5, 0, 0.1, 1) both;
 	}
 

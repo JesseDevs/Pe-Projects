@@ -18,8 +18,8 @@ portfolio-grid {
 	height: 90vh;
 	overflow-y: scroll;
 
-	section:first-of-type {
-		padding-top: 60px;
+	&::-webkit-scrollbar {
+		display: none;
 	}
 
 	section {
