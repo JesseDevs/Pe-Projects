@@ -21,14 +21,14 @@ html {
 	--black: rgb(10 5 5);
 	--fade: rgb(5 5 5 / .16);
 
-	filter: brightness(1.02);
+	filter: brightness(1.05);
 
 }
 
 
 html {
 	--ink: #f1f2f4;
-	--page: #4c4b52;
+	--page: var(--black-mute);
 
 	--highlight: #2eae8c;
 	--highlightFade: #2eae8c66;
