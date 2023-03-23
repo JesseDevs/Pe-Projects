@@ -103,6 +103,6 @@ function renderList($array, $type)
 {
 	$list = filterArrayByType($array, $type);
 	foreach ($list as $item) {
-		include("templates/modules/resume-card/template.php");
+		include("templates/modules/resume-card.php");
 	}
 }
