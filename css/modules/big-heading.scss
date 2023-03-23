@@ -1,0 +1,27 @@
+big-heading {
+	display: block;
+	width: 100%;
+	text-align: center;
+	animation: upFadeIn .5s forwards;
+	opacity: 0;
+	animation-delay: .3s;
+
+
+	.roar-voice {
+		font-size: var(--step-5);
+	}
+
+	@media(min-width:650px) {
+
+		.roar-voice {
+			font-size: var(--step-6);
+		}
+	}
+
+
+	p {
+		max-width: 450px;
+		margin: 0 auto;
+	}
+
+}

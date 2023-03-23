@@ -1,0 +1,51 @@
+.feedback {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+	min-height: 15vh;
+	margin-top: 10vh;
+
+	p {
+		font-size: clamp(1.5rem, 3.4vw, 2rem);
+		word-break: break-word;
+		white-space: normal;
+	}
+
+	strong {
+		display: inline-block;
+	}
+}
+
+form.none button {
+	opacity: .1;
+	pointer-events: none;
+}
+
+results {
+	display: block;
+	width: 100%;
+
+	.chant-voice {
+		margin-bottom: var(--tight-space);
+	}
+
+}
+
+div.change-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	height: 1rem;
+	margin-bottom: var(--simple-big-space);
+
+	input {
+		margin: 0;
+		max-width: 100px;
+	}
+
+	span {
+		font-weight: 500;
+	}
+}
