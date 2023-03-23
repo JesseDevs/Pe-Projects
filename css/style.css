@@ -994,6 +994,7 @@ select option {
 
 label {
   font-family: "Montserrat", sans-serif;
+  font-size: var(--step-1);
 }
 
 input:focus,
@@ -1400,6 +1401,10 @@ project-section .swiper-pagination-bullet-active {
   background-color: var(--color-mute);
 }
 
+.has-contact-form {
+  min-height: 60vh;
+}
+
 contact-form {
   width: 100%;
   display: grid;
@@ -1791,10 +1796,6 @@ form-grid {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* Point the arrow upwards when the select box is open (active): */
-  /* style the items (options), including the selected item: */
-  /* Style items (options): */
-  /* Hide the items when the select box is closed: */
 }
 form-grid text-content {
   grid-column: 1/-1;
@@ -1822,55 +1823,11 @@ form-grid ul {
 form-grid .action-link {
   max-width: 100%;
 }
-form-grid .custom-select {
+form-grid .form-select {
   position: relative;
   grid-column: 2/-1;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-}
-form-grid .custom-select select {
-  display: none;
-}
-form-grid .select-selected {
-  background-color: var(--color-soft);
-}
-form-grid .select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: var(--color-dark) transparent transparent transparent;
-  transition: all 0.4s ease-in-out;
-}
-form-grid .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-form-grid .select-items div,
-form-grid .select-selected {
-  color: var(--black);
-  padding: 10px 15px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-form-grid .select-items {
-  position: absolute;
-  background-color: var(--color-soft);
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-form-grid .select-hide {
-  display: none;
-}
-form-grid .select-items div:hover,
-form-grid .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 form-box {
@@ -1880,6 +1837,7 @@ form-box {
   padding: 20px 15px;
   border: var(--thin) solid var(--color-mute);
   box-shadow: 0px 69px 100px -120px var(--color-soft);
+  scroll-margin: 50px;
 }
 form-box sub-heading {
   display: block;
