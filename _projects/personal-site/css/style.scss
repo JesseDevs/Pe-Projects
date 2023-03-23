@@ -1,0 +1,31 @@
+@import 'reset.scss';
+@import 'setup.scss';
+@import 'variables.scss';
+@import 'typography.scss';
+@import 'components.scss';
+@import 'modules.scss';
+@import 'case.scss';
+
+
+.intro {
+	margin-bottom: var(--intro-space);
+	color: var(--color);
+	font-weight: 600;
+	font-size: var(--step-1);
+
+	p {
+		font-weight: 400;
+	}
+}
+
+
+#menu-toggle:checked~.menu a:hover {
+	background-color: var(--accent);
+
+}
+
+.gs_reveal {
+	opacity: 0;
+	visibility: hidden;
+	will-change: transform, opacity;
+}

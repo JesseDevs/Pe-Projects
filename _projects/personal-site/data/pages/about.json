@@ -1,0 +1,42 @@
+{
+	"id": "about",
+	"title": "About",
+	"intro": "Get to know me a little better. We can start here.",
+	"metaImage": "https://peprojects.dev/alpha-4/jesse/images/details/table.jpg",
+	"ad": [
+		{
+			"intro": "Follow my journey!",
+			"blog": "https://jessedevs.substack.com/"
+		}
+	],
+	"sections": [
+		{
+			"module": "big-heading",
+			"heading": "About Me",
+			"intro": "Front End<br>Web Developer",
+			"details": ""
+		},
+		{
+			"module": "about-card",
+			"heading": "My journey",
+			"intro": "Where I've been...",
+			"details": [
+				"I'm a graduate with a Bachelor's degree in Business Finance, but my true passion lies in the world of computers and web development.",
+				"Right now, I'm lucky enough to be under the mentorship of <a href='https://perpetual.education/'>Perpetual Education</a> where I'm experimenting with a wide range of coding and design disciplines. I'm constantly pushing myself to learn and grow, and I'm excited to see where this journey will take me.",
+				"I've always had an itch to be more creative and express myself, and that's when I discovered the exciting world of Frontend Web Development and design. From the moment I started, I was hooked! I've fully immersed myself into this field and can't wait to expand my knowledge and explore further.",
+				"But hey, I'm not all about work! When I'm not busy coding, you'll find me indulging in my other passions. I love playing games, hitting the gym to stay active, and checking out the latest music. And let's not forget, I'm on the hunt for the next best meal!"
+			],
+			"images": [
+				"images/details/methree.jpg",
+				"images/details/me.jpg",
+				"images/details/metoo.jpg",
+				"images/details/mefour.jpg"
+			]
+		},
+		{
+			"module": "resume-section",
+			"heading": "Resume",
+			"intro": "My history..."
+		}
+	]
+}
