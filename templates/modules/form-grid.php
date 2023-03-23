@@ -22,13 +22,13 @@
     		<p class=' form-intro intro'><?= $intro; ?></p>
     	</text-content>
 
-    	<div class="custom-select">
-    		<select name="form" id="form-select">
-    			<?php foreach ($section['items'] as $form) { ?>
-    				<option value="<?= $form["file-name"] . "-form" ?>"><?= strtoupper($form['title']) ?></option>
-    			<?php } ?>
-    		</select>
-    	</div>
+    	<select name="form-select" id="form-select" class='form-select'>
+    		<option value="-" selected disabled>Select:</option>
+    		<?php foreach ($section['items'] as $form) { ?>
+
+    			<option value="<?= $form["file-name"] . "-form" ?>"><?= strtoupper($form['title']) ?></option>
+    		<?php } ?>
+    	</select>
 
     	<ul>
     		<?php foreach ($section['items'] as $formThing) { ?>

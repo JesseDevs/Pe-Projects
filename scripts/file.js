@@ -607,7 +607,13 @@ function closeAllSelect(elmnt) {
 
 document.addEventListener('click', closeAllSelect);
 
-const formSelect = document.querySelector('.select-items');
-formSelect.addEventListener('change', (event) => {
-	console.log('hi');
+document.addEventListener('DOMContentLoaded', () => {
+	const formSelect = document.getElementById('form-select');
+	formSelect.addEventListener('change', (event) => {
+		const formId = event.target.value;
+		const formElement = document.getElementById(formId);
+		formElement.scrollIntoView({
+			behavior: 'smooth',
+		});
+	});
 });
