@@ -20,7 +20,7 @@ $total = null;
 $template = '';
 
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['checkout-submit'])) {
 
 	if (isset($_POST['priceOne'])) {
 		if ($_POST['priceOne'] >= 0) {
@@ -65,7 +65,7 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post" autocomplete="off" id="checkout">
 
-	<field>
+	<form-field>
 		<div class="container">
 			<label for="">How many <em>Apples</em> are you taking?</label>
 			<input type="number" name='quantityOne' value='<?= $quantityOne ?>' id='appleAmount' required min='0'>
@@ -75,9 +75,9 @@ if (isset($_POST['submitted'])) {
 			<label for="">Whats the price of the <em>Apples</em>?</label>
 			<input type="number" name='priceOne' value='<?= $priceOne ?>' required id='applePrice' min='0'>
 		</div>
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 		<div class="container">
 			<label for="">How many <em>Oranges</em> are you taking?</label>
 			<input type="number" name='quantityTwo' value='<?= $quantityTwo ?>' id='orangeAmount' required min='0'>
@@ -89,11 +89,11 @@ if (isset($_POST['submitted'])) {
 		</div>
 
 		<span> Tax is 5.5% in this equation</span>
-	</field>
+	</form-field>
 
 
 
-	<button class='action-link' type="submit" name='submitted'>Calculate</button>
+	<button class='action-link' type="submit" name='checkout-submit'>Calculate</button>
 
 
 </form>

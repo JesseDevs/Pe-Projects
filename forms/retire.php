@@ -7,7 +7,7 @@ $retireYear = 0;
 
 $template = "";
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['retire-submit'])) {
 
 	if ((isset($_POST['currentAge'])) && (isset($_POST['retireAge']))) {
 
@@ -35,19 +35,19 @@ if (isset($_POST['submitted'])) {
 
 <form method="POST" autocomplete="off" id='retire'>
 
-	<field>
+	<form-field>
 		<label for="">What is your age?</label>
 		<input type="number" inputmode=decimal required name="currentAge" value="<?= $currentAge ?>" min="0">
 
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 		<label for="">What age would you like to retire?</label>
 		<input type="number" inputmode=decimal required name="retireAge" value="<?= $retireAge ?>" min="0">
 
-	</field>
+	</form-field>
 
-	<button class='action-link' type="submit" name='submitted' id="calculate">Calculate</button>
+	<button class='action-link' type="submit" name='retire-submit' id="calculate">Calculate</button>
 
 </form>
 

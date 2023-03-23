@@ -7,7 +7,7 @@ $inputPassword = null;
 $template = null;
 
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['password-submit'])) {
 
 	if (isset($_POST['username'])) {
 		if (strlen($_POST['username']) > 0) {
@@ -30,25 +30,25 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post" autocomplete="off" id='password'>
 
-	<field>
+	<form-field>
 
 		<label for="">Enter username:</label>
 		<input type="text" name='username' autocomplete="off" value='<?= $inputUsername ?>' required min='0'>
 
 		<span>*Hint: <em>JohnDoe </em></span>
 
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 
 		<label for="">Enter password:</label>
 		<input type="password" name='password' autocomplete="off" value='<?= $inputUsername ?>' required min='0'>
 
 		<span>*Hint: <em>1020World</em></span>
 
-	</field>
+	</form-field>
 
-	<button class='action-link' type="submit" name='submitted'>Calculate</button>
+	<button class='action-link' type="submit" name='password-submit'>Calculate</button>
 
 
 </form>

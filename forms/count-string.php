@@ -23,7 +23,7 @@ function countString($string)
 	return $counter;
 }
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['count-submit'])) {
 
 	$phrase = $_POST['phrase'];
 	$characterCount = countString($phrase);
@@ -42,13 +42,13 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post" autocomplete="off" id="count-characters">
 
-	<field>
+	<form-field>
 
 		<label for="">Type a word? Or phrase?</label>
 		<input type="text" name='phrase' id="phrase">
-	</field>
+	</form-field>
 
-	<button class='action-link' type=" submit" name='submitted'>Calculate</button>
+	<button class='action-link' type=" submit" name='count-submit'>Calculate</button>
 
 
 </form>

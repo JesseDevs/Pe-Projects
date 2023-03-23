@@ -14,7 +14,7 @@ $templateTwo = "";
 $templateThree = "";
 $templateFour = "";
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['math-submit'])) {
 
 	if (isset($_POST['numOne'])) {
 		if ($_POST['numOne'] <= 0) {
@@ -45,20 +45,20 @@ if (isset($_POST['submitted'])) {
 
 <form action="" method="post" autocomplete="off" id='math'>
 
-	<field>
+	<form-field>
 
 		<label for="">Enter a number.</label>
 		<input type="number" inputmode=decimal name='numOne' value='<?= $numOne ?>' required min='1'>
 
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 		<label for="">Enter another number.</label>
 		<input type="number" inputmode=decimal name='numTwo' value='<?= $numTwo ?>' required min='1'>
 
-	</field>
+	</form-field>
 
-	<button class='action-link' type="submit" name='submitted' formtarget="_blank">Calculate</button>
+	<button class='action-link' type="submit" name='math-submit' formtarget="_blank">Calculate</button>
 
 
 </form>

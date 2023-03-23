@@ -7,7 +7,7 @@ $template = '';
 
 
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['hello-submit'])) {
 	$name = $_POST['name'];
 	$message = "Hello " . htmlspecialchars($name) . "! Nice to meet you!";
 
@@ -18,12 +18,12 @@ if (isset($_POST['submitted'])) {
 
 <form method="post" autocomplete="off" id="hello">
 
-	<field>
+	<form-field>
 		<label for="">What is your name?</label>
 		<input type="text" name='name' value='<?= $name ?>' id="name" required>
-	</field>
+	</form-field>
 
-	<button class='action-link' type="submit" name='submitted' id="calculate">Calculate</button>
+	<button class='action-link' type="submit" name='hello-submit' id="calculate">Submit</button>
 
 
 </form>

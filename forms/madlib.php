@@ -7,7 +7,7 @@ $adverb = '';
 
 $message = "";
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['madlib-submit'])) {
 	$noun = $_POST['noun'];
 	$verb = $_POST['verb'];
 	$adjective = $_POST['adjective'];
@@ -20,33 +20,33 @@ if (isset($_POST['submitted'])) {
 
 <form method="POST" autocomplete="off" id="madlib">
 
-	<field>
+	<form-field>
 		<label for="">Enter a noun.</label>
 		<input type="text" required name="noun" value="<?= $noun ?>">
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 		<label for="">Enter a verb.</label>
 		<input type="text" required name="verb" value="<?= $verb ?>">
 
-	</field>
+	</form-field>
 
 
-	<field>
+	<form-field>
 		<label for="">Enter an adverb.</label>
 		<input type="text" required name="adverb" value="<?= $adverb ?>">
 
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 		<label for="">Enter an adjective.</label>
 		<input type="text" required name="adjective" value="<?= $adjective ?>">
 
-	</field>
+	</form-field>
 
 
 
-	<button class='action-link' type="submit" name='submitted' id="calculate">Calculate</button>
+	<button class='action-link' type="submit" name='madlib-submit' id="calculate">Submit</button>
 
 
 </form>

@@ -7,7 +7,7 @@ $templateOne = "";
 $templateTwo = '';
 $final = '';
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['area-submit'])) {
 
 	if (isset($_POST['length'])) {
 		if ($_POST['length'] >= 0) {
@@ -31,19 +31,19 @@ if (isset($_POST['submitted'])) {
 
 <form method="post" id="area" autocomplete="off">
 
-	<field>
+	<form-field>
 		<label for="">What is the length of the room?</label>
 		<input type="number" name='length' value='<?= $length ?>' id="length" required min='0'>
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 
 		<label for="">What is the width of the room?</label>
 		<input type="number" name='width' value='<?= $width ?>' id="width" required min='0'>
 
-	</field>
+	</form-field>
 
-	<button class='action-link' type="submit" name='submitted' id="calculate">Calculate</button>
+	<button class='action-link' type="submit" name='area-submit' id="calculate">Calculate</button>
 
 </form>
 

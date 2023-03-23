@@ -6,7 +6,7 @@ $time = '';
 $amount = null;
 $template = '';
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['interest-submit'])) {
 
 	if (isset($_POST['principal'])) {
 		if ($_POST['principal'] >= 0) {
@@ -37,27 +37,27 @@ if (isset($_POST['submitted'])) {
 <form action="" autocomplete="off" method="post" id='interest'>
 
 
-	<field>
+	<form-field>
 		<label for="">What's the principal investment?</label>
 		<input type="number" name='principal' required min='0' placeholder="$1000">
-	</field>
+	</form-field>
 
 
-	<field>
+	<form-field>
 
 		<label for="">What is the yearly interest?</label>
 		<input type="number" name='interest' required min='0' placeholder="10%" step=".01">
-	</field>
+	</form-field>
 
 
-	<field>
+	<form-field>
 
 		<label for="">How long do you want to invest for?</label>
 		<input type="number" name='time' required min='0' placeholder="5">
-	</field>
+	</form-field>
 
 
-	<button class='action-link' type="submit" name='submitted'>Calculate</button>
+	<button class='action-link' type="submit" name='interest-submit'>Calculate</button>
 
 
 </form>

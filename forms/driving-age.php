@@ -4,7 +4,7 @@ $age = null;
 $template = null;
 
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['age-submit'])) {
 
 	if (isset($_POST['age'])) {
 		if ($_POST['age'] >= 0) {
@@ -18,14 +18,14 @@ if (isset($_POST['submitted'])) {
 
 <form action="" autocomplete="off" method="post" id='driving'>
 
-	<field>
+	<form-field>
 
 		<label for="">What's your age?</label>
 		<input type="number" name='age' value='<?= $age ?>' required min='0'>
 
-	</field>
+	</form-field>
 
-	<button class='action-link' type="submit" name='submitted'>Check Age</button>
+	<button class='action-link' type="submit" name='age-submit'>Check Age</button>
 
 
 </form>

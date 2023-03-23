@@ -7,7 +7,7 @@ $area = null;
 $paint = null;
 $template = '';
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['paint-submit'])) {
 
 	if (isset($_POST['length'])) {
 		if ($_POST['length'] >= 0) {
@@ -30,23 +30,23 @@ if (isset($_POST['submitted'])) {
 
 
 <form action="" method="post" autocomplete="off" id='paint'>
-	<field>
+	<form-field>
 
 		<label for="">What is the length of the ceiling?</label>
 		<input type="number" name='length' value='<?= $length ?>' required min='0'>
 
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 
 		<label for="">What is the width of the ceiling?</label>
 		<input type="number" name='width' value='<?= $width ?>' required min='0'>
 
 		<span>350 feet requires 1 gallon of paint.</span>
 
-	</field>
+	</form-field>
 
-	<button class='action-link' type="submit" name='submitted'>Calculate</button>
+	<button class='action-link' type="submit" name='paint-submit'>Calculate</button>
 
 
 </form>

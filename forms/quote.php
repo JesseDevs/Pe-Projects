@@ -5,7 +5,7 @@ $author = '';
 $message = '';
 
 
-if (isset($_POST['submitted'])) {
+if (isset($_POST['quote-submit'])) {
 
 	$quote = htmlspecialchars($_POST['quote']);
 	$author = htmlspecialchars($_POST['author']);
@@ -25,20 +25,20 @@ if (isset($_POST['submitted'])) {
 
 
 
-<form method="post" autocomplete="off" id="quote">
+<form method="post" autocomplete="off" id="quote-form">
 
-	<field>
+	<form-field>
 		<label for="">Who is the author?</label>
 		<input type="text" name='author' value='<?= $author ?>' id="author" required>
-	</field>
+	</form-field>
 
-	<field>
+	<form-field>
 		<label for="">What is your quote?</label>
 		<input type="text" name='quote' value='<?= $quote ?>' id="quote" required>
-	</field>
+	</form-field>
 
 
-	<button class='action-link' type="submit" name='submitted' id="calculate">Calculate</button>
+	<button class='action-link' type="submit" name='quote-submit' id="calculate">Calculate</button>
 
 
 </form>
