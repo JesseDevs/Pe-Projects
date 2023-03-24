@@ -6,6 +6,39 @@
 @import 'modules.scss';
 @import 'case.scss';
 
+.grid-template {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+
+	text-content {
+		grid-column: 1/-1;
+	}
+
+	@media(min-width:750px) {
+		grid-template-columns: 3rem 1fr 1fr 2fr;
+
+		text-content {
+			grid-column: 2/-1;
+		}
+
+		action-links {
+			grid-column: 2/-1;
+			flex-direction: row;
+		}
+
+		a.action-link {
+			grid-column: 3/-1;
+		}
+	}
+}
+
+.has-a-module {
+	scroll-margin-top: 80px;
+}
+
+.has-big-heading {
+	margin-top: 80px;
+}
 
 .intro {
 	margin-bottom: var(--intro-space);
