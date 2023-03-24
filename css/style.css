@@ -1669,7 +1669,7 @@ blog-card a:hover + support-bar {
   max-width: 30px;
 }
 .blockquote svg * {
-  fill: var(--color-dark);
+  fill: var(--color);
 }
 
 .quote {
@@ -1713,10 +1713,6 @@ blog-card a:hover + support-bar {
   blockquote svg {
     height: auto;
   }
-  .blog-action {
-    max-width: fit-content;
-    margin-left: auto;
-  }
 }
 @media (min-width: 650px) {
   blog-card {
@@ -1736,12 +1732,6 @@ blog-card a:hover + support-bar {
   .blockquote {
     grid-column: 1/4;
     margin: 0;
-  }
-  .blog-action {
-    max-width: none;
-    grid-column: 4;
-    margin-top: 0;
-    align-self: flex-end;
   }
 }
 @media (min-width: 800px) {
