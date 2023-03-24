@@ -1,17 +1,11 @@
 .has-contact-form {
-	min-height: 60vh;
+	min-height: 70vh;
 }
 
 contact-form {
 	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
 	max-width: 450px;
 	position: relative;
-
-	text-content {
-		grid-column: 1/-1;
-	}
 
 	form {
 		grid-column: 1/-1;
@@ -25,5 +19,9 @@ contact-form {
 		justify-self: flex-end;
 		cursor: pointer;
 
+	}
+
+	.spiral-cubes {
+		display: none;
 	}
 }

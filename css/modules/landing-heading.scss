@@ -4,23 +4,16 @@
 
 landing-heading {
 	position: relative;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
 	margin-top: 90px;
+
+	place-items: center;
 
 	.roar-voice {
 		font-size: var(--step-5);
 	}
 
-	@media(min-width:650px) {
-
-		.roar-voice {
-			font-size: var(--step-6);
-		}
-	}
 
 	text-content {
-		grid-column: 1 / -1;
 		grid-row: 1;
 		width: 100%;
 		z-index: 2;
@@ -30,6 +23,8 @@ landing-heading {
 
 		div {
 			mix-blend-mode: normal;
+			display: flex;
+			flex-direction: column;
 		}
 	}
 
@@ -48,12 +43,15 @@ landing-heading {
 		margin-top: 100px;
 		grid-row: 1;
 		grid-column: 2;
-		margin-left: -2rem;
 		align-self: flex-end;
+		justify-self: flex-end;
 		animation: image-in .5s cubic-bezier(0.5, 0, 0.1, 1) 1s backwards;
 		box-shadow: 10px 30px 40px rgba(0, 0, 0, 0.08);
+		transition: margin .5s ease-in-out;
+		max-width: 840px;
 
-		.overlay {
+
+		pic .overlay {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -78,43 +76,50 @@ landing-heading {
 	}
 }
 
+@media(min-width:500px) {
+	landing-heading {
+		.roar-voice {
+			font-size: var(--step-6);
+		}
+
+		text-content {
+			mix-blend-mode: normal;
+		}
+
+		picture {
+			margin-top: 0;
+		}
+
+		p.details {
+
+			max-width: 70%;
+		}
+	}
+}
+
+@media(min-width:750px) {
 
 
-// 		h1 {
-// 			margin-bottom: var(--general-space);
-// 		}
+	landing-heading {
 
-// 		text-content {
-// 			grid-column: 1/ span 3;
-// 			text-align: left;
-// 			align-self: center;
-// 			position: absolute;
-// 			z-index: 1;
-// 		}
+		picture,
+		a {
+			grid-column: 3/-1;
+		}
 
-// 		text-content p.details {
-// 			max-width: 65%
-// 		}
+		p.details {
+			max-width: 40vw;
+		}
+	}
+}
 
-// 		p {
-// 			padding-left: 1.2rem;
-// 		}
-// 	}
-
-// 	.landing-image {
-
-// 		grid-column: 3/ 5;
-// 		justify-self: flex-end;
-// 		margin: 0;
-
-// 		img {
-// 			filter: brightness(100%);
-// 			z-index: 1;
-
-// 		}
-// 	}
-
-// }
+@media(min-width:1200px) {
+	landing-heading.grid-template {
+		a.action-link {
+			grid-column: 4/-1;
+		}
+	}
+}
 
 @media(prefers-color-scheme: dark) {
 
@@ -126,6 +131,10 @@ landing-heading {
 
 	.landing-image img {
 		filter: brightness(70%);
+
+		@media(min-width:750px) {
+			filter: brightness(50%);
+		}
 
 	}
 }

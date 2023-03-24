@@ -51,12 +51,20 @@ project-card {
 	.skills {
 		position: absolute;
 		left: 25px;
-		top: 10px;
+		top: 0;
 		display: flex;
 		text-transform: uppercase;
 		flex-wrap: wrap;
 		gap: 5px;
+		background-color: var(--color-mute);
+		color: white;
+		padding: 5px 15px;
+		// border-bottom-left-radius: 5px;
+		// border-bottom-right-radius: 5px;
 
+		p {
+			font-weight: 500;
+		}
 
 		p:after {
 			content: ',';
