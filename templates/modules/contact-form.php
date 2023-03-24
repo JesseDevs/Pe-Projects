@@ -7,7 +7,7 @@
 	mail($to, $subject, $message, $headers);
 } ?>
 
-<contact-form id="contact">
+<contact-form id="contact" class='grid-template'>
 	<text-content>
 		<h2 class='loud-voice'><?= $section['heading'] ?> </h2>
 		<p class="intro"><?= $section['intro'] ?></p>
@@ -37,5 +37,20 @@
 
 		<button class='action-link' type="submit" name="submit" value="Send Message"><?= $section['button'] ?></button>
 	</form>
+
+	<div class="spiral-cubes">
+		<?php for ($i = 0; $i < 7; $i++) { ?>
+			<div class="box-container">
+				<div class="cube">
+					<div class="face top"></div>
+					<div class="face bottom"></div>
+					<div class="face left"></div>
+					<div class="face right"></div>
+					<div class="face front"></div>
+					<div class="face back"></div>
+				</div>
+			</div>
+		<?php } ?>
+	</div>
 
 </contact-form>

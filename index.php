@@ -45,7 +45,6 @@ Check my github and leave a remark there if you'd prefer. 😉
 
 	?>
 
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 	</script>
@@ -55,7 +54,7 @@ Check my github and leave a remark there if you'd prefer. 😉
 
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".mySwiper", {
+		var mySwiper = new Swiper(".mySwiper", {
 			slidesPerView: 1,
 			spaceBetween: 30,
 			loop: true,
@@ -66,6 +65,14 @@ Check my github and leave a remark there if you'd prefer. 😉
 			navigation: {
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev",
+			},
+			breakpoints: {
+				// when window width is >= 750px
+				750: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+					loop: true,
+				},
 			},
 		});
 	</script>

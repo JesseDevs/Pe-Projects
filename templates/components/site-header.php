@@ -23,7 +23,7 @@
 				<li class="large-size">
 					<a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
 				</li>
-				<li class="larger-size">
+				<li class="large-size">
 					<a href="?page=forms " class="<?php activePage("forms") ?>">Forms</a>
 				</li>
 				<li class="larger-size">
@@ -40,19 +40,19 @@
 
 		<nav class="burger">
 			<ul>
-				<li>
-					<a class="small-size" href="?page=home" class=" <?php activePage("home") ?>">Home</a>
+				<li class="small-size">
+					<a href="?page=home" class=" <?php activePage("home") ?>">Home</a>
 				</li>
-				<li>
-					<a class="small-size" href="?page=about" class=" <?php activePage("about") ?>">About</a>
+				<li class="small-size">
+					<a href="?page=about" class=" <?php activePage("about") ?>">About</a>
 				</li>
-				<li>
-					<a class="small-size" href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
+				<li class="small-size">
+					<a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
 				</li>
-				<li>
+				<li class='large-size'>
 					<a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
 				</li>
-				<li>
+				<li class='large-size'>
 					<a href="?page=forms" class="<?php activePage("forms") ?>">Forms</a>
 				</li>
 				<li>

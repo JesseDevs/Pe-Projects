@@ -1,4 +1,4 @@
-<about-card>
+<about-card class='grid-template'>
 	<text-content>
 		<h2 class='loud-voice'><?= $section['heading']; ?></h2>
 		<p class='intro'><?= $section['intro']; ?></p>
@@ -21,6 +21,16 @@
 		</action-links>
 
 	<?php } ?>
+
+	<div class="image-container small-image-support gs_reveal gs_reveal_fromRight">
+		<picture class="about-image">
+			<?php foreach ($section['images'] as $image) { ?>
+
+				<img src="<?= $image ?>" alt="Me" loading='lazy'>
+
+			<?php } ?>
+		</picture>
+	</div>
 
 	<div class="image-container gs_reveal gs_reveal_fromRight">
 		<picture class="about-image">
