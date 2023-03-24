@@ -51905,6 +51905,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/css\/components\/small-partials.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/components\/small-partials.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/css\/modules.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -52666,6 +52681,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/images\/large-workspace.jpg" : {
+      "ft" : 16384,
+      "iS" : 298921,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/large-workspace.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/images\/projects\/bill\/bank.jpg" : {
