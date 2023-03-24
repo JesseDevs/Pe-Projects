@@ -66,7 +66,7 @@ blog-card {
 	max-width: 30px;
 
 	* {
-		fill: var(--color-dark);
+		fill: var(--color);
 	}
 }
 
@@ -116,11 +116,6 @@ blog-card {
 	blockquote svg {
 		height: auto;
 	}
-
-	.blog-action {
-		max-width: fit-content;
-		margin-left: auto;
-	}
 }
 
 @media(min-width:650px) {
@@ -147,12 +142,7 @@ blog-card {
 		margin: 0;
 	}
 
-	.blog-action {
-		max-width: none;
-		grid-column: 4;
-		margin-top: 0;
-		align-self: flex-end;
-	}
+
 
 }
 
