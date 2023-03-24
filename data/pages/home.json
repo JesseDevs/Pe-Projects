@@ -15,7 +15,8 @@
 			"heading": "Jesse Felix",
 			"intro": "Front End - Web&nbsp;Developer",
 			"details": "I’m a Web Developer located in Los Angeles, California. I have a passion for crafting cool digital experiences. Maybe with you?",
-			"image": "images/details/comp.webp"
+			"image": "images/details/comp.webp",
+			"big-image": "images/large-workspace.jpg"
 		},
 		{
 			"module": "project-section",
