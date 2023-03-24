@@ -17,7 +17,7 @@ $heading = $section['heading'] ?? ucfirst($page);
 	<picture class="landing-image">
 		<div class="overlay"></div>
 		<?php if (isset($section['big-image'])) { ?>
-			<source srcset="<?= $section['big-image'] ?>" media="(min-width: 750px)">
+			<source srcset="<?= $section['big-image'] ?>" media="(min-width: 720px)">
 		<?php } ?>
 
 		<img src=" <?= $section['image'] ?>" alt="comp" loading='lazy'>

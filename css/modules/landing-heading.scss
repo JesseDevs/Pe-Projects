@@ -101,6 +101,9 @@ landing-heading {
 
 
 	landing-heading {
+		text-content {
+			padding-bottom: 0;
+		}
 
 		picture,
 		a {
@@ -130,7 +133,7 @@ landing-heading {
 	}
 
 	.landing-image img {
-		filter: brightness(70%);
+		filter: brightness(50%);
 
 		@media(min-width:750px) {
 			filter: brightness(50%);
