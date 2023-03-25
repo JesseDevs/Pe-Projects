@@ -4,7 +4,6 @@
 
 	inner-column {
 		padding: 3rem 1rem;
-		max-width: 900px;
 	}
 
 	nav {
@@ -62,5 +61,22 @@
 
 	a:hover {
 		color: var(--color);
+	}
+}
+
+@media(min-width: 750px) {
+	.site-footer {
+		inner-column {
+			padding-left: 4rem;
+		}
+
+		nav {
+			flex-wrap: wrap;
+			flex-direction: row;
+
+			div.footer-wrapper {
+				flex-basis: 45%;
+			}
+		}
 	}
 }
