@@ -20,14 +20,14 @@
 	</text-content>
 
 	<form method="POST">
-		<form-field>
-			<input type="text" placeholder="<?= $section['labelOne'] ?>">
-		</form-field>
-
-
-		<form-field>
-			<input name='email' placeholder="<?= $section['labelTwo'] ?>" type=" email">
-		</form-field>
+		<big-field>
+			<form-field>
+				<input type="text" placeholder="<?= $section['labelOne'] ?>">
+			</form-field>
+			<form-field>
+				<input name='email' placeholder="<?= $section['labelTwo'] ?>" type=" email">
+			</form-field>
+		</big-field>
 
 
 		<form-field class='message'>
@@ -38,19 +38,21 @@
 		<button class='action-link' type="submit" name="submit" value="Send Message"><?= $section['button'] ?></button>
 	</form>
 
-	<div class="spiral-cubes">
-		<?php for ($i = 0; $i < 7; $i++) { ?>
-			<div class="box-container">
-				<div class="cube">
-					<div class="face top"></div>
-					<div class="face bottom"></div>
-					<div class="face left"></div>
-					<div class="face right"></div>
-					<div class="face front"></div>
-					<div class="face back"></div>
+	<div class="cube-sphere-container">
+		<div class="spiral-cubes">
+			<?php for ($i = 0; $i < 7; $i++) { ?>
+				<div class="box-container">
+					<div class="cube">
+						<div class="face top"></div>
+						<div class="face bottom"></div>
+						<div class="face left"></div>
+						<div class="face right"></div>
+						<div class="face front"></div>
+						<div class="face back"></div>
+					</div>
 				</div>
-			</div>
-		<?php } ?>
+			<?php } ?>
+		</div>
 	</div>
 
 </contact-form>
