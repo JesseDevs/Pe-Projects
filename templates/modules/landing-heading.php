@@ -10,9 +10,8 @@ $heading = $section['heading'] ?? ucfirst($page);
 		</div>
 
 		<p class="details"><?= $section["details"] ?></p>
-
-
 	</text-content>
+
 
 	<picture class="landing-image">
 		<div class="overlay"></div>
