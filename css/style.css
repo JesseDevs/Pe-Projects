@@ -179,7 +179,7 @@ inner-column {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 2rem 1rem 4rem;
+  padding: 3rem 1rem 4rem;
   max-width: 1400px;
 }
 
@@ -309,7 +309,7 @@ svg {
     --ink: #0a0505;
     --page: #f1f2f4;
     --landing-text: var(--white-mute);
-    --overlay: rgba(255, 255, 255, 0.3);
+    --overlay: rgba(255, 255, 255, 0.5);
   }
 }
 :root {
@@ -653,7 +653,7 @@ code {
   position: absolute;
   width: 100%;
   height: 100vh;
-  top: 70px;
+  top: 60px;
   left: 0;
   background-color: var(--dark-overlay);
 }
@@ -749,7 +749,6 @@ header.display-menu .burger {
 }
 .site-footer inner-column {
   padding: 3rem 1rem;
-  max-width: 900px;
 }
 .site-footer nav {
   display: flex;
@@ -798,6 +797,18 @@ header.display-menu .burger {
   color: var(--color);
 }
 
+@media (min-width: 750px) {
+  .site-footer inner-column {
+    padding-left: 4rem;
+  }
+  .site-footer nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .site-footer nav div.footer-wrapper {
+    flex-basis: 45%;
+  }
+}
 side-bar {
   background-color: red;
   width: 300px;
@@ -996,11 +1007,6 @@ select {
   resize: none;
 }
 
-select {
-  background: url("/images/drop-arrow.png") no-repeat right center;
-  padding-right: 20px;
-  background-color: var(--white);
-}
 select option {
   text-transform: uppercase;
 }
@@ -1170,7 +1176,7 @@ landing-heading picture {
   transition: margin 0.5s ease-in-out;
   max-width: 840px;
 }
-landing-heading picture pic .overlay {
+landing-heading picture .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1178,6 +1184,11 @@ landing-heading picture pic .overlay {
   height: 100%;
   background-color: var(--overlay);
   z-index: 1;
+}
+@media (prefers-color-scheme: dark) {
+  landing-heading picture .overlay {
+    display: none;
+  }
 }
 landing-heading picture img {
   display: block;
@@ -1201,7 +1212,7 @@ landing-heading a {
     margin-top: 0;
   }
   landing-heading p.details {
-    max-width: 70%;
+    max-width: 60%;
   }
 }
 @media (min-width: 750px) {
@@ -1213,7 +1224,7 @@ landing-heading a {
     grid-column: 3/-1;
   }
   landing-heading p.details {
-    max-width: 40vw;
+    max-width: 38%;
   }
 }
 @media (min-width: 1200px) {
@@ -1323,6 +1334,20 @@ about-card action-links {
   about-card .small-image-support {
     display: none;
   }
+  about-card .about-image {
+    margin: 0;
+    max-width: initial;
+    width: 100%;
+    max-height: 300px;
+  }
+  about-card .about-image img {
+    position: static;
+    aspect-ratio: 5/25;
+  }
+  about-card .image-container picture {
+    display: flex;
+    gap: 10px;
+  }
   about-card .image-container img {
     animation: initial;
   }
@@ -1331,48 +1356,57 @@ about-card action-links {
   }
 }
 @media (min-width: 1200px) {
-  about-card .small-image-support {
-    display: none;
-  }
-  about-card .image-container img {
-    animation: none;
-    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    max-width: fit-content;
-  }
-  about-card .image-container img:nth-of-type(1) {
-    transform: translate(50%, -110px) rotate(15deg);
-  }
-  about-card .image-container img:nth-of-type(2) {
-    transform: translate(-25%, -125px) rotate(-6deg);
-  }
-  about-card .image-container img:nth-of-type(3) {
-    transform: translate(60%, 100px) rotate(15deg);
-  }
-  about-card .image-container img:nth-of-type(4) {
-    transform: translate(-25%, 75px) rotate(-11deg);
+  about-card .about-image {
+    max-height: 360px;
   }
 }
 project-card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 20px;
   width: 100%;
   z-index: 10;
-  min-height: 480px;
-  border-radius: 5px;
-  padding: 30px 25px;
-  border: var(--thin) solid var(--color-mute);
-  box-shadow: 0px 69px 100px -120px var(--color-soft);
+  min-height: 414px;
   text-align: left;
+  position: relative;
+}
+project-card * {
+  grid-column: 1/-1;
+}
+project-card button {
+  color: var(--black);
+  position: absolute;
+  border-radius: 50%;
+  appearance: none;
+  bottom: -20px;
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background-color: var(--color-super-light);
+  cursor: pointer;
+  transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+project-card button:hover {
+  color: var(--color);
+}
+project-card text-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 project-card span {
   position: absolute;
+  text-transform: uppercase;
   top: -20px;
   right: 0;
   font-size: var(--step-4);
   color: rgb(var(--color-rgb), 0.2);
   font-family: "Lato";
   z-index: -200;
+  font-weight: 700;
   filter: opacity(70%) blur(1px);
 }
 project-card h3 {
@@ -1385,14 +1419,22 @@ project-card p.project-detail {
   flex-grow: 1;
 }
 project-card picture {
-  aspect-ratio: 6/4;
+  aspect-ratio: 3/2;
+  border: var(--thin) solid var(--color-mute);
+  position: relative;
+}
+project-card picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 project-card .action-link {
+  grid-column: 2/-1;
   margin-top: auto;
 }
 project-card .skills {
   position: absolute;
-  left: 25px;
+  left: 0;
   top: 0;
   display: flex;
   text-transform: uppercase;
@@ -1416,76 +1458,8 @@ project-section {
   width: 100%;
   display: block;
 }
-project-section .swiper {
-  width: 100%;
-  height: 100%;
-}
-project-section .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-project-section .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-project-section .swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-project-section .swiper-button-prev,
-project-section .swiper-button-next {
-  background-color: #ccc;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 20px;
-  height: 40px;
-  line-height: 40px;
-  position: absolute;
-  top: 25%;
-  transform: translateY(-50%);
-  width: 40px;
-  z-index: 10;
-  --swiper-navigation-size: 15px;
-}
-project-section .swiper-button-prev:after,
-project-section .swiper-button-next:after {
-  font-weight: 800;
-}
-project-section .swiper-button-next {
-  right: 5px;
-}
-project-section .swiper-button-next:after {
-  padding-left: 2.5px;
-}
-project-section .swiper-button-prev {
-  left: 5px;
-}
-project-section .swiper-button-prev:after {
-  padding-right: 2.5px;
-}
-project-section .swiper-button-prev:hover,
-project-section .swiper-button-next:hover {
-  background-color: var(--color-soft);
-}
-project-section .swiper-pagination {
-  bottom: 10px;
-}
-project-section .swiper-pagination-bullet {
-  background-color: var(--color-soft);
-  border-radius: 50%;
-  display: inline-block;
-  height: 10px;
-  margin: 0 5px;
-  width: 10px;
-  transition: translate3d 2s cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out;
-}
-project-section .swiper-pagination-bullet-active {
-  background-color: var(--color-mute);
+project-section project-card {
+  grid-column: 1/-1;
 }
 
 .has-contact-form {
@@ -1494,7 +1468,6 @@ project-section .swiper-pagination-bullet-active {
 
 contact-form {
   width: 100%;
-  max-width: 450px;
   position: relative;
 }
 contact-form form {
@@ -1503,15 +1476,47 @@ contact-form form {
   grid-template-columns: 1fr 2fr;
   row-gap: 20px;
 }
+contact-form form big-field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  grid-column: 1/-1;
+}
 contact-form button {
   grid-column: 2/-1;
   justify-self: flex-end;
   cursor: pointer;
 }
-contact-form .spiral-cubes {
-  display: none;
+contact-form .cube-sphere-container {
+  opacity: 0;
+  position: absolute;
 }
 
+@media (min-width: 750px) {
+  contact-form form {
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    row-gap: 20px;
+  }
+  contact-form form big-field {
+    flex-direction: row;
+    column-gap: 15px;
+  }
+  contact-form button {
+    grid-column: 2/-1;
+    justify-self: flex-end;
+    cursor: pointer;
+  }
+  contact-form .cube-sphere-container {
+    opacity: 1;
+    top: 0;
+    right: 40%;
+    z-index: -10;
+    opacity: 0.5;
+  }
+}
 resume-card,
 resume-section {
   display: block;
