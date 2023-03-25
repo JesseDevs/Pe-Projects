@@ -121,7 +121,24 @@ about-card {
 			display: none;
 		}
 
+		.about-image {
+			margin: 0;
+			max-width: initial;
+			width: 100%;
+			max-height: 300px;
+
+			img {
+				position: static;
+				aspect-ratio: 5/25;
+			}
+		}
+
 		.image-container {
+			picture {
+				display: flex;
+				gap: 10px;
+			}
+
 			img {
 				animation: initial;
 			}
@@ -133,36 +150,9 @@ about-card {
 	}
 }
 
-@media(min-width: 1200px) {
-	about-card {
+@media (min-width: 1200px) {
+	about-card .about-image {
 
-		.small-image-support {
-			display: none;
-		}
-
-		.image-container {
-			img {
-				animation: none;
-				transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-				max-width: fit-content;
-			}
-
-			img:nth-of-type(1) {
-				transform: translate(50%, -110px) rotate(15deg);
-			}
-
-			img:nth-of-type(2) {
-				transform: translate(-25%, -125px) rotate(-6deg);
-			}
-
-			img:nth-of-type(3) {
-				transform: translate(60%, 100px) rotate(15deg);
-			}
-
-			img:nth-of-type(4) {
-				transform: translate(-25%, 75px) rotate(-11deg);
-
-			}
-		}
+		max-height: 360px;
 	}
 }
