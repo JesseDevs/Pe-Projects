@@ -1,19 +1,22 @@
     <?php
 	$heading = $section['heading'] ?? "Exercise Grid";
 	$intro = $section['intro'] ?? "Check it out!";
+
+	$cookie =  $_COOKIE['scrollPosition'];
+
+
 	?>
+    <script>
+    	var positionAt = <?= $cookie ?>;
 
-    <?php
-	if ($page == "form") { ?>
-
-    	<style>
-    		form-grid text-content {
-    			margin-top: var(--simple-space);
-    		}
-    	</style>
-
-    <?php } ?>
-
+    	window.addEventListener('DOMContentLoaded', function() {
+    		window.scrollTo({
+    			top: positionAt,
+    			behavior: 'instant',
+    		});
+    		document.cookie = `scrollPosition=0`;
+    	});
+    </script>
     <form-grid>
 
     	<text-content>
