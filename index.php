@@ -21,9 +21,6 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
 
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-
 </head>
 
 <body class='<?= $page ?>'>
@@ -49,36 +46,6 @@ Check my github and leave a remark there if you'd prefer. 😉
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 	</script>
 	<script src="scripts/file.js"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-		var mySwiper = new Swiper(".mySwiper", {
-			slidesPerView: 1,
-			spaceBetween: 30,
-			loop: true,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-			breakpoints: {
-				// when window width is >= 750px
-				750: {
-					slidesPerView: 2,
-					spaceBetween: 30,
-					loop: true,
-				},
-			},
-		});
-	</script>
-
-
-
 </body>
 
 </html>
