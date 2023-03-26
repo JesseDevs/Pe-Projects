@@ -9,7 +9,7 @@ project-section {
 	button.action-link {
 		margin-top: 20px;
 		grid-column: 2/-1;
-		background-color: var(--ink);
+		background-color: var(--color-soft);
 		color: var(--page);
 		border: none;
 		position: relative;
@@ -21,31 +21,42 @@ project-section {
 		outline: none;
 
 		&:hover {
-			background-color: var(--ink);
+			background-color: var(--color);
 
-			span {
-				background-color: var(--color-dark);
-				outline: .5px solid var(--color-dark);
-			}
 		}
 
 		span {
 			display: grid;
 			place-items: center;
-			padding-left: 15px;
 			padding-right: 15px;
+
 			position: absolute;
 			right: 0;
 			top: 0;
 			height: 100%;
-			background-color: var(--color);
-			border-top-right-radius: 10px;
-			border-bottom-right-radius: 10px;
+			background-color: transparent;
 			transition: background-color .3s ease-out;
 			pointer-events: none;
-			color: var(--ink);
+			color: var(--white);
 			outline: .5px solid transparent;
+		}
+	}
 
+
+}
+
+@media(min-width:500px) {
+	project-section {
+		project-card {
+			grid-column: 2/-1;
+		}
+	}
+}
+
+@media(min-width:750px) {
+	project-section {
+		button.action-link {
+			grid-column: 3/-1;
 		}
 	}
 }

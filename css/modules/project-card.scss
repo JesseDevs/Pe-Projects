@@ -2,6 +2,7 @@ project-card {
 	display: block;
 	width: 100%;
 	height: 28rem;
+	max-width: 468px;
 	border-radius: 10px;
 	overflow: hidden;
 	cursor: pointer;
@@ -105,6 +106,11 @@ project-card {
 
 	}
 
+	@media(min-width:500px) {
+		text-content {
+			max-width: 90%;
+		}
+	}
 }
 
 @media(hover: hover) {
@@ -130,4 +136,6 @@ project-card {
 			transition: opacity .3s ease-in;
 		}
 	}
+
+
 }
