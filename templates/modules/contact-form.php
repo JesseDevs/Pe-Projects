@@ -38,7 +38,7 @@
 		<button class='action-link' type="submit" name="submit" value="Send Message"><?= $section['button'] ?></button>
 	</form>
 
-	<div class="cube-sphere-container">
+	<!-- <div class="cube-sphere-container">
 		<div class="spiral-cubes">
 			<?php for ($i = 0; $i < 7; $i++) { ?>
 				<div class="box-container">
@@ -53,6 +53,6 @@
 				</div>
 			<?php } ?>
 		</div>
-	</div>
+	</div> -->
 
 </contact-form>
