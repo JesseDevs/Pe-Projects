@@ -34,8 +34,11 @@ about-card {
 		margin-right: auto;
 		grid-column: 1/-1;
 
-		+.image-container {
-			padding-left: 20px;
+		@media(min-width:500px) {
+			+.image-container {
+				padding-left: 20px;
+
+			}
 		}
 
 		img {
