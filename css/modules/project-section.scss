@@ -5,4 +5,47 @@ project-section {
 	project-card {
 		grid-column: 1/-1;
 	}
+
+	button.action-link {
+		margin-top: 20px;
+		grid-column: 2/-1;
+		background-color: var(--ink);
+		color: var(--page);
+		border: none;
+		position: relative;
+		text-align: left;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		font-weight: 600;
+		cursor: pointer;
+		outline: none;
+
+		&:hover {
+			background-color: var(--ink);
+
+			span {
+				background-color: var(--color-dark);
+				outline: .5px solid var(--color-dark);
+			}
+		}
+
+		span {
+			display: grid;
+			place-items: center;
+			padding-left: 15px;
+			padding-right: 15px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			background-color: var(--color);
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			transition: background-color .3s ease-out;
+			pointer-events: none;
+			color: var(--ink);
+			outline: .5px solid transparent;
+
+		}
+	}
 }

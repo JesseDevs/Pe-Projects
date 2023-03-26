@@ -16,12 +16,6 @@
 				<p class="project-detail ">${projectsArray[currentIndex].detail}</p>
 				<a class="action-link" href="${projectsArray[currentIndex].links[0].link}">Click!</a>
 			</text-content>
-
-
-			<button id="next-project-btn">
-			<span class="arrow"></span>
-			</button>
-
 		`;
 	}
 
@@ -52,5 +46,14 @@
 	</text-content>
 
 	<project-card></project-card>
+
+	<button class='action-link' id="next-project-btn">
+		Next
+		<span>
+			<svg class="icon-arrow-right">
+				<use xlink:href="#icon-arrow-right"></use>
+			</svg>
+		</span>
+	</button>
 
 </project-section>

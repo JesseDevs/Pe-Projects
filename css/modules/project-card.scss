@@ -1,8 +1,7 @@
 project-card {
 	display: block;
 	width: 100%;
-	max-width: 24rem;
-	height: 30rem;
+	height: 28rem;
 	border-radius: 10px;
 	overflow: hidden;
 	cursor: pointer;
@@ -14,22 +13,6 @@ project-card {
 
 	&:hover {
 		box-shadow: 0 10px 30px -5px var(--color-soft);
-	}
-
-	button {
-		position: absolute;
-		top: 0;
-		right: 0;
-		max-width: fit-content;
-		appearance: none;
-		border: none;
-		outline: none;
-		background-color: transparent;
-		z-index: 300;
-
-		span {
-			pointer-events: none;
-		}
 	}
 
 	picture {
