@@ -1,27 +1,26 @@
 <script>
 	let currentIndex = 0;
 	var projectsArray = <?= json_encode($projectsData); ?>;
-	console.log(projectsArray);
 
 	function reloadCard() {
 		const projectCard = document.querySelector('project-card');
 
 		projectCard.innerHTML = `
-			<picture class='project-thumbnail'>
-				<img src="${projectsArray[currentIndex].thumbnail}" alt="" loading='lazy'>
-							<button id="next-project-btn">&#10132;</button>
-			</picture>
+	
+			<img src="${projectsArray[currentIndex].thumbnail}" alt="" loading='lazy'>
+		
+			<span class="span-title">${projectsArray[currentIndex]['intro']}</span>
+		
 			<text-content>
 				<h3 class='chant-voice'>${projectsArray[currentIndex].title}</h3>
-				<span class="span-title">${projectsArray[currentIndex]['intro']}</span>
 				<p class="project-detail ">${projectsArray[currentIndex].detail}</p>
+				<a class="action-link" href="${projectsArray[currentIndex].links[0].link}">Click!</a>
 			</text-content>
-			<div class="skills">
-				${projectsArray[currentIndex].skills.map(skill => `<p class="small-voice">${skill}</p>`).join('')}
-			</div>
-		
-			<a class="action-link" href="${projectsArray[currentIndex].links[0].link}">Click!</a>
 
+
+			<button id="next-project-btn">
+			<span class="arrow"></span>
+			</button>
 
 		`;
 	}
@@ -43,7 +42,6 @@
 		if (currentIndex >= projectsArray.length) {
 			currentIndex = 0;
 		}
-		console.log(currentIndex)
 	}
 </script>
 
@@ -54,4 +52,5 @@
 	</text-content>
 
 	<project-card></project-card>
+
 </project-section>

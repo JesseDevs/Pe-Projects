@@ -5,7 +5,7 @@
 		"intro": "crud",
 		"detail": "The simplicity of a lean PHP <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> app built from scratch, with no added frameworks or tools - check it out now!",
 		"one-line": "Database backed by JSON data",
-		"thumbnail": "images/projects/fighters/fighters-image.jpg",
+		"thumbnail": "images/thumbnails/cms-image.jpg",
 		"skills": [
 			"html",
 			"css",
@@ -95,7 +95,7 @@
 		"title": "Bill Split",
 		"intro": "APP",
 		"detail": "An Vanilla Javascript app dedicated to solving one of life's many problems... Splitting the bill amongst a group.",
-		"thumbnail": "images/projects/bill/bank.jpg",
+		"thumbnail": "images/thumbnails/testing-image.jpg",
 		"one-line": "Javascript calculations",
 		"skills": [
 			"html",
@@ -212,7 +212,7 @@
 		"title": "Theme Challenge",
 		"intro": "theme",
 		"detail": "A project that captures the complexity of an industry level website. Layout, design, structure.. and some love.",
-		"thumbnail": "images/projects/theme/basket.jpeg",
+		"thumbnail": "images/thumbnails/layout-image.jpg",
 		"skills": [
 			"html",
 			"css",
