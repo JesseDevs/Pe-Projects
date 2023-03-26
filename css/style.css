@@ -185,6 +185,7 @@ inner-column {
 
 article-grid,
 text-content,
+card-container,
 module,
 label,
 input,
@@ -834,46 +835,12 @@ side-bar {
   z-index: 1;
 }
 
-.arrow {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  width: 70px;
-  height: 70px;
-  border: solid 6px #999;
-  border-radius: 100%;
-  z-index: 1;
-  transition: all 0.2s linear;
-}
-.arrow:before, .arrow:after {
-  content: "";
-  position: absolute;
-  width: 35%;
-  height: 10%;
-  top: 41%;
-  left: 55%;
-  background: #999;
-  z-index: 2;
-  transform: translate(-50%, -50%) rotate(45deg);
-  transition: all 0.2s linear;
-}
-.arrow:after {
-  z-index: 3;
-  top: 59%;
-  left: 55%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-.arrow:hover {
-  border: solid 8px #777;
-}
-.arrow:hover:after, .arrow:hover:before {
-  background: #777;
-}
-.arrow:active {
-  border: solid 8px #111;
-}
-.arrow:active:after, .arrow:active:before {
-  background: #111;
+[class^=icon-],
+[class*=" icon-"] {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  fill: currentColor;
 }
 
 .box-container {
@@ -1326,11 +1293,6 @@ about-card .image-container {
   margin-right: auto;
   grid-column: 1/-1;
 }
-@media (min-width: 500px) {
-  about-card .image-container + .image-container {
-    padding-left: 20px;
-  }
-}
 about-card .image-container img {
   animation: FadeInOut 8s ease-in-out infinite;
   position: absolute;
@@ -1362,6 +1324,7 @@ about-card action-links {
   about-card .small-image-support {
     grid-column: 1;
     display: block;
+    padding-right: 10px;
   }
   about-card .small-image-support img {
     animation: FadeInOut 8s ease-in-out infinite;
@@ -1417,8 +1380,7 @@ about-card action-links {
 project-card {
   display: block;
   width: 100%;
-  max-width: 24rem;
-  height: 30rem;
+  height: 28rem;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -1430,20 +1392,6 @@ project-card {
 }
 project-card:hover {
   box-shadow: 0 10px 30px -5px var(--color-soft);
-}
-project-card button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: fit-content;
-  appearance: none;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  z-index: 300;
-}
-project-card button span {
-  pointer-events: none;
 }
 project-card picture {
   width: 100%;
@@ -1541,6 +1489,44 @@ project-section {
 }
 project-section project-card {
   grid-column: 1/-1;
+}
+project-section button.action-link {
+  margin-top: 20px;
+  grid-column: 2/-1;
+  background-color: var(--ink);
+  color: var(--page);
+  border: none;
+  position: relative;
+  text-align: left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+project-section button.action-link:hover {
+  background-color: var(--ink);
+}
+project-section button.action-link:hover span {
+  background-color: var(--color-dark);
+  outline: 0.5px solid var(--color-dark);
+}
+project-section button.action-link span {
+  display: grid;
+  place-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.3s ease-out;
+  pointer-events: none;
+  color: var(--ink);
+  outline: 0.5px solid transparent;
 }
 
 .has-contact-form {

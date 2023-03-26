@@ -21,9 +21,11 @@ $metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
 
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://file.myfontastic.com/Gk9diYaWZqybG4GjyZVqR6/icons.js"></script>
 </head>
 
 <body class='<?= $page ?>'>
+
 
 
 	<!-- 

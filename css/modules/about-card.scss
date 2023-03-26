@@ -34,13 +34,6 @@ about-card {
 		margin-right: auto;
 		grid-column: 1/-1;
 
-		@media(min-width:500px) {
-			+.image-container {
-				padding-left: 20px;
-
-			}
-		}
-
 		img {
 			animation: FadeInOut 8s ease-in-out infinite;
 			position: absolute;
@@ -86,6 +79,7 @@ about-card {
 	about-card .small-image-support {
 		grid-column: 1;
 		display: block;
+		padding-right: 10px;
 
 		img {
 			animation: FadeInOut 8s ease-in-out infinite;
