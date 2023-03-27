@@ -1,8 +1,5 @@
-resume-card .skills {
-	padding: 0;
-}
-
 resume-card {
+	grid-column: 1/-1;
 	margin: var(--tight-space) 0;
 	padding-bottom: var(--simple-space);
 }

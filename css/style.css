@@ -1448,6 +1448,13 @@ about-card action-links {
 .card-design text-content .action-link {
   opacity: 0;
 }
+.card-design text-content .action-link {
+  background-color: var(--cube-line);
+  border: none;
+}
+.card-design text-content .action-link:hover {
+  background-color: var(--cube-color);
+}
 @media (hover: none) {
   .card-design text-content {
     transform: none;
@@ -1552,7 +1559,6 @@ project-section button.action-link {
   margin-top: 20px;
   grid-column: 2/-1;
   color: var(--white);
-  background-color: black;
   border: none;
   position: relative;
   text-align: left;
@@ -1561,14 +1567,7 @@ project-section button.action-link {
   font-weight: 600;
   cursor: pointer;
   outline: none;
-  background-color: var(--cube-line);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-project-section button.action-link:hover {
-  background-color: var(--cube-line);
-}
-project-section button.action-link:hover span {
-  background-color: var(--cube-color);
 }
 project-section button.action-link span {
   display: flex;
@@ -1679,39 +1678,17 @@ resume-section {
 }
 
 resume-section h4 {
-  margin-bottom: var(--simple-space);
+  grid-column: 1/-1;
+  text-align: right;
+  font-weight: 500;
 }
-
 resume-section h4:last-of-type {
-  margin-bottom: var(--simple-space);
-  padding-top: var(--simple-space);
+  padding-top: var(--intro-space);
   border-top: var(--thin) solid var(--cube-line);
 }
 
-@media (min-width: 800px) {
-  resume-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: var(--simple-big-space);
-  }
-  resume-section > text-content {
-    grid-column: span 2;
-  }
-  resume-section h4 {
-    grid-column: 1/span 4;
-  }
-  resume-card:nth-of-type(odd) {
-    grid-column: 1/span 2;
-  }
-  resume-card:nth-of-type(even) {
-    grid-column: 3/span 2;
-  }
-}
-resume-card .skills {
-  padding: 0;
-}
-
 resume-card {
+  grid-column: 1/-1;
   margin: var(--tight-space) 0;
   padding-bottom: var(--simple-space);
 }

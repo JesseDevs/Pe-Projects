@@ -5,11 +5,7 @@
 		"company": "Lululemon",
 		"startDate": "2022",
 		"endDate": "Present",
-		"duties": [
-			"Provide technical product education by articulating the value and benefit of the product.",
-			"Facilitate a seamless end-to-end guest experience by conducting accurate and timely guest transactions and executing market-relevant omni-channel programs."
-		],
-		"takeaways": "Facilitate a seamless end-to-end guest experience by conducting accurate and timely guest transactions and executing market-relevant omnichannel programs according to company standards",
+		"takeaways": "I excel in educating customers on technical products by effectively communicating their value and executing seamless transactions, leading to positive guest experiences. I am dedicated to ensuring a memorable experience.",
 		"skills": [
 			"Responsibility",
 			"Collaboration",
@@ -23,13 +19,7 @@
 		"company": "Apple",
 		"startDate": "2019",
 		"endDate": "2022",
-		"duties": [
-			"Managing ambiguity, crafting decision quality, and remaining resilient on a daily basis.",
-			"Ability to communicate technical information to a non-technical audience.",
-			"Constantly searching for feedback and innovation to develop my skills in the company.",
-			"Memorized, educated, and assisted clients on over 50 different technologies, plans, and services."
-		],
-		"takeaways": "This position derived itself towards sales but required skills in communication, identifying needs, and learning about how to use technologies. My passion for computers was reinforced by being around people who shared similar interest and passions.",
+		"takeaways": "I excel in handling ambiguity, making sound decisions, and effectively communicating technical information to a non-technical audience, resulting in a 98% customer approval rate. I have in-depth knowledge of over 50 technologies, plans, and services to provide exceptional assistance to clients.",
 		"skills": [
 			"Sales",
 			"Technology",
@@ -39,15 +29,11 @@
 	},
 	{
 		"type": "job",
-		"role": "College Mentor",
-		"company": "CollegeSpring",
-		"startDate": "2020",
-		"endDate": "2020",
-		"duties": [
-			"Created lesson plans to engage over 20 students in a learning environment.",
-			"Taught and maintained various groups of students’ attention while thoroughly discussing material on a weekly basis"
-		],
-		"takeaways": "This opportunity granted me the position of leading students. Developed my skills in teach others and sharing information.",
+		"role": "Associate",
+		"company": "Puma",
+		"startDate": "2014",
+		"endDate": "2019",
+		"takeaways": "I have a proven track record in sales strategy development and implementation, setting targets and goals, and analyzing data for continuous improvement. I am committed to providing excellent customer service and am able to handle high- pressure situations in a fast-paced environment. Additionally, as head of inventory, I am responsible for maintaining a well-stocked, organized, and efficient store.",
 		"skills": [
 			"Planning",
 			"Guiding",
@@ -58,16 +44,11 @@
 	{
 		"type": "education",
 		"school": "Perpetual Education",
-		"subject": "",
+		"subject": "Web Development",
 		"major": "Design&nbsp;for&nbsp;the&nbsp;Web",
 		"startDate": "2022",
 		"endDate": "Present",
-		"duties": [
-			"Learning design aspects.",
-			"Creating webpages with code and utilizing the concepts learned.",
-			"Continuously put myself in positions to challenge my abilities and force moments of growth."
-		],
-		"takeaways": "Taking advantage of a mentorship program presented by <a href='https://perpetual.education/'>Perpetual Education</a>. Under their guidance I've pushed myself to be the best me I could be. I've explored various topics and enjoy the process of learning new skills to add to my ever evolving projects.",
+		"takeaways": "Web development mentorship that focuses on design, user experience, accessibility, responsiveness, problem solving, creativity, and coding. This hands- on experience allowed me to develop a well-rounded skill set, and I was able to apply my knowledge and abilities in a team environment.",
 		"skills": [
 			"Learning",
 			"Creating",
@@ -82,12 +63,7 @@
 		"major": "Business&nbsp;Finance",
 		"startDate": "2016",
 		"endDate": "2020",
-		"duties": [
-			"Assess financial risk of company.",
-			"Learn business basics and essentials.",
-			"Use Excel to learn, utilize, and create data analysis."
-		],
-		"takeaways": "Originally went to school with the intentions of going into business marketing. Ironically wanted to create ads that would bring excitement and joy. I've always had a passion for numbers and my road diverage towards a path of finance. This position lead to less creative and more strict guidelines. I turned away from that and went to my next steps.",
+		"takeaways": "Obtained Bachelor's degree in Finance, where I gained a comprehensive understanding of financial markets and investments. Developed skills in financial analysis, budgeting, and risk management through hands-on experience in case studies and real-world projects. Completed coursework in accounting, economics, and statistics.",
 		"skills": [
 			"Business",
 			"Management",
