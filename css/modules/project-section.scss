@@ -2,6 +2,14 @@ project-section {
 	width: 100%;
 	display: block;
 
+	card-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		align-self: flex-end;
+	}
+
 	project-card {
 		grid-column: 1/-1;
 	}
@@ -9,8 +17,8 @@ project-section {
 	button.action-link {
 		margin-top: 20px;
 		grid-column: 2/-1;
-		background-color: var(--color-soft);
-		color: var(--page);
+		color: var(--white);
+		background-color: black;
 		border: none;
 		position: relative;
 		text-align: left;
@@ -19,26 +27,36 @@ project-section {
 		font-weight: 600;
 		cursor: pointer;
 		outline: none;
+		background-color: var(--cube-line);
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
 
 		&:hover {
-			background-color: var(--color);
+			background-color: var(--cube-line);
 
+			span {
+				background-color: var(--cube-color);
+			}
 		}
 
 		span {
-			display: grid;
+			display: flex;
 			place-items: center;
+			justify-content: space-between;
 			padding-right: 15px;
-
+			padding-left: 15px;
 			position: absolute;
+			height: 100%;
 			right: 0;
 			top: 0;
-			height: 100%;
-			background-color: transparent;
 			transition: background-color .3s ease-out;
 			pointer-events: none;
 			color: var(--white);
-			outline: .5px solid transparent;
+			background-color: var(--cube-line);
+
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+
 		}
 	}
 
@@ -50,13 +68,31 @@ project-section {
 		project-card {
 			grid-column: 2/-1;
 		}
+
+		button.action-link {
+			margin-top: 40px;
+		}
 	}
 }
 
 @media(min-width:750px) {
 	project-section {
+		project-card {
+			grid-column: 2/span 2;
+		}
+
 		button.action-link {
 			grid-column: 3/-1;
+		}
+	}
+}
+
+@media(min-width:1200px) {
+	project-section {
+
+
+		button.action-link {
+			grid-column: 4/-1;
 		}
 	}
 }

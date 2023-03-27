@@ -1,7 +1,6 @@
-<grid-blog>
-	<h2 class='loud-voice'><?= $section['heading']; ?></h2>
-
+<grid-blog class='grid-template'>
 	<text-content>
+		<h2 class='loud-voice'><?= $section['heading']; ?></h2>
 		<p class='intro'><?= $section['intro']; ?></p>
 	</text-content>
 

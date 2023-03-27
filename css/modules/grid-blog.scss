@@ -1,21 +1,22 @@
-grid-blog{
+grid-blog {
 	display: block;
 	width: 100%;
 }
 
-grid-blog ul{
+grid-blog ul {
 	margin-top: var(--tight-space);
 	margin-bottom: var(--tight-space);
+	grid-column: 1/-1;
 }
 
-grid-blog li{
+grid-blog li {
 	margin-bottom: 80px;
 }
 
-iframe{
+iframe {
 	width: 100%;
 }
 
-div.blog{
+div.blog {
 	margin: var(--general-space) auto;
 }

@@ -1377,11 +1377,10 @@ about-card action-links {
     max-height: 360px;
   }
 }
-project-card {
+.card-design {
   display: block;
   width: 100%;
   height: 28rem;
-  max-width: 468px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -1391,14 +1390,14 @@ project-card {
   transition: box-shadow 0.5s ease-in;
   background-color: #f1f2f4;
 }
-project-card:hover {
+.card-design:hover {
   box-shadow: 0 10px 30px -5px var(--color-soft);
 }
-project-card picture {
+.card-design picture {
   width: 100%;
   height: 100%;
 }
-project-card img {
+.card-design img {
   position: absolute;
   object-fit: cover;
   width: 100%;
@@ -1408,16 +1407,16 @@ project-card img {
   opacity: 0.5;
   transition: opacity 0.2s ease-out;
 }
-project-card h3 {
+.card-design h3 {
   text-transform: uppercase;
   font-weight: 600;
 }
-project-card .span-title {
+.card-design .span-title {
   width: fit-content;
   position: absolute;
   transition: opacity 0.3s ease-out, transform 0.3s ease-in-out;
   top: 30px;
-  left: 25px;
+  right: 25px;
   transform: translateY(-200%);
   z-index: 100;
   text-transform: uppercase;
@@ -1427,7 +1426,7 @@ project-card .span-title {
   font-weight: 700;
   filter: blur(1px);
 }
-project-card text-content {
+.card-design text-content {
   position: absolute;
   max-width: 80%;
   transition: opacity 0.3s ease-out, transform 0.3s ease-in-out;
@@ -1439,42 +1438,35 @@ project-card text-content {
   transform: translateY(80%);
   z-index: 100;
 }
-project-card text-content * {
+.card-design text-content * {
   transition: opacity 0.3s ease-out;
 }
-project-card text-content p {
+.card-design text-content p {
   font-weight: 500;
 }
-project-card text-content p,
-project-card text-content .action-link {
+.card-design text-content p,
+.card-design text-content .action-link {
   opacity: 0;
-}
-project-card .overlay {
-  opacity: 0;
-  transition: opacity 0.3s ease-out;
 }
 @media (hover: none) {
-  project-card text-content {
+  .card-design text-content {
     transform: none;
   }
-  project-card text-content p,
-project-card text-content .action-link {
+  .card-design text-content p,
+.card-design text-content .action-link {
     opacity: 1;
   }
-  project-card span {
+  .card-design .span-title {
     transform: none;
   }
 }
 @media (min-width: 500px) {
-  project-card text-content {
+  .card-design text-content {
     max-width: 90%;
   }
 }
 
 @media (hover: hover) {
-  project-card:hover .overlay {
-    opacity: 1;
-  }
   project-card:hover text-content {
     transform: none;
   }
@@ -1482,16 +1474,76 @@ project-card text-content .action-link {
 project-card:hover text-content .action-link {
     opacity: 1;
   }
-  project-card:hover span {
+  project-card:hover .span-title {
     transform: none;
   }
   project-card:hover img {
     transition: opacity 0.3s ease-in;
   }
 }
+teaser-card.card-design {
+  grid-column: 4/-1;
+  height: 8rem;
+  align-self: flex-end;
+  justify-self: flex-end;
+  width: 90%;
+}
+teaser-card.card-design:hover {
+  box-shadow: 10px 10px 30px -5px var(--color-soft);
+}
+teaser-card.card-design .span-title {
+  top: 10px;
+}
+@media (hover: hover) {
+  teaser-card.card-design:hover .span-title {
+    transform: none;
+  }
+}
+teaser-card.card-design text-content {
+  bottom: 40px;
+}
+teaser-card.card-design button {
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+teaser-card.second {
+  display: none;
+}
+
+teaser-card.third {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  teaser-card.second {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  teaser-card.third {
+    display: block;
+  }
+}
 project-section {
   width: 100%;
   display: block;
+}
+project-section card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-self: flex-end;
 }
 project-section project-card {
   grid-column: 1/-1;
@@ -1499,8 +1551,8 @@ project-section project-card {
 project-section button.action-link {
   margin-top: 20px;
   grid-column: 2/-1;
-  background-color: var(--color-soft);
-  color: var(--page);
+  color: var(--white);
+  background-color: black;
   border: none;
   position: relative;
   text-align: left;
@@ -1509,33 +1561,52 @@ project-section button.action-link {
   font-weight: 600;
   cursor: pointer;
   outline: none;
+  background-color: var(--cube-line);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 project-section button.action-link:hover {
-  background-color: var(--color);
+  background-color: var(--cube-line);
+}
+project-section button.action-link:hover span {
+  background-color: var(--cube-color);
 }
 project-section button.action-link span {
-  display: grid;
+  display: flex;
   place-items: center;
+  justify-content: space-between;
   padding-right: 15px;
+  padding-left: 15px;
   position: absolute;
+  height: 100%;
   right: 0;
   top: 0;
-  height: 100%;
-  background-color: transparent;
   transition: background-color 0.3s ease-out;
   pointer-events: none;
   color: var(--white);
-  outline: 0.5px solid transparent;
+  background-color: var(--cube-line);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 @media (min-width: 500px) {
   project-section project-card {
     grid-column: 2/-1;
   }
+  project-section button.action-link {
+    margin-top: 40px;
+  }
 }
 @media (min-width: 750px) {
+  project-section project-card {
+    grid-column: 2/span 2;
+  }
   project-section button.action-link {
     grid-column: 3/-1;
+  }
+}
+@media (min-width: 1200px) {
+  project-section button.action-link {
+    grid-column: 4/-1;
   }
 }
 .has-contact-form {
@@ -1558,6 +1629,9 @@ contact-form form big-field {
   row-gap: 20px;
   width: 100%;
   grid-column: 1/-1;
+}
+contact-form form textarea {
+  height: 125px;
 }
 contact-form button {
   grid-column: 2/-1;
@@ -1591,6 +1665,11 @@ contact-form .cube-sphere-container {
     right: 40%;
     z-index: -10;
     opacity: 0.5;
+  }
+}
+@media (min-width: 1200px) {
+  contact-form button {
+    grid-column: 3/-1;
   }
 }
 resume-card,
@@ -1681,6 +1760,7 @@ grid-blog {
 grid-blog ul {
   margin-top: var(--tight-space);
   margin-bottom: var(--tight-space);
+  grid-column: 1/-1;
 }
 
 grid-blog li {
