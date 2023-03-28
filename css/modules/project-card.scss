@@ -80,11 +80,11 @@
 		}
 
 		.action-link {
-			background-color: var(--cube-line);
+			background-color: var(--cube-color);
 			border: none;
 
 			&:hover {
-				background-color: var(--cube-color);
+				background-color: var(--cube-line);
 			}
 		}
 
