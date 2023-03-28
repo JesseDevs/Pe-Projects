@@ -6,6 +6,10 @@ $message = null;
 $template = null;
 $characterCount = 0;
 
+$class = '';
+
+
+
 
 function countString($string)
 {
@@ -34,13 +38,14 @@ if (isset($_POST['count-submit'])) {
 
 	$template = "You entered: ";
 	$message = 'That phrase has: ' . $characterCount . ' characters.';
+	$class = 'confirmation';
 }
 
 ?>
 
 
 
-<form action="" method="post" autocomplete="off" id="count-characters">
+<form action="" class='support-grid' method="post" autocomplete="off" id="count-characters">
 
 	<form-field>
 
@@ -52,7 +57,7 @@ if (isset($_POST['count-submit'])) {
 
 
 </form>
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

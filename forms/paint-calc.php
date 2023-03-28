@@ -7,6 +7,8 @@ $area = null;
 $paint = null;
 $template = '';
 
+$class = '';
+
 if (isset($_POST['paint-submit'])) {
 
 	if (isset($_POST['length'])) {
@@ -25,11 +27,12 @@ if (isset($_POST['paint-submit'])) {
 	$paint = ceil($area / 350);
 
 	$template = "<p> The ceiling of the room is: " . $area . " feet</p> <p> You'll need: <strong>" . $paint . "</strong> gallons to cover the entire ceiling</p>";
+	$class = 'confirmation';
 }
 ?>
 
 
-<form action="" method="post" autocomplete="off" id='paint'>
+<form action="" method="post" class='support-grid' autocomplete="off" id='paint'>
 	<form-field>
 
 		<label for="">What is the length of the ceiling?</label>
@@ -51,7 +54,7 @@ if (isset($_POST['paint-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

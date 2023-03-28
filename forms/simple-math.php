@@ -1,7 +1,5 @@
 <?php
 
-
-
 $numOne = '';
 $numTwo = '';
 $multiply = null;
@@ -13,6 +11,9 @@ $templateOne = "";
 $templateTwo = "";
 $templateThree = "";
 $templateFour = "";
+
+
+$class = '';
 
 if (isset($_POST['math-submit'])) {
 
@@ -41,9 +42,11 @@ if (isset($_POST['math-submit'])) {
 	$templateTwo = $numOne . " - " . $numTwo . " = " . "<strong>" . $subtract . "</strong>";
 	$templateThree = $numOne . " x " . $numTwo . " = " . "<strong>" . $multiply . "</strong>";
 	$templateFour = $numOne . " / " . $numTwo . " = " . "<strong>" . $divide . "</strong>";
+
+	$class = 'confirmation';
 } ?>
 
-<form action="" method="post" autocomplete="off" id='math'>
+<form action="" class='support-grid' method="post" autocomplete="off" id='math'>
 
 	<form-field>
 
@@ -63,7 +66,7 @@ if (isset($_POST['math-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

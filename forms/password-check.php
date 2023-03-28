@@ -6,6 +6,7 @@ $password = '1020World';
 $inputPassword = null;
 $template = null;
 
+$class = '';
 
 if (isset($_POST['password-submit'])) {
 
@@ -26,9 +27,10 @@ if (isset($_POST['password-submit'])) {
 	} else {
 		$template = "Username or Password is incorrect. Try again.";
 	}
+	$class = 'confirmation';
 } ?>
 
-<form action="" method="post" autocomplete="off" id='password'>
+<form action="" class='support-grid' method="post" autocomplete="off" id='password'>
 
 	<form-field>
 
@@ -53,7 +55,7 @@ if (isset($_POST['password-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

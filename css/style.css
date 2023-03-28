@@ -845,6 +845,10 @@ side-bar {
   fill: currentColor;
 }
 
+.contains-x {
+  display: none;
+}
+
 .box-container {
   padding-top: 10px;
   width: 30px;
@@ -2005,8 +2009,6 @@ form-grid text-content {
   grid-column: 1/-1;
 }
 form-grid form {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   row-gap: 20px;
 }
 form-grid form button {
@@ -2020,7 +2022,7 @@ form-grid form-field {
 form-grid ul {
   display: flex;
   flex-direction: column;
-  gap: 13vh;
+  gap: 140px;
   margin-top: var(--intro-space);
   grid-column: 1/-1;
 }
@@ -2047,6 +2049,7 @@ form-box {
   display: block;
   border-radius: 5px;
   padding: 20px 15px;
+  padding-bottom: 40px;
   border: var(--thin) solid var(--color-mute);
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
   scroll-margin: 50px;
@@ -2060,38 +2063,43 @@ form-box h3 {
   font-weight: 500;
   text-transform: uppercase;
 }
-form-box div.feedback {
-  position: absolute;
-}
 
+@media (min-width: 1200px) {
+  form-grid form button {
+    grid-column: 3/-1;
+  }
+}
 .feedback {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 20px;
-  min-height: 15vh;
-  margin-top: 10vh;
+  gap: 10px;
+  background-color: var(--color-mute);
+  position: absolute;
+  top: 100%;
+  z-index: 200;
+  width: calc(100% + 6px);
+  left: -3px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
 }
 .feedback p {
-  font-size: clamp(1.5rem, 3.4vw, 2rem);
-  word-break: break-word;
-  white-space: normal;
+  max-width: none;
+  text-align: center;
 }
-.feedback strong {
-  display: inline-block;
+
+div.confirmation.feedback {
+  display: flex;
+  opacity: 1;
 }
 
 form.none button {
   opacity: 0.1;
   pointer-events: none;
-}
-
-results {
-  display: block;
-  width: 100%;
-}
-results .chant-voice {
-  margin-bottom: var(--tight-space);
 }
 
 div.change-form {
@@ -2110,6 +2118,24 @@ div.change-form span {
   font-weight: 500;
 }
 
+@media (min-width: 1200px) {
+  form-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  form-box form.support-grid {
+    grid-column: 1/span 2;
+  }
+  form-box div.feedback {
+    top: initial;
+    right: 0;
+    height: 100%;
+    left: initial;
+    width: 40%;
+    border-radius: 0;
+    place-content: center;
+  }
+}
 project-page {
   width: 100%;
   display: block;

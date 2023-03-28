@@ -7,6 +7,9 @@ $retireYear = 0;
 
 $template = "";
 
+
+$class = '';
+
 if (isset($_POST['retire-submit'])) {
 
 	if ((isset($_POST['currentAge'])) && (isset($_POST['retireAge']))) {
@@ -30,10 +33,11 @@ if (isset($_POST['retire-submit'])) {
 			}
 		}
 	}
+	$class = 'confirmation';
 } ?>
 
 
-<form method="POST" autocomplete="off" id='retire'>
+<form method="POST" class='support-grid' autocomplete="off" id='retire'>
 
 	<form-field>
 		<label for="">What is your age?</label>
@@ -51,7 +55,7 @@ if (isset($_POST['retire-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

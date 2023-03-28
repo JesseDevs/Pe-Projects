@@ -20,6 +20,9 @@ $total = null;
 $template = '';
 
 
+$class = '';
+
+
 if (isset($_POST['checkout-submit'])) {
 
 	if (isset($_POST['priceOne'])) {
@@ -61,9 +64,10 @@ if (isset($_POST['checkout-submit'])) {
     <strong>
         <p>The total is: " . $total . "</p>
     </strong>";
+	$class = 'confirmation';
 } ?>
 
-<form action="" method="post" autocomplete="off" id="checkout">
+<form action="" class='support-grid' method="post" autocomplete="off" id="checkout">
 
 	<form-field>
 		<div class="container">
@@ -98,7 +102,7 @@ if (isset($_POST['checkout-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

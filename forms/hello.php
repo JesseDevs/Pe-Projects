@@ -4,6 +4,7 @@
 $name = null;
 $message = null;
 $template = '';
+$class = '';
 
 
 
@@ -12,11 +13,13 @@ if (isset($_POST['hello-submit'])) {
 	$message = "Hello " . htmlspecialchars($name) . "! Nice to meet you!";
 
 	$template = 'You typed: ' . $name;
+
+	$class = 'confirmation';
 }
 
 ?>
 
-<form method="post" autocomplete="off" id="hello">
+<form method="post" class='support-grid' autocomplete="off" id="hello">
 
 	<form-field>
 		<label for="">What is your name?</label>
@@ -28,7 +31,7 @@ if (isset($_POST['hello-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

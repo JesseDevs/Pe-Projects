@@ -5,6 +5,9 @@ $author = '';
 $message = '';
 
 
+$class = '';
+
+
 if (isset($_POST['quote-submit'])) {
 
 	$quote = htmlspecialchars($_POST['quote']);
@@ -20,12 +23,13 @@ if (isset($_POST['quote-submit'])) {
 	} else if ($author == '') {
 		$message = 'Someone must have said "' . $quote . '"! Maybe.';
 	}
+	$class = 'confirmation';
 }
 ?>
 
 
 
-<form method="post" autocomplete="off" id="quote-form">
+<form method="post" class='support-grid' autocomplete="off" id="quote-form">
 
 	<form-field>
 		<label for="">Who is the author?</label>
@@ -43,7 +47,7 @@ if (isset($_POST['quote-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

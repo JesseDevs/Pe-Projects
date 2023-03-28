@@ -6,8 +6,6 @@ form-grid {
 	}
 
 	form {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
 		row-gap: 20px;
 
 		button {
@@ -24,7 +22,7 @@ form-grid {
 	ul {
 		display: flex;
 		flex-direction: column;
-		gap: 13vh;
+		gap: 140px;
 		margin-top: var(--intro-space);
 		grid-column: 1/-1;
 	}
@@ -52,13 +50,12 @@ form-grid {
 
 }
 
-
-
 form-box {
 	width: 100%;
 	display: block;
 	border-radius: 5px;
 	padding: 20px 15px;
+	padding-bottom: 40px;
 	border: var(--thin) solid var(--color-mute);
 	box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 	scroll-margin: 50px;
@@ -74,7 +71,12 @@ form-box {
 		text-transform: uppercase;
 	}
 
-	div.feedback {
-		position: absolute;
+}
+
+@media(min-width:1200px) {
+	form-grid form {
+		button {
+			grid-column: 3/-1;
+		}
 	}
 }

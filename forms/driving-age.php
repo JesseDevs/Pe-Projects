@@ -2,7 +2,7 @@
 
 $age = null;
 $template = null;
-
+$class = '';
 
 if (isset($_POST['age-submit'])) {
 
@@ -13,10 +13,11 @@ if (isset($_POST['age-submit'])) {
 	}
 
 	$template = ($age > 16 ? 'You are old enough to legally drive.' :  'You are not old enough to legally drive.');
+	$class = 'confirmation';
 }
 ?>
 
-<form action="" autocomplete="off" method="post" id='driving'>
+<form action="" class='support-grid' autocomplete="off" method="post" id='driving'>
 
 	<form-field>
 
@@ -29,7 +30,7 @@ if (isset($_POST['age-submit'])) {
 
 
 </form>
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

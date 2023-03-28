@@ -7,6 +7,9 @@ $templateOne = "";
 $templateTwo = '';
 $final = '';
 
+$class = '';
+
+
 if (isset($_POST['area-submit'])) {
 
 	if (isset($_POST['length'])) {
@@ -25,11 +28,13 @@ if (isset($_POST['area-submit'])) {
 	$templateOne = 'The length is: ' .  $length;
 	$templateTwo = 'The width is: ' .  $width;
 	$final = "Thus, the area is: " . $area;
+
+	$class = 'confirmation';
 }
 
 ?>
 
-<form method="post" id="area" autocomplete="off">
+<form method="post" class='support-grid' id="area" autocomplete="off">
 
 	<form-field>
 		<label for="">What is the length of the room?</label>
@@ -47,7 +52,7 @@ if (isset($_POST['area-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

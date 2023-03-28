@@ -6,6 +6,7 @@ $adjective = '';
 $adverb = '';
 
 $message = "";
+$class = '';
 
 if (isset($_POST['madlib-submit'])) {
 	$noun = $_POST['noun'];
@@ -14,11 +15,12 @@ if (isset($_POST['madlib-submit'])) {
 	$adverb = $_POST['adverb'];
 
 	$message = "<strong>" . $noun . "</strong> <strong>" . $verb . "</strong> <strong>" . $adverb . "</strong>  while maintaining <strong>" . $adjective . "</strong> poise!";
+	$class = 'confirmation';
 }
 
 ?>
 
-<form method="POST" autocomplete="off" id="madlib">
+<form method="POST" class='support-grid' autocomplete="off" id="madlib">
 
 	<form-field>
 		<label for="">Enter a noun.</label>
@@ -51,7 +53,7 @@ if (isset($_POST['madlib-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

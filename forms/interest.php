@@ -6,6 +6,8 @@ $time = '';
 $amount = null;
 $template = '';
 
+$class = '';
+
 if (isset($_POST['interest-submit'])) {
 
 	if (isset($_POST['principal'])) {
@@ -31,10 +33,12 @@ if (isset($_POST['interest-submit'])) {
 	$amount = floatval($principal) * (1 + (floatval($rate) * floatval($time)));
 
 	$template = 'After ' . $time . ' years at ' . $interest . '% interest, the investment will be worth <strong>' . $amount . '</strong>.';
+
+	$class = 'confirmation';
 }
 ?>
 
-<form action="" autocomplete="off" method="post" id='interest'>
+<form action="" class='support-grid' autocomplete="off" method="post" id='interest'>
 
 
 	<form-field>
@@ -62,7 +66,7 @@ if (isset($_POST['interest-submit'])) {
 
 </form>
 
-<div class='feedback'>
+<div class='<?= $class ?> feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>
