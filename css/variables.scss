@@ -33,6 +33,8 @@
 	--dark-overlay: rgba(0, 0, 0, 0.65);
 
 	--landing-text: var(--black-mute);
+
+	--shade: black;
 }
 
 @media(prefers-color-scheme: light) {
@@ -52,6 +54,7 @@
 		--landing-text: var(--white-mute);
 
 		--overlay: rgba(255, 255, 255, 0.5);
+		--shade: white;
 	}
 }
 
