@@ -19,7 +19,7 @@
 		<?php } ?>
 	</text-content>
 
-	<form method="POST">
+	<form method="POST" class='support-grid'>
 		<big-field>
 			<form-field>
 				<input type="text" placeholder="<?= $section['labelOne'] ?>">

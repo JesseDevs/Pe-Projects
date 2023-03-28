@@ -14,14 +14,14 @@
 
 		<p class='date'><?= $item['startDate'] ?> &#8212; <?= $item['endDate'] ?></p>
 	</text-content>
-
-	<p class='story'><?= $item['takeaways'] ?></p>
-
-	<text-content class="skills ">
+	<ul class="skills ">
 		<?php foreach ($item['skills'] as $skill) { ?>
-			<p class="small-voice"><?= $skill ?></p>
+			<li>
+				<p class="small-voice"><?= $skill ?></p>
+			</li>
 		<?php } ?>
-	</text-content>
+	</ul>
+	<p class='story'><?= $item['takeaways'] ?></p>
 
 	<!-- <p><?= $item['specialNote'] ?></p> -->
 

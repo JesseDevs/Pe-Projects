@@ -4,17 +4,16 @@ $heading = $section['heading'] ?? ucfirst($page);
 
 <landing-heading class='grid-template'>
 	<text-content class='title'>
-		<div>
-			<h1 class="roar-voice"><?= $heading ?></h1>
-			<p class='intro'> <?= $section["intro"] ?></p>
-		</div>
+
+		<h1 class="roar-voice"><?= $heading ?></h1>
+		<p class='intro'> <?= $section["intro"] ?></p>
+
 
 		<p class="details"><?= $section["details"] ?></p>
 	</text-content>
 
 
 	<picture class="landing-image">
-		<div class="overlay"></div>
 		<?php if (isset($section['big-image'])) { ?>
 			<source srcset="<?= $section['big-image'] ?>" media="(min-width: 720px)">
 		<?php } ?>

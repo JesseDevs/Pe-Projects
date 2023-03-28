@@ -2,8 +2,11 @@
 	$heading = $section['heading'] ?? "Exercise Grid";
 	$intro = $section['intro'] ?? "Check it out!";
 
-	$cookie =  $_COOKIE['scrollPosition'];
-
+	if (isset($_COOKIE['scrollPosition'])) {
+		$cookie = $_COOKIE['scrollPosition'];
+	} else {
+		$cookie = 0;
+	}
 
 	?>
     <script>
