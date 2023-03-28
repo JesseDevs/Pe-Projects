@@ -54,5 +54,10 @@ if (isset($_POST['password-submit'])) {
 </form>
 
 <div class='feedback'>
+	<div class="contains-x">
+		<svg class="icon-cancel-squared">
+			<use xlink:href="#icon-cancel-squared"></use>
+		</svg>
+	</div>
 	<p><?= $template ?></p>
 </div>

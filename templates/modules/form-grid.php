@@ -20,7 +20,7 @@
     		document.cookie = `scrollPosition=0`;
     	});
     </script>
-    <form-grid>
+    <form-grid class='grid-template'>
 
     	<text-content>
 

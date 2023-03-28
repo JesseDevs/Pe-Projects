@@ -53,6 +53,11 @@ if (isset($_POST['count-submit'])) {
 
 </form>
 <div class='feedback'>
+	<div class="contains-x">
+		<svg class="icon-cancel-squared">
+			<use xlink:href="#icon-cancel-squared"></use>
+		</svg>
+	</div>
 
 	<p><?= $template ?><strong> <?= $phrase ?></strong> </p>
 	<p><strong> <?= $message ?></strong> </p>

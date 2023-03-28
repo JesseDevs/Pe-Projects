@@ -44,6 +44,10 @@ if (isset($_POST['quote-submit'])) {
 </form>
 
 <div class='feedback'>
-
+	<div class="contains-x">
+		<svg class="icon-cancel-squared">
+			<use xlink:href="#icon-cancel-squared"></use>
+		</svg>
+	</div>
 	<p> <?= $message ?></p>
 </div>

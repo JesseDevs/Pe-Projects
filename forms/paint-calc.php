@@ -52,6 +52,11 @@ if (isset($_POST['paint-submit'])) {
 </form>
 
 <div class='feedback'>
+	<div class="contains-x">
+		<svg class="icon-cancel-squared">
+			<use xlink:href="#icon-cancel-squared"></use>
+		</svg>
+	</div>
 	<?= $template ?>
 
 </div>
