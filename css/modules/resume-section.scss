@@ -9,10 +9,8 @@ resume-section {
 		grid-column: 1/-1;
 		text-align: right;
 		font-weight: 500;
-	}
-
-	h4:last-of-type {
-		padding-top: var(--intro-space);
-		border-top: var(--thin) solid var(--cube-line);
+		width: fit-content;
+		border-bottom: var(--thin) solid var(--cube-line);
+		justify-self: flex-end;
 	}
 }
