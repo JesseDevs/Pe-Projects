@@ -32,3 +32,13 @@ resume-card {
 		}
 	}
 }
+
+@media(min-width:750px) {
+	resume-card {
+		grid-column: 2/span 2;
+	}
+
+	resume-card:nth-of-type(even) {
+		grid-column: 4/-1;
+	}
+}
