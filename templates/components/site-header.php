@@ -38,6 +38,7 @@
 		</nav>
 
 		<button class='hamburger-button' id='toggle' rel='hamburger'>
+			<span class='visually-hidden'>Open Menu</span>
 			<div class='menu-bars'></div>
 		</button>
 

@@ -121,12 +121,12 @@ header.display-menu {
 
 	.menu-bars::before {
 		margin-top: 0px;
-		transform: rotate(405deg);
+		transform: rotate(135deg);
 	}
 
 	.menu-bars::after {
 		margin-top: 0px;
-		transform: rotate(-405deg);
+		transform: rotate(-135deg);
 	}
 
 	.burger {
