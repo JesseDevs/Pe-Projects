@@ -1,4 +1,4 @@
 
 <?php if ($projectData['template'] === "one") {
-	include('templates/modules/template-one.php');
+	include('templates/modules/case-block.php');
 } ?>

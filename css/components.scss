@@ -69,15 +69,16 @@ action-links {
 		background-color: var(--color-super-light);
 
 		&:hover {
-			background-color: var(--white);
-			border: var(--thin) solid var(--color-mute);
+			color: var(--white);
+			border: var(--thin) solid var(--color-super-light);
+			background-color: rgba(0, 0, 0, 0.221);
 		}
 	}
 }
 
 .action-link:hover {
 	background-color: var(--color-dark);
-	border-color: var(--color-dark);
+	border-color: var(--color);
 }
 
 #menu-toggle:checked~.menu a:hover {

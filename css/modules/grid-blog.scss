@@ -8,7 +8,7 @@ grid-blog {
 		grid-column: 1/-1;
 
 		li {
-			margin-bottom: 80px;
+			margin-bottom: 100px;
 
 		}
 	}
@@ -20,7 +20,7 @@ grid-blog {
 			grid-column: 2/-1;
 
 			li {
-				margin-bottom: 100px;
+				margin-bottom: 120px;
 
 				blog-card {
 					display: grid;
@@ -43,7 +43,7 @@ grid-blog {
 	}
 
 	grid-blog ul li {
-		margin-bottom: 120px;
+		margin-bottom: 140px;
 	}
 
 	blog-card {

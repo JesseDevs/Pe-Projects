@@ -9,7 +9,7 @@
 		"featured": true,
 		"template": "one",
 		"casestudy": {
-			"p1": "The internet is made up of list and boxes. The architecture behind these elements keeps the all important data within control. In its simplest form a Content Management System (CMS) is a list of objects containing all the necessary materials needed to present the information to the user. ",
+			"p1": "<span class='first-words'>The internet</span> is made up of lists and boxes. The architecture behind these elements keeps all the important data under control. In its simplest form, a Content Management System (CMS) is a list of objects containing all the necessary materials needed to present information to the user.",
 			"relation": "At this point you can start to see I use many of my favorite video games as inspirations for my projects"
 		},
 		"files": [
@@ -17,29 +17,29 @@
 				"title": "Legends",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/legends",
 				"link": "https://peprojects.dev/alpha-4/jesse/_projects/legends/",
-				"image": "images/background/landscape.jpg",
-				"p": "The <em>‘Legends’</em> project showcases the initial ideas when approaching a CMS. A static data project. JSON is a standard in the industry as it is a lightweight data interchange format that is easy to read and write. By definition static is never changing and thus making this project only able to render the data onto a page. For any user to change the data they would need to be able to access the JSON file directly in the project. This allows a web page to be generated quickly, as the server does not need to query a database for every page load."
+				"image": "images/projects/legends.png",
+				"p": "The <em>‘Legends’</em> project showcases the initial ideas for approaching a CMS. It is a static data project that uses JSON, a standard lightweight data interchange format that is easy to read and write in the industry. Since static data is never changing, this project can only render the data onto a page. If any user wants to change the data, they would need to access the JSON file directly in the project. This enables a web page to be generated quickly as the server does not need to query a database for every page load."
 			},
 			{
 				"title": "Fighters",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/fighters-crud/",
 				"link": "https://peprojects.dev/alpha-4/jesse/_projects/fighters-crud/",
-				"image": "images/background/landscape.jpg",
-				"p": "The <em>‘Fighters’</em> project is the next level up. This is a lean PHP CRUD (create, read, update, and delete) project that allows the user to create their own list of fighters to their liking. Aside from displaying the items in the frontend, there is also a form on the website that accepts a POST request on the backend to properly push the user’s inputted data into the JSON index file. The user can then choose to delete this created item or update it if there are any mistakes."
+				"image": "images/projects/fighters.png",
+				"p": "The <em>‘Fighters’</em> project is the next level up. It is a lean PHP CRUD (create, read, update, and delete) project that enables users to create their own list of fighters according to their preferences. Besides displaying the items on the frontend, there is also a form on the website that accepts a POST request on the backend to push the user's inputted data into the JSON index file. The user can then choose to delete the created item or update it if there are any mistakes."
 			},
 			{
 				"title": "Music: Wordpress",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/music-wordpress/",
 				"link": "https://peprojects.dev/alpha-4/jesse/_projects/music-wordpress/",
 				"image": "images/background/landscape.jpg",
-				"p": "Some people would consider Wordpress the pinnacle of CMS’ as it is powers about 40% of all websites on the internet. In my <em>‘Music: Wordpress’</em> project, I got a proper idea as to why that is. The admin panel allows you to manage backend data with various plugins to make the user, creator, and overall quality efficient and simple. Advanced Custom Fields (ACF) is a great plugin that allows ways to add custom content to our system. I learned that creating many modules and themes could generate a quick work flow to output production ready websites in a flash."
+				"p": "Some people consider WordPress the pinnacle of CMSs as it powers about 40% of all websites on the internet. In my <em>‘Music: WordPress’</em> project, I gained a proper idea of why that is. The admin panel allows you to manage backend data with various plugins, making it efficient and simple for users and creators to maintain the overall quality. Advanced Custom Fields (ACF) is an excellent plugin that enables the addition of custom content to our system. I discovered that creating many modules and themes can generate a quick workflow to output production-ready websites in a flash."
 			},
 			{
 				"title": "Dunkin",
 				"git": "https://github.com/JesseDevs/super-shot",
 				"link": "https://calm-super-shot.surge.sh/",
-				"image": "images/background/landscape.jpg",
-				"p": "In my <em>‘Dunkin’ Donuts: Vue App’</em>  I used Firebase, which is not a CMS but a NoSQL cloud database that provides many ways to manage aspects of a web application. This type of data is built by making a HTTP request to the Firebase API that is connected to my project. Essentially it works very similar to a giant JSON file that can hold many lists, filled with many objects, that are all easily accessed by database features."
+				"image": "images/projects/dunkin.png",
+				"p": "In my <em>‘Dunkin’ Donuts: Vue App’</em>, I utilized Firebase, which is not a CMS but a NoSQL cloud database that offers various ways to manage aspects of a web application. To build this type of data, I made an HTTP request to the Firebase API connected to my project. It works very similarly to a giant JSON file that can hold many lists filled with many objects that are easily accessed by database features."
 			}
 		]
 	},
@@ -53,35 +53,35 @@
 		"featured": true,
 		"template": "one",
 		"casestudy": {
-			"p1": "Javascript is most widely used programming language and has become a vital tool for developers. Though it is primarily a frontend language, there have been evolutions to make backends like Node and entire Frameworks that projects run on. This is a timeline showing a scaling of ideas and the process of understanding what is needed to properly make a website."
+			"p1": "<span class='first-words'>Javascript is</span> the most widely used programming language and has become a vital tool for developers. Although it is primarily a frontend language, there have been evolutions to make backends like Node and entire Frameworks on which projects can run. This timeline demonstrates the scaling of ideas and the process of understanding what is needed to make a website properly."
 		},
 		"files": [
 			{
 				"title": "Javascript Forms",
+				"git": "https://github.com/JesseDevs/pe-projects/blob/main/scripts/file.js",
 				"link": "https://peprojects.dev/alpha-4/jesse/?page=forms",
-				"image": "images/background/landscape.jpg",
-				"p": "There are some forms ready for user input in my <em>Forms</em> tab in my personal site. These were based on challenges from ‘Exercises for Programmers’ and were originally made purely with PHP server side rendering. Using Javascript I am able to showcase a few more tricks on the frontend when the user interacts with these items. For example, submitting a form saves a position on the screen to scroll to again."
+				"p": "There are some forms available for user input in my <em>Forms</em> tab on my personal site. These forms were based on challenges from ‘Exercises for Programmers’ and were initially made purely with PHP server-side rendering. By using JavaScript, I can showcase a few more tricks on the frontend when the user interacts with these items. For example, submitting a form saves a position on the screen to scroll to again."
 			},
 			{
 				"title": "Workout App",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/workout-app//",
 				"link": "https://peprojects.dev/alpha-4/jesse/_projects/workout-app/",
-				"image": "images/background/landscape.jpg",
-				"p": "My <em>Workout APP</em> took a simple interface from the forms and created more than just a short answer for the user. I tend to have to remember what is the main body focus for my workout and what types of sets will be needed. This app is a simple way to create short lists of workouts dedicated for the muscle group. This was built using local storage and Javascript class method to generate the app functionality, while using imports and exports to create templates for each page."
+				"image": "images/projects/workout.png",
+				"p": "My <em>‘Workout APP’</em> took a simple interface from the forms and created more than just a short answer for the user. I often have to remember the main body focus for my workout and the types of sets needed. This app is a simple way to create short lists of workouts dedicated to the muscle group. It was built using local storage and JavaScript class methods to generate app functionality, while using imports and exports to create templates for each page."
 			},
 			{
 				"title": "Bill Split App",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/bill-app/",
 				"link": "https://peprojects.dev/alpha-4/jesse/_projects/bill-app/",
-				"image": "images/background/landscape.jpg",
-				"p": "The <em>Bill Split APP</em> was inspited from a night out with friends and what ti took to even divide the bill. A interface that has a lot more personality and functionality. Using similar routing in Vanilla Javascript to create multiple page templates."
+				"image": "images/projects/bill.png",
+				"p": "The <em>‘Bill Split APP’</em> was inspired by a night out with friends and the effort it took to even divide the bill. It has an interface with more personality and functionality. I used similar routing in Vanilla JavaScript to create multiple page templates."
 			},
 			{
 				"title": "Dunkin",
 				"git": "https://github.com/JesseDevs/super-shot",
 				"link": "https://calm-super-shot.surge.sh/",
-				"image": "images/background/landscape.jpg",
-				"p": "My <em>‘Dunkin’ Donuts: Vue App’</em> is built using Vue 3. A Javascript framework used for building user interfaces. The latest version of Vue is a versatile framework, using stores to pass variables and data to multiple components. Meaning this could be used for small one page sites to large multi-page projects. Reactive and Computed variables allows me the flexibility with live variables. To go along with this, I used Firebase to provide a database for users, products, and their items."
+				"image": "images/projects/dunkin.png",
+				"p": "My <em>‘Dunkin’ Donuts: Vue App’</em> is built using Vue 3, a JavaScript framework used for building user interfaces. The latest version of Vue is a versatile framework that uses stores to pass variables and data to multiple components, meaning it can be used for small one-page sites to large multi-page projects. Reactive and computed variables give me the flexibility to work with live variables. To go along with this, I used Firebase to provide a database for users, products, and their items."
 			}
 		]
 	},
@@ -95,14 +95,29 @@
 		"featured": true,
 		"template": "one",
 		"casestudy": {
-			"p1": "X"
+			"p1": "<span class='first-words'>Design is</span> an essential part of building a visually appealing and user-friendly website. Creating proper modules and layouts can make your website stand out and increase engagement with your audience. Modules are reusable components that can be used throughout your website to ensure consistency and improve the user experience. Layouts, on the other hand, dictate the placement of modules on a page and the overall structure of your website. By utilizing effective CSS design techniques, you can create a cohesive and visually pleasing website that enhances the user experience and achieves your business goals."
 		},
 		"files": [
 			{
-				"title": "Javascript Forms",
-				"link": "https://peprojects.dev/alpha-4/jesse/?page=forms",
-				"image": "images/background/landscape.jpg",
-				"p": "X"
+				"title": "Garden",
+				"link": "https://peprojects.dev/alpha-4/jesse/?page=layouts",
+				"git": "https://github.com/JesseDevs/pe-projects/tree/main/css/layouts",
+				"image": "images/projects/garden.png",
+				"p": "In the ‘Layouts’ tab, you can check out some layout designs. This page is a metaphor for a garden because, just like in a garden, you need to continue watering your skills to create a beautiful piece of art. These layouts originate from images that were then crafted into templates that can be reused with different data."
+			},
+			{
+				"title": "Theme Challenge",
+				"link": "https://peprojects.dev/alpha-4/jesse/_projects/theme-challenge/",
+				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/theme-challenge",
+				"image": "images/projects/theme.png",
+				"p": "The ‘Theme’ project was created with the intent of using a standard template and shaping it to match an industry standard. The idea was to be able to take influences from a well-known site in a specific category and using that to shape our template. To make the project stand out, I had to be able to capture the professional style and imply skill through my design."
+			},
+			{
+				"title": "Wireframe",
+				"link": "https://peprojects.dev/alpha-4/jesse/_projects/wireframe/",
+				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/wireframe",
+				"image": "images/projects/wireframe.png",
+				"p": "A wireframe is the skeleton of a website. It is commonly used to provide structure and generate layout ideas for a product during its development. This design project aimed to showcase the ability to turn a wireframe into a presentable project with reusable components. The entire project began as a ‘Figma’ file, which I used as a guideline to turn the concept into reality. There were moments when I discovered that some components needed to be adjusted to better capture the overall product, which varied from the concept design."
 			}
 		]
 	}
