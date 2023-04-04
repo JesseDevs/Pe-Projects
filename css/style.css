@@ -1475,6 +1475,9 @@ teaser-card.card-design {
   justify-self: flex-end;
   width: 90%;
 }
+teaser-card.card-design text-content {
+  pointer-events: none;
+}
 teaser-card.card-design:hover {
   box-shadow: 10px 10px 30px -5px var(--color-soft);
 }
@@ -1501,6 +1504,8 @@ teaser-card.card-design button {
   height: 100%;
   width: 100%;
   padding: 0;
+  cursor: pointer;
+  z-index: 300;
 }
 
 teaser-card.second {

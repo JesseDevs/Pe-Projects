@@ -27,7 +27,7 @@
 					<a href="?page=forms " class="<?php activePage("forms") ?>">Forms</a>
 				</li>
 				<li class="larger-size">
-					<a href="?page=layouts " class="<?php activePage("style") ?>">Layouts</a>
+					<a href="?page=layouts " class="<?php activePage("layouts") ?>">Layouts</a>
 				</li>
 				<li class="larger-size">
 					<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
@@ -60,7 +60,7 @@
 					<a href="?page=forms" class="<?php activePage("forms") ?>">Forms</a>
 				</li>
 				<li>
-					<a href="?page=layouts " class="<?php activePage("style") ?>">Layouts</a>
+					<a href="?page=layouts " class="<?php activePage("layouts") ?>">Layouts</a>
 				</li>
 				<li>
 					<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
