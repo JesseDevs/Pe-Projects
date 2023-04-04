@@ -1,39 +1,37 @@
 header {
-    box-shadow: 0px 3px 10px rgb(99, 99, 99)
-
+	box-shadow: 0px 3px 10px rgb(99, 99, 99)
 }
 
 header {
-    background: url('https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-red-grit-texture-xl.jpg.adapt.768w.jpg');
-    background-position: center;
-    background-size: cover;
+	background: url('https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-red-grit-texture-xl.jpg.adapt.768w.jpg');
+	background-position: center;
+	background-size: cover;
 
-    color: rgb(244 243 243);
+	color: rgb(244 243 243);
 }
 
-header inner-column{
-    padding: var(--med-height) var(--small-width);
+header inner-column {
+	padding: var(--med-height) var(--small-width);
 }
 
 header h1 {
-    font-size: clamp(2rem, 3vh, 2.5rem);
-    font-weight: 600;
+	font-weight: 600;
 }
 
-header p{
-    max-width: 65ch;
-    margin: 0 auto;
-    line-height: 1.4;
-    text-align: center;
-    font-size: 1.1rem;
+header p {
+	max-width: 65ch;
+	margin: 0 auto;
+	line-height: 1.4;
+	text-align: center;
+	font-size: 1.1rem;
 }
 
 
 header nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-    gap: var(--med-height);
+	gap: var(--med-height);
 }

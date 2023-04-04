@@ -64,6 +64,7 @@ article {
 .banner {
 	text-transform: uppercase;
 	font-weight: 600;
+	-webkit-transform: skewY(10deg);
 	transform: skewY(10deg);
 	color: hsl(0, 100%, 50%);
 	background-color: rgb(255, 255, 255);
