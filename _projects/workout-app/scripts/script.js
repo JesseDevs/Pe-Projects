@@ -67,9 +67,6 @@ const listTemplate = `
     
     </output>
 
-    <div id="save-routine-modal">
-        <input id='z' class='attention-voice' type="name" autocomplete="off" placeholder="ex. Bench Press" required>
-    </div>
 </output-block>
 `;
 
