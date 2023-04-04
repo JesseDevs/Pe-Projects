@@ -141,10 +141,6 @@ window.addEventListener('click', function (event) {
 
 		event.preventDefault();
 
-		if (destination !== 'home') {
-			document.querySelector('#save').style.display = 'block';
-		}
-
 		if (destination == 'list') {
 			const workoutApp = new WorkoutApp('Workouts');
 			// localStorage.setItem("template", JSON.stringify(routes.list, null, 2));
