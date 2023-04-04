@@ -2,7 +2,7 @@ case-block {
 	width: 100%;
 	row-gap: 110px;
 
-	* {
+	>* {
 		grid-column: 1/-1;
 	}
 

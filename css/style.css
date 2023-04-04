@@ -1072,7 +1072,7 @@ action-links {
   color: var(--white);
   text-align: center;
   text-transform: uppercase;
-  padding: 12px 20px;
+  padding: 15px 20px;
   background-color: var(--color);
   transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
   font-family: "IBM Plex Serif", serif;
@@ -2157,7 +2157,7 @@ case-block {
   width: 100%;
   row-gap: 110px;
 }
-case-block * {
+case-block > * {
   grid-column: 1/-1;
 }
 case-block p em {
