@@ -1,9 +1,6 @@
 <?php include('router/functions.php');
 
-$description = null;
-$metaImage = null;
-
-$metaImage = $pageData['metaImage'] ?? 'images/details/computer.jpg';
+$metaImage = $pageData['metaImage'] ?? 'images/details/laptop.jpg';
 
 ?>
 
