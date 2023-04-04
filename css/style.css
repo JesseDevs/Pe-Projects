@@ -1701,6 +1701,12 @@ resume-card .skills li:first-of-type p:before {
   resume-card:nth-of-type(even) {
     grid-column: 4/-1;
   }
+  resume-card:nth-of-type(odd) {
+    padding-right: 20px;
+  }
+  resume-card:last-of-type {
+    grid-row: 6;
+  }
 }
 grid-blog {
   display: block;
