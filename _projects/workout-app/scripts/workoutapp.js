@@ -1,200 +1,186 @@
-import Workout from "./workout.js";
-import Routine from "./routine.js";
+import Workout from './workout.js';
+import Routine from './routine.js';
 
 class WorkoutApp {
+	constructor(name) {
+		this.name = name;
+		this.routines = [];
+		this.workouts = [];
+		this.types = ['chest', 'back', 'legs', 'shoulders', 'cardio', 'core'];
 
-    constructor(name) {
+		this.$body = document.querySelector('body');
+		this.$form = document.querySelector('form');
+		this.$input = this.$form.querySelector('input');
+		this.$output = document.querySelector('output');
 
-        this.name = name;
-        this.routines = [];
-        this.workouts = [];
-        this.types = ["chest", "back", "legs", "shoulders", "cardio", "core"];
+		this.routineBlock = document.querySelector('#routine-display');
+		this.option = document.querySelector('#workoutType');
 
-        this.$body = document.querySelector("body")
-        this.$form = document.querySelector('form');
-        this.$input = this.$form.querySelector('input');
-        this.$output = document.querySelector('output');
+		this.setupApp();
+		this.addEventListeners();
+	}
 
-        this.routineBlock = document.querySelector('#routine-display');
-        this.option = document.querySelector("#workoutType");
+	setupApp() {
+		const data = JSON.parse(localStorage.getItem(this.name)) || [];
+		data.forEach((workoutData) => {
+			this.workouts = [...this.workouts, new Workout(workoutData.data)];
+		});
 
-        this.setupApp();
-        this.addEventListeners();
-    }
+		this.renderLists();
+	}
 
-    setupApp() {
-        const data = JSON.parse(localStorage.getItem(this.name)) || [];
-        data.forEach((workoutData) => {
+	saveToStorage() {
+		localStorage.setItem('Workouts', JSON.stringify(this.workouts, null, 2));
+	}
 
-            this.workouts = [...this.workouts, new Workout(workoutData.data)];
-        });
+	removeFromStorage(key) {
+		localStorage.removeItem(key);
+	}
 
-        this.renderLists();
-    }
+	saveAndUpdate() {
+		this.renderLists();
+		this.saveToStorage();
+	}
 
-    saveToStorage() {
-        localStorage.setItem("Workouts", JSON.stringify(this.workouts, null, 2));
-    }
+	add(content, type) {
+		var workout = new Workout({ content: content, type: type });
 
-    removeFromStorage(key) {
-        localStorage.removeItem(key);
-    }
+		this.workouts = [...this.workouts, workout];
+		this.saveAndUpdate();
+	}
 
-    saveAndUpdate() {
-        this.renderLists();
-        this.saveToStorage();
-    }
+	getWorkoutById(id) {
+		return this.workouts.find(function (workout) {
+			return workout.data.id == id;
+		});
+	}
 
-    add(content, type) {
-        var workout = new Workout({ content: content, type: type });
+	filterWorkoutByType(type) {
+		return this.workouts.filter(function (workout) {
+			return workout.data.type == type;
+		});
+	}
 
-        this.workouts = [...this.workouts, workout];
-        this.saveAndUpdate()
-    }
+	remove(id) {
+		const filtered = this.workouts.filter(function (savedWorkout) {
+			return savedWorkout.data.id != id;
+		});
 
-    getWorkoutById(id) {
-        return this.workouts.find(function (workout) {
-            return workout.data.id == id;
-        })
-    }
+		this.workouts = [...filtered];
+		this.saveAndUpdate();
+		//alert idea
+	}
 
-    filterWorkoutByType(type) {
-        return this.workouts.filter(function (workout) {
-            return workout.data.type == type;
-        });
-    }
+	complete(id) {
+		this.getWorkoutById(id).toggleComplete();
+		this.saveAndUpdate();
+	}
 
-    remove(id) {
-        const filtered = this.workouts.filter(function (savedWorkout) {
-            return savedWorkout.data.id != id;
-        });
+	renderList(workouts) {
+		var template = `<ul>`;
 
-        this.workouts = [...filtered];
-        this.saveAndUpdate()
-        //alert idea
-    }
+		workouts.forEach((workout) => {
+			template += workout.render();
+		});
 
-    complete(id) {
-        this.getWorkoutById(id).toggleComplete();
-        this.saveAndUpdate()
-    }
+		template += `</ul>`;
+		return template;
+	}
 
-    renderList(workouts) {
-        var template = `<ul>`;
+	renderLists() {
+		var template = ``;
 
-        workouts.forEach(workout => {
-            template += workout.render();
-        });
+		this.types.forEach((type) => {
+			const newSet = this.filterWorkoutByType(type);
+			if (newSet.length) {
+				template += `<list-container>
+                    <h3 class='another-voice'>${type} </h3> `;
+				template += this.renderList(newSet);
+				template += `</list-container>`;
+			}
+		});
 
-        template += `</ul>`;
-        return template;
-    }
+		this.$output.innerHTML = template;
+	}
 
-    renderLists() {
-        var template = ``;
+	renderRoutines(routines, index) {
+		console.log(routines);
 
-        this.types.forEach(type => {
-            const newSet = this.filterWorkoutByType(type);
-            if (newSet.length) {
-                template += `<list-container>
-                    <h3 class='another-voice'>${type} </h3> `
-                template += this.renderList(newSet);
-                template += `</list-container>`
-            }
+		if (routines) {
+			var template = `<ul>`;
 
-        })
-
-        this.$output.innerHTML = template;
-    }
-
-    renderRoutines(routines, index) {
-        console.log(routines)
-
-        if (routines) {
-            var template = `<ul>`;
-
-            routines.forEach(routine => {
-                console.log(routine);
-                template += `
+			routines.forEach((routine) => {
+				console.log(routine);
+				template += `
                 <li>
             <button class='route-link' data-route="load-routine">Routine ${index}</button>
                 </li>    
             `;
-            });
+			});
 
-            template += `</ul>`;
+			template += `</ul>`;
 
-            this.routineBlock.innerHTML = template;
-        }
-    }
+			this.routineBlock.innerHTML = template;
+		}
+	}
 
-    addEventListeners() {
+	addEventListeners() {
+		this.$body.addEventListener('click', (event) => {
+			if (event.target.dataset.action == 'save') {
+				let saveRoutine = document.querySelector('#save-routine-modal');
+				let name = saveRoutine.closest('input');
+			}
+		});
 
-        this.$body.addEventListener('click', (event) => {
-            if (event.target.dataset.action == 'save') {
+		this.$form.addEventListener('submit', (event) => {
+			event.preventDefault();
 
-                let saveRoutine = document.querySelector("#save-routine-modal");
-                let name = saveRoutine.closest("input");
+			var value = this.option.options[this.option.selectedIndex].value;
 
-            }
-        });
+			this.add(this.$input.value, value);
+			this.$input.value = '';
+		});
 
-        this.$form.addEventListener('submit', (event) => {
-            event.preventDefault();
+		this.$output.addEventListener('click', (event) => {
+			if (event.target.dataset.action == 'remove') {
+				const id = event.target.closest('item-card').dataset.id;
+				this.remove(id);
+			}
 
-            var value = this.option.options[this.option.selectedIndex].value;
+			if (event.target.dataset.action == 'complete') {
+				const id = event.target.closest('item-card').dataset.id;
+				this.complete(id);
+			}
 
-            this.add(this.$input.value, value);
-            this.$input.value = "";
-        });
+			if (event.target.dataset.action == 'edit') {
+				const id = event.target.closest('item-card').dataset.id;
+				let workout = this.getWorkoutById(id);
+				const item = event.target.closest('item-card');
+				item.classList.toggle('editMode');
 
-        this.$output.addEventListener('click', (event) => {
-            if (event.target.dataset.action == 'remove') {
+				let button = item.querySelector('.edit-btn');
+				var title = item.querySelector('h4');
 
-                const id = event.target.closest('item-card').dataset.id;
-                this.remove(id);
-            }
+				if (item.classList.contains('editMode')) {
+					let oldContent = title.textContent;
+					button.textContent = 'Update';
 
-            if (event.target.dataset.action == 'complete') {
+					title.innerHTML = `<input class='edit-input attention-voice' placeholder='${oldContent}' name='Update' id = 'y' type = "text" autocomplete = "off"> `;
+				} else {
+					var editInput = item.querySelector('.edit-input');
+					var value = editInput.value;
+					if (value == '') {
+						value = '-';
+					}
 
-                const id = event.target.closest('item-card').dataset.id;
-                this.complete(id);
-            }
+					workout.data.content = value;
+					title.innerHTML = `${value}`;
 
-            if (event.target.dataset.action == 'edit') {
-
-                const id = event.target.closest('item-card').dataset.id;
-                let workout = this.getWorkoutById(id);
-                const item = event.target.closest('item-card');
-                item.classList.toggle("editMode");
-
-                let button = item.querySelector(".edit-btn");
-                var title = item.querySelector("h4");
-
-
-                if (item.classList.contains("editMode")) {
-
-                    let oldContent = title.textContent;
-                    button.textContent = "Update";
-
-                    title.innerHTML = `<input class='edit-input attention-voice' placeholder='${oldContent}' name='Update' id = 'y' type = "text" autocomplete = "off"> `;
-                } else {
-
-                    var editInput = item.querySelector(".edit-input");
-                    var value = editInput.value;
-                    if (value == "") {
-                        value = "-"
-                    }
-
-                    workout.data.content = value;
-                    title.innerHTML = `${value}`;
-
-                    this.saveAndUpdate();
-                }
-
-            }
-        });
-    }
+					this.saveAndUpdate();
+				}
+			}
+		});
+	}
 }
 
 // user makes routines.

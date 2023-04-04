@@ -1,27 +1,27 @@
-import WorkoutApp from "./workoutapp.js";
+import WorkoutApp from './workoutapp.js';
 
-const view = document.querySelector(".main-container");
+const view = document.querySelector('.main-container');
 
 function buildDayDisplay() {
-    var secondTime = 1000;
-    var minuteTime = 1000 * 60;
-    var hourTime = 1000 * 60 * 60;
-    var dayTime = 1000 * 60 * 60 * 24;
-    var weekTime = 1000 * 60 * 60 * 24 * 7;
-    var yearTime = 1000 * 60 * 60 * 24 * 365;
+	var secondTime = 1000;
+	var minuteTime = 1000 * 60;
+	var hourTime = 1000 * 60 * 60;
+	var dayTime = 1000 * 60 * 60 * 24;
+	var weekTime = 1000 * 60 * 60 * 24 * 7;
+	var yearTime = 1000 * 60 * 60 * 24 * 365;
 
-    var date = new Date()
-    var dateTime = new Date().getTime();
+	var date = new Date();
+	var dateTime = new Date().getTime();
 
-    var yesterday = new Date(dateTime - (1000 * 60 * 60 * 24 * 1));
+	var yesterday = new Date(dateTime - 1000 * 60 * 60 * 24 * 1);
 
-    var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-    let day = days[date.getDay()];
-    return day;
+	var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+	let day = days[date.getDay()];
+	return day;
 }
 
 function renderPage(template) {
-    view.innerHTML = template;
+	view.innerHTML = template;
 }
 
 const homeTemplate = `
@@ -32,10 +32,7 @@ const homeTemplate = `
     </text-content>
 
     <action-block>
-
         <button class='route-link' data-route="list">Build</button>
-        <button class='route-link' data-route="graph">graph</button>
-        
     </action-block>
 </output-block>
 `;
@@ -86,20 +83,18 @@ const routineTemplate = `
 
 let day = buildDayDisplay();
 
-const types = ["chest", "back", "legs", "shoulders", "cardio", "core"];
+const types = ['chest', 'back', 'legs', 'shoulders', 'cardio', 'core'];
 function graphLabels() {
-    const labels = document.querySelector("#graphLabels");
+	const labels = document.querySelector('#graphLabels');
 
-    for (let x = 0; x < types.length; x++) {
-        const element = types[x];
+	for (let x = 0; x < types.length; x++) {
+		const element = types[x];
 
-        var li = document.createElement('li');
-        li.innerHTML = `<p>${types[x]}</p>`;
-        labels.appendChild(li)
-    }
-
+		var li = document.createElement('li');
+		li.innerHTML = `<p>${types[x]}</p>`;
+		labels.appendChild(li);
+	}
 }
-
 
 const graphTemplate = `
 <output-block class='graph'>
@@ -127,15 +122,13 @@ const graphTemplate = `
 </output-block>
 `;
 
-function graphAmounts() {
-
-}
+function graphAmounts() {}
 
 const routes = {
-    home: homeTemplate,
-    list: listTemplate,
-    routines: routineTemplate,
-    graph: graphTemplate,
+	home: homeTemplate,
+	list: listTemplate,
+	routines: routineTemplate,
+	graph: graphTemplate,
 };
 
 renderPage(homeTemplate);
@@ -144,27 +137,24 @@ renderPage(homeTemplate);
 //workout app has to be called after the list template gets loaded in.
 //maybe window.listen for dom load list template or something when more templates.
 
-window.addEventListener("click", function (event) {
+window.addEventListener('click', function (event) {
+	if (event.target.matches('[data-route]')) {
+		var destination = event.target.dataset.route;
+		renderPage(routes[destination]);
 
-    if (event.target.matches("[data-route]")) {
-        var destination = event.target.dataset.route;
-        renderPage(routes[destination]);
+		event.preventDefault();
 
-        event.preventDefault();
+		if (destination !== 'home') {
+			document.querySelector('#save').style.display = 'block';
+		}
 
-        if (destination !== "home") {
-            document.querySelector("#save").style.display = "block";
-        }
+		if (destination == 'list') {
+			const workoutApp = new WorkoutApp('Workouts');
+			// localStorage.setItem("template", JSON.stringify(routes.list, null, 2));
+		}
 
-        if (destination == "list") {
-            const workoutApp = new WorkoutApp("Workouts");
-            // localStorage.setItem("template", JSON.stringify(routes.list, null, 2));
-        }
-
-        if (destination == "graph") {
-            graphLabels();
-        }
-
-    }
+		if (destination == 'graph') {
+			graphLabels();
+		}
+	}
 });
-
