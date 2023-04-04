@@ -6,9 +6,6 @@ if ($page !== 'style') {
 
 	$goals = file_get_contents('data/goals.json');
 	$goalsData = json_decode($goals, true);
-
-	$json = file_get_contents('data/form.json');
-	$formData = json_decode($json, true);
 }
 
 ?>

@@ -1,0 +1,24 @@
+{
+	"id": "Layouts",
+	"title": "Layout Garden",
+	"intro": "Collection of building blocks.",
+	"metaImage": "images/thumbnails/layout-image.jpg",
+	"sections": [
+		{
+			"module": "big-heading",
+			"heading": "Layout Garden",
+			"intro": "Collection of building blocks."
+		},
+		{
+			"module": "layouts-page",
+			"items": [
+				"monday",
+				"tuesday",
+				"wednesday",
+				"thursday",
+				"friday",
+				"saturday"
+			]
+		}
+	]
+}

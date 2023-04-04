@@ -1,0 +1,47 @@
+@import 'monday.scss';
+@import 'tuesday.scss';
+@import 'wednesday.scss';
+@import 'thursday.scss';
+@import 'friday.scss';
+@import 'saturday.scss';
+
+
+module {
+	padding: 3vh 0;
+
+	module-header {
+		padding-bottom: 50px;
+		padding-top: 2rem;
+		display: block;
+		width: 100%;
+	}
+
+	h2+p,
+	h3+p {
+		margin-top: 15px;
+	}
+
+	p {
+		max-width: 65ch;
+	}
+}
+
+:is(.tuesday, .wednesday) li {
+	padding-top: 35px;
+}
+
+:is(.tuesday, .wednesday) li:last-of-type {
+	padding-bottom: 35px;
+}
+
+.has-layouts-page {
+	inner-column {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	inner-column>article {
+		border-top: var(--thin) solid var(--color-dark);
+	}
+}

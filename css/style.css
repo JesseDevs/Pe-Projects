@@ -285,7 +285,7 @@ svg {
   --cube-color: rgb(32, 123, 99);
   --cube-line: rgb(96, 204, 168);
   --ink: var(--white-mute);
-  --page: #434242;
+  --page: #4b4a4a;
   --divider-light-1: rgba(60, 60, 60, 0.29);
   --divider-light-2: rgba(60, 60, 60, 0.12);
   --divider-dark-1: rgba(84, 84, 84, 0.65);
@@ -1448,7 +1448,7 @@ about-card action-links {
 }
 @media (min-width: 500px) {
   .card-design text-content {
-    max-width: 90%;
+    max-width: 88%;
   }
 }
 
@@ -1570,9 +1570,6 @@ project-section button.action-link:hover span {
 }
 
 @media (min-width: 500px) {
-  project-section project-card {
-    grid-column: 2/-1;
-  }
   project-section button.action-link {
     margin-top: 40px;
   }
@@ -1690,6 +1687,14 @@ resume-card .skills li:first-of-type p:before {
   padding-right: 0;
 }
 
+@media (min-width: 750px) {
+  resume-card {
+    grid-column: 2/span 2;
+  }
+  resume-card:nth-of-type(even) {
+    grid-column: 4/-1;
+  }
+}
 grid-blog {
   display: block;
   width: 100%;
@@ -2148,11 +2153,502 @@ project-page {
   background-color: var(--fade);
 }
 
-module ul {
+case-block {
+  width: 100%;
+  row-gap: 110px;
+}
+case-block * {
+  grid-column: 1/-1;
+}
+case-block p em {
+  font-weight: 600;
+}
+case-block article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+case-block article h4 {
+  font-weight: 500;
+}
+
+.monday .articles,
+.monday module {
+  display: flex;
+  flex-direction: column;
+}
+.monday .images picture {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: fit-content;
+  min-height: auto;
+}
+.monday .articles li article {
+  border-top: 2px solid var(--color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 550px) {
+  .monday .articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .monday module-header {
+    width: 100%;
+  }
+  .monday module-header p {
+    max-width: 70ch;
+  }
+  .monday .articles li {
+    width: 48%;
+  }
+  .monday .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 15px;
+    justify-content: space-between;
+  }
+  .monday .images picture {
+    flex-basis: 48%;
+  }
+}
+@media (min-width: 900px) {
+  .monday module {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 0 2%;
+    justify-content: center;
+  }
+  .monday module-header {
+    width: 60%;
+    margin-right: 40%;
+    justify-self: flex-start;
+  }
+  .monday .articles {
+    max-width: 49%;
+  }
+  .monday .images {
+    width: 49%;
+  }
+  .monday .images picture {
+    margin: 0;
+  }
+}
+
+.tuesday div {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.tuesday p.teaser {
+  color: var(--color);
+}
+.tuesday picture {
+  max-width: 75px;
+  padding-bottom: 5px;
+}
+.tuesday div:before {
+  content: "";
+  display: block;
+  width: 60%;
+  position: absolute;
+  height: var(--thin);
+  background-color: var(--color-soft);
+  top: 0;
+  left: 0;
+}
+.tuesday .circle {
+  fill: var(--cube-color);
+  stroke: var(--cube-line);
+  stroke-width: var(--Xthick);
+}
+.tuesday .square {
+  fill: var(--cube-color);
+  stroke: var(--cube-line);
+  stroke-width: var(--Xthick);
+}
+@media (min-width: 800px) {
+  .tuesday .articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 0px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+  .tuesday li {
+    max-width: 49%;
+  }
+  .tuesday module-header {
+    max-width: 60%;
+    padding-bottom: 50px;
+    padding-top: 2rem;
+  }
+  .tuesday li {
+    padding: 30px;
+    border: var(--thin) solid var(--ink);
+  }
+  .tuesday div:before {
+    display: none;
+  }
+  .tuesday div {
+    background-color: var(--ink);
+    max-width: 35%;
+    padding: 20px;
+    color: var(--page);
+  }
+}
+
+.wednesday .teaser {
+  opacity: 0;
+}
+.wednesday module {
+  padding: 3vh 0;
+}
+.wednesday module > h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.wednesday picture {
+  max-width: 40px;
+  padding-bottom: 10px;
+}
+.wednesday module-header {
+  background-color: rgba(255, 255, 255, 0.438);
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--paper);
+}
+.wednesday li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 550px) {
+  .wednesday ul {
+    background: linear-gradient(rgba(255, 255, 255, 0.438) 2%, rgba(0, 0, 0, 0.369) 2%);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .wednesday li {
+    padding: 1.1rem;
+    background-color: var(--paper);
+    margin-bottom: 20px;
+  }
+  .wednesday p {
+    max-width: 45ch;
+  }
+}
+@media (min-width: 950px) {
+  .wednesday ul {
+    background: linear-gradient(var(--ink) 20%, var(--shade) 20%);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .wednesday .teaser {
+    opacity: 1;
+  }
+}
+
+.thursday details {
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+}
+.thursday details > summary {
+  border-bottom: var(--thin) solid var(--ink);
+  list-style-type: none;
+  padding-bottom: 8px;
+}
+.thursday details > summary:after {
+  content: "＋";
+  position: absolute;
+  right: 0;
+}
+.thursday details[open] > summary::after {
+  content: "－";
+}
+.thursday .teaser {
+  padding-bottom: 5px;
+}
+.thursday ul + ul {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.thursday li {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+@media (min-width: 550px) {
+  .thursday module-header {
+    max-width: 80%;
+  }
+}
+@media (min-width: 950px) {
+  .thursday module-header {
+    max-width: none;
+    flex-basis: 45%;
+    padding: 0;
+  }
+  .thursday module {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+}
+
+.friday module {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.friday ul {
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 1s;
+}
+.friday li {
+  min-height: 80px;
+  background-color: rgb(247, 241, 228);
+  border: var(--shade) solid var(--thick);
+}
+.friday .one {
+  grid-column: span 2;
+}
+.friday .two {
+  grid-column: span 3;
+}
+.friday .three {
+  background-color: rgb(250, 245, 173);
+  grid-column: span 2;
+}
+.friday .four {
+  grid-row: span 2;
+}
+.friday .five {
+  background-color: rgb(223, 158, 156);
+  grid-column: span 4;
+  grid-row: span 3;
+}
+.friday .six {
+  background-color: rgb(250, 245, 173);
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.friday .seven {
+  grid-column: 1/2;
+  grid-row: 4/6;
+}
+.friday .eight {
+  grid-column: 2/4;
+  grid-row: 5/7;
+  background-color: var(--ink);
+}
+.friday .nine {
+  grid-column: 4/6;
+  grid-row: 5/6;
+}
+.friday .ten {
+  grid-column: 6/7;
+}
+.friday .eleven {
+  grid-column: 7/8;
+}
+.friday .twelve {
+  grid-column: 6/8;
+}
+.friday .thirteen {
+  grid-column: 1/2;
+  grid-row: 6/8;
+  background-color: rgb(250, 245, 173);
+}
+.friday .fourteen {
+  grid-column: 2/4;
+}
+.friday .fifteen {
+  grid-column: 4/6;
+  background-color: var(--ink);
+}
+.friday .sixteen {
+  grid-column: 4/6;
+  grid-row: 6/7;
+}
+.friday .seventeen {
+  grid-column: 6/8;
+  grid-row: 6/8;
+  background-color: rgb(172, 198, 230);
+}
+@media (min-width: 700px) {
+  .friday ul {
+    aspect-ratio: 1/1;
+    display: grid;
+    gap: 0;
+    border: var(--shade) solid var(--thin);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .friday li {
+    min-height: none;
+  }
+}
+
+.saturday module {
+  display: block;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 15px;
-  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.saturday ul {
+  aspect-ratio: 1/1;
+  display: grid;
+  border: var(--page) solid var(--thin);
+  grid-template-columns: repeat(7, 1fr) 5%;
+  grid-template-rows: repeat(6, 1fr) 10%;
+  border-right: none;
+  border-bottom: none;
+}
+.saturday li {
+  background-color: rgb(239, 234, 234);
+  border: var(--shade) solid var(--thick);
+  color: black;
+}
+.saturday .one {
+  grid-column: span 2;
+}
+.saturday .two {
+  grid-column: span 3;
+}
+.saturday .three {
+  background-color: rgb(239, 224, 53);
+  grid-column: span 2;
+}
+.saturday .four {
+  grid-column: 1/2;
+  grid-row: span 2;
+}
+.saturday .five {
+  background-color: rgb(197, 41, 27);
+  grid-column: span 4;
+  grid-row: span 3;
+}
+.saturday .six {
+  background-color: rgb(239, 224, 53);
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.saturday .seven {
+  grid-column: 1/2;
+  grid-row: 4/6;
+}
+.saturday .eight {
+  grid-column: 2/4;
+  grid-row: 5/7;
+  background-color: var(--ink);
+}
+.saturday .nine {
+  grid-column: 4/6;
+  grid-row: 5/6;
+}
+.saturday .ten {
+  grid-column: 6/7;
+}
+.saturday .eleven {
+  grid-column: 7/8;
+}
+.saturday .twelve {
+  grid-column: 6/8;
+}
+.saturday .thirteen {
+  grid-column: 1/2;
+  grid-row: 6/8;
+  background-color: rgb(239, 224, 53);
+}
+.saturday .fourteen {
+  grid-column: 2/4;
+}
+.saturday .fifteen {
+  grid-column: 4/6;
+  background-color: var(--ink);
+}
+.saturday .sixteen {
+  grid-column: 4/6;
+  grid-row: 6/7;
+}
+.saturday .seventeen {
+  grid-column: 6/8;
+  grid-row: 6/8;
+  background-color: rgb(34, 43, 100);
+}
+.saturday .eighteen {
+  grid-row: 1/6;
+  grid-column-start: 8;
+  border-right: none;
+}
+.saturday .nineteen {
+  grid-column-start: 8;
+  grid-row: 6/8;
+  border-right: none;
+}
+.saturday .thirteen,
+.saturday .fourteen,
+.saturday .fifteen,
+.saturday .seventeen,
+.saturday .nineteen {
+  border-bottom: none;
+}
+@media (min-width: 700px) {
+  .saturday ul {
+    aspect-ratio: 1/1;
+    display: grid;
+    gap: 0;
+    border: var(--page) solid var(--thin);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .saturday li {
+    min-height: none;
+  }
+}
+
+module {
+  padding: 3vh 0;
+}
+module module-header {
+  padding-bottom: 50px;
+  padding-top: 2rem;
+  display: block;
+  width: 100%;
+}
+module h2 + p,
+module h3 + p {
+  margin-top: 15px;
+}
+module p {
+  max-width: 65ch;
+}
+
+:is(.tuesday, .wednesday) li {
+  padding-top: 35px;
+}
+
+:is(.tuesday, .wednesday) li:last-of-type {
+  padding-bottom: 35px;
+}
+
+.has-layouts-page inner-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.has-layouts-page inner-column > article {
+  border-top: var(--thin) solid var(--color-dark);
 }
 
 diptech {
@@ -2327,7 +2823,8 @@ double-text p {
   }
 }
 
-.has-big-heading {
+.has-big-heading,
+.has-missing-heading {
   margin-top: 80px;
 }
 

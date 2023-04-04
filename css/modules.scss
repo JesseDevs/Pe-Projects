@@ -14,10 +14,15 @@
 @import '../css/modules/form-box.scss';
 @import '../css/modules/project-page.scss';
 @import '../css/modules/small-grid.scss';
+@import '../css/modules/template-one.scss';
 
-module ul {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	gap: 15px;
-	align-items: center;
-}
+@import '../css/layouts/days.scss';
+
+
+
+// module ul {
+// 	display: grid;
+// 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+// 	gap: 15px;
+// 	align-items: center;
+// }

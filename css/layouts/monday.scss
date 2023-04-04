@@ -1,0 +1,88 @@
+.monday {
+
+	.articles,
+	module {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.images picture {
+
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: fit-content;
+		min-height: auto;
+	}
+
+	.articles li article {
+		border-top: 2px solid var(--color);
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+
+	@media(min-width: 550px) {
+
+		.articles {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		module-header {
+			width: 100%;
+		}
+
+		module-header p {
+			max-width: 70ch;
+		}
+
+
+		.articles li {
+			width: 48%;
+		}
+
+		.images {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 0 15px;
+			justify-content: space-between;
+		}
+
+		.images picture {
+			flex-basis: 48%;
+		}
+
+	}
+
+	@media(min-width: 900px) {
+		module {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: stretch;
+			align-items: stretch;
+			gap: 0 2%;
+			justify-content: center;
+		}
+
+		module-header {
+			width: 60%;
+			margin-right: 40%;
+			justify-self: flex-start;
+		}
+
+		.articles {
+			max-width: 49%;
+		}
+
+		.images {
+			width: 49%;
+
+			picture {
+				margin: 0;
+			}
+		}
+
+	}
+}

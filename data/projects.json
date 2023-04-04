@@ -1,237 +1,109 @@
 [
 	{
-		"id": "crud",
-		"title": "Fighters: CRUD",
-		"intro": "crud",
-		"detail": "The simplicity of a lean PHP <a href='https://developer.mozilla.org/en-US/docs/Glossary/CRUD'>CRUD</a> app built from scratch, with no added frameworks or tools - check it out now!",
-		"one-line": "Database backed by JSON data",
-		"thumbnail": "images/thumbnails/cms-image.jpg",
-		"skills": [
-			"html",
-			"css",
-			"php",
-			"json"
-		],
-		"featured": true,
-		"links": [
-			{
-				"title": "Details",
-				"link": "?page=project&id=crud"
-			},
-			{
-				"title": "GitHub",
-				"link": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/fighters-crud"
-			},
-			{
-				"title": "Live",
-				"link": "https://peprojects.dev/alpha-4/jesse/_projects/fighters-crud/"
-			}
-		],
-		"direct-link": "https://peprojects.dev/alpha-4/jesse/_projects/fighters-crud",
-		"casestudy": [
-			{
-				"module": "diptech",
-				"title": "The Purpose",
-				"flipped": false,
-				"image": "images/projects/fighters/landing-button.webp",
-				"text": [
-					"This project was to build a create, read, update, and delete database. This database would be generated using JSON data to show skills in acquiring and using data from any source.",
-					"The data would be used and altered using PHP, then displayed on the website in a clean and responsive fashion. Forms would be made to accept user input and add new information to the data."
-				]
-			},
-			{
-				"module": "goal-block",
-				"title": "Goals",
-				"goals": [
-					"Research CRUD projects.",
-					"Utilize or gather JSON data.",
-					"Turn data into PHP via a function.",
-					"Create a multi layered website with pages for properly displaying information.",
-					"Use PHP to create multiple sections, active pages, detail pages for data.",
-					"Create forms that will accept user input that is converted into an object and placed in a JSON data file.",
-					"Style web page to be accessible for users."
-				]
-			},
-			{
-				"module": "diptech",
-				"title": "The Approach",
-				"flipped": false,
-				"image": "images/projects/fighters/fighter-landing.webp",
-				"text": [
-					"My characters all share a trait under the idea of a playstyle. These playstyles play part in how the character fights and thus was a great value to use to filter the data to show something the user would prefer.",
-					"I made a home page that contained a title and text under it. The title would then link to the list of character data that is filtered to the specific choice by the user. You could then adjust your choice on the list page or on the home page enter the list page through the main landing button.",
-					"I learned to take a step back and think as a user on my own sites, what if I were to do this, do that, want this, and want that. Options and more options. It is my website and I get to guide the experience of the user."
-				]
-			},
-			{
-				"module": "double-text",
-				"text-one": [
-					"It all started with displaying the current JSON data. Making a list page to go through the data and display the elements. The objects in my data were structured to have names, images, descriptions, and other information. With the current data I decided to make a list of cards to display a thumbnail that leads to a page with more information."
-				],
-				"text-two": [
-					"Now that I had a list page, I needed a way to direct users towards that page. In PHP we can use $_GET to obtain a variable given in the URL of the current page. The querystring.",
-					"This allows me to create a routing system that can then lead to any page I would want the user to have access to, which could be the home page, list page, a detail page, a form page, or even a random page."
-				]
-			},
-			{
-				"module": "diptech",
-				"title": false,
-				"flipped": true,
-				"image": "images/projects/fighters/fighter-menu.webp",
-				"text": [
-					"I created a filter system to see specific characters that the user is looking for. Although, the user may not be familiar with the characters so I chose to give some small details about the parameter I am planning to use to separate them.",
-					"The filter system goes through the data and checks this parameter for its “playstyle” and then presents those individuals, the others become unclickable."
-				]
-			},
-			{
-				"module": "double-image",
-				"imageOne": "images/projects/fighters/detail.webp",
-				"imageTwo": "images/projects/fighters/create-fighter.webp"
-			}
-		]
-	},
-	{
-		"id": "bill",
-		"title": "Bill Split",
-		"intro": "APP",
-		"detail": "An Vanilla Javascript app dedicated to solving one of life's many problems... Splitting the bill amongst a group.",
+		"id": "CMS",
+		"title": "Content Systems",
+		"intro": "CMS",
+		"detail": "From lean files to big databases. A timeline of scaling up to handle more and more complex projects.",
+		"one-line": "Simplify Management",
 		"thumbnail": "images/thumbnails/testing-image.jpg",
-		"one-line": "Javascript calculations",
-		"skills": [
-			"html",
-			"css",
-			"javascript"
-		],
 		"featured": true,
-		"links": [
+		"template": "one",
+		"casestudy": {
+			"p1": "The internet is made up of list and boxes. The architecture behind these elements keeps the all important data within control. In its simplest form a Content Management System (CMS) is a list of objects containing all the necessary materials needed to present the information to the user. ",
+			"relation": "At this point you can start to see I use many of my favorite video games as inspirations for my projects"
+		},
+		"files": [
 			{
-				"title": "Details",
-				"link": "?page=project&id=bill"
+				"title": "Legends",
+				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/legends",
+				"link": "https://peprojects.dev/alpha-4/jesse/_projects/legends/",
+				"image": "images/background/landscape.jpg",
+				"p": "The <em>‘Legends’</em> project showcases the initial ideas when approaching a CMS. A static data project. JSON is a standard in the industry as it is a lightweight data interchange format that is easy to read and write. By definition static is never changing and thus making this project only able to render the data onto a page. For any user to change the data they would need to be able to access the JSON file directly in the project. This allows a web page to be generated quickly, as the server does not need to query a database for every page load."
 			},
 			{
-				"title": "GitHub",
-				"link": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/bill-app"
+				"title": "Fighters",
+				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/fighters-crud/",
+				"link": "https://peprojects.dev/alpha-4/jesse/_projects/fighters-crud/",
+				"image": "images/background/landscape.jpg",
+				"p": "The <em>‘Fighters’</em> project is the next level up. This is a lean PHP CRUD (create, read, update, and delete) project that allows the user to create their own list of fighters to their liking. Aside from displaying the items in the frontend, there is also a form on the website that accepts a POST request on the backend to properly push the user’s inputted data into the JSON index file. The user can then choose to delete this created item or update it if there are any mistakes."
 			},
 			{
-				"title": "Live",
-				"link": "https://peprojects.dev/alpha-4/jesse/_projects/bill-app/"
-			}
-		],
-		"direct-link": "https://peprojects.dev/alpha-4/jesse/_projects/bill-app",
-		"casestudy": [
-			{
-				"module": "diptech",
-				"title": "The Purpose",
-				"flipped": false,
-				"image": "images/projects/bill/landing.webp",
-				"text": [
-					"The goal of this project was to get myself and others away from a calculator app when the bill arrives at the table. This app would be a one way stop to gather the total amount, take the tip and then check if you’d like to split it amongst the group.",
-					"Javascript provides the buttons with capabilities of loading new template pages to the output box on the landing page, to create a seamless experience for the user. In addition to loading these templates, create functions that will calculate all the necessary math and display it to the user. ",
-					"Present all the information to the user and keep it simple, understandable, and frictionless. "
-				]
+				"title": "Music: Wordpress",
+				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/music-wordpress/",
+				"link": "https://peprojects.dev/alpha-4/jesse/_projects/music-wordpress/",
+				"image": "images/background/landscape.jpg",
+				"p": "Some people would consider Wordpress the pinnacle of CMS’ as it is powers about 40% of all websites on the internet. In my <em>‘Music: Wordpress’</em> project, I got a proper idea as to why that is. The admin panel allows you to manage backend data with various plugins to make the user, creator, and overall quality efficient and simple. Advanced Custom Fields (ACF) is a great plugin that allows ways to add custom content to our system. I learned that creating many modules and themes could generate a quick work flow to output production ready websites in a flash."
 			},
 			{
-				"module": "goal-block",
-				"title": "Goals",
-				"goals": [
-					"Look into bill sharing projects.",
-					"Create a layout of “pages” that would be the ideal path for the user.",
-					"Turn the layout into template variables in Javascript.",
-					"Use “data-route” buttons to guide the user down the path to calculate information.",
-					"Figure out what calculations are needed to present all information to the user.",
-					"Create functions for said calculations and how to output them.",
-					"Organize variables for output fields, numerical amounts, and items to click.",
-					"Stylize app to make use of some new little tricks to display cool techniques to the user."
-				]
-			},
-			{
-				"module": "diptech",
-				"title": "The Approach",
-				"flipped": false,
-				"image": "images/projects/bill/figma.webp",
-				"text": [
-					"I started with the idea of making different templates that would represent the pages that would appear on the app. When I thought of the idea, I led with a homepage that would allow an input of an amount - ideally an amount that you receive on a bill at the table.",
-					"Next, I wanted to lead the user to a tip page. On this page the user would scroll to select the percentage of tip they would like to add to their meal. I chose to make a slider range value input because I thought it would be interesting and give me the opportunity to use Javascript to grab the value and live update the amounts on display."
-				]
-			},
-			{
-				"module": "double-image",
-				"imageOne": "images/projects/bill/tip.webp",
-				"imageTwo": "images/projects/bill/tip-code.webp"
-			},
-			{
-				"module": "double-text",
-				"text-one": [
-					"A challenge was setting up buttons so that they would route towards a specific page but also make them take the input and show calculations. I had originally set up an event listener on the window that was looking specifically for clicks and if those clicked items matched a “data-route” that I had set up.",
-					"I soon learned that I needed an additional set up to listen for an input so that I could grab the value. When the input value is entered it then displays it for the user to see live changes to their amounts.",
-					"I revisited my initial set up so that it could listen for clicks on buttons ID classes to then do the appropriate function."
-				],
-				"text-two": [
-					"I worked through some blockers and was able to build the base version of my app that accomplished the goal I had set out at the very beginning. Take an amount, calculate a tip percentage, split it by an amount of people and share the amount to the user.",
-					"Now that some style is in place, the information is displayed to the user, and the base path was set up, it was time to get some feedback to see some paths I may not have considered."
-				]
-			},
-			{
-				"module": "diptech",
-				"title": "Feedback",
-				"flipped": true,
-				"image": "images/projects/bill/split.webp",
-				"text": [
-					"Although there were a lot of positive interactions with the app, there were some hiccups that caused friction in the user's experience or at least made them second guess themselves.",
-					"A big note was that the input fields were not legible, they didn't seem clickable. To compensate for this I added a border and focus changes when typing a value and made the question in the label element more direct and simple. I took some time to add some attributes to the element so that when opened on mobile, it would prompt a number pad similar to a phone contact."
-				]
-			},
-			{
-				"module": "double-text",
-				"title": "More Feedback",
-				"text-one": [
-					"The input range field was originally displayed vertically because I thought it would be more intuitive for the user to adjust their tip amount but it actually hurt their impression more than anything.",
-					"Not only was it assumed to be a write in field similar to the other menu but the slider did not read as a slider on the first viewing.",
-					"To account for this I added a default value to be presented in the box and returned the slider back to its original horizontal position."
-				],
-				"text-two": [
-					"The goal of the site was to be able to calculate the tip for a total but that doesn’t mean a user always wants to tip or give a custom amount. What about a set amount? What about no tip? At this point I reviewed my buttons and tried to analyze more situations the user might go through to give them more options but still in my control.",
-					"I also added an edit button so if the group were to split the amount among more or less people, they could go back to the total and adjust the amount of people."
-				]
-			},
-			{
-				"module": "diptech",
-				"title": "Learning",
-				"flipped": false,
-				"image": "images/projects/bill/total.webp",
-				"text": [
-					"This project gave me the opportunity to take a look at a simple problem or circumstance and provide a solution for it. This took time to solve all the interworking pieces and functions that would come together to showcase all the proper information.",
-					"As a designer I also realize how important it is to give the user an enjoyable experience and make it readable to all on the first go through.",
-					"It is my responsibility as the Frontend Developer to shape an enjoyable, functional, and frictionless experience."
-				]
+				"title": "Dunkin",
+				"git": "https://github.com/JesseDevs/super-shot",
+				"link": "https://calm-super-shot.surge.sh/",
+				"image": "images/background/landscape.jpg",
+				"p": "In my <em>‘Dunkin’ Donuts: Vue App’</em>  I used Firebase, which is not a CMS but a NoSQL cloud database that provides many ways to manage aspects of a web application. This type of data is built by making a HTTP request to the Firebase API that is connected to my project. Essentially it works very similar to a giant JSON file that can hold many lists, filled with many objects, that are all easily accessed by database features."
 			}
 		]
 	},
 	{
-		"id": "theme",
-		"title": "Theme Challenge",
-		"intro": "theme",
-		"detail": "A project that captures the complexity of an industry level website. Layout, design, structure.. and some love.",
-		"thumbnail": "images/thumbnails/layout-image.jpg",
-		"skills": [
-			"html",
-			"css",
-			"php"
-		],
+		"id": "APP",
+		"title": "Javascript Interfaces",
+		"intro": "APP",
+		"detail": "Small websites interactions to full scale interactive projects. Making button clicks work and moving screens slide.",
+		"one-line": "Organized and Productive",
+		"thumbnail": "images/thumbnails/cms-image.jpg",
 		"featured": true,
-		"links": [
+		"template": "one",
+		"casestudy": {
+			"p1": "Javascript is most widely used programming language and has become a vital tool for developers. Though it is primarily a frontend language, there have been evolutions to make backends like Node and entire Frameworks that projects run on. This is a timeline showing a scaling of ideas and the process of understanding what is needed to properly make a website."
+		},
+		"files": [
 			{
-				"title": "Details"
+				"title": "Javascript Forms",
+				"link": "https://peprojects.dev/alpha-4/jesse/?page=forms",
+				"image": "images/background/landscape.jpg",
+				"p": "There are some forms ready for user input in my <em>Forms</em> tab in my personal site. These were based on challenges from ‘Exercises for Programmers’ and were originally made purely with PHP server side rendering. Using Javascript I am able to showcase a few more tricks on the frontend when the user interacts with these items. For example, submitting a form saves a position on the screen to scroll to again."
 			},
 			{
-				"title": "GitHub",
-				"link": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/theme-challenge"
+				"title": "Workout App",
+				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/workout-app//",
+				"link": "https://peprojects.dev/alpha-4/jesse/_projects/workout-app/",
+				"image": "images/background/landscape.jpg",
+				"p": "My <em>Workout APP</em> took a simple interface from the forms and created more than just a short answer for the user. I tend to have to remember what is the main body focus for my workout and what types of sets will be needed. This app is a simple way to create short lists of workouts dedicated for the muscle group. This was built using local storage and Javascript class method to generate the app functionality, while using imports and exports to create templates for each page."
 			},
 			{
-				"title": "Live",
-				"link": "https://peprojects.dev/alpha-4/jesse/_projects/theme-challenge/"
+				"title": "Bill Split App",
+				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/bill-app/",
+				"link": "https://peprojects.dev/alpha-4/jesse/_projects/bill-app/",
+				"image": "images/background/landscape.jpg",
+				"p": "The <em>Bill Split APP</em> was inspited from a night out with friends and what ti took to even divide the bill. A interface that has a lot more personality and functionality. Using similar routing in Vanilla Javascript to create multiple page templates."
+			},
+			{
+				"title": "Dunkin",
+				"git": "https://github.com/JesseDevs/super-shot",
+				"link": "https://calm-super-shot.surge.sh/",
+				"image": "images/background/landscape.jpg",
+				"p": "My <em>‘Dunkin’ Donuts: Vue App’</em> is built using Vue 3. A Javascript framework used for building user interfaces. The latest version of Vue is a versatile framework, using stores to pass variables and data to multiple components. Meaning this could be used for small one page sites to large multi-page projects. Reactive and Computed variables allows me the flexibility with live variables. To go along with this, I used Firebase to provide a database for users, products, and their items."
 			}
-		],
-		"direct-link": "https://peprojects.dev/alpha-4/jesse/_projects/theme-challenge"
+		]
+	},
+	{
+		"id": "Design",
+		"title": "Layout Garden",
+		"intro": "Design",
+		"detail": "A collection of responsive layouts. Building out the internet is complicated... so let’s start a module at a time.",
+		"one-line": "Organized and Productive",
+		"thumbnail": "images/thumbnails/layout-image.jpg",
+		"featured": true,
+		"template": "one",
+		"casestudy": {
+			"p1": "X"
+		},
+		"files": [
+			{
+				"title": "Javascript Forms",
+				"link": "https://peprojects.dev/alpha-4/jesse/?page=forms",
+				"image": "images/background/landscape.jpg",
+				"p": "X"
+			}
+		]
 	}
 ]

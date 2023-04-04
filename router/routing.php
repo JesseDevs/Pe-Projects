@@ -54,9 +54,6 @@ function renderPage()
 		$goals = file_get_contents('data/filler-goals.json');
 		$goalsData = json_decode($goals, true);
 
-		$json = file_get_contents('data/form.json');
-		$formData = json_decode($json, true);
-
 		$projects = file_get_contents('data/filler-projects.json');
 		$projectsData = json_decode($projects, true);
 
