@@ -564,16 +564,27 @@ nav.site-menu {
   left: 0;
   transform: translateY(100%);
   opacity: 0;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, bottom 0s ease-in-out 1s;
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out, bottom 0s ease-in-out 0.5s;
   z-index: 1;
-  background-color: blue;
+  background-color: var(--page);
+}
+nav.site-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+nav.site-menu ul a {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }
 
 header.open-menu nav.site-menu {
   transform: translateY(0%);
   opacity: 1;
   bottom: 0;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, bottom 0s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out, bottom 0s ease-in-out;
 }
 
 .site-footer {

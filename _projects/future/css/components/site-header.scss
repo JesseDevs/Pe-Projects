@@ -16,10 +16,23 @@ nav.site-menu {
 	transform: translateY(100%);
 	opacity: 0;
 
-	transition: transform .5s ease-in-out, opacity .5s ease-in-out, bottom 0s ease-in-out 1s;
+	transition: transform .5s ease-in-out, opacity .3s ease-in-out, bottom 0s ease-in-out .5s;
 
 	z-index: 1;
-	background-color: blue;
+	background-color: var(--page);
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		a {
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: .1em;
+		}
+	}
 }
 
 header.open-menu {
@@ -29,6 +42,6 @@ header.open-menu {
 		opacity: 1;
 		bottom: 0;
 		transition: transform .5s ease-in-out,
-			opacity .5s ease-in-out, bottom 0s ease-in-out;
+			opacity .3s ease-in-out, bottom 0s ease-in-out;
 	}
 }
