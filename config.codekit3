@@ -4125,6 +4125,19 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/_projects\/future\/images\/wolf.png" : {
+      "ft" : 32768,
+      "iS" : 2219,
+      "oA" : 0,
+      "oAP" : "\/_projects\/future\/images\/wolf.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/_projects\/future\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4132,6 +4145,17 @@
       "oA" : 0,
       "oAP" : "\/_projects\/future\/index.html",
       "oF" : 0
+    },
+    "\/_projects\/future\/scripts\/file-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/_projects\/future\/scripts\/file-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/_projects\/future\/scripts\/file.js" : {
       "bF" : 0,
