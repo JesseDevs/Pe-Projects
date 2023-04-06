@@ -20,16 +20,16 @@
 				<li><a href="?page=home" class=" <?php activePage("home") ?>">Home</a></li>
 				<li><a href="?page=about" class=" <?php activePage("about") ?>">About</a></li>
 				<li><a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a></li>
-				<li class="large-size">
+				<li class='always-in-menu'>
 					<a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
 				</li>
-				<li class="large-size">
+				<li class='always-in-menu'>
 					<a href="?page=forms " class="<?php activePage("forms") ?>">Forms</a>
 				</li>
-				<li class="larger-size">
+				<li class='always-in-menu'>
 					<a href="?page=layouts " class="<?php activePage("layouts") ?>">Layouts</a>
 				</li>
-				<li class="larger-size">
+				<li class='always-in-menu'>
 					<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
 				</li>
 
@@ -53,16 +53,16 @@
 				<li class="small-size">
 					<a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
 				</li>
-				<li class='large-size'>
+				<li class='always-in-menu'>
 					<a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
 				</li>
-				<li class='large-size'>
+				<li class='always-in-menu'>
 					<a href="?page=forms" class="<?php activePage("forms") ?>">Forms</a>
 				</li>
-				<li>
+				<li class='always-in-menu'>
 					<a href="?page=layouts " class="<?php activePage("layouts") ?>">Layouts</a>
 				</li>
-				<li>
+				<li class='always-in-menu'>
 					<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
 				</li>
 			</ul>
