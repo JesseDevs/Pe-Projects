@@ -1,18 +1,31 @@
-function scrollToSection() {
-	event.preventDefault();
-	let destination = document.querySelector('#contact');
-	destination.scrollIntoView({
-		behavior: 'smooth',
-	});
-}
+import collection from '../data/collection.json' assert { type: 'json' };
 
-function setCookie() {
-	document.cookie = `scrollPosition=${window.scrollY}`;
-}
-
-var header = document.querySelector('header');
+const header = document.querySelector('header');
 const body = document.querySelector('body');
-const numberFormatter = Intl.NumberFormat('en-US');
+let card = document.querySelector('card-container');
+
+function generateQuote() {
+	const randomItem = collection[Math.floor(Math.random() * collection.length)];
+
+	const adlib = randomItem.adlib ? `<span>${randomItem.adlib}</span>` : '';
+
+	card.innerHTML = `
+	
+		<picture>
+			<img src="${randomItem.art}" alt="cover-art" loading='lazy'>
+		</picture>
+		
+		${adlib}
+		
+		<text-content>
+			<h3>${randomItem.song}: ${randomItem.id}</h3>
+			<p>${randomItem.artist}</p>
+			<p>${randomItem.song}</p>
+
+			<em>${randomItem.lyrics}</em>
+		</text-content>
+		`;
+}
 
 // converting first letter to uppercase
 function capitalizeFirstLetter(str) {
@@ -20,6 +33,7 @@ function capitalizeFirstLetter(str) {
 	return capitalized;
 }
 
+// Toggle menu button
 window.addEventListener('click', function (event) {
 	if (event.target.matches('.burger-btn')) {
 		event.preventDefault();
@@ -38,5 +52,11 @@ window.addEventListener('click', function (event) {
 			header.classList.remove('display-menu');
 			body.classList.remove('overflow');
 		}
+	}
+});
+
+window.addEventListener('click', function (event) {
+	if (event.target.matches('#generator')) {
+		generateQuote();
 	}
 });

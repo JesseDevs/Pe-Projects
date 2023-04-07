@@ -24,12 +24,14 @@ nav.site-menu {
 	ul {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		width: 100%;
+		gap: 10px;
 
 		a {
 			text-align: center;
 			text-transform: uppercase;
 			font-weight: 600;
+			padding: 10px 20px;
 			letter-spacing: .1em;
 		}
 	}

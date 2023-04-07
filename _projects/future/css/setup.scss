@@ -25,7 +25,7 @@ body {
 	background-color: var(--page);
 	font-weight: 400;
 	transition: color 0.5s, background-color 0.5s;
-	font-family: 'IBM Plex Serif', serif;
+	font-family: 'Poppins', sans-serif;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
@@ -46,7 +46,7 @@ inner-column {
 	height: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 1rem 2rem;
+	padding: 1rem 1.5rem;
 	max-width: 1400px;
 }
 
@@ -57,7 +57,9 @@ module,
 label,
 input,
 field,
-button {
+button,
+output,
+text-header {
 	display: block;
 	width: 100%;
 }

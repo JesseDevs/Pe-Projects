@@ -1,82 +1,9 @@
 .site-footer {
-	background-color: rgba(0, 0, 0, 0.464);
-	color: var(--white);
-
-	inner-column {
-		padding: 3rem 1rem;
-	}
-
-	nav {
+	.socials-list {
 		display: flex;
-		flex-direction: column;
-		gap: 30px;
-		align-items: flex-start;
-		justify-content: stretch;
-
-		ul {
-			width: 100%;
-			display: flex;
-			flex-wrap: wrap;
-			column-gap: 50px;
-
-			li {
-				width: 30%;
-			}
-
-		}
-
-		p a {
-			background-color: inherit;
-		}
+		gap: 10px;
+		align-items: center;
+		justify-content: flex-end;
 	}
 
-	div.footer-wrapper {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
-
-	h4 {
-		padding-bottom: 20px;
-
-
-		&:after {
-			content: '';
-			display: block;
-			position: absolute;
-			bottom: 0;
-			background-color: var(--color-soft);
-			height: var(--thin);
-			width: 25%;
-		}
-	}
-
-	a {
-		padding: 10px 0;
-		font-size: var(--step--1);
-		transition: color .3s ease-in-out;
-		color: var(--white);
-	}
-
-	a:hover {
-		color: var(--color);
-	}
-}
-
-@media(min-width: 750px) {
-	.site-footer {
-		inner-column {
-			padding-left: 4rem;
-		}
-
-		nav {
-			flex-wrap: wrap;
-			flex-direction: row;
-
-			div.footer-wrapper {
-				flex-basis: 45%;
-			}
-		}
-	}
 }

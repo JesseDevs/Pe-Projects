@@ -1,0 +1,31 @@
+text-header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	h1 {
+		display: flex;
+		align-items: center;
+		font-weight: 800;
+		letter-spacing: .02em;
+	}
+
+	.hash {
+		font-family: 'M PLUS Rounded 1c', sans-serif;
+		font-weight: 800;
+		color: var(--ink);
+	}
+
+	p {
+		transition: font-style .3s cubic-bezier(0.4, 0, 0.2, 1), font-size .3s cubic-bezier(0.4, 0, 0.2, 1);
+		min-height: 26.55px;
+	}
+
+	&:hover {
+
+		p {
+			font-style: italic;
+			font-size: calc(var(--step-0) - .5px)
+		}
+	}
+}
