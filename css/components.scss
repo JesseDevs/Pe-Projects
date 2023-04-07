@@ -70,8 +70,8 @@ action-links {
 
 		&:hover {
 			color: var(--white);
-			border: var(--thin) solid var(--color-super-light);
-			background-color: rgba(0, 0, 0, 0.221);
+			border: var(--thin) solid transparent;
+			background-color: rgb(var(--color-rgb), .5);
 		}
 	}
 }

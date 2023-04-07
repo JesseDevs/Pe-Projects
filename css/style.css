@@ -770,18 +770,18 @@ header.display-menu .burger {
   display: block;
   position: absolute;
   bottom: 0;
-  background-color: var(--color-soft);
+  background-color: var(--color);
   height: var(--thin);
   width: 25%;
 }
 .site-footer a {
-  padding: 10px 0;
+  padding: 10px 5px;
   font-size: var(--step--1);
   transition: color 0.3s ease-in-out;
   color: var(--white);
 }
 .site-footer a:hover {
-  color: var(--color);
+  background-color: var(--color);
 }
 
 @media (min-width: 750px) {
@@ -1068,8 +1068,8 @@ action-links {
 }
 .action-link + .action-link:hover {
   color: var(--white);
-  border: var(--thin) solid var(--color-super-light);
-  background-color: rgba(0, 0, 0, 0.221);
+  border: var(--thin) solid transparent;
+  background-color: rgb(var(--color-rgb), 0.5);
 }
 
 .action-link:hover {
@@ -1504,8 +1504,6 @@ teaser-card.third {
   teaser-card.second {
     display: block;
   }
-}
-@media (min-width: 1200px) {
   teaser-card.third {
     display: block;
   }
