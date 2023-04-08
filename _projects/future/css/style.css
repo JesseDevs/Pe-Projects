@@ -978,26 +978,28 @@ card-container.big-card text-content {
   padding-left: 10px;
   padding-top: 10px;
 }
-card-container.big-card em {
+card-container.big-card p.lyrics {
   grid-column: 1/-1;
   line-height: 2;
   font-weight: 500;
 }
-card-container.big-card em:before {
+card-container.big-card p.lyrics:before {
   content: "“";
 }
-card-container.big-card em:after {
+card-container.big-card p.lyrics:after {
   content: "”";
 }
 
 main.home-page section {
   height: 80%;
 }
+main.home-page section inner-column {
+  gap: 30px;
+  min-height: 50vh;
+}
 main.home-page inner-column {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  min-height: 50vh;
 }
 main.home-page output {
   display: grid;
@@ -1008,4 +1010,19 @@ main.home-page button {
   width: 60%;
   max-width: 175px;
   align-self: flex-end;
+}
+
+div-support {
+  width: 100%;
+  display: block;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

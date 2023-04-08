@@ -3,6 +3,7 @@ import collection from '../data/collection.js';
 const header = document.querySelector('header');
 const body = document.querySelector('body');
 let card = document.querySelector('card-container');
+let divSupport = document.querySelector('div-support');
 
 function generateQuote() {
 	const randomItem = collection[Math.floor(Math.random() * collection.length)];
@@ -22,9 +23,11 @@ function generateQuote() {
 			<p>${randomItem.artist}</p>
 		</text-content>
 
-		<em class='small-voice'>${randomItem.lyrics}</em>
-
-		`;
+		<p class='lyrics'>
+			<em>${randomItem.lyrics}</em>
+		</p>
+	`;
+	// divSupport.style.backgroundImage = `url('${randomItem.art}')`;
 }
 
 // converting first letter to uppercase
