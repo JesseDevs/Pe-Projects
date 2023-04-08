@@ -6,6 +6,11 @@
 @import 'partials.scss';
 
 main.home-page {
+
+	section {
+		height: 80%;
+	}
+
 	inner-column {
 		display: flex;
 		flex-direction: column;

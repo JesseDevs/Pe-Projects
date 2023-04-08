@@ -164,6 +164,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (min-width: 500px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+  }
+}
 body.overflow {
   overflow: hidden;
 }
@@ -984,6 +990,9 @@ card-container.big-card em:after {
   content: "”";
 }
 
+main.home-page section {
+  height: 80%;
+}
 main.home-page inner-column {
   display: flex;
   flex-direction: column;

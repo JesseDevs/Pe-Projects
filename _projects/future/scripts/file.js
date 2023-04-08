@@ -1,4 +1,4 @@
-import collection from '../data/collection.json' assert { type: 'json' };
+import collection from '../data/collection.js';
 
 const header = document.querySelector('header');
 const body = document.querySelector('body');

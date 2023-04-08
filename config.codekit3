@@ -4170,13 +4170,16 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/_projects\/future\/data\/collection.json" : {
-      "ft" : 524288,
+    "\/_projects\/future\/data\/collection.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/_projects\/future\/data\/collection-min.json",
+      "oAP" : "\/_projects\/future\/data\/collection-min.js",
       "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
+      "sC" : 3,
+      "tS" : 0
     },
     "\/_projects\/future\/images\/future\/56-nights.webp" : {
       "ft" : 8388608,
