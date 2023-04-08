@@ -21,6 +21,7 @@ card-container.big-card {
 	em {
 		grid-column: 1/-1;
 		line-height: 2;
+		font-weight: 500;
 
 		&:before {
 			content: '“';
