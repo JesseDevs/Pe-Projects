@@ -18,12 +18,12 @@ function generateQuote() {
 		${adlib}
 		
 		<text-content>
-			<h3>${randomItem.song}: ${randomItem.id}</h3>
+			<h3>${randomItem.song}</h3>
 			<p>${randomItem.artist}</p>
-			<p>${randomItem.song}</p>
-
-			<em>${randomItem.lyrics}</em>
 		</text-content>
+
+		<em class='small-voice'>${randomItem.lyrics}</em>
+
 		`;
 }
 

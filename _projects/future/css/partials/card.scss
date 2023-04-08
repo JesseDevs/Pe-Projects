@@ -1,5 +1,33 @@
 card-container.big-card {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 25% 1fr;
 	gap: 10px;
+	row-gap: 20px;
+	padding: 2vh;
+
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.204);
+
+	background: rgba(255, 255, 255, 0.08);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.3px);
+	-webkit-backdrop-filter: blur(5.3px);
+
+	text-content {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	em {
+		grid-column: 1/-1;
+		line-height: 2;
+
+		&:before {
+			content: '“';
+		}
+
+		&:after {
+			content: '”';
+		}
+	}
 }
