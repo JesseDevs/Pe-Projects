@@ -12,7 +12,7 @@ $desc = $pageData['intro'] ?? "Hey! Get to know a little bit more about me and m
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jesse Felix Personal Site: <?= ucfirst($page); ?> Page</title>
-	<meta name='description' content="<?= $pageData['intro'] ?>">
+	<meta name='description' content="<?= $desc ?>">
 	<meta property="og:image" content="<?= $metaImage ?>">
 	<meta http-equiv="Cache-Control" content="max-age=200" />
 
