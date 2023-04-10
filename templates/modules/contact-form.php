@@ -25,13 +25,13 @@
 				<input type="text" placeholder="<?= $section['labelOne'] ?>">
 			</form-field>
 			<form-field>
-				<input name='email' placeholder="<?= $section['labelTwo'] ?>" type=" email">
+				<input name='email' placeholder="<?= $section['labelTwo'] ?>" type="email">
 			</form-field>
 		</big-field>
 
 
 		<form-field class='message'>
-			<textarea name="message" type="text" placeholder="<?= $section['labelThree'] ?>"></textarea>
+			<textarea name="message" placeholder="<?= $section['labelThree'] ?>"></textarea>
 		</form-field>
 
 

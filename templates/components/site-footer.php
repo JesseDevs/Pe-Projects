@@ -33,4 +33,4 @@
 
 		</nav>
 	</inner-column>
-	</header>
+</footer>

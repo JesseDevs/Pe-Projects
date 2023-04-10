@@ -44,7 +44,6 @@ Check my github and leave a remark there if you'd prefer. 😉
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-	</script>
 	<script src="scripts/file.js"></script>
 </body>
 
