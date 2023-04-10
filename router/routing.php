@@ -13,7 +13,27 @@ function getPageData()
 		$page = "home";
 	}
 
-	return $page;
+	if (file_exists("data/pages/" . $page . ".json")) {
+		// Great!
+	} else {
+		$page = '404';
+	}
+
+
+	$json = file_get_contents("data/pages/" . $page . ".json");
+	$pageData = json_decode($json, true);
+	$projectsData = getProjectFile();
+
+	if ($page == 'project') {
+
+		foreach ($projectsData as $project) {
+			if ($project['id'] == $_GET['id']) {
+				$projectData = $project;
+			}
+		}
+
+		$metaImage = $project['thumbnail'];
+	}
 }
 
 function renderPage()

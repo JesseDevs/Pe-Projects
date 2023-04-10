@@ -1,7 +1,9 @@
 <?php include('router/functions.php');
 
-$metaImage = $page['metaImage'] ?? 'images/details/laptop.jpg';
-$desc = $page['intro'] ?? "Hey! Get to know a little bit more about me and my passions."
+getPageData();
+
+$metaImage = $pageData['metaImage'] ?? 'images/details/laptop.jpg';
+$desc = $pageData['intro'] ?? "Hey! Get to know a little bit more about me and my passions."
 
 ?>
 
