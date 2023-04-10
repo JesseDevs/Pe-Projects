@@ -1,11 +1,12 @@
 <?php include('router/functions.php');
 
-$pageData = array();
-getPageData();
+$metaImage = $pageData['metaImage'];
+$desc = $pageData['intro'];
 
-$metaImage = $pageData['metaImage'] ?? 'images/details/laptop.jpg';
-$desc = $pageData['intro'] ?? "Hey! Get to know a little bit more about me and my passions."
-
+if ($page == 'project') {
+	$metaImage = $project['thumbnail'];
+	$desc = $project['detail'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +29,6 @@ $desc = $pageData['intro'] ?? "Hey! Get to know a little bit more about me and m
 <body class='<?= $page ?>'>
 
 
-
 	<!-- 
 This personal site is brought to you by Jesse Felix. If you catch any mistakes or ways to improve  my site, there is a contact form at the bottom.
 		
@@ -41,9 +41,11 @@ Check my github and leave a remark there if you'd prefer. 😉
 
 	renderPage();
 
+
 	include('templates/components/site-footer.php');
 
 	?>
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
