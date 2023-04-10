@@ -1,4 +1,9 @@
 <?php
+if (isset($_GET['page'])) {
+	$page = $_GET['page'];
+} else {
+	$page = "home";
+}
 
 function getPageData()
 {
@@ -7,6 +12,8 @@ function getPageData()
 	} else {
 		$page = "home";
 	}
+
+	return $page;
 }
 
 function renderPage()
