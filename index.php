@@ -1,5 +1,6 @@
 <?php include('router/functions.php');
 
+$pageData = array();
 getPageData();
 
 $metaImage = $pageData['metaImage'] ?? 'images/details/laptop.jpg';
