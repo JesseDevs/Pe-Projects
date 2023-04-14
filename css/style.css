@@ -1903,7 +1903,7 @@ blog-card a:hover + support-bar {
   }
 }
 .has-missing-heading {
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 .has-missing-heading .cube-sphere-container {
@@ -1918,6 +1918,7 @@ missing-heading {
   text-align: center;
   position: relative;
   height: 100%;
+  padding-bottom: 200px;
   animation: upFadeIn 0.5s forwards;
   opacity: 0;
   animation-delay: 0.3s;
