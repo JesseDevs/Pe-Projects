@@ -661,9 +661,6 @@ code {
   left: 0;
   background-color: var(--dark-overlay);
 }
-.burger .always-in-menu {
-  display: none;
-}
 .burger ul {
   background-color: var(--color);
 }
