@@ -91,3 +91,5 @@ wp-content/plugins/akismet*
 *.asf
 *.wmv
 *.avi
+/config.php
+/.htaccess
