@@ -36,6 +36,7 @@ if ($page == 'project') {
 	
 	Check my github and leave a remark there if you'd prefer. 😉
 	-->
+
 	<?php
 	include('templates/components/site-header.php');
 

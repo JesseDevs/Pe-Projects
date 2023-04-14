@@ -661,6 +661,9 @@ code {
   left: 0;
   background-color: var(--dark-overlay);
 }
+.burger .always-in-menu {
+  display: block;
+}
 .burger ul {
   background-color: var(--color);
 }
@@ -1212,12 +1215,14 @@ landing-heading a {
   landing-heading text-content {
     padding-bottom: 0;
   }
-  landing-heading picture,
-landing-heading a {
+  landing-heading picture {
     grid-column: 3/-1;
   }
   landing-heading p.details {
     max-width: 40%;
+  }
+  landing-heading a.action-link {
+    grid-column: 4/-1 !important;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -1574,7 +1579,7 @@ project-section button.action-link:hover span {
     grid-column: 2/span 2;
   }
   project-section button.action-link {
-    grid-column: 3/-1;
+    grid-column: 4/-1;
   }
 }
 @media (min-width: 1200px) {
@@ -1662,10 +1667,10 @@ resume-section {
 }
 
 resume-section h4 {
-  grid-column: 1/-1;
+  width: 100%;
+  grid-column: 2/-1;
   text-align: right;
   font-weight: 500;
-  width: fit-content;
   border-bottom: var(--thin) solid var(--cube-line);
   justify-self: flex-end;
 }
