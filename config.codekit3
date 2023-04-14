@@ -50126,14 +50126,6 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
-    "\/.htaccess" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.htaccess",
-      "oF" : 0
-    },
     "\/archive\/003-home-page-website\/home-page.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -52099,14 +52091,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/archive\/pokedex\/pocket-monsters.php",
-      "oF" : 0
-    },
-    "\/config.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/config.php",
       "oF" : 0
     },
     "\/css\/components.scss" : {

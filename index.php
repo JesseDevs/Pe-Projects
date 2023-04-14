@@ -1,7 +1,5 @@
 <?php include('router/functions.php');
 
-include('config.php');
-
 $metaImage = $pageData['metaImage'];
 $desc = $pageData['intro'];
 
