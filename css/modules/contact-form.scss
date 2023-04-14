@@ -1,10 +1,22 @@
 .has-contact-form {
 	min-height: 70vh;
+	overflow: hidden;
+}
+
+.cube-sphere-container {
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+
+	* {
+		pointer-events: none;
+	}
 }
 
 contact-form {
 	width: 100%;
 	position: relative;
+	scroll-margin-top: 100px;
 
 	form {
 		row-gap: 20px;
@@ -28,11 +40,6 @@ contact-form {
 		justify-self: flex-end;
 		cursor: pointer;
 	}
-
-	.cube-sphere-container {
-		opacity: 0;
-		position: absolute;
-	}
 }
 
 @media(min-width:750px) {
@@ -40,6 +47,7 @@ contact-form {
 		form {
 
 			row-gap: 20px;
+
 
 			big-field {
 				flex-direction: row;
@@ -55,13 +63,25 @@ contact-form {
 
 		}
 
-		.cube-sphere-container {
-			opacity: 1;
+	}
 
-			top: 0;
-			right: 40%;
-			z-index: -10;
-			opacity: .5;
+
+	.cube-sphere-container {
+		opacity: 1;
+
+		top: 40px;
+		right: 40%;
+		z-index: -10;
+		opacity: .5;
+	}
+}
+
+@media(min-width:900px) {
+	contact-form {
+		form {
+
+			row-gap: 20px;
+			grid-column: 2/span 2 !important;
 		}
 	}
 }
@@ -71,5 +91,11 @@ contact-form {
 		button {
 			grid-column: 3/-1;
 		}
+
+
+	}
+
+	.cube-sphere-container {
+		zoom: 1.1;
 	}
 }

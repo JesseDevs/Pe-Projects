@@ -21,12 +21,14 @@
 	p {
 		max-width: none;
 		text-align: center;
+		color: var(--white);
 	}
 }
 
 div.confirmation.feedback {
 	display: flex;
 	opacity: 1;
+
 }
 
 form.none button {
@@ -70,6 +72,10 @@ div.change-form {
 			width: 40%;
 			border-radius: 0;
 			place-content: center;
+
+			p {
+				font-size: var(--step-2);
+			}
 		}
 	}
 }

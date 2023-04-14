@@ -358,6 +358,7 @@ svg {
   to {
     transform: none;
     opacity: 1;
+    position: static;
   }
 }
 @keyframes from-above {
@@ -785,15 +786,20 @@ header.display-menu .burger {
 }
 
 @media (min-width: 750px) {
-  .site-footer inner-column {
-    padding-left: 4rem;
-  }
   .site-footer nav {
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 3rem 1fr 1fr 2fr;
+    gap: 0;
+    row-gap: 20px;
   }
-  .site-footer nav div.footer-wrapper {
-    flex-basis: 45%;
+  .site-footer nav .footer-wrapper:first-of-type {
+    grid-column: 2/span 2;
+  }
+  .site-footer nav .footer-wrapper:last-of-type {
+    grid-column: 4/-1;
+  }
+  .site-footer nav p {
+    grid-column: 2/-1;
   }
 }
 side-bar {
@@ -1158,7 +1164,7 @@ landing-heading text-content {
   width: 100%;
   z-index: 2;
   padding-bottom: 200px;
-  animation: outer-left 1.6s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 0.8s backwards;
 }
 landing-heading p.details {
   font-weight: 500;
@@ -1191,7 +1197,7 @@ landing-heading picture img {
 landing-heading a {
   margin-top: 20px;
   grid-column: 2/-1;
-  animation: image-in 0.8s cubic-bezier(0.5, 0, 0.1, 1) 1.25s both;
+  animation: image-in 0.6s cubic-bezier(0.5, 0, 0.1, 1) 1.2s both;
 }
 
 @media (min-width: 500px) {
@@ -1437,6 +1443,10 @@ about-card action-links {
   }
 }
 
+project-card.card-design {
+  max-width: 90%;
+}
+
 @media (hover: hover) {
   project-card:hover text-content {
     transform: none;
@@ -1457,7 +1467,6 @@ teaser-card.card-design {
   height: 8rem;
   align-self: flex-end;
   justify-self: flex-end;
-  width: 90%;
 }
 teaser-card.card-design text-content {
   pointer-events: none;
@@ -1578,11 +1587,22 @@ project-section button.action-link:hover span {
 }
 .has-contact-form {
   min-height: 70vh;
+  overflow: hidden;
+}
+
+.cube-sphere-container {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.cube-sphere-container * {
+  pointer-events: none;
 }
 
 contact-form {
   width: 100%;
   position: relative;
+  scroll-margin-top: 100px;
 }
 contact-form form {
   row-gap: 20px;
@@ -1602,10 +1622,6 @@ contact-form button {
   justify-self: flex-end;
   cursor: pointer;
 }
-contact-form .cube-sphere-container {
-  opacity: 0;
-  position: absolute;
-}
 
 @media (min-width: 750px) {
   contact-form form {
@@ -1620,17 +1636,26 @@ contact-form .cube-sphere-container {
     justify-self: flex-end;
     cursor: pointer;
   }
-  contact-form .cube-sphere-container {
+  .cube-sphere-container {
     opacity: 1;
-    top: 0;
+    top: 40px;
     right: 40%;
     z-index: -10;
     opacity: 0.5;
   }
 }
+@media (min-width: 900px) {
+  contact-form form {
+    row-gap: 20px;
+    grid-column: 2/span 2 !important;
+  }
+}
 @media (min-width: 1200px) {
   contact-form button {
     grid-column: 3/-1;
+  }
+  .cube-sphere-container {
+    zoom: 1.1;
   }
 }
 resume-card,
@@ -1684,7 +1709,7 @@ resume-card .skills li:first-of-type p:before {
     grid-column: 4/-1;
   }
   resume-card:nth-of-type(odd) {
-    padding-right: 20px;
+    padding-right: 30px;
   }
   resume-card:last-of-type {
     grid-row: 6;
@@ -1877,12 +1902,22 @@ blog-card a:hover + support-bar {
     padding-bottom: 25px;
   }
 }
+.has-missing-heading {
+  height: 80vh;
+  overflow: hidden;
+}
+.has-missing-heading .cube-sphere-container {
+  right: initial;
+  left: 15%;
+  top: 15%;
+}
+
 missing-heading {
   width: 100%;
   display: block;
   text-align: center;
   position: relative;
-  min-height: 600px;
+  height: 100%;
   animation: upFadeIn 0.5s forwards;
   opacity: 0;
   animation-delay: 0.3s;
@@ -1900,76 +1935,38 @@ missing-heading .action-link {
   max-width: none;
 }
 
-.cube-sphere {
-  margin-top: var(--general-space);
-  position: relative;
-  height: 500px;
-  padding: 0;
-  border-radius: 50%;
-  /*	animation: circular 10s infinite linear; */
-}
-
-.cube-sphere g g {
-  stroke-width: 5px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-missing-heading {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: var(--simple-space);
-}
-
 missing-heading nav {
   grid-column: span 4;
 }
-
 missing-heading text-content {
-  grid-column: span 4;
-}
-
-missing-heading .cube-sphere {
   grid-column: span 4;
 }
 
 @media (min-width: 500px) {
   missing-heading nav ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: var(--simple-space);
-  }
-  missing-heading ul li:nth-child(odd) {
-    grid-column: 1/span 2;
-  }
-  missing-heading ul li:nth-child(even) {
-    grid-column: 3/span 2;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 750px) {
+  .has-missing-heading inner-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+  }
+  missing-heading {
+    display: grid;
+    grid-template-columns: 3rem 1fr 1fr 2fr;
+  }
   missing-heading text-content {
-    animation: rightFadeIn 2s;
+    margin-top: 200px;
+    grid-column: 4/-1;
   }
   missing-heading nav {
-    grid-column: 3/span 2;
-    order: 2;
-    z-index: 2;
-  }
-  missing-heading text-content {
-    grid-column: 3/span 2;
-    order: 1;
-    z-index: 2;
-  }
-  missing-heading .cube-sphere {
-    order: 3;
-    grid-column: 1/span 2;
-    position: absolute;
-    top: 0;
-    left: 5%;
-    margin: 0;
-    scale: 1.2;
-    z-index: 1;
-    animation: circular 12s infinite linear;
+    grid-column: 2/-1;
   }
 }
 goals-section {
@@ -2090,6 +2087,7 @@ form-box h3 {
 .feedback p {
   max-width: none;
   text-align: center;
+  color: var(--white);
 }
 
 div.confirmation.feedback {
@@ -2134,6 +2132,9 @@ div.change-form span {
     width: 40%;
     border-radius: 0;
     place-content: center;
+  }
+  form-box div.feedback p {
+    font-size: var(--step-2);
   }
 }
 project-page {

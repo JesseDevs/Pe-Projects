@@ -29,15 +29,16 @@ if ($page == 'project') {
 <body class='<?= $page ?>'>
 
 
-	<!-- 
-This personal site is brought to you by Jesse Felix. If you catch any mistakes or ways to improve  my site, there is a contact form at the bottom.
-		
-https://github.com/JesseDevs
-		
-Check my github and leave a remark there if you'd prefer. 😉
--->
+	<!--
+	This personal site is brought to you by Jesse Felix. If you catch any mistakes or ways to improve  my site, there is a contact form at the bottom.
+	
+	https://github.com/JesseDevs
+	
+	Check my github and leave a remark there if you'd prefer. 😉
+	-->
 	<?php
 	include('templates/components/site-header.php');
+
 
 	renderPage();
 
@@ -45,7 +46,6 @@ Check my github and leave a remark there if you'd prefer. 😉
 	include('templates/components/site-footer.php');
 
 	?>
-
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>

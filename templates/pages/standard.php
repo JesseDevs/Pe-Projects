@@ -11,7 +11,6 @@ if ($page !== 'style') {
 ?>
 
 <main class="page-content <?= $page ?>">
-
 	<?php foreach ($pageData['sections'] as $section) { ?>
 
 		<section id="<?= $section['module'] ?>" class="has-a-module has-<?= $section['module'] ?>">
@@ -33,5 +32,4 @@ if ($page !== 'style') {
 			</a>
 		<?php } ?>
 	</nav> -->
-
 </main>

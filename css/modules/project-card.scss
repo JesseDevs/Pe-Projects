@@ -113,6 +113,10 @@
 	}
 }
 
+project-card.card-design {
+	max-width: 90%;
+}
+
 @media(hover: hover) {
 	project-card:hover {
 
@@ -142,7 +146,6 @@ teaser-card.card-design {
 	height: 8rem;
 	align-self: flex-end;
 	justify-self: flex-end;
-	width: 90%;
 
 
 	text-content {

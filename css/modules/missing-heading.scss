@@ -1,9 +1,20 @@
+.has-missing-heading {
+	height: 80vh;
+	overflow: hidden;
+
+	.cube-sphere-container {
+		right: initial;
+		left: 15%;
+		top: 15%;
+	}
+}
+
 missing-heading {
 	width: 100%;
 	display: block;
 	text-align: center;
 	position: relative;
-	min-height: 600px;
+	height: 100%;
 	animation: upFadeIn .5s forwards;
 	opacity: 0;
 	animation-delay: .3s;
@@ -25,91 +36,50 @@ missing-heading {
 	}
 }
 
-
-.cube-sphere {
-	margin-top: var(--general-space);
-	position: relative;
-
-	height: 500px;
-	padding: 0;
-	border-radius: 50%;
-	/*	animation: circular 10s infinite linear; */
-
-}
-
-
-.cube-sphere g g {
-	stroke-width: 5px;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-
-}
-
 missing-heading {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	column-gap: var(--simple-space);
-}
+	nav {
+		grid-column: span 4;
+	}
 
-missing-heading nav {
-	grid-column: span 4;
-}
+	text-content {
+		grid-column: span 4;
+	}
 
-missing-heading text-content {
-	grid-column: span 4;
-}
 
-missing-heading .cube-sphere {
-	grid-column: span 4;
 }
 
 @media(min-width: 500px) {
 	missing-heading nav ul {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		column-gap: var(--simple-space);
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
 	}
 
-	missing-heading ul li:nth-child(odd) {
-		grid-column: 1 /span 2;
-	}
-
-
-	missing-heading ul li:nth-child(even) {
-		grid-column: 3 /span 2;
-	}
 }
 
-@media(min-width: 800px) {
-
-	missing-heading text-content {
-		animation: rightFadeIn 2s;
+@media(min-width:750px) {
+	.has-missing-heading {
+		inner-column {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			place-items: center;
+		}
 	}
 
-	missing-heading nav {
-		grid-column: 3/ span 2;
-		order: 2;
-		z-index: 2
+	missing-heading {
+		display: grid;
+		grid-template-columns: 3rem 1fr 1fr 2fr;
+
+		text-content {
+			margin-top: 200px;
+			grid-column: 4/-1;
+		}
+
+		nav {
+			grid-column: 2/-1;
+		}
+
 	}
-
-	missing-heading text-content {
-		grid-column: 3/ span 2;
-		order: 1;
-		z-index: 2;
-	}
-
-	missing-heading .cube-sphere {
-
-		order: 3;
-		grid-column: 1/ span 2;
-		position: absolute;
-		top: 0;
-		left: 5%;
-		margin: 0;
-		scale: 1.2;
-		z-index: 1;
-		animation: circular 12s infinite linear;
-	}
-
-
 }

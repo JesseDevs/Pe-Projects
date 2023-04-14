@@ -18,7 +18,7 @@ landing-heading {
 		width: 100%;
 		z-index: 2;
 		padding-bottom: 200px;
-		animation: outer-left 1.6s cubic-bezier(0.5, 0, 0.1, 1) both;
+		animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) .8s backwards;
 	}
 
 	p.details {
@@ -59,7 +59,7 @@ landing-heading {
 	a {
 		margin-top: 20px;
 		grid-column: 2/-1;
-		animation: image-in .8s cubic-bezier(0.5, 0, 0.1, 1) 1.25s both;
+		animation: image-in .6s cubic-bezier(0.5, 0, 0.1, 1) 1.2s both;
 	}
 }
 
