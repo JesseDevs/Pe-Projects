@@ -2,24 +2,7 @@
 	$heading = $section['heading'] ?? "Exercise Grid";
 	$intro = $section['intro'] ?? "Check it out!";
 
-	if (isset($_COOKIE['scrollPosition'])) {
-		$cookie = $_COOKIE['scrollPosition'];
-	} else {
-		$cookie = 0;
-	}
-
 	?>
-    <script>
-    	var positionAt = <?= $cookie ?>;
-
-    	window.addEventListener('DOMContentLoaded', function() {
-    		window.scrollTo({
-    			top: positionAt,
-    			behavior: 'instant',
-    		});
-    		document.cookie = `scrollPosition=0`;
-    	});
-    </script>
     <form-grid class='grid-template'>
 
     	<text-content>

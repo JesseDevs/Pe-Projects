@@ -7,6 +7,13 @@ if ($page == 'project') {
 	$metaImage = $project['thumbnail'];
 	$desc = $project['detail'];
 }
+
+if (isset($_COOKIE['scrollPosition'])) {
+	$cookie = $_COOKIE['scrollPosition'];
+} else {
+	$cookie = 0;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -51,6 +58,18 @@ if ($page == 'project') {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 	<script src="scripts/file.js"></script>
+
+	<script>
+		var positionAt = <?= $cookie ?>;
+
+		window.addEventListener('DOMContentLoaded', function() {
+			window.scrollTo({
+				top: positionAt,
+				behavior: 'instant',
+			});
+			document.cookie = `scrollPosition=0`;
+		});
+	</script>
 </body>
 
 </html>

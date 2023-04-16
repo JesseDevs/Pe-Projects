@@ -13,6 +13,13 @@
 	}
 }
 
+p.contact-confirm {
+	padding-top: 30px;
+	grid-column: 1/-1;
+	grid-row: 4;
+	max-width: 60ch;
+}
+
 contact-form {
 	width: 100%;
 	position: relative;
@@ -61,6 +68,11 @@ contact-form {
 			justify-self: flex-end;
 			cursor: pointer;
 
+		}
+
+		p.contact-confirm {
+
+			grid-column: 2/span 2;
 		}
 
 	}

@@ -1017,7 +1017,7 @@ select {
   font-family: "Montserrat", sans-serif;
   padding: 10px 15px;
   font-size: var(--step-0);
-  border: 2px solid var(--black);
+  border: 2px solid rgba(0, 0, 0, 0.404);
   outline: none;
   resize: none;
 }
@@ -1034,7 +1034,6 @@ label {
 input:focus,
 textarea:focus {
   border: 2px solid var(--color);
-  background-color: var(--color-super-light);
 }
 
 textarea {
@@ -1601,6 +1600,13 @@ project-section button.action-link:hover span {
   pointer-events: none;
 }
 
+p.contact-confirm {
+  padding-top: 30px;
+  grid-column: 1/-1;
+  grid-row: 4;
+  max-width: 60ch;
+}
+
 contact-form {
   width: 100%;
   position: relative;
@@ -1637,6 +1643,9 @@ contact-form button {
     grid-column: 2/-1;
     justify-self: flex-end;
     cursor: pointer;
+  }
+  contact-form p.contact-confirm {
+    grid-column: 2/span 2;
   }
   .cube-sphere-container {
     opacity: 1;

@@ -11,7 +11,7 @@ select {
 	font-family: "Montserrat", sans-serif;
 	padding: 10px 15px;
 	font-size: var(--step-0);
-	border: 2px solid var(--black);
+	border: 2px solid rgba(0, 0, 0, 0.404);
 	outline: none;
 	resize: none;
 }
@@ -30,7 +30,6 @@ label {
 input:focus,
 textarea:focus {
 	border: 2px solid var(--color);
-	background-color: var(--color-super-light)
 }
 
 textarea {

@@ -12,12 +12,12 @@
 		<h2 class='loud-voice'><?= $section['heading'] ?> </h2>
 		<p class="intro"><?= $section['intro'] ?></p>
 
-		<?php
-		if (isset($_POST['submit'])) { ?>
-			<p class='strict-voice'>Your message has been sent.</p>
-
-		<?php } ?>
 	</text-content>
+
+	<?php
+	if (isset($_POST['submit'])) { ?>
+		<p class='strict-voice contact-confirm'>Thank you for sharing a message. <br>I'll get back to you as soon as I can.</p>
+	<?php } ?>
 
 	<form method="POST" class='support-grid'>
 		<big-field>
