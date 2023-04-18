@@ -1,3 +1,14 @@
+var header = document.querySelector('header');
+const body = document.querySelector('body');
+
+const numberFormatter = Intl.NumberFormat('en-US');
+
+const phpBox = document.querySelector('#php');
+const jsBox = document.querySelector('#js');
+const vueBox = document.querySelector('#vue');
+
+let isJavascript = false;
+
 function scrollToSection() {
 	event.preventDefault();
 	let destination = document.querySelector('#contact');
@@ -9,16 +20,6 @@ function scrollToSection() {
 function setCookie() {
 	document.cookie = `scrollPosition=${window.scrollY}`;
 }
-
-var toggle = document.querySelector('#switch');
-const $formBox = document.querySelector('.form-box');
-const $form = document.querySelector('form');
-const $feedback = document.querySelector('.feedback');
-const $calculate = document.querySelector('#calculate');
-var header = document.querySelector('header');
-const body = document.querySelector('body');
-
-const numberFormatter = Intl.NumberFormat('en-US');
 
 // converting first letter to uppercase
 function capitalizeFirstLetter(str) {
@@ -35,23 +36,6 @@ window.addEventListener('click', function (event) {
 		body.classList.toggle('overflow');
 	}
 
-	if (event.target.matches('#form-select')) {
-		const formSelect = document.querySelector('#form-select');
-		formSelect.addEventListener('change', (event) => {
-			const formId = event.target.value;
-			const formElement = document.querySelector('#' + formId);
-			formElement.scrollIntoView({
-				behavior: 'smooth',
-			});
-		});
-	}
-
-	if (event.target.matches('#switch')) {
-		validateform();
-		$formBox.scrollIntoView({
-			behavior: 'smooth',
-		});
-	}
 	if (header.classList.contains('display-menu') || body.classList.contains('overflow')) {
 		if (!event.target.matches('header *')) {
 			header.classList.remove('display-menu');
@@ -63,14 +47,81 @@ window.addEventListener('click', function (event) {
 			body.classList.remove('overflow');
 		}
 	}
+
+	if (event.target.matches('#javascript')) {
+		toggleJavascript();
+		isJavascript = !isJavascript;
+	}
+
+	if (event.target.matches('#php')) {
+		removeJavascript();
+		isJavascript = false;
+	}
+
+	if (event.target.matches('#vue')) {
+		let vueDestination = document.querySelector('#vue-codepen');
+		vueDestination.scrollIntoView({
+			behavior: 'smooth',
+		});
+	}
+
+	if (event.target.matches('#top')) {
+		console.log('yes');
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	}
 });
 
 window.addEventListener('submit', setCookie);
 
+function toggleJavascript() {
+	const buttons = document.querySelectorAll('form-box button');
+	buttons.forEach((btn) => {
+		btn.classList.toggle('none');
+	});
+
+	const formBoxes = document.querySelectorAll('form-box');
+	formBoxes.forEach((formBox) => {
+		formBox.addEventListener('click', function (e) {
+			const formId = e.target.closest('form').id;
+			const formFunction = formFunctions[formId];
+			const divFeedback = formBox.querySelector('.feedback');
+
+			console.log(formId);
+			if (formFunction) {
+				formFunction(divFeedback);
+			}
+		});
+	});
+}
+
+function removeJavascript() {
+	const buttons = document.querySelectorAll('form-box button');
+	buttons.forEach((btn) => {
+		btn.classList.remove('none');
+	});
+
+	const formBoxes = document.querySelectorAll('form-box');
+	formBoxes.forEach((formBox) => {
+		formBox.removeEventListener('click', function (e) {
+			const formId = e.target.closest('form').id;
+			const formFunction = formFunctions[formId];
+			const divFeedback = formBox.querySelector('.feedback');
+
+			console.log(formId);
+			if (formFunction) {
+				formFunction(divFeedback);
+			}
+		});
+	});
+}
+
 const formFunctions = {
 	hello: promptHello,
 	count: promptString,
-	quote: promptQuote,
+	quoteForm: promptQuote,
 	madlib: promptMadlib,
 	retire: promptRetire,
 	math: promptMath,
@@ -79,22 +130,12 @@ const formFunctions = {
 	password: promptPassword,
 	paint: promptPaint,
 	area: calculateArea,
-	checkout: promptCheck,
-};
-
-validateForm = function () {
-	if (toggle.checked) {
-		$form.classList.add('none');
-		formFunctions[formType]();
-	} else {
-		$form.classList.remove('none');
-	}
 };
 
 const $helloForm = document.querySelector('#hello');
 const $areaForm = document.querySelector('#area');
-const $countForm = document.querySelector('#count-characters');
-const $quoteForm = document.querySelector('#quote');
+const $countForm = document.querySelector('#count');
+const $quoteForm = document.querySelector('#quote-form');
 const $madlibForm = document.querySelector('#madlib');
 const $retireForm = document.querySelector('#retire');
 const $mathForm = document.querySelector('#math');
@@ -102,67 +143,27 @@ const $drivingForm = document.querySelector('#driving');
 const $interestForm = document.querySelector('#interest');
 const $passwordForm = document.querySelector('#password');
 const $paintForm = document.querySelector('#paint');
-const $checkoutForm = document.querySelector('#checkout');
 
-function promptCheck() {
-	const $appleAmount = $checkoutForm.querySelector('#appleAmount');
-	const $applePrice = $checkoutForm.querySelector('#applePrice');
+function promptHello(block) {
+	const $nameInput = document.querySelector('#name');
+	$helloForm.addEventListener('input', function (event) {
+		var name = $nameInput.value;
+		let message = '';
 
-	const $orangeAmount = $checkoutForm.querySelector('#orangeAmount');
-	const $orangePrice = $checkoutForm.querySelector('#orangePrice');
-
-	$checkoutForm.addEventListener('input', function (event) {
-		var apples = parseInt($appleAmount.value, 10);
-		var aPrice = parseInt($applePrice.value, 10);
-
-		var oranges = parseInt($orangeAmount.value, 10);
-		var oPrice = parseInt($orangePrice.value, 10);
-
-		var aTotal = numberFormatter.format(apples * aPrice);
-		var oTotal = numberFormatter.format(oranges * oPrice);
-
-		var subTotal = numberFormatter.format(parseInt(aTotal, 10) + parseInt(oTotal, 10));
-		var tax = 0.055;
-
-		var taxAmount = numberFormatter.format(subTotal * tax);
-		var total = numberFormatter.format(subTotal + taxAmount);
-
-		if (isNaN(parseInt(aTotal), 10)) {
-			aTotal = 'X';
+		if (name) {
+			message = `<p>Hello, <strong>${name}</strong>. Nice to meet you!</p>`;
+		} else if (name == '') {
+			message = `<p>Oh wait.. we're missing something..</p>`;
 		}
 
-		if (isNaN(parseInt(oTotal), 10)) {
-			oTotal = 'X';
-			console.log('er');
-		}
-
-		if (isNaN(parseInt(subTotal), 10)) {
-			subTotal = 'X';
-		}
-
-		if (isNaN(parseInt(taxAmount), 10)) {
-			taxAmount = 'X';
-		}
-
-		if (isNaN(parseInt(total), 10)) {
-			total = 'X';
-		}
-
-		template = ` <p>The subtotal of Apples is: ${aTotal}</p>
-        <p>The subtotal of Oranges is: ${oTotal}</p>
-        <p>The subtotal of all items is: ${subTotal}</p>
-        <p>The tax on this purchase is:  ${taxAmount}</p>
-        <strong>
-        <p>The total is: ${total}</p>
-        </strong>`;
-
-		$feedback.innerHTML = `${template}`;
+		block.innerHTML = `${message}`;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptPaint() {
-	const $lengthInput = $paintForm.querySelector('field:nth-of-type(1) input');
-	const $widthInput = $paintForm.querySelector('field:nth-of-type(2) input');
+function promptPaint(block) {
+	const $lengthInput = $paintForm.querySelector('form-field:nth-of-type(1) input');
+	const $widthInput = $paintForm.querySelector('form-field:nth-of-type(2) input');
 
 	$paintForm.addEventListener('input', function (event) {
 		var length = parseInt($lengthInput.value, 10);
@@ -186,13 +187,14 @@ function promptPaint() {
 		template = `<p>The ceiling of the room is: <strong>${displayArea}</strong><br>
         You'll need: <strong>${paint}</strong> gallons to cover the entire ceiling </p>`;
 
-		$feedback.innerHTML = `${template}`;
+		block.innerHTML = `${template}`;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptPassword() {
-	const $usernameInput = $passwordForm.querySelector('field:nth-of-type(1) input');
-	const $passwordInput = $passwordForm.querySelector('field:nth-of-type(2) input');
+function promptPassword(block) {
+	const $usernameInput = $passwordForm.querySelector('form-field:nth-of-type(1) input');
+	const $passwordInput = $passwordForm.querySelector('form-field:nth-of-type(2) input');
 
 	$passwordForm.addEventListener('input', function (event) {
 		const name = 'JohnDoe';
@@ -204,30 +206,36 @@ function promptPassword() {
 		if (username) {
 			template = `Typing...<br>
             Username: ${username} <br>
-            Password: ${password} `;
+            Password: Hidden `;
 		}
 
 		if (username == name && password == pass) {
 			template = `You're logged in! Welcome!`;
 		}
 
-		$feedback.innerHTML = `<p>${template}</p>`;
+		block.innerHTML = `<p>${template}</p>`;
+		block.classList.add('confirmation');
 	});
 }
 
-function calculateArea() {
-	const $lengthInput = $paintForm.querySelector('field:nth-of-type(1) input');
-	const $widthInput = $paintForm.querySelector('field:nth-of-type(2) input');
+function calculateArea(block) {
+	const $lengthInput = $areaForm.querySelector('#length');
+	const $widthInput = $areaForm.querySelector('#width');
 
 	$areaForm.addEventListener('input', function (event) {
 		var length = parseInt($lengthInput.value, 10);
 		var width = parseInt($widthInput.value, 10);
 
-		$feedback.querySelector('p:first-of-type').textContent = `The length is: ${length}`;
-		$feedback.querySelector('p:nth-of-type(2)').textContent = `The length is: ${width}`;
-
 		var area = parseInt(length) * parseInt(width);
 		var displayArea = numberFormatter.format(area);
+
+		if (isNaN(parseInt(length), 10)) {
+			length = 'X';
+		}
+
+		if (isNaN(parseInt(width), 10)) {
+			width = 'X';
+		}
 
 		if (isNaN(parseInt(displayArea), 10)) {
 			displayArea = 'X';
@@ -237,24 +245,25 @@ function calculateArea() {
 
 		meters = numberFormatter.format(meters.toFixed(2));
 
-		let message = `You entered a dimensions of ${length} feet by ${width} feet. The area is ${displayArea} square feet. That is ${meters} square meters`;
+		if (isNaN(parseInt(meters), 10)) {
+			meters = 'X';
+		}
+
+		let message = `You entered a dimensions of <strong>${length}</strong> feet by <strong>${width}</strong> feet. The area is <strong>${displayArea}</strong> square feet. That is <strong>${meters}</strong> square meters`;
 
 		if ((length == '') & (width == '')) {
 			message = "Can't calculate...";
-		} else if (length == '') {
-			message = 'Missing a length..';
-		} else if (width == '') {
-			message = 'Missing a width..';
 		}
 
-		$feedback.querySelector('p:last-of-type strong').textContent = `${message}`;
+		block.innerHTML = `<p>${message}</p>`;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptInterest() {
-	const $principal = $interestForm.querySelector('field:nth-of-type(1) input');
-	const $rate = $interestForm.querySelector('field:nth-of-type(2) input');
-	const $years = $interestForm.querySelector('field:nth-of-type(3) input');
+function promptInterest(block) {
+	const $principal = $interestForm.querySelector('form-field:nth-of-type(1) input');
+	const $rate = $interestForm.querySelector('form-field:nth-of-type(2) input');
+	const $years = $interestForm.querySelector('form-field:nth-of-type(3) input');
 
 	$interestForm.addEventListener('input', function (event) {
 		let principal = $principal.value;
@@ -285,40 +294,33 @@ function promptInterest() {
 
 		var template = `<p>After ${years} years at ${interest}% interest, the investment will be worth <strong>${amount}</strong>.</p> `;
 
-		$feedback.innerHTML = `${template}`;
+		block.innerHTML = `${template}`;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptHello() {
-	const $nameInput = document.querySelector('#name');
-	$helloForm.addEventListener('input', function (event) {
-		var name = $nameInput.value;
-		let message = '';
-
-		if (name) {
-			message = `<p>Hello, <strong>${name}</strong>. Nice to meet you!</p>`;
-		} else if (name == '') {
-			message = `<p>Oh wait.. we're missing something..</p>`;
-		}
-
-		$feedback.innerHTML = `${message}`;
-	});
-}
-
-function promptDrivingAge() {
-	const $ageInput = $drivingForm.querySelector('field input');
+function promptDrivingAge(block) {
+	const $ageInput = $drivingForm.querySelector('form-field input');
 	$drivingForm.addEventListener('input', function (event) {
 		var age = $ageInput.value;
-		let message =
-			age >= 16
-				? `<p>You <strong>are</strong> old enough to legally drive.</p>`
-				: `<p>You <strong>can not</strong> legally drive.</p>`;
+		console.log(age);
+		let message = '';
 
-		$feedback.innerHTML = `${message}`;
+		if (this.age >= 21) {
+			message = `You are ${age} years old, enough to legally drive. There's some more responsibility at this point.`;
+		} else if (age < 21 && age >= 16) {
+			message = `You are ${age} years old, enough to legally drive. Insurance payments will be through the roof.`;
+		} else if (age < 16 && age >= 13) {
+			message = `You are ${age} years old. Too young to drive but your time is coming.`;
+		} else {
+			message = 'You are not old enough to legally drive.';
+		}
+		block.innerHTML = `${message}`;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptString() {
+function promptString(block) {
 	const $phraseInput = document.querySelector('#phrase');
 	$countForm.addEventListener('input', function (event) {
 		let string = $phraseInput.value;
@@ -338,34 +340,35 @@ function promptString() {
 		var template = `You entered: `;
 		var message = 'That phrase has: ';
 
-		$feedback.innerHTML = `
+		block.innerHTML = `
         <p> ${template} <strong> ${string} </strong> </p>
         <p> ${message} <strong> ${counter} </strong> characters. </p>
-
         `;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptQuote() {
-	const $quoteInput = $quoteForm.querySelector('field:nth-of-type(2) input');
-	const $authorInput = $quoteForm.querySelector('field:nth-of-type(1) input');
+function promptQuote(block) {
+	const $quoteInput = $quoteForm.querySelector('form-field:nth-of-type(2) input');
+	const $authorInput = $quoteForm.querySelector('form-field:nth-of-type(1) input');
 
 	$quoteForm.addEventListener('input', function (event) {
 		let quote = $quoteInput.value;
 		let author = $authorInput.value;
 		author = capitalizeFirstLetter(author);
 
-		$feedback.innerHTML = `
+		block.innerHTML = `
         <p><strong>${author}</strong> said <strong>“${quote}”</strong> </p>
         `;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptMadlib() {
-	const $noun = $madlibForm.querySelector('field:nth-of-type(1) input');
-	const $verb = $madlibForm.querySelector('field:nth-of-type(2) input');
-	const $adjective = $madlibForm.querySelector('field:nth-of-type(3) input');
-	const $adverb = $madlibForm.querySelector('field:nth-of-type(4) input');
+function promptMadlib(block) {
+	const $noun = $madlibForm.querySelector('form-field:nth-of-type(1) input');
+	const $verb = $madlibForm.querySelector('form-field:nth-of-type(2) input');
+	const $adjective = $madlibForm.querySelector('form-field:nth-of-type(3) input');
+	const $adverb = $madlibForm.querySelector('form-field:nth-of-type(4) input');
 
 	$madlibForm.addEventListener('input', function (event) {
 		let noun = $noun.value;
@@ -386,16 +389,17 @@ function promptMadlib() {
 			adverb = 'X';
 		}
 
-		$feedback.innerHTML = `<p><strong>${noun}</strong> is <strong>${verb}</strong> <strong>${adverb}</strong>  while maintaining <strong>${adjective}</strong> poise! </p>`;
+		block.innerHTML = `<p><strong>${noun}</strong> is <strong>${verb}</strong> <strong>${adverb}</strong>  while maintaining <strong>${adjective}</strong> poise! </p>`;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptRetire() {
+function promptRetire(block) {
 	let date = new Date();
 	var currentYear = date.getFullYear();
 
-	const $age = $retireForm.querySelector('field:nth-of-type(1) input');
-	const $retire = $retireForm.querySelector('field:nth-of-type(2) input');
+	const $age = $retireForm.querySelector('form-field:nth-of-type(1) input');
+	const $retire = $retireForm.querySelector('form-field:nth-of-type(2) input');
 
 	$retireForm.addEventListener('input', function (event) {
 		var age = $age.value;
@@ -415,13 +419,14 @@ function promptRetire() {
 			template = `<p>We need to plan...</p>`;
 		}
 
-		$feedback.innerHTML = template;
+		block.innerHTML = template;
+		block.classList.add('confirmation');
 	});
 }
 
-function promptMath() {
-	const $numOne = $mathForm.querySelector('field:nth-of-type(1) input');
-	const $numTwo = $mathForm.querySelector('field:nth-of-type(2) input');
+function promptMath(block) {
+	const $numOne = $mathForm.querySelector('form-field:nth-of-type(1) input');
+	const $numTwo = $mathForm.querySelector('form-field:nth-of-type(2) input');
 
 	$mathForm.addEventListener('input', function (event) {
 		let numOne = $numOne.value;
@@ -466,7 +471,8 @@ function promptMath() {
         <p>${numOne} / ${numTwo} = <strong>${divide}</strong></p>
         `;
 
-		$feedback.innerHTML = template;
+		block.innerHTML = template;
+		block.classList.add('confirmation');
 	});
 }
 
