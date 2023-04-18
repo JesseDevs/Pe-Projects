@@ -30,8 +30,6 @@
 			{
 				"title": "Music: Wordpress",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/music-wordpress/",
-				"link": "https://peprojects.dev/alpha-4/jesse/_projects/music-wordpress/",
-				"image": "images/background/landscape.jpg",
 				"p": "Some people consider WordPress the pinnacle of CMSs as it powers about 40% of all websites on the internet. In my <em>‘Music: WordPress’</em> project, I gained a proper idea of why that is. The admin panel allows you to manage backend data with various plugins, making it efficient and simple for users and creators to maintain the overall quality. Advanced Custom Fields (ACF) is an excellent plugin that enables the addition of custom content to our system. I discovered that creating many modules and themes can generate a quick workflow to output production-ready websites in a flash."
 			},
 			{

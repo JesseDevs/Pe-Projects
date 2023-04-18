@@ -51,6 +51,16 @@
 	}
 }
 
+.first-words {
+	color: var(--color);
+	font-size: var(--step-2);
+	font-weight: 600;
+
+	&::after {
+		content: '...';
+	}
+}
+
 .has-a-module {
 	scroll-margin-top: 80px;
 

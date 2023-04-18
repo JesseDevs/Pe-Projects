@@ -839,6 +839,29 @@ side-bar {
   display: none;
 }
 
+button.contains-up-arrow {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: rgb(61, 61, 62);
+  max-width: fit-content;
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid rgb(85, 85, 85);
+  border-top: none;
+  pointer-events: all;
+}
+button.contains-up-arrow:hover svg {
+  fill: var(--color-soft);
+}
+button.contains-up-arrow svg {
+  fill: var(--ink);
+  pointer-events: none;
+}
+
 .box-container {
   padding-top: 10px;
   width: 30px;
@@ -1022,6 +1045,14 @@ select {
   resize: none;
 }
 
+select {
+  appearance: none;
+  background-color: white;
+  background-image: url("../images/drop-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+}
 select option {
   text-transform: uppercase;
 }
@@ -1402,7 +1433,7 @@ about-card action-links {
   max-width: 80%;
   transition: opacity 0.3s ease-out, transform 0.3s ease-in-out;
   bottom: 30px;
-  left: 25px;
+  left: 20px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -2031,8 +2062,8 @@ form-grid form-field {
 form-grid ul {
   display: flex;
   flex-direction: column;
-  gap: 140px;
-  margin-top: var(--intro-space);
+  row-gap: 200px;
+  margin-top: 50px;
   grid-column: 1/-1;
 }
 form-grid .action-link {
@@ -2053,6 +2084,21 @@ form-grid .form-select {
   }
 }
 
+div.codepen-container {
+  grid-column: 1/-1;
+  padding: 200px 0 60px;
+  scroll-margin: -160px;
+}
+div.codepen-container body {
+  border: none;
+}
+div.codepen-container text-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-bottom: 25px;
+}
+
 form-box {
   width: 100%;
   display: block;
@@ -2061,7 +2107,6 @@ form-box {
   padding-bottom: 40px;
   border: var(--thin) solid var(--color-mute);
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-  scroll-margin: 50px;
 }
 form-box sub-heading {
   display: block;
@@ -2072,7 +2117,15 @@ form-box h3 {
   font-weight: 500;
   text-transform: uppercase;
 }
+form-box form {
+  scroll-margin-top: 80px;
+}
 
+@media (min-width: 750px) {
+  div.codepen-container {
+    grid-column: 2/-1;
+  }
+}
 @media (min-width: 1200px) {
   form-grid form button {
     grid-column: 3/-1;
@@ -2096,10 +2149,15 @@ form-box h3 {
   opacity: 0;
   transition: opacity 0.3s ease-out;
 }
+.feedback strong {
+  text-decoration: underline;
+}
 .feedback p {
   max-width: none;
   text-align: center;
   color: var(--white);
+  font-weight: 800;
+  font-family: "lato";
 }
 
 div.confirmation.feedback {
@@ -2107,7 +2165,7 @@ div.confirmation.feedback {
   opacity: 1;
 }
 
-form.none button {
+button.none {
   opacity: 0.1;
   pointer-events: none;
 }
@@ -2128,7 +2186,7 @@ div.change-form span {
   font-weight: 500;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   form-box {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -2167,13 +2225,6 @@ case-block {
 }
 case-block p.headline {
   max-width: 65ch;
-}
-case-block .first-words {
-  color: var(--color);
-  font-size: var(--step-2);
-}
-case-block .first-words::after {
-  content: "...";
 }
 case-block > * {
   grid-column: 1/-1;
@@ -2244,6 +2295,130 @@ case-block article h4 {
     margin-right: 1.5rem;
   }
 }
+.has-support-block inner-column {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+support-block {
+  grid-column: 1/-1;
+  display: block;
+  width: 100%;
+}
+support-block ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+support-block ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+support-block text-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 750px) {
+  support-block {
+    display: grid;
+    grid-template-columns: 3rem 1fr 1fr 2fr;
+  }
+  support-block ul,
+support-block text-content {
+    grid-column: 2/-1;
+  }
+  support-block ul {
+    flex-direction: row;
+    column-gap: 10vw;
+  }
+}
+@media (min-width: 900px) {
+  support-block text-content {
+    grid-column: 3/-1;
+  }
+  support-block ul {
+    grid-column: 2/span 1;
+    flex-direction: column;
+    grid-row: 1;
+    row-gap: 20px;
+    justify-content: center;
+  }
+}
+.radio-group label {
+  margin-left: 0.5rem;
+  border-color: rgba(0, 0, 255, 0);
+  transition: 100ms all ease-in-out;
+  width: 100%;
+}
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+input[type=radio] {
+  appearance: none;
+  outline: transparent;
+  margin: 0;
+  font: inherit;
+  width: 1.25em;
+  height: 1.25em;
+  box-shadow: inset 1px 1px 1px rgb(255, 255, 255), inset -1px -1px 1.5px -0.5px rgba(0, 0, 0, 0.2), inset 0px 0px 100px rgba(0, 0, 0, 0), 1px 1px 2px -1px rgba(0, 0, 0, 0.1), 0px -0.5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  transition: 100ms box-shadow ease-in-out, 100ms outline ease-in-out;
+}
+
+input[type=radio]::before {
+  content: "";
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  transition: 140ms box-shadow ease-in-out, 100ms background-color ease-in-out;
+  box-shadow: inset 1px 1px 1px -0.75px rgba(0, 0, 0, 0.1), inset -1px -1px 2px -1px rgba(0, 0, 0, 0.1), inset 0px 0px 100px rgba(0, 0, 0, 0.01);
+  outline: 0.1px solid rgba(0, 0, 0, 0.01);
+  outline-offset: -0.5px;
+}
+
+input[type=radio]:checked::before {
+  background-color: white;
+  box-shadow: inset 2px 2px 2px -0.5px rgb(255, 255, 255), inset -2px -2px 1px -0.5px rgba(0, 0, 0, 0.07), 1px 1px 1.5px -1px rgba(0, 0, 0, 0.25), inset 0px 0px 100px rgba(0, 0, 0, 0.005);
+}
+
+input[type=radio]:checked {
+  box-shadow: inset 1px 1px 2px 0.25px rgba(0, 0, 0, 0.2), inset -1px -1px 2px 0.25px rgb(255, 255, 255), inset 0px 0px 100px rgba(0, 0, 0, 0.1);
+  outline: 0.1px solid rgba(0, 0, 0, 0.01);
+  outline-offset: -0.5px;
+}
+
+/* Uncomment below for visible focus states that meet WCAG AA */
+input[type=radio]:focus ~ label {
+  border-bottom: 3px solid var(--color);
+}
+
+input[type=radio]:focus::before {
+  box-shadow: inset 2px 2px 2px -1.75px rgba(255, 255, 255, 0.3), inset -1px -1px 1px -1px rgba(0, 0, 0, 0.1), 1px 1px 1.5px -1px rgba(0, 0, 0, 0.25);
+  background-color: var(--color);
+}
+
+input[type=radio]:focus {
+  outline: 3px solid var(--color);
+  outline-offset: -3px;
+}
+
 .monday .articles,
 .monday module {
   display: flex;
@@ -2762,6 +2937,15 @@ module p {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
   }
+}
+
+.first-words {
+  color: var(--color);
+  font-size: var(--step-2);
+  font-weight: 600;
+}
+.first-words::after {
+  content: "...";
 }
 
 .has-a-module {
