@@ -103,19 +103,12 @@ function removeJavascript() {
 		btn.classList.remove('none');
 	});
 
-	const formBoxes = document.querySelectorAll('form-box');
-	formBoxes.forEach((formBox) => {
-		formBox.removeEventListener('click', function (e) {
-			const formId = e.target.closest('form').id;
-			const formFunction = formFunctions[formId];
-			const divFeedback = formBox.querySelector('.feedback');
+	const divFeedback = document.querySelectorAll('.feedback');
 
-			divFeedback.classList.remove('confirmation');
-
-			if (formFunction) {
-				formFunction(divFeedback);
-			}
-		});
+	divFeedback.forEach((f) => {
+		if (f.classList.contains('confirmation')) {
+			f.classList.remove('confirmation');
+		}
 	});
 }
 
