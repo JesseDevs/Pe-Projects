@@ -48,7 +48,7 @@ if (isset($_POST['madlib-submit'])) {
 
 
 
-	<button class='action-link' type="submit" name='madlib-submit' id="calculate">Submit</button>
+	<button class='action-link' type="submit" name='madlib-submit'>Submit</button>
 
 
 </form>

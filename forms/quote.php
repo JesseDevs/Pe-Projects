@@ -29,7 +29,7 @@ if (isset($_POST['quote-submit'])) {
 
 
 
-<form method="post" class='support-grid' autocomplete="off" id="quote-form">
+<form method="post" class='support-grid' autocomplete="off" id="quoteForm">
 
 	<form-field>
 		<label for="">Who is the author?</label>
@@ -42,7 +42,7 @@ if (isset($_POST['quote-submit'])) {
 	</form-field>
 
 
-	<button class='action-link' type="submit" name='quote-submit' id="calculate">Calculate</button>
+	<button class='action-link' type="submit" name='quote-submit'>Calculate</button>
 
 
 </form>

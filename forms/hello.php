@@ -10,7 +10,7 @@ $class = '';
 
 if (isset($_POST['hello-submit'])) {
 	$name = $_POST['name'];
-	$message = "Hello " . htmlspecialchars($name) . "! Nice to meet you!";
+	$message = "Hello <strong>" . htmlspecialchars($name) . "</strong>! Nice to meet you!";
 
 	$template = 'You typed: ' . $name;
 
@@ -26,7 +26,7 @@ if (isset($_POST['hello-submit'])) {
 		<input type="text" name='name' value='<?= $name ?>' id="name" required>
 	</form-field>
 
-	<button class='action-link' type="submit" name='hello-submit' id="calculate">Submit</button>
+	<button class='action-link' type="submit" name='hello-submit'>Submit</button>
 
 
 </form>
@@ -37,5 +37,5 @@ if (isset($_POST['hello-submit'])) {
 			<use xlink:href="#icon-cancel-squared"></use>
 		</svg>
 	</div>
-	<p><strong> <?= $message ?></strong> </p>
+	<p> <?= $message ?></p>
 </div>

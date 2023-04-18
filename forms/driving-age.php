@@ -30,7 +30,7 @@ if (isset($_POST['age-submit'])) {
 
 
 </form>
-<div class='<?= $class ?> feedback'>
+<div class='<?= $class ?>feedback'>
 	<div class="contains-x">
 		<svg class="icon-cancel-squared">
 			<use xlink:href="#icon-cancel-squared"></use>

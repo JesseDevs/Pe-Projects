@@ -45,7 +45,7 @@ if (isset($_POST['count-submit'])) {
 
 
 
-<form action="" class='support-grid' method="post" autocomplete="off" id="count-characters">
+<form action="" class='support-grid' method="post" autocomplete="off" id="count">
 
 	<form-field>
 

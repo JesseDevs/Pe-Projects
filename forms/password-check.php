@@ -35,7 +35,7 @@ if (isset($_POST['password-submit'])) {
 	<form-field>
 
 		<label for="">Enter username:</label>
-		<input type="text" name='username' autocomplete="off" value='<?= $inputUsername ?>' required min='0'>
+		<input type="text" name='username' id='form-username' autocomplete="off" value='<?= $inputUsername ?>' required min='0'>
 
 		<span>*Hint: <em>JohnDoe </em></span>
 
@@ -44,7 +44,7 @@ if (isset($_POST['password-submit'])) {
 	<form-field>
 
 		<label for="">Enter password:</label>
-		<input type="password" name='password' autocomplete="off" value='<?= $inputUsername ?>' required min='0'>
+		<input type="password" name='password' id='form-password' autocomplete="off" value='<?= $inputUsername ?>' required min='0'>
 
 		<span>*Hint: <em>1020World</em></span>
 

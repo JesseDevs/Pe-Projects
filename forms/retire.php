@@ -51,7 +51,7 @@ if (isset($_POST['retire-submit'])) {
 
 	</form-field>
 
-	<button class='action-link' type="submit" name='retire-submit' id="calculate">Calculate</button>
+	<button class='action-link' type="submit" name='retire-submit'>Calculate</button>
 
 </form>
 
