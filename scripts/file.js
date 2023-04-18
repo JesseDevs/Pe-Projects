@@ -110,7 +110,8 @@ function removeJavascript() {
 			const formFunction = formFunctions[formId];
 			const divFeedback = formBox.querySelector('.feedback');
 
-			console.log(formId);
+			divFeedback.classList.remove('confirmation');
+
 			if (formFunction) {
 				formFunction(divFeedback);
 			}
