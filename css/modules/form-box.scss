@@ -17,11 +17,16 @@
 	opacity: 0;
 	transition: opacity .3s ease-out;
 
+	strong {
+		text-decoration: underline;
+	}
 
 	p {
 		max-width: none;
 		text-align: center;
 		color: var(--white);
+		font-weight: 800;
+		font-family: "lato";
 	}
 }
 
@@ -31,7 +36,7 @@ div.confirmation.feedback {
 
 }
 
-form.none button {
+button.none {
 	opacity: .1;
 	pointer-events: none;
 }
@@ -55,7 +60,7 @@ div.change-form {
 	}
 }
 
-@media(min-width:1200px) {
+@media(min-width:900px) {
 	form-box {
 		display: grid;
 		grid-template-columns: 1fr 1fr 2fr;

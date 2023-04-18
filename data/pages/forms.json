@@ -10,6 +10,14 @@
 			"intro": "User Input Testing!<br> <em>Exercises&nbsp;for&nbsp;Programmers</em>"
 		},
 		{
+			"module": "support-block",
+			"list": [
+				"PHP",
+				"Javascript",
+				"Vue"
+			]
+		},
+		{
 			"module": "form-grid",
 			"heading": "Exercises",
 			"intro": "Little apps to solve everyday problems...",
@@ -77,12 +85,6 @@
 					"title": "password",
 					"file-name": "password-check",
 					"intro": "Login Check!"
-				},
-				{
-					"id": 14,
-					"title": "checkout",
-					"file-name": "self-checkout",
-					"intro": "You can check yourself out here!"
 				},
 				{
 					"id": 15,

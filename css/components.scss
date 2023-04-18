@@ -17,6 +17,13 @@ select {
 }
 
 select {
+	appearance: none;
+	background-color: white;
+	background-image: url('../images/drop-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 20px;
+
 	option {
 		text-transform: uppercase;
 	}

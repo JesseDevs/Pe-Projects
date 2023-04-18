@@ -20,6 +20,33 @@
 	display: none;
 }
 
+button.contains-up-arrow {
+	appearance: none;
+	border: none;
+	outline: none;
+	background-color: rgba(61 61 62);
+	max-width: fit-content;
+	position: absolute;
+	bottom: 7px;
+	right: 0;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: 1px solid rgb(85, 85, 85);
+	border-top: none;
+	pointer-events: all;
+
+	&:hover {
+		svg {
+			fill: var(--color-soft);
+		}
+	}
+
+	svg {
+		fill: var(--ink);
+		pointer-events: none;
+	}
+}
+
 // Cube
 
 .box-container {

@@ -22,8 +22,10 @@ $files =
 				<?php } ?>
 				<action-links>
 
-					<a class='action-link' href="<?= $file['link'] ?>">Live</a>
+					<?php if (isset($file['link'])) { ?>
 
+						<a class='action-link' href="<?= $file['link'] ?>">Live</a>
+					<?php } ?>
 
 					<a class='action-link' href="<?= $file['git'] ?>">Github</a>
 

@@ -22,8 +22,8 @@ form-grid {
 	ul {
 		display: flex;
 		flex-direction: column;
-		gap: 140px;
-		margin-top: var(--intro-space);
+		row-gap: 200px;
+		margin-top: 50px;
 		grid-column: 1/-1;
 	}
 
@@ -50,6 +50,24 @@ form-grid {
 
 }
 
+div.codepen-container {
+	grid-column: 1/-1;
+	padding: 200px 0 60px;
+
+	scroll-margin: -160px;
+
+	body {
+		border: none;
+	}
+
+	text-content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 25px;
+		margin-bottom: 25px;
+	}
+}
+
 form-box {
 	width: 100%;
 	display: block;
@@ -58,7 +76,7 @@ form-box {
 	padding-bottom: 40px;
 	border: var(--thin) solid var(--color-mute);
 	box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-	scroll-margin: 50px;
+
 
 	sub-heading {
 		display: block;
@@ -71,6 +89,16 @@ form-box {
 		text-transform: uppercase;
 	}
 
+	form {
+		scroll-margin-top: 80px;
+	}
+
+}
+
+@media(min-width:750px) {
+	div.codepen-container {
+		grid-column: 2/-1;
+	}
 }
 
 @media(min-width:1200px) {
