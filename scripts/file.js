@@ -90,7 +90,7 @@ function toggleJavascript() {
 			const divFeedback = formBox.querySelector('.feedback');
 
 			console.log(formId);
-			if (formFunction) {
+			if (formFunction && isJavascript) {
 				formFunction(divFeedback);
 			}
 		});
