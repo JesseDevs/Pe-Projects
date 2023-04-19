@@ -110,6 +110,20 @@ function removeJavascript() {
 			f.classList.remove('confirmation');
 		}
 	});
+
+	const formBoxes = document.querySelectorAll('form-box');
+	formBoxes.forEach((formBox) => {
+		formBox.removeEventListener('click', function (e) {
+			const formId = e.target.closest('form').id;
+			const formFunction = formFunctions[formId];
+			const divFeedback = formBox.querySelector('.feedback');
+
+			console.log(formId);
+			if (formFunction && isJavascript) {
+				formFunction(divFeedback);
+			}
+		});
+	});
 }
 
 const formFunctions = {
