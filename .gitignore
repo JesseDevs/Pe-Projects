@@ -91,5 +91,7 @@ wp-content/plugins/akismet*
 *.asf
 *.wmv
 *.avi
-/.htaccess
 /config.php
+/live-config.php
+/local-config.php
+/.htaccess
