@@ -1750,7 +1750,7 @@ resume-card .skills li:first-of-type p:before {
     grid-column: 4/-1;
   }
   resume-card:nth-of-type(odd) {
-    padding-right: 30px;
+    padding-right: 100px;
   }
   resume-card:last-of-type {
     grid-row: 6;
