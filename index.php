@@ -1,5 +1,5 @@
 <?php
-include('local-config.php');
+include('/live-config.php');
 include('router/functions.php');
 
 $metaImage = $pageData['metaImage'];
