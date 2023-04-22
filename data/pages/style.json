@@ -55,13 +55,6 @@
 			]
 		},
 		{
-			"module": "goals-section",
-			"heading": "Goals Section",
-			"intro": "Cute little intro",
-			"lead": "Lead in for all the goals.",
-			"goals": ""
-		},
-		{
 			"module": "resume-section",
 			"heading": "Resume Section",
 			"intro": "Cute little intro"
@@ -139,9 +132,6 @@
 			"labelThree": "MESSAGE",
 			"holderTwo": "Something to say..",
 			"button": "CONNECT"
-		},
-		{
-			"module": "project-page"
 		}
 	]
 }

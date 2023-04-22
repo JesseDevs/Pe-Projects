@@ -10,6 +10,13 @@
 			"intro": "Collection of building blocks."
 		},
 		{
+			"module": "support-block",
+			"text": [
+				"This page is dedicated to a collection of layouts that may be found across the internet. They could all vary on design and what exactly a site hoster would like for their users.",
+				"<span class='first-words'>Scroll through</span>  and check out what building blocks are needed for your next project!"
+			]
+		},
+		{
 			"module": "layouts-page",
 			"items": [
 				"monday",
