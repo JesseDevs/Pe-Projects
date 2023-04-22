@@ -30,7 +30,7 @@
 					<a href="?page=layouts " class="<?php activePage("layouts") ?>">Layouts</a>
 				</li>
 				<li class='always-in-menu'>
-					<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
+					<a href="?page=style " class="<?php activePage("style") ?>">Style Guide</a>
 				</li>
 
 			</ul>
