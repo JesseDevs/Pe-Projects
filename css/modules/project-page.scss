@@ -1,13 +1,26 @@
 project-page {
-    width: 100%;
-    display: block;
+	width: 100%;
+	display: block;
 }
 
 .project-page>inner-column {
-    padding: 0;
+	padding: 0;
 
-    section:nth-of-type(even) {
-        background-color: var(--fade);
-    }
+	section:nth-of-type(even) {
+		background-color: var(--fade);
+	}
 
+}
+
+.has-layouts-page {
+	scroll-margin-top: 80px;
+
+	@media(min-width:1500px) {
+		display: grid;
+
+		inner-column {
+			display: flex !important;
+			place-items: initial !important;
+		}
+	}
 }

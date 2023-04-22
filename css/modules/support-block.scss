@@ -72,6 +72,18 @@ support-block {
 	}
 }
 
+@media(min-width:1200px) {
+	support-block text-content {
+		grid-column: 4/-1;
+		grid-row: 1;
+	}
+
+	support-block ul {
+		grid-column: 3/-1;
+	}
+
+}
+
 .radio-group {
 	label {
 		margin-left: 0.5rem;

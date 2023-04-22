@@ -858,7 +858,7 @@ button.contains-up-arrow:hover svg {
   fill: var(--color-soft);
 }
 button.contains-up-arrow svg {
-  fill: var(--ink);
+  fill: var(--white-mute);
   pointer-events: none;
 }
 
@@ -1052,9 +1052,8 @@ select {
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 20px;
-}
-select option {
-  text-transform: uppercase;
+  color: black option;
+  color-text-transform: uppercase;
 }
 
 label {
@@ -2219,6 +2218,19 @@ project-page {
   background-color: var(--fade);
 }
 
+.has-layouts-page {
+  scroll-margin-top: 80px;
+}
+@media (min-width: 1500px) {
+  .has-layouts-page {
+    display: grid;
+  }
+  .has-layouts-page inner-column {
+    display: flex !important;
+    place-items: initial !important;
+  }
+}
+
 case-block {
   width: 100%;
   row-gap: 110px;
@@ -2349,6 +2361,15 @@ support-block text-content {
     grid-row: 1;
     row-gap: 20px;
     justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  support-block text-content {
+    grid-column: 4/-1;
+    grid-row: 1;
+  }
+  support-block ul {
+    grid-column: 3/-1;
   }
 }
 .radio-group label {
