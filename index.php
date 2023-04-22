@@ -1,6 +1,7 @@
 <?php
-include('/live-config.php');
+
 include('router/functions.php');
+define('BASE_URL', 'http://jessedevs.info/');
 
 $metaImage = $pageData['metaImage'];
 $desc = $pageData['intro'];
