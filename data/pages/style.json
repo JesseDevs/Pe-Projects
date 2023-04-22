@@ -31,6 +31,14 @@
 			"details": ""
 		},
 		{
+			"module": "support-block",
+			"text": [
+				"This module gives you the opportunity to add some additional text to a page to help further explain some ideas.",
+				"Ment for small paragraphs to support the page.",
+				"Very easy to incorporate into various pages if need."
+			]
+		},
+		{
 			"module": "project-section",
 			"heading": "Projects Section",
 			"intro": "Cute little intro",
@@ -106,11 +114,11 @@
 			"links": [
 				{
 					"title": "home link",
-					"link": "?page=home"
+					"link": "/"
 				},
 				{
 					"title": "projects link",
-					"link": "?page=projects"
+					"link": "/projects"
 				},
 				{
 					"title": "Random link",

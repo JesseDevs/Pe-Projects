@@ -9,6 +9,102 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
+    "\/_forms\/area.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/area.php",
+      "oF" : 0
+    },
+    "\/_forms\/count-string.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/count-string.php",
+      "oF" : 0
+    },
+    "\/_forms\/driving-age.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/driving-age.php",
+      "oF" : 0
+    },
+    "\/_forms\/hello.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/hello.php",
+      "oF" : 0
+    },
+    "\/_forms\/interest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/interest.php",
+      "oF" : 0
+    },
+    "\/_forms\/madlib.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/madlib.php",
+      "oF" : 0
+    },
+    "\/_forms\/paint-calc.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/paint-calc.php",
+      "oF" : 0
+    },
+    "\/_forms\/password-check.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/password-check.php",
+      "oF" : 0
+    },
+    "\/_forms\/quote.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/quote.php",
+      "oF" : 0
+    },
+    "\/_forms\/retire.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/retire.php",
+      "oF" : 0
+    },
+    "\/_forms\/self-checkout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/self-checkout.php",
+      "oF" : 0
+    },
+    "\/_forms\/simple-math.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_forms\/simple-math.php",
+      "oF" : 0
+    },
     "\/_projects\/audiophile\/audiophile-data\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
@@ -50126,6 +50222,14 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/.htaccess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.htaccess",
+      "oF" : 0
+    },
     "\/archive\/003-home-page-website\/home-page.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -52773,102 +52877,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/forms\/area.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/area.php",
-      "oF" : 0
-    },
-    "\/forms\/count-string.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/count-string.php",
-      "oF" : 0
-    },
-    "\/forms\/driving-age.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/driving-age.php",
-      "oF" : 0
-    },
-    "\/forms\/hello.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/hello.php",
-      "oF" : 0
-    },
-    "\/forms\/interest.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/interest.php",
-      "oF" : 0
-    },
-    "\/forms\/madlib.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/madlib.php",
-      "oF" : 0
-    },
-    "\/forms\/paint-calc.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/paint-calc.php",
-      "oF" : 0
-    },
-    "\/forms\/password-check.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/password-check.php",
-      "oF" : 0
-    },
-    "\/forms\/quote.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/quote.php",
-      "oF" : 0
-    },
-    "\/forms\/retire.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/retire.php",
-      "oF" : 0
-    },
-    "\/forms\/self-checkout.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/self-checkout.php",
-      "oF" : 0
-    },
-    "\/forms\/simple-math.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/forms\/simple-math.php",
-      "oF" : 0
-    },
     "\/images\/background\/landscape.jpg" : {
       "ft" : 16384,
       "iS" : 31346,
@@ -53363,6 +53371,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/index.php",
+      "oF" : 0
+    },
+    "\/live-config.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/live-config.php",
+      "oF" : 0
+    },
+    "\/local-config.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/local-config.php",
       "oF" : 0
     },
     "\/notes\/lesson-notes.md" : {

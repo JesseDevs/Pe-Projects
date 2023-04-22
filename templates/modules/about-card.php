@@ -16,7 +16,7 @@
 	if ($page == "home") { ?>
 
 		<action-links>
-			<a class="action-link" href='?page=about' />More...</a>
+			<a class="action-link" href='/about' />More...</a>
 			<a class="action-link" href='https://jessedevs.substack.com' />My blog</a>
 		</action-links>
 

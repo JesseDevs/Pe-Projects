@@ -93,3 +93,5 @@ wp-content/plugins/akismet*
 *.avi
 /.htaccess
 /config.php
+/live-config.php
+/local-config.php

@@ -11,11 +11,11 @@
 			"links": [
 				{
 					"title": "home",
-					"link": "?page=home"
+					"link": "/"
 				},
 				{
 					"title": "projects",
-					"link": "?page=projects"
+					"link": "projects"
 				},
 				{
 					"title": "Music?",

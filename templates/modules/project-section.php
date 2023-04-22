@@ -17,7 +17,7 @@
 			<text-content>
 				<h3 class='chant-voice'>${projectsArray[currentIndex].title}</h3>
 				<p class="project-detail ">${projectsArray[currentIndex].detail}</p>
-				<a class="action-link" href="?page=project&id=${projectsArray[currentIndex].id}">Click!</a>
+				<a class="action-link" href="projects/${projectsArray[currentIndex].id}">Click!</a>
 			</text-content>
 		`;
 	}

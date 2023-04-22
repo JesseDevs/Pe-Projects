@@ -2,7 +2,7 @@
 	<inner-column>
 
 		<div class="box-container">
-			<a href="?page=home">
+			<a href="/">
 				<div class="cube">
 					<div class="face top"></div>
 					<div class="face bottom"></div>
@@ -17,22 +17,15 @@
 		<nav class='main-menu'>
 			<ul>
 
-				<li><a href="?page=home" class=" <?php activePage("home") ?>">Home</a></li>
-				<li><a href="?page=about" class=" <?php activePage("about") ?>">About</a></li>
-				<li><a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a></li>
-				<li class='always-in-menu'>
-					<a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
+				<li>
+					<a href="/" class=" <?php activePage("home") ?>">Home</a>
 				</li>
-				<li class='always-in-menu'>
-					<a href="?page=forms " class="<?php activePage("forms") ?>">Forms</a>
+				<li>
+					<a href="/about" class=" <?php activePage("about") ?>">About</a>
 				</li>
-				<li class='always-in-menu'>
-					<a href="?page=layouts " class="<?php activePage("layouts") ?>">Layouts</a>
+				<li>
+					<a href="/projects" class=" <?php activePage("projects") ?>">Projects</a>
 				</li>
-				<li class='always-in-menu'>
-					<a href="?page=style " class="<?php activePage("style") ?>">Style Guide</a>
-				</li>
-
 			</ul>
 
 		</nav>
@@ -45,25 +38,25 @@
 		<nav class="burger">
 			<ul>
 				<li class="small-size">
-					<a href="?page=home" class=" <?php activePage("home") ?>">Home</a>
+					<a href="/" class=" <?php activePage("home") ?>">Home</a>
 				</li>
 				<li class="small-size">
-					<a href="?page=about" class=" <?php activePage("about") ?>">About</a>
+					<a href="/about" class=" <?php activePage("about") ?>">About</a>
 				</li>
 				<li class="small-size">
-					<a href="?page=projects" class=" <?php activePage("projects") ?>">Projects</a>
+					<a href="/projects" class=" <?php activePage("projects") ?>">Projects</a>
 				</li>
 				<li class='always-in-menu'>
-					<a href="?page=writing " class="<?php activePage("writing") ?>">Writing</a>
+					<a href="/writing ">Writing</a>
 				</li>
 				<li class='always-in-menu'>
-					<a href="?page=forms" class="<?php activePage("forms") ?>">Forms</a>
+					<a href="/forms">Forms</a>
 				</li>
 				<li class='always-in-menu'>
-					<a href="?page=layouts " class="<?php activePage("layouts") ?>">Layouts</a>
+					<a href="/layouts">Layouts</a>
 				</li>
 				<li class='always-in-menu'>
-					<a href="?page=style " class="<?php activePage("style") ?>">Guide</a>
+					<a href="/style ">Guide</a>
 				</li>
 			</ul>
 

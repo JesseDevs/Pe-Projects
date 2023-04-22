@@ -29,7 +29,7 @@ $intro = $section['intro'] ?? "Check it out!";
 						<p class="intro"><?= $formThing['intro'] ?></p>
 					</sub-heading>
 
-					<?php include("forms/" . $formThing['file-name'] . ".php") ?>
+					<?php include("_forms/" . $formThing['file-name'] . ".php") ?>
 				</form-box>
 			</li>
 		<?php } ?>

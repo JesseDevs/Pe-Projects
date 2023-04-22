@@ -1,4 +1,6 @@
-<?php include('router/functions.php');
+<?php
+include('local-config.php');
+include('router/functions.php');
 
 $metaImage = $pageData['metaImage'];
 $desc = $pageData['intro'];
@@ -21,6 +23,7 @@ if (isset($_COOKIE['scrollPosition'])) {
 
 <head>
 	<meta charset="UTF-8">
+	<base href='<?= BASE_URL ?>' />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jesse Felix Personal Site: <?= ucfirst($page); ?> Page</title>
 	<meta name='description' content="<?= $desc ?>">
