@@ -45,14 +45,14 @@ window.addEventListener('click', function (event) {
 		body.classList.toggle('overflow');
 	}
 
-	if (header.classList.contains('display-menu') || body.classList.contains('overflow')) {
+	if (header.classList.contains('open-menu') || body.classList.contains('overflow')) {
 		if (!event.target.matches('header *')) {
-			header.classList.remove('display-menu');
+			header.classList.remove('open-menu');
 			body.classList.remove('overflow');
 		}
 
-		if (event.target.matches('header.display-menu .burger')) {
-			header.classList.remove('display-menu');
+		if (event.target.matches('header.open-menu .burger')) {
+			header.classList.remove('open-menu');
 			body.classList.remove('overflow');
 		}
 	}
