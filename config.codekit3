@@ -54126,6 +54126,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/wedding\/css\/modules\/landing-heading.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/wedding\/css\/modules\/landing-heading.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/wedding\/css\/reset.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -54236,6 +54251,30 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/wedding\/images\/grain.webp" : {
+      "ft" : 8388608,
+      "iS" : 6210,
+      "oA" : 0,
+      "oAP" : "\/wedding\/images\/grain.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/wedding\/images\/noise.png" : {
+      "ft" : 32768,
+      "iS" : 3113740,
+      "oA" : 0,
+      "oAP" : "\/wedding\/images\/noise.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/wedding\/index.php" : {
       "cB" : 0,

@@ -3,6 +3,16 @@
 
 		<nav>
 			<div class="footer-wrapper">
+				<h4 class='strict-voice'>Page Links</h4>
+				<ul>
+
+					<li><a href="?page=home">Home</a></li>
+					<li><a href="?page=registry">Registry</a></li>
+
+				</ul>
+			</div>
+
+			<div class="footer-wrapper">
 				<h4 class='strict-voice'>Contact</h4>
 				<ul class='socials'>
 

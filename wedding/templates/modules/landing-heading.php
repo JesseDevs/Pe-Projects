@@ -2,21 +2,27 @@
 $heading = $section['heading'] ?? ucfirst($page);
 ?>
 
-<landing-heading class='grid-template'>
+<landing-heading class='grid-template aurora-bg'>
 	<text-content class='title'>
 		<h1><?= $heading ?></h1>
 		<p class='intro'> <?= $section["intro"] ?></p>
 	</text-content>
 
+	<div class='info-block'>
 
-	<picture class="landing-image">
-		<?php if (isset($section['big-image'])) { ?>
-			<source srcset="<?= $section['big-image'] ?>" media="(min-width: 720px)">
-		<?php } ?>
+		<h2 class='attention-voice pro'>
+			When & Where?
+		</h2>
+		<p>
+			Old Town Wedding & Event Center
+		</p>
 
-		<img src=" <?= $section['image'] ?>" alt="comp" loading='lazy'>
-	</picture>
+		<p>
+			8276 W MONROE ST. Peoria, AZ 85345
+		</p>
+	</div>
 
-	<a class='action-link' href="#contact" onclick="scrollToSection()">Let's Connect</a>
-
+	<div class="floating-square green rectangle"></div>
+	<div class="floating-square orange square"></div>
+	<div class="floating-square blue block"></div>
 </landing-heading>
