@@ -17,7 +17,7 @@
 	<script src="https://file.myfontastic.com/Gk9diYaWZqybG4GjyZVqR6/icons.js"></script>
 </head>
 
-<body class='<?= $page ?>'>
+<body>
 
 	<?php
 	include('templates/components/site-header.php');
