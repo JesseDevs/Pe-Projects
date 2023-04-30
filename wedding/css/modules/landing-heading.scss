@@ -1,0 +1,105 @@
+.has-landing-heading {
+	height: 100%;
+}
+
+landing-heading {
+	display: grid;
+	width: 100%;
+	height: 80vh;
+	place-items: center;
+	padding-bottom: 280px;
+
+	text-content {
+		display: flex;
+		flex-direction: column;
+		gap: 3vh;
+
+		p {
+			max-width: 16ch;
+		}
+	}
+
+	h1 {
+		display: grid;
+		grid-template-columns: 100px 20% 1fr;
+
+		span:nth-of-type(2) {
+			grid-row: 2;
+			grid-column: 2/-1;
+		}
+
+		span:nth-of-type(3) {
+			grid-row: 3;
+			grid-column: 2/-1;
+		}
+	}
+
+	span.roar-voice {
+		font-family: 'Abril Fatface', cursive;
+	}
+
+	.floating-square {
+		position: absolute;
+		z-index: -1;
+	}
+
+	.green {
+		background-color: rgb(107, 109, 30);
+		width: 74%;
+		height: 225px;
+		left: -15%;
+		top: 9%;
+		opacity: .6;
+		filter: blur(.8px);
+	}
+
+	.orange {
+		background-color: rgb(202, 78, 39);
+
+		width: 53.1%;
+		height: 153px;
+		right: -12%;
+		top: 14%;
+		opacity: 0.6;
+		z-index: -2;
+		filter: blur(0.8px);
+	}
+
+	.blue {
+		background-color: rgb(30, 173, 182);
+		width: calc(100% + 1rem);
+		height: 200px;
+		left: -1rem;
+		top: 44%;
+		opacity: .9;
+		filter: blur(0.8px);
+	}
+
+	.info-block {
+		padding-top: 25%;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+.aurora-bg {
+
+	&:before {
+		position: absolute;
+		content: "";
+		z-index: -2;
+		top: -60%;
+		filter: blur(.4px);
+		bottom: 0;
+		width: 150%;
+		right: -50%;
+		background: url(../images/grain.webp) repeat, linear-gradient(83.21deg, rgb(169, 16, 75) 0%,
+				rgb(205, 155, 196) 100%);
+		background-blend-mode: overlay;
+
+		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, .5), transparent 70%);
+		mask-image: radial-gradient(rgba(0, 0, 0, .5), transparent 70%);
+
+	}
+}

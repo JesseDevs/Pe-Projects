@@ -1,0 +1,15 @@
+{
+	"id": "registry",
+	"title": "Registry",
+	"intro": "Welcome to my personal site! Here you can find a little about me, my work, my personality, and a way to get in contact.",
+	"metaImage": "https://peprojects.dev/alpha-4/jesse/images/details/laptop.jpg",
+	"sections": [
+		{
+			"module": "landing-heading",
+			"heading": "<span class='roar-voice'>Andrea</span> <span class='attention-voice'>&</span> <span class='roar-voice'>Menji</span> ",
+			"intro": "Getting married is only the beginning...",
+			"image": "images/details/comp.webp",
+			"big-image": "images/large-workspace.jpg"
+		}
+	]
+}
