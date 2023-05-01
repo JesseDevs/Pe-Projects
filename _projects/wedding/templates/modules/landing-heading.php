@@ -14,15 +14,17 @@ $heading = $section['heading'] ?? ucfirst($page);
 			When & Where?
 		</h2>
 		<p>
+			Saturday November 4th, 2023
+		</p>
+		<p>
 			Old Town Wedding & Event Center
 		</p>
 
 		<p>
-			8276 W MONROE ST. Peoria, AZ 85345
+			8276 W MONROE ST. Peoria, AZ
 		</p>
 	</div>
 
 	<div class="floating-square green rectangle"></div>
 	<div class="floating-square orange square"></div>
-	<div class="floating-square blue block"></div>
 </landing-heading>

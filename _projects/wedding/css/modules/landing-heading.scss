@@ -1,13 +1,12 @@
 .has-landing-heading {
-	height: 100%;
+	height: 90vh;
 }
 
 landing-heading {
 	display: grid;
 	width: 100%;
-	height: 80vh;
-	place-items: center;
-	padding-bottom: 280px;
+	height: 70vh;
+
 
 	text-content {
 		display: flex;
@@ -45,10 +44,10 @@ landing-heading {
 
 	.green {
 		background-color: rgb(107, 109, 30);
-		width: 74%;
-		height: 225px;
-		left: -15%;
-		top: 9%;
+		width: 185px;
+		height: 220px;
+		left: -1rem;
+		top: 60px;
 		opacity: .6;
 		filter: blur(.8px);
 	}
@@ -56,9 +55,9 @@ landing-heading {
 	.orange {
 		background-color: rgb(202, 78, 39);
 
-		width: 53.1%;
+		width: 129px;
 		height: 153px;
-		right: -12%;
+		left: 67%;
 		top: 14%;
 		opacity: 0.6;
 		z-index: -2;
@@ -76,10 +75,26 @@ landing-heading {
 	}
 
 	.info-block {
-		padding-top: 25%;
+		padding-top: 1rem;
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
+		position: relative;
+
+		h2 {
+			padding-bottom: 30px;
+		}
+
+		&:before {
+			content: "";
+			width: calc(100% + 2rem);
+			position: absolute;
+			left: -1rem;
+			top: -1rem;
+			background-color: rgb(30, 173, 182);
+			height: 100%;
+			filter: blur(0.8px);
+		}
 	}
 }
 
@@ -88,8 +103,8 @@ landing-heading {
 	&:before {
 		position: absolute;
 		content: "";
-		z-index: -2;
-		top: -60%;
+		z-index: -5;
+		top: -5%;
 		filter: blur(.4px);
 		bottom: 0;
 		width: 150%;
@@ -98,7 +113,7 @@ landing-heading {
 				rgb(205, 155, 196) 100%);
 		background-blend-mode: overlay;
 
-		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, .5), transparent 70%);
+		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, .4), transparent 70%);
 		mask-image: radial-gradient(rgba(0, 0, 0, .5), transparent 70%);
 
 	}

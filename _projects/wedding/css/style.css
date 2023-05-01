@@ -179,7 +179,7 @@ inner-column {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 3rem 1rem 4rem;
+  padding: 3rem 1rem;
   max-width: 1400px;
 }
 
@@ -563,6 +563,9 @@ code {
 header {
   z-index: 100;
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgba(242, 228, 217, 0.95);
 }
 header inner-column {
   padding: 1rem;
@@ -708,15 +711,13 @@ header.open-menu .burger-inner .bottom-bun {
 }
 
 .has-landing-heading {
-  height: 100%;
+  height: 90vh;
 }
 
 landing-heading {
   display: grid;
   width: 100%;
-  height: 80vh;
-  place-items: center;
-  padding-bottom: 280px;
+  height: 70vh;
 }
 landing-heading text-content {
   display: flex;
@@ -747,18 +748,18 @@ landing-heading .floating-square {
 }
 landing-heading .green {
   background-color: rgb(107, 109, 30);
-  width: 74%;
-  height: 225px;
-  left: -15%;
-  top: 9%;
+  width: 185px;
+  height: 220px;
+  left: -1rem;
+  top: 60px;
   opacity: 0.6;
   filter: blur(0.8px);
 }
 landing-heading .orange {
   background-color: rgb(202, 78, 39);
-  width: 53.1%;
+  width: 129px;
   height: 153px;
-  right: -12%;
+  left: 67%;
   top: 14%;
   opacity: 0.6;
   z-index: -2;
@@ -774,25 +775,44 @@ landing-heading .blue {
   filter: blur(0.8px);
 }
 landing-heading .info-block {
-  padding-top: 25%;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
+}
+landing-heading .info-block h2 {
+  padding-bottom: 30px;
+}
+landing-heading .info-block:before {
+  content: "";
+  width: calc(100% + 2rem);
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  background-color: rgb(30, 173, 182);
+  height: 100%;
+  filter: blur(0.8px);
 }
 
 .aurora-bg:before {
   position: absolute;
   content: "";
-  z-index: -2;
-  top: -60%;
+  z-index: -5;
+  top: -5%;
   filter: blur(0.4px);
   bottom: 0;
   width: 150%;
   right: -50%;
   background: url(../images/grain.webp) repeat, linear-gradient(83.21deg, rgb(169, 16, 75) 0%, rgb(205, 155, 196) 100%);
   background-blend-mode: overlay;
-  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.5), transparent 70%);
+  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.4), transparent 70%);
   mask-image: radial-gradient(rgba(0, 0, 0, 0.5), transparent 70%);
+}
+
+detail-block {
+  display: block;
+  width: 100%;
 }
 
 .pro {
