@@ -27,4 +27,6 @@ $heading = $section['heading'] ?? ucfirst($page);
 
 	<div class="floating-square green rectangle"></div>
 	<div class="floating-square orange square"></div>
+
+
 </landing-heading>
