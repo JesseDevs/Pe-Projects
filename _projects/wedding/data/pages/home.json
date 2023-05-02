@@ -13,10 +13,11 @@
 		},
 		{
 			"module": "detail-block",
-			"heading": "<span class='roar-voice'>Andrea</span> <span class='attention-voice'>&</span> <span class='roar-voice'>Menji</span> ",
-			"intro": "Getting married is only the beginning...",
-			"image": "images/details/comp.webp",
-			"big-image": "images/large-workspace.jpg"
+			"heading": "<span class='yell-voice'>When</span> <span class='attention-voice'>&</span> <span class='yell-voice'>Where?</span>"
+		},
+		{
+			"module": "rsvp-block",
+			"heading": "RSVP"
 		}
 	]
 }

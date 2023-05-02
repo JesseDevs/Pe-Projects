@@ -16,9 +16,21 @@
 						<span class="uppercase">Save</span> the <span class="uppercase"> Date</span>
 					</h3>
 				</li>
-				<li><a class='strict-voice' href="index.html">Home</a></li>
-				<li><a class='strict-voice' href="collection.html">Registry</a></li>
+				<li><a class='strict-voice' href="?page=home">Home</a></li>
+				<li><a class='strict-voice' href="?page=registry">Registry</a></li>
 			</ul>
+
+			<figure>
+				<picture class='heart'>
+					<img src="images/couple.jpg" alt="">
+				</picture>
+				<figcaption class='picture-note'>
+					To Andrea & Menji,<br>
+					with so much love!
+				</figcaption>
+			</figure>
+
+
 		</nav>
 	</inner-column>
 </header>

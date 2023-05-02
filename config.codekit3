@@ -48576,6 +48576,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/_projects\/wedding\/css\/modules\/rsvp-block.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/_projects\/wedding\/css\/modules\/rsvp-block.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/_projects\/wedding\/css\/reset.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -48687,6 +48702,32 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/_projects\/wedding\/images\/chapel.jpg" : {
+      "ft" : 16384,
+      "iS" : 1154319,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_projects\/wedding\/images\/chapel.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_projects\/wedding\/images\/couple.jpg" : {
+      "ft" : 16384,
+      "iS" : 588996,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_projects\/wedding\/images\/couple.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/_projects\/wedding\/images\/grain.webp" : {
       "ft" : 8388608,
       "iS" : 6210,
@@ -48784,6 +48825,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/_projects\/wedding\/templates\/modules\/landing-heading.php",
+      "oF" : 0
+    },
+    "\/_projects\/wedding\/templates\/modules\/rsvp-block.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_projects\/wedding\/templates\/modules\/rsvp-block.php",
       "oF" : 0
     },
     "\/_projects\/wedding\/templates\/pages\/standard.php" : {
