@@ -4,7 +4,7 @@
 		<h2 class='special-text pro'>
 			<?= $section['heading'] ?>
 		</h2>
-		<h3 class='strict-voice'>
+		<h3 class='strict-voice pro'>
 			November 4th, 2023
 		</h3>
 		<p>

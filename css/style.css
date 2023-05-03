@@ -1052,8 +1052,10 @@ select {
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 20px;
-  color: black option;
-  color-text-transform: uppercase;
+  color: black;
+}
+select option {
+  text-transform: uppercase;
 }
 
 label {

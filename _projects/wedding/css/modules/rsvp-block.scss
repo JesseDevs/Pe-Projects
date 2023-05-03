@@ -1,6 +1,10 @@
 rsvp-block {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 	width: 100%;
+	padding-bottom: 4rem;
+	scroll-margin-top: 80px;
 
 	form {
 		display: flex;
@@ -38,11 +42,40 @@ select {
 	font-family: "Montserrat", sans-serif;
 	padding: 10px 15px;
 	font-size: var(--step-0);
-	border: 2px solid rgba(0, 0, 0, 0.404);
+	border: 2px solid #464d55;
 	outline: none;
 	resize: none;
 }
 
+select {
+	appearance: none;
+	background-color: white;
+	background-image: url('../images/drop-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 20px;
+
+	color: black;
+
+	option {
+		text-transform: uppercase;
+	}
+}
+
+input:focus,
+textarea:focus {
+
+	border-color: rgba(70, 77, 85, 0.672);
+
+}
+
 textarea {
 	min-height: 100px;
+}
+
+.form-select {
+	position: relative;
+	grid-column: 2/-1;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
 }

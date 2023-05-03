@@ -78,13 +78,14 @@ a p {
 p a {
 	display: inline-block;
 	text-decoration: underline;
-	color: var(--color);
+	color: var(--white-mute);
 }
 
 p a:hover {
-	background-color: var(--color);
+	color: var(--orange);
+	filter: brightness(2);
 	transition: background-color .3s ease-in-out, color .3s ease-in-out;
-	color: white;
+
 }
 
 p {

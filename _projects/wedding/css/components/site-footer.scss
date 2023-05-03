@@ -4,5 +4,68 @@ footer {
 
 	inner-column {
 		padding: 2rem 1rem;
+		padding-top: 3rem;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+
+		p {
+			text-align: right;
+
+
+
+			a {
+				padding: 0 5px;
+
+			}
+		}
 	}
+
+	.footer-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		padding: 0 10px;
+
+		h4 {
+			text-decoration: underline;
+		}
+	}
+
+	nav {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+		grid-gap: 40px 15px;
+	}
+
+	nav ul {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		gap: 10px;
+
+		a {
+			padding: 10px 10px;
+			min-width: 70px;
+			border-left: 2px solid var(--orange);
+			line-height: 1.4;
+			transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+			&:hover {
+				color: var(--orange);
+				filter: brightness(2);
+			}
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.site-footer nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		row-gap: 20px;
+	}
+
 }

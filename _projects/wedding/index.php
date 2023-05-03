@@ -9,7 +9,6 @@
 	<title>Andrea and Menji’s Wedding. Save the Date.</title>
 	<meta name='description' content="">
 	<meta property="og:image" content="">
-	<meta http-equiv="Cache-Control" content="max-age=100" />
 
 	<link rel="icon" type="image/png" sizes="32x32" href="" />
 

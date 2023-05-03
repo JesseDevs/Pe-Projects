@@ -14,12 +14,29 @@ header {
 
 		p {
 			padding-top: 7px;
+
 			z-index: 2;
 			transition: color 500ms ease-in-out;
 			transition-delay: 100ms;
 			will-change: color;
 			font-size: 1.2rem;
 			font-weight: 500;
+
+			position: relative;
+
+			.save-date {
+				transition: color 500ms ease-in-out;
+				transition-delay: 100ms;
+				width: 200%;
+				font-family: "Delicious Handrawn", cursive;
+				font-size: var(--step-1);
+				position: absolute;
+				right: -34%;
+				top: -40%;
+				rotate: 4deg;
+				color: var(--purple);
+				text-align: end;
+			}
 		}
 	}
 }
@@ -83,16 +100,6 @@ nav.site-menu {
 		}
 	}
 
-	.picture-note {
-		font-family: 'Delicious Handrawn', cursive;
-		font-size: var(--step-2);
-		position: absolute;
-		right: 0;
-		top: 40%;
-		rotate: -20deg;
-		color: rgb(30, 173, 182);
-		;
-	}
 }
 
 header.open-menu {
@@ -100,6 +107,10 @@ header.open-menu {
 
 		p {
 			color: var(--white-mute);
+
+			.save-date {
+				color: var(--blue);
+			}
 		}
 	}
 
@@ -107,5 +118,6 @@ header.open-menu {
 		transform: translateY(0%);
 		opacity: 1;
 		bottom: 0;
+
 	}
 }

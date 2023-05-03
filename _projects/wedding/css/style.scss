@@ -7,6 +7,7 @@
 
 .pro {
 	font-family: 'Abril Fatface', cursive;
+	letter-spacing: .03em;
 }
 
 .special-text {
@@ -29,6 +30,15 @@
 	}
 }
 
+.picture-note {
+	font-family: 'Delicious Handrawn', cursive;
+	font-size: var(--step-2);
+	position: absolute;
+	right: 0;
+	top: 40%;
+	rotate: -20deg;
+	color: rgb(30, 173, 182);
+}
 
 .uppercase {
 	text-transform: uppercase;

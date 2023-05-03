@@ -48728,6 +48728,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/_projects\/wedding\/images\/drop-arrow.png" : {
+      "ft" : 32768,
+      "iS" : 11017,
+      "oA" : 0,
+      "oAP" : "\/_projects\/wedding\/images\/drop-arrow.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/_projects\/wedding\/images\/grain.webp" : {
       "ft" : 8388608,
       "iS" : 6210,
@@ -48751,6 +48764,14 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/_projects\/wedding\/images\/ring.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_projects\/wedding\/images\/ring.php",
+      "oF" : 0
     },
     "\/_projects\/wedding\/index.php" : {
       "cB" : 0,
@@ -48789,9 +48810,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/_projects\/wedding\/scripts\/file-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },

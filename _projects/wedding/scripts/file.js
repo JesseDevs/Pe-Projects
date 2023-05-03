@@ -1,5 +1,6 @@
 var header = document.querySelector('header');
 const body = document.querySelector('body');
+const captionToRSVP = '.caption-rsvp';
 
 const numberFormatter = Intl.NumberFormat('en-US');
 
@@ -12,6 +13,14 @@ function capitalizeFirstLetter(str) {
 	const capitalized = str.charAt(0).toUpperCase() + str.slice(1);
 
 	return capitalized;
+}
+
+function scrollToSection() {
+	event.preventDefault();
+	let destination = document.querySelector('#rsvp');
+	destination.scrollIntoView({
+		behavior: 'smooth',
+	});
 }
 
 window.addEventListener('click', function (event) {
@@ -39,5 +48,10 @@ window.addEventListener('click', function (event) {
 			top: 0,
 			behavior: 'smooth',
 		});
+	}
+
+	if (event.target.matches(captionToRSVP)) {
+		console.log('ye');
+		scrollToSection(event);
 	}
 });

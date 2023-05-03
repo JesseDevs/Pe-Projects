@@ -1,6 +1,11 @@
 <header class='main-tool-bar site-header'>
 	<inner-column>
-		<p>Nov. 4th</p>
+		<p>Nov. 4th
+			<span class='save-date'>
+				Save the Date
+			</span>
+		</p>
+
 		<button class="burger-btn">
 			<div class="burger-inner">
 				<div class="top-bun"></div>
@@ -11,11 +16,7 @@
 
 		<nav class="site-menu">
 			<ul>
-				<li>
-					<h3 class='pro attention-voice'>
-						<span class="uppercase">Save</span> the <span class="uppercase"> Date</span>
-					</h3>
-				</li>
+
 				<li><a class='strict-voice' href="?page=home">Home</a></li>
 				<li><a class='strict-voice' href="?page=registry">Registry</a></li>
 			</ul>
