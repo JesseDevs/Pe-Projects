@@ -847,7 +847,6 @@ header.open-menu .burger-inner .bottom-bun {
 landing-heading {
   display: grid;
   width: 100%;
-  overflow-x: hidden;
   row-gap: 70px;
 }
 landing-heading h1 {
@@ -1084,6 +1083,10 @@ textarea {
   grid-column: 2/-1;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .pro {
