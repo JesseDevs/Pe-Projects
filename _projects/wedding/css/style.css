@@ -844,6 +844,10 @@ header.open-menu .burger-inner .bottom-bun {
   background-color: var(--white-soft);
 }
 
+.has-landing-heading inner-column {
+  overflow-x: hidden;
+}
+
 landing-heading {
   display: grid;
   width: 100%;
