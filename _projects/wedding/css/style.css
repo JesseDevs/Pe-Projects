@@ -847,6 +847,7 @@ header.open-menu .burger-inner .bottom-bun {
 landing-heading {
   display: grid;
   width: 100%;
+  overflow-x: hidden;
   row-gap: 70px;
 }
 landing-heading h1 {
