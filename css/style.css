@@ -179,7 +179,7 @@ inner-column {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 3rem 1rem 4rem;
+  padding: 4rem 1rem;
   max-width: 1400px;
 }
 
@@ -630,7 +630,7 @@ code {
 .main-menu ul {
   display: flex;
   flex-direction: row;
-  gap: var(--s-small-space);
+  gap: calc(var(--s-small-space) + 5px);
   justify-content: flex-end;
   align-items: center;
 }
@@ -1089,7 +1089,7 @@ action-links {
   letter-spacing: 0.03em;
   font-weight: 500;
   width: 100%;
-  border: var(--thin) solid var(--color);
+  border: none;
   color: var(--white);
   text-align: center;
   text-transform: uppercase;
@@ -1099,13 +1099,12 @@ action-links {
   font-family: "IBM Plex Serif", serif;
 }
 .action-link + .action-link {
-  border: var(--thin) solid var(--color-super-light);
+  border: none;
   color: var(--black);
   background-color: var(--color-super-light);
 }
 .action-link + .action-link:hover {
   color: var(--white);
-  border: var(--thin) solid transparent;
   background-color: rgb(var(--color-rgb), 0.5);
 }
 
@@ -1278,7 +1277,6 @@ about-card p.about-content {
 }
 about-card .about-image {
   aspect-ratio: 5/6;
-  max-width: 350px;
   margin: 0 auto;
 }
 about-card .about-image img {
@@ -1412,7 +1410,7 @@ about-card action-links {
 }
 .card-design h3 {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 .card-design .span-title {
   width: fit-content;
@@ -1425,7 +1423,6 @@ about-card action-links {
   text-transform: uppercase;
   font-size: var(--step-4);
   color: rgb(var(--color-rgb), 0.9);
-  font-family: "Lato";
   font-weight: 700;
   filter: blur(1px);
 }
@@ -1450,13 +1447,6 @@ about-card action-links {
 .card-design text-content p,
 .card-design text-content .action-link {
   opacity: 0;
-}
-.card-design text-content .action-link {
-  background-color: var(--cube-color);
-  border: none;
-}
-.card-design text-content .action-link:hover {
-  background-color: var(--cube-line);
 }
 @media (hover: none) {
   .card-design text-content {
@@ -1553,7 +1543,6 @@ teaser-card.third {
 project-section {
   width: 100%;
   display: block;
-  margin-bottom: 50px;
 }
 project-section card-container {
   width: 100%;
@@ -1619,7 +1608,7 @@ project-section button.action-link:hover span {
   }
 }
 .has-contact-form {
-  min-height: 70vh;
+  min-height: 80vh;
   overflow: hidden;
 }
 
@@ -2919,6 +2908,11 @@ module p {
 }
 .has-layouts-page inner-column > article {
   border-top: var(--Xthick) solid var(--color-mute);
+}
+
+.has-a-module inner-column > * {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .grid-template {

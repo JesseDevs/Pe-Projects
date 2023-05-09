@@ -17,7 +17,7 @@
 			<text-content>
 				<h3 class='chant-voice'>${projectsArray[currentIndex].title}</h3>
 				<p class="project-detail ">${projectsArray[currentIndex].detail}</p>
-				<a class="action-link" href="?page=project&id=${projectsArray[currentIndex].id}">Click!</a>
+				<a class="action-link" href="?page=project&id=${projectsArray[currentIndex].id}">Details!</a>
 			</text-content>
 		`;
 	}
@@ -114,7 +114,7 @@
 	</card-container>
 
 	<button class='action-link' id="next-project-btn">
-		NEXT
+		NEXT CARD
 		<span>
 			<svg class="icon-arrow-right">
 				<use xlink:href="#icon-arrow-right"></use>

@@ -21,6 +21,6 @@ $heading = $section['heading'] ?? ucfirst($page);
 		<img src=" <?= $section['image'] ?>" alt="comp" loading='lazy'>
 	</picture>
 
-	<a class='action-link' href="#contact" onclick="scrollToSection()">Let's Connect</a>
+	<a class='action-link' href="#contact" onclick="scrollToSection()">Message ME</a>
 
 </landing-heading>

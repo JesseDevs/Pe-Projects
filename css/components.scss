@@ -62,7 +62,7 @@ action-links {
 	letter-spacing: .03em;
 	font-weight: 500;
 	width: 100%;
-	border: var(--thin) solid var(--color);
+	border: none;
 	color: var(--white);
 	text-align: center;
 	text-transform: uppercase;
@@ -72,13 +72,12 @@ action-links {
 	font-family: 'IBM Plex Serif', serif;
 
 	+.action-link {
-		border: var(--thin) solid var(--color-super-light);
+		border: none;
 		color: var(--black);
 		background-color: var(--color-super-light);
 
 		&:hover {
 			color: var(--white);
-			border: var(--thin) solid transparent;
 			background-color: rgb(var(--color-rgb), .5);
 		}
 	}

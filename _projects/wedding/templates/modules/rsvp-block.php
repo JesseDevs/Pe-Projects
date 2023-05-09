@@ -15,13 +15,13 @@
 
 
 	$to = "jessemerge2+wedding@gmail.com";
-	$message = $attending . $_POST['message'];
+	$message = $attending . "\r\n" . $_POST['message'];
 	$from = $_POST['email'];
 	$fName = $_POST['first'];
 	$lName = $_POST['last'];
 	$size = $_POST['size'];
 
-	$subject = $fName . $lName . " - RSVP: Party of " . $size;
+	$subject = $fName . " " . $lName . " - RSVP: Party of " . $size;
 	$headers = "From:" . $from;
 	mail($to, $subject, $message, $headers);
 } ?>

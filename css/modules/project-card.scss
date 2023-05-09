@@ -33,7 +33,7 @@
 
 	h3 {
 		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: 700;
 	}
 
 	.span-title {
@@ -47,7 +47,7 @@
 		text-transform: uppercase;
 		font-size: var(--step-4);
 		color: rgb(var(--color-rgb), .9);
-		font-family: 'Lato';
+
 		font-weight: 700;
 		filter: blur(1px);
 	}
@@ -79,14 +79,6 @@
 			opacity: 0;
 		}
 
-		.action-link {
-			background-color: var(--cube-color);
-			border: none;
-
-			&:hover {
-				background-color: var(--cube-line);
-			}
-		}
 
 	}
 

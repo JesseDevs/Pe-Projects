@@ -5,6 +5,11 @@
 @import 'components.scss';
 @import 'modules.scss';
 
+.has-a-module inner-column>* {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .grid-template {
 	display: grid;
 	grid-template-columns: 1fr 2fr;

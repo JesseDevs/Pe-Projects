@@ -25,8 +25,6 @@ if (isset($_COOKIE['scrollPosition'])) {
 	<title>Jesse Felix Personal Site: <?= ucfirst($page); ?> Page</title>
 	<meta name='description' content="<?= $desc ?>">
 	<meta property="og:image" content="<?= $metaImage ?>">
-	<meta http-equiv="Cache-Control" content="max-age=200" />
-
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/wolf.png" />
 
 	<link rel="stylesheet" href="css/style.css">

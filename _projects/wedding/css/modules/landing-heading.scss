@@ -32,7 +32,7 @@ landing-heading {
 
 	.floating-square {
 		position: absolute;
-		z-index: -1;
+		z-index: -4;
 	}
 
 	.green {
@@ -42,6 +42,7 @@ landing-heading {
 		left: -1rem;
 		top: 60px;
 		opacity: .6;
+
 		filter: blur(.8px);
 	}
 
@@ -52,7 +53,7 @@ landing-heading {
 		left: calc(70% - 1rem);
 		top: 160px;
 		opacity: 0.6;
-		z-index: -2;
+
 		filter: blur(0.8px);
 	}
 
@@ -64,7 +65,7 @@ landing-heading {
 		left: calc(70% - 1rem);
 		top: 310px;
 		opacity: 0.6;
-		z-index: -2;
+
 		filter: blur(0.8px);
 	}
 
@@ -85,12 +86,13 @@ landing-heading {
 		left: calc(70% - 1rem);
 		top: 80px;
 		opacity: 0.6;
-		z-index: -2;
+
 		filter: blur(0.8px);
 	}
 
 	figure {
 		padding-top: 40px;
+		max-width: 500px;
 	}
 
 
@@ -101,8 +103,8 @@ landing-heading {
 		border-top-left-radius: 50%;
 		border-top-right-radius: 50%;
 		overflow: hidden;
-		max-height: 500px;
-		max-width: 500px;
+		max-height: 600px;
+
 		pointer-events: none;
 	}
 
@@ -130,11 +132,11 @@ landing-heading {
 .contains-ring {
 	position: absolute;
 	/* top: 5px; */
-	right: -15px;
+	left: 60%;
 	width: 100px;
 	height: 100px;
-	bottom: 50%;
-	z-index: -10;
+	bottom: 45%;
+	z-index: -1;
 	rotate: 10deg;
 	transform: scaleX(-1);
 
