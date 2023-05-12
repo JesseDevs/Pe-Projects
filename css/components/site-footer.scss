@@ -55,12 +55,13 @@
 	a {
 		padding: 10px 5px;
 		font-size: var(--step--1);
+		font-weight: 500;
 		transition: color .3s ease-in-out;
 		color: var(--white);
 	}
 
 	a:hover {
-		background-color: var(--color);
+		background-color: var(--color-mute);
 	}
 }
 

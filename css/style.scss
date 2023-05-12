@@ -5,9 +5,13 @@
 @import 'components.scss';
 @import 'modules.scss';
 
-.has-a-module inner-column>* {
+.has-a-module inner-column>*:not(big-heading) {
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+main .has-a-module:nth-of-type(2) inner-column>* {
+	padding-top: 0px;
 }
 
 .grid-template {
@@ -27,7 +31,18 @@
 
 		action-links {
 			grid-column: 2/-1;
-			flex-direction: row;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+
+			.action-link {
+				grid-column: 2/-1 !important;
+			}
+
+			.action-link:first-of-type {
+				max-width: 90%;
+				grid-column: 1/1 !important;
+			}
 		}
 
 		a.action-link {
@@ -95,10 +110,34 @@
 	}
 }
 
+.fade-in {
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+}
 
-#menu-toggle:checked~.menu a:hover {
-	background-color: var(--accent);
+.fade-out {
+	animation-name: fade-out;
+	animation-duration: 0.5s;
+}
 
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
 }
 
 .gs_reveal {

@@ -36,7 +36,9 @@
 					<li><a href="https://twitter.com/Jesse_Devs">Twitter</a></li>
 					<li><a href="https://www.instagram.com/jessedude2/">Instagram</a></li>
 
-
+					<li>
+						<a href="mailto:jessemerge2@gmail.com?subject=Direct%Contact&body=Hello,">Direct Email</a>
+					</li>
 				</ul>
 			</div>
 

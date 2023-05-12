@@ -55,7 +55,7 @@ form-field {
 action-links {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	row-gap: 15px;
 }
 
 .action-link {

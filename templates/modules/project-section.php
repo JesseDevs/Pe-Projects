@@ -1,59 +1,76 @@
 <script>
 	let currentIndex = 0;
-	let nextIndex = currentIndex + 1;
-	let lastIndex = nextIndex + 1;
 
 	var projectsArray = <?= json_encode($projectsData); ?>;
 
+	console.log(projectsArray)
+
 	function reloadCard() {
 		const projectCard = document.querySelector('project-card');
+		const fadeOutTime = 500;
 
-		projectCard.innerHTML = `
-	
-			<img src="${projectsArray[currentIndex].thumbnail}" alt="" loading='lazy'>
-		
-			<span class="span-title">${projectsArray[currentIndex]['intro']}</span>
-		
-			<text-content>
-				<h3 class='chant-voice'>${projectsArray[currentIndex].title}</h3>
-				<p class="project-detail ">${projectsArray[currentIndex].detail}</p>
-				<a class="action-link" href="?page=project&id=${projectsArray[currentIndex].id}">Details!</a>
-			</text-content>
-		`;
+		projectCard.classList.add('fade-out');
+
+		setTimeout(() => {
+			projectCard.innerHTML = `
+      	<img src="${projectsArray[currentIndex].thumbnail}" alt="" loading='lazy'>
+      	<span class="span-title">${projectsArray[currentIndex]['intro']}</span>
+      	<text-content>
+      		<h3 class='chant-voice'>${projectsArray[currentIndex].title}</h3>
+      		<p class="project-detail ">${projectsArray[currentIndex].detail}</p>
+      		<a class="action-link" href="?page=project&id=${projectsArray[currentIndex].id}">Read Timeline</a>
+      	</text-content>`;
+
+			projectCard.classList.remove('fade-out');
+			projectCard.classList.add('fade-in');
+
+
+			setTimeout(() => {
+				projectCard.classList.remove('fade-in');
+			}, fadeOutTime);
+		}, fadeOutTime);
 	}
 
 	function teaserCard() {
-		const teaserCard = document.querySelector('teaser-card.second');
+		const teaserContainer = document.querySelector('card-container');
+		var pFiles = projectsArray[currentIndex].files;
+		var x = 0;
+		var template = '<ul>';
 
-		teaserCard.innerHTML = `
-	
-			<img src="${projectsArray[nextIndex].thumbnail}" alt="" loading='lazy'>
-			<span class="span-title">${projectsArray[nextIndex]['intro']}</span>
-			<text-content>
-				<h3 class='chant-voice'>${projectsArray[nextIndex].title}</h3>
-			</text-content>
-			<button id='second'> </button>
-		`;
-	}
+		pFiles.forEach((f, i) => {
+			if (projectsArray[currentIndex].id === 'CMS') {
+				if (i === 2) {
+					return;
+				}
+			}
 
-	function anotherTeaserCard() {
-		const teaserCard = document.querySelector('teaser-card.third');
+			if (projectsArray[currentIndex].id === 'APP') {
+				if (i === 0) {
+					return;
+				}
+			}
 
-		teaserCard.innerHTML = `
-	
-			<img src="${projectsArray[lastIndex].thumbnail}" alt="" loading='lazy'>
-			<span class="span-title">${projectsArray[lastIndex]['intro']}</span>
-			<text-content>
-				<h3 class='chant-voice'>${projectsArray[lastIndex].title}</h3>
-			</text-content>
-			<button id='third'> </button>
-		`;
+			x++;
+			template += `<li>
+				<teaser-card class='file-00${x} card-design'>
+					<a href='${f.link}' target="project-page">
+						<span class="span-title">Project 00${x}</span>
+						<text-content>
+							<h3 class='chant-voice'>${f.title}</h3>
+						</text-content>
+					</a>
+				</teaser-card>
+			</li>`;
+
+		});
+
+		template += '</ul>';
+		teaserContainer.innerHTML = template;
 	}
 
 	function releaseCards() {
 		reloadCard();
 		teaserCard();
-		anotherTeaserCard();
 	}
 
 	window.addEventListener('DOMContentLoaded', releaseCards);
@@ -63,35 +80,13 @@
 			loadNextProject();
 			releaseCards();
 		}
-
-		if (event.target.matches('#second')) {
-			loadNextProject();
-			releaseCards();
-		}
-
-
-		if (event.target.matches('#third')) {
-			loadNextProject();
-			loadNextProject();
-			releaseCards();
-		}
 	});
 
 	function loadNextProject() {
 		currentIndex++;
-		nextIndex++;
-		lastIndex++;
 
 		if (currentIndex >= projectsArray.length) {
 			currentIndex = 0;
-		}
-
-		if (nextIndex >= projectsArray.length) {
-			nextIndex = 0;
-		}
-
-		if (lastIndex >= projectsArray.length) {
-			lastIndex = 0;
 		}
 	}
 </script>
@@ -105,6 +100,9 @@
 	<project-card class='card-design'></project-card>
 	<card-container>
 
+		<teaser-card class='first card-design'>
+		</teaser-card>
+
 		<teaser-card class='second card-design'>
 		</teaser-card>
 
@@ -113,13 +111,10 @@
 
 	</card-container>
 
-	<button class='action-link' id="next-project-btn">
-		NEXT CARD
-		<span>
-			<svg class="icon-arrow-right">
-				<use xlink:href="#icon-arrow-right"></use>
-			</svg>
-		</span>
+	<button class='next-btn' id="next-project-btn">
+		<svg class="icon-arrow-right">
+			<use xlink:href="#icon-arrow-right"></use>
+		</svg>
 	</button>
 
 </project-section>
