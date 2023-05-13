@@ -111,6 +111,25 @@ project-card.card-design {
 }
 
 @media(hover: hover) {
+	button.next-btn:hover+project-card {
+		text-content {
+			transform: none;
+
+			p,
+			.action-link {
+				opacity: 1;
+			}
+		}
+
+		.span-title {
+			transform: none;
+		}
+
+		img {
+			transition: opacity .3s ease-in;
+		}
+	}
+
 	project-card:hover {
 
 		text-content {

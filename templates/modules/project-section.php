@@ -32,7 +32,8 @@
 		const teaserContainer = document.querySelector('card-container');
 		var pFiles = projectsArray[currentIndex].files;
 		var x = 0;
-		var template = '<ul>';
+
+		var template = '<div class="teasers-container">';
 
 		pFiles.forEach((f, i) => {
 			if (projectsArray[currentIndex].id === 'CMS') {
@@ -48,21 +49,30 @@
 			}
 
 			x++;
-			template += `<li>
-				<teaser-card class='file-00${x} card-design'>
+			template += `
+				<teaser-card class='file-00${x} card-design '>
 					<a href='${f.link}' target="project-page">
+					<img src="/images/thumbnails/teaser-image.jpg" alt="" loading='lazy'>
 						<span class="span-title">Project 00${x}</span>
 						<text-content>
 							<h3 class='chant-voice'>${f.title}</h3>
 						</text-content>
 					</a>
 				</teaser-card>
-			</li>`;
+			`;
 
 		});
 
-		template += '</ul>';
-		teaserContainer.innerHTML = template;
+		template += '</div>';
+		setTimeout(() => {
+			teaserContainer.innerHTML = template;
+		}, 500);
+
+		const teaserCards = document.querySelectorAll('teaser-card');
+		teaserCards.forEach((card) => {
+			card.classList.add('fade-out');
+		});
+
 	}
 
 	function releaseCards() {
@@ -94,24 +104,16 @@
 		<p class='intro'><?= $section['intro']; ?></p>
 	</text-content>
 
-	<project-card class='card-design'></project-card>
-	<card-container>
-
-		<teaser-card class='first card-design'>
-		</teaser-card>
-
-		<teaser-card class='second card-design'>
-		</teaser-card>
-
-		<teaser-card class='third card-design'>
-		</teaser-card>
-
-	</card-container>
-
 	<button class='next-btn' id="next-project-btn">
 		<svg class="icon-arrow-right">
 			<use xlink:href="#icon-arrow-right"></use>
 		</svg>
 	</button>
+	<project-card class='card-design'></project-card>
+	<card-container>
+
+	</card-container>
+
+
 
 </project-section>

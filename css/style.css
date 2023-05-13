@@ -1474,6 +1474,19 @@ project-card.card-design {
 }
 
 @media (hover: hover) {
+  button.next-btn:hover + project-card text-content {
+    transform: none;
+  }
+  button.next-btn:hover + project-card text-content p,
+  button.next-btn:hover + project-card text-content .action-link {
+    opacity: 1;
+  }
+  button.next-btn:hover + project-card .span-title {
+    transform: none;
+  }
+  button.next-btn:hover + project-card img {
+    transition: opacity 0.3s ease-in;
+  }
   project-card:hover text-content {
     transform: none;
   }
@@ -1496,6 +1509,7 @@ project-section project-card {
   grid-column: 1/-1;
 }
 project-section button.next-btn {
+  z-index: 10;
   border: none;
   position: absolute;
   top: 50%;
@@ -1525,7 +1539,7 @@ project-section button.next-btn:hover svg {
 }
 @media (min-width: 750px) {
   project-section button.next-btn {
-    top: 50%;
+    top: 55%;
     right: initial;
     left: 45%;
   }
@@ -1554,21 +1568,8 @@ card-container {
   opacity: 0;
 }
 
-teaser-card.card-design {
-  height: 8rem;
-  background-image: url(/images/thumbnails/teaser-image.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-teaser-card.card-design::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(106, 106, 106, 0.059);
+teaser-card.card-design img {
+  opacity: 0.7;
 }
 teaser-card.card-design a {
   height: 100%;
@@ -1609,15 +1610,15 @@ teaser-card.card-design button {
     opacity: 1;
     height: 28rem;
   }
-  card-container ul {
+  card-container .teasers-container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding: 1px;
+    padding: 10px;
   }
-  card-container ul li {
+  card-container .teasers-container teaser-card {
     flex-grow: 1;
     aspect-ratio: 1/1;
   }
