@@ -68,6 +68,14 @@ if (isset($_COOKIE['scrollPosition'])) {
 			document.cookie = `scrollPosition=0`;
 		});
 	</script>
+
+	<?php if ($page !== 'home') { ?>
+		<style>
+			main .has-a-module:nth-of-type(2) inner-column>* {
+				padding-top: 0px;
+			}
+		</style>
+	<?php } ?>
 </body>
 
 </html>

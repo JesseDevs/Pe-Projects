@@ -1,9 +1,6 @@
 <script>
 	let currentIndex = 0;
-
 	var projectsArray = <?= json_encode($projectsData); ?>;
-
-	console.log(projectsArray)
 
 	function reloadCard() {
 		const projectCard = document.querySelector('project-card');

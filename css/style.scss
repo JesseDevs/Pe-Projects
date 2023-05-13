@@ -5,13 +5,9 @@
 @import 'components.scss';
 @import 'modules.scss';
 
-.has-a-module inner-column>*:not(big-heading) {
+.has-a-module inner-column>*:not(big-heading):not(landing-heading) {
 	padding-top: 50px;
 	padding-bottom: 50px;
-}
-
-main .has-a-module:nth-of-type(2) inner-column>* {
-	padding-top: 0px;
 }
 
 .grid-template {

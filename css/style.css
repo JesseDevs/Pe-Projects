@@ -1389,11 +1389,8 @@ about-card action-links {
   color: var(--black);
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.5s ease-in;
-  background-color: #c1bfbf;
+  background-color: #ededed;
   cursor: initial;
-}
-.card-design:hover {
-  box-shadow: 0 5px 25px -5px var(--color-soft);
 }
 .card-design picture {
   width: 100%;
@@ -1408,6 +1405,11 @@ about-card action-links {
   left: 0;
   opacity: 0.5;
   transition: opacity 0.2s ease-out;
+}
+@media (prefers-color-scheme: light) {
+  .card-design img {
+    opacity: 0.3;
+  }
 }
 .card-design h3 {
   text-transform: uppercase;
@@ -1454,7 +1456,7 @@ about-card action-links {
     transform: none;
   }
   .card-design text-content p,
-.card-design text-content .action-link {
+  .card-design text-content .action-link {
     opacity: 1;
   }
   .card-design .span-title {
@@ -1476,7 +1478,7 @@ project-card.card-design {
     transform: none;
   }
   project-card:hover text-content p,
-project-card:hover text-content .action-link {
+  project-card:hover text-content .action-link {
     opacity: 1;
   }
   project-card:hover .span-title {
@@ -1515,14 +1517,15 @@ project-section button.next-btn svg {
   transition: fill 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 project-section button.next-btn:hover {
-  background-color: var(--black-off);
+  background-color: var(--white-mute);
+  outline: 2px solid var(--color);
 }
 project-section button.next-btn:hover svg {
   fill: var(--color) !important;
 }
 @media (min-width: 750px) {
   project-section button.next-btn {
-    top: 45%;
+    top: 50%;
     right: initial;
     left: 45%;
   }
@@ -1552,19 +1555,26 @@ card-container {
 }
 
 teaser-card.card-design {
-  grid-column: 4/-1;
   height: 8rem;
-  align-self: flex-end;
-  justify-self: flex-end;
+  background-image: url(/images/thumbnails/teaser-image.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+teaser-card.card-design::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(106, 106, 106, 0.059);
 }
 teaser-card.card-design a {
   height: 100%;
 }
 teaser-card.card-design text-content {
   pointer-events: none;
-}
-teaser-card.card-design:hover {
-  box-shadow: 0px 10px 30px -5px var(--color-soft);
 }
 teaser-card.card-design .span-title {
   top: 10px;
@@ -1636,6 +1646,7 @@ contact-form {
   width: 100%;
   position: relative;
   scroll-margin-top: 100px;
+  padding-bottom: 100px !important;
 }
 contact-form form {
   row-gap: 20px;
@@ -2339,7 +2350,7 @@ support-block text-content {
     grid-template-columns: 3rem 1fr 1fr 2fr;
   }
   support-block ul,
-support-block text-content {
+  support-block text-content {
     grid-column: 2/-1;
   }
   support-block ul {
@@ -2915,13 +2926,9 @@ module p {
   border-top: var(--Xthick) solid var(--color-mute);
 }
 
-.has-a-module inner-column > *:not(big-heading) {
+.has-a-module inner-column > *:not(big-heading):not(landing-heading) {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-main .has-a-module:nth-of-type(2) inner-column > * {
-  padding-top: 0px;
 }
 
 .grid-template {
