@@ -1620,7 +1620,6 @@ teaser-card.card-design button {
   }
   card-container .teasers-container teaser-card {
     flex-grow: 1;
-    aspect-ratio: 1/1;
   }
 }
 .has-contact-form {
