@@ -16,14 +16,14 @@
 			{
 				"title": "Legends",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/legends",
-				"link": "https://jessedevs.info//_projects/legends/",
+				"link": "https://jessedevs.info/_projects/legends/",
 				"image": "images/projects/legends.png",
 				"p": "The <em>‘Legends’</em> project showcases the initial ideas for approaching a CMS. It is a static data project that uses JSON, a standard lightweight data interchange format that is easy to read and write in the industry. Since static data is never changing, this project can only render the data onto a page. If any user wants to change the data, they would need to access the JSON file directly in the project. This enables a web page to be generated quickly as the server does not need to query a database for every page load."
 			},
 			{
 				"title": "Fighters",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/fighters-crud/",
-				"link": "https://jessedevs.info//_projects/fighters-crud/",
+				"link": "https://jessedevs.info/_projects/fighters-crud/",
 				"image": "images/projects/fighters.png",
 				"p": "The <em>‘Fighters’</em> project is the next level up. It is a lean PHP CRUD (create, read, update, and delete) project that enables users to create their own list of fighters according to their preferences. Besides displaying the items on the frontend, there is also a form on the website that accepts a POST request on the backend to push the user's inputted data into the JSON index file. The user can then choose to delete the created item or update it if there are any mistakes."
 			},
@@ -57,20 +57,20 @@
 			{
 				"title": "Javascript Forms",
 				"git": "https://github.com/JesseDevs/pe-projects/blob/main/scripts/file.js",
-				"link": "https://jessedevs.info//?page=forms",
+				"link": "https://jessedevs.info/?page=forms",
 				"p": "There are some forms available for user input in my <em>Forms</em> tab on my personal site. These forms were based on challenges from ‘Exercises for Programmers’ and were initially made purely with PHP server-side rendering. By using JavaScript, I can showcase a few more tricks on the frontend when the user interacts with these items. For example, submitting a form saves a position on the screen to scroll to again."
 			},
 			{
 				"title": "Workout App",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/workout-app//",
-				"link": "https://jessedevs.info//_projects/workout-app/",
+				"link": "https://jessedevs.info/_projects/workout-app/",
 				"image": "images/projects/workout.png",
 				"p": "My <em>‘Workout APP’</em> took a simple interface from the forms and created more than just a short answer for the user. I often have to remember the main body focus for my workout and the types of sets needed. This app is a simple way to create short lists of workouts dedicated to the muscle group. It was built using local storage and JavaScript class methods to generate app functionality, while using imports and exports to create templates for each page."
 			},
 			{
 				"title": "Bill Split App",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/bill-app/",
-				"link": "https://jessedevs.info//_projects/bill-app/",
+				"link": "https://jessedevs.info/_projects/bill-app/",
 				"image": "images/projects/bill.png",
 				"p": "The <em>‘Bill Split APP’</em> was inspired by a night out with friends and the effort it took to even divide the bill. It has an interface with more personality and functionality. I used similar routing in Vanilla JavaScript to create multiple page templates."
 			},
@@ -98,21 +98,21 @@
 		"files": [
 			{
 				"title": "Garden",
-				"link": "https://jessedevs.info//?page=layouts",
+				"link": "https://jessedevs.info/?page=layouts",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/css/layouts",
 				"image": "images/projects/garden.png",
 				"p": "In the ‘Layouts’ tab, you can check out some layout designs. This page is a metaphor for a garden because, just like in a garden, you need to continue watering your skills to create a beautiful piece of art. These layouts originate from images that were then crafted into templates that can be reused with different data."
 			},
 			{
 				"title": "Theme Challenge",
-				"link": "https://jessedevs.info//_projects/theme-challenge/",
+				"link": "https://jessedevs.info/_projects/theme-challenge/",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/theme-challenge",
 				"image": "images/projects/theme.png",
 				"p": "The ‘Theme’ project was created with the intent of using a standard template and shaping it to match an industry standard. The idea was to be able to take influences from a well-known site in a specific category and using that to shape our template. To make the project stand out, I had to be able to capture the professional style and imply skill through my design."
 			},
 			{
 				"title": "Wireframe",
-				"link": "https://jessedevs.info//_projects/wireframe/",
+				"link": "https://jessedevs.info/_projects/wireframe/",
 				"git": "https://github.com/JesseDevs/pe-projects/tree/main/_projects/wireframe",
 				"image": "images/projects/wireframe.png",
 				"p": "A wireframe is the skeleton of a website. It is commonly used to provide structure and generate layout ideas for a product during its development. This design project aimed to showcase the ability to turn a wireframe into a presentable project with reusable components. The entire project began as a ‘Figma’ file, which I used as a guideline to turn the concept into reality. There were moments when I discovered that some components needed to be adjusted to better capture the overall product, which varied from the concept design."
