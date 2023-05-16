@@ -14,6 +14,15 @@
 			</div>
 		</button>
 
+		<nav class="not-mobile-menu">
+			<ul>
+
+				<li><a class='strict-voice' href="?page=home">Home</a></li>
+				<li><a class='strict-voice' href="?page=registry">Registry</a></li>
+			</ul>
+
+		</nav>
+
 		<nav class="site-menu">
 			<ul>
 

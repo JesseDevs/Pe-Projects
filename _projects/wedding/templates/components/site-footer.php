@@ -22,7 +22,7 @@
 						<a href="mailto:jfmenjivar042@gmail.com?subject=Wedding%20Question&body=Hey%20it's%20--&cc=andrearatcliff2012%40live.com">Email</a>
 					</li>
 					<li>
-						<a href="tel:+14806166614">1-(480) 616-****</a>
+						<a href="tel:+14806166614">Text Us</a>
 					</li>
 
 					<li>

@@ -17,7 +17,7 @@ $heading = $section['heading'] ?? ucfirst($page);
 		<picture> <img src="images/chapel.jpg" alt="chapel">
 		</picture>
 		<figcaption class='caption-rsvp'>
-			<p>RSVP Below</p>
+			<p class='strict-voice'>RSVP Below</p>
 		</figcaption>
 	</figure>
 

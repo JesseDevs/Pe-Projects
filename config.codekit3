@@ -48752,6 +48752,32 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/_projects\/wedding\/images\/menji-and.jpg" : {
+      "ft" : 16384,
+      "iS" : 340733,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_projects\/wedding\/images\/menji-and.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_projects\/wedding\/images\/menji-and2.jpg" : {
+      "ft" : 16384,
+      "iS" : 337665,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/_projects\/wedding\/images\/menji-and2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/_projects\/wedding\/images\/noise.png" : {
       "ft" : 32768,
       "iS" : 3113740,
