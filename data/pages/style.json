@@ -98,12 +98,14 @@
 				{
 					"id": 1,
 					"title": "form title",
-					"file-name": "area"
+					"file-name": "area",
+					"intro": "Calculate the area of the room in feet?"
 				},
 				{
 					"id": 2,
 					"title": "count-string",
-					"file-name": "count-string"
+					"file-name": "count-string",
+					"intro": "Count the characters in your word."
 				}
 			]
 		},
