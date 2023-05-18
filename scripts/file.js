@@ -66,10 +66,20 @@ window.addEventListener('click', function (event) {
 	}
 
 	if (event.target.matches('#top')) {
-		console.log('yes');
 		window.scrollTo({
 			top: 0,
 			behavior: 'smooth',
+		});
+	}
+
+	if (event.target.matches('#form-select')) {
+		const formSelect = document.querySelector('#form-select');
+		formSelect.addEventListener('change', (event) => {
+			const formId = event.target.value;
+			const formElement = document.querySelector('#' + formId);
+			formElement.scrollIntoView({
+				behavior: 'smooth',
+			});
 		});
 	}
 });

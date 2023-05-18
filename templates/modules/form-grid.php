@@ -12,6 +12,7 @@ $intro = $section['intro'] ?? "Check it out!";
 		<p class=' form-intro intro'><?= $intro; ?></p>
 	</text-content>
 
+	<label for="form-select">Find a form to test out:</label>
 	<select name="form-select" id="form-select" class='form-select'>
 		<option value="-" selected disabled>Select:</option>
 		<?php foreach ($section['items'] as $form) { ?>

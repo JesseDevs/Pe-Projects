@@ -2079,8 +2079,13 @@ form-grid .form-select {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
+form-grid text-content + label {
+  grid-column: 2/-1;
+  padding-bottom: 10px;
+}
 @media (min-width: 750px) {
-  form-grid .form-select {
+  form-grid .form-select,
+  form-grid text-content + label {
     grid-column: 4/-1;
   }
   form-grid ul {
@@ -2108,6 +2113,7 @@ form-box {
   display: block;
   border-radius: 5px;
   padding: 20px 15px;
+  scroll-margin-top: 100px;
   padding-bottom: 40px;
   border: var(--thin) solid var(--color-mute);
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
@@ -2323,6 +2329,7 @@ support-block {
   grid-column: 1/-1;
   display: block;
   width: 100%;
+  padding: 0 !important;
 }
 support-block ul {
   width: 100%;
