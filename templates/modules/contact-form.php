@@ -19,7 +19,7 @@
 		<p class='strict-voice contact-confirm'>Thank you for sharing a message. <br>I'll get back to you as soon as I can.</p>
 	<?php } ?>
 
-	<form method="POST" class='support-grid' action="https://formsubmit.co/jessemerge2@gmail.com">
+	<form method="POST" class='support-grid' action="https://formsubmit.co/c6ffeb78cb26f6942f459f9ace6b60d7">
 		<big-field>
 			<form-field>
 				<input type="text" placeholder="<?= $section['labelOne'] ?>">
