@@ -19,13 +19,13 @@
 		<p class='strict-voice contact-confirm'>Thank you for sharing a message. <br>I'll get back to you as soon as I can.</p>
 	<?php } ?>
 
-	<form method="POST" class='support-grid'>
+	<form method="POST" class='support-grid' action="https://formsubmit.co/jessemerge2@gmail.com">
 		<big-field>
 			<form-field>
 				<input type="text" placeholder="<?= $section['labelOne'] ?>">
 			</form-field>
 			<form-field>
-				<input name='email' placeholder="<?= $section['labelTwo'] ?>" type="email">
+				<input name='email' id='email' placeholder="<?= $section['labelTwo'] ?>" type="email">
 			</form-field>
 		</big-field>
 
@@ -35,7 +35,7 @@
 		</form-field>
 
 
-		<button class='action-link' type="submit" name="submit" value="Send Message"><?= $section['button'] ?></button>
+		<button class='action-link' id='contact-submit' type="submit" name="submit"><?= $section['button'] ?></button>
 	</form>
 
 	<div class="cube-sphere-container">
