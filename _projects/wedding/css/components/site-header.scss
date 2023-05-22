@@ -122,10 +122,16 @@ header.open-menu {
 	}
 }
 
+.not-mobile-menu {
+	display: none;
+}
+
 @media(min-width:500px) {
 	header {
 		.not-mobile-menu {
 			font-weight: 500;
+
+			display: block;
 
 			ul {
 				display: flex;

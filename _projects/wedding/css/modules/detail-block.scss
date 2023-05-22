@@ -23,9 +23,9 @@ detail-block {
 
 		&:before {
 			content: "";
-			width: calc(100% + 2rem);
+			width: calc(100% + 4rem);
 			position: absolute;
-			left: -1rem;
+			left: -2rem;
 			top: 0;
 			background-color: var(--blue);
 			height: 150%;

@@ -662,9 +662,14 @@ header.open-menu nav.site-menu {
   bottom: 0;
 }
 
+.not-mobile-menu {
+  display: none;
+}
+
 @media (min-width: 500px) {
   header .not-mobile-menu {
     font-weight: 500;
+    display: block;
   }
   header .not-mobile-menu ul {
     display: flex;
@@ -974,7 +979,7 @@ landing-heading figcaption:hover {
 .contains-ring {
   position: absolute;
   /* top: 5px; */
-  left: 60%;
+  left: 72%;
   width: 100px;
   height: 100px;
   bottom: 45%;
@@ -1038,9 +1043,9 @@ detail-block .info-block h3 {
 }
 detail-block .info-block:before {
   content: "";
-  width: calc(100% + 2rem);
+  width: calc(100% + 4rem);
   position: absolute;
-  left: -1rem;
+  left: -2rem;
   top: 0;
   background-color: var(--blue);
   height: 150%;

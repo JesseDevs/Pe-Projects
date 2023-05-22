@@ -1193,7 +1193,7 @@ landing-heading text-content {
   grid-row: 1;
   width: 100%;
   z-index: 2;
-  padding-bottom: 240px;
+  padding-bottom: 200px;
   animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 0.8s backwards;
 }
 landing-heading p.details {
