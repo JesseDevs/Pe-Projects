@@ -2,7 +2,7 @@
 	"id": "writing",
 	"title": "Landing",
 	"intro": "I write a blog. There are some good reads but there more if you subscribe!",
-	"metaImage": "https://jessedevs.info/images/details/table.jpg",
+	"metaImage": "https://jessedevs.net/images/details/table.jpg",
 	"sections": [
 		{
 			"module": "big-heading",

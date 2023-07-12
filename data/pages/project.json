@@ -2,7 +2,7 @@
 	"id": "detail",
 	"title": "Project",
 	"intro": "This is a case-study for one of my amazing projects.",
-	"metaImage": "https://jessedevs.info/images/details/spark.jpg",
+	"metaImage": "https://jessedevs.net/images/details/spark.jpg",
 	"sections": [
 		{
 			"module": "big-heading",
