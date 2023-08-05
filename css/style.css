@@ -2899,6 +2899,113 @@ input[type=radio]:focus {
   }
 }
 
+.multi-event .carousel {
+  display: flex;
+  overflow-x: scroll;
+  flex-direction: row;
+  padding: 30px 0 30px 0px;
+  scroll-snap-align: start;
+  scroll-snap-type: x mandatory;
+}
+.multi-event .carousel article {
+  flex-shrink: 0;
+  flex-basis: 90%;
+  scroll-snap-align: start;
+}
+.multi-event article-grid {
+  display: flex;
+  flex-direction: column;
+  column-gap: 25px;
+}
+.multi-event article-grid article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.multi-event article-grid article picture {
+  max-width: 500px;
+}
+.multi-event article-grid article text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+.multi-event article-grid article text-content p {
+  font-weight: bold;
+}
+.multi-event article-grid article text-content h3 {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.multi-event article-grid article div.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.multi-event article-grid article div.main-content p {
+  font-weight: normal;
+}
+.multi-event .event-card-medium {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.multi-event .event-card-large {
+  padding-right: 30px;
+}
+.multi-event .event-card-large article {
+  flex-direction: column-reverse;
+}
+@media (min-width: 601px) {
+  .multi-event .event-card-large article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 60px;
+  }
+}
+.multi-event .event-card-large article picture {
+  max-width: none;
+}
+.multi-event .event-card-large article text-content {
+  grid-column: 2;
+  gap: 25px;
+}
+.multi-event .event-card-large article text-content h3 {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+@media (min-width: 950px) {
+  .multi-event .event-card-large article {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+@media (min-width: 500px) {
+  .multi-event .event-card-medium,
+  .multi-event .carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 60px;
+  }
+}
+@media (min-width: 950px) {
+  .multi-event .event-card-medium,
+  .multi-event .carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+  }
+  .multi-event .event-card-medium text-content,
+  .multi-event .carousel text-content {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.multi-event module h3 + p {
+  margin-top: 0;
+}
+
 module {
   padding: 3vh 0;
 }

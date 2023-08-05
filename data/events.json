@@ -1,0 +1,16 @@
+[
+	{
+		"id": 1,
+		"name": "Hawaii Workshop",
+		"subtitle": "Any additional event information",
+		"details": [
+			"We’ve put in your request and all of that messaging would go here. Please allow x days etc. Also we could make a fun loading animation out of this mark. We've put in your request and all of that messaging would go here. Please allow x days etc. Also we could make a fun loading animation out of this mark.",
+			"We’ve put in your request and all of that messaging would go here. Please allow x days etc. Also we could make a fun loading animation out of this mark"
+		],
+		"date": "August 10th, 2023",
+		"host": [
+			"Perpetual Education",
+			"Derek"
+		]
+	}
+]
