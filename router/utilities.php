@@ -20,3 +20,9 @@ function getProjectFile()
 	$json = file_get_contents('data/projects.json');
 	return json_decode($json, true);
 }
+
+function getJsonData($file)
+{
+	$json = file_get_contents('data/' . $file . '.json');
+	return json_decode($json, true);
+}
