@@ -59,7 +59,7 @@ $eventData = getJsonData('events');
 		
       		<h3 class='chant-voice'>${event.name}</h3>
 	
-			<button class="details-button">View Details</button>
+			<button class="details-button">Register</button>
 
       	</text-content>
 			`;
@@ -89,8 +89,38 @@ $eventData = getJsonData('events');
 		});
 	}
 
+	function addEvent() {
+		const newEvent = {
+			id: totalEvents + 1,
+			name: "New Event",
+			subtitle: "Any additional event information",
+			details: ["Details about the new event."],
+			host: [
+				"Perpetual Education",
+				"Derek"
+			],
+			date: "August 10th, 2023",
+		};
+
+		eventsArr.push(newEvent);
+
+		const articleGrid = document.querySelector('article-grid');
+		articleGrid.classList.remove('event-card-large', 'event-card-medium', 'event-card-small', 'carousel');
+		articleGrid.innerHTML = '';
+
+		createEventCards();
+	}
+
 	window.addEventListener('DOMContentLoaded', function() {
 		createEventCards();
+	});
+
+
+	window.addEventListener('click', function(event) {
+		if (event.target.matches('.square-button')) {
+			console.log('success.')
+			addEvent();
+		}
 	});
 </script>
 
@@ -99,6 +129,9 @@ $eventData = getJsonData('events');
 	<module-header>
 		<h2 class='loud-voice'> Upcoming Events </h2>
 		<p class='intro-voice'> We 've put in your request and all of that messaging would go here. Please allow x days etc. Also we could make a fun loading animation out of this mark.</p>
+
+		<button class="square-button">Add Event</button>
+
 	</module-header>
 
 	<article-grid>

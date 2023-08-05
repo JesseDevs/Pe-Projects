@@ -2899,6 +2899,26 @@ input[type=radio]:focus {
   }
 }
 
+.multi-event .square-button {
+  position: absolute;
+  top: -4.3rem;
+  right: 0;
+  outline: none;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0;
+  width: 100px;
+  height: 80px;
+  border: 2px solid #fff;
+  background-color: black;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+.multi-event .square-button:hover {
+  background-color: #232323;
+  color: #fff;
+}
 .multi-event .carousel {
   display: flex;
   overflow-x: scroll;
@@ -2931,12 +2951,10 @@ input[type=radio]:focus {
   gap: 10px;
   height: 100%;
 }
-.multi-event article-grid article text-content p {
-  font-weight: bold;
-}
 .multi-event article-grid article text-content h3 {
   flex-grow: 1;
   flex-shrink: 0;
+  font-weight: bold;
 }
 .multi-event article-grid article div.main-content {
   display: flex;
@@ -2956,6 +2974,7 @@ input[type=radio]:focus {
 }
 .multi-event .event-card-large article {
   flex-direction: column-reverse;
+  row-gap: 35px;
 }
 @media (min-width: 601px) {
   .multi-event .event-card-large article {
@@ -2980,7 +2999,7 @@ input[type=radio]:focus {
     grid-template-columns: 1.5fr 1fr;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .multi-event .event-card-medium,
   .multi-event .carousel {
     display: grid;
