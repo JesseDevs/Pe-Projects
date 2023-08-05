@@ -1,6 +1,6 @@
 <?php foreach ($section['items'] as $template) { ?>
 
-	<article class="<?= $template ?>">
+	<article class="<?= $template ?>" id="<?= $template ?>">
 
 
 		<?php

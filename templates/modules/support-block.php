@@ -26,8 +26,8 @@
 	<?php } ?>
 </support-block>
 
-<script>
+<!-- <script>
 	window.onload = function() {
 		phpBox.focus();
 	};
-</script>
+</script> -->
