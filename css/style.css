@@ -2969,9 +2969,6 @@ input[type=radio]:focus {
   flex-direction: column;
   row-gap: 60px;
 }
-.multi-event .event-card-large {
-  padding-right: 30px;
-}
 .multi-event .event-card-large article {
   flex-direction: column-reverse;
   row-gap: 35px;
@@ -2997,6 +2994,7 @@ input[type=radio]:focus {
 @media (min-width: 950px) {
   .multi-event .event-card-large article {
     grid-template-columns: 1.5fr 1fr;
+    padding-right: 30px;
   }
 }
 @media (min-width: 600px) {

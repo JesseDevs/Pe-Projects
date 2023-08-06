@@ -88,10 +88,6 @@
 		row-gap: 60px;
 	}
 
-	.event-card-large {
-		padding-right: 30px;
-	}
-
 	.event-card-large article {
 
 		flex-direction: column-reverse;
@@ -119,6 +115,7 @@
 
 		@media(min-width:950px) {
 			grid-template-columns: 1.5fr 1fr;
+			padding-right: 30px;
 		}
 	}
 

@@ -42,7 +42,12 @@ $eventData = getJsonData('events');
 
 			if (eventsArr.length === 1) {
 
-				const detailsHtml = event.details.map(detail => `<p class="event-detail">${detail}</p>`).join('');
+				const detailsHtmlArray = [];
+				for (var i = 0; i < event.details.length; i++) {
+					detailsHtmlArray.push('<p class="event-detail">' + event.details[i] + '</p>');
+				}
+
+				const detailsHtml = detailsHtmlArray.join('');
 
 				article.innerHTML = `
 				<div class='main-content'>
