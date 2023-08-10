@@ -63,3 +63,17 @@ window.addEventListener('click', function (event) {
 		generateQuote();
 	}
 });
+
+document.getElementById('send-email').addEventListener('click', function () {
+	const name = encodeURIComponent(document.querySelector('input[name="name"]').value);
+	const email = encodeURIComponent(document.querySelector('input[name="email"]').value);
+	const message = encodeURIComponent(document.querySelector('textarea[name="message"]').value);
+
+	const subject = encodeURIComponent('Contact Form Submission');
+	const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+	const mailtoUrl = `mailto:jesse.dude622@gmail.com?subject=${subject}&body=${body}`;
+
+	// Open the user's default email client
+	window.location.href = mailtoUrl;
+});
