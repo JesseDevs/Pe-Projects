@@ -19,7 +19,6 @@
 		{
 			"module": "layouts-page",
 			"items": [
-				"multi-event",
 				"monday",
 				"tuesday",
 				"wednesday",
